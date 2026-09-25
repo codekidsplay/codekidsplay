@@ -12,7 +12,7 @@ La finalul orei ai prezentat clipul tău clasei (cine e + ce face), ai un proiec
 
 ## De ce contează
 Programatorii nu doar scriu — **arată** ce merge.  
-Badge-ul **Scratch Starter** = ai terminat primii pași; Modulul 2 începe cu alegeri (`dacă…`).
+Insigna **Scratch Starter** (*badge*) = ai terminat primii pași; Modulul 2 începe cu alegeri (`dacă…`).
 
 ---
 
@@ -23,10 +23,12 @@ Badge-ul **Scratch Starter** = ai terminat primii pași; Modulul 2 începe cu al
 | 0–10 | Obiectiv + reguli prezentare + checklist rapid |
 | 10–25 | Pas cu pas: lustruire scurtă + **Încearcă tu** (proba de 30 sec) |
 | 25–50 | Lustruire / salvare — **gata de arătat** |
-| 50–100 | Prezentări pe rând (aprox. 1–2 min / copil) |
-| 100–120 | Quiz recap, badge, ce urmează în M2 |
+| 50–~80 | Prezentări pe rând (~1–2 min / copil; la 12–15 elevi ≈ 15–30 min) |
+| ~80–120 | Quiz recap + **insignă** + ce urmează în M2 (+ Bonus dacă ați terminat prezentările mai devreme) |
 
 *(Repere profesor: la ~50 min toți au fișierul deschis + steag curat; cine e în urmă prezintă scheletul, nu așteaptă perfect.)*
+
+*(Timp rămas după prezentări: nu „umpleți” — treceți la **Bonus**, apoi quiz + insignă. Dacă prezentările întârziesc, scurtați quiz-ul la **3** întrebări și lăsați M2 + insigna; Bonus-ul rămâne opțional.)*
 
 ---
 
@@ -62,7 +64,17 @@ Cu profesorul, pe scurt (nu memorat pe dinafară):
 ### 4) Ce urmează (Modulul 2) — o privire
 Până acum personajul face ce îi zici, **pas cu pas**.  
 În Modulul 2 învață să **aleagă**: dacă atinge ceva…, dacă apeși o tastă…  
-*(Doar ca să știi direcția — azi nu construim asta.)*
+*(Doar ca să știi direcția — azi nu construim asta. 2–3 minute maxim.)*
+
+### 5) Insigna modulului (convenție CKP)
+La finalul fiecărui modul, profesorul acordă **insigna** (în engleză: *badge*) — moment scurt, același tip la M1–M5:
+
+1. Copilul a **prezentat** + proiectul e **salvat**  
+2. Profesorul spune clar: „Ai insigna **Scratch Starter**”  
+3. Opțional (dacă există la curs): sticker / cartonaș / diplomă cu numele insignei  
+4. Nu e notă și nu e cont online obligatoriu — e **recunoaștere în clasă** că modulul e încheiat
+
+*(Aceleași reguli mai târziu: Logic Explorer, Game Builder, Scratch Creator, Cube Crafter.)*
 
 ---
 
@@ -84,7 +96,7 @@ Până acum personajul face ce îi zici, **pas cu pas**.
 
 ---
 
-## De făcut azi — Prezentare + Scratch Starter
+## De făcut azi — Prezentare + insignă Scratch Starter
 Salvat: `Prenume_L9` (și/sau `Prenume_L10`)
 
 ### Pasul 1 — Gata de scenă
@@ -98,14 +110,16 @@ Salvat: `Prenume_L9` (și/sau `Prenume_L10`)
 
 ### Pasul 3 — Închidere modul
 - [ ] Proiectul e **salvat**  
-- [ ] Ai răspuns la 2–3 întrebări din quiz-ul cu profesorul  
-- [ ] Badge **Scratch Starter** (cu profesorul)
+- [ ] Ai răspuns la întrebări din quiz (ideal 5; dacă e puțin timp: **cel puțin 3**)  
+- [ ] Ai primit insigna **Scratch Starter** (profesorul o spune pe nume + sticker/cartonaș dacă există)
 
 **Gata când:** ai arătat proiectul și știi că Modulul 1 e încheiat.
 
 ---
 
 ## Bonus (dacă ai terminat mai devreme / după ce ai prezentat)
+*(Folosiți acest bloc când prezentările s-au terminat înainte de ~80 min.)*
+
 - [ ] În prezentare: arată **un** truc învățat (X/Y, buclă, sunet…)  
 - [ ] Adaugă pe loc un detaliu mic cerut de un coleg (feedback rapid)  
 - [ ] Pe foaie: **1 idee** pentru Modulul 2 (labirint / dacă apeși… / dacă atingi…)
@@ -113,9 +127,9 @@ Salvat: `Prenume_L9` (și/sau `Prenume_L10`)
 ## Recapitulare rapidă
 1. Prezinți: **cine** + **ce** + steag  
 2. Modulul 1 = start, lume, mișcare, aspect, sunet, X/Y, repetă  
-3. Modulul 2 = **alegeri** (`dacă…`)  
+3. Modulul 2 = **alegeri** (`dacă…`) · Insigna de azi = **Scratch Starter**
 
-**Quiz scurt (cu profesorul):**  
+**Quiz scurt (cu profesorul):** *(5 întrebări dacă e timp; altfel alegeți 3)*  
 1. Ce face steagul verde?  
 2. Ce e un costum?  
 3. X e stânga–dreapta sau sus–jos?  
