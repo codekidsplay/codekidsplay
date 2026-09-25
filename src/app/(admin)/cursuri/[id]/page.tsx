@@ -18,10 +18,6 @@ export default async function CursDetaliuPage({ params }: { params: Promise<{ id
     }))
 
   const totalLectii = moduleCurs.reduce((s, m) => s + m.lectii.length, 0)
-  const cuContinut = moduleCurs.reduce(
-    (s, m) => s + m.lectii.filter(l => hasLectieContent(m.id, l.ordine)).length,
-    0
-  )
 
   return (
     <div>
@@ -35,9 +31,6 @@ export default async function CursDetaliuPage({ params }: { params: Promise<{ id
             <h1 className="text-3xl font-bold text-slate-900">{curs.nume}</h1>
             <p className="text-slate-400 text-sm">
               {moduleCurs.length} module · {totalLectii} lecții
-              {cuContinut > 0 && (
-                <span className="text-emerald-600"> · {cuContinut} cu conținut pe site</span>
-              )}
             </p>
           </div>
         </div>
