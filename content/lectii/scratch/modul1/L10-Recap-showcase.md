@@ -22,13 +22,13 @@ Insigna **Scratch Starter** (*badge*) = ai terminat primii pași; Modulul 2 înc
 |--------|----------|
 | 0–10 | Obiectiv + reguli prezentare + checklist rapid |
 | 10–25 | Pas cu pas: lustruire scurtă + **Încearcă tu** (proba de 30 sec) |
-| 25–50 | Lustruire / salvare — **gata de arătat** |
-| 50–~80 | Prezentări pe rând (~1–2 min / copil; la 12–15 elevi ≈ 15–30 min) |
-| ~80–120 | Quiz recap + **insignă** + ce urmează în M2 (+ Bonus dacă ați terminat prezentările mai devreme) |
+| 25–55 | Lustruire / salvare — **gata de arătat** |
+| 55–75 | Prezentări pe rând (~1–2 min × max. **10** copii ≈ 10–20 min) |
+| 75–120 | Bonus (dacă e timp) + quiz recap + **insignă** + ce urmează în M2 |
 
-*(Repere profesor: la ~50 min toți au fișierul deschis + steag curat; cine e în urmă prezintă scheletul, nu așteaptă perfect.)*
+*(Repere profesor: la ~55 min toți au fișierul deschis + steag curat; cine e în urmă prezintă scheletul, nu așteaptă perfect.)*
 
-*(Timp rămas după prezentări: nu „umpleți” — treceți la **Bonus**, apoi quiz + insignă. Dacă prezentările întârziesc, scurtați quiz-ul la **3** întrebări și lăsați M2 + insigna; Bonus-ul rămâne opțional.)*
+*(Grupa ≤10: nu alocați un bloc lung „gol” pentru prezentări. Dacă ați terminat la ~70 min → Bonus, apoi quiz + insignă. Dacă o prezentare întârzie, scurtați quiz-ul la **3** întrebări; M2 rămâne 2–3 minute.)*
 
 ---
 
@@ -118,7 +118,7 @@ Salvat: `Prenume_L9` (și/sau `Prenume_L10`)
 ---
 
 ## Bonus (dacă ai terminat mai devreme / după ce ai prezentat)
-*(Folosiți acest bloc când prezentările s-au terminat înainte de ~80 min.)*
+*(Blocul 75–120 e generos: după prezentări (~20 min), folosiți timpul pe Bonus, apoi quiz + insignă.)*
 
 - [ ] În prezentare: arată **un** truc învățat (X/Y, buclă, sunet…)  
 - [ ] Adaugă pe loc un detaliu mic cerut de un coleg (feedback rapid)  
