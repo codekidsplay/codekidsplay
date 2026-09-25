@@ -2,8 +2,11 @@ import Link from 'next/link'
 import BrandLogo from '@/components/BrandLogo'
 import ContactForm from '@/components/ContactForm'
 
-const MAP_EMBED =
-  'https://www.google.com/maps?q=Strada+Republicii+16+bis,+Foc%C8%99ani&output=embed'
+const MAP_LAT = '45.699011'
+const MAP_LNG = '27.181703'
+/** Embed pe coordonate (Clădirea RIX) — `?q=adresă&output=embed` cade pe glob. */
+const MAP_EMBED = `https://maps.google.com/maps?q=${MAP_LAT},${MAP_LNG}&z=17&hl=ro&output=embed`
+const MAP_LINK = `https://www.google.com/maps/search/?api=1&query=${MAP_LAT},${MAP_LNG}`
 
 export default function ContactPage() {
   return (
@@ -105,15 +108,25 @@ export default function ContactPage() {
         </div>
 
         <div>
-          <h2
-            className="text-lg font-semibold mb-3 text-[var(--ckp-ink)]"
-            style={{ fontFamily: 'var(--font-display)' }}
-          >
-            Unde ne găsești
-          </h2>
+          <div className="flex flex-wrap items-end justify-between gap-3 mb-3">
+            <h2
+              className="text-lg font-semibold text-[var(--ckp-ink)]"
+              style={{ fontFamily: 'var(--font-display)' }}
+            >
+              Unde ne găsești
+            </h2>
+            <a
+              href={MAP_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm font-medium text-[var(--ckp-blue)] hover:underline"
+            >
+              Deschide în Google Maps ↗
+            </a>
+          </div>
           <div className="rounded-2xl overflow-hidden border border-[var(--ckp-ink)]/10 bg-white aspect-[21/9] min-h-[240px]">
             <iframe
-              title="Harta Code Kids Play Focșani"
+              title="Harta Code Kids Play Focșani — Clădirea RIX"
               src={MAP_EMBED}
               className="w-full h-full border-0"
               loading="lazy"
