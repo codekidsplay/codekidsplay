@@ -14,13 +14,15 @@ La finalul orei poți adăuga un sunet din bibliotecă și să-l pornești cu bl
 În jocuri, sunetul spune „start”, „bravo” sau „ai pierdut” fără text.  
 În Scratch, asta e capitolul <span style="color:#CF63CF;font-weight:700">Sunet</span> (în engleză: *Sound*).
 
+**În clasă (înainte să pornim):** căști dacă se poate; altfel volumul PC **jos**. Testăm pe rând — nu toată sala pe steag odată.
+
 ---
 
 ## Planul orei (120 minute)
 
 | Minute | Ce facem |
 |--------|----------|
-| 0–10 | Obiectiv + tab Sunete + capitolul Sunet |
+| 0–10 | Obiectiv + regulă volum/căști + tab Sunete + capitolul Sunet |
 | 10–25 | Pas cu pas + **Încearcă tu** |
 | 25–100 | Proiectul „Soundtrack-ul meu” |
 | 100–120 | Recap, bonus, salvare |
@@ -40,7 +42,7 @@ La finalul orei poți adăuga un sunet din bibliotecă și să-l pornești cu bl
    <span style="color:#3F8F2A;font-weight:700">când se face clic pe steagul verde</span>
 2. Din <span style="color:#CF63CF;font-weight:700">Sunet</span>:  
    <span style="color:#CF63CF;font-weight:700">pornește sunetul</span> `…` → alegi sunetul de start
-3. Apeși <span style="color:#3F8F2A;font-weight:700">steagul verde</span> — trebuie să auzi ceva
+3. Apeși <span style="color:#3F8F2A;font-weight:700">steagul verde</span> — dacă nu auzi: volum PC / căști, apoi verifică tab Sunete
 
 *(`pornește sunetul` = începe și **programul merge mai departe** imediat.)*
 
@@ -66,6 +68,8 @@ La finalul orei poți adăuga un sunet din bibliotecă și să-l pornești cu bl
    <span style="color:#CF63CF;font-weight:700">oprește toate sunetele</span> →  
    <span style="color:#CF63CF;font-weight:700">pornește sunetul</span> `start`  
    *(altfel, dacă apeși steagul de mai multe ori, se suprapun)*
+
+*(Volumul din Scratch — <span style="color:#CF63CF;font-weight:700">setează volumul la</span> / <span style="color:#CF63CF;font-weight:700">schimbă volumul cu</span> — e tot în Sunet, lângă `pornește`. Azi nu e obligatoriu; dacă e prea tare, coboară întâi volumul PC sau folosește căști.)*
 
 **Regulă la curs:** nu pornim toate sunetele odată — testăm pe rând, ca să se audă.
 
@@ -110,9 +114,10 @@ Salvat: `Prenume_L6`
 ---
 
 ## Bonus (dacă ai terminat mai devreme)
-- [ ] **Melodie** din 4–6 note (`redă nota …`) pe rând, cu <span style="color:#FFAB19;font-weight:700">așteaptă</span>  
+- [ ] **Melodie** din 4–6 note: <span style="color:#CF63CF;font-weight:700">redă nota</span> `…` *(tot în <span style="color:#CF63CF;font-weight:700">Sunet</span>, lângă `pornește sunetul`)* pe rând, cu <span style="color:#FFAB19;font-weight:700">așteaptă</span>  
 - [ ] După 2 secunde de muzică: <span style="color:#CF63CF;font-weight:700">oprește toate sunetele</span>  
 - [ ] Al 2-lea personaj cu propriul sunet la click  
+- [ ] Joacă-te cu <span style="color:#CF63CF;font-weight:700">setează volumul la</span> `50` (opțional — „cât de tare”)
 
 ## Recapitulare rapidă
 1. Tab **Sunete** = adaugi fișierul; capitolul <span style="color:#CF63CF;font-weight:700">Sunet</span> = îl pornești  
