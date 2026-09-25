@@ -1,7 +1,8 @@
 import { cursuri, module, lectii } from '@/lib/mockData'
+import { hasLectieContent } from '@/lib/lectiiContent'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
-import { ArrowLeft, BookOpen, ChevronRight } from 'lucide-react'
+import { ArrowLeft, BookOpen, ChevronRight, FileText } from 'lucide-react'
 
 export default async function CursDetaliuPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params
@@ -17,6 +18,10 @@ export default async function CursDetaliuPage({ params }: { params: Promise<{ id
     }))
 
   const totalLectii = moduleCurs.reduce((s, m) => s + m.lectii.length, 0)
+  const cuContinut = moduleCurs.reduce(
+    (s, m) => s + m.lectii.filter(l => hasLectieContent(m.id, l.ordine)).length,
+    0
+  )
 
   return (
     <div>
@@ -30,6 +35,9 @@ export default async function CursDetaliuPage({ params }: { params: Promise<{ id
             <h1 className="text-3xl font-bold text-slate-900">{curs.nume}</h1>
             <p className="text-slate-400 text-sm">
               {moduleCurs.length} module · {totalLectii} lecții
+              {cuContinut > 0 && (
+                <span className="text-emerald-600"> · {cuContinut} cu conținut pe site</span>
+              )}
             </p>
           </div>
         </div>
@@ -51,24 +59,34 @@ export default async function CursDetaliuPage({ params }: { params: Promise<{ id
               </div>
             </div>
             <div className="p-3 space-y-1">
-              {modul.lectii.map(l => (
-                <Link
-                  key={l.id}
-                  href={`/cursuri/${id}/${l.id}`}
-                  className="flex items-center gap-3 p-3 rounded-xl bg-slate-50 hover:bg-slate-100 transition-colors group"
-                >
-                  <span
-                    className="w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0 text-white"
-                    style={{ backgroundColor: curs.culoare }}
+              {modul.lectii.map(l => {
+                const areContinut = hasLectieContent(modul.id, l.ordine)
+                return (
+                  <Link
+                    key={l.id}
+                    href={`/cursuri/${id}/${l.id}`}
+                    className="flex items-center gap-3 p-3 rounded-xl bg-slate-50 hover:bg-slate-100 transition-colors group"
                   >
-                    {l.ordine}
-                  </span>
-                  <span className="text-sm font-medium text-slate-700 flex-1 group-hover:text-slate-900">
-                    {l.titlu}
-                  </span>
-                  <ChevronRight size={16} className="text-slate-300 group-hover:text-slate-500" />
-                </Link>
-              ))}
+                    <span
+                      className="w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0 text-white"
+                      style={{ backgroundColor: curs.culoare }}
+                    >
+                      {l.ordine}
+                    </span>
+                    <span className="text-sm font-medium text-slate-700 flex-1 group-hover:text-slate-900">
+                      {l.titlu}
+                    </span>
+                    {areContinut ? (
+                      <span className="hidden sm:inline-flex items-center gap-1 text-[11px] font-medium text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded-full">
+                        <FileText size={10} /> Conținut
+                      </span>
+                    ) : (
+                      <span className="hidden sm:inline text-[11px] text-slate-400">Doar titlu</span>
+                    )}
+                    <ChevronRight size={16} className="text-slate-300 group-hover:text-slate-500" />
+                  </Link>
+                )
+              })}
             </div>
           </div>
         ))}

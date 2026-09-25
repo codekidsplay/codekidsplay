@@ -17,7 +17,7 @@ import BrandLogo from '@/components/BrandLogo'
 const navItems = [
   { href: '/admin', label: 'Dashboard', icon: LayoutDashboard },
   { href: '/cursanti', label: 'Cursanți', icon: Users },
-  { href: '/cursuri', label: 'Lecții', icon: BookOpen },
+  { href: '/cursuri', label: 'Lecții (profesor)', icon: BookOpen },
   { href: '/abonamente', label: 'Abonamente & Plăți', icon: CreditCard },
 ]
 
