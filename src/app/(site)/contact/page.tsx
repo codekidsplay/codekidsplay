@@ -56,7 +56,7 @@ export default function ContactPage() {
                     href="https://wa.me/40736830830"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mt-1 block text-sm font-medium text-[var(--ckp-blue)] hover:underline"
+                    className="mt-1 block text-sm font-medium text-[#25D366] hover:text-[#1ebe57] hover:underline"
                   >
                     WhatsApp ↗
                   </a>
