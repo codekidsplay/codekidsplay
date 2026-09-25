@@ -2,7 +2,7 @@ import { cursuri, module, lectii } from '@/lib/mockData'
 import { getLectieMarkdown } from '@/lib/lectiiContent'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
-import { ArrowLeft, ArrowRight, Eye } from 'lucide-react'
+import { ArrowLeft, ArrowRight } from 'lucide-react'
 import LectieMarkdown from '@/components/LectieMarkdown'
 
 export default async function ProfesorLectiePage({
@@ -35,18 +35,6 @@ export default async function ProfesorLectiePage({
       >
         <ArrowLeft size={16} /> {modul.nume}
       </Link>
-
-      <div className="mb-4 flex flex-wrap items-center gap-2">
-        <span
-          className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wide px-2.5 py-1 rounded-full text-white"
-          style={{ backgroundColor: curs.culoare }}
-        >
-          <Eye size={12} /> Vizualizare profesor
-        </span>
-        <span className="text-xs text-slate-500">
-          Acces complet — fără blocaje de elev
-        </span>
-      </div>
 
       <article className="bg-white rounded-2xl border border-slate-100 shadow-sm p-6 md:p-8">
         <p className="text-xs font-semibold uppercase tracking-wide mb-2" style={{ color: curs.culoare }}>
