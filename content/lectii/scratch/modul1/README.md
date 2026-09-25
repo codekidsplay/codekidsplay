@@ -7,7 +7,7 @@
 
 | # | Fișier | Titlu |
 |---|--------|--------|
-| 1 | [L1-Ce-este-Scratch.md](./L1-Ce-este-Scratch.md) | Primii pași + Cardul meu animat |
+| 1 | [L1-Ce-este-Scratch.md](./L1-Ce-este-Scratch.md) | Primii pași + Cardul meu animat|
 | 2 | [L2-Scena-fundaluri-costume.md](./L2-Scena-fundaluri-costume.md) | Lumea mea: 2 scene și costume |
 | 3 | [L3-Miscare-pe-scena.md](./L3-Miscare-pe-scena.md) | Mișcare pe scenă |
 | 4 | [L4-Evenimente.md](./L4-Evenimente.md) | Cum pornește jocul |
