@@ -1,34 +1,124 @@
-# Lecția 7 — Unde e pe scenă
+# Lecția 7 — Comoara (coordonate X și Y)
 **Modulul 1 · Primii pași**  
-**Code Kids Play**
+**Code Kids Play · Scratch Starter**
 
-> La final știi: scena e ca o hartă. X = stânga/dreapta, Y = jos/sus. Poți duce personajul într-un loc anume.
+> Azi scena e o **hartă**: înveți unde e personajul cu **X** și **Y**, apoi îl duci la comoară.  
+> Proiect: **„Comoara”** · fișier: `Prenume_L7` (ex. `Ana_L7`)
 
 ---
 
-## Ideea principală (simplu)
-- **X** = stânga (−) sau dreapta (+)  
-- **Y** = jos (−) sau sus (+)  
-- Mijlocul scenei e aproape de **x: 0 , y: 0**
+## Obiectiv
+La finalul orei poți citi **x** și **y** pe scenă și poți duce personajul într-un loc anume cu <span style="color:#4C97FF;font-weight:700">du-te la</span> sau <span style="color:#4C97FF;font-weight:700">glisează</span>.
 
-Ne uităm pe ecran: când muți personajul, numerele X și Y se schimbă.
+## De ce contează
+Ca pe o hartă sau în jocuri: știi unde e eroul (stânga/dreapta, sus/jos) ca să ajungă la țintă.  
+În Scratch, poziția = **coordonate** (în engleză: *x position* / *y position*).
 
-## Exerciții
-1. Mută personajul cu mouse-ul și citește X, Y  
-2. `du-te la x: 100 y: 50`  
-3. Glisează în 3 locuri diferite  
+---
 
-## Mini-proiect: „Comoara”
-- Profesorul pune o „comoară” într-un loc  
-- Tu încerci să ajungi acolo cu **du-te la** sau **glisează**  
-- Când ești aproape, personajul spune „Am găsit-o!”  
+## Planul orei (120 minute)
 
-(Mai târziu Scratch poate detecta singur atingerea — acum ne uităm cu ochiul.)
+| Minute | Ce facem |
+|--------|----------|
+| 0–10 | Obiectiv + harta scenei (X / Y / mijloc) |
+| 10–25 | Pas cu pas + **Încearcă tu** |
+| 25–100 | Proiectul „Comoara” |
+| 100–120 | Recap, bonus, salvare |
 
-## Bonus / Provocare (dacă ai terminat)
-- [ ] Personajul vizitează **4 colțuri** pe rând (cu X/Y clare)  
-- [ ] La steag: du-te la (0, 0), apoi la un punct ales de tine  
-- [ ] Al 2-lea personaj „teleportat” la click pe scenă (du-te la pointer)
+---
+
+## Pas cu pas
+
+### 1) Harta scenei
+1. Selectezi **personajul** și îl **tragi** pe scenă cu mouse-ul
+2. Sus, pe personaj (sau în blocurile de <span style="color:#4C97FF;font-weight:700">Mișcare</span>), vezi numerele **x** și **y** schimbându-se
+3. Ține minte:
+   - **X** = stânga (−) sau dreapta (+)
+   - **Y** = jos (−) sau sus (+)
+   - Mijlocul scenei ≈ **x: 0 , y: 0**
+4. Exercițiu rapid: du personajul în **mijloc**, apoi într-un **colț** — spune cu vocea ce x/y vezi
+
+### 2) Du-te la un punct
+1. Din <span style="color:#E6A800;font-weight:700">Evenimente</span>:  
+   <span style="color:#3F8F2A;font-weight:700">când se face clic pe steagul verde</span>
+2. Din <span style="color:#4C97FF;font-weight:700">Mișcare</span> (tot acolo unde e `mergi`):  
+   <span style="color:#4C97FF;font-weight:700">du-te la x:</span> `0` <span style="color:#4C97FF;font-weight:700">y:</span> `0`
+3. Apeși <span style="color:#3F8F2A;font-weight:700">steagul verde</span> — personajul **sare** în mijloc
+4. Schimbă numerele, ex. `x: 150` `y: -100` — rulează din nou; observă unde ajunge
+
+*(`du-te la` = teleport: ajunge **imediat**, fără să vezi drumul.)*
+
+### 3) Glisează la un punct
+1. Tot pe personaj, sub steag (după un reset la mijloc):  
+   <span style="color:#4C97FF;font-weight:700">glisează</span> în `1` secundă la `x:` `150` `y:` `100`
+2. Personajul **alunecă** spre punct — vezi drumul
+3. Compară: `du-te la` = salt; `glisează` = mișcare lină spre aceleași tipuri de x/y
+
+### 4) Reset + traseu cu 2–3 puncte
+1. Chiar sub steag:  
+   <span style="color:#4C97FF;font-weight:700">du-te la x:</span> `-150` <span style="color:#4C97FF;font-weight:700">y:</span> `-100` *(loc de start / „acasă”)*
+2. Apoi pe rând:  
+   <span style="color:#4C97FF;font-weight:700">glisează</span> … la un punct →  
+   <span style="color:#FFAB19;font-weight:700">așteaptă</span> `0.5` *(în <span style="color:#FFAB19;font-weight:700">Control</span>)* →  
+   <span style="color:#4C97FF;font-weight:700">glisează</span> … la alt punct →  
+   <span style="color:#9966FF;font-weight:700">spune</span> `Am găsit-o!` pentru `2` secunde
+3. Fără reset la steag, la a doua rulare pleacă de unde a rămas
+
+*(Cum alegi numerele: tragi personajul unde vrei comoara, **citești** x/y, le scrii în bloc.)*
+
+---
+
+## Încearcă tu — verifică înainte să continui
+*(Checkpoint pe **un** personaj.)*
+
+- [ ] Știi pe scurt: X = stânga/dreapta, Y = jos/sus, mijloc ≈ (0, 0)  
+- [ ] Ai un <span style="color:#4C97FF;font-weight:700">du-te la</span> cu x/y alese de tine  
+- [ ] Ai o <span style="color:#4C97FF;font-weight:700">glisează</span> la alt punct  
+- [ ] La <span style="color:#3F8F2A;font-weight:700">steag verde</span> începi mereu din același loc
+
+---
+
+## Greșeli frecvente
+1. **A ajuns „în altă parte”** — ai confuzat X cu Y (sau semnul +/−). Mută cu mouse-ul, citește din nou numerele, corectează blocul.  
+2. **A dispărut de pe scenă** — x/y prea mari (ex. 500). Rămâi cam între **−240…240** pe X și **−180…180** pe Y.  
+3. **La steag nu reîncepe** — lipsește <span style="color:#4C97FF;font-weight:700">du-te la</span> la începutul scriptului.  
+4. **„Nu știu ce numere să pun”** — nu ghici: trage personajul la locul dorit, citește x/y, pune-le în bloc.
+
+---
+
+## De făcut azi — „Comoara”
+Salvat: `Prenume_L7`
+
+### Pasul 1 — Harta ta
+- [ ] Ai un loc de **start** cu x/y clare (la steag: `du-te la`)  
+- [ ] Ai un loc de **comoară** (alt x/y) — îl știi / l-ai notat  
+
+### Pasul 2 — Drumul
+- [ ] Cel puțin **2** opriri pe traseu cu <span style="color:#4C97FF;font-weight:700">glisează</span> sau <span style="color:#4C97FF;font-weight:700">du-te la</span> (cu x/y vizibile în blocuri)  
+- [ ] Între opriri: <span style="color:#FFAB19;font-weight:700">așteaptă</span> dacă e prea rapid  
+
+### Pasul 3 — Comoara
+- [ ] La capăt: <span style="color:#9966FF;font-weight:700">spune</span> `Am găsit-o!` (sau mesaj similar)  
+- [ ] Opțional: un <span style="color:#CF63CF;font-weight:700">sunet</span> când „găsește”  
+- [ ] La din nou steag, **reîncepe** de la start  
+
+**Gata când:** un coleg urmărește drumul până la comoară fără să îi spui numerele cu vocea.
+
+---
+
+## Bonus (dacă ai terminat mai devreme)
+- [ ] Vizitează **4 colțuri** pe rând (x/y clare pe fiecare)  
+- [ ] La click pe personaj: <span style="color:#4C97FF;font-weight:700">du-te la indicatorul mouse-ului</span> *(tot în Mișcare — „teleport” după mouse)*  
+- [ ] Al 2-lea personaj = comoara (stă pe x/y fix); eroul ajunge lângă el  
+
+## Recapitulare rapidă
+1. **X** stânga/dreapta, **Y** jos/sus; mijloc ≈ (0, 0)  
+2. `du-te la` = salt; `glisează` = alunecă spre x/y  
+3. La steag resetezi poziția; numerele le **citești** de pe scenă, nu le ghicești  
+
+**Quiz scurt (cu profesorul):**  
+- Ce înseamnă x negativ?  
+- De ce `du-te la` la începutul scriptului?
 
 ## Temă
-Pe o foaie, scrie 3 perechi (X, Y) din proiectul tău.
+Opțional: pe o foaie (sau în proiect) notează **3 perechi** (x, y) din traseul tău — același fișier `Prenume_L7`.
