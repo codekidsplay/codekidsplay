@@ -16,18 +16,15 @@ export default function ContactForm() {
       [
         'Salut, Code Kids Play!',
         '',
-        'Am un mesaj de pe formularul de pe site:',
+        'Am un mesaj pentru tine:',
         '',
         `• Nume: ${nume.trim()}`,
         `• Email: ${email.trim()}`,
         telefon.trim() ? `• Telefon: ${telefon.trim()}` : null,
         '',
-        '———',
-        '',
         mesaj.trim(),
         '',
-        '———',
-        'Trimis din codekidsplay.vercel.app/contact',
+        'Trimis din codekidsplay/contact',
       ]
         .filter(line => line !== null)
         .join('\n'),
