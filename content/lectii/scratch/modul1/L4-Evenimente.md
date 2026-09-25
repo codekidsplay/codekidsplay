@@ -51,13 +51,12 @@ La finalul orei poți să pornești acțiuni pe **evenimente diferite**: <span s
 
 ### 3) Tasta (spațiu)
 1. Tot pe personaj, încă un script:  
-   <span style="color:#E6A800;font-weight:700">când tasta</span> `spațiu` <span style="color:#E6A800;font-weight:700">este apăsată</span>
+   <span style="color:#E6A800;font-weight:700">când tasta</span> `spațiu` <span style="color:#E6A800;font-weight:700">este apăsată</span>  
+   *(tot în <span style="color:#E6A800;font-weight:700">Evenimente</span>, lângă steag și click)*
 2. Sub el:  
    <span style="color:#9966FF;font-weight:700">schimbă efectul culoare cu</span> `25`  
-   *(sau <span style="color:#9966FF;font-weight:700">următorul costum</span>, dacă ai costume)*
+   *(blocul e în <span style="color:#9966FF;font-weight:700">Aspect</span>, lângă `spune` — sau folosește <span style="color:#9966FF;font-weight:700">următorul costum</span>, pe care îl știi din L2)*
 3. Apeși **spațiu** pe tastatură — alt eveniment, altă reacție
-
-*(Blocul e tot în <span style="color:#E6A800;font-weight:700">Evenimente</span>, lângă steag și click.)*
 
 ### 4) Buton + erou (două personaje)
 1. Adaugi un **al doilea personaj** = butonul (stea, buton, minge…)
@@ -66,13 +65,16 @@ La finalul orei poți să pornești acțiuni pe **evenimente diferite**: <span s
    <span style="color:#9966FF;font-weight:700">spune</span> `Go!` pentru `1` secundă  
    *(opțional: un <span style="color:#CF63CF;font-weight:700">sunet</span> scurt)*
 3. Pe **erou** păstrezi scripturile din pașii 1–3 (steag = reset, click sau spațiu = reacție)
-4. Test: <span style="color:#3F8F2A;font-weight:700">steag</span> → totul la loc; click pe **buton** → „Go!”; click pe **erou** / spațiu → eroul face ceva
+4. Așază butonul **lângă** erou, nu peste el — ca click-ul să lovească personajul bun
+5. Test: <span style="color:#3F8F2A;font-weight:700">steag</span> → totul la loc; click pe **buton** → „Go!”; click pe **erou** / spațiu → eroul face ceva
 
 *(Vrei ca butonul să pornească eroul fără click pe erou? Asta e cu **mesaje** — vezi Bonus. Azi e suficient click pe fiecare.)*
 
 ---
 
-## Încearcă tu
+## Încearcă tu — verifică înainte să continui
+*(Checkpoint pe **un** personaj: steag + click + spațiu. Abia la proiect adaugi butonul.)*
+
 - [ ] Ai un script pe <span style="color:#3F8F2A;font-weight:700">steag verde</span> (reset / start)  
 - [ ] Ai un script pe <span style="color:#E6A800;font-weight:700">click pe acest personaj</span>  
 - [ ] Ai un script pe tasta <span style="color:#E6A800;font-weight:700">spațiu</span>  
@@ -83,8 +85,9 @@ La finalul orei poți să pornești acțiuni pe **evenimente diferite**: <span s
 ## Greșeli frecvente
 1. **„Nu merge click-ul”** — apeși steagul, dar scriptul e pe click. Click **pe personaj**, pe scenă (nu pe blocuri).  
 2. **Scriptul pe personajul greșit** — ai lipit pe buton, dar dai click pe erou (sau invers). Uită-te cine e selectat în listă.  
-3. **La steag rămâne haos** — lipsește resetul: pe erou, la steag, pune <span style="color:#4C97FF;font-weight:700">du-te la</span> locul de start.  
-4. **Tasta „nu face nimic”** — click întâi pe scenă (ca Scratch să „asculte” tastatura), apoi spațiu; verifică în bloc că e chiar `spațiu`.
+3. **Click-ul lovește alt personaj** — butonul e peste erou (sau e prea mic și „ascuns”). Mută-le **despărțit** pe scenă; mărește butonul dacă trebuie.  
+4. **La steag rămâne haos** — lipsește resetul: pe erou, la steag, pune <span style="color:#4C97FF;font-weight:700">du-te la</span> locul de start.  
+5. **Tasta „nu face nimic”** — click întâi pe scenă (ca Scratch să „asculte” tastatura), apoi spațiu; verifică în bloc că e chiar `spațiu`.
 
 ---
 
