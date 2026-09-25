@@ -52,22 +52,31 @@ Ca într-un joc sau o poveste pe telefon: schimbi **locul** (oraș → pădure) 
    <span style="color:#9966FF;font-weight:700">următorul costum</span> →  
    <span style="color:#FFAB19;font-weight:700">așteaptă</span> `0.2` secunde  
 4. Personajul „se animă” (merge / dansează pe loc)
+5. Adaugă și un <span style="color:#9966FF;font-weight:700">spune</span> undeva în script (înainte sau după animație), ca personajul să transmită ceva — altfel uiți de dialog la proiect
 
 ### 4) Trecere la scena 2
-Pe **Scenă** (sau pe un personaj), după o replică / așteptare:  
-<span style="color:#9966FF;font-weight:700">comută fundalul la …</span> → scena 2 (ex. `Parc`)
+**Pune blocurile pe Scenă** (ca la pasul 2 — rămâi consecvent; e cel mai clar pentru început).
+
+Exemplu concret pe **Scenă**:
+1. <span style="color:#3F8F2A;font-weight:700">când se face clic pe steagul verde</span>
+2. <span style="color:#9966FF;font-weight:700">comută fundalul la</span> `Casa` *(start pe scena 1)*
+3. <span style="color:#FFAB19;font-weight:700">așteaptă</span> `3` secunde
+4. <span style="color:#9966FF;font-weight:700">comută fundalul la</span> `Parc` *(treci pe scena 2)*
+
+*(Mai târziu poți schimba fundalul și de pe un personaj — dar azi lucrăm pe **Scenă**, ca să nu te încurci.)*
 
 ---
 
 ## Încearcă tu
 - [ ] Ai **2 fundaluri** cu nume clare  
 - [ ] La <span style="color:#3F8F2A;font-weight:700">steag verde</span>, începe **mereu** pe scena 1  
-- [ ] Personajul are **3 costume** și rulează scurt `următorul costum`
+- [ ] Personajul are **3 costume**, rulează scurt `următorul costum`, și are cel puțin un <span style="color:#9966FF;font-weight:700">spune</span>  
+- [ ] După ~3 secunde, fundalul trece la scena 2 (blocuri pe **Scenă**)
 
 ---
 
 ## Greșeli frecvente
-1. **Fundalul nu se schimbă** — ai pus blocul pe personaj, dar ai nevoie și pe **Scenă**, sau ai uitat să selectezi fundalul corect în bloc.  
+1. **Fundalul nu se schimbă** — ai uitat să selectezi **Scena** înainte să lipești blocul, sau în bloc ai lăsat alt fundal decât `Parc` / `Casa`. *(Poți schimba fundalul și de pe un personaj, dar azi pune tot pe **Scenă**.)*  
 2. **Costumele nu se văd** — rulezi animația pe un personaj, dar te uiți la altul; click pe personajul bun în listă.  
 3. **La steag rămâi pe scena 2** — lipsește la start <span style="color:#9966FF;font-weight:700">comută fundalul la</span> scena 1.
 
@@ -85,8 +94,8 @@ Salvat: `Prenume_L2`
 - [ ] Animație scurtă cu <span style="color:#9966FF;font-weight:700">următorul costum</span> + <span style="color:#FFAB19;font-weight:700">așteaptă</span>  
 
 ### Pasul 3 — Povestea pe 2 locuri
-- [ ] Treci clar pe scena 2 (tastă, click sau după <span style="color:#FFAB19;font-weight:700">așteaptă</span>)  
-- [ ] Cel puțin **1** <span style="color:#9966FF;font-weight:700">spune</span> pe **fiecare** scenă  
+- [ ] Pe **Scenă**: după <span style="color:#FFAB19;font-weight:700">așteaptă</span> (ex. 3 sec), <span style="color:#9966FF;font-weight:700">comută fundalul la</span> scena 2  
+- [ ] Cel puțin **1** <span style="color:#9966FF;font-weight:700">spune</span> pe **fiecare** scenă (pe personaj)  
 - [ ] Proiectul rulează ≥ **25 de secunde** fără ajutor  
 
 **Gata când:** un coleg înțelege că ai **2 locuri**, fără să îi explici cu vocea.
