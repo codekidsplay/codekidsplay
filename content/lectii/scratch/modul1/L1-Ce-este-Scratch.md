@@ -42,7 +42,7 @@ Salvează înainte să închizi Scratch și după fiecare parte importantă din 
 ## Capitolele din stânga
 În stânga sunt **categoriile de blocuri**. Nu trebuie să le știi pe toate azi. Important e să știi unde cauți.
 
-| Capitul | La ce folosește |
+| Capitol | La ce folosește |
 |---------|-----------------|
 | <span style="color:#4C97FF;font-weight:700">Mișcare</span> | merge, se rotește, glisează |
 | <span style="color:#9966FF;font-weight:700">Aspect</span> | spune, costum, mărime, culoare |
