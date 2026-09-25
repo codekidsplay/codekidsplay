@@ -1,4 +1,4 @@
-# LECȚIA 5 — Proiect greu: „Labirint pe 2 nivele” (gata în oră)
+# Lecția 5 — Proiect: Labirint pe 2 nivele
 **Modulul 4 · Proiect separat · Cam 2 ore**  
 **Code Kids Play**
 

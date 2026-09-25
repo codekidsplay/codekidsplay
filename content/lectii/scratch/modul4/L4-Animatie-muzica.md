@@ -1,4 +1,4 @@
-# LECȚIA 4 — Proiect greu: „Clip pe acte + control” (gata în oră)
+# Lecția 4 — Proiect: Clip pe acte
 **Modulul 4 · Proiect separat · Cam 2 ore**  
 **Code Kids Play**
 

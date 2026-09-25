@@ -1,4 +1,4 @@
-# LECȚIA 10 — Showcase + badge Cube Crafter
+# Lecția 10 — Prezentare + insignă Cube Crafter
 **Modulul 5 · Lume de cuburi · Cam 2 ore**  
 **Badge: Cube Crafter · Code Kids Play**
 

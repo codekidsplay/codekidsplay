@@ -1,9 +1,10 @@
-# LECȚIA 1 — Start greu: proiectul tău (motorul care merge)
-**Modulul 4 · Proiecte · Cam 2 ore · Fir greu: L1 → L6 → L7**  
+# Lecția 1 — Pornești proiectul tău (motorul)
+**Modulul 4 · Proiecte · Cam 2 ore · Fir: L1 → L6 → L7**  
 **Code Kids Play · Scratch Creator**
 
+> Modulul 4 e **ambitios**: proiecte pe care le poți arăta.  
 > La finalul orei ai un **motor** care rulează — nu doar un sprite pe scenă.  
-> Intro scurt, apoi construiești. Continui la L6 / L7 pe **același** fișier.
+> Continui la L6 / L7 pe **același** fișier.
 
 ---
 
@@ -11,16 +12,16 @@
 
 | Minute | Ce facem |
 |--------|----------|
-| 0–12 | Modulul 4 + firul greu (L1→L6→L7) |
+| 0–12 | Modulul 4 + firul L1→L6→L7 (o singură dată: e un modul solicitat) |
 | 12–25 | Strategie pe foaie (tip + „azi trebuie să meargă…”) |
-| 25–105 | Construiești motorul (checklist greu) |
+| 25–105 | Construiești motorul (checklist) |
 | 105–120 | Demo 30 sec + ce lipsește pentru L6 |
 
 ---
 
 ## Ideea principală
-L2–L5 / L8 / L9 = **proiecte grele separate** (alte fișiere).  
-**Proiectul tău** (L1→L6→L7) = nivel **Creator**: nivele sau multiplayer + unelte din M2–M3.
+L2–L5 / L8 = **proiecte pe teme diferite** (alte fișiere).  
+**Proiectul tău** (L1→L6→L7) = nivel **Creator**: nivele sau 2 jucători + unelte din M2–M3.
 
 ### Strategie pe foaie (~10–12 min)
 - [ ] Titlu + tip (joc / labirint / quiz / poveste cu alegeri / animație-joc)  

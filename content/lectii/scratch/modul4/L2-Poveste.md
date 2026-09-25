@@ -1,4 +1,4 @@
-# LECȚIA 2 — Proiect greu: „Poveste cu alegeri” (gata în oră)
+# Lecția 2 — Proiect: Poveste interactivă cu alegeri
 **Modulul 4 · Proiect separat · Cam 2 ore**  
 **Code Kids Play**
 

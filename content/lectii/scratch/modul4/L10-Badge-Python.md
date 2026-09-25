@@ -1,9 +1,9 @@
-# LECȚIA 10 — Badge Scratch Creator + primul Python (concret)
-**Modulul 4 · Închidere · Cam 2 ore**  
-**Badge: Scratch Creator · Code Kids Play**
+# Lecția 10 — Punte: primul program în Python
+**Modulul 4 · Lecție dedicată · Cam 2 ore**  
+**Code Kids Play**
 
-> Nu e un proiect Scratch nou.  
-> La final: badge **Scratch Creator** + **câteva linii Python care rulează** (aceeași logică ca în Scratch).
+> Nu e un proiect Scratch nou și **nu** e ora de insignă (aia a fost la L9).  
+> Azi deschidem ușa spre un limbaj cu text: **câteva linii Python care rulează**.
 
 ---
 
@@ -11,52 +11,41 @@
 
 | Minute | Ce facem |
 |--------|----------|
-| 0–15 | Recap rapid M1–M4 (ce știi să faci) |
-| 15–35 | Galerie: 1 proiect pe elev (30–40 sec) — opțional dacă L9 a fost lung |
-| 35–50 | Scratch → Python: aceleași idei, alt „limbaj” |
-| 50–95 | **Exercițiu concret:** primul script Python |
-| 95–120 | Badge + diplome / poze + next step CKP |
+| 0–15 | De ce există și alt limbaj? (aceleași idei, alt „alfabet”) |
+| 15–35 | Tabel Scratch → Python (exemple pe tablă) |
+| 35–95 | **Exercițiu concret:** primul script Python |
+| 95–120 | Ce urmează la Code Kids Play + întrebări |
 
 ---
 
-## Recap (pe tablă)
-1. Starter — scenă, mișcare, sunet  
-2. Logic Explorer — dacă, variabile, labirint  
-3. Game Builder — scor, vieți, clone, meniu  
-4. Creator — proiecte grele + nivele / multiplayer + proiectul tău  
+## Ideea principală
+În Scratch ai lipit **blocuri**. În Python **scrii** instrucțiuni. Logica e aceeași: ordine, dacă, repetă, variabile.
 
-## Punte Scratch → Python
-| Scratch | Python (ideea) |
-|---------|----------------|
+| Scratch (ce știai) | Python (azi) |
+|--------------------|--------------|
 | `spune` | `print(...)` |
 | variabilă | `scor = 0` |
 | dacă … | `if …:` |
 | repetă | `for` / `while` (demo scurt) |
 
-> Nu înlocuim Scratch azi — **deschidem ușa**.
+> Nu înlocuim Scratch azi — **doar deschidem ușa**.
+
+---
 
 ## Proiect de finalizat AZI — „Primul Python”
 (în editor simplu: Trinket / Replit / IDLE / ce folosește atelierul)
 
-**Minim (toți):**
-- [ ] Rulează un `print` cu numele tău  
-- [ ] O variabilă (ex. `scor`) pe care o modifici  
-- [ ] Un `if` (ex. dacă scor ≥ 3 → mesaj „Nivel trecut”)  
+### Obligatoriu
+- [ ] Rulezi un program care afișează **numele tău** cu `print`  
+- [ ] Ai o **variabilă** (ex. `scor` sau `varsta`)  
+- [ ] Ai un **`if`** simplu (ex. dacă scorul e mare, alt mesaj)  
+- [ ] Programul **rulează fără eroare** (dacă apare o eroare, o citești împreună cu profesorul)
 
-**Bonus:**
-- [ ] Mică buclă `for` care tipărește 3 mesaje  
-- [ ] Compari cu un bloc Scratch echivalent (pe foaie: „asta = dacă”)
+### Bonus
+- [ ] Un `for` scurt (ex. numără de la 1 la 5)  
+- [ ] Compari pe foaie: același „spune + dacă” din Scratch, scris în Python  
 
-**Gata când:** scriptul rulează fără eroare pe ecranul tău.
+---
 
-## Badge
-- [ ] Primești **Scratch Creator**  
-- [ ] Știi următorul pas (curs Python CKP / ce anunță profesorul)
-
-## Bonus / Provocare (dacă ai terminat)
-- [ ] Python: buclă `for` care tipărește 5 linii  
-- [ ] Pe foaie: desenezi un bloc Scratch lângă linia Python echivalentă  
-- [ ] Mini-quiz: 3 întrebări „Scratch sau Python?” pentru un coleg
-
-## Temă
-Arată familiei **un** proiect Scratch + spune: „Urmează Python”.
+## Temă (opțional)
+Adaugă o linie `print` nouă sau un al doilea `if`. Salvează fișierul.

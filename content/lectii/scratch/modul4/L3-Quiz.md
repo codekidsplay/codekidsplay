@@ -1,4 +1,4 @@
-# LECȚIA 3 — Proiect greu: „Quiz pe runde” (gata în oră)
+# Lecția 3 — Proiect: Quiz pe runde
 **Modulul 4 · Proiect separat · Cam 2 ore**  
 **Code Kids Play**
 

@@ -10,6 +10,7 @@ const MODUL_FOLDER: Record<string, string> = {
   m17: 'scratch/modul2',
   m18: 'scratch/modul3',
   m19: 'scratch/modul4',
+  m20: 'scratch/modul5',
   m21: 'microbit/modul1',
   m22: 'microbit/modul2',
   m23: 'microbit/modul3',

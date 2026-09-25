@@ -1,4 +1,4 @@
-# LECȚIA 8 — Proiect greu: „Felicitare cu scene” (gata în oră)
+# Lecția 8 — Proiect: Felicitare pe scene
 **Modulul 4 · Proiect separat · Cam 2 ore**  
 **Code Kids Play**
 

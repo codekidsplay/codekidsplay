@@ -1,4 +1,4 @@
-# LECȚIA 10 — Proiect: „Versiunea finală” + prezentare
+# Lecția 10 — Depanare și finisare
 **Modulul 3 · Jocuri · Cam 2 ore**  
 **Badge: Game Builder · Code Kids Play**
 

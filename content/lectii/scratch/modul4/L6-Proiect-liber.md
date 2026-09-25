@@ -1,4 +1,4 @@
-# LECȚIA 6 — Proiect liber: final greu (continui L1)
+# Lecția 6 — Proiectul tău — versiunea finală
 **Modulul 4 · Proiecte · Cam 2 ore · Fir greu: L1 → L6 → L7**  
 **Code Kids Play · Scratch Creator**
 

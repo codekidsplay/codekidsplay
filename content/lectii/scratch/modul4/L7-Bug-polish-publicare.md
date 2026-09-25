@@ -1,8 +1,9 @@
-# LECȚIA 7 — Bug hunt greu + polish + publicare
-**Modulul 4 · Proiecte · Cam 2 ore · Fir greu: L1 → L6 → L7**  
+# Lecția 7 — Depanare: găsești și repari greșelile
+**Modulul 4 · Proiecte · Cam 2 ore · Fir: L1 → L6 → L7**  
 **Code Kids Play · Scratch Creator**
 
-> Ultima oră pe proiectul greu: repari serios, lustruiești ca pentru public, partajezi.  
+> Skill dedicat: **depanare** (găsești greșeala, o repari, verifici din nou).  
+> Apoi finisezi ca pentru public și partajezi.  
 > Colegul trebuie să treacă **singur** de la start la final.
 
 ---
@@ -11,10 +12,10 @@
 
 | Minute | Ce facem |
 |--------|----------|
-| 0–10 | Bug vs polish vs „feature nouă” (azi: fără feature uriașe) |
-| 10–30 | Test dur: scrie **4** probleme (tu + un coleg) |
-| 30–75 | Repară minim **3** + polish din checklist |
-| 75–100 | Publicare + instrucțiuni clare pe proiect |
+| 0–15 | Ce e o greșeală? Cum o găsești pas cu pas (metodă pe tablă) |
+| 15–35 | Test: scrie **4** probleme (tu + un coleg) |
+| 35–80 | Repară minim **3** + finisare din checklist |
+| 80–100 | Publicare + instrucțiuni clare pe proiect |
 | 100–115 | Test final coleg (5 min, zero ajutor) |
 | 115–120 | Gata pentru L9 |
 
@@ -23,6 +24,12 @@
 ## Ideea principală
 Nivel Creator = proiectul **rezistă** când îl joacă altcineva.  
 Nu adăuga un joc nou — **închide** ce ai.
+
+### Metodă de depanare (învață-o azi)
+1. **Reproduci** greșeala (ce apeși ca să apară?)  
+2. **Îngustezi** unde e (care personaj / care script?)  
+3. **Schimbi o singură chestie**, testezi  
+4. **Bifezi** pe foaie: „reparat: …”
 
 ### Bug-uri „grele” de căutat (exemple)
 - scor / vieți / **nivel** nu se resetează la restart  
