@@ -1,26 +1,106 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --ckp-ink: #0c1f2b;
+  --ckp-ink-soft: #243b4a;
+  --ckp-muted: #2f4654;
+  --ckp-muted-on-dark: #e8eef2;
+  --ckp-mist: #f3eef8;
+  --ckp-foam: #f7f9fc;
+  /* Din logo Code Kids Play */
+  --ckp-blue: #0840c8;
+  --ckp-blue-deep: #0635a8;
+  --ckp-purple: #8820b8;
+  --ckp-purple-deep: #7018a0;
+  --ckp-red: #f83030;
+  --ckp-red-deep: #d42222;
+  --ckp-coral: var(--ckp-red);
+  --ckp-coral-deep: var(--ckp-red-deep);
+  --ckp-sky: var(--ckp-blue);
+  --background: var(--ckp-foam);
+  --foreground: var(--ckp-ink);
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-display: var(--font-display);
+  --font-body: var(--font-body);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  font-size: 16px;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-body), ui-sans-serif, system-ui, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  /* nimic sub 12px pe site */
+  -webkit-text-size-adjust: 100%;
+}
+
+/* Tailwind text-xs = 12px — forțăm minimul pe orice override mai mic */
+.text-\[10px\],
+.text-\[11px\] {
+  font-size: 12px !important;
+}
+
+@keyframes ckp-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes ckp-ken {
+  from {
+    transform: scale(1.08);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes ckp-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.ckp-fade-up {
+  animation: ckp-fade-up 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.ckp-fade-up-delay {
+  animation: ckp-fade-up 0.8s cubic-bezier(0.22, 1, 0.36, 1) 0.15s both;
+}
+
+.ckp-fade-up-delay-2 {
+  animation: ckp-fade-up 0.8s cubic-bezier(0.22, 1, 0.36, 1) 0.3s both;
+}
+
+.ckp-ken {
+  animation: ckp-ken 12s ease-out both;
+}
+
+.ckp-fade-in {
+  animation: ckp-fade-in 1s ease both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ckp-fade-up,
+  .ckp-fade-up-delay,
+  .ckp-fade-up-delay-2,
+  .ckp-ken,
+  .ckp-fade-in {
+    animation: none;
+  }
 }
