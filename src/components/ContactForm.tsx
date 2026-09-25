@@ -87,6 +87,7 @@ export default function ContactForm() {
           name="mesaj"
           required
           rows={5}
+          placeholder="Nume copil, vârstă, curs de interes…"
           value={mesaj}
           onChange={e => setMesaj(e.target.value)}
           className="w-full rounded-xl border border-[var(--ckp-ink)]/15 bg-white px-4 py-3 text-[var(--ckp-ink)] outline-none focus:border-[var(--ckp-blue)] resize-y min-h-[120px]"
