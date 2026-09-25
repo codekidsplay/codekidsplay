@@ -22,8 +22,11 @@ Azi e **filmul tău scurt**: aceleași blocuri, dar o poveste cap-coadă.
 |--------|----------|
 | 0–10 | Obiectiv + ce trebuie să aibă clipul (checklist pe scurt) |
 | 10–20 | Pas cu pas: ordinea de lucru + **Încearcă tu** (schelet) |
-| 20–100 | Proiectul „Personajul meu” |
-| 100–120 | Recap, bonus, arăți unui coleg |
+| 20–50 | Proiect: Pasul 1–2 (lumea + povestea pe rând) — **schelet funcțional** |
+| 50–100 | Proiect: Pasul 3 (lungime 30–60 sec, lustruire, arăți unui coleg) |
+| 100–120 | Recap, bonus, arăți clasei / salvare |
+
+*(Repere pentru profesor: la ~50 min, cine n-are încă intro→acțiune→final pe steag = de ajutat întâi pe schelet, nu pe detalii.)*
 
 ---
 
@@ -37,10 +40,13 @@ Pe personajul tău (și scenă, dacă schimbi fundalul):
 | 1 | Fundal clar | L2 |
 | 2 | ≥ **2 costume** | L2, L8 |
 | 3 | Steag = **start curat** (loc, direcție, costum, mărime) | L3–L8 |
-| 4 | Mișcare **sau** animație cu <span style="color:#FFAB19;font-weight:700">repetă</span> + <span style="color:#FFAB19;font-weight:700">așteaptă</span> | L3, L8 |
-| 5 | Cel puțin un <span style="color:#9966FF;font-weight:700">spune</span> / <span style="color:#9966FF;font-weight:700">gândește</span> | L5 |
-| 6 | Cel puțin un <span style="color:#CF63CF;font-weight:700">sunet</span> | L6 |
-| 7 | Durează cam **30–60 sec** | ritm cu `așteaptă` |
+| 4 | Poziții cu **x/y** (`du-te la` / `glisează` la puncte — nu doar la reset) | L7 |
+| 5 | Mișcare **sau** animație cu <span style="color:#FFAB19;font-weight:700">repetă</span> + <span style="color:#FFAB19;font-weight:700">așteaptă</span> | L3, L8 |
+| 6 | Cel puțin un <span style="color:#9966FF;font-weight:700">spune</span> / <span style="color:#9966FF;font-weight:700">gândește</span> | L5 |
+| 7 | Cel puțin un <span style="color:#CF63CF;font-weight:700">sunet</span> | L6 |
+| 8 | Durează cam **30–60 sec** | ritm cu `așteaptă` |
+
+*(Rândul 4: folosește x/y **activ** pe traseu — ex. 2 opriri pe scenă — nu doar `du-te la` la steag.)*
 
 ### 2) Ordinea bună de lucru (recomandat)
 **Un singur script pe steag**, pe rând — nu totul amestecat:
@@ -53,7 +59,7 @@ Pe personajul tău (și scenă, dacă schimbi fundalul):
    <span style="color:#9966FF;font-weight:700">anulează efectele grafice</span> →  
    <span style="color:#CF63CF;font-weight:700">oprește toate sunetele</span>
 2. **Introducere** — cine e: <span style="color:#9966FF;font-weight:700">spune</span> / <span style="color:#9966FF;font-weight:700">gândește</span> (+ opțional sunet de start)
-3. **Acțiune** — plimbare (`mergi` / `glisează` / x/y) **și/sau** dans (`repetă` + `următorul costum` + `așteaptă`)  
+3. **Acțiune** — plimbare pe **puncte x/y** (`glisează` / `du-te la`, ca la L7) **și/sau** dans (`repetă` + `următorul costum` + `așteaptă`)  
    *(dacă ai **2** bucle: **una după alta**, ca la L8 — nu C în C)*
 4. **Final** — <span style="color:#CF63CF;font-weight:700">sunet</span> + <span style="color:#9966FF;font-weight:700">spune</span> `Gata!` / mesaj scurt (**în afara** buclelor)
 
@@ -97,7 +103,7 @@ Salvat: `Prenume_L9`
 
 ### Pasul 2 — Povestea pe rând
 - [ ] **Intro:** cine e (spune / gândește)  
-- [ ] **Acțiune:** mișcare **sau** `repetă` + costum / mișcare, cu `așteaptă`  
+- [ ] **Acțiune:** mișcare cu **x/y** (`glisează` / `du-te la` pe traseu) **și/sau** `repetă` + costum, cu `așteaptă`  
 - [ ] **Final:** sunet + mesaj — o singură dată, după acțiune  
 
 ### Pasul 3 — Gata de arătat
@@ -111,7 +117,7 @@ Salvat: `Prenume_L9`
 
 ## Bonus (dacă ai terminat mai devreme)
 - [ ] Clipul durează **≥45 secunde**  
-- [ ] **2 personaje** (dialog pe rând cu `așteaptă`, ca la L5)  
+- [ ] **2 personaje** (dialog pe rând cu `așteaptă`, ca la L5) — la steag: **reset pe amândouă** (loc/costum; cine e selectat în listă contează)  
 - [ ] La final: <span style="color:#9966FF;font-weight:700">comută fundalul la</span> … + mesaj + sunet  
 
 ## Recapitulare rapidă
