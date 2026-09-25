@@ -153,7 +153,8 @@ export default function ContactPage() {
                 Scrie-ne
               </h2>
               <p className="text-[var(--ckp-muted)] text-sm mb-6 leading-relaxed">
-                Completează formularul — se deschide email-ul tău cu mesajul pregătit.
+                Completează formularul — se deschide email-ul tău cu mesajul pregătit. Alege motivul și, dacă vrei,
+                vârsta copilului și atelierul.
               </p>
               <ContactForm />
             </div>
