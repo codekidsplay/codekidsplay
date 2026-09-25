@@ -200,7 +200,7 @@ export const lectii = [
     'Coordonate X și Y',
     'Repetă și așteaptă',
     'Mini-proiect: Personajul meu',
-    'Recapitulare Modul 1 — prezentare',
+    'Recapitulare Modul 1 — completare + prezentare',
   ]),
   // Scratch Modul 2
   ...genLectii('m17', [
