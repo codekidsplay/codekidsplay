@@ -158,13 +158,6 @@ export default function LoginForm() {
               </button>
             </form>
           )}
-
-          <div className="mt-6 pt-4 border-t border-slate-200 text-sm text-slate-700 space-y-1">
-            <p className="font-semibold text-slate-900">Demo:</p>
-            <p>Admin — admin@codekidsplay.ro / admin123</p>
-            <p>Părinte — popescu.parinte@gmail.com / parinte123</p>
-            <p>Elev — andrei.p / 1234</p>
-          </div>
         </div>
       </div>
     </div>
