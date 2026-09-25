@@ -52,6 +52,14 @@ export default function ContactPage() {
                   <a href="tel:+40736830830" className="text-[var(--ckp-blue)] hover:underline font-medium">
                     0736 830 830
                   </a>
+                  <a
+                    href="https://wa.me/40736830830"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-1 block text-sm font-medium text-[var(--ckp-blue)] hover:underline"
+                  >
+                    WhatsApp ↗
+                  </a>
                 </div>
               </li>
               <li className="flex gap-3 items-start">
