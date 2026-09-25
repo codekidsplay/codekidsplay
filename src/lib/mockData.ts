@@ -192,7 +192,7 @@ export const lectii = [
   // Scratch Modul 1
   ...genLectii('m16', [
     'Ce este Scratch? Cont și interfață',
-    'Scena, fundaluri, costume',
+    'Lumea mea: 2 scene și costume',
     'Mișcare pe scenă',
     'Evenimente',
     'Blocuri de aspect',
