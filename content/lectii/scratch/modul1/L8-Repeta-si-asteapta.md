@@ -49,12 +49,14 @@ La finalul orei poți folosi <span style="color:#FFAB19;font-weight:700">repetă
 
 ### 3) Animație cu costum
 1. Personajul are **cel puțin 2 costume** (tab Costume — ca la L2)
-2. Script (sau în altă buclă):  
-   <span style="color:#FFAB19;font-weight:700">repetă</span> `8` →  
+2. **Recomandat azi:** tot în **același script**, **sub** bucla de pătrat (nu înăuntrul ei) — încă un <span style="color:#FFAB19;font-weight:700">repetă</span> `8`:  
    înăuntru: <span style="color:#9966FF;font-weight:700">următorul costum</span> →  
    <span style="color:#FFAB19;font-weight:700">așteaptă</span> `0.15`
-3. Pare că „merge” / dansează pe loc
-4. Fără `așteaptă`, costumele trec prea repede și nu se văd
+3. Ordinea: întâi pătratul se termină, **apoi** dansul de costume (două bucle **una după alta**, nu una în alta)
+4. Pare că „merge” / dansează pe loc
+5. Fără `așteaptă`, costumele trec prea repede și nu se văd
+
+*(Nu băga `repetă` de costume **în** `repetă` de pătrat — azi evităm bucle în bucle.)*
 
 ### 4) Reset la steag + final
 1. **Chiar sub** steag, înainte de bucle:  
@@ -62,8 +64,8 @@ La finalul orei poți folosi <span style="color:#FFAB19;font-weight:700">repetă
    <span style="color:#4C97FF;font-weight:700">orientează-te în direcția</span> `90` →  
    <span style="color:#9966FF;font-weight:700">comută la costumul</span> `…` (primul)  
    *(opțional: <span style="color:#9966FF;font-weight:700">setează mărimea la</span> `100`)*
-2. Apoi: o buclă de dans / mișcare
-3. După buclă (în **afara** lui `repetă`, lipită sub el):  
+2. Apoi: bucla 1 (pătrat / mișcare) → bucla 2 (costume), pe rând
+3. După **ambele** bucle (în **afara** lor, lipită sub ultima):  
    <span style="color:#9966FF;font-weight:700">spune</span> `Gata!` pentru `2` secunde
 
 *(Azi folosim `repetă` cu **număr**. Există și `forever` — îl lăsăm pentru mai târziu; azi vrem să se **oprească** și să salute.)*
@@ -84,7 +86,8 @@ La finalul orei poți folosi <span style="color:#FFAB19;font-weight:700">repetă
 1. **Nu se repetă** — blocurile sunt **sub** `repetă`, nu **în** el. Trage-le înăuntrul „C”-ului.  
 2. **Prea rapid / nu se vede** — lipsește <span style="color:#FFAB19;font-weight:700">așteaptă</span> în buclă, sau e `0` / prea mic.  
 3. **La steag e haos** — fără reset: costumul / locul / direcția rămân de la runda trecută.  
-4. **„Gata!” apare de 8 ori** — ai pus `spune` **în** `repetă`; mută-l **sub** buclă (după ce se termină).
+4. **„Gata!” apare de 8 ori** — ai pus `spune` **în** `repetă`; mută-l **sub** buclă (după ce se termină).  
+5. **C în C / greșit pe loc** — ai băgat din greșeală un `repetă` **în** alt `repetă`, sau `următorul costum` a rămas **în afara** buclei de dans. Verifică: două „C”-uri **una sub alta**, iar costumul **în** C-ul de dans.
 
 ---
 
@@ -95,9 +98,10 @@ Salvat: `Prenume_L8`
 - [ ] La <span style="color:#3F8F2A;font-weight:700">steag verde</span>: loc de start + costum de start (+ direcție, dacă te învârți)  
 
 ### Pasul 2 — Bucla principală
-- [ ] Cel puțin **1** <span style="color:#FFAB19;font-weight:700">repetă</span> cu număr (ex. 4–10)  
+- [ ] Cel puțin **1** <span style="color:#FFAB19;font-weight:700">repetă</span> cu număr (ex. 4–10); ideal **2** pe rând (mișcare, apoi costume)  
 - [ ] Înăuntru: mișcare **și/sau** <span style="color:#9966FF;font-weight:700">următorul costum</span>  
 - [ ] Înăuntru: <span style="color:#FFAB19;font-weight:700">așteaptă</span> (ritm vizibil)  
+- [ ] Buclele sunt **una după alta**, nu una în alta  
 
 ### Pasul 3 — Final
 - [ ] După buclă: <span style="color:#9966FF;font-weight:700">spune</span> `Gata!` (sau mesaj scurt) — **o singură dată**  
