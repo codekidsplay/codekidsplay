@@ -130,4 +130,5 @@ Salvat: `Prenume_L9`
 - Unde stă mesajul „Gata!” față de `repetă`?
 
 ## Temă
-Opțional: lustruiește 1 detaliu (sunet mai bun, o replică, un loc x/y) — același fișier `Prenume_L9`. La L10 îl arăți clasei.
+Opțional: lustruiește 1 detaliu (sunet, o replică, un loc x/y) — același fișier `Prenume_L9`.  
+La **L10** continui același proiect: **completare** (îmbunătățiri) + prezentare + insignă.
