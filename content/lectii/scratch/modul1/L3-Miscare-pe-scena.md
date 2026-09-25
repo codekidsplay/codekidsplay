@@ -33,11 +33,16 @@ La finalul orei poți să muți personajul pe scenă cu blocuri din <span style=
 1. Selectezi **personajul** (nu Scena)
 2. Din <span style="color:#E6A800;font-weight:700">Evenimente</span>:  
    <span style="color:#3F8F2A;font-weight:700">când se face clic pe steagul verde</span>
-3. Din <span style="color:#4C97FF;font-weight:700">Mișcare</span> lipești pe rând:  
+3. Din <span style="color:#4C97FF;font-weight:700">Mișcare</span>, opțional chiar sub steag:  
+   <span style="color:#4C97FF;font-weight:700">orientează-te în direcția</span> `90` *(spre dreapta — e lângă `întoarce-te` în același capitol)*
+4. Apoi lipești pe rând:  
+   <span style="color:#4C97FF;font-weight:700">mergi</span> `50` pași →  
+   <span style="color:#4C97FF;font-weight:700">întoarce-te la dreapta cu</span> `90` grade →  
    <span style="color:#4C97FF;font-weight:700">mergi</span> `50` pași →  
    <span style="color:#4C97FF;font-weight:700">întoarce-te la dreapta cu</span> `90` grade →  
    <span style="color:#4C97FF;font-weight:700">mergi</span> `50` pași
-4. Apeși <span style="color:#3F8F2A;font-weight:700">steagul verde</span> — vezi un L pe scenă
+5. Ca să vezi clar fiecare pas, între mișcări poți pune <span style="color:#FFAB19;font-weight:700">așteaptă</span> `0.5` secunde — îl găsești în <span style="color:#FFAB19;font-weight:700">Control</span>
+6. Apeși <span style="color:#3F8F2A;font-weight:700">steagul verde</span> — vezi un traseu în U (2 întoarceri)
 
 ### 2) Glisează (mișcare lină)
 1. Tot pe **personaj**, sub scriptul de mai sus (sau într-un script nou cu steag):  
@@ -63,7 +68,7 @@ La finalul orei poți să muți personajul pe scenă cu blocuri din <span style=
 
 ## Încearcă tu
 - [ ] Ai un script pe **personaj** (nu pe Scenă)  
-- [ ] Folosești cel puțin o dată <span style="color:#4C97FF;font-weight:700">mergi</span> + <span style="color:#4C97FF;font-weight:700">întoarce</span>  
+- [ ] Folosești cel puțin **2** <span style="color:#4C97FF;font-weight:700">întoarce</span> + câteva <span style="color:#4C97FF;font-weight:700">mergi</span>  
 - [ ] Ai o <span style="color:#4C97FF;font-weight:700">glisează</span> de ~1 secundă  
 - [ ] La <span style="color:#3F8F2A;font-weight:700">steag verde</span>, începe mereu din același loc (`du-te la`)
 
@@ -72,7 +77,8 @@ La finalul orei poți să muți personajul pe scenă cu blocuri din <span style=
 ## Greșeli frecvente
 1. **Nu se mișcă** — ai lipit blocurile pe **Scenă**; Scena nu „merge”. Selectează personajul, apoi lipește din nou.  
 2. **Dispare de pe scenă** — prea mulți pași fără reset; la steag pune întâi <span style="color:#4C97FF;font-weight:700">du-te la</span> un loc vizibil.  
-3. **Se învârte haotic** — ai lăsat <span style="color:#4C97FF;font-weight:700">întoarce</span> de multe ori fără să resetezi direcția; la start poți pune și <span style="color:#4C97FF;font-weight:700">orientează-te în direcția</span> `90` (spre dreapta).
+3. **Se învârte haotic** — la start pune <span style="color:#4C97FF;font-weight:700">orientează-te în direcția</span> `90` (tot în <span style="color:#4C97FF;font-weight:700">Mișcare</span>, lângă `întoarce-te`).  
+4. **Personajul stă cu capul în jos** — stilul de rotație e pe „toate direcțiile”. În <span style="color:#4C97FF;font-weight:700">Mișcare</span>, sub listă, schimbă stilul pe **stânga-dreapta** (doar se oglindește, nu se răstoarnă).
 
 ---
 
@@ -90,7 +96,7 @@ Salvat: `Prenume_L3`
 
 ### Pasul 3 — Finalul
 - [ ] La capăt: <span style="color:#9966FF;font-weight:700">spune</span> `Am ajuns!` (sau alt mesaj scurt)  
-- [ ] Traseul se vede clar ≥ **15 secunde** (nu totul într-o clipă — folosește <span style="color:#FFAB19;font-weight:700">așteaptă</span> dacă e nevoie)  
+- [ ] Traseul se vede clar ≥ **15 secunde** — dacă e prea rapid, pune <span style="color:#FFAB19;font-weight:700">așteaptă</span> între pași (capitolul <span style="color:#FFAB19;font-weight:700">Control</span>)  
 - [ ] La din nou steag, **reîncepe** din același loc  
 
 **Gata când:** un coleg urmărește traseul fără să îi explici unde a plecat și unde a ajuns.
