@@ -42,12 +42,13 @@ La finalul orei poți folosi blocurile din <span style="color:#9966FF;font-weigh
 *(`spune` = ce aude lumea; `gândește` = gândul lui — tot în <span style="color:#9966FF;font-weight:700">Aspect</span>, unul sub altul.)*
 
 ### 2) Mărime
-1. Tot pe personaj, în același script (sau după un <span style="color:#FFAB19;font-weight:700">așteaptă</span> din <span style="color:#FFAB19;font-weight:700">Control</span>):  
+1. Tot pe personaj, **în același script**, după gând / spune:  
+   <span style="color:#FFAB19;font-weight:700">așteaptă</span> `1` secundă *(din <span style="color:#FFAB19;font-weight:700">Control</span>)* →  
    <span style="color:#9966FF;font-weight:700">modifică mărimea cu</span> `20` →  
    <span style="color:#FFAB19;font-weight:700">așteaptă</span> `1` secundă →  
    <span style="color:#9966FF;font-weight:700">modifică mărimea cu</span> `-20`
 2. Personajul crește, apoi revine
-3. Alternativă: <span style="color:#9966FF;font-weight:700">setează mărimea la</span> `100` % — fixează exact cât de mare e
+3. Alternativă fixă: <span style="color:#9966FF;font-weight:700">setează mărimea la</span> `100` % — pui exact cât de mare e (util la reset)
 
 ### 3) Efect de culoare
 1. Tot în <span style="color:#9966FF;font-weight:700">Aspect</span>, lângă `spune`:  
@@ -61,9 +62,11 @@ La finalul orei poți folosi blocurile din <span style="color:#9966FF;font-weigh
 ### 4) Reset curat la steag
 1. **Chiar sub** <span style="color:#3F8F2A;font-weight:700">steagul verde</span>, înainte de dialog, pune:  
    <span style="color:#9966FF;font-weight:700">setează mărimea la</span> `100` →  
-   <span style="color:#9966FF;font-weight:700">anulează efectele grafice</span>
+   <span style="color:#9966FF;font-weight:700">anulează efectele grafice</span>  
+   *(`anulează efectele grafice` = șterge tot dintr-o dată: culoare, fantomă, vârtej — orice ai pus)*
 2. Fără asta, la al doilea steag personajul rămâne **uriaș** sau **colorat straniu**
-3. (Opțional) <span style="color:#9966FF;font-weight:700">ascunde</span> / <span style="color:#9966FF;font-weight:700">arată</span> — tot în Aspect; azi nu e obligatoriu
+3. Dacă ai mărit de multe ori din curiozitate și a devenit enorm / minuscul: verifică să ai <span style="color:#9966FF;font-weight:700">setează mărimea la</span> `100` la steag — apoi rulează din nou
+4. (Opțional) <span style="color:#9966FF;font-weight:700">ascunde</span> / <span style="color:#9966FF;font-weight:700">arată</span> — tot în Aspect; azi nu e obligatoriu
 
 ---
 
