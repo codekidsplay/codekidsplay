@@ -1,46 +1,60 @@
-# Lecția 1 — Primii pași în Scratch
+# Lecția 1 — Primii pași + Cardul meu animat
 **Modulul 1 · Primii pași**  
 **Code Kids Play · Scratch Starter**
 
-> Prima parte: ecranul Scratch (pornire, salvare, capitole).  
-> Apoi proiectul **„Cardul meu animat”** — un clip scurt pe care îl poți arăta.
+> Întâi înveți ecranul Scratch (pornire, salvare, capitole).  
+> Apoi faci proiectul **„Cardul meu animat”** — un clip scurt despre tine.  
+> Fișier: `Prenume_L1` (ex. `Ana_L1`)
 
 ---
 
-## Idei de bază
-În Scratch lipim **blocuri** ca să facem personajele să se miște și să vorbească.
+## Obiectiv
+La finalul orei știi să pornești un proiect cu <span style="color:#3F8F2A;font-weight:700">steagul verde</span>, să salvezi, și poți face un scurt clip cu **2 personaje** care vorbesc și se mișcă.
 
-Pe ecran:
-- **Scena** — locul unde se vede proiectul (dreapta sus)
-- **Personaj** — cine apare pe scenă (de exemplu pisica)
+## De ce contează
+Scratch e ca un constructor: lipești **blocuri** (instrucțiuni) ca personajele să facă ceva pe **scenă**.  
+Azi înveți „butoanele” de start — fără ele, restul lecțiilor nu pornesc.
+
+---
+
+## Planul orei (120 minute)
+
+| Minute | Ce facem |
+|--------|----------|
+| 0–10 | Obiectiv + tur scurt pe ecran (scenă, personaj, steag, stop) |
+| 10–30 | Pas cu pas: start, salvare, capitole + **Încearcă tu** |
+| 30–100 | Proiectul „Cardul meu animat” |
+| 100–120 | Recap, bonus, arăți proiectul |
+
+---
+
+## Pas cu pas
+
+### 1) Ce vezi pe ecran
+- **Scena** — locul unde se joacă proiectul (dreapta sus)
+- **Personaj** — cine apare pe scenă (ex. pisica). În Scratch EN: *sprite*
 - **Blocuri** — instrucțiunile pe care le tragi cu mouse-ul
 
-**Un bloc = o acțiune.** Un proiect = mai multe acțiuni puse una sub alta.
+**Un bloc = o acțiune.** Un proiect = mai multe acțiuni una sub alta.
 
----
-
-## Cum pornește un proiect
-1. Din <span style="color:#E6A800;font-weight:700">Evenimente</span> iei blocul:  
+### 2) Cum pornește proiectul
+1. Din <span style="color:#E6A800;font-weight:700">Evenimente</span> iei:  
    <span style="color:#3F8F2A;font-weight:700">când se face clic pe steagul verde</span>
 2. Sub el lipesti ce vrei să se întâmple
-3. Apeși <span style="color:#3F8F2A;font-weight:700">steagul verde</span> de pe scenă — proiectul începe
-4. Butonul **roșu** oprește proiectul
+3. Apeși <span style="color:#3F8F2A;font-weight:700">steagul verde</span> de pe scenă — începe
+4. Butonul **roșu** oprește
 
 Fără acest bloc de start (sau alt eveniment), celelalte blocuri nu rulează.
 
----
-
-## Cum salvezi proiectul
+### 3) Cum salvezi
 1. Meniul **Fișier** (sau contul Scratch, dacă ești autentificat)
 2. **Salvează acum** sau **Salvează pe computerul tău**
-3. Nume: `Prenume_L1` (exemplu: `Ana_L1`)
+3. Nume: `Prenume_L1`
 
-Salvează înainte să închizi Scratch și după fiecare parte importantă din proiect.
+Salvează înainte să închizi Scratch și după fiecare parte importantă.
 
----
-
-## Capitolele din stânga
-În stânga sunt **categoriile de blocuri**. Nu trebuie să le știi pe toate azi. Important e să știi unde cauți.
+### 4) Capitolele din stânga
+Nu trebuie să le știi pe toate azi — trebuie să știi **unde cauți**.
 
 | Capitol | La ce folosește |
 |---------|-----------------|
@@ -57,12 +71,18 @@ Azi folosim mai ales: **Evenimente**, **Aspect**, **Mișcare**, **Control**, **S
 
 ---
 
-## Încălzire (toată clasa, împreună)
-Facem pe rând, cu profesorul:
-1. Găsim pe ecran: scena, personajul, steagul verde, butonul stop  
-2. Arătăm capitolele: Evenimente, Aspect, Mișcare, Control, Sunet  
-3. Un script scurt: <span style="color:#3F8F2A;font-weight:700">steag verde</span> → <span style="color:#9966FF;font-weight:700">spune</span> (numele) → o <span style="color:#4C97FF;font-weight:700">mișcare</span>  
-4. Salvăm o dată: `Prenume_L1`
+## Încearcă tu
+Cu profesorul, pe rând:
+- [ ] Găsești: scena, personajul, steagul verde, butonul stop  
+- [ ] Un script scurt: <span style="color:#3F8F2A;font-weight:700">steag verde</span> → <span style="color:#9966FF;font-weight:700">spune</span> (numele tău) → o <span style="color:#4C97FF;font-weight:700">mișcare</span>  
+- [ ] Salvezi o dată: `Prenume_L1`
+
+---
+
+## Greșeli frecvente
+1. **Nu se întâmplă nimic** — lipsește <span style="color:#3F8F2A;font-weight:700">când se face clic pe steagul verde</span> deasupra blocurilor, sau nu ai apăsat steagul.  
+2. **Replicile se calcă** — lipsește <span style="color:#FFAB19;font-weight:700">așteaptă</span> între <span style="color:#9966FF;font-weight:700">spune</span>.  
+3. **Ai pierdut proiectul** — nu ai salvat; salvează des, cu același nume `Prenume_L1`.
 
 ---
 
@@ -72,35 +92,40 @@ Salvat: `Prenume_L1`
 ### Pasul 1 — Personajele
 - [ ] Înlocuiești personajul din start cu unul din bibliotecă  
 - [ ] Adaugi un **al doilea personaj**  
-- [ ] Așezi personajele pe scenă (stânga / dreapta), ca să se vadă amândouă  
+- [ ] Îi așezi pe scenă (stânga / dreapta), ca să se vadă amândouă  
 
 ### Pasul 2 — Dialogul
-- [ ] Ai cel puțin **4** blocuri <span style="color:#9966FF;font-weight:700">spune</span> (pe ambele personaje împreună)  
-- [ ] Între replici folosești <span style="color:#FFAB19;font-weight:700">așteaptă</span>, ca textul să se vadă pe rând, nu dintr-o dată  
-- [ ] Din dialog se înțelege **cine ești** (nume, un lucru despre tine)  
+- [ ] Cel puțin **4** blocuri <span style="color:#9966FF;font-weight:700">spune</span> (pe ambele personaje împreună)  
+- [ ] Între replici: <span style="color:#FFAB19;font-weight:700">așteaptă</span> (text pe rând, nu dintr-o dată)  
+- [ ] Din dialog se înțelege **cine ești** (nume + un lucru despre tine)  
 
 ### Pasul 3 — Mișcare și aspect
-- [ ] Cel puțin un personaj se mișcă pe un traseu (<span style="color:#4C97FF;font-weight:700">glisează</span> sau <span style="color:#4C97FF;font-weight:700">mergi</span>), nu doar un pas mic  
+- [ ] Cel puțin un personaj se mișcă pe un traseu (<span style="color:#4C97FF;font-weight:700">glisează</span> sau <span style="color:#4C97FF;font-weight:700">mergi</span>)  
 - [ ] Schimbi <span style="color:#9966FF;font-weight:700">costum</span> sau <span style="color:#9966FF;font-weight:700">efect</span> de cel puțin 2 ori  
 
 ### Pasul 4 — Sunet și final
 - [ ] Ai **1** <span style="color:#CF63CF;font-weight:700">sunet</span> (la început sau la final)  
-- [ ] Proiectul durează cel puțin **20 de secunde** până la mesajul final  
-- [ ] Când apeși din nou <span style="color:#3F8F2A;font-weight:700">steagul verde</span>, proiectul reîncepe de la capăt  
+- [ ] Proiectul durează cel puțin **20 de secunde**  
+- [ ] La din nou <span style="color:#3F8F2A;font-weight:700">steag verde</span>, reîncepe de la capăt  
 - [ ] Proiectul este **salvat**  
 
-**Gata când:** apeși steagul verde și, fără să explici cu vocea, se înțelege cine ești din ce se întâmplă pe scenă.
+**Gata când:** apeși steagul verde și, fără să explici cu vocea, se înțelege cine ești.
 
 ---
 
 ## Bonus (dacă ai terminat mai devreme)
-- [ ] Adaugi un al treilea personaj **sau** schimbi fundalul în timpul proiectului  
+- [ ] Al treilea personaj **sau** schimbi fundalul în timpul proiectului  
 - [ ] La final, personajele se apropie și au un mesaj împreună  
-- [ ] Proiectul pornește și când dai click pe un personaj (nu doar pe steag)
+- [ ] Pornește și când dai click pe un personaj (nu doar pe steag)
 
-## La finalul orei
-- [ ] Salvezi din nou  
-- [ ] Arăți proiectul unui coleg sau profesorului
+## Recapitulare rapidă
+1. <span style="color:#3F8F2A;font-weight:700">Steagul verde</span> pornește; fără blocul de start, nu rulează nimic  
+2. Capitolele din stânga = unde cauți blocurile (azi: Evenimente, Aspect, Mișcare, Control, Sunet)  
+3. Între replici folosești <span style="color:#FFAB19;font-weight:700">așteaptă</span>  
+
+**Quiz scurt (cu profesorul):**  
+- Ce bloc trebuie primul?  
+- Cum salvezi proiectul?
 
 ## Temă
-Opțional: adaugă o replică nouă sau un sunet mai potrivit. Salvează același fișier.
+Opțional: o replică nouă sau un sunet mai potrivit — același fișier `Prenume_L1`.
