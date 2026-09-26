@@ -316,7 +316,7 @@ export default function LandingPage() {
           </a>
         </nav>
         <span className="text-center sm:text-right">
-          Code Kids Play Focsani · © {new Date().getFullYear()}
+          Code Kids Play Focșani · © {new Date().getFullYear()}
         </span>
       </footer>
     </div>

@@ -1,6 +1,12 @@
+import type { Metadata } from 'next'
 import Link from 'next/link'
 import BrandLogo from '@/components/BrandLogo'
 import ContactForm from '@/components/ContactForm'
+
+export const metadata: Metadata = {
+  title: 'Contact — Code Kids Play Focșani',
+  description: 'Scrie-ne, sună-ne sau vino direct la atelierul Code Kids Play din Focșani, Clădirea RIX.',
+}
 
 const MAP_LAT = '45.699011'
 const MAP_LNG = '27.181703'
@@ -229,7 +235,7 @@ export default function ContactPage() {
           </a>
         </nav>
         <span className="text-center sm:text-right">
-          Code Kids Play Focsani · © {new Date().getFullYear()}
+          Code Kids Play Focșani · © {new Date().getFullYear()}
         </span>
       </footer>
     </div>
