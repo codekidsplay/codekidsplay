@@ -30,7 +30,13 @@ export function markdownToSpeechText(markdown: string, opts?: { titlu?: string; 
 
   // Limită sigură pentru TTS (input + durată audio)
   const max = 5500
-  const body = t.length > max ? `${t.slice(0, max)} … Sfârșitul fragmentului citit.` : t
+  let body = t.length > max ? `${t.slice(0, max)} … Sfârșitul fragmentului citit.` : t
+
+  // Pauze naturale — ajută ritmul lent pentru copii
+  body = body
+    .replace(/([.!?])\s+/g, '$1 ... ')
+    .replace(/:\s+/g, '. ... ')
+    .replace(/;\s+/g, '. ... ')
 
   return `${header}${body}`.trim()
 }

@@ -9,7 +9,7 @@ import { markdownToSpeechText, speechTextHash } from '@/lib/tts/speechText'
 export const maxDuration = 120
 
 /** Schimbă când schimbi ritmul/voce — invalidează cache-ul vechi */
-const TTS_PROFILE = 'gemini-flash-kore-slow-v3'
+const TTS_PROFILE = 'gemini-flash-kore-slow-v4-pauses'
 
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url)

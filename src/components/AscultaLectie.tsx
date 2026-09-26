@@ -1,19 +1,32 @@
 'use client'
 
 import { useEffect, useRef, useState } from 'react'
-import { Volume2, Pause, Play, Square, Loader2 } from 'lucide-react'
+import { Volume2, Pause, Play, Square, Loader2, Turtle, Rabbit } from 'lucide-react'
+
+/** Ritm implicit pentru 8–10 ani (1 = normal) */
+const DEFAULT_RATE = 0.55
 
 interface Props {
   cursId: string
   lectieId: string
   accentColor?: string
-  /** Dacă true, folosește Gemini TTS + cache (Micii Exploratori). Altfel Web Speech. */
   useGemini?: boolean
-  /** Text scurt doar pentru fallback Web Speech */
   fallbackText?: string
 }
 
 type Status = 'idle' | 'loading' | 'playing' | 'paused' | 'unsupported' | 'error'
+
+function applyAudioRate(audio: HTMLAudioElement, rate: number) {
+  audio.defaultPlaybackRate = rate
+  audio.playbackRate = rate
+  try {
+    audio.preservesPitch = true
+    // Safari
+    ;(audio as HTMLAudioElement & { webkitPreservesPitch?: boolean }).webkitPreservesPitch = true
+  } catch {
+    /* ignore */
+  }
+}
 
 export default function AscultaLectie({
   cursId,
@@ -24,8 +37,14 @@ export default function AscultaLectie({
 }: Props) {
   const [status, setStatus] = useState<Status>('idle')
   const [hint, setHint] = useState<string | null>(null)
+  const [rate, setRate] = useState(DEFAULT_RATE)
   const audioRef = useRef<HTMLAudioElement | null>(null)
-  const utterRef = useRef<SpeechSynthesisUtterance | null>(null)
+  const rateRef = useRef(DEFAULT_RATE)
+
+  useEffect(() => {
+    rateRef.current = rate
+    if (audioRef.current) applyAudioRate(audioRef.current, rate)
+  }, [rate])
 
   useEffect(() => {
     return () => {
@@ -64,15 +83,14 @@ export default function AscultaLectie({
     window.speechSynthesis.cancel()
     const u = new SpeechSynthesisUtterance(text)
     u.lang = 'ro-RO'
-    u.rate = 0.92
+    u.rate = rateRef.current
     const voice = pickRoVoice()
     if (voice) u.voice = voice
     u.onend = () => setStatus('idle')
     u.onerror = () => setStatus('idle')
-    utterRef.current = u
     window.speechSynthesis.speak(u)
     setStatus('playing')
-    setHint('Voce din browser (rezervă)')
+    setHint(`Voce browser · ${Math.round(rateRef.current * 100)}% viteză`)
   }
 
   const startGemini = async () => {
@@ -102,8 +120,18 @@ export default function AscultaLectie({
       }
 
       const audio = new Audio(data.url)
-      audio.playbackRate = 0.72
-      audio.preservesPitch = true
+      applyAudioRate(audio, rateRef.current)
+
+      const keepSlow = () => applyAudioRate(audio, rateRef.current)
+      audio.addEventListener('loadedmetadata', keepSlow)
+      audio.addEventListener('play', keepSlow)
+      audio.addEventListener('playing', keepSlow)
+      audio.addEventListener('ratechange', () => {
+        if (Math.abs(audio.playbackRate - rateRef.current) > 0.01) {
+          applyAudioRate(audio, rateRef.current)
+        }
+      })
+
       audioRef.current = audio
       audio.onended = () => setStatus('idle')
       audio.onerror = () => {
@@ -111,8 +139,11 @@ export default function AscultaLectie({
         setStatus('error')
       }
       await audio.play()
+      keepSlow()
       setStatus('playing')
-      setHint(data.cached ? 'Din cache · ritm încetinit' : 'Voce Gemini · ritm încetinit pentru copii')
+      setHint(
+        `${data.cached ? 'Din cache' : 'Gemini'} · viteză ${Math.round(rateRef.current * 100)}%`,
+      )
     } catch {
       if (fallbackText) {
         setHint('Conexiune eșuată — voce din browser.')
@@ -141,6 +172,7 @@ export default function AscultaLectie({
 
   const resume = () => {
     if (audioRef.current) {
+      applyAudioRate(audioRef.current, rateRef.current)
       void audioRef.current.play()
       setStatus('playing')
       return
@@ -160,6 +192,9 @@ export default function AscultaLectie({
     }
     setStatus('idle')
   }
+
+  const slower = () => setRate(r => Math.max(0.4, Math.round((r - 0.1) * 10) / 10))
+  const faster = () => setRate(r => Math.min(1, Math.round((r + 0.1) * 10) / 10))
 
   if (status === 'unsupported') {
     return (
@@ -228,11 +263,29 @@ export default function AscultaLectie({
             </button>
           </>
         ) : null}
+
+        <button
+          type="button"
+          onClick={slower}
+          className="inline-flex items-center gap-1.5 text-xs font-medium border border-slate-200 text-slate-600 px-3 py-2 rounded-xl hover:bg-slate-50"
+          title="Mai lent"
+        >
+          <Turtle size={14} /> Mai lent
+        </button>
+        <button
+          type="button"
+          onClick={faster}
+          className="inline-flex items-center gap-1.5 text-xs font-medium border border-slate-200 text-slate-600 px-3 py-2 rounded-xl hover:bg-slate-50"
+          title="Mai rapid"
+        >
+          <Rabbit size={14} /> Mai rapid
+        </button>
+        <span className="text-xs text-slate-500 tabular-nums">{Math.round(rate * 100)}%</span>
       </div>
       {hint ? <p className="text-xs text-slate-500">{hint}</p> : null}
       {useGemini && status === 'idle' ? (
         <p className="text-xs text-slate-400">
-          Voce Gemini pentru Micii Exploratori — prima dată poate dura ~30–60s, apoi e din cache.
+          Ritm implicit 55% — poți apăsa „Mai lent” în timpul redării. Prima generare ~30–60s.
         </p>
       ) : null}
     </div>
