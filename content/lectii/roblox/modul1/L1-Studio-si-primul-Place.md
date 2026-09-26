@@ -30,7 +30,8 @@ Fără Place salvat și fără Play, restul orelor (traseu Obby, scripturi mai t
 | 35–100 | Proiectul „Primul meu Place” (vezi **Minim vs Complet**) |
 | 100–120 | Recap, bonus, arăți ce ai gata |
 
-**Notă profesor (ritm):** nu explica ribbon-ul întreg (UI, Plugins, Collaborate…). Copiii 12+ vor Play rapid. Dacă grupa e mare: salvare colectivă (numele pe tablă), nu tur individual pe fiecare cont.
+**Azi pe ecran folosim doar:** Viewport · Play / Stop · Part · Move / Scale / Rotate · Anchor.  
+*(Terrain, Toolbox, Script, UI, Plugins — nu le deschidem azi.)*
 
 ---
 

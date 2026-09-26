@@ -50,6 +50,7 @@
 1. **Același Place** se redeschide în M2 — nu șterge lumea la final.  
 2. Salturi: platforme aproape; frustrarea omoară motivația.  
 3. Ancorare: Parts care cad = greșeală frecventă (L4).  
-4. Tipar lecție = Scratch: checkpoint-uri, Minim/Complet, L10 = insignă.
+4. Tipar lecție = Scratch: checkpoint-uri, Minim/Complet, L10 = insignă.  
+5. **L1 ritm:** nu explica ribbon-ul întreg (UI, Plugins, Collaborate…). 12+ vor Play rapid. Grupa mare: salvare colectivă (numele pe tablă), nu tur individual pe fiecare cont.
 
 Modul 2: `../modul2/` · Curriculum: `../README.md`
