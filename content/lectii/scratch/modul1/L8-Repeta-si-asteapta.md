@@ -68,7 +68,8 @@ La finalul orei poți folosi <span style="color:#FFAB19;font-weight:700">repetă
 3. După **ambele** bucle (în **afara** lor, lipită sub ultima):  
    <span style="color:#9966FF;font-weight:700">spune</span> `Gata!` pentru `2` secunde
 
-*(Azi folosim `repetă` cu **număr**. Există și `forever` — îl lăsăm pentru mai târziu; azi vrem să se **oprească** și să salute.)*
+*(Nucleul orei: `repetă` cu **număr**, ca dansul să se **oprească** și să salute.  
+`forever` = buclă care **nu se oprește** singură — azi e doar la **Bonus**, ca animație de decor.)*
 
 ---
 
@@ -116,15 +117,24 @@ Salvat: `Prenume_L8`
 - [ ] **Două** bucle: una rapidă (`așteaptă` mic), una lentă  
 - [ ] Pătrat (`repetă 4` + mergi + întoarce) **apoi** dans de costume  
 - [ ] Schimbă numărul din `repetă` (5, apoi 15) — ce observi?  
+- [ ] **`forever` de decor** (al doilea script pe steag, **după** ce dansul cu `repetă` e gata):  
+  <span style="color:#3F8F2A;font-weight:700">când se face clic pe steagul verde</span> →  
+  <span style="color:#FFAB19;font-weight:700">forever</span> → înăuntru:  
+  <span style="color:#9966FF;font-weight:700">următorul costum</span> →  
+  <span style="color:#FFAB19;font-weight:700">așteaptă</span> `0.2`  
+  *(Personajul „merge” / clipește la nesfârșit. Oprești cu **stop** roșu.  
+  Nu pune `spune Gata!` în `forever` — nu mai ajungi la final. Dialogul / finalul rămân pe scriptul cu `repetă`.)*  
 
 ## Recapitulare rapidă
-1. <span style="color:#FFAB19;font-weight:700">repetă N</span> = fă ce e **înăuntru** de N ori  
+1. <span style="color:#FFAB19;font-weight:700">repetă N</span> = fă ce e **înăuntru** de N ori, apoi **gata**  
 2. <span style="color:#FFAB19;font-weight:700">așteaptă</span> = ritmul (altfel e prea rapid)  
-3. Finalul (`spune`) stă **sub** buclă; la steag resetezi  
+3. Finalul (`spune`) stă **sub** `repetă`; <span style="color:#FFAB19;font-weight:700">forever</span> = nu se oprește (Bonus)  
+4. La steag resetezi  
 
 **Quiz scurt (cu profesorul):**  
 - Unde trebuie să fie blocurile ca să se repete?  
-- De ce punem `așteaptă` în animație?
+- De ce punem `așteaptă` în animație?  
+- Care e diferența dintre `repetă 8` și `forever`?
 
 ## Temă
 Opțional: schimbă numărul din `repetă` (ex. 5, apoi 15) și notează într-o propoziție ce s-a schimbat — același fișier `Prenume_L8`.

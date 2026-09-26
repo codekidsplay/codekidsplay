@@ -113,6 +113,14 @@ Salvat: `Prenume_L5`
 - [ ] O a treia replică + un schimb de <span style="color:#9966FF;font-weight:700">costum</span> la final  
 - [ ] Efect **fantomă** sau **vârtej** o dată, apoi <span style="color:#9966FF;font-weight:700">anulează efectele grafice</span>  
 - [ ] Reporterul apare cu <span style="color:#9966FF;font-weight:700">arată</span> doar după steag (înainte e <span style="color:#9966FF;font-weight:700">ascunde</span>)  
+- [ ] **Animație „pulsează”** (opțional, pe un **al doilea** script, tot pe steag):  
+  din <span style="color:#FFAB19;font-weight:700">Control</span> → <span style="color:#FFAB19;font-weight:700">forever</span>  
+  *(în engleză: *forever* / *repetă la infinit* — rulează mereu, până apeși stop)*  
+  Înăuntru: <span style="color:#9966FF;font-weight:700">modifică mărimea cu</span> `10` →  
+  <span style="color:#FFAB19;font-weight:700">așteaptă</span> `0.3` →  
+  <span style="color:#9966FF;font-weight:700">modifică mărimea cu</span> `-10` →  
+  <span style="color:#FFAB19;font-weight:700">așteaptă</span> `0.3`  
+  *(Dialogul rămâne pe primul script. La steag: tot resetezi mărimea la 100 — altfel crește la nesfârșit.)*  
 
 ## Recapitulare rapidă
 1. <span style="color:#9966FF;font-weight:700">Aspect</span> = spune, gândește, mărime, culoare, costum  

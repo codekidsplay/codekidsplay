@@ -129,18 +129,20 @@ Salvat: `Prenume_L9` și/sau `Prenume_L10`
 ## Bonus (dacă ai timp după completare / prezentare)
 - [ ] A 3-a completare din lista A–F  
 - [ ] Un detaliu cerut pe loc de un coleg (feedback rapid)  
+- [ ] **`forever` de decor** (costum care clipește) — ca la Bonus L8 — pe un script separat  
+- [ ] **Ricoșeu pe margine** — ca la Bonus L9 (`dacă atinge marginea, sari înapoi`)  
 - [ ] Pe foaie: **1 idee** pentru Modulul 2 (labirint / dacă apeși… / dacă atingi…)
 
 ## Recapitulare rapidă
 1. L10 = **completezi** L9, apoi **prezinți**  
-2. Modulul 1 = start, lume, mișcare, aspect, sunet, X/Y, repetă  
+2. Modulul 1 = start, lume, mișcare, aspect, sunet, X/Y, `repetă` (+ Bonus: `forever`, ricoșeu)  
 3. Insigna = **Scratch Starter** · M2 = **alegeri** (`dacă…`)
 
 **Quiz scurt (cu profesorul):** *(5 dacă e timp; altfel 3)*  
 1. Ce face steagul verde?  
 2. Ce e un costum?  
 3. X e stânga–dreapta sau sus–jos?  
-4. De ce folosim `repetă`?  
+4. De ce folosim `repetă`? (și, opțional: ce e diferit la `forever`?)  
 5. Cum salvezi proiectul?
 
 ## Temă

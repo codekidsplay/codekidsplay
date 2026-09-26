@@ -119,6 +119,15 @@ Salvat: `Prenume_L9`
 - [ ] Clipul durează **≥45 secunde**  
 - [ ] **2 personaje** (dialog pe rând cu `așteaptă`, ca la L5) — la steag: **reset pe amândouă** (loc/costum; cine e selectat în listă contează)  
 - [ ] La final: <span style="color:#9966FF;font-weight:700">comută fundalul la</span> … + mesaj + sunet  
+- [ ] **Ricoșeu pe margine** (opțional — fără lecție nouă de Detectare):  
+  pe un **script separat** (tot pe steag):  
+  <span style="color:#3F8F2A;font-weight:700">când se face clic pe steagul verde</span> →  
+  <span style="color:#FFAB19;font-weight:700">forever</span> → înăuntru:  
+  <span style="color:#4C97FF;font-weight:700">mergi</span> `10` pași →  
+  <span style="color:#4C97FF;font-weight:700">dacă atinge marginea, sari înapoi</span>  
+  *(Blocul e în <span style="color:#4C97FF;font-weight:700">Mișcare</span> — „mingea” ricoșează de pe marginea scenei.  
+  Nu e nevoie azi de categoria <span style="color:#5CB1D6;font-weight:700">Detectare</span>; o aprofundăm în Modulul 2.)*  
+  La steag, pe scriptul principal: tot resetezi locul de start, ca ricoșeul să înceapă din același punct.
 
 ## Recapitulare rapidă
 1. Ordine: **reset → intro → acțiune → final**  
