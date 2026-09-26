@@ -2,7 +2,7 @@
 **Modulul 1 · Primii pași**  
 **Code Kids Play · Scratch Starter**
 
-> Întâi înveți ecranul Scratch (pornire, salvare, capitole).  
+> Întâi înveți ecranul Scratch (pornire, salvare, capitolele de azi).  
 > Apoi faci proiectul **„Cardul meu animat”** — un clip scurt despre tine.  
 > Fișier: `Prenume_L1` (ex. `Ana_L1`)
 
@@ -21,9 +21,9 @@ Azi înveți „butoanele” de start — fără ele, restul lecțiilor nu porne
 
 | Minute | Ce facem |
 |--------|----------|
-| 0–10 | Obiectiv + tur scurt pe ecran (scenă, personaj, steag, stop) |
-| 10–30 | Pas cu pas: start, salvare, capitole + **Încearcă tu** |
-| 30–100 | Proiectul „Cardul meu animat” |
+| 0–8 | Obiectiv + ce vezi pe ecran (scenă, personaj, steag, stop) |
+| 8–20 | Start (steag) → mini-exercițiu · Salvare → mini-exercițiu · Capitolele de azi |
+| 20–100 | Proiectul „Cardul meu animat” |
 | 100–120 | Recap, bonus, arăți proiectul |
 
 ---
@@ -37,14 +37,22 @@ Azi înveți „butoanele” de start — fără ele, restul lecțiilor nu porne
 
 **Un bloc = o acțiune.** Un proiect = mai multe acțiuni una sub alta.
 
+**Mini (30 sec):** arată cu degetul pe ecran: scena · personajul · steagul · stop.
+
 ### 2) Cum pornește proiectul
 1. Din <span style="color:#E6A800;font-weight:700">Evenimente</span> iei:  
    <span style="color:#3F8F2A;font-weight:700">când se face clic pe steagul verde</span>
-2. Sub el lipesti ce vrei să se întâmple
+2. Sub el, din <span style="color:#9966FF;font-weight:700">Aspect</span>:  
+   <span style="color:#9966FF;font-weight:700">spune</span> `Salut!` pentru `2` secunde
 3. Apeși <span style="color:#3F8F2A;font-weight:700">steagul verde</span> de pe scenă — începe
 4. Butonul **roșu** oprește
 
 Fără acest bloc de start (sau alt eveniment), celelalte blocuri nu rulează.
+
+**Încearcă tu — start (1–2 min)**  
+- [ ] Ai steagul deasupra + un `spune`  
+- [ ] Apeși steagul — apare mesajul  
+- [ ] Oprești cu butonul roșu  
 
 ### 3) Cum salvezi
 1. Meniul **Fișier** (sau contul Scratch, dacă ești autentificat)
@@ -53,41 +61,37 @@ Fără acest bloc de start (sau alt eveniment), celelalte blocuri nu rulează.
 
 Salvează înainte să închizi Scratch și după fiecare parte importantă.
 
-### 4) Capitolele din stânga
-Nu trebuie să le știi pe toate azi — trebuie să știi **unde cauți**.
+**Încearcă tu — salvare (1–2 min)**  
+- [ ] Salvezi o dată ca `Prenume_L1`  
+- [ ] Profesorul vede fișierul / proiectul în listă  
 
-| Capitol | La ce folosește |
-|---------|-----------------|
-| <span style="color:#4C97FF;font-weight:700">Mișcare</span> | merge, se rotește, glisează |
-| <span style="color:#9966FF;font-weight:700">Aspect</span> | spune, costum, mărime, culoare |
-| <span style="color:#CF63CF;font-weight:700">Sunet</span> | redă sunete și muzică |
-| <span style="color:#E6A800;font-weight:700">Evenimente</span> | când începe o acțiune (steag, click, tastă) |
-| <span style="color:#FFAB19;font-weight:700">Control</span> | așteaptă, repetă, dacă… |
-| <span style="color:#5CB1D1;font-weight:700">Detectare</span> | atingere, taste, mouse |
-| <span style="color:#59C059;font-weight:700">Operatori</span> | calcule și comparări |
-| <span style="color:#FF8C1A;font-weight:700">Variabile</span> | scor și contoare (mai târziu) |
+### 4) Capitolele de azi (doar 5)
+Nu învățăm tot Scratch-ul azi. **Cauți doar aici:**
 
-Azi folosim mai ales: **Evenimente**, **Aspect**, **Mișcare**, **Control**, **Sunet**.
+| Capitol | La ce folosește azi |
+|---------|---------------------|
+| <span style="color:#E6A800;font-weight:700">Evenimente</span> | steagul verde = start |
+| <span style="color:#9966FF;font-weight:700">Aspect</span> | `spune`, costum, efect |
+| <span style="color:#4C97FF;font-weight:700">Mișcare</span> | `mergi`, `glisează` |
+| <span style="color:#FFAB19;font-weight:700">Control</span> | `așteaptă` (între replici) |
+| <span style="color:#CF63CF;font-weight:700">Sunet</span> | un sunet la început sau la final |
 
----
+*(Alte capitole — Detectare, Operatori, Variabile — apar în **Modulul 2**. Azi le ignori.)*
 
-## Încearcă tu
-Cu profesorul, pe rând:
-- [ ] Găsești: scena, personajul, steagul verde, butonul stop  
-- [ ] Un script scurt: <span style="color:#3F8F2A;font-weight:700">steag verde</span> → <span style="color:#9966FF;font-weight:700">spune</span> (numele tău) → o <span style="color:#4C97FF;font-weight:700">mișcare</span>  
-- [ ] Salvezi o dată: `Prenume_L1`
+**Mini (1 min):** găsești pe rând cele **5** capitole colorate din stânga (fără să deschizi altele).
 
 ---
 
 ## Greșeli frecvente
 1. **Nu se întâmplă nimic** — lipsește <span style="color:#3F8F2A;font-weight:700">când se face clic pe steagul verde</span> deasupra blocurilor, sau nu ai apăsat steagul.  
-2. **Replicile se calcă** — lipsește <span style="color:#FFAB19;font-weight:700">așteaptă</span> între <span style="color:#9966FF;font-weight:700">spune</span>.  
+2. **Replicile se calcă** — lipsește <span style="color:#FFAB19;font-weight:700">așteaptă</span> între <span style="color:#9966FF;font-weight:700">spune</span> (capitolul **Control**).  
 3. **Ai pierdut proiectul** — nu ai salvat; salvează des, cu același nume `Prenume_L1`.
 
 ---
 
 ## De făcut azi — „Cardul meu animat”
-Salvat: `Prenume_L1`
+Salvat: `Prenume_L1`  
+*(Folosești exact ce ai exersat mai sus: steag, salvare, cele 5 capitole.)*
 
 ### Pasul 1 — Personajele
 - [ ] Înlocuiești personajul din start cu unul din bibliotecă  
@@ -95,19 +99,26 @@ Salvat: `Prenume_L1`
 - [ ] Îi așezi pe scenă (stânga / dreapta), ca să se vadă amândouă  
 
 ### Pasul 2 — Dialogul
-- [ ] Cel puțin **4** blocuri <span style="color:#9966FF;font-weight:700">spune</span> (pe ambele personaje împreună)  
-- [ ] Între replici: <span style="color:#FFAB19;font-weight:700">așteaptă</span> (text pe rând, nu dintr-o dată)  
+*(Capitole: <span style="color:#E6A800;font-weight:700">Evenimente</span> + <span style="color:#9966FF;font-weight:700">Aspect</span> + <span style="color:#FFAB19;font-weight:700">Control</span> — ca la „Încearcă tu — start”, dar pe rând.)*
+
+- [ ] Pe **fiecare** personaj: <span style="color:#3F8F2A;font-weight:700">când se face clic pe steagul verde</span> (blocul de start pe care l-ai făcut la pasul 2)  
+- [ ] Cel puțin **4** blocuri <span style="color:#9966FF;font-weight:700">spune</span> (pe ambele personaje împreună) — tot din **Aspect**, ca mesajul `Salut!` de mai sus  
+- [ ] Între replici: <span style="color:#FFAB19;font-weight:700">așteaptă</span> din **Control** (text pe rând, nu dintr-o dată)  
 - [ ] Din dialog se înțelege **cine ești** (nume + un lucru despre tine)  
 
 ### Pasul 3 — Mișcare și aspect
+*(Capitol: <span style="color:#4C97FF;font-weight:700">Mișcare</span> + din nou <span style="color:#9966FF;font-weight:700">Aspect</span>.)*
+
 - [ ] Cel puțin un personaj se mișcă pe un traseu (<span style="color:#4C97FF;font-weight:700">glisează</span> sau <span style="color:#4C97FF;font-weight:700">mergi</span>)  
 - [ ] Schimbi <span style="color:#9966FF;font-weight:700">costum</span> sau <span style="color:#9966FF;font-weight:700">efect</span> de cel puțin 2 ori  
 
 ### Pasul 4 — Sunet și final
+*(Capitol: <span style="color:#CF63CF;font-weight:700">Sunet</span> · apoi **salvezi** ca la „Încearcă tu — salvare”.)*
+
 - [ ] Ai **1** <span style="color:#CF63CF;font-weight:700">sunet</span> (la început sau la final)  
 - [ ] Proiectul durează cel puțin **20 de secunde**  
 - [ ] La din nou <span style="color:#3F8F2A;font-weight:700">steag verde</span>, reîncepe de la capăt  
-- [ ] Proiectul este **salvat**  
+- [ ] Proiectul este **salvat** (`Prenume_L1`)  
 
 **Gata când:** apeși steagul verde și, fără să explici cu vocea, se înțelege cine ești.
 
@@ -120,12 +131,13 @@ Salvat: `Prenume_L1`
 
 ## Recapitulare rapidă
 1. <span style="color:#3F8F2A;font-weight:700">Steagul verde</span> pornește; fără blocul de start, nu rulează nimic  
-2. Capitolele din stânga = unde cauți blocurile (azi: Evenimente, Aspect, Mișcare, Control, Sunet)  
-3. Între replici folosești <span style="color:#FFAB19;font-weight:700">așteaptă</span>  
+2. Azi cauți doar în **5** capitole: Evenimente, Aspect, Mișcare, Control, Sunet  
+3. Între replici: <span style="color:#FFAB19;font-weight:700">așteaptă</span> (Control) după <span style="color:#9966FF;font-weight:700">spune</span> (Aspect)  
 
 **Quiz scurt (cu profesorul):**  
 - Ce bloc trebuie primul?  
-- Cum salvezi proiectul?
+- Cum salvezi proiectul?  
+- Din ce capitol iei `așteaptă`?
 
 ## Temă
 Opțional: o replică nouă sau un sunet mai potrivit — același fișier `Prenume_L1`.
