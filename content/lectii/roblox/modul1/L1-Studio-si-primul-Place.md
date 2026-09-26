@@ -4,14 +4,16 @@
 
 > Azi deschizi **Roblox Studio**, înveți **5 comenzi esențiale** pe ecran, și lași ceva pe lume pe care îl poți **testa cu Play**.  
 > Place (fișierul tău): `Prenume_Nume_M1` (ex. `Ana_Pop_M1`)  
-> *Același Place îl folosești tot Modulul 1 (și mai departe, pe Obby).*
+> *Același Place te însoțește prin tot cursul Roblox (M1→M2→M3→M4) — Obby-ul tău crește în el. Nu faci `…_M2` / `…_M3` separat.*  
+> *Dacă îl pierzi sau îl strici vreodată, profesorul are un **Place de rezervă** pregătit din care poți continua.*
 
 ---
 
 ## Obiectiv
 La finalul orei ai un **Place salvat** cu numele corect, știi unde e **lumea 3D**, cum pui un **Part**, cum îl **ancorezi**, și cum pornești / oprești testul cu **Play** / **Stop**.  
 **Minimum:** Place salvat + **≥2 Parts** ancorate pe Baseplate + un tur scurt în Play.  
-**Ținta orei (Complet):** Minim + o **cale scurtă** (Parts în șir) pe care o poți „trece” pe jos în Play + o culoare diferită pe cel puțin un Part.
+**Ținta orei (Complet):** Minim + o **cale scurtă** (Parts în șir) pe care o poți „trece” pe jos în Play + o culoare diferită pe cel puțin un Part.  
+**Place pe tot cursul:** lucrezi mereu în `Prenume_Nume_M1`; dacă îl pierzi, continui din Place-ul de rezervă al profesorului.
 
 ## De ce contează
 Roblox Studio e „șantierul” jocului: aici **construiești** lumea.  
@@ -61,9 +63,11 @@ Pe ecran (ca în Studio deschis pe un Place nou / Baseplate):
 3. **File → Save to Roblox** / Save (după setup-ul clasei)  
 4. Nume Place: **`Prenume_Nume_M1`**  
    - Ex. `Ana_Pop_M1`, `Ana_Ionescu_M1`  
-   - **Nu** doar `Ana_M1` sau `Place3` — în clasă se calcă
+   - **Nu** doar `Ana_M1` sau `Place3` — în clasă se calcă  
+   - **Nu** `…_M2` / `…_M3` — rămâne **`_M1`** tot cursul; Obby-ul crește în același fișier
 
-*(Dacă tipul de salvare diferă pe Mac/Windows, profesorul arată o dată pe proiector.)*
+*(Dacă tipul de salvare diferă pe Mac/Windows, profesorul arată o dată pe proiector.)*  
+*Plasă de siguranță:* dacă îți pierzi Place-ul, profesorul are un **Place de rezervă** din care poți continua (pregătit mai ales pentru M3+).
 
 **Încearcă tu — salvare (2–3 min)**  
 - [ ] Place-ul se numește `Prenume_Nume_M1`  
@@ -103,7 +107,7 @@ Pe ecran (ca în Studio deschis pe un Place nou / Baseplate):
 2. **Nu găsesc Place-ul** — nume greșit / nesalvat; verifică `Prenume_Nume_M1`.  
 3. **Rămân în Play și „nu mai pot edita”** — apeși **Stop**.  
 4. **Am deschis Toolbox / Terrain și m-am pierdut** — închizi panoul; azi doar Home + Viewport + Play.  
-5. **Am șters Baseplate-ul** — Undo (Ctrl/Cmd+Z) sau Place nou + resalvare cu același nume.  
+5. **Am șters Baseplate-ul** — Undo cu **Ctrl+Z** (pe Mac: Cmd+Z) sau Place nou + resalvare cu același nume.  
 
 ---
 
@@ -116,6 +120,8 @@ Salvat: `Prenume_Nume_M1`
 |--|------------|
 | **Minim („am reușit”)** | Place cu numele corect + **≥2 Parts** ancorate + tur scurt în **Play** |
 | **Complet (ținta orei)** | Minim + Parts așezate ca o **cale scurtă** (le poți trece pe jos) + **≥1** Part cu **culoare** diferită (Home → Color) |
+
+*Culoarea o aprofundăm la **L4** — azi doar încerci butonul **Color**, ca decor.*
 
 Dacă rămâi în urmă: salvează la **Minim**.  
 Cei rapizi: Complet, apoi Bonus.
@@ -136,7 +142,7 @@ Cei rapizi: Complet, apoi Bonus.
 
 ### Pasul 3 — Cale + culoare *(Complet)*
 - [ ] Parts în șir / trepte — o poți parcurge fără să cazi de pe hartă  
-- [ ] Cel puțin un Part are **Color** schimbat (se vede clar)  
+- [ ] Cel puțin un Part are **Color** schimbat (se vede clar) — *preview L4*  
 - [ ] Play din nou → treci calea · Stop · salvezi  
 
 **Gata Complet când:** în Play, faci un tur scurt pe „calea” ta și te întorci la editare fără panică.
@@ -152,7 +158,7 @@ Cei rapizi: Complet, apoi Bonus.
 1. **Viewport** = lumea · **Play / Stop** = testezi / editezi  
 2. **Part** = pui obiecte · **Anchor** = nu cad  
 3. **Move / Scale / Rotate** = le așezi  
-4. Nume Place: **`Prenume_Nume_M1`**  
+4. Nume Place: **`Prenume_Nume_M1`** (același tot cursul; rezervă la profesor dacă îl pierzi)  
 5. Azi **fără** Script / Terrain / Toolbox  
 
 **Quiz scurt (cu profesorul):**  
