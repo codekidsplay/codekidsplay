@@ -16,6 +16,14 @@ La finalul orei pornești proiectul cu <span style="color:#3F8F2A;font-weight:70
 Scratch e un constructor: lipești **blocuri** ca personajele să facă ceva pe **scenă**.  
 Fără steag și fără salvare, restul orelor nu pot începe.
 
+## Exemplu — „Cardul meu animat”
+Rulează pe **steagul verde** din player. Asta e tipul de clip pe care îl faci azi (Minim = dialog pe 2 personaje; Complet = + mișcare + sunet).
+
+<div style="max-width:485px;margin:1rem 0;">
+<iframe src="https://scratch.mit.edu/projects/1385205392/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen style="max-width:100%;border:0;border-radius:8px;"></iframe>
+<p style="margin:0.5rem 0 0;font-size:0.9em;"><a href="https://scratch.mit.edu/projects/1385205392" target="_blank" rel="noopener noreferrer">Deschide pe Scratch</a> — See inside / Remix (nu copia bloc cu bloc; fă-ți cardul tău).</p>
+</div>
+
 ---
 
 ## Planul orei (120 minute)
