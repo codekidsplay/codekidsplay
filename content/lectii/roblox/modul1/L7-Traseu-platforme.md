@@ -10,7 +10,7 @@
 ## Obiectiv
 La finalul orei ai un traseu Obby **Start → platforme → Finish**, testat.  
 **Minimum:** **≥5** platforme/trepte pe drum (ancorate, numite) · Play: poți ajunge la Finish **fără** să „zbori” pe lângă hartă.  
-**Ținta orei (Complet):** Minim + **≥1** schimbare de înălțime clară + **≥1** salt lateral / unghi + playtest retest (ca L5).
+**Ținta orei (Complet):** Minim + **≥1** din cele trei tipuri de varietate (**înălțime** · **cot lateral** · **salt** pe gol mic) + playtest retest (ca L5).
 
 ## De ce contează
 L6 ți-a dat capetele. Fără mijloc, nu e Obby — e două puncte pe Baseplate.  
@@ -38,7 +38,7 @@ Azi construiești **gameplay-ul de bază**: ritm de sărituri, lățime, distan�
 ### 1) Reguli de traseu (înainte să construiești mult)
 | Regulă | De ce |
 |--------|--------|
-| Platforme **aproape** | Saltul avatarului e limitat |
+| Platforme **aproape** (ca la L3: gol **sub ~5 studs**) | Avatarul sare ~6–7 studs pe orizontală — peste asta e greu / imposibil |
 | Platforme **suficient de late** | Nu cazi pe lateral |
 | **Anchor** pe toate | Altfel cade traseul |
 | Nume `Plat1`, `Plat2`… | Te regăsești în Explorer |
@@ -74,22 +74,22 @@ Azi construiești **gameplay-ul de bază**: ritm de sărituri, lățime, distan�
 - [ ] Salvat  
 
 ### 4) Varietate *(Complet)*
-Adaugi **cel puțin una** din:
+Adaugi **cel puțin una** din (nu trebuie toate trei):
 - **Înălțime:** o secțiune mai sus (trepte sau rampă L3)  
-- **Lateral:** drumul cotește (nu e linie dreaptă 100%)  
-- **Salt:** un gol mic între două platforme — testat că e săritură posibilă  
+- **Cot lateral:** drumul cotește (nu e linie dreaptă 100%)  
+- **Salt:** un gol mic între două platforme (**sub ~5 studs**, ca L3) — testat că e săritură posibilă  
 
 Apoi: notezi 1 problemă → repari → **al 2-lea** Play (L5).
 
 **Încearcă tu — varietate + retest (5–7 min)**  
-- [ ] Ai înălțime **sau** cot **sau** salt controlat  
+- [ ] Ai **înălțime** **sau** **cot** **sau** **salt** controlat (măcar una)  
 - [ ] Retest Play ok  
 - [ ] Stop · salvat  
 
 ---
 
 ## Greșeli frecvente
-1. **Platforme prea depărtate** — „nu pot sări”; apropie sau coboară.  
+1. **Platforme prea depărtate** (gol > ~5 studs) — „nu pot sări”; apropie sau coboară (L3).  
 2. **Totul pe Baseplate jos** — e plimbare, nu Obby; urcă puțin.  
 3. **Prea greu din prima** — Complet ≠ „imposibil”; e „un pic mai interesant”.  
 4. **Finish pe drum, platforme după** — Finish e **capătul**, nu mijlocul.  
@@ -105,7 +105,7 @@ Salvat: `Prenume_Nume_M1`
 | | Ce trebuie |
 |--|------------|
 | **Minim („am reușit”)** | ≥**5** platforme pe drum · Play Spawn→Finish |
-| **Complet (ținta orei)** | Minim + varietate (înălțime / cot / salt) + retest |
+| **Complet (ținta orei)** | Minim + **≥1** din: înălțime / cot lateral / salt + retest |
 
 Dacă rămâi în urmă: salvează la **Minim**.  
 Cei rapizi: Complet, apoi Bonus.
@@ -133,9 +133,9 @@ Cei rapizi: Complet, apoi Bonus.
 
 ## Recapitulare rapidă
 1. Start + **mijloc** + Finish = Obby  
-2. Aproape + lat + Anchor  
+2. Gol **sub ~5 studs** + lat + Anchor  
 3. Test des, nu doar la final  
-4. Varietate = Complet, nu chin  
+4. Varietate Complet = **una** din: înălțime / cot / salt — nu chin  
 5. Place: `Prenume_Nume_M1`  
 
 **Quiz scurt (cu profesorul):**  
