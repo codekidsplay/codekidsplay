@@ -165,7 +165,7 @@ Cei rapizi: Complet, apoi Bonus.
 *(Parcurge **întâi** toată lecția și proiectul. Exemplul e la final: rulează-l pe steag, apoi See inside — ca să compari cu cardul tău, nu ca să copiezi tot.)*
 
 <div style="max-width:485px;margin:1rem 0;">
-<iframe src="https://scratch.mit.edu/projects/1385205392/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen style="max-width:100%;border:0;border-radius:8px;"></iframe>
+<iframe src="https://scratch.mit.edu/projects/1385205392/embed" width="485" height="402" scrolling="no" allowfullscreen style="max-width:100%;border:0;border-radius:8px;"></iframe>
 <p style="margin:0.5rem 0 0;font-size:0.9em;"><a href="https://scratch.mit.edu/projects/1385205392" target="_blank" rel="noopener noreferrer">Deschide pe Scratch</a> — See inside / Remix, apoi rămâi pe **cardul tău** (`Prenume_Nume_L1`).</p>
 </div>
 
