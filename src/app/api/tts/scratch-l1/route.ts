@@ -8,7 +8,7 @@ import { put, head } from '@vercel/blob'
 
 export const maxDuration = 120
 
-const PROFILE = 'scratch-l1-naratie-v1'
+const PROFILE = 'scratch-l1-naratie-v2-slow'
 
 function naratiePath() {
   return path.join(
