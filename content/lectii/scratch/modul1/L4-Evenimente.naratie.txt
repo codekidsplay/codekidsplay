@@ -1,0 +1,31 @@
+Lecția patru. Butonul magic.
+
+Astăzi înveți că blocurile pornesc când se întâmplă ceva: steag, click sau tastă. Proiectul se numește Butonul magic. Fișierul: Prenume, linie jos, Nume, linie jos, L patru.
+
+Obiectivul. Pornești acțiuni pe evenimente diferite. Minim: steag ca reset, plus un eveniment nou, click pe personaj. Complet: plus tasta spațiu, plus un buton separat pe scenă.
+
+De ce contează. În jocuri nu totul pornește odată. Uneori apeși Start, alteori un buton sau o tastă. În Scratch, asta e capitolul Evenimente.
+
+Primul pas pe ecran. Pe erou, la steagul verde: du-te la zero zero, anulează efectele grafice, spune Gata de start, pentru o secundă. Steagul nu e doar play. Azi îl folosești ca să resetezi.
+
+Al doilea pas pe ecran. Tot pe erou, un script nou: când se dă clic pe acest personaj. Sub el: spune M-ai apăsat, apoi mergi treizeci de pași. Nu apeși steagul. Dai click pe personaj pe scenă. Același personaj, două porniri diferite.
+
+Al treilea pas pe ecran. Încă un script: când tasta spațiu este apăsată. Sub el: schimbă efectul culoare cu douăzeci și cinci. Fiecare spațiu adaugă încă culoare. De aceea pe steag ai anulează efectele grafice.
+
+Al patrulea pas pe ecran, pentru Complet. Adaugi un al doilea personaj, butonul. Pe buton, la click: spune Go. Pe erou păstrezi steag, click și spațiu. Așezi butonul lângă erou, nu peste el. Testezi: steag resetează, click pe buton spune Go, click pe erou sau spațiu reacționează eroul.
+
+Greșeli frecvente. Dacă click-ul nu merge, apeși steagul, dar scriptul e pe click. Click pe personaj, pe scenă. Dacă culoarea nu mai revine, pe steag trebuie anulează efectele grafice. Dacă tasta nu face nimic, click întâi pe scenă, apoi spațiu.
+
+Proiectul de azi. Butonul magic.
+
+Minim înseamnă: erou cu steag de tip reset, plus click pe erou. Complet înseamnă: minim, plus spațiu, plus personaj buton, plus test clar. Dacă rămâi în urmă, salvează la Minim.
+
+În proiect, primul pas. Erou pe scenă. La steag: du-te la start, anulează efectele, mesaj scurt.
+
+În proiect, al doilea pas. Click pe erou face ceva vizibil. Steag și click sunt diferite. Salvezi.
+
+În proiect, al treilea pas, pentru Complet. Spațiu schimbă aspectul. Al doilea personaj e butonul, click pe buton spune Go. Un coleg știe ce face steagul și ce face butonul, fără explicație. Salvezi din nou.
+
+Recapitulare. Evenimentul este ce pornește scriptul: steag, click sau tastă. Un personaj poate avea mai multe scripturi. Steagul înseamnă start și reset. Numele fișierului are prenumele și numele de familie.
+
+Succes la butonul tău magic.

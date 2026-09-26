@@ -1,0 +1,31 @@
+Lecția doi. Lumea mea.
+
+Astăzi îți faci lumea: două locuri pe scenă, și un personaj care își schimbă look-ul. Fișierul se numește Prenume, linie jos, Nume, linie jos, L doi.
+
+Obiectivul. La finalul orei schimbi fundalul și costumul cu blocuri, nu doar din meniu. Ții scena unu și scena doi pe același ritm.
+
+De ce contează. Ca într-un joc: schimbi locul, de exemplu de la casă la parc, și cum arată eroul. Fundalul este locul. Costumul este felul în care arată personajul.
+
+Primul pas pe ecran. Adaugi două fundaluri din bibliotecă. Le redenumești clar, de exemplu Casa și Parc.
+
+Al doilea pas pe ecran. Selectezi Scena, nu personajul. La steagul verde pui: comută fundalul la Casa. Așa începi mereu pe scena unu.
+
+Al treilea pas pe ecran. Pe personaj adaugi cel puțin trei costume. La steag: repetă zece, înăuntru următorul costum, apoi așteaptă zero virgulă doi. Personajul se animă pe loc.
+
+Al patrulea pas pe ecran. Pe Scenă, după start, așteaptă trei secunde, apoi comută fundalul la Parc. Pe personaj, un spune despre scena unu, și un spune despre scena doi. Potrivești secundele: când Scena așteaptă trei, și personajul ajunge la replica pentru scena doi tot după aproximativ trei secunde.
+
+Greșeli frecvente. Dacă fundalul nu se schimbă, blocul e pe personaj în loc de Scenă, sau numele din bloc nu e Casa sau Parc. Dacă la steag rămâi pe scena doi, lipsește la start comută fundalul la scena unu. Dacă dialogul vorbește pe scena greșită, secundele pe Scenă și pe personaj nu se potrivesc.
+
+Proiectul de azi. Lumea mea.
+
+Minim înseamnă: două fundaluri, start pe scena unu, cel puțin trei costume și animația scurtă cu repetă zece. Complet înseamnă: minim, plus trecere la scena doi, și câte un spune pe fiecare scenă, sincronizat. Dacă rămâi în urmă, salvează la Minim. Nu e eșec.
+
+În proiect, primul pas. Două fundaluri cu nume. La steag pe Scenă începi pe scena unu.
+
+În proiect, al doilea pas. Cel puțin trei costume. Animație: repetă zece, următorul costum, așteaptă zero virgulă doi. Salvezi.
+
+În proiect, al treilea pas, pentru Complet. Pe Scenă, după așteaptă trei, comută la scena doi. Pe personaj, un spune pe scena unu și un spune pe scena doi, cu timpii potriviți. Clipul rulează cel puțin douăzeci și cinci de secunde. Salvezi din nou.
+
+Recapitulare. Fundalul este locul. Costumul este look-ul. Schimbarea scenei azi se face pe Scenă. Scena și personajul sunt două scripturi. Le sincronizezi cu aceleași secunde în așteaptă. Numele fișierului are prenumele și numele de familie.
+
+Succes la lumea ta.

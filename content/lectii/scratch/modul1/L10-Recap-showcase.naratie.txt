@@ -1,0 +1,33 @@
+Lecția zece. Completare și prezentare.
+
+Astăzi termini Personajul meu, îl arăți clasei, și primești insigna Scratch Starter. Nu refaci de la zero. Deschizi proiectul de la lecția nouă și adaugi. Fișierul rămâne Prenume, linie jos, Nume, linie jos, L nouă. Sau o copie L zece, ca să nu strici versiunea veche.
+
+Obiectivul. Ai îmbunătățit Personajul meu, l-ai prezentat, și ai insigna. Minim: o completare din lista A până la F, plus reset curat, plus prezentare. Asta e suficient pentru insignă. Complet: două completări, plus prezentare, plus salvare.
+
+De ce contează. Proiectele bune se refac o dată: dai detalii, apoi arăți. Insigna Scratch Starter înseamnă: Modulul unu e încheiat. Modulul doi începe cu alegeri, dacă.
+
+Lista de completări. A: clip de cel puțin patruzeci și cinci de secunde. B: al doilea personaj și dialog pe rând. C: la final schimbă fundalul, mesaj și sunet. D: încă un punct x y pe traseu. E: al doilea sunet, pe click sau spațiu. F: un efect de mărime sau culoare pe acțiune, anulat la steag. Minim înseamnă o literă testată. Complet înseamnă două litere. Nu începe a doua până prima nu rulează pe steag.
+
+Primul pas pe ecran. Alegi o literă pentru Minim. Alegi și o a doua țintă pentru Complet, pe care o faci după ce prima e gata. La minutul cincizeci și cinci prezinți oricum. Cu una e suficient pentru insignă.
+
+Al doilea pas pe ecran. Ordinea pe steag rămâne: reset, intro, acțiune, final. Finalul sub bucle, o singură dată. Reset pe fiecare personaj folosit. Salvezi.
+
+Al treilea pas pe ecran. Reguli de prezentare. În unu sau două minute: cine e, ce face, ce ai adăugat azi. Apeși steagul. Lasă clipul să ruleze. Clasa: aplauze și un compliment concret. Tu: Mulțumesc.
+
+Al patrulea pas pe ecran. Recap pe scurt cu profesorul. Steag. Fundal și costum. Mergi, glisează, du-te la, X și Y. Spune, mărime, culoare, sunet. Repetă și așteaptă. Apoi: în Modulul doi apar alegerile.
+
+Greșeli frecvente. Dacă refaci tot de la zero, greșești. Deschizi L nouă și adaugi. Dacă al doilea personaj n-are reset, resetezi pe amândouă. Dacă la prezentare e haos, verifici steagul de două ori înainte. Dacă încerci două completări netestate, la prezentare e stricat. Fă una, testează, apoi a doua.
+
+Proiectul de azi. Completare pe Personajul meu.
+
+Minim înseamnă: o completare lipită și testată, reset curat, prezentat, salvat. Complet înseamnă: două completări, prezentare, salvare. Dacă ai doar Minim, tot primești insigna.
+
+În proiect, primul pas. O completare din A până la F. Steag de două ori. Salvezi.
+
+În proiect, al doilea pas. Prezinți: cine, ce, ce ai adăugat. Steag. Mulțumesc.
+
+În proiect, al treilea pas, pentru Complet. A doua completare, testată. Salvezi din nou. Insigna Scratch Starter.
+
+Recapitulare. Adaugi, nu refaci. O completare pentru Minim. Două pentru Complet. Prezinți scurt. Steagul trebuie să meargă. Ai terminat Modulul unu. Brava.
+
+Succes la prezentarea ta.

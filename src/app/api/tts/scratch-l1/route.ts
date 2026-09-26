@@ -8,6 +8,7 @@ import { put, head } from '@vercel/blob'
 
 export const maxDuration = 120
 
+/** Păstrat pentru cache Blob L1 deja generat (PROFILE v3). L2–L10 → /api/tts/scratch-m1?l=N */
 const PROFILE = 'scratch-l1-naratie-v3'
 
 function naratiePath() {
@@ -54,12 +55,11 @@ async function saveAudio(hash: string, bytes: Uint8Array, mediaType: string): Pr
     return blob.url
   }
 
-  // Fără Blob: data-URL (serverless /tmp nu e partajat între instanțe)
   const b64 = Buffer.from(bytes).toString('base64')
   return `data:${contentType};base64,${b64}`
 }
 
-/** Pilot: doar Scratch Modul 1 · Lecția 1 */
+/** Compat: Scratch M1 L1 — preferă /api/tts/scratch-m1?l=1 pentru L2–L10 */
 export async function GET() {
   const file = naratiePath()
   if (!existsSync(file)) {
@@ -73,8 +73,6 @@ export async function GET() {
   if (cached) return Response.json({ url: cached, cached: true })
 
   try {
-    // AI Gateway TTS: doar modele OpenAI speech (tts-1 / tts-1-hd).
-    // Gemini TTS cere GOOGLE_GENERATIVE_AI_API_KEY separat.
     const useGoogle = Boolean(process.env.GOOGLE_GENERATIVE_AI_API_KEY)
     const result = useGoogle
       ? await generateSpeech({

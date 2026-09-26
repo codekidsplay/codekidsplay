@@ -1,0 +1,33 @@
+Lecția șase. Soundtrack-ul meu.
+
+Astăzi adaugi sunete și le pornești la steag sau la click, fără să se calce toate odată. Fișierul se numește Prenume, linie jos, Nume, linie jos, L șase.
+
+Obiectivul. Adaugi sunete din bibliotecă și le pornești cu blocuri din Sunet. Minim: două sunete pe două evenimente, steag și click. Complet: știi diferența dintre pornește și până la final, și folosești oprește toate sunetele pe steag.
+
+De ce contează. În jocuri, sunetul spune start, bravo sau ai pierdut, fără text. În Scratch, asta e capitolul Sunet. În clasă: căști dacă se poate, altfel volumul jos. Testați pe rând.
+
+Primul pas pe ecran. Selectezi personajul. Tab Sunete, adaugi din bibliotecă, de exemplu Meow sau Pop. Fără sunet în tab, blocurile n-au ce reda.
+
+Al doilea pas pe ecran. La steagul verde: pornește sunetul. Pornește înseamnă: sunetul începe, și programul merge mai departe imediat.
+
+Al treilea pas pe ecran. Încearcă și: redă sunetul până la final. Asta așteaptă să se termine sunetul, apoi trece la blocul de sub el. La start deseori pornește. Când următorul bloc trebuie să aștepte muzica, folosești până la final.
+
+Al patrulea pas pe ecran. Al doilea sunet pe click pe personaj. Steag: sunetul A. Click: sunetul B.
+
+Al cincilea pas pe ecran. Chiar sub steag, înainte de noul sunet: oprește toate sunetele. Altfel, steag de mai multe ori înseamnă sunete suprapuse.
+
+Greșeli frecvente. Dacă nu se aude, lipsește sunetul în tab Sunete, sau scriptul e pe alt personaj. Dacă se calcă, lipsește oprește toate sunetele. Dacă așteaptă muzica nu merge, ai folosit pornește în loc de până la final. Dacă click-ul nu sună, apeși steagul, dar scriptul e pe click.
+
+Proiectul de azi. Soundtrack-ul meu.
+
+Minim înseamnă: două sunete, steag plus click. Complet înseamnă: minim, plus până la final folosit conștient, plus oprește toate sunetele pe steag. Dacă rămâi în urmă, salvează la Minim.
+
+În proiect, primul pas. Cel puțin două sunete pe personaj.
+
+În proiect, al doilea pas. Steag pornește un sunet. Click pe personaj pornește altul. Salvezi.
+
+În proiect, al treilea pas, pentru Complet. Ai testat până la final o dată, de exemplu un spune vine după sunet. Pe steag: oprește toate sunetele, apoi pornește. Steag de trei ori rapid, fără zgomot dublu. Salvezi din nou.
+
+Recapitulare. Pornește înseamnă merge mai departe. Până la final înseamnă așteaptă. Oprește toate sunetele pe steag. Două evenimente: steag și click. Numele fișierului are prenumele și numele de familie.
+
+Succes la soundtrack-ul tău.

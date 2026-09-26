@@ -4,7 +4,7 @@ import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import { ArrowLeft, ArrowRight, Eye } from 'lucide-react'
 import LectieMarkdown from '@/components/LectieMarkdown'
-import AscultaScratchL1 from '@/components/AscultaScratchL1'
+import AscultaScratchM1 from '@/components/AscultaScratchM1'
 
 export default async function ProfesorLectiePage({
   params,
@@ -52,8 +52,8 @@ export default async function ProfesorLectiePage({
         </p>
         <h1 className="text-2xl md:text-3xl font-bold text-slate-900 mb-6">{lectie.titlu}</h1>
 
-        {cursId === 'c7' && lectieId === 'm16-l1' ? (
-          <AscultaScratchL1 accentColor={curs.culoare} />
+        {cursId === 'c7' && modul.id === 'm16' && lectie.ordine >= 1 && lectie.ordine <= 10 ? (
+          <AscultaScratchM1 ordine={lectie.ordine} accentColor={curs.culoare} />
         ) : null}
 
         {markdown ? (

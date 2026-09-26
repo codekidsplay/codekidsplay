@@ -1,0 +1,31 @@
+Lecția trei. Plimbarea mea.
+
+Astăzi faci personajul să meargă, să se întoarcă, și la Complet să gliseze pe scenă. Fișierul se numește Prenume, linie jos, Nume, linie jos, L trei.
+
+Obiectivul. Muți personajul cu blocuri din Mișcare pe un traseu clar, cu reset la steag. Minim: mergi, întoarce și așteaptă, traseu vizibil. Complet: plus glisează, plus un spune la final, cel puțin cincisprezece secunde.
+
+De ce contează. În jocuri, personajul nu stă pe loc. Merge, se întoarce, alunecă. În Scratch, asta e capitolul Mișcare.
+
+Primul pas pe ecran. Selectezi personajul, nu Scena. La steag orientează-te în direcția nouăzeci, spre dreapta. Apoi: mergi cincizeci de pași, așteaptă zero virgulă cinci, întoarce la dreapta cu nouăzeci de grade, așteaptă, mergi, așteaptă, întoarce, așteaptă, mergi. Obții un traseu în formă de U, pe care îl vezi. Fără așteaptă, totul e un flash.
+
+Al doilea pas pe ecran. Adaugi glisează, în o secundă, spre un punct pe scenă. Mergi înseamnă pași rapizi. Glisează înseamnă alunecare lină, cu timp.
+
+Al treilea pas pe ecran. Chiar sub steag, înainte de traseu: du-te la un loc de start, de exemplu x minus o sută cincizeci, y zero. Fără reset, la al doilea steag pleacă de unde a rămas și poate ieși din scenă.
+
+Al patrulea pas pe ecran. La capăt: spune Am ajuns, pentru două secunde. Opțional, un sunet scurt.
+
+Greșeli frecvente. Dacă nu se mișcă, blocurile sunt pe Scenă. Scena nu merge. Selectează personajul. Dacă dispare, ai prea mulți pași fără du-te la la steag. Dacă traseul e un flash, ai uitat așteaptă între mișcări.
+
+Proiectul de azi. Plimbarea mea.
+
+Minim înseamnă: start cu du-te la, plus traseu cu mergi, întoarce și așteaptă. Complet înseamnă: minim, plus glisează, plus spune la final, cel puțin cincisprezece secunde vizibile. Dacă rămâi în urmă, salvează la Minim.
+
+În proiect, primul pas. La steag: du-te la start și orientează-te nouăzeci.
+
+În proiect, al doilea pas. Cel puțin trei mergi, cel puțin două întoarce, așteaptă între mișcări. Salvezi.
+
+În proiect, al treilea pas, pentru Complet. Cel puțin o glisează de aproximativ o secundă. La capăt: spune Am ajuns. Tot traseul se vede cel puțin cincisprezece secunde. Steag din nou, reîncepe din același loc. Salvezi din nou.
+
+Recapitulare. Mergi înseamnă pași. Întoarce înseamnă direcție. Glisează înseamnă alunecă în timp. Așteaptă te lasă să vezi traseul. Blocurile pe personaj. La steag: du-te la. Numele fișierului are prenumele și numele de familie.
+
+Succes la plimbarea ta.

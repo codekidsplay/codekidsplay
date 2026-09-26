@@ -1,0 +1,31 @@
+Lecția opt. Dansul meu.
+
+Astăzi faci același lucru de mai multe ori, fără să copiezi blocurile iar și iar, cu ritm. Fișierul se numește Prenume, linie jos, Nume, linie jos, L opt.
+
+Obiectivul. Folosești repetă și așteaptă din Control. Minim: o buclă clară, mișcare sau costume, plus așteaptă, plus reset la steag. Complet: două bucle una după alta, de exemplu pătrat, apoi dans de costume, plus spune Gata o singură dată.
+
+De ce contează. În desene animate și jocuri, aceleași mișcări se tot repetă: pași, dans, clipire. În Scratch, asta e o buclă scurtă.
+
+Primul pas pe ecran. La steag: repetă patru. Înăuntru: mergi patruzeci de pași, întoarce la dreapta cu nouăzeci. Un pătrat, fără patru copii ale acelorași blocuri. Blocurile trebuie în C, nu sub el.
+
+Al doilea pas pe ecran. Înăuntrul lui repetă, după mergi sau întoarce: așteaptă zero virgulă trei. Vezi fiecare latură, nu un flash. Numărul din așteaptă este ritmul.
+
+Al treilea pas pe ecran. A doua buclă, una după alta, nu una în alta. Sub bucla de pătrat, încă un repetă opt: următorul costum, așteaptă zero virgulă unu cinci. Întâi se termină pătratul, apoi dansul. Regula de azi: două C-uri una sub alta. Nu C în C.
+
+Al patrulea pas pe ecran. Chiar sub steag, înainte de bucle: du-te la start, orientează-te nouăzeci, comută la costumul din start. După ultima buclă, în afara ei: spune Gata. Nucleul e repetă cu număr, ca să se oprească.
+
+Greșeli frecvente. Dacă nu se repetă, blocurile sunt sub repetă, nu în el. Dacă e prea rapid, lipsește așteaptă în buclă. Dacă Gata apare de opt ori, spune e în repetă. Mută-l sub buclă. Dacă ai C în C, scoate bucla dinăuntru. Două C-uri una sub alta.
+
+Proiectul de azi. Dansul meu.
+
+Minim înseamnă: reset, plus o buclă cu repetă, mișcare sau costume, plus așteaptă. Complet înseamnă: minim, plus a doua buclă pe rând, plus spune Gata o dată. Dacă rămâi în urmă, salvează la Minim.
+
+În proiect, primul pas. La steag: loc de start, costum de start, direcție dacă te învârți.
+
+În proiect, al doilea pas. Un repetă cu număr. Înăuntru: mișcare sau următorul costum, plus așteaptă. Salvezi.
+
+În proiect, al treilea pas, pentru Complet. A doua buclă sub prima. Gata o singură dată, sub bucle. Steag de două ori, reset curat. Salvezi din nou.
+
+Recapitulare. Repetă înseamnă fă de N ori. Așteaptă e ritmul. Blocurile în C. Două bucle una după alta. Spune Gata în afara buclei. Numele fișierului are prenumele și numele de familie.
+
+Succes la dansul tău.

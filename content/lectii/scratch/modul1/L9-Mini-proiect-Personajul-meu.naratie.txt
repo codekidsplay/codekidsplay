@@ -1,0 +1,33 @@
+Lecția nouă. Personajul meu.
+
+Astăzi pui împreună ce ai învățat: o animație scurtă despre personajul tău, gata de arătat. Fișierul se numește Prenume, linie jos, Nume, linie jos, L nouă.
+
+Obiectivul. Un clip care pornește curat la steagul verde, cu mișcare sau animație, replică și sunet, fără să îi explici colegului cu vocea. Minim: scheletul rulează, reset, un spune, o buclă sau un traseu, un sunet, final, chiar dacă e sub treizeci de secunde. Complet: toate cele opt elemente din checklist, plus durata treizeci până la șaizeci de secunde.
+
+De ce contează. Până acum ai învățat bucăți: scenă, mișcare, evenimente, aspect, sunet, X și Y, repetă. Azi e filmul tău scurt. Aceleași blocuri, o poveste cap-coadă.
+
+Cele opt elemente. Unu: fundal clar. Doi: cel puțin două costume. Trei: steag egal start curat, loc, direcție, costum, mărime. Patru: poziții cu x și y pe traseu, nu doar la reset. Cinci: mișcare sau animație cu repetă și așteaptă. Șase: cel puțin un spune sau gândește. Șapte: cel puțin un sunet. Opt: durează cam treizeci până la șaizeci de secunde.
+
+Primul pas pe ecran. Ordinea pe steag: reset, introducere, acțiune, final. Un singur script pe steag, pe rând.
+
+Al doilea pas pe ecran. Reset, chiar sub steag: du-te la start, orientează-te nouăzeci, comută la costumul din start, setează mărimea la o sută, anulează efectele grafice, oprește toate sunetele.
+
+Al treilea pas pe ecran. Introducere: cine e, cu spune sau gândește. Acțiune: plimbare pe puncte x y, sau dans cu repetă. Dacă ai două bucle, una după alta, nu C în C. Final: sunet plus spune Gata, în afara buclelor.
+
+Al patrulea pas pe ecran. Scheletul minim: reset, un spune cu numele, un repetă șase sau un traseu scurt, un sunet, spune la final. Rulează o dată. Verifică că merge curat. Nu cronometra încă.
+
+Greșeli frecvente. Dacă la steag e haos, lipsește resetul. Dacă e prea scurt, adaugă așteaptă. Dacă Gata apare de zece ori, finalul e în repetă. Mută-l sub buclă. Dacă ai C în C, scoate. Dacă nu se aude, verifică tab Sunete și oprește toate sunetele pe steag. Am scris nu înseamnă e gata. Rulează steagul de două ori.
+
+Proiectul de azi. Personajul meu.
+
+Minim înseamnă: scheletul care merge, intro, acțiune, final, reset, salvat. Complet înseamnă: toate cele opt, treizeci până la șaizeci de secunde, un coleg înțelege fără explicație. Dacă rămâi în urmă, salvează la Minim.
+
+În proiect, primul pas. Reset pe steag. Scheletul rulează de două ori curat.
+
+În proiect, al doilea pas. Intro, acțiune, final. Salvezi.
+
+În proiect, al treilea pas, pentru Complet. Bifezi cele opt. Cronometrezi. Adaugi ce lipsește. Salvezi din nou.
+
+Recapitulare. Reset, intro, acțiune, final. Opt elemente. Minim e scheletul care merge. Complet e cele opt plus durata. Numele fișierului are prenumele și numele de familie.
+
+Succes la personajul tău.

@@ -1,0 +1,33 @@
+Lecția șapte. Comoara.
+
+Astăzi scena e o hartă. Înveți unde e personajul cu X și Y, apoi îl duci la comoară. Fișierul se numește Prenume, linie jos, Nume, linie jos, L șapte.
+
+Obiectivul. Citești x și y pe scenă și duci personajul într-un loc anume cu du-te la sau glisează. Minim: start, plus traseu cu cel puțin două opriri, plus spune la capăt. Complet: plus comoară vizibilă, al doilea personaj pe x și y, plus sunet, plus reset curat.
+
+De ce contează. Ca pe o hartă sau în jocuri: știi unde e eroul, stânga sau dreapta, sus sau jos, ca să ajungă la țintă. În Scratch, poziția înseamnă coordonate.
+
+Primul pas pe ecran. Tragi personajul pe scenă. Vezi numerele x și y. X înseamnă stânga minus, sau dreapta plus. Y înseamnă jos minus, sau sus plus. Mijlocul e aproximativ zero zero.
+
+Al doilea pas pe ecran. Metoda: trage, citește, scrie. Tragi unde vrei un punct. Citești x și y. Scrii aceleași numere în bloc. Nu ghici.
+
+Al treilea pas pe ecran. La steag: du-te la zero zero. Personajul sare în mijloc. Du-te la înseamnă teleport: imediat, fără să se rotească singur.
+
+Al patrulea pas pe ecran. Glisează în o secundă la un punct citit de pe scenă. Du-te la înseamnă salt. Glisează înseamnă mișcare lină.
+
+Al cincilea pas pe ecran. Chiar sub steag: du-te la start. Apoi glisează la un punct pe drum, așteaptă, glisează la comoară, spune Am găsit-o. Fără reset, la a doua rulare pleacă de unde a rămas.
+
+Greșeli frecvente. Dacă ajunge în altă parte, ai confuzat X cu Y, sau plus cu minus. Mută, citește din nou, corectează. Dacă dispare, x sau y sunt prea mari. Rămâi cam între minus două sute patruzeci și plus două sute patruzeci pe X, și între minus o sută optzeci și plus o sută optzeci pe Y. Dacă la steag nu reîncepe, lipsește du-te la start.
+
+Proiectul de azi. Comoara.
+
+Minim înseamnă: start cu du-te la, cel puțin două opriri pe traseu, spune la capăt. Complet înseamnă: minim, plus comoară vizibilă ca al doilea personaj, plus sunet, plus reset clar. Dacă rămâi în urmă, salvează la Minim. La Minim, succesul e mesajul Am găsit-o la capăt.
+
+În proiect, primul pas. Loc de start cu x și y citite. Știi pe scurt: X, Y, mijloc zero zero.
+
+În proiect, al doilea pas. Cel puțin două glisează sau du-te la pe drum. Spune la capăt. Steag de două ori, același start. Salvezi.
+
+În proiect, al treilea pas, pentru Complet. Al doilea personaj e comoara, așezat pe x și y citite. Un sunet la final. Reset curat pe steag. Salvezi din nou.
+
+Recapitulare. X stânga dreapta. Y jos sus. Metoda: trage, citește, scrie. Du-te la sare. Glisează alunecă. La steag: du-te la start. Numele fișierului are prenumele și numele de familie.
+
+Succes la comoara ta.

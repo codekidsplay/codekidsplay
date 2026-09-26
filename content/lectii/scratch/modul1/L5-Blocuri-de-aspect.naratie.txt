@@ -1,0 +1,31 @@
+Lecția cinci. Interviul.
+
+Astăzi controlezi cum arată și ce transmite personajul: spune, gândește, mărime, culoare. Proiectul se numește Interviul. Fișierul: Prenume, linie jos, Nume, linie jos, L cinci.
+
+Obiectivul. Folosești blocuri din Aspect. Minim: dialog pe două personaje, cu spune, gândește și așteaptă. Complet: plus mărime, culoare, și reset curat la steag, cu setează mărimea la o sută și anulează efectele.
+
+De ce contează. În povești, personajul nu doar merge. Vorbește, se sperie, se mărește, se înroșește, are un gând. În Scratch, asta e capitolul Aspect.
+
+Primul pas pe ecran. Pe intervievat, la steag: spune Salut, gândește ceva, apoi spune Sunt gata. Spune este ce aude lumea. Gândește este gândul personajului.
+
+Al doilea pas pe ecran. Modifică mărimea cu douăzeci, așteaptă, apoi modifică cu minus douăzeci. Modifică adaugă sau scade față de acum. Setează mărimea la o sută pune exact o sută la sută. La reset pe steag folosim setează, nu modifică.
+
+Al treilea pas pe ecran. Schimbă efectul culoare de cel puțin două ori, cu așteaptă între ele.
+
+Al patrulea pas pe ecran. Chiar sub steag, înainte de dialog: setează mărimea la o sută, anulează efectele grafice. Fără asta, la al doilea steag rămâne uriaș sau colorat straniu.
+
+Greșeli frecvente. Dacă vorbesc amândoi odată, lipsește așteaptă. Dacă rămâne uriaș, lipsește pe steag setează mărimea la o sută. Dacă ai pus pe steag modifică cu minus douăzeci ca să resetezi, nu ajunge mereu la o sută. Folosește setează.
+
+Proiectul de azi. Interviul.
+
+Minim înseamnă: două roluri, reporter și intervievat, plus dialog cu spune, gândește și așteaptă. Complet înseamnă: minim, plus mărime, cel puțin două culori, reset complet pe steag. Dacă rămâi în urmă, salvează la Minim.
+
+În proiect, primul pas. Reporter și intervievat, așezați lângă unul pe altul.
+
+În proiect, al doilea pas. Cel puțin patru spune în total, împărțite pe cele două personaje. Cel puțin un gândește. Între replici: așteaptă, pe rând. Salvezi.
+
+În proiect, al treilea pas, pentru Complet. O schimbare de mărime în timpul interviului. Cel puțin două schimbări de culoare. La steag, pe amândoi: setează mărimea la o sută și anulează efectele. Steag din nou, totul curat. Salvezi din nou.
+
+Recapitulare. Aspect înseamnă spune, gândește, mărime, culoare, costum. În clip: modifică. La steag: setează la o sută și anulează efectele. Dialogul vine pe rând, cu așteaptă. Numele fișierului are prenumele și numele de familie.
+
+Succes la interviul tău.
