@@ -1,7 +1,7 @@
 # Roblox Modul 1 — Place Builder (lumea Obby)
 
 **Code Kids Play** · Roblox Studio · Badge: **Place Builder**  
-**Public:** **11–13 ani** · **fără scripting** (sau un singur script „de-a gata” doar la Complet / Bonus)  
+**Public:** **12+ ani** · **fără scripting** (sau un singur script „de-a gata” doar la Complet / Bonus)  
 **Proiect pe verticală:** construiești **harta Obby** pe care o folosești în M2–M4  
 **Fișier / Place:** `Prenume_Nume_M1` (ex. `Ana_Pop_M1`)
 

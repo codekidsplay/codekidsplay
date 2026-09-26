@@ -10,7 +10,7 @@ export const cursuri = [
   { id: 'c9', nume: 'Tinkercad 3D', descriere: 'Design 3D simplu cu Tinkercad — forme, print și creativitate', culoare: '#1E88E5' },
   { id: 'c10', nume: 'micro:bit Python', descriere: 'Python pe micro:bit — senzori, LED și proiecte pe placă', culoare: '#00C853' },
   { id: 'c11', nume: 'Unity', descriere: 'Jocuri 3D cu Unity — scene, scripturi și proiecte interactive', culoare: '#000000' },
-  { id: 'c12', nume: 'Roblox Studio', descriere: 'Jocuri pe Roblox cu Lua — creezi, publici și joci cu prietenii', culoare: '#E2231A' },
+  { id: 'c12', nume: 'Roblox Studio', descriere: 'Jocuri pe Roblox cu Luau — pentru 12+: Studio, scripturi, scor și publicare', culoare: '#E2231A' },
 ]
 
 /** Iconuri pe cardurile de landing (opțional) */
@@ -63,7 +63,7 @@ export const cursBlurbLanding: Record<string, string> = {
   c9: 'Dezvoltăm gândirea spațială: învățăm să construim, să combinăm forme 3D și să proiectăm propriile modele pe calculator.',
   c10: 'Scriem Python direct pe micro:bit: LED, senzori și proiecte pe placa fizică.',
   c11: 'Jocuri și lumi 3D: învățăm crearea scenelor, fizica obiectelor și logica de joc în Unity (C#).',
-  c12: 'Obby pas cu pas: construiești în Studio, apoi scripturi Luau, scor pe ecran și publici jocul.',
+  c12: 'Pentru 12+: Obby pas cu pas — construiești în Studio, apoi Luau, scor pe ecran și publici jocul.',
 }
 
 export const module = [
@@ -98,7 +98,7 @@ export const module = [
   { id: 'm21', curs_id: 'c8', nume: 'Modul 1 — MakeCode (blocuri)', ordine: 1, badge: 'micro:bit Starter' },
   { id: 'm22', curs_id: 'c8', nume: 'Modul 2 — Proiecte (blocuri + radio)', ordine: 2, badge: 'micro:bit Maker' },
   { id: 'm23', curs_id: 'c8', nume: 'Modul 3 — Python pe micro:bit', ordine: 3, badge: 'micro:bit Coder' },
-  // Roblox Studio — 4 module × 10 lecții (11–13 ani; Obby pe verticală)
+  // Roblox Studio — 4 module × 10 lecții (12+ ani; Obby pe verticală)
   { id: 'm24', curs_id: 'c12', nume: 'Modul 1 — Place Builder', ordine: 1, badge: 'Place Builder' },
   { id: 'm25', curs_id: 'c12', nume: 'Modul 2 — Script Starter', ordine: 2, badge: 'Script Starter' },
   { id: 'm26', curs_id: 'c12', nume: 'Modul 3 — Game Logic', ordine: 3, badge: 'Game Logic' },

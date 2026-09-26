@@ -1,10 +1,12 @@
 # Roblox Studio — Curriculum Code Kids Play
 
 **Curs:** Roblox Studio (`c12`)  
-**Public:** **11–13 ani** (bandă site: 12+)  
+**Public:** **12+ ani** (bandă site: Micii Programatori)  
 **Formă:** **4 module × 10 lecții** · badge la finalul fiecărui modul  
 **Limbaj scripting:** Luau (Roblox)  
 **Proiect pe verticală:** același **Obby** crescut pe module (nu 4 jocuri noi de la zero)
+
+*Premisă 12+:* ritm și vocabular ca la C++/Unity pe landing; M1 rămâne fără cod ca să nu amestecăm Studio + sintaxă în aceeași oră, dar din M2 putem cere Minim mai ferm (erori citite din Output, prefix `Srv_`/`Cli_`).
 
 ---
 

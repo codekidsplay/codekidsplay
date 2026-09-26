@@ -1,7 +1,7 @@
 # Roblox Modul 4 — Game Creator (salvare + publish)
 
 **Code Kids Play** · Roblox Studio · Badge: **Roblox Creator**  
-**Public:** **11–13 ani** · autonomie + publicare  
+**Public:** **12+ ani** · autonomie + publicare  
 **Place:** `Prenume_Nume_M4` (versiunea finală a Obby-ului)
 
 | # | Fișier | Titlu |

@@ -1,7 +1,7 @@
 # Roblox Modul 2 — Script Starter (Luau pe Obby)
 
 **Code Kids Play** · Roblox Studio · Badge: **Script Starter**  
-**Public:** **11–13 ani** · primul cod Luau pe **lumea din M1**  
+**Public:** **12+ ani** · primul cod Luau pe **lumea din M1**  
 **Convenție:** `Srv_` = Script (server) · `Cli_` = LocalScript (client)  
 **Place:** continuă `Prenume_Nume_M1` sau salvează copie `Prenume_Nume_M2`
 
