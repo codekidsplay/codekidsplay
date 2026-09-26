@@ -36,13 +36,15 @@ Fără finish, Obby-ul nu are scop — e doar o plimbare. L7–L9 umplu mijlocul
 ## Pas cu pas
 
 ### 1) Spawn = locul de naștere
-1. În **Explorer** → **Workspace**, caută **SpawnLocation** (discul / Part-ul cu simbolul de spawn)  
-2. Dacă lipsește: Home → Insert / Model tools — sau **SpawnLocation** din obiecte (profesorul arată o dată pe proiector dacă meniul diferă)  
+1. În **Explorer** → **Workspace**, caută **SpawnLocation** (discul / Part-ul verde cu simbolul de spawn)  
+2. Dacă lipsește, îl adaugi așa (calea cea mai stabilă pe versiuni Studio):  
+   - click pe **Workspace** în Explorer → butonul **+** → cauți / alegi **SpawnLocation**  
+   - *alternativ (UI clasică):* tab **Model** → zona **Gameplay** → **Spawn**  
 3. **Move:** pui Spawn-ul la începutul traseului tău  
 4. **Anchor** pe Spawn (dacă e Part)  
-5. Opțional: redenumești `StartObby` · Color verde (convenția L4)  
+5. **Lași numele `SpawnLocation`** (e special pentru Roblox — L2) · poți doar **Color** verde (convenția L4)  
 
-**Play:** te naști pe / lângă Spawn. Dacă nu — verifici că e **SpawnLocation** activ, nu un Part oarecare.
+**Play:** te naști pe / lângă Spawn. Dacă nu — verifici că e **SpawnLocation** (nu un Part oarecare) și că **Enabled** e pe true în Properties.
 
 **Încearcă tu — Spawn (3–4 min)**  
 - [ ] Găsești Spawn-ul în Explorer  
@@ -85,7 +87,7 @@ Fără finish, Obby-ul nu are scop — e doar o plimbare. L7–L9 umplu mijlocul
 1. **Am colorat un Part „Start” dar nu e SpawnLocation** — te naști tot pe Spawn-ul vechi; muți **SpawnLocation**.  
 2. **Finish lipit de Spawn** — nu e Obby; mută Finish departe, pe traseu.  
 3. **Finish sub Baseplate / în aer de neatins** — Position / Move.  
-4. **Două SpawnLocation** — te naști random; lasă **unul** clar (sau dezactivezi extra, dacă știi cum).  
+4. **Două SpawnLocation** — te naști random; lași **unul** la start. Pe cel în plus: Properties → **Enabled = false**, sau (mai simplu azi) **Delete**.  
 5. **Am așteptat mesaj „Ai câștigat!”** — azi nu există; doar ajungi pe Part.  
 
 ---
@@ -124,10 +126,10 @@ Cei rapizi: Complet, apoi Bonus.
 ## Bonus (dacă ai terminat Complet)
 - [ ] Un Part `Sageata` sau panouri colorate care „ară” spre Finish  
 - [ ] Finish pe o **platformă mai înaltă** (mic podium)  
-- [ ] Spawn cu **decal** / textură diferită (fără Toolbox greu — doar dacă e simplu)  
+- [ ] Un al doilea Spawn „de rezervă” (ex. după o zonă grea): îl pui, apoi **Enabled = false** până îl activezi mai târziu — exercițiu de Properties, fără să strici nașterea de la start  
 
 ## Recapitulare rapidă
-1. **SpawnLocation** = unde te naști  
+1. **SpawnLocation** = unde te naști (numele rămâne; culoare ok)  
 2. **Finish** = țintă vizuală (încă fără script)  
 3. Culoare + nume = se citește de departe  
 4. Playtest: naștere la Start + drum până la Finish  
@@ -136,7 +138,7 @@ Cei rapizi: Complet, apoi Bonus.
 **Quiz scurt (cu profesorul):**  
 - Ce obiect te face să te naști într-un loc?  
 - De ce Finish e Part, nu neapărat Spawn?  
-- Ce lipsește încă la Finish față de un joc „gata”? *(scor / mesaj / script)*
+- Ce lipsește încă la Finish față de un joc „gata”?
 
 ## Temă
 Opțional: muți Finish un pic mai departe și adaugi **1** platformă.  
