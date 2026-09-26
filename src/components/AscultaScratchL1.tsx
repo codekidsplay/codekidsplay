@@ -28,8 +28,9 @@ export default function AscultaScratchL1({ accentColor = '#f83030' }: { accentCo
     setStatus('loading')
     try {
       const res = await fetch('/api/tts/scratch-l1')
-      const data = (await res.json()) as { url?: string }
+      const data = (await res.json()) as { url?: string; error?: string; detail?: string }
       if (!res.ok || !data.url) {
+        console.error('[AscultaScratchL1]', data.error, data.detail)
         setStatus('error')
         return
       }
@@ -39,7 +40,8 @@ export default function AscultaScratchL1({ accentColor = '#f83030' }: { accentCo
       audio.onerror = () => setStatus('error')
       await audio.play()
       setStatus('playing')
-    } catch {
+    } catch (e) {
+      console.error('[AscultaScratchL1]', e)
       setStatus('error')
     }
   }

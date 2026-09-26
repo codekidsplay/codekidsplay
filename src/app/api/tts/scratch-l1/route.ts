@@ -75,6 +75,8 @@ export async function GET() {
   if (cached) return Response.json({ url: cached, cached: true })
 
   try {
+    // AI Gateway TTS: doar modele OpenAI speech (tts-1 / tts-1-hd).
+    // Gemini TTS cere GOOGLE_GENERATIVE_AI_API_KEY separat.
     const useGoogle = Boolean(process.env.GOOGLE_GENERATIVE_AI_API_KEY)
     const result = useGoogle
       ? await generateSpeech({
@@ -85,12 +87,12 @@ export async function GET() {
             'Citește în română, cald și natural, ca o învățătoare prietenoasă pentru copii de 8–10 ani. Pauze scurte între propoziții. Fără ton robotic.',
         })
       : await generateSpeech({
-          model: gateway.speechModel('openai/gpt-4o-mini-tts'),
+          model: gateway.speechModel('openai/tts-1-hd'),
           text,
-          voice: 'coral',
-          instructions:
-            'Speak in Romanian. Warm, friendly teacher voice for children aged 8–10. Clear, natural pacing with short pauses between sentences. Never robotic or monotone.',
+          voice: 'nova',
           outputFormat: 'mp3',
+          speed: 0.95,
+          language: 'ro',
         })
 
     const bytes = result.audio.uint8Array
@@ -98,9 +100,13 @@ export async function GET() {
     const url = await saveAudio(hash, bytes, mediaType)
     return Response.json({ url, cached: false })
   } catch (err) {
-    console.error('[tts scratch-l1]', err)
+    const message = err instanceof Error ? err.message : String(err)
+    console.error('[tts scratch-l1]', message, err)
     return Response.json(
-      { error: 'Nu am putut genera vocea. Verifică AI Gateway / cheia API.' },
+      {
+        error: 'Nu am putut genera vocea.',
+        detail: message.slice(0, 300),
+      },
       { status: 502 },
     )
   }
