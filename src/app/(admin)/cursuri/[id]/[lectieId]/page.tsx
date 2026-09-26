@@ -4,8 +4,6 @@ import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import { ArrowLeft, ArrowRight, Eye } from 'lucide-react'
 import LectieMarkdown from '@/components/LectieMarkdown'
-import AscultaLectie from '@/components/AscultaLectie'
-import { isMicExploratorCurs } from '@/lib/miciexploratori'
 
 export default async function ProfesorLectiePage({
   params,
@@ -52,15 +50,6 @@ export default async function ProfesorLectiePage({
           {curs.nume} · Lecția {lectie.ordine}
         </p>
         <h1 className="text-2xl md:text-3xl font-bold text-slate-900 mb-6">{lectie.titlu}</h1>
-
-        {isMicExploratorCurs(cursId) && markdown ? (
-          <AscultaLectie
-            cursId={cursId}
-            lectieId={lectieId}
-            accentColor={curs.culoare}
-            useGemini
-          />
-        ) : null}
 
         {markdown ? (
           <LectieMarkdown markdown={markdown} accentColor={curs.culoare} />

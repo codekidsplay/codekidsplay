@@ -6,8 +6,6 @@ import { getStore } from '@/lib/mockStore'
 import Link from 'next/link'
 import { useParams } from 'next/navigation'
 import { ArrowLeft, ArrowRight, CheckCircle2, Lock } from 'lucide-react'
-import AscultaLectie from '@/components/AscultaLectie'
-import { isMicExploratorCurs } from '@/lib/miciexploratori'
 import { useElevCursantId } from '@/hooks/useElevCursantId'
 
 export default function InvataLectiePage() {
@@ -78,16 +76,6 @@ export default function InvataLectiePage() {
         <div className="flex items-center gap-2 text-emerald-600 text-sm font-medium mb-4">
           <CheckCircle2 size={18} /> Deblocată de profesor — poți citi acasă
         </div>
-
-        {isMicExploratorCurs(cursId) ? (
-          <AscultaLectie
-            cursId={cursId}
-            lectieId={lectieId}
-            accentColor={curs.culoare}
-            useGemini
-            fallbackText={`Lecția ${lectie.ordine}: ${lectie.titlu}. Modul: ${modul.nume}.`}
-          />
-        ) : null}
 
         <div className="prose prose-slate max-w-none text-slate-600 space-y-4">
           <p>
