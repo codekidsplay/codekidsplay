@@ -9,7 +9,7 @@ import { markdownToSpeechText, speechTextHash } from '@/lib/tts/speechText'
 export const maxDuration = 120
 
 /** Schimbă când schimbi ritmul/voce — invalidează cache-ul vechi */
-const TTS_PROFILE = 'gemini-flash-kore-slow-v4-pauses'
+const TTS_PROFILE = 'gemini-pro-aoede-natural-v5'
 
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url)
@@ -64,14 +64,13 @@ export async function GET(request: Request) {
 
   try {
     const result = await generateSpeech({
-      model: google.speech('gemini-2.5-flash-preview-tts'),
+      model: google.speech('gemini-2.5-pro-preview-tts'),
       text: speechText,
-      voice: 'Kore',
+      voice: 'Aoede',
       instructions:
-        'IMPORTANT: Speak VERY SLOWLY. ' +
-        'Citește în română, clar, cald, pentru copii de 8–10 ani. ' +
-        'Viteza: foarte lentă — ca un învățător care dictează, nu ca un adult care povestește rapid. ' +
-        'Fă o pauză clară după fiecare propoziție. Silabește puțin mai larg. Nu accelera niciodată.',
+        'Read in Romanian with a warm, natural, friendly voice for children aged 8–10. ' +
+        'Sound like a kind teacher telling a story — expressive and human, never robotic or monotone. ' +
+        'Calm conversational pace (not rushed, not dictation). Soft tone, clear pronunciation.',
     })
 
     const bytes = result.audio.uint8Array

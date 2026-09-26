@@ -3,9 +3,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { Volume2, Pause, Play, Square, Loader2 } from 'lucide-react'
 
-/** Ritm pentru 8–10 ani (1 = normal) */
-const PLAYBACK_RATE = 0.55
-
 interface Props {
   cursId: string
   lectieId: string
@@ -15,17 +12,6 @@ interface Props {
 }
 
 type Status = 'idle' | 'loading' | 'playing' | 'paused' | 'unsupported' | 'error'
-
-function applyAudioRate(audio: HTMLAudioElement) {
-  audio.defaultPlaybackRate = PLAYBACK_RATE
-  audio.playbackRate = PLAYBACK_RATE
-  try {
-    audio.preservesPitch = true
-    ;(audio as HTMLAudioElement & { webkitPreservesPitch?: boolean }).webkitPreservesPitch = true
-  } catch {
-    /* ignore */
-  }
-}
 
 export default function AscultaLectie({
   cursId,
@@ -75,14 +61,14 @@ export default function AscultaLectie({
     window.speechSynthesis.cancel()
     const u = new SpeechSynthesisUtterance(text)
     u.lang = 'ro-RO'
-    u.rate = PLAYBACK_RATE
+    u.rate = 0.9
     const voice = pickRoVoice()
     if (voice) u.voice = voice
     u.onend = () => setStatus('idle')
     u.onerror = () => setStatus('idle')
     window.speechSynthesis.speak(u)
     setStatus('playing')
-    setHint('Voce din browser (rezervă)')
+    setHint('Voce din browser (rezervă) — sună mai natural cu Gemini când e configurat')
   }
 
   const startGemini = async () => {
@@ -112,13 +98,6 @@ export default function AscultaLectie({
       }
 
       const audio = new Audio(data.url)
-      applyAudioRate(audio)
-
-      const keepSlow = () => applyAudioRate(audio)
-      audio.addEventListener('loadedmetadata', keepSlow)
-      audio.addEventListener('play', keepSlow)
-      audio.addEventListener('playing', keepSlow)
-
       audioRef.current = audio
       audio.onended = () => setStatus('idle')
       audio.onerror = () => {
@@ -126,7 +105,6 @@ export default function AscultaLectie({
         setStatus('error')
       }
       await audio.play()
-      keepSlow()
       setStatus('playing')
       setHint(data.cached ? 'Din cache' : 'Voce Gemini — salvată pentru clasă')
     } catch {
@@ -157,7 +135,6 @@ export default function AscultaLectie({
 
   const resume = () => {
     if (audioRef.current) {
-      applyAudioRate(audioRef.current)
       void audioRef.current.play()
       setStatus('playing')
       return
