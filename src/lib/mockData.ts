@@ -208,12 +208,12 @@ export const lectii = [
     'Dacă… altfel',
     'Detectare: atingere',
     'Taste și mouse',
-    'Variabile',
+    'Variabile: scor și vieți',
     'Operatori',
-    'Forever + stop',
-    'Mesaje (broadcast)',
+    'Forever și stop',
+    'Mesaje între personaje',
     'Mini-proiect: Labirint',
-    'Recapitulare Modul 2',
+    'Recapitulare Modul 2 — completare + prezentare',
   ]),
   // Scratch Modul 3
   ...genLectii('m18', [
