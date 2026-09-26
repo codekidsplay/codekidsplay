@@ -63,7 +63,7 @@ export const cursBlurbLanding: Record<string, string> = {
   c9: 'Dezvoltăm gândirea spațială: învățăm să construim, să combinăm forme 3D și să proiectăm propriile modele pe calculator.',
   c10: 'Scriem Python direct pe micro:bit: LED, senzori și proiecte pe placa fizică.',
   c11: 'Jocuri și lumi 3D: învățăm crearea scenelor, fizica obiectelor și logica de joc în Unity (C#).',
-  c12: 'Creezi jocuri în Roblox Studio, le publici și le joci cu prietenii, programare în Lua.',
+  c12: 'Obby pas cu pas: construiești în Studio, apoi scripturi Luau, scor pe ecran și publici jocul.',
 }
 
 export const module = [
@@ -98,6 +98,11 @@ export const module = [
   { id: 'm21', curs_id: 'c8', nume: 'Modul 1 — MakeCode (blocuri)', ordine: 1, badge: 'micro:bit Starter' },
   { id: 'm22', curs_id: 'c8', nume: 'Modul 2 — Proiecte (blocuri + radio)', ordine: 2, badge: 'micro:bit Maker' },
   { id: 'm23', curs_id: 'c8', nume: 'Modul 3 — Python pe micro:bit', ordine: 3, badge: 'micro:bit Coder' },
+  // Roblox Studio — 4 module × 10 lecții (11–13 ani; Obby pe verticală)
+  { id: 'm24', curs_id: 'c12', nume: 'Modul 1 — Place Builder', ordine: 1, badge: 'Place Builder' },
+  { id: 'm25', curs_id: 'c12', nume: 'Modul 2 — Script Starter', ordine: 2, badge: 'Script Starter' },
+  { id: 'm26', curs_id: 'c12', nume: 'Modul 3 — Game Logic', ordine: 3, badge: 'Game Logic' },
+  { id: 'm27', curs_id: 'c12', nume: 'Modul 4 — Game Creator', ordine: 4, badge: 'Roblox Creator' },
 ]
 
 const genLectii = (modulId: string, titluri: string[]) =>
@@ -292,6 +297,58 @@ export const lectii = [
     'Port proiect M1/M2 → Python',
     'Proiect final Coder',
     'Showcase + badge micro:bit Coder',
+  ]),
+  // Roblox Modul 1 — Place Builder
+  ...genLectii('m24', [
+    'Studio + primul Place',
+    'Explorer, Properties, Workspace',
+    'Parts: forme, mutare, scalare',
+    'Ancorare, materiale, culori',
+    'Camera + Playtest',
+    'Start (Spawn) + Finish',
+    'Traseu Obby: platforme',
+    'Checkpoint vizual (fără script)',
+    'Mini-proiect: Lumea Obby',
+    'Completare + prezentare + insignă Place Builder',
+  ]),
+  // Roblox Modul 2 — Script Starter
+  ...genLectii('m25', [
+    'Script vs LocalScript + print',
+    'Client vs Server',
+    'Variabile',
+    'if / then / else',
+    'Eveniment Touched',
+    'ClickDetector',
+    'for / while (simplu)',
+    'Funcții simple',
+    'Mini-proiect: ușă sau monedă',
+    'Completare + prezentare + insignă Script Starter',
+  ]),
+  // Roblox Modul 3 — Game Logic
+  ...genLectii('m26', [
+    'leaderstats (scor pe jucător)',
+    'GUI: scor pe ecran',
+    'RemoteEvent (client → server)',
+    'Serverul decide (securitate Minim)',
+    'Checkpoint cu script',
+    'Cădere / respawn',
+    'Timer sau vieți',
+    'Bucla de joc curată',
+    'Mini-proiect: Obby + scor',
+    'Completare + prezentare + insignă Game Logic',
+  ]),
+  // Roblox Modul 4 — Game Creator
+  ...genLectii('m27', [
+    'DataStore Minim',
+    'ModuleScript',
+    'NPC / inamic simplu',
+    'Inventar sau shop (Minim)',
+    'Polish: lumini, sunete, UI',
+    'Playtest cu colegii',
+    'Depanare + listă de bug-uri',
+    'Pregătire publish',
+    'Proiect final jucabil',
+    'Publish + prezentare + insignă Roblox Creator',
   ]),
 ]
 
