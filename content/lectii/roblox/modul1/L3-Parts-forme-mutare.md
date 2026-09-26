@@ -57,10 +57,12 @@ Fără Move / Scale / Rotate, rămâi cu cuburi greu de sărit. Azi antrenăm **
 
 ### 2) Forme de Part
 1. Home → **Part** — de obicei apare un **Block** (cub/paralelipiped)  
-2. Cu Part-ul selectat, în ribbon / meniul Part poți alege și alte forme simple (ex. **Sphere**, **Cylinder**, **Wedge** — după versiunea Studio)  
+2. Cu Part-ul selectat, poți schimba forma:  
+   - click **dreapta** pe Part în Viewport / Explorer → **Change to** → **Wedge** / **Cylinder** / **Sphere**  
+   - sau din ribbon-ul **Part** (butonul de formă), după versiunea Studio  
 3. Azi nucleul = **Block**. Alte forme = Complet / Bonus  
 
-**Wedge** (triunghi) e bun pentru **rampă** — dacă îl găsești, e ideal la Complet.
+**Wedge** (triunghi) e bun pentru **rampă** — îl găsești cel mai sigur cu **Change to → Wedge**.
 
 **Încearcă tu — un Part nou (2 min)**  
 - [ ] Ai inserat un Part nou  
@@ -70,17 +72,19 @@ Fără Move / Scale / Rotate, rămâi cu cuburi greu de sărit. Azi antrenăm **
 ### 3) Aliniere practică — trepte
 Idee: 2–3 Blocks ca **trepte** spre o platformă mai înaltă.
 
+*Preview cameră de editare (complet la **L5**):* ții **click dreapta** pe Viewport + tragi mouse-ul ca să privești scena din lateral — asta e camera de **constructor**, nu camera din Play (WASD). Azi doar atât cât să vezi treptele din profil.
+
 1. Part `Treapta1` — Scale: mai lat pe X/Z, subțire pe Y  
 2. Move: îl lipesti de Spawn / de calea din L1  
 3. `Treapta2` — un pic **mai sus** (Move pe Y) și un pic **înainte**  
-4. Verifici în viewport din lateral (rotești camera cu mouse-ul dreapta / tastele pe care le știi din L1)  
+4. Verifici din lateral (click dreapta + tragere — vezi nota de mai sus)  
 5. Toate cu **Anchor**  
 
-*Distanțe:* treptele aproape una de alta — la Play trebuie să poți urca **fără** să cazi între ele.
+*Distanțe:* păstrează **golul dintre trepte sub ~5 studs** (avatarul sare ~6–7 studs pe orizontală la setările implicite) — ca să fie **sigur** săribil. La Play trebuie să poți urca **fără** să cazi între ele.
 
 **Încearcă tu — două trepte (4–5 min)**  
 - [ ] `Treapta1` + `Treapta2` ancorate  
-- [ ] Se văd ca scară (nu stivuite random)  
+- [ ] Se văd ca scară (nu stivuite random); golul ≈ sub 5 studs  
 - [ ] Play → urci pe ele · Stop  
 
 ### 4) Rotate = pantă (preview Complet)
@@ -99,10 +103,10 @@ Idee: 2–3 Blocks ca **trepte** spre o platformă mai înaltă.
 
 ## Greșeli frecvente
 1. **Parts cad la Play** — lipsește Anchor.  
-2. **Scale pe o axă greșită** — Part-ul e „ac” sau uriaș; Undo, Scale din nou.  
-3. **Trepte prea depărtate** — nu poți sări; apropie-le (Move).  
+2. **Scale pe o axă greșită** — Part-ul e „ac” sau uriaș; Undo (**Ctrl+Z**), Scale din nou.  
+3. **Trepte prea depărtate** (gol > ~5 studs) — nu poți sări; apropie-le (Move).  
 4. **Rotate 90° din greșeală** — Part-ul e pe muchie; Rotate înapoi sau Undo.  
-5. **Nume `Part` din nou** — redenumești ca la L2.  
+5. **Nume `Part` din nou** — redenumești ca la L2 (fără spații / diacritice).  
 
 ---
 
@@ -140,15 +144,16 @@ Cei rapizi: Complet, apoi Bonus.
 
 ## Bonus (dacă ai terminat Complet)
 - [ ] O **platformă sus** (Part lat) la capătul scării — `Platforma1`  
-- [ ] Un **Cylinder** sau **Sphere** ca obstacol decorativ (doar vizual)  
-- [ ] Dublezi o treaptă (Copy/Paste sau Duplicate) și o muți — mai rapid decât de la zero  
+- [ ] Un **Cylinder** sau **Sphere** ca obstacol decorativ (doar vizual) — Change to / ribbon Part  
+- [ ] Dublezi o treaptă cu **Duplicate** (**Ctrl+D**; pe Mac: Cmd+D) și o muți — mai rapid decât de la zero  
 
 ## Recapitulare rapidă
 1. **Move** = unde · **Scale** = cât de mare · **Rotate** = unghi  
-2. Block = baza Obby; Wedge = rampă bună  
+2. Block = baza Obby; Wedge = rampă bună (Change to → Wedge)  
 3. Anchor mereu pe ce vrei să stea  
-4. Treptele aproape — Play decide dacă e săritură ok  
+4. Gol între trepte **sub ~5 studs** — Play decide dacă e săritură ok  
 5. Place: `Prenume_Nume_M1`  
+6. Camera de editare (click dreapta) = preview; o exersăm complet la **L5**  
 
 **Quiz scurt (cu profesorul):**  
 - Ce unealtă schimbi mărimea?  
