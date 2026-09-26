@@ -71,17 +71,21 @@ Dacă nu le vezi: View → Explorer / Properties din nou.
 ### 3) Redenumești (nu lăsa `Part`)
 1. În Explorer, click pe un Part  
 2. Click încă o dată pe **nume** (sau F2 / click dreapta → Rename — după versiunea Studio)  
-3. Nume clar, fără spații ciudate — ex.:  
+3. Nume clar — ex.:  
    - `PodeaStart`  
    - `Treapta1`  
    - `ZidStanga`  
 4. Enter  
 
-*De ce:* la M2, scripturile caută obiecte după **nume**. `Part` × 15 = haos.
+**Regulă de aur pentru nume:** fără **spații**, fără **diacritice** (ă, â, î, ș, ț).  
+Scrii `Treapta1`, **nu** `Treapta 1` sau `Treaptă1` — la **M2** vei căuta aceste nume direct în cod (`workspace.Treapta1`), iar spațiile / diacriticele complică sintaxa.
+
+*De ce:* scripturile caută obiecte după **nume**. `Part` × 15 = haos; `Zidul Stângă` = capcană silențioasă abia la M2.
 
 **Încearcă tu — nume (3–4 min)**  
 - [ ] Ai redenumit **≥2** Parts cu nume pe care le înțelegi tu  
 - [ ] Niciunul dintre cele două nu se mai numește doar `Part`  
+- [ ] Numele respectă regula: **doar litere/cifre lipite**, fără spații / diacritice  
 - [ ] Salvat Place-ul  
 
 ### 4) Properties — fișa obiectului
@@ -113,8 +117,9 @@ Dacă nu le vezi: View → Explorer / Properties din nou.
 1. **„Nu am Explorer”** — nu e deschis din View; îl reactivezi.  
 2. **Am selectat Lighting / ServerScriptService** — te întorci la **Workspace**.  
 3. **Am redenumit greșit Baseplate-ul** — Undo; Baseplate rămâne Baseplate dacă se poate.  
-4. **Am schimbat Position și Part-ul a zburat** — Undo sau Position înapoi aproape de Spawn.  
-5. **Am adăugat un Script din greșeală** — îl ștergi din Explorer (click dreapta → Delete). Azi **fără** Script.  
+4. **Nume cu spațiu / diacritice** (`Treapta 1`, `Zidul Stângă`) — funcționează acum, dar complică scriptul de la **M2**; ține-te de litere și cifre lipite (`Treapta1`, `ZidStanga`).  
+5. **Am schimbat Position și Part-ul a zburat** — Undo sau Position înapoi aproape de Spawn.  
+6. **Am adăugat un Script din greșeală** — îl ștergi din Explorer (click dreapta → Delete). Azi **fără** Script.  
 
 ---
 
@@ -136,7 +141,7 @@ Cei rapizi: Complet, apoi Bonus.
 - [ ] Workspace desfăcut; găsești obiectele tale  
 
 ### Pasul 2 — Nume clare *(Minim)*
-- [ ] ≥2 Parts redenumite (ex. `Treapta1`, `Treapta2`)  
+- [ ] ≥2 Parts redenumite (ex. `Treapta1`, `Treapta2` — **fără** spații / diacritice)  
 - [ ] Salvat  
 
 **→ Minim când:** un coleg citește din Explorer ce ai pe scenă, fără să ghicească după culoare.
@@ -150,14 +155,14 @@ Cei rapizi: Complet, apoi Bonus.
 ---
 
 ## Bonus (dacă ai terminat Complet)
-- [ ] Redenumești **SpawnLocation** în ceva clar (ex. `StartObby`) — sau lași numele default dacă e deja clar  
+- [ ] Lași **SpawnLocation** cu numele default (recomandat) — e un nume **special pentru Roblox** (poziția de start a jucătorilor). Dacă îl redenumești, jocul se poate comporta ciudat; pe checkpoint-uri cu cod revenim mai târziu  
 - [ ] Un Part nou: îl creezi, îl ancorezi, îl denumești `DemoL2`, îi schimbi Size din Properties  
 - [ ] Găsești în Properties câmpul **BrickColor** / **Color** și schimbi o dată *(preview L4)*  
 
 ## Recapitulare rapidă
 1. **Explorer** = lista · **Properties** = setările obiectului selectat  
 2. **Workspace** = obiectele din lume  
-3. Nume clare > `Part`, `Part1`, `Part2`  
+3. Nume clare, **fără spații / diacritice** > `Part`, `Part1`, `Treapta 1`  
 4. Size / Position din Properties = aceeași idee ca Scale / Move, dar pe numere  
 5. Tot pe Place-ul `Prenume_Nume_M1`  
 
