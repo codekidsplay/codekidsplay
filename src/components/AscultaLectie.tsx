@@ -224,11 +224,6 @@ export default function AscultaLectie({
         ) : null}
       </div>
       {hint ? <p className="text-xs text-slate-500">{hint}</p> : null}
-      {useGemini && status === 'idle' ? (
-        <p className="text-xs text-slate-400">
-          Voce Gemini pentru Micii Exploratori — prima dată poate dura ~30–60s, apoi e din cache.
-        </p>
-      ) : null}
     </div>
   )
 }
