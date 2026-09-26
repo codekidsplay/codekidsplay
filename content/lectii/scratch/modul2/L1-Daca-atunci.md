@@ -98,7 +98,7 @@ La finalul orei poți folosi <span style="color:#FFAB19;font-weight:700">dacă �
 - [ ] Steag de două ori: personajul reîncepe din același loc  
 - [ ] Salvat: `Prenume_Nume_L1`  
 
-*(Azi **nu** folosim `scor > 10` — Operatori la L6.)*
+*(Azi **nu** folosim operatori pe scor. La **L5**: preview doar `scor = 5` (victorie). `<` `>` `+` pe îndelete la **L6**.)*
 
 ---
 

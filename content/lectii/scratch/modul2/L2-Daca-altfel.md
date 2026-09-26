@@ -90,7 +90,7 @@ La finalul orei poți folosi <span style="color:#FFAB19;font-weight:700">dacă �
 - [ ] Steag de două ori → fundalul de start e curat, apoi alegerea rulează din nou  
 - [ ] Salvat: `Prenume_Nume_L2`  
 
-*(**Nu** azi: `dacă x > 0`, `dacă mărime > 100` — alea cer <span style="color:#59C059;font-weight:700">Operatori</span>, la L6.)*
+*(**Nu** azi: `dacă x > 0`, `dacă mărime > 100`. <span style="color:#59C059;font-weight:700">Operatori</span>: la **L5** doar un preview `=` (victorie scor); `<` `>` `+` pe îndelete la **L6**.)*
 
 ---
 
