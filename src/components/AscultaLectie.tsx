@@ -21,7 +21,6 @@ export default function AscultaLectie({
   fallbackText = '',
 }: Props) {
   const [status, setStatus] = useState<Status>('idle')
-  const [hint, setHint] = useState<string | null>(null)
   const audioRef = useRef<HTMLAudioElement | null>(null)
 
   useEffect(() => {
@@ -41,7 +40,6 @@ export default function AscultaLectie({
       window.speechSynthesis.cancel()
     }
     setStatus('idle')
-    setHint(null)
   }, [cursId, lectieId])
 
   const pickRoVoice = () => {
@@ -68,31 +66,25 @@ export default function AscultaLectie({
     u.onerror = () => setStatus('idle')
     window.speechSynthesis.speak(u)
     setStatus('playing')
-    setHint('Voce din browser (rezervă) — sună mai natural cu Gemini când e configurat')
   }
 
   const startGemini = async () => {
     setStatus('loading')
-    setHint(null)
     try {
       const res = await fetch(
         `/api/tts?cursId=${encodeURIComponent(cursId)}&lectieId=${encodeURIComponent(lectieId)}`,
       )
       const data = (await res.json()) as {
         url?: string
-        cached?: boolean
-        error?: string
         fallbackText?: string
       }
 
       if (!res.ok || !data.url) {
         const fb = data.fallbackText || fallbackText
         if (fb) {
-          setHint(data.error || 'Folosim vocea din browser.')
           startWebSpeech(fb)
           return
         }
-        setHint(data.error || 'Nu am putut porni ascultarea.')
         setStatus('error')
         return
       }
@@ -100,21 +92,12 @@ export default function AscultaLectie({
       const audio = new Audio(data.url)
       audioRef.current = audio
       audio.onended = () => setStatus('idle')
-      audio.onerror = () => {
-        setHint('Eroare la redare. Încearcă din nou.')
-        setStatus('error')
-      }
+      audio.onerror = () => setStatus('error')
       await audio.play()
       setStatus('playing')
-      setHint(data.cached ? 'Din cache' : 'Voce Gemini — salvată pentru clasă')
     } catch {
-      if (fallbackText) {
-        setHint('Conexiune eșuată — voce din browser.')
-        startWebSpeech(fallbackText)
-      } else {
-        setHint('Nu am putut porni ascultarea.')
-        setStatus('error')
-      }
+      if (fallbackText) startWebSpeech(fallbackText)
+      else setStatus('error')
     }
   }
 
@@ -155,16 +138,10 @@ export default function AscultaLectie({
     setStatus('idle')
   }
 
-  if (status === 'unsupported') {
-    return (
-      <p className="text-xs text-slate-400 mb-4">
-        Ascultarea nu e disponibilă pe acest dispozitiv / browser.
-      </p>
-    )
-  }
+  if (status === 'unsupported') return null
 
   return (
-    <div className="mb-6 space-y-2">
+    <div className="mb-6">
       <div className="flex flex-wrap items-center gap-2">
         {status === 'idle' || status === 'error' ? (
           <button
@@ -223,7 +200,6 @@ export default function AscultaLectie({
           </>
         ) : null}
       </div>
-      {hint ? <p className="text-xs text-slate-500">{hint}</p> : null}
     </div>
   )
 }
