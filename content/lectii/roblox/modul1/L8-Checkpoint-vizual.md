@@ -31,6 +31,16 @@ Azi checkpoint = **semn pe hartă**. În **M2/M3** același loc poate primi scri
 
 **Azi pe ecran:** Part · Color · Material · Scale · Move · nume Explorer.
 
+**Lanț de culori pe Obby (L4 → L6 → L8):**
+
+| Rol | Culoare |
+|-----|---------|
+| **Start** (Spawn) | **verde** (rezervat) |
+| **Checkpoint** | **portocaliu** / familie proprie (ex. magenta-portocaliu) — aceeași familie pe toate CP |
+| **Finish** | orice culoare **în afară de verde** (ex. auriu, albastru) — și **diferită** de familia checkpoint |
+
+*Notă:* Finish **nu** trebuie să fie verde — verde e rezervat pentru Start (L4/L6).
+
 ---
 
 ## Pas cu pas
@@ -48,7 +58,7 @@ Azi checkpoint = **semn pe hartă**. În **M2/M3** același loc poate primi scri
 ### 2) Construiești Checkpoint1
 1. Pe mijlocul traseului (după ~jumătate din platforme), un Part nou  
 2. Nume: `Checkpoint1`  
-3. Color **unic** pe hartă (ex. portocaliu / magenta) — nu aceeași culoare ca Finish  
+3. Color din **familia checkpoint** (ex. portocaliu) — **nu** verde (Start) și **nu** aceeași culoare ca Finish  
 4. Scale: un **stâlp** sau o **placă** lată sub picioare — să fie imposibil de ratat din cameră  
 5. Material opțional: Neon (accent)  
 6. Anchor · Move: pe drum, nu în afara săriturii  
@@ -69,8 +79,8 @@ Azi checkpoint = **semn pe hartă**. În **M2/M3** același loc poate primi scri
 
 ### 4) Al doilea checkpoint *(Complet)*
 1. `Checkpoint2` pe o a doua secțiune (ex. înainte de urcușul final)  
-2. **Aceeași** culoare de familie ca `Checkpoint1` (sau același Material Neon) — ca să fie „familia checkpoint”  
-3. Finish rămâne **altă** culoare  
+2. **Aceeași** culoare de familie ca `Checkpoint1` (sau același Material Neon) — „familia checkpoint”  
+3. Finish rămâne **altă** culoare (**nu** verde, **nu** familia CP)  
 4. Play: Start → CP1 → CP2 → Finish  
 
 **Încearcă tu — două CP (4–5 min)**  
@@ -82,10 +92,11 @@ Azi checkpoint = **semn pe hartă**. În **M2/M3** același loc poate primi scri
 
 ## Greșeli frecvente
 1. **Checkpoint = Finish** (aceeași culoare) — jucătorul se încurcă; diferențiază.  
-2. **Checkpoint în aer / de neatins** — pe platformă, pe traseu.  
-3. **Prea mic** — nu se vede; Scale în sus.  
-4. **Am pus script Touched** — șterge; azi nu.  
-5. **Checkpoint înainte de Spawn** — ordinea e Start → … → Finish.  
+2. **Finish sau Checkpoint verde** — verde e **doar** Start; schimbă culoarea.  
+3. **Checkpoint în aer / de neatins** — pe platformă, pe traseu.  
+4. **Prea mic** — nu se vede; Scale în sus.  
+5. **Am pus script Touched** — șterge; azi nu.  
+6. **Checkpoint înainte de Spawn** — ordinea e Start → … → Finish.  
 
 ---
 
@@ -124,7 +135,7 @@ Cei rapizi: Complet, apoi Bonus.
 
 ## Recapitulare rapidă
 1. Checkpoint M1 = **marcaj**, nu salvare automată  
-2. Culoare + mărime + nume  
+2. Culori: **verde** = Start · **portocaliu** (familie) = CP · Finish = **altceva, nu verde**  
 3. Pe traseu, între Start și Finish  
 4. Complet = 2 etape vizibile  
 5. Place: `Prenume_Nume_M1`  

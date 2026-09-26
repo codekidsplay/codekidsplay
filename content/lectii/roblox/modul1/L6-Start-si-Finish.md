@@ -53,7 +53,7 @@ Fără finish, Obby-ul nu are scop — e doar o plimbare. L7–L9 umplu mijlocul
 
 ### 2) Finish = ținta (doar vizual azi)
 1. Un Part nou (Block lat) — nume: `Finish`  
-2. Color **clar diferit** (ex. auriu / albastru aprins / verde lime)  
+2. Color **clar diferit de Start** (ex. auriu / albastru aprins / magenta) — **nu verde** (verde = Start, L4)  
 3. Material opțional: Neon sau Metal (accent)  
 4. Scale: suficient de mare ca să calci pe el  
 5. Anchor · Move: la **capătul** opus față de Spawn  
@@ -85,10 +85,11 @@ Fără finish, Obby-ul nu are scop — e doar o plimbare. L7–L9 umplu mijlocul
 
 ## Greșeli frecvente
 1. **Am colorat un Part „Start” dar nu e SpawnLocation** — te naști tot pe Spawn-ul vechi; muți **SpawnLocation**.  
-2. **Finish lipit de Spawn** — nu e Obby; mută Finish departe, pe traseu.  
-3. **Finish sub Baseplate / în aer de neatins** — Position / Move.  
-4. **Două SpawnLocation** — te naști random; lași **unul** la start. Pe cel în plus: Properties → **Enabled = false**, sau (mai simplu azi) **Delete**.  
-5. **Am așteptat mesaj „Ai câștigat!”** — azi nu există; doar ajungi pe Part.  
+2. **Finish verde** — se confundă cu Start; alege auriu / albastru / magenta (verde = doar Start).  
+3. **Finish lipit de Spawn** — nu e Obby; mută Finish departe, pe traseu.  
+4. **Finish sub Baseplate / în aer de neatins** — Position / Move.  
+5. **Două SpawnLocation** — te naști random; lași **unul** la start. Pe cel în plus: Properties → **Enabled = false**, sau (mai simplu azi) **Delete**.  
+6. **Am așteptat mesaj „Ai câștigat!”** — azi nu există; doar ajungi pe Part.  
 
 ---
 
