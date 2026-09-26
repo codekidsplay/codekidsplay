@@ -161,7 +161,7 @@ Dacă rămâi în urmă: **prezinți cu o îmbunătățire — e suficient pentr
 1. Ce face **Anchor**?  
 2. Unde vezi lista obiectelor?  
 3. Ce e **SpawnLocation**?  
-4. Checkpoint-ul din M1 salvează progresul? *(nu — e vizual)*  
+4. Checkpoint-ul din M1 salvează progresul?  
 5. Cum se numește Place-ul tău?
 
 ## Temă
