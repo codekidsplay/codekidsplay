@@ -1,0 +1,107 @@
+import { experimental_generateSpeech as generateSpeech } from 'ai'
+import { gateway } from '@ai-sdk/gateway'
+import { google } from '@ai-sdk/google'
+import { readFileSync, existsSync, mkdirSync, writeFileSync } from 'fs'
+import path from 'path'
+import { createHash } from 'crypto'
+import { put, head } from '@vercel/blob'
+
+export const maxDuration = 120
+
+const PROFILE = 'scratch-l1-naratie-v1'
+const CACHE_DIR = path.join('/tmp', 'codekidsplay-tts')
+
+function naratiePath() {
+  return path.join(
+    process.cwd(),
+    'content',
+    'lectii',
+    'scratch',
+    'modul1',
+    'L1-Ce-este-Scratch.naratie.txt',
+  )
+}
+
+function hashText(text: string) {
+  return createHash('sha256').update(`${PROFILE}\n${text}`).digest('hex').slice(0, 16)
+}
+
+async function getCachedUrl(hash: string): Promise<string | null> {
+  for (const ext of ['mp3', 'wav'] as const) {
+    const pathname = `tts/scratch-l1/${hash}.${ext}`
+    if (process.env.BLOB_READ_WRITE_TOKEN) {
+      try {
+        const meta = await head(pathname)
+        if (meta?.url) return meta.url
+      } catch {
+        /* miss */
+      }
+    }
+    const local = path.join(CACHE_DIR, `${hash}.${ext}`)
+    if (existsSync(local)) return `/api/tts/scratch-l1/file?hash=${hash}&ext=${ext}`
+  }
+  return null
+}
+
+async function saveAudio(hash: string, bytes: Uint8Array, mediaType: string): Promise<string> {
+  const ext = mediaType.includes('wav') ? 'wav' : 'mp3'
+  const contentType = ext === 'wav' ? 'audio/wav' : 'audio/mpeg'
+  const pathname = `tts/scratch-l1/${hash}.${ext}`
+  if (process.env.BLOB_READ_WRITE_TOKEN) {
+    const blob = await put(pathname, Buffer.from(bytes), {
+      access: 'public',
+      contentType,
+      addRandomSuffix: false,
+      allowOverwrite: true,
+    })
+    return blob.url
+  }
+  mkdirSync(CACHE_DIR, { recursive: true })
+  writeFileSync(path.join(CACHE_DIR, `${hash}.${ext}`), Buffer.from(bytes))
+  return `/api/tts/scratch-l1/file?hash=${hash}&ext=${ext}`
+}
+
+/** Pilot: doar Scratch Modul 1 · Lecția 1 */
+export async function GET() {
+  const file = naratiePath()
+  if (!existsSync(file)) {
+    return Response.json({ error: 'Narația L1 lipsește.' }, { status: 404 })
+  }
+
+  const text = readFileSync(file, 'utf8').trim()
+  const hash = hashText(text)
+
+  const cached = await getCachedUrl(hash)
+  if (cached) return Response.json({ url: cached, cached: true })
+
+  try {
+    const useGoogle = Boolean(process.env.GOOGLE_GENERATIVE_AI_API_KEY)
+    const result = useGoogle
+      ? await generateSpeech({
+          model: google.speech('gemini-2.5-pro-preview-tts'),
+          text,
+          voice: 'Aoede',
+          instructions:
+            'Citește în română, cald și natural, ca o învățătoare prietenoasă pentru copii de 8–10 ani. Pauze scurte între propoziții. Fără ton robotic.',
+        })
+      : await generateSpeech({
+          model: gateway.speechModel('openai/gpt-4o-mini-tts'),
+          text,
+          voice: 'coral',
+          instructions:
+            'Speak in Romanian. Warm, friendly teacher voice for children aged 8–10. Clear, natural pacing with short pauses between sentences. Never robotic or monotone.',
+          outputFormat: 'mp3',
+        })
+
+    const bytes = result.audio.uint8Array
+    const mediaType = result.audio.mediaType || 'audio/mpeg'
+    const url = await saveAudio(hash, bytes, mediaType)
+    return Response.json({ url, cached: false })
+  } catch (err) {
+    console.error('[tts scratch-l1]', err)
+    return Response.json(
+      { error: 'Nu am putut genera vocea. Verifică AI Gateway / cheia API.' },
+      { status: 502 },
+    )
+  }
+}
