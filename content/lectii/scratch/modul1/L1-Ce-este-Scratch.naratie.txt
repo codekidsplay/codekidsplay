@@ -1,8 +1,8 @@
 Lecția unu. Cardul meu animat.
 
-Astăzi înveți ecranul Scratch: steagul verde, salvarea și cinci capitole de blocuri. La final faci un clip scurt despre tine, cu două personaje.
+Astăzi înveți ecranul Scratch: steagul verde, salvarea, și cinci capitole de blocuri. La final faci un clip scurt despre tine, cu două personaje.
 
-Obiectivul. La finalul orei pornești proiectul cu steagul verde, îl salvezi cu numele Prenume underscore Nume underscore L1, și ai un dialog pe două personaje. Asta e minimul. Complet înseamnă același clip, plus mișcare și sunet.
+Obiectivul. La finalul orei pornești proiectul cu steagul verde. Îl salvezi cu numele corect: Prenume, linie jos, Nume, linie jos, L unu. De exemplu: Ana, linie jos, Pop, linie jos, L unu. Ai un dialog pe două personaje. Asta e minimul. Complet înseamnă același clip, plus mișcare și sunet.
 
 De ce contează. Scratch e un constructor. Lipești blocuri ca personajele să facă ceva pe scenă. Fără steag și fără salvare, restul orelor nu pot începe.
 
@@ -10,26 +10,26 @@ Pe ecran. Scena e locul unde rulează proiectul. Personajul e cine e pe scenă, 
 
 Capitolele de azi. Din Evenimente iei steagul verde. Din Aspect iei spune, costum și efect. Din Control iei așteaptă. Din Mișcare iei mergi sau glisează. Din Sunet iei un sunet.
 
-Pasul unu pe ecran. Arăți scena, personajul, steagul și stop. Găsești cele cinci capitole colorate din stânga.
+Primul pas pe ecran. Arăți scena, personajul, steagul și stop. Găsești cele cinci capitole colorate din stânga.
 
-Pasul doi. Selectezi personajul, nu scena. Din Evenimente pui când se face clic pe steagul verde. Din Aspect pui spune, Salut, pentru două secunde. Din Control pui așteaptă o secundă. Apoi încă un spune: Eu sunt, și spui numele tău, pentru două secunde. Apeși steagul verde. Replicile vin pe rând. Butonul roșu oprește. Fără steag deasupra, celelalte blocuri nu rulează.
+Al doilea pas pe ecran. Selectezi personajul, nu scena. Din Evenimente pui: când se face clic pe steagul verde. Din Aspect pui spune: Salut, pentru două secunde. Din Control pui așteaptă o secundă. Apoi încă un spune: Eu sunt, și spui numele tău, pentru două secunde. Apeși steagul verde. Replicile vin pe rând. Butonul roșu oprește. Fără steag deasupra, celelalte blocuri nu rulează.
 
-Pasul trei. Salvezi. Numele fișierului este Prenume underscore Nume underscore L1. De exemplu Ana underscore Pop underscore L1. Nu doar Ana underscore L1, ca să nu se calce fișierele în clasă.
+Al treilea pas pe ecran. Salvezi. Numele fișierului este Prenume, linie jos, Nume, linie jos, L unu. Nu doar Ana, linie jos, L unu — ca să nu se calce fișierele în clasă.
 
-Greșeli frecvente. Dacă nu se întâmplă nimic, lipsește steagul sau nu ai apăsat steagul de pe scenă. Dacă replicile se calcă, lipsește așteaptă între spune. Dacă scriptul e pe personajul greșit, dai click pe personajul bun înainte să lipești. Dacă numele e greșit, adaugă și numele de familie.
+Greșeli frecvente. Dacă nu se întâmplă nimic, lipsește steagul, sau nu ai apăsat steagul de pe scenă. Dacă replicile se calcă, lipsește așteaptă între spune. Dacă scriptul e pe personajul greșit, dai click pe personajul bun înainte să lipești. Dacă numele e greșit la salvare, adaugă și numele de familie.
 
 Proiectul de azi. Cardul meu animat.
 
-Minim înseamnă: două personaje și dialog pe rând, salvat. Complet înseamnă: minim, plus mișcare sau aspect, plus sunet, și clipul ține cel puțin douăzeci de secunde.
+Minim înseamnă: două personaje și dialog pe rând, salvat. Complet înseamnă: minim, plus mișcare sau aspect, plus sunet, și clipul ține cel puțin douăzeci de secunde. Dacă rămâi în urmă, oprește-te la Minim și salvează. Nu e eșec. E baza pentru lecția următoare.
 
-Pasul unu din proiect. Schimbi personajul din start. Adaugi un al doilea personaj. Îi așezi stânga și dreapta.
+În proiect, primul pas. Schimbi personajul din start. Adaugi un al doilea personaj. Îi așezi stânga și dreapta, ca să se vadă amândouă.
 
-Pasul doi. Pe personajul unu: steag și cel puțin două spune, cu așteaptă între ele. Pe personajul doi: la fel. În total cel puțin patru spune, împărțite pe cele două personaje. Din dialog se înțelege cine ești. Apoi salvezi.
+În proiect, al doilea pas. Pe personajul unu: steag și cel puțin două spune, cu așteaptă între ele. Pe personajul doi: la fel. În total cel puțin patru spune, împărțite pe cele două personaje. Din dialog se înțelege cine ești: numele tău și un lucru despre tine. Apoi salvezi.
 
-Pasul trei, pentru Complet. Cel puțin un personaj se mișcă. Schimbi costumul sau efectul de cel puțin două ori.
+În proiect, al treilea pas, pentru Complet. Cel puțin un personaj se mișcă, cu mergi sau glisează. Schimbi costumul sau efectul de cel puțin două ori.
 
-Pasul patru, pentru Complet. Adaugi un sunet. Clipul ține cel puțin douăzeci de secunde. Rulezi din nou pe steag. Salvezi din nou.
+În proiect, al patrulea pas, pentru Complet. Adaugi un sunet. Clipul ține cel puțin douăzeci de secunde. Rulezi din nou pe steag. Salvezi din nou.
 
-Recapitulare. Steagul înseamnă start. Dialogul înseamnă spune plus așteaptă, pe ambele personaje. Numele fișierului are și prenumele, și numele de familie. Minim e pasul unu și doi. Complet adaugă pasul trei și patru.
+Recapitulare. Steagul înseamnă start. Dialogul înseamnă spune plus așteaptă, pe ambele personaje. Numele fișierului are prenumele și numele de familie. Minim e primul și al doilea pas din proiect. Complet adaugă al treilea și al patrulea.
 
 Succes la cardul tău animat.

@@ -8,7 +8,7 @@ import { put, head } from '@vercel/blob'
 
 export const maxDuration = 120
 
-const PROFILE = 'scratch-l1-naratie-v2-slow'
+const PROFILE = 'scratch-l1-naratie-v3'
 
 function naratiePath() {
   return path.join(
@@ -89,7 +89,7 @@ export async function GET() {
           text,
           voice: 'nova',
           outputFormat: 'mp3',
-          speed: 0.95,
+          speed: 0.85,
           language: 'ro',
         })
 
