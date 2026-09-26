@@ -1,7 +1,7 @@
 import { experimental_generateSpeech as generateSpeech } from 'ai'
 import { gateway } from '@ai-sdk/gateway'
 import { google } from '@ai-sdk/google'
-import { readFileSync, existsSync, mkdirSync, writeFileSync } from 'fs'
+import { readFileSync, existsSync } from 'fs'
 import path from 'path'
 import { createHash } from 'crypto'
 import { put, head } from '@vercel/blob'
@@ -9,7 +9,6 @@ import { put, head } from '@vercel/blob'
 export const maxDuration = 120
 
 const PROFILE = 'scratch-l1-naratie-v1'
-const CACHE_DIR = path.join('/tmp', 'codekidsplay-tts')
 
 function naratiePath() {
   return path.join(
@@ -27,18 +26,15 @@ function hashText(text: string) {
 }
 
 async function getCachedUrl(hash: string): Promise<string | null> {
+  if (!process.env.BLOB_READ_WRITE_TOKEN) return null
   for (const ext of ['mp3', 'wav'] as const) {
     const pathname = `tts/scratch-l1/${hash}.${ext}`
-    if (process.env.BLOB_READ_WRITE_TOKEN) {
-      try {
-        const meta = await head(pathname)
-        if (meta?.url) return meta.url
-      } catch {
-        /* miss */
-      }
+    try {
+      const meta = await head(pathname)
+      if (meta?.url) return meta.url
+    } catch {
+      /* miss */
     }
-    const local = path.join(CACHE_DIR, `${hash}.${ext}`)
-    if (existsSync(local)) return `/api/tts/scratch-l1/file?hash=${hash}&ext=${ext}`
   }
   return null
 }
@@ -47,6 +43,7 @@ async function saveAudio(hash: string, bytes: Uint8Array, mediaType: string): Pr
   const ext = mediaType.includes('wav') ? 'wav' : 'mp3'
   const contentType = ext === 'wav' ? 'audio/wav' : 'audio/mpeg'
   const pathname = `tts/scratch-l1/${hash}.${ext}`
+
   if (process.env.BLOB_READ_WRITE_TOKEN) {
     const blob = await put(pathname, Buffer.from(bytes), {
       access: 'public',
@@ -56,9 +53,10 @@ async function saveAudio(hash: string, bytes: Uint8Array, mediaType: string): Pr
     })
     return blob.url
   }
-  mkdirSync(CACHE_DIR, { recursive: true })
-  writeFileSync(path.join(CACHE_DIR, `${hash}.${ext}`), Buffer.from(bytes))
-  return `/api/tts/scratch-l1/file?hash=${hash}&ext=${ext}`
+
+  // Fără Blob: data-URL (serverless /tmp nu e partajat între instanțe)
+  const b64 = Buffer.from(bytes).toString('base64')
+  return `data:${contentType};base64,${b64}`
 }
 
 /** Pilot: doar Scratch Modul 1 · Lecția 1 */
