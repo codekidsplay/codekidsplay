@@ -145,5 +145,13 @@ Cei rapizi: Complet, apoi Bonus.
 - Ce bloc schimbă scena?  
 - De ce trebuie potrivite secundele pe Scenă și pe personaj?
 
+## Exemplu pe Scratch — dacă vrei să verifici / să te prinzi
+*(Parcurge **întâi** toată lecția și proiectul. Exemplul e la final: rulează-l pe steag, apoi See inside — ca să compari cu lumea ta, nu ca să copiezi tot.)*
+
+<div style="max-width:485px;margin:1rem 0;">
+<iframe src="https://scratch.mit.edu/projects/1385304951/embed" width="485" height="402" scrolling="no" allowfullscreen style="max-width:100%;border:0;border-radius:8px;"></iframe>
+<p style="margin:0.5rem 0 0;font-size:0.9em;"><a href="https://scratch.mit.edu/projects/1385304951" target="_blank" rel="noopener noreferrer">Deschide pe Scratch</a> — See inside / Remix, apoi rămâi pe **lumea ta** (`Prenume_Nume_L2`).</p>
+</div>
+
 ## Temă
 Opțional: dacă ai doar Minim, adaugi acasă Pasul 3 — același `Prenume_Nume_L2`.
