@@ -9,7 +9,8 @@
 ---
 
 ## Obiectiv
-La finalul orei pornești proiectul cu <span style="color:#3F8F2A;font-weight:700">steagul verde</span>, îl **salvezi** cu numele corect, și — dacă ai timp — ai un clip în care **2 personaje** vorbesc pe rând, se mișcă și au un sunet.
+La finalul orei pornești proiectul cu <span style="color:#3F8F2A;font-weight:700">steagul verde</span>, îl **salvezi** cu numele corect (`Prenume_Nume_L1`), și ai **minimum** un dialog pe **2 personaje**.  
+Ținta orei (**Complet**): același clip, plus **mișcare** și **sunet**.
 
 ## De ce contează
 Scratch e un constructor: lipești **blocuri** ca personajele să facă ceva pe **scenă**.  
