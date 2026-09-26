@@ -59,6 +59,8 @@ Verificare: **Play** — Part-ul **nu** cade · **Stop**.
    - Trepte → **gri** / maro  
    - Un Part „special” → **galben**  
 
+*Nu e întâmplător verde = start:* **SpawnLocation** vine deja **verde** în Roblox — convenția noastră se potrivește cu ce face Studio implicit.  
+
 **Încearcă tu — culori (3 min)**  
 - [ ] ≥2 Parts au culori **diferite**  
 - [ ] Se văd clar în Viewport fără să te apropii lipit de ele  
@@ -72,7 +74,9 @@ Verificare: **Play** — Part-ul **nu** cade · **Stop**.
    - **Wood** — lemn  
    - **Metal** / **Concrete** — industrial  
 
-Materialul schimbă **aspectul** (reflexii, textură). Poți combina cu Color.
+Materialul schimbă mai ales **aspectul** (reflexii, textură). Poți combina cu Color.
+
+*Bonus curiozitate:* unele materiale (ex. **Ice** / gheață) sunt și **alunecoase** la mers — nu doar altă textură. Dacă simți diferență pe unele Parts, nu e bug: e frecare (friction). Azi rămânem pe look.
 
 **Încearcă tu — materiale (3–4 min)**  
 - [ ] Ai schimbat Material pe ≥1 Part  
@@ -84,7 +88,7 @@ Alegi o regulă și o aplici pe 3–4 Parts:
 
 | Culoare / material | Semnificație (doar vizual azi) |
 |--------------------|--------------------------------|
-| Verde | zonă **sigură** / start |
+| Verde | zonă **sigură** / start *(ca SpawnLocation-ul default)* |
 | Galben | **atenție** / punct important |
 | Roșu | „nu e ideal să stai” (decor — **nu** te omoară încă) |
 
@@ -153,7 +157,7 @@ Cei rapizi: Complet, apoi Bonus.
 **Quiz scurt (cu profesorul):**  
 - Unde bifezi Anchored, pe lângă butonul Anchor?  
 - De ce folosim culori pe Obby?  
-- Materialul schimbă fizica sau aspectul? *(aspectul)*
+- Materialul schimbă mai ales fizica sau aspectul?
 
 ## Temă
 Opțional: aplici convenția pe încă **1** Part.  
