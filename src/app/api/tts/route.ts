@@ -9,7 +9,7 @@ import { markdownToSpeechText, speechTextHash } from '@/lib/tts/speechText'
 export const maxDuration = 120
 
 /** Schimbă când schimbi ritmul/voce — invalidează cache-ul vechi */
-const TTS_PROFILE = 'gemini-flash-kore-slow-v2'
+const TTS_PROFILE = 'gemini-flash-kore-slow-v3'
 
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url)
@@ -68,9 +68,10 @@ export async function GET(request: Request) {
       text: speechText,
       voice: 'Kore',
       instructions:
-        'Citește în română, clar și prietenos, pentru copii de 8–10 ani. ' +
-        'Vorbește LENT: ritm ca o poveste la culcare, aproximativ jumătate din viteza normală de adult. ' +
-        'Pauze scurte după fiecare propoziție. Nu te grăbi nicăieri.',
+        'IMPORTANT: Speak VERY SLOWLY. ' +
+        'Citește în română, clar, cald, pentru copii de 8–10 ani. ' +
+        'Viteza: foarte lentă — ca un învățător care dictează, nu ca un adult care povestește rapid. ' +
+        'Fă o pauză clară după fiecare propoziție. Silabește puțin mai larg. Nu accelera niciodată.',
     })
 
     const bytes = result.audio.uint8Array

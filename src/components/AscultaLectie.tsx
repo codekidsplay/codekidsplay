@@ -102,6 +102,8 @@ export default function AscultaLectie({
       }
 
       const audio = new Audio(data.url)
+      audio.playbackRate = 0.72
+      audio.preservesPitch = true
       audioRef.current = audio
       audio.onended = () => setStatus('idle')
       audio.onerror = () => {
@@ -110,7 +112,7 @@ export default function AscultaLectie({
       }
       await audio.play()
       setStatus('playing')
-      setHint(data.cached ? 'Din cache' : 'Voce nouă (Gemini) — salvată pentru clasă')
+      setHint(data.cached ? 'Din cache · ritm încetinit' : 'Voce Gemini · ritm încetinit pentru copii')
     } catch {
       if (fallbackText) {
         setHint('Conexiune eșuată — voce din browser.')
