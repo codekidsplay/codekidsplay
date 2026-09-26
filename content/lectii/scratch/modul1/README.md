@@ -34,7 +34,8 @@
 | Ricoșeu: `dacă atinge marginea, sari înapoi` | Bonus L9 (fără lecție de Detectare) |
 | Capstone modul | L9 mini-proiect + L10 completare / prezentare |
 
-**Nu în M1 (vin mai târziu):** dacă…atunci, variabile, operatori, mesaje, clone, extensii.
+**Nu în M1 (vin mai târziu):** dacă…atunci, variabile, operatori, mesaje, clone.  
+**Extensii** (Muzică, Stilou): **nu** în M1 — doar ca **completare** la animație în **Modulul 4 / L4**.
 
 ## Note profesor (fine-tuning M1)
 
