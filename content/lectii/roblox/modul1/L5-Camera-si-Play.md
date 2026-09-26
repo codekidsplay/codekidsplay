@@ -29,7 +29,7 @@ Playtest = „joci ca elevul care nu știe ce ai vrut tu”. Fără el, Obby-ul 
 | 35–100 | Playtest pe Place (vezi **Minim vs Complet**) |
 | 100–120 | Recap, bonus, salvare |
 
-**Azi pe ecran:** cameră în Viewport · Play / Pause / Stop · View Selector (cubul de axe, dacă e vizibil).
+**Azi pe ecran:** cameră în Viewport · Play / Stop · Pause/Resume *(apare după ce pornești Play)* · View Selector (cubul de axe, dacă e vizibil).
 
 ---
 
@@ -59,7 +59,7 @@ Playtest = „joci ca elevul care nu știe ce ai vrut tu”. Fără el, Obby-ul 
 ### 2) Play = ești jucătorul
 1. **Play** (săgeata albastră)  
 2. Controale avatar: **WASD** · mouse · **Space** = salt · (Shift = sprint, după setări)  
-3. **Pause** (opțional) — îngheață testul  
+3. *(Opțional)* **Pause / Resume** — apare în bara de playtest **după** ce rulează Play; îngheață fizica / animațiile ca să te uiți liniștit (nu e pe ecran înainte de Play)  
 4. **Stop** — înapoi la editare  
 
 Reguli de Playtest azi:
@@ -143,7 +143,7 @@ Cei rapizi: Complet, apoi Bonus.
 ## Bonus (dacă ai terminat Complet)
 - [ ] Un coleg face **1** tur pe Place-ul tău și îți spune 1 feedback  
 - [ ] Marchezi cu culoare punctul greu (L4) după playtest  
-- [ ] Încerci **Pause** în mijlocul unui salt — vezi diferența față de Stop  
+- [ ] Încerci **Pause / Resume** în mijlocul unui salt *(butonul din bara de playtest, după Play)* — vezi diferența față de Stop  
 
 ## Recapitulare rapidă
 1. Cameră în editare ≠ mișcare în Play  
