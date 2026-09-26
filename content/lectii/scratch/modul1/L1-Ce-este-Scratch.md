@@ -145,16 +145,6 @@ Cei rapizi: Complet, apoi Bonus.
 
 ---
 
-## Dacă te-ai blocat — exemplu pe Scratch
-*(Încearcă **mai întâi** pas cu pas + „De făcut azi” singur. Deschide exemplul **doar** dacă nu reușești Minim / Complet — ca să vezi cum arată, nu ca să copiezi bloc cu bloc.)*
-
-<div style="max-width:485px;margin:1rem 0;">
-<iframe src="https://scratch.mit.edu/projects/1385205392/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen style="max-width:100%;border:0;border-radius:8px;"></iframe>
-<p style="margin:0.5rem 0 0;font-size:0.9em;"><a href="https://scratch.mit.edu/projects/1385205392" target="_blank" rel="noopener noreferrer">Deschide pe Scratch</a> — See inside / Remix, apoi fă **cardul tău** (despre tine).</p>
-</div>
-
----
-
 ## Bonus (dacă ai terminat Complet)
 - [ ] Al 3-lea personaj **sau** schimbi **fundalul** în timpul clipului  
 - [ ] La final: personajele se apropie + un mesaj împreună  
@@ -170,6 +160,14 @@ Cei rapizi: Complet, apoi Bonus.
 - Ce bloc pui primul?  
 - Cum se numește fișierul tău? *(trebuie să aibă și numele de familie)*  
 - Din ce capitol e `așteaptă`?
+
+## Exemplu pe Scratch — dacă vrei să verifici / să te prinzi
+*(Parcurge **întâi** toată lecția și proiectul. Exemplul e la final: rulează-l pe steag, apoi See inside — ca să compari cu cardul tău, nu ca să copiezi tot.)*
+
+<div style="max-width:485px;margin:1rem 0;">
+<iframe src="https://scratch.mit.edu/projects/1385205392/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen style="max-width:100%;border:0;border-radius:8px;"></iframe>
+<p style="margin:0.5rem 0 0;font-size:0.9em;"><a href="https://scratch.mit.edu/projects/1385205392" target="_blank" rel="noopener noreferrer">Deschide pe Scratch</a> — See inside / Remix, apoi rămâi pe **cardul tău** (`Prenume_Nume_L1`).</p>
+</div>
 
 ## Temă
 Opțional: dacă ai doar Minim, adaugi acasă Pasul 3 sau 4 — același `Prenume_Nume_L1`.
