@@ -9,7 +9,7 @@ export default function LandingPage() {
   return (
     <div className="bg-[var(--ckp-foam)] text-[var(--ckp-ink)]">
       {/* —— Hero —— */}
-      <section className="relative min-h-[100svh] overflow-hidden">
+      <section className="relative min-h-[92svh] sm:min-h-[100svh] overflow-hidden">
         <Image
           src="/hero-codekids.jpg"
           alt="Copii la atelierele Code Kids Play"
@@ -28,18 +28,18 @@ export default function LandingPage() {
           }}
         />
 
-        <div className="relative z-10 min-h-[100svh] flex flex-col">
+        <div className="relative z-10 min-h-[92svh] sm:min-h-[100svh] flex flex-col">
           <nav className="flex items-center justify-between px-5 sm:px-8 lg:px-12 py-5">
             <BrandLogo size="nav" href="/" priority />
             <Link
               href="/login"
-              className="text-sm font-medium text-white border border-white/60 hover:border-white px-4 py-2 rounded-xl transition-colors"
+              className="text-sm font-semibold text-white bg-white/15 hover:bg-white/25 backdrop-blur-md border border-white/35 px-4 py-2 rounded-xl transition-all shadow-sm active:scale-95"
             >
               Intră în cont
             </Link>
           </nav>
 
-          <div className="flex-1 flex flex-col justify-end px-5 sm:px-8 lg:px-12 pb-14 sm:pb-20 max-w-4xl">
+          <div className="flex-1 flex flex-col justify-end px-5 sm:px-8 lg:px-12 pb-10 sm:pb-16 lg:pb-20 max-w-4xl">
             <p
               className="ckp-fade-up text-white text-2xl sm:text-3xl lg:text-4xl font-semibold tracking-tight mb-3"
               style={{ fontFamily: 'var(--font-display)' }}
@@ -47,24 +47,24 @@ export default function LandingPage() {
               Code Kids Play
             </p>
             <h1
-              className="ckp-fade-up-delay text-white/95 text-xl sm:text-2xl lg:text-3xl font-medium tracking-tight leading-snug max-w-xl mb-4"
+              className="ckp-fade-up-delay text-white/95 text-xl sm:text-2xl lg:text-3xl font-medium tracking-tight leading-snug max-w-xl mb-3"
               style={{ fontFamily: 'var(--font-body)' }}
             >
               Programare pentru copii, pe înțelesul lor.
             </h1>
-            <p className="ckp-fade-up-delay text-[var(--ckp-muted-on-dark)] text-base sm:text-lg max-w-md mb-8 leading-relaxed">
+            <p className="ckp-fade-up-delay text-[var(--ckp-muted-on-dark)] text-base sm:text-lg max-w-md mb-6 sm:mb-8 leading-relaxed">
               Ateliere în Focșani: Scratch, Python, C++, HTML/CSS, Arduino, Robotica Lego.
             </p>
-            <div className="ckp-fade-up-delay-2 flex flex-wrap gap-3">
+            <div className="ckp-fade-up-delay-2 flex flex-col sm:flex-row gap-3 w-full sm:w-auto max-w-sm sm:max-w-none">
               <a
                 href="#cursuri"
-                className="inline-flex items-center justify-center bg-[var(--ckp-red)] hover:bg-[var(--ckp-red-deep)] text-white font-semibold px-6 py-3 rounded-xl transition-colors"
+                className="inline-flex items-center justify-center bg-[var(--ckp-red)] hover:bg-[var(--ckp-red-deep)] text-white font-semibold px-6 py-3.5 rounded-xl transition-colors text-center w-full sm:w-auto shadow-md"
               >
                 Vezi cursurile
               </a>
               <Link
                 href="/login"
-                className="inline-flex items-center justify-center bg-white text-[var(--ckp-blue)] hover:bg-[var(--ckp-muted-on-dark)] font-semibold px-6 py-3 rounded-xl transition-colors"
+                className="inline-flex items-center justify-center bg-white text-[var(--ckp-blue)] hover:bg-[var(--ckp-muted-on-dark)] font-semibold px-6 py-3.5 rounded-xl transition-colors text-center w-full sm:w-auto shadow-sm"
               >
                 Login elev / părinte
               </Link>
