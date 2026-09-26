@@ -45,8 +45,8 @@ L1–L8 = piese. L9 = **jocul tău**. La L10 lustruiești și primești insigna 
 | 7 | Traseu ≥ **5** platforme | L7 |
 | 8 | ≥ **1** checkpoint vizual | L8 |
 
-**Minim** = rândurile 1–7 funcționează în Play (checkpoint = Complet, dar dacă îl ai deja din L8, e bonus).  
-**Complet** = toate **8** + temă + coleg.
+**Minim** = rândurile 1–7 funcționează în Play.  
+**Complet** = toate **8** + temă + coleg. Checkpoint-ul (rândul 8) **contează pentru Complet** — dacă îl ai deja din L8, Complet e mult mai aproape: nu trebuie construit de la zero.
 
 **Încearcă tu — știu ce am (2 min)**  
 - [ ] Bifai pe foaie ce ai deja din L1–L8  
