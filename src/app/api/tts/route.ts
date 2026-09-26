@@ -8,6 +8,9 @@ import { markdownToSpeechText, speechTextHash } from '@/lib/tts/speechText'
 
 export const maxDuration = 120
 
+/** Schimbă când schimbi ritmul/voce — invalidează cache-ul vechi */
+const TTS_PROFILE = 'gemini-flash-kore-slow-v2'
+
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url)
   const cursId = searchParams.get('cursId')?.trim()
@@ -41,7 +44,7 @@ export async function GET(request: Request) {
     titlu: lectie.titlu,
     ordine: lectie.ordine,
   })
-  const hash = speechTextHash(speechText)
+  const hash = speechTextHash(`${TTS_PROFILE}\n${speechText}`)
 
   const cachedUrl = await getCachedTtsUrl(cursId, lectieId, hash)
   if (cachedUrl) {
