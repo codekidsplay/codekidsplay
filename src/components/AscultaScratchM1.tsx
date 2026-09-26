@@ -2,8 +2,9 @@
 
 import { useEffect, useRef, useState } from 'react'
 import { Volume2, Pause, Play, Square, Loader2 } from 'lucide-react'
+import { scratchM1TtsApiUrl } from '@/lib/scratchM1'
 
-/** Ascultă — Scratch Modul 1 (L1–L10). L1 folosește cache-ul vechi scratch-l1. */
+/** Ascultă — Scratch Modul 1 (L1–L10). */
 export default function AscultaScratchM1({
   ordine,
   accentColor = '#f83030',
@@ -33,10 +34,7 @@ export default function AscultaScratchM1({
   const start = async () => {
     setStatus('loading')
     try {
-      // L1: endpoint vechi (Blob deja cache-uit). L2–L10: scratch-m1?l=N
-      const url =
-        ordine === 1 ? '/api/tts/scratch-l1' : `/api/tts/scratch-m1?l=${ordine}`
-      const res = await fetch(url)
+      const res = await fetch(scratchM1TtsApiUrl(ordine))
       const data = (await res.json()) as { url?: string; error?: string; detail?: string }
       if (!res.ok || !data.url) {
         console.error('[AscultaScratchM1]', ordine, data.error, data.detail)

@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { ArrowLeft, ArrowRight, Eye } from 'lucide-react'
 import LectieMarkdown from '@/components/LectieMarkdown'
 import AscultaScratchM1 from '@/components/AscultaScratchM1'
+import { SCRATCH_M1_CURS_ID, SCRATCH_M1_MODUL_ID, isScratchM1Lesson } from '@/lib/scratchM1'
 
 export default async function ProfesorLectiePage({
   params,
@@ -52,7 +53,9 @@ export default async function ProfesorLectiePage({
         </p>
         <h1 className="text-2xl md:text-3xl font-bold text-slate-900 mb-6">{lectie.titlu}</h1>
 
-        {cursId === 'c7' && modul.id === 'm16' && lectie.ordine >= 1 && lectie.ordine <= 10 ? (
+        {cursId === SCRATCH_M1_CURS_ID &&
+        modul.id === SCRATCH_M1_MODUL_ID &&
+        isScratchM1Lesson(lectie.ordine) ? (
           <AscultaScratchM1 ordine={lectie.ordine} accentColor={curs.culoare} />
         ) : null}
 
