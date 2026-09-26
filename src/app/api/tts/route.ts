@@ -65,7 +65,9 @@ export async function GET(request: Request) {
       text: speechText,
       voice: 'Kore',
       instructions:
-        'Citește clar și prietenos, în română, pentru copii de 8–10 ani. Ritm calm, fără grabă.',
+        'Citește în română, clar și prietenos, pentru copii de 8–10 ani. ' +
+        'Vorbește LENT: ritm ca o poveste la culcare, aproximativ jumătate din viteza normală de adult. ' +
+        'Pauze scurte după fiecare propoziție. Nu te grăbi nicăieri.',
     })
 
     const bytes = result.audio.uint8Array
