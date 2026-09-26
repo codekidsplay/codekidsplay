@@ -2,7 +2,8 @@
 
 **Code Kids Play** · Roblox Studio · Badge: **Game Logic**  
 **Public:** **12+ ani** · jocul propriu-zis pe **același Obby**  
-**Place:** `Prenume_Nume_M3` (copie din M2)
+**Place:** `Prenume_Nume_M3` (copie din M2)  
+**Plasă de siguranță:** dacă Obby-ul din M1/M2 nu mai e jucabil — pornești de la **Place-ul de bază al profesorului** (aceleași obiective L1–L10 pe acel fișier).
 
 | # | Fișier | Titlu |
 |---|--------|--------|
@@ -26,11 +27,11 @@
 | leaderstats | L1 | Echivalent „variabilă pentru toți” / scor Scratch |
 | ScreenGui / TextLabel | L2 | GUI = pe ecran, nu în Workspace |
 | RemoteEvent | L3 | Echivalent mesaje Scratch, cu miză client/server |
-| Server autoritar (Minim) | L4 | Complet = verificări; nu totul dintr-o dată |
+| Server autoritar (Minim) | L4 | **Se reia** la M4 L4 (shop) — „serverul verifică plata” |
 | Checkpoint funcțional | L5 | Față de checkpointul **vizual** din M1 |
 | Respawn | L6 | |
 | Timer sau vieți | L7 | Alege **una** pe Minim |
-| Capstone Obby jucabil cu scor | L9–L10 | |
+| Capstone Obby jucabil cu scor | L9–L10 | Tot **același** Obby, nu un joc nou |
 
 **Nu în M3:** DataStore (între sesiuni), ModuleScript, NPC, inventar.
 

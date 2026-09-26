@@ -11,10 +11,10 @@
 | 2 | L2-Client-vs-Server.md | Client vs Server (dedicat) |
 | 3 | L3-Variabile.md | Variabile |
 | 4 | L4-If-then-else.md | if / then / else |
-| 5 | L5-Touched.md | Eveniment Touched |
-| 6 | L6-ClickDetector.md | ClickDetector |
-| 7 | L7-For-While.md | for / while (simplu) |
-| 8 | L8-Functii.md | Funcții simple |
+| 5 | L5-Functii.md | Funcții simple |
+| 6 | L6-Touched.md | Eveniment Touched |
+| 7 | L7-ClickDetector.md | ClickDetector |
+| 8 | L8-For-While.md | for / while (simplu) |
 | 9 | L9-Mini-proiect-Mecanism.md | Mini-proiect: ușă sau monedă |
 | 10 | L10-Completare-si-prezentare.md | Completare + prezentare + insignă |
 
@@ -28,11 +28,13 @@
 | **Client vs server** (de ce contează) | L2 |
 | Variabile, tipuri simple | L3 |
 | if / else | L4 |
-| Touched (atingere Part) | L5 |
-| Click pe Part | L6 |
-| Bucle simple | L7 |
-| Funcții | L8 |
+| **Funcții** (înainte de evenimente) | L5 |
+| Touched (atingere Part) — folosește funcții din L5 | L6 |
+| Click pe Part | L7 |
+| Bucle simple | L8 |
 | Capstone: **1 mecanism** pe Obby (ușă **sau** monedă) | L9–L10 |
+
+**De ce funcții înainte de Touched:** `Touched:Connect(function(hit) … end)` e o funcție. Predăm L5, apoi L6 — nu „rețetă oarbă” înainte de concept (lecție învățată din Scratch: nu folosi formal ceva înainte să-l denumești).
 
 **Nu în M2:** leaderstats pe ecran (GUI), RemoteEvent, DataStore, ModuleScript.
 
