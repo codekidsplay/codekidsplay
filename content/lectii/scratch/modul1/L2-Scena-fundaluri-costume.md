@@ -127,7 +127,11 @@ Cei rapizi: Complet, apoi Bonus.
 
 ## Bonus (dacă ai terminat Complet)
 - [ ] **3 scene** (al 3-lea fundal + încă un `așteaptă` + `comută`)  
-- [ ] Personaj-buton „Continuă”: `când se face clic pe acest personaj` → pe **Scenă** nu e nevoie; pe **buton**: `comută fundalul la` scena 2 *(schimbi scena la click, fără cronometru)*  
+- [ ] Personaj-buton „Continuă”:  
+  din <span style="color:#E6A800;font-weight:700">Evenimente</span> →  
+  <span style="color:#E6A800;font-weight:700">când se face clic pe acest personaj</span> →  
+  <span style="color:#9966FF;font-weight:700">comută fundalul la</span> scena 2  
+  *(Același capitol **Evenimente** ca steagul — doar **altă** opțiune: click pe personaj, nu pe steag. Nu e lecție nouă; e pentru cine a terminat Complet.)*  
 - [ ] Al 2-lea personaj pe scenă de la început, cu un `spune` doar pe scena 2 (același truc cu `așteaptă` — **fără** `ascunde`/`arată` azi; le învățăm mai târziu)
 
 ## Recapitulare rapidă
