@@ -70,6 +70,10 @@ export default function AbonamentNotificariPanel({
 
   const mesaj = mesajSedinteEpuizate(prenume)
   const alerta = ramase !== null && ramase <= 0
+  const soldPct =
+    incluse != null && incluse > 0 && ramase != null
+      ? Math.min(100, Math.max(0, Math.round((Math.max(ramase, 0) / incluse) * 100)))
+      : 0
 
   const copyWhatsApp = async () => {
     await navigator.clipboard.writeText(mesaj)
@@ -87,47 +91,62 @@ export default function AbonamentNotificariPanel({
   }
 
   return (
-    <div className="space-y-4">
-      <div className="bg-white rounded-2xl shadow-sm border border-slate-100 p-5">
-        <div className="flex items-center justify-between gap-3">
-          <div>
-            <h2 className="font-semibold text-slate-900">Abonament</h2>
-            <p className="text-sm text-slate-400 mt-0.5">
-              {incluse != null ? `${incluse} ședințe incluse` : 'Fără abonament activ'}
-            </p>
-          </div>
-          {ramase != null && (
-            <div className="text-right">
-              <p
-                className={`text-3xl font-bold ${
-                  ramase < 0 ? 'text-red-600' : ramase === 0 ? 'text-amber-600' : 'text-emerald-600'
-                }`}
-              >
-                {ramase}
-              </p>
-              <p className="text-xs text-slate-400">ședințe rămase</p>
-            </div>
-          )}
+    <>
+      <div className="p-6">
+        <div className="flex items-center justify-between mb-3">
+          <h2 className="font-semibold text-slate-900">Abonament</h2>
+          <span
+            className={`text-2xl font-bold ${
+              ramase == null
+                ? 'text-slate-300'
+                : ramase < 0
+                  ? 'text-red-600'
+                  : ramase === 0
+                    ? 'text-amber-600'
+                    : 'text-emerald-600'
+            }`}
+          >
+            {ramase ?? '—'}
+          </span>
         </div>
+        {incluse != null ? (
+          <>
+            <div className="w-full bg-slate-100 rounded-full h-2.5">
+              <div
+                className={`h-2.5 rounded-full transition-all duration-500 ${
+                  ramase != null && ramase <= 0 ? 'bg-amber-500' : 'bg-emerald-500'
+                }`}
+                style={{ width: `${soldPct}%` }}
+              />
+            </div>
+            <p className="text-slate-400 text-sm mt-3">
+              {ramase} rămase din {incluse} ședințe
+            </p>
+          </>
+        ) : (
+          <p className="text-slate-400 text-sm mt-1">Fără abonament activ</p>
+        )}
         {lastBifare?.consumNou && (
-          <p className="mt-3 text-xs text-slate-500">Ultima bifă a consumat 1 ședință.</p>
+          <p className="mt-2 text-xs text-slate-500">Ultima bifă a consumat 1 ședință.</p>
         )}
         {lastBifare && lastBifare.ok && lastBifare.bifat && !lastBifare.consumNou && (
-          <p className="mt-3 text-xs text-slate-500">
-            Ultima bifă: deblocare fără consum nou (deja taxată / ședință azi).
+          <p className="mt-2 text-xs text-slate-500">
+            Ultima bifă: deblocare fără consum nou.
           </p>
         )}
         {lastBifare && lastBifare.ok && !lastBifare.bifat && (
-          <p className="mt-3 text-xs text-slate-500">
-            Lecție debifată — copilul nu o mai poate citi. Ședința nu s-a returnat.
+          <p className="mt-2 text-xs text-slate-500">
+            Lecție debifată — ședința nu s-a returnat.
           </p>
         )}
       </div>
 
       {alerta && (
-        <div className="rounded-2xl border border-amber-200 bg-amber-50 p-5 space-y-4">
+        <div className="sm:col-span-2 border-t border-amber-100 bg-amber-50 p-5 space-y-4">
           <div>
-            <h3 className="font-semibold text-amber-900">Ședințe epuizate {ramase != null && ramase < 0 ? `(${ramase})` : ''}</h3>
+            <h3 className="font-semibold text-amber-900">
+              Ședințe epuizate {ramase != null && ramase < 0 ? `(${ramase})` : ''}
+            </h3>
             <p className="text-sm text-amber-800 mt-1">
               Poți continua să bifezi. Trimite oferta către părinte:
             </p>
@@ -170,18 +189,20 @@ export default function AbonamentNotificariPanel({
       )}
 
       {!useSupabase && (
-        <button
-          type="button"
-          onClick={() => {
-            resetStore()
-            refresh()
-            window.location.reload()
-          }}
-          className="inline-flex items-center gap-2 text-xs text-slate-400 hover:text-slate-600"
-        >
-          <RotateCcw size={12} /> Reset date demo
-        </button>
+        <div className="sm:col-span-2 px-6 pb-4">
+          <button
+            type="button"
+            onClick={() => {
+              resetStore()
+              refresh()
+              window.location.reload()
+            }}
+            className="inline-flex items-center gap-2 text-xs text-slate-400 hover:text-slate-600"
+          >
+            <RotateCcw size={12} /> Reset date demo
+          </button>
+        </div>
       )}
-    </div>
+    </>
   )
 }

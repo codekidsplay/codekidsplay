@@ -1,0 +1,17 @@
+---
+description: Reminder — wire Resend for ședințe epuizate (due 28 Sep 2026)
+alwaysApply: true
+---
+
+# TODO mâine (28 Sep 2026): email Resend la ședințe epuizate
+
+Când utilizatorul lucrează din nou la Code Kids Play pe/după **28 septembrie 2026**, amintește-i (o dată, concis) de acest task și oferă să-l implementezi.
+
+## Ce de făcut
+- Înlocuiește stub-ul `trimiteEmailSedinteEpuizate` din `src/lib/notificari.ts` cu trimitere reală via **Resend** (plan Free: 3k/lună, 100/zi).
+- Declanșare existentă: bifă lecție → sold ≤ 0 → `progres.ts` / `mockStore` apelează deja stub-ul + înregistrează în `notificari_email`.
+- Adaugă `RESEND_API_KEY` (și domeniu verificat) în env Vercel + `.env.local`.
+- Păstrează mesajul din `mesajSedinteEpuizate` / `subiectEmailSedinteEpuizate`.
+
+## Nu face azi
+Utilizatorul a cerut explicit: **nu implementa azi** — doar reminder pentru mâine.

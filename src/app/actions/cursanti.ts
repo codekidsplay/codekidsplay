@@ -280,15 +280,18 @@ export async function listCursantiAction(): Promise<
         modul_activ_id: string | null
         activ: boolean
       }>
+      solduri: Record<string, { incluse: number; ramase: number }>
     }
-  | { ok: false; error: string; data: []; inscrieri: [] }
+  | { ok: false; error: string; data: []; inscrieri: []; solduri: Record<string, never> }
 > {
   if (!isSupabaseConfigured()) {
-    return { ok: false as const, error: 'unconfigured', data: [], inscrieri: [] }
+    return { ok: false as const, error: 'unconfigured', data: [], inscrieri: [], solduri: {} }
   }
   const supabase = await createClient()
   const { data: auth } = await supabase.auth.getUser()
-  if (!auth.user) return { ok: false as const, error: 'Neautentificat', data: [], inscrieri: [] }
+  if (!auth.user) {
+    return { ok: false as const, error: 'Neautentificat', data: [], inscrieri: [], solduri: {} }
+  }
 
   const admin = isSupabaseAdminConfigured() ? createAdminClient() : null
   const client = admin ?? supabase
@@ -300,7 +303,7 @@ export async function listCursantiAction(): Promise<
     .maybeSingle()
 
   if (!profile || (profile.rol !== 'admin' && profile.rol !== 'profesor')) {
-    return { ok: false as const, error: 'Acces interzis', data: [], inscrieri: [] }
+    return { ok: false as const, error: 'Acces interzis', data: [], inscrieri: [], solduri: {} }
   }
 
   let cursantRows:
@@ -322,20 +325,20 @@ export async function listCursantiAction(): Promise<
       .select('cursant_id')
       .eq('profesor_id', auth.user.id)
     const ids = (links ?? []).map(l => l.cursant_id)
-    if (ids.length === 0) return { ok: true as const, data: [], inscrieri: [] }
+    if (ids.length === 0) return { ok: true as const, data: [], inscrieri: [], solduri: {} }
     const { data, error } = await client
       .from('cursanti')
       .select('id, nume, prenume, email_parinte, telefon_parinte, data_nastere, data_inscriere, activ')
       .in('id', ids)
       .order('created_at', { ascending: false })
-    if (error) return { ok: false as const, error: error.message, data: [], inscrieri: [] }
+    if (error) return { ok: false as const, error: error.message, data: [], inscrieri: [], solduri: {} }
     cursantRows = data ?? []
   } else {
     const { data, error } = await client
       .from('cursanti')
       .select('id, nume, prenume, email_parinte, telefon_parinte, data_nastere, data_inscriere, activ')
       .order('created_at', { ascending: false })
-    if (error) return { ok: false as const, error: error.message, data: [], inscrieri: [] }
+    if (error) return { ok: false as const, error: error.message, data: [], inscrieri: [], solduri: {} }
     cursantRows = data ?? []
   }
 
@@ -347,16 +350,40 @@ export async function listCursantiAction(): Promise<
     modul_activ_id: string | null
     activ: boolean
   }> = []
+  const solduri: Record<string, { incluse: number; ramase: number }> = {}
 
   if (cursantIds.length > 0) {
-    const { data: insc } = await client
-      .from('inscrieri')
-      .select('id, cursant_id, curs_id, modul_activ_id, activ')
-      .in('cursant_id', cursantIds)
+    const [{ data: insc }, { data: abonamente }, { data: sedinte }] = await Promise.all([
+      client
+        .from('inscrieri')
+        .select('id, cursant_id, curs_id, modul_activ_id, activ')
+        .in('cursant_id', cursantIds),
+      client
+        .from('abonamente')
+        .select('id, cursant_id, sedinte_incluse')
+        .in('cursant_id', cursantIds)
+        .eq('activ', true),
+      client
+        .from('sedinte')
+        .select('abonament_id')
+        .in('cursant_id', cursantIds)
+        .eq('consuma_sedinta', true),
+    ])
     inscrieri = insc ?? []
+
+    const consumate = new Map<string, number>()
+    for (const s of sedinte ?? []) {
+      consumate.set(s.abonament_id, (consumate.get(s.abonament_id) ?? 0) + 1)
+    }
+    for (const ab of abonamente ?? []) {
+      solduri[ab.cursant_id] = {
+        incluse: ab.sedinte_incluse,
+        ramase: ab.sedinte_incluse - (consumate.get(ab.id) ?? 0),
+      }
+    }
   }
 
-  return { ok: true as const, data: cursantRows, inscrieri }
+  return { ok: true as const, data: cursantRows, inscrieri, solduri }
 }
 
 export async function getCursantAction(cursantId: string): Promise<

@@ -152,40 +152,42 @@ export default function CursantProgresClient({ cursant }: { cursant: Cursant }) 
         </Link>
       </div>
 
-      <div className="grid lg:grid-cols-3 gap-6 mb-6">
-        <div className="lg:col-span-2 bg-white rounded-2xl shadow-sm border border-slate-100 p-6">
-          <div className="flex items-center justify-between mb-3">
-            <h2 className="font-semibold text-slate-900">Progres global</h2>
-            <span className="text-2xl font-bold text-blue-600">{procentGlobal}%</span>
+      <div className="bg-white rounded-2xl shadow-sm border border-slate-100 mb-6 overflow-hidden">
+        <div className="grid sm:grid-cols-2 divide-y sm:divide-y-0 sm:divide-x divide-slate-100">
+          <div className="p-6">
+            <div className="flex items-center justify-between mb-3">
+              <h2 className="font-semibold text-slate-900">Progres global</h2>
+              <span className="text-2xl font-bold text-blue-600">{procentGlobal}%</span>
+            </div>
+            <div className="w-full bg-slate-100 rounded-full h-2.5">
+              <div
+                className="bg-blue-500 h-2.5 rounded-full transition-all duration-500"
+                style={{ width: `${procentGlobal}%` }}
+              />
+            </div>
+            <p className="text-slate-400 text-sm mt-3">
+              {lectiiParcurse} din {totalLectii} lecții
+            </p>
           </div>
-          <div className="w-full bg-slate-100 rounded-full h-3">
-            <div
-              className="bg-blue-500 h-3 rounded-full transition-all duration-500"
-              style={{ width: `${procentGlobal}%` }}
-            />
-          </div>
-          <p className="text-slate-400 text-sm mt-2">
-            {lectiiParcurse} din {totalLectii} lecții · bifă = unlock acasă + max 1 ședință/zi
-          </p>
-        </div>
 
-        <AbonamentNotificariPanel
-          cursantId={cursant.id}
-          prenume={cursant.prenume}
-          emailParinte={cursant.email_parinte}
-          telefonParinte={cursant.telefon_parinte}
-          lastBifare={lastBifare}
-          abonamentRemote={
-            useSupabase
-              ? remote?.abonament
-                ? {
-                    sedinte_incluse: remote.abonament.sedinte_incluse,
-                    sedinte_ramase: remote.abonament.sedinte_ramase,
-                  }
-                : null
-              : undefined
-          }
-        />
+          <AbonamentNotificariPanel
+            cursantId={cursant.id}
+            prenume={cursant.prenume}
+            emailParinte={cursant.email_parinte}
+            telefonParinte={cursant.telefon_parinte}
+            lastBifare={lastBifare}
+            abonamentRemote={
+              useSupabase
+                ? remote?.abonament
+                  ? {
+                      sedinte_incluse: remote.abonament.sedinte_incluse,
+                      sedinte_ramase: remote.abonament.sedinte_ramase,
+                    }
+                  : null
+                : undefined
+            }
+          />
+        </div>
       </div>
 
       <InscrieriCursuriPanel

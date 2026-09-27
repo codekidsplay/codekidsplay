@@ -4,7 +4,7 @@ import { useEffect, useMemo, useState } from 'react'
 import Link from 'next/link'
 import { Plus, Search, X, UserCheck, UserX, Layers, CalendarPlus } from 'lucide-react'
 import { cursuri, module } from '@/lib/mockData'
-import { getStore, getCursanti, type Cursant } from '@/lib/mockStore'
+import { getStore, getCursanti, abonamentActiv, sedinteRamase, type Cursant } from '@/lib/mockStore'
 import CursantAvatar from '@/components/CursantAvatar'
 import { getStaffSession, filtreazaDupaVizibilitate } from '@/lib/vizibilitateCursanti'
 import { listCursantiAction } from '@/app/actions/cursanti'
@@ -30,6 +30,9 @@ export default function CursantiLista() {
       activ: boolean
     }>
   >([])
+  const [remoteSolduri, setRemoteSolduri] = useState<
+    Record<string, { incluse: number; ramase: number }>
+  >({})
   const [supabaseLoading, setSupabaseLoading] = useState(isSupabaseConfiguredClient())
 
   useEffect(() => {
@@ -73,9 +76,11 @@ export default function CursantiLista() {
           })),
         )
         setRemoteInscrieri(r.inscrieri)
+        setRemoteSolduri(r.solduri)
       } else {
         setRemoteCursanti([])
         setRemoteInscrieri([])
+        setRemoteSolduri({})
       }
       setSupabaseLoading(false)
       setTick(t => t + 1)
@@ -160,6 +165,16 @@ export default function CursantiLista() {
   }, [inscrieri, totiCursanti, q, cursId, modulId, status, inscrisiLuna])
 
   const areFiltre = q || cursId || modulId || status !== 'toti' || inscrisiLuna
+
+  const soldPentru = (cursantId: string): { incluse: number; ramase: number } | null => {
+    if (isSupabaseConfiguredClient()) {
+      return remoteSolduri[cursantId] ?? null
+    }
+    if (!store) return null
+    const ab = abonamentActiv(cursantId, store)
+    if (!ab) return null
+    return { incluse: ab.sedinte_incluse, ramase: sedinteRamase(ab.id, store) }
+  }
 
   if (!ready || (!store && !isSupabaseConfiguredClient()) || supabaseLoading) {
     return <p className="text-slate-400">Se încarcă…</p>
@@ -345,13 +360,14 @@ export default function CursantiLista() {
                 <th className="text-left px-6 py-4 text-slate-500 font-semibold text-sm">Modul activ</th>
                 <th className="text-left px-6 py-4 text-slate-500 font-semibold text-sm">Înscris</th>
                 <th className="text-left px-6 py-4 text-slate-500 font-semibold text-sm">Status</th>
+                <th className="text-left px-6 py-4 text-slate-500 font-semibold text-sm">Ședințe</th>
                 <th className="text-right px-6 py-4 text-slate-500 font-semibold text-sm">Acțiuni</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-slate-50">
               {filtrati.length === 0 ? (
                 <tr>
-                  <td colSpan={7} className="px-6 py-12 text-center text-slate-400 text-sm">
+                  <td colSpan={8} className="px-6 py-12 text-center text-slate-400 text-sm">
                     Niciun cursant nu corespunde filtrelor.
                   </td>
                 </tr>
@@ -364,6 +380,7 @@ export default function CursantiLista() {
                   const moduleActive = insc
                     .map(i => module.find(m => m.id === i.modul_activ_id))
                     .filter(Boolean)
+                  const sold = soldPentru(c.id)
 
                   return (
                     <tr key={c.id} className="hover:bg-slate-50 transition-colors">
@@ -428,6 +445,27 @@ export default function CursantiLista() {
                         >
                           {c.activ ? 'Activ' : 'Inactiv'}
                         </span>
+                      </td>
+                      <td className="px-6 py-4 whitespace-nowrap">
+                        {sold ? (
+                          <div>
+                            <p
+                              className={`text-sm font-semibold ${
+                                sold.ramase <= 0
+                                  ? 'text-amber-600'
+                                  : sold.ramase <= 1
+                                    ? 'text-amber-600'
+                                    : 'text-emerald-600'
+                              }`}
+                            >
+                              {sold.ramase}
+                              <span className="text-slate-400 font-normal"> / {sold.incluse}</span>
+                            </p>
+                            <p className="text-[11px] text-slate-400">rămase</p>
+                          </div>
+                        ) : (
+                          <span className="text-slate-400 text-sm">—</span>
+                        )}
                       </td>
                       <td className="px-6 py-4 text-right">
                         <div className="flex items-center justify-end gap-2">
