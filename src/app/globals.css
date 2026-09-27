@@ -147,6 +147,27 @@ body {
   transform: rotateY(180deg);
 }
 
+@keyframes ckp-ochi-idle {
+  0%,
+  100% {
+    transform: translateY(0) scale(1);
+  }
+  32% {
+    transform: translateY(-9px) scale(1.07);
+  }
+  52% {
+    transform: translateY(0) scale(0.96);
+  }
+  72% {
+    transform: translateY(-5px) scale(1.03);
+  }
+}
+
+.ckp-ochi-idle {
+  display: inline-flex;
+  animation: ckp-ochi-idle 0.72s cubic-bezier(0.34, 1.4, 0.64, 1) both;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .ckp-fade-up,
   .ckp-fade-up-delay,
@@ -157,7 +178,8 @@ body {
   }
 
   .ckp-ochi-to180,
-  .ckp-ochi-to360 {
+  .ckp-ochi-to360,
+  .ckp-ochi-idle {
     animation: none;
   }
 
