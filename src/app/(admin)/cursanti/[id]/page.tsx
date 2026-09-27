@@ -123,6 +123,7 @@ export default function CursantProgresPagina({
         email_parinte: cursant.email_parinte,
         telefon_parinte: cursant.telefon_parinte,
         data_nastere: cursant.data_nastere,
+        activ: cursant.activ,
       }}
     />
   )

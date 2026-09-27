@@ -176,36 +176,3 @@ export async function inregistreazaPlataAction(
   if (plataErr) return { ok: false, error: plataErr.message }
   return { ok: true }
 }
-
-export type InregistreazaSedintaInput = {
-  cursant_id: string
-  abonament_id: string
-  data: string
-  prezent: boolean
-  nota?: string | null
-}
-
-export async function inregistreazaSedintaAction(
-  input: InregistreazaSedintaInput,
-): Promise<{ ok: true } | { ok: false; error: string }> {
-  const acces = await verificaAdmin()
-  if (!acces.ok) return acces
-  const { admin } = acces
-
-  if (!/^[0-9a-f-]{36}$/i.test(input.cursant_id) || !/^[0-9a-f-]{36}$/i.test(input.abonament_id)) {
-    return { ok: false, error: 'Date invalide.' }
-  }
-
-  const { error } = await admin.from('sedinte').insert({
-    cursant_id: input.cursant_id,
-    abonament_id: input.abonament_id,
-    data: input.data,
-    prezent: input.prezent,
-    consuma_sedinta: input.prezent,
-    nota: input.nota?.trim() || null,
-    creat_de: acces.userId,
-  })
-
-  if (error) return { ok: false, error: error.message }
-  return { ok: true }
-}

@@ -2,8 +2,7 @@
 
 import { useCallback, useEffect, useState } from 'react'
 import Link from 'next/link'
-import { ArrowLeft, CheckCircle, XCircle, CreditCard, Calendar } from 'lucide-react'
-import AdaugaSedintaButton from '@/components/AdaugaSedintaButton'
+import { ArrowLeft, CreditCard } from 'lucide-react'
 import AdaugaPlataButton from '@/components/AdaugaPlataButton'
 import {
   getDetaliiCursantAbonamentAction,
@@ -45,7 +44,6 @@ export default function CursantAbonamentDetail({ cursantId }: { cursantId: strin
 
   const { cursant, abonamente, sedinte, plati } = data
   const aboActiv = abonamente.find(a => a.activ)
-  const sedinteCursant = sedinte
   const sedinteConsume = aboActiv
     ? sedinte.filter(s => s.abonament_id === aboActiv.id && s.prezent).length
     : 0
@@ -96,75 +94,39 @@ export default function CursantAbonamentDetail({ cursantId }: { cursantId: strin
         </div>
       </div>
 
-      <div className="grid grid-cols-2 gap-6">
-        <div className="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden">
-          <div className="p-5 border-b border-slate-100 flex items-center justify-between">
-            <div className="flex items-center gap-2">
-              <Calendar size={18} className="text-slate-400" />
-              <h2 className="font-bold text-slate-900">Ședințe</h2>
-              <span className="text-slate-400 text-sm">({sedinteCursant.length} total)</span>
-            </div>
-            {aboActiv && (
-              <AdaugaSedintaButton cursantId={cursantId} abonamentId={aboActiv.id} onSaved={refresh} />
-            )}
+      <div className="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden max-w-2xl">
+        <div className="p-5 border-b border-slate-100 flex items-center justify-between">
+          <div className="flex items-center gap-2">
+            <CreditCard size={18} className="text-slate-400" />
+            <h2 className="font-bold text-slate-900">Istoricul plăților</h2>
+            <span className="text-slate-400 text-sm">({plati.length} total)</span>
           </div>
-          <div className="p-5 space-y-2 max-h-96 overflow-y-auto">
-            {sedinteCursant.length === 0 ? (
-              <p className="text-slate-400 text-center py-6">Nicio ședință înregistrată</p>
-            ) : (
-              sedinteCursant.map(s => (
-                <div key={s.id} className={`flex items-center gap-3 p-3 rounded-xl ${s.prezent ? 'bg-emerald-50' : 'bg-red-50'}`}>
-                  {s.prezent
-                    ? <CheckCircle size={18} className="text-emerald-500 flex-shrink-0" />
-                    : <XCircle size={18} className="text-red-400 flex-shrink-0" />
-                  }
-                  <div className="flex-1">
-                    <p className="text-sm font-medium text-slate-800">
-                      {new Date(s.data + 'T12:00:00').toLocaleDateString('ro-RO', { weekday: 'long', day: 'numeric', month: 'long' })}
-                    </p>
-                    {s.nota && <p className="text-xs text-slate-400">{s.nota}</p>}
-                  </div>
-                  <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.prezent ? 'bg-emerald-100 text-emerald-700' : 'bg-red-100 text-red-600'}`}>
-                    {s.prezent ? 'Prezent' : 'Absent'}
-                  </span>
-                </div>
-              ))
-            )}
-          </div>
+          <AdaugaPlataButton
+            cursantId={cursantId}
+            abonamentId={aboActiv?.id}
+            numarCursant={`${cursant.nume} ${cursant.prenume}`}
+            onSaved={refresh}
+          />
         </div>
-
-        <div className="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden">
-          <div className="p-5 border-b border-slate-100 flex items-center justify-between">
-            <div className="flex items-center gap-2">
-              <CreditCard size={18} className="text-slate-400" />
-              <h2 className="font-bold text-slate-900">Istoricul plăților</h2>
-              <span className="text-slate-400 text-sm">({plati.length} total)</span>
-            </div>
-            <AdaugaPlataButton
-              cursantId={cursantId}
-              abonamentId={aboActiv?.id}
-              numarCursant={`${cursant.nume} ${cursant.prenume}`}
-              onSaved={refresh}
-            />
-          </div>
-          <div className="p-5 space-y-3">
-            {plati.length === 0 ? (
-              <p className="text-slate-400 text-center py-6">Nicio plată înregistrată</p>
-            ) : (
-              plati.map(p => (
-                <div key={p.id} className="flex items-center justify-between p-4 rounded-xl bg-slate-50">
-                  <div>
-                    <p className="font-semibold text-slate-900">{new Date(p.data_plata + 'T12:00:00').toLocaleDateString('ro-RO')}</p>
-                    <div className="flex items-center gap-2 mt-0.5">
-                      <span className="text-xs bg-slate-200 text-slate-600 px-2 py-0.5 rounded-full">{p.metoda}</span>
-                      {p.nota && <span className="text-xs text-slate-400">{p.nota}</span>}
-                    </div>
+        <div className="p-5 space-y-3">
+          {plati.length === 0 ? (
+            <p className="text-slate-400 text-center py-6">Nicio plată înregistrată</p>
+          ) : (
+            plati.map(p => (
+              <div key={p.id} className="flex items-center justify-between p-4 rounded-xl bg-slate-50">
+                <div>
+                  <p className="font-semibold text-slate-900">
+                    {new Date(p.data_plata + 'T12:00:00').toLocaleDateString('ro-RO')}
+                  </p>
+                  <div className="flex items-center gap-2 mt-0.5">
+                    <span className="text-xs bg-slate-200 text-slate-600 px-2 py-0.5 rounded-full">{p.metoda}</span>
+                    {p.nota && <span className="text-xs text-slate-400">{p.nota}</span>}
                   </div>
-                  <span className="text-emerald-600 font-bold text-lg">{p.suma} lei</span>
                 </div>
-              ))
-            )}
-          </div>
+                <span className="text-emerald-600 font-bold text-lg">{p.suma} lei</span>
+              </div>
+            ))
+          )}
         </div>
       </div>
     </div>

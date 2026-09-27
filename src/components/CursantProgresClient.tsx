@@ -9,8 +9,6 @@ import ProgresLectiiMock from '@/components/ProgresLectiiMock'
 import AbonamentNotificariPanel from '@/components/AbonamentNotificariPanel'
 import ModulActivSelect from '@/components/ModulActivSelect'
 import InscrieriCursuriPanel from '@/components/InscrieriCursuriPanel'
-import ConturiAccesPanel from '@/components/ConturiAccesPanel'
-import AsigneazaProfesorPanel from '@/components/AsigneazaProfesorPanel'
 import { getProgresCursantAction, type ProgresCursantData } from '@/app/actions/progres'
 import { isSupabaseConfiguredClient } from '@/lib/supabase/publicFlag'
 
@@ -21,6 +19,7 @@ interface Cursant {
   email_parinte: string
   telefon_parinte: string | null
   data_nastere?: string | null
+  activ?: boolean
 }
 
 function isUuid(id: string): boolean {
@@ -153,10 +152,6 @@ export default function CursantProgresClient({ cursant }: { cursant: Cursant }) 
         </Link>
       </div>
 
-      <ConturiAccesPanel cursant={cursant} />
-
-      <AsigneazaProfesorPanel cursantId={cursant.id} />
-
       <div className="grid lg:grid-cols-3 gap-6 mb-6">
         <div className="lg:col-span-2 bg-white rounded-2xl shadow-sm border border-slate-100 p-6">
           <div className="flex items-center justify-between mb-3">
@@ -183,7 +178,10 @@ export default function CursantProgresClient({ cursant }: { cursant: Cursant }) 
           abonamentRemote={
             useSupabase
               ? remote?.abonament
-                ? { sedinte_incluse: remote.abonament.sedinte_incluse, sedinte_ramase: remote.abonament.sedinte_ramase }
+                ? {
+                    sedinte_incluse: remote.abonament.sedinte_incluse,
+                    sedinte_ramase: remote.abonament.sedinte_ramase,
+                  }
                 : null
               : undefined
           }
@@ -205,16 +203,17 @@ export default function CursantProgresClient({ cursant }: { cursant: Cursant }) 
           {cursuriCursant.map(curs => {
             const totalCurs = curs.module.reduce((s, m) => s + m.lectii.length, 0)
             const parcurseCurs = curs.module.reduce(
-              (s, m) =>
-                s +
-                m.lectii.filter(l => progresRemoteMap[l.id]?.bifat).length,
-              0
+              (s, m) => s + m.lectii.filter(l => progresRemoteMap[l.id]?.bifat).length,
+              0,
             )
             const procentCurs = totalCurs > 0 ? Math.round((parcurseCurs / totalCurs) * 100) : 0
             const modulActivId = curs.inscriere.modul_activ_id
 
             return (
-              <div key={curs.id} className="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden">
+              <div
+                key={curs.id}
+                className="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden"
+              >
                 <div className="p-5 border-b border-slate-100 flex flex-wrap items-center justify-between gap-3">
                   <div className="flex items-center gap-3">
                     <div className="w-3 h-8 rounded-full" style={{ backgroundColor: curs.culoare }} />
@@ -244,10 +243,7 @@ export default function CursantProgresClient({ cursant }: { cursant: Cursant }) 
                     const isActiv = modul.id === modulActivId
                     const parcurseModul = modul.lectii.filter(l => progresRemoteMap[l.id]?.bifat).length
                     return (
-                      <div
-                        key={modul.id}
-                        className={isActiv ? '' : 'opacity-60'}
-                      >
+                      <div key={modul.id} className={isActiv ? '' : 'opacity-60'}>
                         <div className="flex items-center justify-between mb-3">
                           <h4 className="font-semibold text-slate-700">
                             {modul.nume}

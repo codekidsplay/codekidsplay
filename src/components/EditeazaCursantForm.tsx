@@ -1,22 +1,23 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import { useRouter } from 'next/navigation'
 import Link from 'next/link'
-import { ArrowLeft, Save } from 'lucide-react'
+import { ArrowLeft, Save, UserRound } from 'lucide-react'
 import { getCursantAction, updateCursantAction } from '@/app/actions/cursanti'
 import { getCursant } from '@/lib/mockStore'
 import { isSupabaseConfiguredClient } from '@/lib/supabase/publicFlag'
+import ConturiAccesPanel from '@/components/ConturiAccesPanel'
+import AsigneazaProfesorPanel from '@/components/AsigneazaProfesorPanel'
 
 function isUuid(id: string) {
   return /^[0-9a-f-]{36}$/i.test(id)
 }
 
 export default function EditeazaCursantForm({ cursantId }: { cursantId: string }) {
-  const router = useRouter()
   const [loading, setLoading] = useState(true)
   const [saving, setSaving] = useState(false)
   const [error, setError] = useState<string | null>(null)
+  const [okMsg, setOkMsg] = useState<string | null>(null)
   const [notFound, setNotFound] = useState(false)
   const [form, setForm] = useState({
     prenume: '',
@@ -70,6 +71,7 @@ export default function EditeazaCursantForm({ cursantId }: { cursantId: string }
   const onSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setError(null)
+    setOkMsg(null)
     if (!/^\d{4}-\d{2}-\d{2}$/.test(form.data_nastere)) {
       setError('Data nașterii e obligatorie.')
       return
@@ -90,7 +92,7 @@ export default function EditeazaCursantForm({ cursantId }: { cursantId: string }
         setError(r.error)
         return
       }
-      router.push(`/cursanti/${cursantId}`)
+      setOkMsg('Datele au fost salvate.')
       return
     }
 
@@ -113,6 +115,14 @@ export default function EditeazaCursantForm({ cursantId }: { cursantId: string }
     )
   }
 
+  const cursantPentruPanouri = {
+    id: cursantId,
+    nume: form.nume,
+    prenume: form.prenume,
+    email_parinte: form.email_parinte,
+    telefon_parinte: form.telefon_parinte || null,
+  }
+
   return (
     <div>
       <div className="flex items-center gap-4 mb-8">
@@ -130,98 +140,111 @@ export default function EditeazaCursantForm({ cursantId }: { cursantId: string }
         </div>
       </div>
 
-      <form
-        onSubmit={onSubmit}
-        className="bg-white rounded-2xl shadow-sm border border-slate-100 p-6 sm:p-8 max-w-xl space-y-5"
-      >
-        <div className="grid sm:grid-cols-2 gap-4">
+      <div className="bg-white rounded-2xl shadow-sm border border-slate-100 p-6 mb-6">
+        <div className="flex items-center gap-2 mb-4">
+          <UserRound size={18} className="text-slate-500" />
+          <h2 className="font-semibold text-slate-800">Date cursant</h2>
+        </div>
+
+        <form onSubmit={onSubmit} className="space-y-5 max-w-xl">
+          <div className="grid sm:grid-cols-2 gap-4">
+            <label className="block">
+              <span className="text-sm font-medium text-slate-700 mb-1.5 block">Prenume *</span>
+              <input
+                value={form.prenume}
+                onChange={e => setForm({ ...form, prenume: e.target.value })}
+                className="w-full rounded-xl border border-slate-200 px-4 py-2.5 outline-none focus:border-blue-500"
+                required
+              />
+            </label>
+            <label className="block">
+              <span className="text-sm font-medium text-slate-700 mb-1.5 block">Nume *</span>
+              <input
+                value={form.nume}
+                onChange={e => setForm({ ...form, nume: e.target.value })}
+                className="w-full rounded-xl border border-slate-200 px-4 py-2.5 outline-none focus:border-blue-500"
+                required
+              />
+            </label>
+          </div>
+
           <label className="block">
-            <span className="text-sm font-medium text-slate-700 mb-1.5 block">Prenume *</span>
+            <span className="text-sm font-medium text-slate-700 mb-1.5 block">Data nașterii *</span>
             <input
-              value={form.prenume}
-              onChange={e => setForm({ ...form, prenume: e.target.value })}
+              type="date"
+              value={form.data_nastere}
+              onChange={e => setForm({ ...form, data_nastere: e.target.value })}
+              max={new Date().toISOString().slice(0, 10)}
               className="w-full rounded-xl border border-slate-200 px-4 py-2.5 outline-none focus:border-blue-500"
               required
             />
           </label>
+
           <label className="block">
-            <span className="text-sm font-medium text-slate-700 mb-1.5 block">Nume *</span>
+            <span className="text-sm font-medium text-slate-700 mb-1.5 block">Email părinte *</span>
             <input
-              value={form.nume}
-              onChange={e => setForm({ ...form, nume: e.target.value })}
+              type="email"
+              value={form.email_parinte}
+              onChange={e => setForm({ ...form, email_parinte: e.target.value })}
               className="w-full rounded-xl border border-slate-200 px-4 py-2.5 outline-none focus:border-blue-500"
               required
             />
           </label>
-        </div>
 
-        <label className="block">
-          <span className="text-sm font-medium text-slate-700 mb-1.5 block">Data nașterii *</span>
-          <input
-            type="date"
-            value={form.data_nastere}
-            onChange={e => setForm({ ...form, data_nastere: e.target.value })}
-            max={new Date().toISOString().slice(0, 10)}
-            className="w-full rounded-xl border border-slate-200 px-4 py-2.5 outline-none focus:border-blue-500"
-            required
-          />
-        </label>
+          <label className="block">
+            <span className="text-sm font-medium text-slate-700 mb-1.5 block">Telefon</span>
+            <input
+              type="tel"
+              value={form.telefon_parinte}
+              onChange={e => setForm({ ...form, telefon_parinte: e.target.value })}
+              className="w-full rounded-xl border border-slate-200 px-4 py-2.5 outline-none focus:border-blue-500"
+              placeholder="07xx xxx xxx"
+            />
+          </label>
 
-        <label className="block">
-          <span className="text-sm font-medium text-slate-700 mb-1.5 block">Email părinte *</span>
-          <input
-            type="email"
-            value={form.email_parinte}
-            onChange={e => setForm({ ...form, email_parinte: e.target.value })}
-            className="w-full rounded-xl border border-slate-200 px-4 py-2.5 outline-none focus:border-blue-500"
-            required
-          />
-        </label>
+          <label className="flex items-center gap-3 cursor-pointer">
+            <input
+              type="checkbox"
+              checked={form.activ}
+              onChange={e => setForm({ ...form, activ: e.target.checked })}
+              className="rounded border-slate-300"
+            />
+            <span className="text-sm font-medium text-slate-700">Cursant activ</span>
+          </label>
 
-        <label className="block">
-          <span className="text-sm font-medium text-slate-700 mb-1.5 block">Telefon</span>
-          <input
-            type="tel"
-            value={form.telefon_parinte}
-            onChange={e => setForm({ ...form, telefon_parinte: e.target.value })}
-            className="w-full rounded-xl border border-slate-200 px-4 py-2.5 outline-none focus:border-blue-500"
-            placeholder="07xx xxx xxx"
-          />
-        </label>
+          {error ? (
+            <p className="text-sm text-red-600 bg-red-50 border border-red-100 rounded-xl px-4 py-3">
+              {error}
+            </p>
+          ) : null}
+          {okMsg ? (
+            <p className="text-sm text-emerald-700 bg-emerald-50 border border-emerald-100 rounded-xl px-4 py-3">
+              {okMsg}
+            </p>
+          ) : null}
 
-        <label className="flex items-center gap-3 cursor-pointer">
-          <input
-            type="checkbox"
-            checked={form.activ}
-            onChange={e => setForm({ ...form, activ: e.target.checked })}
-            className="rounded border-slate-300"
-          />
-          <span className="text-sm font-medium text-slate-700">Cursant activ</span>
-        </label>
+          <div className="flex flex-wrap gap-3 pt-1">
+            <button
+              type="submit"
+              disabled={saving}
+              className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 disabled:opacity-60 text-white font-medium px-5 py-2.5 rounded-xl transition-colors"
+            >
+              <Save size={18} />
+              {saving ? 'Salvez…' : 'Salvează datele'}
+            </button>
+            <Link
+              href={`/cursanti/${cursantId}`}
+              className="inline-flex items-center px-5 py-2.5 rounded-xl border border-slate-200 text-slate-600 hover:bg-slate-50"
+            >
+              Înapoi la progres
+            </Link>
+          </div>
+        </form>
+      </div>
 
-        {error ? (
-          <p className="text-sm text-red-600 bg-red-50 border border-red-100 rounded-xl px-4 py-3">
-            {error}
-          </p>
-        ) : null}
+      <ConturiAccesPanel cursant={cursantPentruPanouri} />
 
-        <div className="flex flex-wrap gap-3 pt-2">
-          <button
-            type="submit"
-            disabled={saving}
-            className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 disabled:opacity-60 text-white font-medium px-5 py-2.5 rounded-xl transition-colors"
-          >
-            <Save size={18} />
-            {saving ? 'Salvez…' : 'Salvează'}
-          </button>
-          <Link
-            href={`/cursanti/${cursantId}`}
-            className="inline-flex items-center px-5 py-2.5 rounded-xl border border-slate-200 text-slate-600 hover:bg-slate-50"
-          >
-            Anulează
-          </Link>
-        </div>
-      </form>
+      <AsigneazaProfesorPanel cursantId={cursantId} />
     </div>
   )
 }
