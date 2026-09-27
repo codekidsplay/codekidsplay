@@ -55,11 +55,20 @@ export default function LoginForm() {
           nume: r.session.nume,
           cursant_ids: r.session.cursant_ids,
         })
-      } else if (r.session.rol === 'admin' || r.session.rol === 'profesor') {
+      } else if (r.session.rol === 'admin') {
         persistSession({
           rol: 'admin',
           email: r.session.email,
           nume: r.session.nume,
+          userId: r.session.userId,
+        })
+      } else if (r.session.rol === 'profesor') {
+        persistSession({
+          rol: 'profesor',
+          email: r.session.email,
+          nume: r.session.nume,
+          userId: r.session.userId,
+          cursant_ids: r.session.cursant_ids,
         })
       } else {
         setError('Rol invalid pentru login adult.')

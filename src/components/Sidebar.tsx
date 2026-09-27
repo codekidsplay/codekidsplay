@@ -9,27 +9,44 @@ import {
   CreditCard,
   ChevronRight,
   LogOut,
+  GraduationCap,
 } from 'lucide-react'
 import { getSession, logout } from '@/lib/auth'
 import { useEffect, useState } from 'react'
 import BrandLogo from '@/components/BrandLogo'
 
-const navItems = [
+const navItems: {
+  href: string
+  label: string
+  icon: typeof LayoutDashboard
+  roles?: Array<'admin' | 'profesor'>
+}[] = [
   { href: '/admin', label: 'Dashboard', icon: LayoutDashboard },
   { href: '/cursanti', label: 'Cursanți', icon: Users },
-  { href: '/cursuri', label: 'Lecții (profesor)', icon: BookOpen },
-  { href: '/abonamente', label: 'Abonamente & Plăți', icon: CreditCard },
+  { href: '/cursuri', label: 'Lecții', icon: BookOpen },
+  { href: '/abonamente', label: 'Abonamente & Plăți', icon: CreditCard, roles: ['admin'] },
+  { href: '/profesori', label: 'Profesori', icon: GraduationCap, roles: ['admin'] },
 ]
 
 export default function Sidebar() {
   const pathname = usePathname()
   const router = useRouter()
   const [adminName, setAdminName] = useState('')
+  const [rolLabel, setRolLabel] = useState('Admin')
+  const [rol, setRol] = useState<'admin' | 'profesor' | null>(null)
 
   useEffect(() => {
     const s = getSession()
-    if (s?.rol === 'admin') setAdminName(s.nume)
+    if (s?.rol === 'admin' || s?.rol === 'profesor') {
+      setAdminName(s.nume)
+      setRol(s.rol)
+      setRolLabel(s.rol === 'profesor' ? 'Profesor' : 'Admin')
+    }
   }, [])
+
+  const visibleNav = navItems.filter(
+    item => !item.roles || (rol != null && item.roles.includes(rol)),
+  )
 
   return (
     <aside className="fixed left-0 top-0 h-screen w-64 bg-slate-900 text-white flex flex-col shadow-xl z-50">
@@ -38,13 +55,16 @@ export default function Sidebar() {
           <BrandLogo size="sm" href="/admin" />
           <div>
             <h1 className="font-bold text-lg leading-tight">Code Kids Play</h1>
-            <p className="text-slate-400 text-xs">{adminName || 'Admin'}</p>
+            <p className="text-slate-400 text-xs">
+              {rol === 'profesor' ? 'Profesor' : adminName || rolLabel}
+              {rol === 'admin' && adminName ? ` · ${rolLabel}` : ''}
+            </p>
           </div>
         </div>
       </div>
 
       <nav className="flex-1 p-4 space-y-1">
-        {navItems.map(({ href, label, icon: Icon }) => {
+        {visibleNav.map(({ href, label, icon: Icon }) => {
           const active =
             href === '/admin'
               ? pathname === '/admin'

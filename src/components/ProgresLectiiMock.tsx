@@ -7,6 +7,8 @@ import {
   getStore,
   type BifareResult,
 } from '@/lib/mockStore'
+import { bifareLectieAction } from '@/app/actions/progres'
+import { isSupabaseConfiguredClient } from '@/lib/supabase/publicFlag'
 
 interface Lectie {
   id: string
@@ -21,6 +23,12 @@ interface Props {
   modulActivId: string | null
   culoareCurs: string
   onBifare?: (result: BifareResult) => void
+  /** Progres deja bifat, citit din Supabase (dacă e disponibil, evită mock store) */
+  progresRemote?: Record<string, { bifat: boolean; data_bifat: string | null }>
+}
+
+function isUuid(id: string): boolean {
+  return /^[0-9a-f-]{36}$/i.test(id)
 }
 
 export default function ProgresLectiiMock({
@@ -29,13 +37,26 @@ export default function ProgresLectiiMock({
   modulActivId,
   culoareCurs,
   onBifare,
+  progresRemote,
 }: Props) {
+  const useSupabase = isSupabaseConfiguredClient() && isUuid(cursantId)
   const [progres, setProgres] = useState<Record<string, boolean>>({})
   const [dateBifat, setDateBifat] = useState<Record<string, string | null>>({})
   const [loading, setLoading] = useState<string | null>(null)
   const [error, setError] = useState<string | null>(null)
 
   const syncFromStore = useCallback(() => {
+    if (useSupabase && progresRemote) {
+      const map: Record<string, boolean> = {}
+      const dates: Record<string, string | null> = {}
+      for (const l of lectii) {
+        map[l.id] = progresRemote[l.id]?.bifat ?? false
+        dates[l.id] = progresRemote[l.id]?.data_bifat ?? null
+      }
+      setProgres(map)
+      setDateBifat(dates)
+      return
+    }
     const store = getStore()
     const map: Record<string, boolean> = {}
     const dates: Record<string, string | null> = {}
@@ -46,7 +67,7 @@ export default function ProgresLectiiMock({
     }
     setProgres(map)
     setDateBifat(dates)
-  }, [lectii, cursantId])
+  }, [lectii, cursantId, useSupabase, progresRemote])
 
   useEffect(() => {
     syncFromStore()
@@ -68,13 +89,19 @@ export default function ProgresLectiiMock({
     }
 
     setLoading(lectieId)
-    const result = await bifareLectie(cursantId, lectieId)
+    const result = useSupabase
+      ? await bifareLectieAction(cursantId, lectieId)
+      : await bifareLectie(cursantId, lectieId)
     setLoading(null)
     if (!result.ok) {
       setError(result.error ?? 'Eroare la bifare')
       return
     }
-    syncFromStore()
+    if (!useSupabase || !progresRemote) syncFromStore()
+    else {
+      setProgres(prev => ({ ...prev, [lectieId]: result.bifat }))
+      setDateBifat(prev => ({ ...prev, [lectieId]: result.bifat ? new Date().toISOString() : null }))
+    }
     onBifare?.(result)
   }
 

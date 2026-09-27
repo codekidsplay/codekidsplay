@@ -1,27 +1,65 @@
 'use client'
 
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 import { ArrowLeft, Save } from 'lucide-react'
 import { cursuri } from '@/lib/mockData'
 import { adaugaCursant } from '@/lib/mockStore'
-import { asiguraConturiCursant, genereazaUsername, usernameElevDisponibil } from '@/lib/auth'
+import {
+  adaugaCursantLaProfesorSesiune,
+  asiguraConturiCursant,
+  genereazaUsername,
+  getCreds,
+  getSession,
+  usernameElevDisponibil,
+} from '@/lib/auth'
+import { genereazaParola } from '@/lib/authHelpers'
 import { adaugaCursantAction } from '@/app/actions/cursanti'
+import { listStaffAction, type StaffMember } from '@/app/actions/profesori'
 import { isSupabaseConfiguredClient } from '@/lib/supabase/publicFlag'
 
 export default function AdaugaCursantForm() {
   const router = useRouter()
   const [prenume, setPrenume] = useState('')
   const [nume, setNume] = useState('')
+  const [dataNastere, setDataNastere] = useState('')
   const [email, setEmail] = useState('')
   const [telefon, setTelefon] = useState('')
   const [username, setUsername] = useState('')
   const [pin, setPin] = useState('')
   const [parolaParinte, setParolaParinte] = useState('')
   const [cursId, setCursId] = useState('c7')
+  const [profesorId, setProfesorId] = useState('')
+  const [profesori, setProfesori] = useState<StaffMember[]>([])
+  const [isAdmin, setIsAdmin] = useState(false)
   const [error, setError] = useState<string | null>(null)
   const [saving, setSaving] = useState(false)
+
+  useEffect(() => {
+    const s = getSession()
+    setIsAdmin(s?.rol === 'admin')
+    if (s?.rol !== 'admin') return
+
+    const load = async () => {
+      if (isSupabaseConfiguredClient()) {
+        const r = await listStaffAction()
+        if (r.ok) setProfesori(r.data.filter(p => p.rol === 'profesor'))
+      } else {
+        setProfesori(
+          getCreds()
+            .email.filter(e => e.tip === 'profesor')
+            .map(e => ({
+              id: e.email,
+              email: e.email,
+              nume: e.nume,
+              rol: 'profesor' as const,
+            })),
+        )
+      }
+    }
+    void load()
+  }, [])
 
   const sugestieUsername = () => {
     if (username.trim() || !prenume.trim() || !nume.trim()) return
@@ -34,6 +72,10 @@ export default function AdaugaCursantForm() {
 
     if (!prenume.trim() || !nume.trim()) {
       setError('Completează prenumele și numele copilului.')
+      return
+    }
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(dataNastere)) {
+      setError('Data nașterii e obligatorie.')
       return
     }
     if (!email.trim() || !email.includes('@')) {
@@ -61,15 +103,28 @@ export default function AdaugaCursantForm() {
           nume,
           email_parinte: email,
           telefon_parinte: telefon || null,
+          data_nastere: dataNastere,
           username: username.trim(),
           pin: pin.trim(),
           parola_parinte: parolaParinte.trim(),
           curs_id: cursId || null,
+          profesor_id: profesorId || null,
         })
         if (!r.ok) {
           setError(r.error)
           setSaving(false)
           return
+        }
+        // Actualizează sesiunea profesorului cu noul cursant
+        const session = getSession()
+        if (session?.rol === 'profesor') {
+          const ids = Array.from(new Set([...(session.cursant_ids ?? []), r.cursant_id]))
+          localStorage.setItem(
+            'ckp-session-v1',
+            JSON.stringify({ ...session, cursant_ids: ids }),
+          )
+        } else if (profesorId) {
+          // admin a asignat — ok în DB
         }
         router.push(`/cursanti/${r.cursant_id}`)
         return
@@ -86,6 +141,7 @@ export default function AdaugaCursantForm() {
         nume,
         email_parinte: email,
         telefon_parinte: telefon || null,
+        data_nastere: dataNastere,
         curs_id: cursId || null,
       })
 
@@ -105,6 +161,13 @@ export default function AdaugaCursantForm() {
         return
       }
 
+      const session = getSession()
+      if (session?.rol === 'profesor') {
+        adaugaCursantLaProfesorSesiune(cursant.id)
+      } else if (profesorId) {
+        adaugaCursantLaProfesorSesiune(cursant.id, profesorId)
+      }
+
       router.push(`/cursanti/${cursant.id}`)
     } catch {
       setError('Nu am putut salva cursantul. Încearcă din nou.')
@@ -120,11 +183,6 @@ export default function AdaugaCursantForm() {
         </Link>
         <div>
           <h1 className="text-3xl font-bold text-slate-900">Adaugă cursant</h1>
-          <p className="text-slate-500 text-sm mt-1">
-            {isSupabaseConfiguredClient()
-              ? 'Salvează în Supabase + creează conturi Auth'
-              : 'Mod local (mock) — configurează service role pentru Supabase'}
-          </p>
         </div>
       </div>
 
@@ -157,10 +215,20 @@ export default function AdaugaCursantForm() {
           </label>
         </div>
 
+        <label className="block">
+          <span className="text-sm font-medium text-slate-700 mb-1.5 block">Data nașterii *</span>
+          <input
+            type="date"
+            value={dataNastere}
+            onChange={e => setDataNastere(e.target.value)}
+            max={new Date().toISOString().slice(0, 10)}
+            className="w-full rounded-xl border border-slate-200 px-4 py-2.5 text-slate-900 outline-none focus:border-blue-500"
+            required
+          />
+        </label>
+
         <div className="rounded-xl border border-slate-100 bg-slate-50/80 p-4 space-y-4">
-          <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">
-            Cont elev
-          </p>
+          <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">Cont elev</p>
           <div className="grid sm:grid-cols-2 gap-4">
             <label className="block">
               <span className="text-sm font-medium text-slate-700 mb-1.5 block">Username *</span>
@@ -190,9 +258,7 @@ export default function AdaugaCursantForm() {
         </div>
 
         <div className="rounded-xl border border-slate-100 bg-slate-50/80 p-4 space-y-4">
-          <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">
-            Cont părinte
-          </p>
+          <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">Cont părinte</p>
           <label className="block">
             <span className="text-sm font-medium text-slate-700 mb-1.5 block">Email *</span>
             <input
@@ -206,16 +272,25 @@ export default function AdaugaCursantForm() {
           </label>
           <label className="block">
             <span className="text-sm font-medium text-slate-700 mb-1.5 block">Parolă *</span>
-            <input
-              type="text"
-              value={parolaParinte}
-              onChange={e => setParolaParinte(e.target.value)}
-              className="w-full rounded-xl border border-slate-200 bg-white px-4 py-2.5 font-mono text-slate-900 outline-none focus:border-blue-500"
-              placeholder="minim 6 caractere"
-              autoComplete="new-password"
-              minLength={6}
-              required
-            />
+            <div className="flex gap-2">
+              <input
+                type="text"
+                value={parolaParinte}
+                onChange={e => setParolaParinte(e.target.value)}
+                className="flex-1 rounded-xl border border-slate-200 bg-white px-4 py-2.5 font-mono text-slate-900 outline-none focus:border-blue-500"
+                placeholder="minim 6 caractere"
+                autoComplete="new-password"
+                minLength={6}
+                required
+              />
+              <button
+                type="button"
+                onClick={() => setParolaParinte(genereazaParola(8))}
+                className="px-3 py-2.5 rounded-xl border border-slate-200 text-sm text-slate-600 hover:bg-white bg-white shrink-0"
+              >
+                Generează
+              </button>
+            </div>
           </label>
           <label className="block">
             <span className="text-sm font-medium text-slate-700 mb-1.5 block">Telefon</span>
@@ -245,8 +320,32 @@ export default function AdaugaCursantForm() {
           </select>
         </label>
 
+        {isAdmin && profesori.length > 0 ? (
+          <label className="block">
+            <span className="text-sm font-medium text-slate-700 mb-1.5 block">Profesor</span>
+            <select
+              value={profesorId}
+              onChange={e => setProfesorId(e.target.value)}
+              className="w-full rounded-xl border border-slate-200 px-4 py-2.5 text-slate-900 outline-none focus:border-blue-500 bg-white"
+            >
+              <option value="">— Neasignat —</option>
+              {profesori.map(p => (
+                <option key={p.id} value={p.id}>
+                  {p.nume}
+                  {p.email ? ` (${p.email})` : ''}
+                </option>
+              ))}
+            </select>
+            <p className="text-xs text-slate-400 mt-1">
+              Profesorul va vedea doar cursanții asignați lui.
+            </p>
+          </label>
+        ) : null}
+
         {error ? (
-          <p className="text-sm text-red-600 bg-red-50 border border-red-100 rounded-xl px-4 py-3">{error}</p>
+          <p className="text-sm text-red-600 bg-red-50 border border-red-100 rounded-xl px-4 py-3">
+            {error}
+          </p>
         ) : null}
 
         <div className="flex flex-wrap gap-3 pt-2">

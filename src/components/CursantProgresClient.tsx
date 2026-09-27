@@ -1,6 +1,6 @@
 'use client'
 
-import { useMemo, useState } from 'react'
+import { useCallback, useEffect, useMemo, useState } from 'react'
 import Link from 'next/link'
 import { ArrowLeft, Edit } from 'lucide-react'
 import { cursuri, module, lectii } from '@/lib/mockData'
@@ -10,6 +10,9 @@ import AbonamentNotificariPanel from '@/components/AbonamentNotificariPanel'
 import ModulActivSelect from '@/components/ModulActivSelect'
 import InscrieriCursuriPanel from '@/components/InscrieriCursuriPanel'
 import ConturiAccesPanel from '@/components/ConturiAccesPanel'
+import AsigneazaProfesorPanel from '@/components/AsigneazaProfesorPanel'
+import { getProgresCursantAction, type ProgresCursantData } from '@/app/actions/progres'
+import { isSupabaseConfiguredClient } from '@/lib/supabase/publicFlag'
 
 interface Cursant {
   id: string
@@ -17,15 +20,70 @@ interface Cursant {
   prenume: string
   email_parinte: string
   telefon_parinte: string | null
+  data_nastere?: string | null
+}
+
+function isUuid(id: string): boolean {
+  return /^[0-9a-f-]{36}$/i.test(id)
+}
+
+function varstaAni(dataNastere: string | null | undefined): number | null {
+  if (!dataNastere) return null
+  const d = new Date(dataNastere + 'T12:00:00')
+  if (Number.isNaN(d.getTime())) return null
+  const n = new Date()
+  let age = n.getFullYear() - d.getFullYear()
+  const m = n.getMonth() - d.getMonth()
+  if (m < 0 || (m === 0 && n.getDate() < d.getDate())) age -= 1
+  return age
 }
 
 export default function CursantProgresClient({ cursant }: { cursant: Cursant }) {
+  const useSupabase = isSupabaseConfiguredClient() && isUuid(cursant.id)
   const [lastBifare, setLastBifare] = useState<BifareResult | null>(null)
   const [tick, setTick] = useState(0)
+  const [remote, setRemote] = useState<ProgresCursantData | null>(null)
+  const [remoteLoading, setRemoteLoading] = useState(useSupabase)
+  const ani = varstaAni(cursant.data_nastere)
 
+  const refreshRemote = useCallback(async () => {
+    if (!useSupabase) return
+    const r = await getProgresCursantAction(cursant.id)
+    if (r.ok) setRemote(r.data)
+    setRemoteLoading(false)
+  }, [useSupabase, cursant.id])
+
+  useEffect(() => {
+    void refreshRemote()
+  }, [refreshRemote])
+
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const store = useMemo(() => getStore(), [tick, lastBifare])
 
-  const cursantInscrieri = store.inscrieri.filter(i => i.cursant_id === cursant.id && i.activ)
+  const cursantInscrieri = useSupabase
+    ? (remote?.inscrieri ?? []).filter(i => i.activ)
+    : store.inscrieri.filter(i => i.cursant_id === cursant.id && i.activ)
+
+  const progresRows = useMemo(
+    () =>
+      useSupabase
+        ? remote?.progres ?? []
+        : store.progres.filter(p => p.cursant_id === cursant.id),
+    [useSupabase, remote, store, cursant.id],
+  )
+
+  const progresRemoteMap = useMemo(() => {
+    const map: Record<string, { bifat: boolean; data_bifat: string | null }> = {}
+    for (const p of progresRows) {
+      map[p.lectie_id] = { bifat: p.bifat, data_bifat: p.data_bifat }
+    }
+    return map
+  }, [progresRows])
+
+  const inscrieriActiveSet = useMemo(
+    () => new Set(cursantInscrieri.map(i => i.curs_id)),
+    [cursantInscrieri],
+  )
 
   const cursuriCursant = cursantInscrieri
     .map(i => {
@@ -57,8 +115,17 @@ export default function CursantProgresClient({ cursant }: { cursant: Cursant }) 
     (sum, c) => sum + c.module.reduce((s, m) => s + m.lectii.length, 0),
     0
   )
-  const lectiiParcurse = store.progres.filter(p => p.cursant_id === cursant.id && p.bifat).length
+  const lectiiParcurse = progresRows.filter(p => p.bifat).length
   const procentGlobal = totalLectii > 0 ? Math.round((lectiiParcurse / totalLectii) * 100) : 0
+
+  const refreshAll = () => {
+    setTick(t => t + 1)
+    void refreshRemote()
+  }
+
+  if (useSupabase && remoteLoading) {
+    return <p className="text-slate-400">Se încarcă…</p>
+  }
 
   return (
     <div>
@@ -70,7 +137,13 @@ export default function CursantProgresClient({ cursant }: { cursant: Cursant }) 
           <h1 className="text-3xl font-bold text-slate-900">
             {cursant.nume} {cursant.prenume}
           </h1>
-          <p className="text-slate-500 mt-1">{cursant.email_parinte}</p>
+          {cursant.data_nastere ? (
+            <p className="text-slate-500 mt-1">
+              {new Date(cursant.data_nastere + 'T12:00:00').toLocaleDateString('ro-RO')}
+              {ani != null ? ` · ${ani} ani` : ''}
+            </p>
+          ) : null}
+          <p className="text-slate-400 text-sm mt-0.5">{cursant.email_parinte}</p>
         </div>
         <Link
           href={`/cursanti/${cursant.id}/editeaza`}
@@ -81,6 +154,8 @@ export default function CursantProgresClient({ cursant }: { cursant: Cursant }) 
       </div>
 
       <ConturiAccesPanel cursant={cursant} />
+
+      <AsigneazaProfesorPanel cursantId={cursant.id} />
 
       <div className="grid lg:grid-cols-3 gap-6 mb-6">
         <div className="lg:col-span-2 bg-white rounded-2xl shadow-sm border border-slate-100 p-6">
@@ -105,10 +180,21 @@ export default function CursantProgresClient({ cursant }: { cursant: Cursant }) 
           emailParinte={cursant.email_parinte}
           telefonParinte={cursant.telefon_parinte}
           lastBifare={lastBifare}
+          abonamentRemote={
+            useSupabase
+              ? remote?.abonament
+                ? { sedinte_incluse: remote.abonament.sedinte_incluse, sedinte_ramase: remote.abonament.sedinte_ramase }
+                : null
+              : undefined
+          }
         />
       </div>
 
-      <InscrieriCursuriPanel cursantId={cursant.id} onChange={() => setTick(t => t + 1)} />
+      <InscrieriCursuriPanel
+        cursantId={cursant.id}
+        onChange={refreshAll}
+        inscrieriActive={useSupabase ? inscrieriActiveSet : undefined}
+      />
 
       {cursuriCursant.length === 0 ? (
         <div className="bg-white rounded-2xl shadow-sm border border-slate-100 p-12 text-center">
@@ -121,11 +207,7 @@ export default function CursantProgresClient({ cursant }: { cursant: Cursant }) 
             const parcurseCurs = curs.module.reduce(
               (s, m) =>
                 s +
-                m.lectii.filter(l =>
-                  store.progres.some(
-                    p => p.cursant_id === cursant.id && p.lectie_id === l.id && p.bifat
-                  )
-                ).length,
+                m.lectii.filter(l => progresRemoteMap[l.id]?.bifat).length,
               0
             )
             const procentCurs = totalCurs > 0 ? Math.round((parcurseCurs / totalCurs) * 100) : 0
@@ -150,20 +232,17 @@ export default function CursantProgresClient({ cursant }: { cursant: Cursant }) 
 
                 <div className="p-5 space-y-5">
                   <ModulActivSelect
+                    cursantId={cursant.id}
                     cursNume={curs.nume}
                     inscriereId={curs.inscriere.id}
                     module={curs.module.map(m => ({ id: m.id, nume: m.nume }))}
                     value={modulActivId}
-                    onChange={() => setTick(t => t + 1)}
+                    onChange={refreshAll}
                   />
 
                   {curs.module.map(modul => {
                     const isActiv = modul.id === modulActivId
-                    const parcurseModul = modul.lectii.filter(l =>
-                      store.progres.some(
-                        p => p.cursant_id === cursant.id && p.lectie_id === l.id && p.bifat
-                      )
-                    ).length
+                    const parcurseModul = modul.lectii.filter(l => progresRemoteMap[l.id]?.bifat).length
                     return (
                       <div
                         key={modul.id}
@@ -188,9 +267,10 @@ export default function CursantProgresClient({ cursant }: { cursant: Cursant }) 
                           cursantId={cursant.id}
                           modulActivId={modulActivId}
                           culoareCurs={curs.culoare}
+                          progresRemote={useSupabase ? progresRemoteMap : undefined}
                           onBifare={r => {
                             setLastBifare(r)
-                            setTick(t => t + 1)
+                            refreshAll()
                           }}
                         />
                       </div>

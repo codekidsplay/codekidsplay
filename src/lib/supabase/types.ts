@@ -7,6 +7,7 @@ export type CursantRow = {
   email_parinte: string
   telefon_parinte: string | null
   username: string
+  data_nastere: string | null
   data_inscriere: string
   activ: boolean
   created_at: string
@@ -42,6 +43,7 @@ export type Database = {
           email_parinte: string
           telefon_parinte?: string | null
           username: string
+          data_nastere?: string | null
           data_inscriere?: string
           activ?: boolean
           created_at?: string
@@ -73,6 +75,20 @@ export type Database = {
           created_at?: string
         }
         Update: Partial<Database['public']['Tables']['parinte_cursanti']['Insert']>
+        Relationships: []
+      }
+      profesor_cursanti: {
+        Row: {
+          profesor_id: string
+          cursant_id: string
+          created_at: string
+        }
+        Insert: {
+          profesor_id: string
+          cursant_id: string
+          created_at?: string
+        }
+        Update: Partial<Database['public']['Tables']['profesor_cursanti']['Insert']>
         Relationships: []
       }
       inscrieri: {
@@ -143,6 +159,32 @@ export type Database = {
         Update: Partial<Database['public']['Tables']['sedinte']['Insert']>
         Relationships: []
       }
+      plati: {
+        Row: {
+          id: string
+          cursant_id: string
+          abonament_id: string | null
+          suma: number
+          data_plata: string
+          metoda: 'cash' | 'transfer' | 'card'
+          nota: string | null
+          creat_de: string | null
+          created_at: string
+        }
+        Insert: {
+          id?: string
+          cursant_id: string
+          abonament_id?: string | null
+          suma: number
+          data_plata?: string
+          metoda: 'cash' | 'transfer' | 'card'
+          nota?: string | null
+          creat_de?: string | null
+          created_at?: string
+        }
+        Update: Partial<Database['public']['Tables']['plati']['Insert']>
+        Relationships: []
+      }
       progres: {
         Row: {
           id: string
@@ -199,6 +241,8 @@ export type Database = {
       sedinte_ramase: { Args: { p_abonament_id: string }; Returns: number }
       jwt_rol: { Args: Record<string, never>; Returns: string }
       is_staff: { Args: Record<string, never>; Returns: boolean }
+      is_admin: { Args: Record<string, never>; Returns: boolean }
+      is_profesor_al: { Args: { p_cursant_id: string }; Returns: boolean }
       is_parinte_al: { Args: { p_cursant_id: string }; Returns: boolean }
       elev_cursant_id: { Args: Record<string, never>; Returns: string }
     }

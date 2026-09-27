@@ -352,21 +352,22 @@ export const lectii = [
   ]),
 ]
 
-export const cursanti = [
-  { id: 'u1', nume: 'Popescu', prenume: 'Andrei', email_parinte: 'popescu.parinte@gmail.com', telefon_parinte: '0722111222', data_inscriere: '2026-01-10', activ: true },
-  { id: 'u2', nume: 'Ionescu', prenume: 'Maria', email_parinte: 'ionescu.mama@yahoo.com', telefon_parinte: '0733222333', data_inscriere: '2026-02-15', activ: true },
-  { id: 'u3', nume: 'Constantin', prenume: 'Radu', email_parinte: 'constantin@gmail.com', telefon_parinte: null, data_inscriere: '2026-03-01', activ: true },
-  { id: 'u4', nume: 'Gheorghe', prenume: 'Elena', email_parinte: 'gheorghe.parinte@gmail.com', telefon_parinte: '0744333444', data_inscriere: '2025-11-20', activ: false },
-]
+export const cursanti: Array<{
+  id: string
+  nume: string
+  prenume: string
+  email_parinte: string
+  telefon_parinte: string | null
+  data_inscriere: string
+  activ: boolean
+}> = []
 
-export const inscrieri = [
-  { id: 'i1', cursant_id: 'u1', curs_id: 'c1', data_inscriere: '2026-01-10' },
-  { id: 'i2', cursant_id: 'u1', curs_id: 'c4', data_inscriere: '2026-01-10' },
-  { id: 'i3', cursant_id: 'u2', curs_id: 'c5', data_inscriere: '2026-02-15' },
-  { id: 'i4', cursant_id: 'u2', curs_id: 'c4', data_inscriere: '2026-02-15' },
-  { id: 'i5', cursant_id: 'u3', curs_id: 'c2', data_inscriere: '2026-03-01' },
-  { id: 'i6', cursant_id: 'u4', curs_id: 'c6', data_inscriere: '2025-11-20' },
-]
+export const inscrieri: Array<{
+  id: string
+  cursant_id: string
+  curs_id: string
+  data_inscriere: string
+}> = []
 
 // Tipuri abonament
 export type TipAbonament = 'lunar' | 'pachet'
@@ -380,12 +381,7 @@ export const abonamente: Array<{
   data_start: string
   data_sfarsit: string | null  // null = activ continuu (lunar)
   activ: boolean
-}> = [
-  { id: 'ab1', cursant_id: 'u1', tip: 'lunar', sedinte_incluse: 4, pret: 350, data_start: '2026-08-01', data_sfarsit: null, activ: true },
-  { id: 'ab2', cursant_id: 'u2', tip: 'pachet', sedinte_incluse: 9, pret: 700, data_start: '2026-07-01', data_sfarsit: '2026-09-30', activ: true }, // 8+1 bonus
-  { id: 'ab3', cursant_id: 'u3', tip: 'lunar', sedinte_incluse: 4, pret: 350, data_start: '2026-08-01', data_sfarsit: null, activ: true },
-  { id: 'ab4', cursant_id: 'u4', tip: 'pachet', sedinte_incluse: 9, pret: 700, data_start: '2026-05-01', data_sfarsit: '2026-07-31', activ: false },
-]
+}> = []
 
 export const plati: Array<{
   id: string
@@ -395,13 +391,7 @@ export const plati: Array<{
   data_plata: string
   metoda: 'cash' | 'transfer' | 'card'
   nota: string | null
-}> = [
-  { id: 'pl1', cursant_id: 'u1', abonament_id: 'ab1', suma: 350, data_plata: '2026-08-01', metoda: 'cash', nota: null },
-  { id: 'pl2', cursant_id: 'u2', abonament_id: 'ab2', suma: 700, data_plata: '2026-07-01', metoda: 'transfer', nota: 'Pachet 8+1 ședințe' },
-  { id: 'pl3', cursant_id: 'u3', abonament_id: 'ab3', suma: 350, data_plata: '2026-08-03', metoda: 'cash', nota: null },
-  { id: 'pl4', cursant_id: 'u4', abonament_id: 'ab4', suma: 700, data_plata: '2026-05-02', metoda: 'card', nota: null },
-  { id: 'pl5', cursant_id: 'u1', abonament_id: 'ab1', suma: 350, data_plata: '2026-07-01', metoda: 'cash', nota: 'Iulie' },
-]
+}> = []
 
 // Ședințe (prezență)
 export const sedinte: Array<{
@@ -411,29 +401,12 @@ export const sedinte: Array<{
   data: string
   prezent: boolean
   nota: string | null
-}> = [
-  { id: 's1', cursant_id: 'u1', abonament_id: 'ab1', data: '2026-08-05', prezent: true, nota: null },
-  { id: 's2', cursant_id: 'u1', abonament_id: 'ab1', data: '2026-08-12', prezent: true, nota: null },
-  { id: 's3', cursant_id: 'u1', abonament_id: 'ab1', data: '2026-08-19', prezent: false, nota: 'A anunțat absența' },
-  { id: 's4', cursant_id: 'u2', abonament_id: 'ab2', data: '2026-07-08', prezent: true, nota: null },
-  { id: 's5', cursant_id: 'u2', abonament_id: 'ab2', data: '2026-07-15', prezent: true, nota: null },
-  { id: 's6', cursant_id: 'u2', abonament_id: 'ab2', data: '2026-07-22', prezent: true, nota: null },
-  { id: 's7', cursant_id: 'u2', abonament_id: 'ab2', data: '2026-07-29', prezent: false, nota: null },
-  { id: 's8', cursant_id: 'u2', abonament_id: 'ab2', data: '2026-08-05', prezent: true, nota: null },
-  { id: 's9', cursant_id: 'u2', abonament_id: 'ab2', data: '2026-08-12', prezent: true, nota: null },
-  { id: 's10', cursant_id: 'u3', abonament_id: 'ab3', data: '2026-08-06', prezent: true, nota: null },
-  { id: 's11', cursant_id: 'u3', abonament_id: 'ab3', data: '2026-08-13', prezent: true, nota: null },
-]
+}> = []
 
-export const progres: Array<{ id: string; cursant_id: string; lectie_id: string; bifat: boolean; data_bifat: string | null }> = [
-  { id: 'p1', cursant_id: 'u1', lectie_id: 'm1-l1', bifat: true, data_bifat: '2026-01-15T10:00:00Z' },
-  { id: 'p2', cursant_id: 'u1', lectie_id: 'm1-l2', bifat: true, data_bifat: '2026-01-22T10:00:00Z' },
-  { id: 'p3', cursant_id: 'u1', lectie_id: 'm1-l3', bifat: true, data_bifat: '2026-01-29T10:00:00Z' },
-  { id: 'p4', cursant_id: 'u1', lectie_id: 'm6-l1', bifat: true, data_bifat: '2026-01-15T10:00:00Z' },
-  { id: 'p5', cursant_id: 'u1', lectie_id: 'm6-l2', bifat: true, data_bifat: '2026-01-22T10:00:00Z' },
-  { id: 'p6', cursant_id: 'u2', lectie_id: 'm9-l1', bifat: true, data_bifat: '2026-02-20T10:00:00Z' },
-  { id: 'p7', cursant_id: 'u2', lectie_id: 'm9-l2', bifat: true, data_bifat: '2026-02-27T10:00:00Z' },
-  { id: 'p8', cursant_id: 'u2', lectie_id: 'm9-l3', bifat: true, data_bifat: '2026-03-06T10:00:00Z' },
-  { id: 'p9', cursant_id: 'u2', lectie_id: 'm9-l4', bifat: true, data_bifat: '2026-03-13T10:00:00Z' },
-  { id: 'p10', cursant_id: 'u2', lectie_id: 'm6-l1', bifat: true, data_bifat: '2026-02-20T10:00:00Z' },
-]
+export const progres: Array<{
+  id: string
+  cursant_id: string
+  lectie_id: string
+  bifat: boolean
+  data_bifat: string | null
+}> = []

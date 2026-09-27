@@ -2,15 +2,19 @@
 
 import { useState } from 'react'
 import { Plus, X } from 'lucide-react'
+import { inregistreazaPlataAction } from '@/app/actions/abonamente'
 
 interface Props {
   cursantId: string
   abonamentId?: string
   numarCursant: string
+  onSaved?: () => void
 }
 
-export default function AdaugaPlataButton({ numarCursant }: Props) {
+export default function AdaugaPlataButton({ cursantId, numarCursant, onSaved }: Props) {
   const [open, setOpen] = useState(false)
+  const [saving, setSaving] = useState(false)
+  const [error, setError] = useState<string | null>(null)
   const [form, setForm] = useState({
     suma: '',
     data_plata: new Date().toISOString().split('T')[0],
@@ -20,14 +24,35 @@ export default function AdaugaPlataButton({ numarCursant }: Props) {
     nota: '',
   })
 
-  const handleSave = () => {
-    if (!form.suma || isNaN(Number(form.suma))) {
-      alert('Introduceți o sumă validă')
+  const handleSave = async () => {
+    if (!form.suma || isNaN(Number(form.suma)) || Number(form.suma) <= 0) {
+      setError('Introduceți o sumă validă')
       return
     }
-    alert(`Plată înregistrată!\n\nCursant: ${numarCursant}\nSumă: ${form.suma} lei\nMetodă: ${form.metoda}\nTip: ${form.tip_abonament}\nȘedințe incluse: ${form.sedinte_incluse}\n\n(Se va salva în baza de date după conectarea Supabase)`)
+    const sedinteIncluse = Number(form.sedinte_incluse)
+    if (!sedinteIncluse || sedinteIncluse <= 0) {
+      setError('Introduceți un număr de ședințe valid')
+      return
+    }
+    setSaving(true)
+    setError(null)
+    const result = await inregistreazaPlataAction({
+      cursant_id: cursantId,
+      suma: Number(form.suma),
+      data_plata: form.data_plata,
+      metoda: form.metoda,
+      nota: form.nota,
+      tip_abonament: form.tip_abonament,
+      sedinte_incluse: sedinteIncluse,
+    })
+    setSaving(false)
+    if (!result.ok) {
+      setError(result.error)
+      return
+    }
     setOpen(false)
     setForm({ ...form, suma: '', nota: '' })
+    onSaved?.()
   }
 
   return (
@@ -48,6 +73,14 @@ export default function AdaugaPlataButton({ numarCursant }: Props) {
                 <X size={20} />
               </button>
             </div>
+
+            <p className="text-sm text-slate-400 mb-4">Pentru {numarCursant}</p>
+
+            {error && (
+              <p className="text-sm text-amber-700 bg-amber-50 border border-amber-100 rounded-lg px-3 py-2 mb-4">
+                {error}
+              </p>
+            )}
 
             <div className="space-y-4">
               <div>
@@ -97,7 +130,7 @@ export default function AdaugaPlataButton({ numarCursant }: Props) {
                     ))}
                     <input
                       type="number"
-                      value={!['8','10','12'].includes(form.sedinte_incluse) ? form.sedinte_incluse : ''}
+                      value={!['8', '10', '12'].includes(form.sedinte_incluse) ? form.sedinte_incluse : ''}
                       onChange={e => setForm({ ...form, sedinte_incluse: e.target.value })}
                       placeholder="alt nr"
                       className="flex-1 border border-slate-200 rounded-xl px-3 py-2 text-sm text-center focus:outline-none focus:ring-2 focus:ring-violet-500"
@@ -145,10 +178,11 @@ export default function AdaugaPlataButton({ numarCursant }: Props) {
 
             <div className="flex gap-3 mt-6">
               <button
-                onClick={handleSave}
-                className="flex-1 bg-emerald-600 text-white py-3 rounded-xl font-medium hover:bg-emerald-700 transition-colors"
+                onClick={() => void handleSave()}
+                disabled={saving}
+                className="flex-1 bg-emerald-600 text-white py-3 rounded-xl font-medium hover:bg-emerald-700 transition-colors disabled:opacity-60"
               >
-                Salvează plata
+                {saving ? 'Salvez…' : 'Salvează plata'}
               </button>
               <button
                 onClick={() => setOpen(false)}

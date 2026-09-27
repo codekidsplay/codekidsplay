@@ -3,8 +3,8 @@
  * Fluxul real: `app/actions/auth.ts` + `app/actions/cursanti.ts`.
  */
 
-import { cursanti } from './mockData'
 import { getCursant } from './mockStore'
+import { asigneazaCursantProfesor } from './profesorAsignari'
 import {
   destinateDupaLogin as destinateDupaLoginHelper,
   genereazaParola,
@@ -23,12 +23,13 @@ export {
 export type Rol = 'admin' | 'parinte' | 'elev' | 'profesor'
 
 export type Session =
-  | { rol: 'admin' | 'profesor'; email: string; nume: string }
+  | { rol: 'admin'; email: string; nume: string; userId?: string }
+  | { rol: 'profesor'; email: string; nume: string; userId?: string; cursant_ids: string[] }
   | { rol: 'parinte'; email: string; nume: string; cursant_ids: string[] }
   | { rol: 'elev'; username: string; cursant_id: string; prenume: string; nume: string }
 
 export type ContEmail = {
-  tip: 'admin' | 'parinte'
+  tip: 'admin' | 'parinte' | 'profesor'
   email: string
   parola: string
   nume: string
@@ -47,48 +48,28 @@ export type CredsStore = {
   elev: ContElev[]
 }
 
-const CREDS_KEY = 'ckp-auth-creds-v1'
+const CREDS_KEY = 'ckp-auth-creds-v2'
 const SESSION_KEY = 'ckp-session-v1'
 
 function seedCreds(): CredsStore {
-  const elevAccounts: ContElev[] = cursanti.map(c => ({
-    tip: 'elev' as const,
-    cursant_id: c.id,
-    username: genereazaUsername(c.prenume, c.nume),
-    pin: c.id === 'u1' ? '1234' : c.id === 'u2' ? '2345' : c.id === 'u3' ? '3456' : '4567',
-  }))
-
-  // Părinți: un cont per email (mai mulți copii → același email)
-  const byEmail = new Map<string, string[]>()
-  for (const c of cursanti) {
-    const list = byEmail.get(c.email_parinte) ?? []
-    list.push(c.id)
-    byEmail.set(c.email_parinte, list)
-  }
-
-  const parentAccounts: ContEmail[] = [...byEmail.entries()].map(([email, ids]) => {
-    const first = cursanti.find(c => c.id === ids[0])!
-    return {
-      tip: 'parinte' as const,
-      email,
-      parola: 'parinte123',
-      nume: `Părinte ${first.nume}`,
-      cursant_ids: ids,
-    }
-  })
-
   return {
     email: [
       {
         tip: 'admin',
         email: 'admin@codekidsplay.ro',
         parola: 'admin123',
-        nume: 'Admin CodeKids',
+        nume: 'Admin Code Kids Play',
         cursant_ids: [],
       },
-      ...parentAccounts,
+      {
+        tip: 'profesor',
+        email: 'profesor@codekidsplay.ro',
+        parola: 'profesor123',
+        nume: 'Profesor',
+        cursant_ids: [],
+      },
     ],
-    elev: elevAccounts,
+    elev: [],
   }
 }
 
@@ -167,6 +148,28 @@ function setSession(session: Session | null) {
   else localStorage.setItem(SESSION_KEY, JSON.stringify(session))
 }
 
+/** Adaugă un cursant pe lista profesorului (mock) și actualizează sesiunea. */
+export function adaugaCursantLaProfesorSesiune(cursantId: string, profesorEmail?: string) {
+  const s = getSession()
+  const email = profesorEmail ?? (s?.rol === 'profesor' ? s.email : null)
+  if (!email) return
+
+  asigneazaCursantProfesor(email, cursantId)
+
+  const store = getCreds()
+  const cont = store.email.find(
+    e => e.tip === 'profesor' && e.email.toLowerCase() === email.toLowerCase(),
+  )
+  if (cont && !cont.cursant_ids.includes(cursantId)) {
+    cont.cursant_ids.push(cursantId)
+    saveCreds(store)
+  }
+
+  if (s?.rol === 'profesor' && !s.cursant_ids.includes(cursantId)) {
+    setSession({ ...s, cursant_ids: [...s.cursant_ids, cursantId] })
+  }
+}
+
 export function logout() {
   setSession(null)
 }
@@ -182,15 +185,24 @@ export function loginEmail(email: string, parola: string): LoginResult {
   )
   if (!cont) return { ok: false, error: 'Email sau parolă greșită.' }
 
-  const session: Session =
-    cont.tip === 'admin'
-      ? { rol: 'admin', email: cont.email, nume: cont.nume }
-      : {
-          rol: 'parinte',
-          email: cont.email,
-          nume: cont.nume,
-          cursant_ids: cont.cursant_ids,
-        }
+  let session: Session
+  if (cont.tip === 'admin') {
+    session = { rol: 'admin', email: cont.email, nume: cont.nume }
+  } else if (cont.tip === 'profesor') {
+    session = {
+      rol: 'profesor',
+      email: cont.email,
+      nume: cont.nume,
+      cursant_ids: cont.cursant_ids,
+    }
+  } else {
+    session = {
+      rol: 'parinte',
+      email: cont.email,
+      nume: cont.nume,
+      cursant_ids: cont.cursant_ids,
+    }
+  }
   setSession(session)
   return { ok: true, session }
 }

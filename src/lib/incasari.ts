@@ -1,0 +1,141 @@
+/** Helpers încasări lunare — Abonamente & Plăți */
+
+export type PlataLike = {
+  id: string
+  cursant_id: string
+  suma: number
+  data_plata: string
+  metoda: 'cash' | 'transfer' | 'card'
+  nota: string | null
+}
+
+export const LUNI_RO = [
+  'Ianuarie',
+  'Februarie',
+  'Martie',
+  'Aprilie',
+  'Mai',
+  'Iunie',
+  'Iulie',
+  'August',
+  'Septembrie',
+  'Octombrie',
+  'Noiembrie',
+  'Decembrie',
+] as const
+
+export function defaultPerioadaDinPlati(plati: PlataLike[]): { luna: number; an: number } {
+  if (plati.length > 0) {
+    const latest = [...plati].sort((a, b) => b.data_plata.localeCompare(a.data_plata))[0]
+    const d = new Date(latest.data_plata + 'T12:00:00')
+    return { luna: d.getMonth(), an: d.getFullYear() }
+  }
+  const n = new Date()
+  return { luna: n.getMonth(), an: n.getFullYear() }
+}
+
+export function filtreazaPlatiPerioada(
+  plati: PlataLike[],
+  luna: number,
+  an: number,
+): PlataLike[] {
+  return plati.filter(p => {
+    const d = new Date(p.data_plata + 'T12:00:00')
+    return d.getMonth() === luna && d.getFullYear() === an
+  })
+}
+
+export function totalSiPeMetode(plati: PlataLike[]) {
+  const peMetode = { cash: 0, transfer: 0, card: 0 }
+  let total = 0
+  for (const p of plati) {
+    total += p.suma
+    peMetode[p.metoda] += p.suma
+  }
+  return { total, peMetode }
+}
+
+export function aniDisponibili(plati: PlataLike[]): number[] {
+  const set = new Set<number>()
+  const current = new Date().getFullYear()
+  set.add(current)
+  for (const p of plati) {
+    set.add(new Date(p.data_plata + 'T12:00:00').getFullYear())
+  }
+  return [...set].sort((a, b) => b - a)
+}
+
+type CursantLike = { id: string; nume: string; prenume: string }
+
+/** Deschide fereastră print → Salvează ca PDF. */
+export function descarcaPdfIncasari(opts: {
+  luna: number
+  an: number
+  plati: PlataLike[]
+  cursanti: CursantLike[]
+}) {
+  const { total, peMetode } = totalSiPeMetode(opts.plati)
+  const perioada = `${LUNI_RO[opts.luna]} ${opts.an}`
+  const rows = [...opts.plati]
+    .sort((a, b) => a.data_plata.localeCompare(b.data_plata))
+    .map(p => {
+      const c = opts.cursanti.find(x => x.id === p.cursant_id)
+      const nume = c ? `${c.prenume} ${c.nume}` : '—'
+      const data = new Date(p.data_plata + 'T12:00:00').toLocaleDateString('ro-RO')
+      return `<tr>
+        <td>${data}</td>
+        <td>${nume}</td>
+        <td>${p.metoda}</td>
+        <td style="text-align:right">${p.suma} lei</td>
+        <td>${p.nota ?? ''}</td>
+      </tr>`
+    })
+    .join('')
+
+  const html = `<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8" />
+  <title>Încasări ${perioada} — Code Kids Play</title>
+  <style>
+    body { font-family: system-ui, sans-serif; color: #0f172a; padding: 32px; }
+    h1 { font-size: 20px; margin: 0 0 4px; }
+    .sub { color: #64748b; margin-bottom: 24px; font-size: 14px; }
+    .sum { display: flex; gap: 24px; margin-bottom: 24px; font-size: 14px; }
+    .sum strong { font-size: 18px; }
+    table { width: 100%; border-collapse: collapse; font-size: 13px; }
+    th, td { border-bottom: 1px solid #e2e8f0; padding: 8px 6px; text-align: left; }
+    th { color: #64748b; font-weight: 600; }
+    @media print { body { padding: 0; } }
+  </style>
+</head>
+<body>
+  <h1>Code Kids Play — Încasări</h1>
+  <p class="sub">${perioada}</p>
+  <div class="sum">
+    <div>Total<br/><strong>${total} lei</strong></div>
+    <div>Cash<br/><strong>${peMetode.cash} lei</strong></div>
+    <div>Transfer<br/><strong>${peMetode.transfer} lei</strong></div>
+    <div>Card<br/><strong>${peMetode.card} lei</strong></div>
+    <div>Plăți<br/><strong>${opts.plati.length}</strong></div>
+  </div>
+  <table>
+    <thead>
+      <tr><th>Data</th><th>Cursant</th><th>Metodă</th><th style="text-align:right">Sumă</th><th>Notă</th></tr>
+    </thead>
+    <tbody>
+      ${rows || '<tr><td colspan="5">Nicio plată în această perioadă.</td></tr>'}
+    </tbody>
+  </table>
+  <script>window.onload = () => { window.print(); }</script>
+</body>
+</html>`
+
+  const w = window.open('', '_blank', 'noopener,noreferrer,width=900,height=700')
+  if (!w) {
+    alert('Permite ferestre pop-up pentru a genera PDF-ul.')
+    return
+  }
+  w.document.write(html)
+  w.document.close()
+}

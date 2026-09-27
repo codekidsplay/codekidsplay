@@ -15,6 +15,7 @@ export type Cursant = {
   prenume: string
   email_parinte: string
   telefon_parinte: string | null
+  data_nastere?: string | null
   data_inscriere: string
   activ: boolean
 }
@@ -76,7 +77,7 @@ type Store = {
   notificari: NotificareLog[]
 }
 
-const STORAGE_KEY = 'ckp-mock-store-v2'
+const STORAGE_KEY = 'ckp-mock-store-v3'
 
 function todayISO(): string {
   return new Date().toISOString().slice(0, 10)
@@ -159,6 +160,7 @@ export function adaugaCursant(input: {
   prenume: string
   email_parinte: string
   telefon_parinte?: string | null
+  data_nastere?: string | null
   curs_id?: string | null
   activ?: boolean
 }): Cursant {
@@ -170,6 +172,7 @@ export function adaugaCursant(input: {
     prenume: input.prenume.trim(),
     email_parinte: input.email_parinte.trim().toLowerCase(),
     telefon_parinte: input.telefon_parinte?.trim() || null,
+    data_nastere: input.data_nastere?.trim() || null,
     data_inscriere: todayISO(),
     activ: input.activ ?? true,
   }

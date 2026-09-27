@@ -9,7 +9,7 @@ export default function AdminLayout({
   children: React.ReactNode
 }) {
   return (
-    <RequireAuth roles={['admin']}>
+    <RequireAuth roles={['admin', 'profesor']}>
       <div className="flex min-h-screen">
         <Sidebar />
         <main className="flex-1 ml-64 p-8">{children}</main>

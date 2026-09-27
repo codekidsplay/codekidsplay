@@ -10,6 +10,7 @@ import {
   type BifareResult,
 } from '@/lib/mockStore'
 import { mesajSedinteEpuizate } from '@/lib/notificari'
+import { isSupabaseConfiguredClient } from '@/lib/supabase/publicFlag'
 
 interface Props {
   cursantId: string
@@ -17,6 +18,12 @@ interface Props {
   emailParinte: string
   telefonParinte: string | null
   lastBifare?: BifareResult | null
+  /** Sold ședințe citit din Supabase, dacă e disponibil */
+  abonamentRemote?: { sedinte_incluse: number; sedinte_ramase: number } | null
+}
+
+function isUuid(id: string): boolean {
+  return /^[0-9a-f-]{36}$/i.test(id)
 }
 
 export default function AbonamentNotificariPanel({
@@ -25,13 +32,20 @@ export default function AbonamentNotificariPanel({
   emailParinte,
   telefonParinte,
   lastBifare,
+  abonamentRemote,
 }: Props) {
+  const useSupabase = isSupabaseConfiguredClient() && isUuid(cursantId)
   const [ramase, setRamase] = useState<number | null>(null)
   const [incluse, setIncluse] = useState<number | null>(null)
   const [copied, setCopied] = useState(false)
   const [emailNote, setEmailNote] = useState<string | null>(null)
 
   const refresh = () => {
+    if (useSupabase) {
+      setIncluse(abonamentRemote?.sedinte_incluse ?? null)
+      setRamase(abonamentRemote?.sedinte_ramase ?? null)
+      return
+    }
     const store = getStore()
     const ab = abonamentActiv(cursantId, store)
     if (!ab) {
@@ -45,7 +59,8 @@ export default function AbonamentNotificariPanel({
 
   useEffect(() => {
     refresh()
-  }, [cursantId, lastBifare])
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [cursantId, lastBifare, abonamentRemote])
 
   useEffect(() => {
     if (lastBifare?.emailTrimis) {
@@ -154,17 +169,19 @@ export default function AbonamentNotificariPanel({
         </div>
       )}
 
-      <button
-        type="button"
-        onClick={() => {
-          resetStore()
-          refresh()
-          window.location.reload()
-        }}
-        className="inline-flex items-center gap-2 text-xs text-slate-400 hover:text-slate-600"
-      >
-        <RotateCcw size={12} /> Reset date demo
-      </button>
+      {!useSupabase && (
+        <button
+          type="button"
+          onClick={() => {
+            resetStore()
+            refresh()
+            window.location.reload()
+          }}
+          className="inline-flex items-center gap-2 text-xs text-slate-400 hover:text-slate-600"
+        >
+          <RotateCcw size={12} /> Reset date demo
+        </button>
+      )}
     </div>
   )
 }

@@ -7,6 +7,12 @@ import {
   mesajWhatsAppLogin,
   asiguraConturiCursant,
 } from '@/lib/auth'
+import {
+  getConturiCursantAction,
+  resetPinElevAction,
+  resetParolaParinteAction,
+} from '@/app/actions/conturi'
+import { isSupabaseConfiguredClient } from '@/lib/supabase/publicFlag'
 import { Copy, KeyRound, RefreshCw, MessageCircle } from 'lucide-react'
 
 interface Props {
@@ -19,14 +25,33 @@ interface Props {
   }
 }
 
+function isUuid(id: string): boolean {
+  return /^[0-9a-f-]{36}$/i.test(id)
+}
+
 export default function ConturiAccesPanel({ cursant }: Props) {
+  const useSupabase = isSupabaseConfiguredClient() && isUuid(cursant.id)
   const [ready, setReady] = useState(false)
   const [username, setUsername] = useState('')
   const [pin, setPin] = useState('')
   const [parolaParinte, setParolaParinte] = useState('')
+  const [pinCunoscut, setPinCunoscut] = useState(true)
   const [copied, setCopied] = useState(false)
+  const [error, setError] = useState<string | null>(null)
 
-  const refresh = () => {
+  const refresh = async () => {
+    if (useSupabase) {
+      const r = await getConturiCursantAction(cursant.id)
+      if (r.ok) {
+        setUsername(r.username)
+        setPin('••••')
+        setPinCunoscut(false)
+        setParolaParinte('••••••••')
+      } else {
+        setError(r.error)
+      }
+      return
+    }
     const data = asiguraConturiCursant({
       cursant_id: cursant.id,
       prenume: cursant.prenume,
@@ -35,12 +60,12 @@ export default function ConturiAccesPanel({ cursant }: Props) {
     })
     setUsername(data.username)
     setPin(data.pin)
+    setPinCunoscut(true)
     setParolaParinte(data.parola_parinte)
   }
 
   useEffect(() => {
-    refresh()
-    setReady(true)
+    void refresh().then(() => setReady(true))
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [cursant.id])
 
@@ -49,9 +74,9 @@ export default function ConturiAccesPanel({ cursant }: Props) {
   const mesaj = mesajWhatsAppLogin({
     prenume: cursant.prenume,
     username,
-    pin,
+    pin: pinCunoscut ? pin : '(vezi mai jos, după reset)',
     email_parinte: cursant.email_parinte,
-    parola_parinte: parolaParinte,
+    parola_parinte: pinCunoscut ? parolaParinte : '(vezi mai jos, după reset)',
   })
 
   const copy = async () => {
@@ -64,12 +89,52 @@ export default function ConturiAccesPanel({ cursant }: Props) {
     ? `https://wa.me/4${cursant.telefon_parinte.replace(/\D/g, '').replace(/^0/, '')}?text=${encodeURIComponent(mesaj)}`
     : null
 
+  const onResetPin = async () => {
+    setError(null)
+    if (useSupabase) {
+      const r = await resetPinElevAction(cursant.id)
+      if (!r.ok) {
+        setError(r.error)
+        return
+      }
+      setPin(r.pin)
+      setPinCunoscut(true)
+      return
+    }
+    const nou = resetPinElev(cursant.id)
+    if (nou) setPin(nou)
+  }
+
+  const onResetParola = async () => {
+    setError(null)
+    if (useSupabase) {
+      const r = await resetParolaParinteAction(cursant.id)
+      if (!r.ok) {
+        setError(r.error)
+        return
+      }
+      setParolaParinte(r.parola)
+      return
+    }
+    const nou = resetParolaParinte(cursant.email_parinte)
+    if (nou) setParolaParinte(nou)
+  }
+
   return (
     <div className="bg-white rounded-2xl border border-slate-100 shadow-sm p-6 mb-6">
       <div className="flex items-center gap-2 mb-4">
         <KeyRound size={18} className="text-slate-500" />
         <h2 className="font-semibold text-slate-800">Conturi acces</h2>
       </div>
+
+      {error && <p className="text-sm text-amber-700 bg-amber-50 border border-amber-100 rounded-lg px-3 py-2 mb-4">{error}</p>}
+
+      {useSupabase && !pinCunoscut && (
+        <p className="text-xs text-slate-400 mb-4">
+          Parolele nu se pot afișa după creare. Folosește „Reset PIN” / „Reset parolă” ca să
+          generezi credențiale noi vizibile o singură dată.
+        </p>
+      )}
 
       <div className="grid sm:grid-cols-2 gap-4 text-sm mb-4">
         <div className="rounded-xl bg-slate-50 p-4 space-y-1">
@@ -97,14 +162,16 @@ export default function ConturiAccesPanel({ cursant }: Props) {
       </div>
 
       <div className="flex flex-wrap gap-2">
-        <button
-          type="button"
-          onClick={copy}
-          className="inline-flex items-center gap-2 text-sm font-medium bg-slate-800 text-white px-4 py-2 rounded-xl hover:bg-slate-700"
-        >
-          <Copy size={14} /> {copied ? 'Copiat!' : 'Copiază date login'}
-        </button>
-        {waUrl && (
+        {pinCunoscut && (
+          <button
+            type="button"
+            onClick={copy}
+            className="inline-flex items-center gap-2 text-sm font-medium bg-slate-800 text-white px-4 py-2 rounded-xl hover:bg-slate-700"
+          >
+            <Copy size={14} /> {copied ? 'Copiat!' : 'Copiază date login'}
+          </button>
+        )}
+        {waUrl && pinCunoscut && (
           <a
             href={waUrl}
             target="_blank"
@@ -116,20 +183,14 @@ export default function ConturiAccesPanel({ cursant }: Props) {
         )}
         <button
           type="button"
-          onClick={() => {
-            const nou = resetPinElev(cursant.id)
-            if (nou) setPin(nou)
-          }}
+          onClick={() => void onResetPin()}
           className="inline-flex items-center gap-2 text-sm font-medium border border-slate-200 text-slate-600 px-4 py-2 rounded-xl hover:bg-slate-50"
         >
           <RefreshCw size={14} /> Reset PIN elev
         </button>
         <button
           type="button"
-          onClick={() => {
-            const nou = resetParolaParinte(cursant.email_parinte)
-            if (nou) setParolaParinte(nou)
-          }}
+          onClick={() => void onResetParola()}
           className="inline-flex items-center gap-2 text-sm font-medium border border-slate-200 text-slate-600 px-4 py-2 rounded-xl hover:bg-slate-50"
         >
           <RefreshCw size={14} /> Reset parolă părinte

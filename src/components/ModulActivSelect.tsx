@@ -1,8 +1,12 @@
 'use client'
 
+import { useState } from 'react'
 import { setModulActiv } from '@/lib/mockStore'
+import { setModulActivAction } from '@/app/actions/progres'
+import { isSupabaseConfiguredClient } from '@/lib/supabase/publicFlag'
 
 interface Props {
+  cursantId: string
   inscriereId: string
   module: Array<{ id: string; nume: string }>
   value: string | null
@@ -10,14 +14,35 @@ interface Props {
   cursNume: string
 }
 
+function isUuid(id: string): boolean {
+  return /^[0-9a-f-]{36}$/i.test(id)
+}
+
 export default function ModulActivSelect({
+  cursantId,
   inscriereId,
   module,
   value,
   onChange,
   cursNume,
 }: Props) {
+  const useSupabase = isSupabaseConfiguredClient() && isUuid(cursantId)
+  const [error, setError] = useState<string | null>(null)
   const selected = module.find(m => m.id === value)
+
+  const onSelect = async (modulId: string) => {
+    setError(null)
+    if (useSupabase) {
+      const result = await setModulActivAction(cursantId, inscriereId, modulId)
+      if (!result.ok) {
+        setError(result.error)
+        return
+      }
+    } else {
+      setModulActiv(inscriereId, modulId)
+    }
+    onChange()
+  }
 
   return (
     <div className="rounded-xl border-2 border-dashed border-sky-200 bg-sky-50/80 p-4">
@@ -26,15 +51,13 @@ export default function ModulActivSelect({
         Elevul vede modulul ales (lecții noi) și poate recapitula lecțiile bifate din modulele
         trecute. Dacă debifezi o lecție, dispare de la copil. Schimbi modulul când trece la 2, 3…
       </p>
+      {error && <p className="text-xs text-amber-700 mb-2">{error}</p>}
       <label className="block">
         <span className="sr-only">Modul asociat</span>
         <select
           className="w-full border border-sky-200 rounded-xl px-3 py-2.5 text-sm font-medium bg-white text-slate-800 focus:outline-none focus:ring-2 focus:ring-sky-300"
           value={value ?? ''}
-          onChange={e => {
-            setModulActiv(inscriereId, e.target.value)
-            onChange()
-          }}
+          onChange={e => void onSelect(e.target.value)}
         >
           <option value="" disabled>
             — Alege modulul —

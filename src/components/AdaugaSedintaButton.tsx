@@ -2,24 +2,42 @@
 
 import { useState } from 'react'
 import { Plus, X } from 'lucide-react'
+import { inregistreazaSedintaAction } from '@/app/actions/abonamente'
 
 interface Props {
   cursantId: string
   abonamentId: string
+  onSaved?: () => void
 }
 
-export default function AdaugaSedintaButton({ cursantId, abonamentId }: Props) {
+export default function AdaugaSedintaButton({ cursantId, abonamentId, onSaved }: Props) {
   const [open, setOpen] = useState(false)
+  const [saving, setSaving] = useState(false)
+  const [error, setError] = useState<string | null>(null)
   const [form, setForm] = useState({
     data: new Date().toISOString().split('T')[0],
     prezent: true,
     nota: '',
   })
 
-  const handleSave = () => {
-    // Cu Supabase: insert în tabelul sedinte
-    alert(`Ședință înregistrată!\nData: ${form.data}\nPrezent: ${form.prezent ? 'Da' : 'Nu'}\n\n(Se va salva în baza de date după conectarea Supabase)`)
+  const handleSave = async () => {
+    setSaving(true)
+    setError(null)
+    const result = await inregistreazaSedintaAction({
+      cursant_id: cursantId,
+      abonament_id: abonamentId,
+      data: form.data,
+      prezent: form.prezent,
+      nota: form.nota,
+    })
+    setSaving(false)
+    if (!result.ok) {
+      setError(result.error)
+      return
+    }
     setOpen(false)
+    setForm({ ...form, nota: '' })
+    onSaved?.()
   }
 
   return (
@@ -40,6 +58,12 @@ export default function AdaugaSedintaButton({ cursantId, abonamentId }: Props) {
                 <X size={20} />
               </button>
             </div>
+
+            {error && (
+              <p className="text-sm text-amber-700 bg-amber-50 border border-amber-100 rounded-lg px-3 py-2 mb-4">
+                {error}
+              </p>
+            )}
 
             <div className="space-y-4">
               <div>
@@ -85,10 +109,11 @@ export default function AdaugaSedintaButton({ cursantId, abonamentId }: Props) {
 
             <div className="flex gap-3 mt-6">
               <button
-                onClick={handleSave}
-                className="flex-1 bg-blue-600 text-white py-3 rounded-xl font-medium hover:bg-blue-700 transition-colors"
+                onClick={() => void handleSave()}
+                disabled={saving}
+                className="flex-1 bg-blue-600 text-white py-3 rounded-xl font-medium hover:bg-blue-700 transition-colors disabled:opacity-60"
               >
-                Salvează
+                {saving ? 'Salvez…' : 'Salvează'}
               </button>
               <button
                 onClick={() => setOpen(false)}

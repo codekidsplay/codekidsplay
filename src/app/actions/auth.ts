@@ -11,7 +11,14 @@ import {
 import type { RolDb } from '@/lib/supabase/types'
 
 export type AuthSessionPayload =
-  | { rol: 'admin' | 'profesor'; email: string; nume: string; userId: string }
+  | { rol: 'admin'; email: string; nume: string; userId: string }
+  | {
+      rol: 'profesor'
+      email: string
+      nume: string
+      userId: string
+      cursant_ids: string[]
+    }
   | {
       rol: 'parinte'
       email: string
@@ -54,14 +61,35 @@ async function buildSession(userId: string): Promise<AuthActionResult> {
   const email = authUser?.user?.email ?? ''
   const rol = profile.rol as RolDb
 
-  if (rol === 'admin' || rol === 'profesor') {
+  if (rol === 'admin') {
     return {
       ok: true,
       session: {
-        rol,
+        rol: 'admin',
         email,
         nume: profile.nume_afisat || email,
         userId,
+      },
+    }
+  }
+
+  if (rol === 'profesor') {
+    const { data: links, error: linkErr } = await client
+      .from('profesor_cursanti')
+      .select('cursant_id')
+      .eq('profesor_id', userId)
+    // Dacă migrația nu e rulatǎ încă, nu blocăm login-ul
+    if (linkErr) {
+      console.warn('[auth] profesor_cursanti:', linkErr.message)
+    }
+    return {
+      ok: true,
+      session: {
+        rol: 'profesor',
+        email,
+        nume: profile.nume_afisat || email,
+        userId,
+        cursant_ids: linkErr ? [] : (links ?? []).map(l => l.cursant_id),
       },
     }
   }
@@ -204,7 +232,7 @@ export async function seedAdminAction(opts: {
     id: data.user.id,
     rol: 'admin',
     cursant_id: null,
-    nume_afisat: opts.nume || 'Admin Code Kids',
+    nume_afisat: opts.nume || 'Admin Code Kids Play',
   })
   if (pErr) return { ok: false, error: pErr.message }
   return { ok: true }

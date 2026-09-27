@@ -1,30 +1,90 @@
 'use client'
 
-import { useMemo, useState } from 'react'
+import { useCallback, useEffect, useMemo, useState } from 'react'
 import Link from 'next/link'
-import { CreditCard, TrendingUp, AlertCircle, CheckCircle, Search, X } from 'lucide-react'
-import { cursanti, abonamente, plati, sedinte } from '@/lib/mockData'
+import { CreditCard, TrendingUp, AlertCircle, Search, X, Download, Banknote } from 'lucide-react'
 import AdaugaPlataButton from '@/components/AdaugaPlataButton'
 import CursantAvatar from '@/components/CursantAvatar'
+import { listAbonamenteAction, type AbonamenteDate } from '@/app/actions/abonamente'
+import { isSupabaseConfiguredClient } from '@/lib/supabase/publicFlag'
+import {
+  LUNI_RO,
+  aniDisponibili,
+  defaultPerioadaDinPlati,
+  descarcaPdfIncasari,
+  filtreazaPlatiPerioada,
+  totalSiPeMetode,
+} from '@/lib/incasari'
 
-function getSoldCursant(cursantId: string) {
-  const aboCursant = abonamente.filter(a => a.cursant_id === cursantId && a.activ)
-  if (!aboCursant.length) return { sedintePlate: 0, sedinteConsume: 0, sold: 0, aboActiv: null as (typeof abonamente)[0] | null }
-  const aboActiv = aboCursant[aboCursant.length - 1]
-  const sedinteConsume = sedinte.filter(
-    s => s.cursant_id === cursantId && s.abonament_id === aboActiv.id && s.prezent
-  ).length
-  const sold = aboActiv.sedinte_incluse - sedinteConsume
-  return { sedintePlate: aboActiv.sedinte_incluse, sedinteConsume, sold, aboActiv }
-}
+const DATE_GOALE: AbonamenteDate = { cursanti: [], abonamente: [], sedinte: [], plati: [] }
 
 export default function AbonamenteLista() {
+  const useSupabase = isSupabaseConfiguredClient()
+  const [date, setDate] = useState<AbonamenteDate>(DATE_GOALE)
+  const [loading, setLoading] = useState(useSupabase)
+  const [eroare, setEroare] = useState<string | null>(null)
+
+  const refresh = async () => {
+    if (!useSupabase) {
+      setLoading(false)
+      return
+    }
+    const r = await listAbonamenteAction()
+    if (r.ok) {
+      setDate(r.data)
+      setEroare(null)
+    } else {
+      setEroare(r.error)
+    }
+    setLoading(false)
+  }
+
+  useEffect(() => {
+    void refresh()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
+
+  const { cursanti, abonamente, sedinte, plati } = date
+
+  const getSoldCursant = useCallback(
+    (cursantId: string) => {
+      const aboCursant = abonamente.filter(a => a.cursant_id === cursantId && a.activ)
+      if (!aboCursant.length) {
+        return { sedintePlate: 0, sedinteConsume: 0, sold: 0, aboActiv: null as (typeof abonamente)[0] | null }
+      }
+      const aboActiv = aboCursant[aboCursant.length - 1]
+      const sedinteConsume = sedinte.filter(
+        s => s.cursant_id === cursantId && s.abonament_id === aboActiv.id && s.prezent,
+      ).length
+      const sold = aboActiv.sedinte_incluse - sedinteConsume
+      return { sedintePlate: aboActiv.sedinte_incluse, sedinteConsume, sold, aboActiv }
+    },
+    [abonamente, sedinte],
+  )
+
+  const initial = defaultPerioadaDinPlati(plati)
+  const [luna, setLuna] = useState(initial.luna)
+  const [an, setAn] = useState(initial.an)
   const [q, setQ] = useState('')
   const [tip, setTip] = useState<'toti' | 'lunar' | 'pachet' | 'fara'>('toti')
   const [status, setStatus] = useState<'toti' | 'activ' | 'inactiv'>('toti')
   const [soldFiltru, setSoldFiltru] = useState<'toti' | 'scazut' | 'ok'>('toti')
 
-  const totalIncasat = plati.reduce((s, p) => s + p.suma, 0)
+  useEffect(() => {
+    const p = defaultPerioadaDinPlati(plati)
+    setLuna(p.luna)
+    setAn(p.an)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [plati.length])
+
+  const platiPerioada = useMemo(() => filtreazaPlatiPerioada(plati, luna, an), [plati, luna, an])
+  const { total: totalIncasat, peMetode } = useMemo(
+    () => totalSiPeMetode(platiPerioada),
+    [platiPerioada],
+  )
+  const ani = useMemo(() => aniDisponibili(plati), [plati])
+  const perioadaLabel = `${LUNI_RO[luna]} ${an}`
+
   const cursantiActivi = cursanti.filter(c => c.activ)
   const solduriActivi = cursantiActivi.map(c => ({ ...c, ...getSoldCursant(c.id) }))
   const cuSoldMic = solduriActivi.filter(c => c.aboActiv && c.sold <= 1).length
@@ -55,62 +115,141 @@ export default function AbonamenteLista() {
 
       return true
     })
-  }, [q, tip, status, soldFiltru])
+  }, [q, tip, status, soldFiltru, cursanti, getSoldCursant])
 
   const areFiltre = q || tip !== 'toti' || status !== 'toti' || soldFiltru !== 'toti'
 
+  if (useSupabase && loading) {
+    return <p className="text-slate-400">Se încarcă…</p>
+  }
+
   return (
     <div>
-      <div className="mb-8">
-        <h1 className="text-3xl font-bold text-slate-900">Abonamente & Plăți</h1>
-        <p className="text-slate-500 mt-1">Evidența financiară și sold ședințe</p>
+      <div className="mb-8 flex flex-wrap items-end justify-between gap-4">
+        <div>
+          <h1 className="text-3xl font-bold text-slate-900">Abonamente & Plăți</h1>
+          <p className="text-slate-500 mt-1">Evidența financiară și sold ședințe</p>
+        </div>
+        <div className="flex flex-wrap items-end gap-2">
+          <label className="min-w-[140px]">
+            <span className="text-xs font-medium text-slate-500 mb-1 block">Lună</span>
+            <select
+              value={luna}
+              onChange={e => setLuna(Number(e.target.value))}
+              className="w-full px-3 py-2.5 rounded-xl border border-slate-200 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-emerald-200"
+            >
+              {LUNI_RO.map((nume, i) => (
+                <option key={nume} value={i}>
+                  {nume}
+                </option>
+              ))}
+            </select>
+          </label>
+          <label className="min-w-[100px]">
+            <span className="text-xs font-medium text-slate-500 mb-1 block">An</span>
+            <select
+              value={an}
+              onChange={e => setAn(Number(e.target.value))}
+              className="w-full px-3 py-2.5 rounded-xl border border-slate-200 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-emerald-200"
+            >
+              {ani.map(y => (
+                <option key={y} value={y}>
+                  {y}
+                </option>
+              ))}
+            </select>
+          </label>
+          <button
+            type="button"
+            onClick={() =>
+              descarcaPdfIncasari({
+                luna,
+                an,
+                plati: platiPerioada,
+                cursanti,
+              })
+            }
+            className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-slate-900 text-white text-sm font-medium hover:bg-slate-800 transition-colors"
+          >
+            <Download size={16} />
+            PDF {LUNI_RO[luna]}
+          </button>
+        </div>
       </div>
 
-      <div className="grid grid-cols-3 gap-6 mb-8">
-        <div className="bg-white rounded-2xl p-6 shadow-sm border border-slate-100">
-          <div className="w-12 h-12 bg-emerald-50 rounded-xl flex items-center justify-center mb-4">
-            <TrendingUp size={22} className="text-emerald-500" />
+      {eroare && (
+        <p className="mb-4 text-sm text-amber-700 bg-amber-50 border border-amber-100 rounded-lg px-3 py-2">
+          {eroare}
+        </p>
+      )}
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+        <div className="bg-white rounded-xl p-4 shadow-sm border border-slate-100">
+          <div className="w-10 h-10 bg-emerald-50 rounded-lg flex items-center justify-center mb-2.5">
+            <TrendingUp size={18} className="text-emerald-500" />
           </div>
-          <p className="text-3xl font-bold text-slate-900">{totalIncasat} lei</p>
-          <p className="text-slate-700 font-medium mt-1">Total încasat</p>
-          <p className="text-slate-400 text-sm mt-0.5">{plati.length} plăți înregistrate</p>
-        </div>
-        <div className="bg-white rounded-2xl p-6 shadow-sm border border-slate-100">
-          <div className="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center mb-4">
-            <CreditCard size={22} className="text-blue-500" />
-          </div>
-          <p className="text-3xl font-bold text-slate-900">{abonamente.filter(a => a.activ).length}</p>
-          <p className="text-slate-700 font-medium mt-1">Abonamente active</p>
-          <p className="text-slate-400 text-sm mt-0.5">
-            {abonamente.filter(a => a.tip === 'lunar' && a.activ).length} lunare ·{' '}
-            {abonamente.filter(a => a.tip === 'pachet' && a.activ).length} pachete
+          <p className="text-2xl font-bold text-slate-900">{totalIncasat} lei</p>
+          <p className="text-slate-700 text-sm font-medium mt-0.5">Total încasat</p>
+          <p className="text-slate-400 text-xs mt-0.5">
+            {perioadaLabel} · {platiPerioada.length} plăți
           </p>
         </div>
+
+        <div className="bg-white rounded-xl p-4 shadow-sm border border-slate-100">
+          <div className="w-10 h-10 bg-teal-50 rounded-lg flex items-center justify-center mb-2.5">
+            <Banknote size={18} className="text-teal-600" />
+          </div>
+          <p className="text-slate-700 text-sm font-medium mb-1.5">Modalități</p>
+          <ul className="space-y-0.5">
+            <li className="flex items-baseline justify-between gap-2 leading-tight">
+              <span className="text-xs text-slate-500">Cash</span>
+              <span className="text-sm font-bold text-slate-900 tabular-nums">{peMetode.cash} lei</span>
+            </li>
+            <li className="flex items-baseline justify-between gap-2 leading-tight">
+              <span className="text-xs text-slate-500">Transfer</span>
+              <span className="text-sm font-bold text-slate-900 tabular-nums">{peMetode.transfer} lei</span>
+            </li>
+            <li className="flex items-baseline justify-between gap-2 leading-tight">
+              <span className="text-xs text-slate-500">Card</span>
+              <span className="text-sm font-bold text-slate-900 tabular-nums">{peMetode.card} lei</span>
+            </li>
+          </ul>
+        </div>
+
+        <div className="bg-white rounded-xl p-4 shadow-sm border border-slate-100">
+          <div className="w-10 h-10 bg-blue-50 rounded-lg flex items-center justify-center mb-2.5">
+            <CreditCard size={18} className="text-blue-500" />
+          </div>
+          <p className="text-2xl font-bold text-slate-900">
+            {abonamente.filter(a => a.activ).length}
+          </p>
+          <p className="text-slate-700 text-sm font-medium mt-0.5">Abonamente active</p>
+        </div>
+
         <button
           type="button"
           onClick={() => setSoldFiltru(soldFiltru === 'scazut' ? 'toti' : 'scazut')}
-          className={`rounded-2xl p-6 shadow-sm border text-left transition-all ${
+          className={`rounded-xl p-4 shadow-sm border text-left transition-all ${
             cuSoldMic > 0 || soldFiltru === 'scazut'
               ? 'bg-amber-50 border-amber-200'
               : 'bg-white border-slate-100'
           } ${soldFiltru === 'scazut' ? 'ring-2 ring-amber-300' : ''}`}
         >
           <div
-            className={`w-12 h-12 rounded-xl flex items-center justify-center mb-4 ${
+            className={`w-10 h-10 rounded-lg flex items-center justify-center mb-2.5 ${
               cuSoldMic > 0 ? 'bg-amber-100' : 'bg-slate-50'
             }`}
           >
-            <AlertCircle size={22} className={cuSoldMic > 0 ? 'text-amber-500' : 'text-slate-400'} />
+            <AlertCircle
+              size={18}
+              className={cuSoldMic > 0 ? 'text-amber-500' : 'text-slate-400'}
+            />
           </div>
-          <p className="text-3xl font-bold text-slate-900">{cuSoldMic}</p>
-          <p className="text-slate-700 font-medium mt-1">Sold scăzut</p>
-          <p className="text-slate-400 text-sm mt-0.5">
-            ≤1 ședință · click pentru filtru
-          </p>
+          <p className="text-2xl font-bold text-slate-900">{cuSoldMic}</p>
+          <p className="text-slate-700 text-sm font-medium mt-0.5">Sold scăzut</p>
         </button>
       </div>
 
-      {/* Filtre */}
       <div className="bg-white rounded-2xl shadow-sm border border-slate-100 p-4 mb-6">
         <div className="flex flex-wrap gap-3 items-end">
           <label className="flex-1 min-w-[180px]">
@@ -194,105 +333,59 @@ export default function AbonamenteLista() {
             <thead>
               <tr className="bg-slate-50 border-b border-slate-100">
                 <th className="text-left px-6 py-3 text-slate-500 font-semibold text-sm">Cursant</th>
-                <th className="text-left px-6 py-3 text-slate-500 font-semibold text-sm">Tip abonament</th>
-                <th className="text-left px-6 py-3 text-slate-500 font-semibold text-sm">Ședințe plătite</th>
+                <th className="text-left px-6 py-3 text-slate-500 font-semibold text-sm">
+                  Tip abonament
+                </th>
+                <th className="text-left px-6 py-3 text-slate-500 font-semibold text-sm">
+                  Ședințe plătite
+                </th>
                 <th className="text-left px-6 py-3 text-slate-500 font-semibold text-sm">Consumate</th>
                 <th className="text-left px-6 py-3 text-slate-500 font-semibold text-sm">Sold rămas</th>
                 <th className="text-right px-6 py-3 text-slate-500 font-semibold text-sm">Acțiuni</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-slate-50">
+            <tbody>
               {filtrati.length === 0 ? (
                 <tr>
-                  <td colSpan={6} className="px-6 py-12 text-center text-slate-400 text-sm">
-                    Niciun cursant nu corespunde filtrelor.
+                  <td colSpan={6} className="px-6 py-10 text-center text-slate-400 text-sm">
+                    Niciun cursant pentru filtrele alese.
                   </td>
                 </tr>
               ) : (
                 filtrati.map(c => {
                   const { sedintePlate, sedinteConsume, sold, aboActiv } = getSoldCursant(c.id)
-                  const procentConsumat =
-                    sedintePlate > 0 ? Math.round((sedinteConsume / sedintePlate) * 100) : 0
-
                   return (
-                    <tr key={c.id} className="hover:bg-slate-50 transition-colors">
+                    <tr key={c.id} className="border-b border-slate-50 hover:bg-slate-50/80">
                       <td className="px-6 py-4">
                         <div className="flex items-center gap-3">
                           <CursantAvatar id={c.id} nume={c.nume} prenume={c.prenume} />
                           <div>
                             <p className="font-semibold text-slate-900">
-                              {c.nume} {c.prenume}
+                              {c.prenume} {c.nume}
                             </p>
-                            <span
-                              className={`text-xs px-2 py-0.5 rounded-[10px] border font-medium ${
-                                c.activ
-                                  ? 'bg-emerald-50 text-emerald-700 border-emerald-300'
-                                  : 'bg-red-50 text-red-600 border-red-300'
-                              }`}
-                            >
-                              {c.activ ? 'Activ' : 'Inactiv'}
-                            </span>
+                            <p className="text-xs text-slate-400">{c.email_parinte}</p>
                           </div>
                         </div>
                       </td>
-                      <td className="px-6 py-4">
+                      <td className="px-6 py-4 text-sm text-slate-600">
                         {aboActiv ? (
-                          <span
-                            className={`inline-block text-xs px-2.5 py-1 rounded-[10px] font-medium border whitespace-nowrap ${
-                              aboActiv.tip === 'lunar'
-                                ? 'border-blue-300 bg-blue-50 text-blue-700'
-                                : 'border-violet-300 bg-violet-50 text-violet-700'
-                            }`}
-                          >
-                            {aboActiv.tip === 'lunar'
-                              ? `Lunar · ${aboActiv.pret} lei`
-                              : `Pachet · ${aboActiv.pret} lei`}
-                          </span>
-                        ) : (
-                          <span className="text-slate-400 text-sm">—</span>
-                        )}
-                      </td>
-                      <td className="px-6 py-4 text-slate-700 font-medium">
-                        {sedintePlate || '—'}
-                      </td>
-                      <td className="px-6 py-4">
-                        {sedintePlate > 0 ? (
-                          <div className="flex items-center gap-2">
-                            <div className="w-20 bg-slate-100 rounded-full h-2">
-                              <div
-                                className="h-2 rounded-full transition-all"
-                                style={{
-                                  width: `${procentConsumat}%`,
-                                  backgroundColor:
-                                    procentConsumat >= 80
-                                      ? '#EF4444'
-                                      : procentConsumat >= 50
-                                        ? '#F59E0B'
-                                        : '#10B981',
-                                }}
-                              />
-                            </div>
-                            <span className="text-slate-600 text-sm">{sedinteConsume}</span>
-                          </div>
+                          <span className="capitalize">{aboActiv.tip}</span>
                         ) : (
                           <span className="text-slate-400">—</span>
                         )}
                       </td>
+                      <td className="px-6 py-4 text-sm text-slate-600">
+                        {aboActiv ? sedintePlate : '—'}
+                      </td>
+                      <td className="px-6 py-4 text-sm text-slate-600">
+                        {aboActiv ? sedinteConsume : '—'}
+                      </td>
                       <td className="px-6 py-4">
                         {aboActiv ? (
                           <div className="flex items-center gap-2">
-                            {sold <= 1 ? (
-                              <AlertCircle size={15} className="text-amber-500" />
-                            ) : (
-                              <CheckCircle size={15} className="text-emerald-500" />
-                            )}
                             <span
-                              className={`font-bold text-lg ${
-                                sold <= 1
-                                  ? 'text-amber-500'
-                                  : sold <= 3
-                                    ? 'text-slate-700'
-                                    : 'text-emerald-600'
+                              className={`font-bold ${
+                                sold <= 1 ? 'text-amber-600' : 'text-emerald-600'
                               }`}
                             >
                               {sold}
@@ -309,6 +402,7 @@ export default function AbonamenteLista() {
                             cursantId={c.id}
                             abonamentId={aboActiv?.id}
                             numarCursant={`${c.nume} ${c.prenume}`}
+                            onSaved={refresh}
                           />
                           <Link
                             href={`/abonamente/${c.id}`}
@@ -328,37 +422,53 @@ export default function AbonamenteLista() {
       </div>
 
       <div className="bg-white rounded-2xl shadow-sm border border-slate-100 p-6">
-        <h2 className="font-bold text-slate-900 text-lg mb-5">Ultimele plăți</h2>
+        <div className="flex flex-wrap items-center justify-between gap-3 mb-5">
+          <h2 className="font-bold text-slate-900 text-lg">Plăți — {perioadaLabel}</h2>
+          <p className="text-sm text-slate-400">{platiPerioada.length} înregistrări</p>
+        </div>
         <div className="space-y-3">
-          {[...plati].reverse().map(p => {
-            const cursant = cursanti.find(c => c.id === p.cursant_id)
-            return (
-              <div
-                key={p.id}
-                className="flex items-center justify-between p-4 rounded-xl bg-slate-50"
-              >
-                <div className="flex items-center gap-3">
-                  {cursant ? (
-                    <CursantAvatar id={cursant.id} nume={cursant.nume} prenume={cursant.prenume} />
-                  ) : (
-                    <div className="w-9 h-9 rounded-full bg-slate-100" />
-                  )}
-                  <div>
-                    <p className="font-semibold text-slate-900">
-                      {cursant?.nume} {cursant?.prenume}
-                    </p>
-                    <p className="text-slate-400 text-xs">
-                      {new Date(p.data_plata).toLocaleDateString('ro-RO')} · {p.metoda}
-                    </p>
+          {platiPerioada.length === 0 ? (
+            <p className="text-sm text-slate-400 py-6 text-center">
+              Nicio plată în {perioadaLabel}.
+            </p>
+          ) : (
+            [...platiPerioada]
+              .sort((a, b) => b.data_plata.localeCompare(a.data_plata))
+              .map(p => {
+                const cursant = cursanti.find(c => c.id === p.cursant_id)
+                return (
+                  <div
+                    key={p.id}
+                    className="flex items-center justify-between p-4 rounded-xl bg-slate-50"
+                  >
+                    <div className="flex items-center gap-3">
+                      {cursant ? (
+                        <CursantAvatar
+                          id={cursant.id}
+                          nume={cursant.nume}
+                          prenume={cursant.prenume}
+                        />
+                      ) : (
+                        <div className="w-9 h-9 rounded-full bg-slate-100" />
+                      )}
+                      <div>
+                        <p className="font-semibold text-slate-900">
+                          {cursant?.prenume} {cursant?.nume}
+                        </p>
+                        <p className="text-slate-400 text-xs">
+                          {new Date(p.data_plata + 'T12:00:00').toLocaleDateString('ro-RO')} ·{' '}
+                          {p.metoda}
+                        </p>
+                      </div>
+                    </div>
+                    <div className="text-right">
+                      <p className="font-bold text-emerald-600 text-lg">{p.suma} lei</p>
+                      {p.nota && <p className="text-slate-400 text-xs">{p.nota}</p>}
+                    </div>
                   </div>
-                </div>
-                <div className="text-right">
-                  <p className="font-bold text-emerald-600 text-lg">{p.suma} lei</p>
-                  {p.nota && <p className="text-slate-400 text-xs">{p.nota}</p>}
-                </div>
-              </div>
-            )
-          })}
+                )
+              })
+          )}
         </div>
       </div>
     </div>
