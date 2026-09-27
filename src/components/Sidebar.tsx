@@ -57,7 +57,6 @@ export default function Sidebar() {
             <h1 className="font-bold text-lg leading-tight">Code Kids Play</h1>
             <p className="text-slate-400 text-xs">
               {rol === 'profesor' ? 'Profesor' : adminName || rolLabel}
-              {rol === 'admin' && adminName ? ` · ${rolLabel}` : ''}
             </p>
           </div>
         </div>

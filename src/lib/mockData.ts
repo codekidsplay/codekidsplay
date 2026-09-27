@@ -1,16 +1,16 @@
 export const cursuri = [
-  { id: 'c1', nume: 'C++', descriere: 'Programare în C++ de la zero', culoare: '#0840c8' },
+  { id: 'c1', nume: 'C++', descriere: 'Programare în C++ de la zero', culoare: '#2563EB' },
   { id: 'c2', nume: 'Arduino', descriere: 'Electronică și programare cu Arduino', culoare: '#F59E0B' },
-  { id: 'c3', nume: 'Blender', descriere: 'Modelare 3D cu Blender', culoare: '#8820b8' },
-  { id: 'c4', nume: 'Python', descriere: 'Programare Python - teorie și jocuri', culoare: '#0840c8' },
+  { id: 'c3', nume: 'Blender', descriere: 'Modelare 3D cu Blender', culoare: '#7C3AED' },
+  { id: 'c4', nume: 'Python', descriere: 'Programare Python - teorie și jocuri', culoare: '#3776AB' },
   { id: 'c5', nume: 'HTML CSS JavaScript', descriere: 'Site-uri de la zero: HTML, CSS și JavaScript', culoare: '#10B981' },
-  { id: 'c6', nume: 'Robotică Lego WeDo 2.0', descriere: 'Robotică cu LEGO WeDo 2.0 — construcție + programare vizuală (2 module)', culoare: '#f83030' },
-  { id: 'c7', nume: 'Scratch', descriere: 'Programare vizuală cu Scratch — jocuri și povești', culoare: '#f83030' },
-  { id: 'c8', nume: 'micro:bit', descriere: 'BBC micro:bit — MakeCode (blocuri) + Python pe placă (3 module)', culoare: '#00ED00' },
-  { id: 'c9', nume: 'Tinkercad 3D', descriere: 'Design 3D simplu cu Tinkercad — forme, print și creativitate', culoare: '#1E88E5' },
-  { id: 'c10', nume: 'micro:bit Python', descriere: 'Python pe micro:bit — senzori, LED și proiecte pe placă', culoare: '#00C853' },
-  { id: 'c11', nume: 'Unity', descriere: 'Jocuri 3D cu Unity — scene, scripturi și proiecte interactive', culoare: '#000000' },
-  { id: 'c12', nume: 'Roblox Studio', descriere: 'Jocuri pe Roblox cu Luau — pentru 12+: Studio, scripturi, scor și publicare', culoare: '#E2231A' },
+  { id: 'c6', nume: 'Robotică Lego WeDo 2.0', descriere: 'Robotică cu LEGO WeDo 2.0 — construcție + programare vizuală (2 module)', culoare: '#DC2626' },
+  { id: 'c7', nume: 'Scratch', descriere: 'Programare vizuală cu Scratch — jocuri și povești', culoare: '#F97316' },
+  { id: 'c8', nume: 'micro:bit', descriere: 'BBC micro:bit — MakeCode (blocuri) + Python pe placă (3 module)', culoare: '#00A86B' },
+  { id: 'c9', nume: 'Tinkercad 3D', descriere: 'Design 3D simplu cu Tinkercad — forme, print și creativitate', culoare: '#0EA5E9' },
+  { id: 'c10', nume: 'micro:bit Python', descriere: 'Python pe micro:bit — senzori, LED și proiecte pe placă', culoare: '#8B5CF6' },
+  { id: 'c11', nume: 'Unity', descriere: 'Jocuri 3D cu Unity — scene, scripturi și proiecte interactive', culoare: '#64748B' },
+  { id: 'c12', nume: 'Roblox Studio', descriere: 'Jocuri pe Roblox cu Luau — pentru 12+: Studio, scripturi, scor și publicare', culoare: '#E11D48' },
 ]
 
 /** Iconuri pe cardurile de landing (opțional) */

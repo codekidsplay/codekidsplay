@@ -169,7 +169,7 @@ export default function CursantiLista() {
     <div>
       <div className="flex items-center justify-between mb-8">
         <div>
-          <h1 className="text-3xl font-bold text-slate-900">Cursanți</h1>
+          <h1 className="text-3xl font-bold text-slate-900">Cursanți Code Kids Play</h1>
           <p className="text-slate-500 mt-1">
             {isProfesor
               ? 'Doar cursanții asignați'
