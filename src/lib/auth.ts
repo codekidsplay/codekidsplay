@@ -1,14 +1,29 @@
 /**
- * Auth mock (localStorage) — aliniat cu templates/decizii-auth.md
- * Ulterior: Supabase Auth + PIN hash.
+ * Auth mock (localStorage) — fallback când Supabase Admin nu e configurat.
+ * Fluxul real: `app/actions/auth.ts` + `app/actions/cursanti.ts`.
  */
 
 import { cursanti } from './mockData'
+import { getCursant } from './mockStore'
+import {
+  destinateDupaLogin as destinateDupaLoginHelper,
+  genereazaParola,
+  genereazaPin,
+  genereazaUsername,
+  mesajWhatsAppLogin,
+} from './authHelpers'
 
-export type Rol = 'admin' | 'parinte' | 'elev'
+export {
+  genereazaParola,
+  genereazaPin,
+  genereazaUsername,
+  mesajWhatsAppLogin,
+} from './authHelpers'
+
+export type Rol = 'admin' | 'parinte' | 'elev' | 'profesor'
 
 export type Session =
-  | { rol: 'admin'; email: string; nume: string }
+  | { rol: 'admin' | 'profesor'; email: string; nume: string }
   | { rol: 'parinte'; email: string; nume: string; cursant_ids: string[] }
   | { rol: 'elev'; username: string; cursant_id: string; prenume: string; nume: string }
 
@@ -77,31 +92,12 @@ function seedCreds(): CredsStore {
   }
 }
 
-export function genereazaUsername(prenume: string, nume: string): string {
-  const p = prenume
-    .normalize('NFD')
-    .replace(/[\u0300-\u036f]/g, '')
-    .toLowerCase()
-    .replace(/[^a-z]/g, '')
-  const n = nume
-    .normalize('NFD')
-    .replace(/[\u0300-\u036f]/g, '')
-    .toLowerCase()
-    .replace(/[^a-z]/g, '')
-  return `${p}.${n.charAt(0) || 'x'}`
-}
-
-export function genereazaPin(len = 4): string {
-  let s = ''
-  for (let i = 0; i < len; i++) s += Math.floor(Math.random() * 10).toString()
-  return s
-}
-
-export function genereazaParola(len = 8): string {
-  const chars = 'abcdefghijkmnpqrstuvwxyz23456789'
-  let s = ''
-  for (let i = 0; i < len; i++) s += chars[Math.floor(Math.random() * chars.length)]
-  return s
+export function usernameElevDisponibil(username: string, excludeCursantId?: string): boolean {
+  const u = username.trim().toLowerCase()
+  if (!u) return false
+  return !getCreds().elev.some(
+    e => e.username.toLowerCase() === u && e.cursant_id !== excludeCursantId,
+  )
 }
 
 function loadCreds(): CredsStore {
@@ -206,7 +202,7 @@ export function loginElev(username: string, pin: string): LoginResult {
   )
   if (!cont) return { ok: false, error: 'Username sau PIN greșit.' }
 
-  const cursant = cursanti.find(c => c.id === cont.cursant_id)
+  const cursant = getCursant(cont.cursant_id)
   if (!cursant || !cursant.activ) {
     return { ok: false, error: 'Cont elev inactiv sau inexistent.' }
   }
@@ -228,32 +224,69 @@ export function asiguraConturiCursant(opts: {
   prenume: string
   nume: string
   email_parinte: string
+  /** Dacă lipsesc, se generează automat */
+  username?: string
+  pin?: string
+  parola_parinte?: string
 }): {
   username: string
   pin: string
   email_parinte: string
   parola_parinte: string
   parola_parinte_noua: boolean
+  error?: string
 } {
   const store = getCreds()
+
+  const usernameDoriti = opts.username?.trim().toLowerCase()
+  if (usernameDoriti) {
+    const conflict = store.elev.find(
+      e => e.username.toLowerCase() === usernameDoriti && e.cursant_id !== opts.cursant_id,
+    )
+    if (conflict) {
+      return {
+        username: '',
+        pin: '',
+        email_parinte: opts.email_parinte,
+        parola_parinte: '',
+        parola_parinte_noua: false,
+        error: `Username-ul „${usernameDoriti}” e deja folosit.`,
+      }
+    }
+  }
+
+  if (opts.pin !== undefined && opts.pin !== '' && !/^\d{4}$/.test(opts.pin)) {
+    return {
+      username: '',
+      pin: '',
+      email_parinte: opts.email_parinte,
+      parola_parinte: '',
+      parola_parinte_noua: false,
+      error: 'PIN-ul trebuie să aibă exact 4 cifre.',
+    }
+  }
+
   let elev = store.elev.find(e => e.cursant_id === opts.cursant_id)
   if (!elev) {
-    let username = genereazaUsername(opts.prenume, opts.nume)
+    let username = usernameDoriti || genereazaUsername(opts.prenume, opts.nume)
     const taken = store.elev.some(
-      e => e.username === username && e.cursant_id !== opts.cursant_id
+      e => e.username.toLowerCase() === username.toLowerCase() && e.cursant_id !== opts.cursant_id,
     )
     if (taken) username = `${username}${opts.cursant_id.replace(/\D/g, '')}`
     elev = {
       tip: 'elev',
       cursant_id: opts.cursant_id,
       username,
-      pin: genereazaPin(4),
+      pin: opts.pin && /^\d{4}$/.test(opts.pin) ? opts.pin : genereazaPin(4),
     }
     store.elev.push(elev)
+  } else {
+    if (usernameDoriti) elev.username = usernameDoriti
+    if (opts.pin && /^\d{4}$/.test(opts.pin)) elev.pin = opts.pin
   }
 
   let parinte = store.email.find(
-    e => e.tip === 'parinte' && e.email.toLowerCase() === opts.email_parinte.toLowerCase()
+    e => e.tip === 'parinte' && e.email.toLowerCase() === opts.email_parinte.toLowerCase(),
   )
   let parolaNoua = false
   if (!parinte) {
@@ -261,7 +294,7 @@ export function asiguraConturiCursant(opts: {
     parinte = {
       tip: 'parinte',
       email: opts.email_parinte,
-      parola: genereazaParola(8),
+      parola: opts.parola_parinte?.trim() || genereazaParola(8),
       nume: `Părinte ${opts.nume}`,
       cursant_ids: [opts.cursant_id],
     }
@@ -300,28 +333,6 @@ export function resetParolaParinte(email: string): string | null {
   return p.parola
 }
 
-export function mesajWhatsAppLogin(opts: {
-  prenume: string
-  username: string
-  pin: string
-  email_parinte: string
-  parola_parinte: string
-}): string {
-  return [
-    `Salut! Conturi Code Kids Play pentru ${opts.prenume}:`,
-    ``,
-    `👨‍👩‍👧 Părinte: ${opts.email_parinte}`,
-    `Parolă: ${opts.parola_parinte}`,
-    ``,
-    `🧒 Elev (tabletă): username ${opts.username}`,
-    `PIN: ${opts.pin}`,
-    ``,
-    `Intră pe site → Login.`,
-  ].join('\n')
-}
-
-export function destinateDupaLogin(session: Session): string {
-  if (session.rol === 'admin') return '/admin'
-  if (session.rol === 'parinte') return '/parinte'
-  return '/invata'
+export function destinateDupaLogin(session: Session | { rol: Rol }): string {
+  return destinateDupaLoginHelper(session.rol)
 }

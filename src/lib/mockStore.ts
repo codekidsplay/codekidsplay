@@ -3,11 +3,21 @@ import {
   sedinte as sedinteSeed,
   progres as progresSeed,
   inscrieri as inscrieriSeed,
-  cursanti,
+  cursanti as cursantiSeed,
   lectii,
   type TipAbonament,
 } from './mockData'
 import { mesajSedinteEpuizate, trimiteEmailSedinteEpuizate } from './notificari'
+
+export type Cursant = {
+  id: string
+  nume: string
+  prenume: string
+  email_parinte: string
+  telefon_parinte: string | null
+  data_inscriere: string
+  activ: boolean
+}
 
 export type Sedinta = {
   id: string
@@ -58,6 +68,7 @@ export type NotificareLog = {
 }
 
 type Store = {
+  cursanti: Cursant[]
   progres: Progres[]
   sedinte: Sedinta[]
   inscrieri: Inscriere[]
@@ -71,18 +82,25 @@ function todayISO(): string {
   return new Date().toISOString().slice(0, 10)
 }
 
+function defaultModulPentruCurs(cursId: string): string | null {
+  return cursId === 'c1' ? 'm1' :
+    cursId === 'c4' ? 'm6' :
+    cursId === 'c5' ? 'm9' :
+    cursId === 'c2' ? 'm3' :
+    cursId === 'c6' ? 'm12' :
+    cursId === 'c7' ? 'm16' :
+    cursId === 'c8' ? 'm21' :
+    cursId === 'c12' ? 'm24' :
+    null
+}
+
 function seedStore(): Store {
   return {
+    cursanti: cursantiSeed.map(c => ({ ...c })),
     abonamente: abonamenteSeed.map(a => ({ ...a })),
     inscrieri: inscrieriSeed.map(i => ({
       ...i,
-      modul_activ_id:
-        i.curs_id === 'c1' ? 'm1' :
-        i.curs_id === 'c4' ? 'm6' :
-        i.curs_id === 'c5' ? 'm9' :
-        i.curs_id === 'c2' ? 'm3' :
-        i.curs_id === 'c6' ? 'm12' :
-        i.curs_id === 'c7' ? 'm16' : null,
+      modul_activ_id: defaultModulPentruCurs(i.curs_id),
       activ: true,
     })),
     sedinte: sedinteSeed.map(s => ({
@@ -104,7 +122,14 @@ function loadStore(): Store {
   if (typeof window === 'undefined') return seedStore()
   try {
     const raw = localStorage.getItem(STORAGE_KEY)
-    if (raw) return JSON.parse(raw) as Store
+    if (raw) {
+      const parsed = JSON.parse(raw) as Store
+      if (!Array.isArray(parsed.cursanti) || parsed.cursanti.length === 0) {
+        parsed.cursanti = cursantiSeed.map(c => ({ ...c }))
+        saveStore(parsed)
+      }
+      return parsed
+    }
   } catch { /* ignore */ }
   const s = seedStore()
   localStorage.setItem(STORAGE_KEY, JSON.stringify(s))
@@ -118,6 +143,51 @@ function saveStore(store: Store) {
 
 export function getStore(): Store {
   return loadStore()
+}
+
+export function getCursanti(store = getStore()): Cursant[] {
+  return store.cursanti
+}
+
+export function getCursant(id: string, store = getStore()): Cursant | undefined {
+  return store.cursanti.find(c => c.id === id)
+}
+
+/** Adaugă cursant (+ opțional înscriere la un curs). Conturile se creează separat via auth. */
+export function adaugaCursant(input: {
+  nume: string
+  prenume: string
+  email_parinte: string
+  telefon_parinte?: string | null
+  curs_id?: string | null
+  activ?: boolean
+}): Cursant {
+  const store = getStore()
+  const id = `u${Date.now().toString(36)}`
+  const cursant: Cursant = {
+    id,
+    nume: input.nume.trim(),
+    prenume: input.prenume.trim(),
+    email_parinte: input.email_parinte.trim().toLowerCase(),
+    telefon_parinte: input.telefon_parinte?.trim() || null,
+    data_inscriere: todayISO(),
+    activ: input.activ ?? true,
+  }
+  store.cursanti.push(cursant)
+
+  if (input.curs_id) {
+    store.inscrieri.push({
+      id: `i-${Date.now()}`,
+      cursant_id: id,
+      curs_id: input.curs_id,
+      data_inscriere: todayISO(),
+      modul_activ_id: defaultModulPentruCurs(input.curs_id),
+      activ: true,
+    })
+  }
+
+  saveStore(store)
+  return cursant
 }
 
 export function resetStore() {
@@ -186,7 +256,7 @@ export async function bifareLectie(cursantId: string, lectieId: string): Promise
   const lectie = lectii.find(l => l.id === lectieId)
   if (!lectie) return empty({ error: 'Lecție inexistentă' })
 
-  const cursant = cursanti.find(c => c.id === cursantId)
+  const cursant = getCursant(cursantId, store)
   if (!cursant) return empty({ error: 'Cursant inexistent' })
 
   const existing = store.progres.find(p => p.cursant_id === cursantId && p.lectie_id === lectieId)
@@ -342,13 +412,7 @@ export function toggleInscriereCurs(
   }
 
   const defaultModul =
-    opts?.modulActivId ??
-    (cursId === 'c1' ? 'm1' :
-     cursId === 'c4' ? 'm6' :
-     cursId === 'c5' ? 'm9' :
-     cursId === 'c2' ? 'm3' :
-     cursId === 'c6' ? 'm12' :
-     cursId === 'c7' ? 'm16' : null)
+    opts?.modulActivId ?? defaultModulPentruCurs(cursId)
 
   store.inscrieri.push({
     id: `i-${Date.now()}`,

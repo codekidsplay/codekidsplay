@@ -3,8 +3,8 @@
 import { useEffect, useMemo, useState } from 'react'
 import Link from 'next/link'
 import { Plus, Search, X } from 'lucide-react'
-import { cursanti, cursuri, module } from '@/lib/mockData'
-import { getStore } from '@/lib/mockStore'
+import { cursuri, module } from '@/lib/mockData'
+import { getStore, getCursanti } from '@/lib/mockStore'
 import CursantAvatar from '@/components/CursantAvatar'
 
 export default function CursantiLista() {
@@ -21,6 +21,7 @@ export default function CursantiLista() {
   }, [])
 
   const store = useMemo(() => (ready ? getStore() : null), [ready, tick])
+  const totiCursanti = useMemo(() => (ready ? getCursanti() : []), [ready, tick])
 
   const modulePentruCurs = useMemo(() => {
     if (!cursId) return module.slice().sort((a, b) => a.ordine - b.ordine)
@@ -39,7 +40,7 @@ export default function CursantiLista() {
     if (!store) return []
     const query = q.trim().toLowerCase()
 
-    return cursanti.filter(c => {
+    return totiCursanti.filter(c => {
       if (status === 'activ' && !c.activ) return false
       if (status === 'inactiv' && c.activ) return false
 
@@ -60,9 +61,9 @@ export default function CursantiLista() {
 
       return true
     })
-  }, [store, q, cursId, modulId, status])
+  }, [store, totiCursanti, q, cursId, modulId, status])
 
-  const activi = cursanti.filter(c => c.activ).length
+  const activi = totiCursanti.filter(c => c.activ).length
   const areFiltre = q || cursId || modulId || status !== 'toti'
 
   if (!ready || !store) {
@@ -75,7 +76,7 @@ export default function CursantiLista() {
         <div>
           <h1 className="text-3xl font-bold text-slate-900">Cursanți</h1>
           <p className="text-slate-500 mt-1">
-            {filtrati.length} afișați · {cursanti.length} total · {activi} activi
+            {filtrati.length} afișați · {totiCursanti.length} total · {activi} activi
           </p>
         </div>
         <Link

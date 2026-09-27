@@ -7,10 +7,23 @@ import {
   loginEmail,
   loginElev,
   destinateDupaLogin,
+  type Session,
 } from '@/lib/auth'
+import { loginEmailAction, loginElevAction } from '@/app/actions/auth'
+import { isSupabaseConfiguredClient } from '@/lib/supabase/publicFlag'
 import BrandLogo from '@/components/BrandLogo'
 
 type Tab = 'adult' | 'elev'
+
+const SESSION_KEY = 'ckp-session-v1'
+
+function persistSession(session: Session) {
+  try {
+    localStorage.setItem(SESSION_KEY, JSON.stringify(session))
+  } catch {
+    /* ignore */
+  }
+}
 
 export default function LoginForm() {
   const router = useRouter()
@@ -23,10 +36,39 @@ export default function LoginForm() {
   const [username, setUsername] = useState('')
   const [pin, setPin] = useState('')
 
-  const submitAdult = (e: React.FormEvent) => {
+  const submitAdult = async (e: React.FormEvent) => {
     e.preventDefault()
     setError('')
     setLoading(true)
+
+    if (isSupabaseConfiguredClient()) {
+      const r = await loginEmailAction(email, parola)
+      setLoading(false)
+      if (!r.ok) {
+        setError(r.error)
+        return
+      }
+      if (r.session.rol === 'parinte') {
+        persistSession({
+          rol: 'parinte',
+          email: r.session.email,
+          nume: r.session.nume,
+          cursant_ids: r.session.cursant_ids,
+        })
+      } else if (r.session.rol === 'admin' || r.session.rol === 'profesor') {
+        persistSession({
+          rol: 'admin',
+          email: r.session.email,
+          nume: r.session.nume,
+        })
+      } else {
+        setError('Rol invalid pentru login adult.')
+        return
+      }
+      router.replace(destinateDupaLogin(r.session))
+      return
+    }
+
     const r = loginEmail(email, parola)
     setLoading(false)
     if (!r.ok) {
@@ -36,10 +78,33 @@ export default function LoginForm() {
     router.replace(destinateDupaLogin(r.session))
   }
 
-  const submitElev = (e: React.FormEvent) => {
+  const submitElev = async (e: React.FormEvent) => {
     e.preventDefault()
     setError('')
     setLoading(true)
+
+    if (isSupabaseConfiguredClient()) {
+      const r = await loginElevAction(username, pin)
+      setLoading(false)
+      if (!r.ok) {
+        setError(r.error)
+        return
+      }
+      if (r.session.rol !== 'elev') {
+        setError('Contul nu e de elev.')
+        return
+      }
+      persistSession({
+        rol: 'elev',
+        username: r.session.username,
+        cursant_id: r.session.cursant_id,
+        prenume: r.session.prenume,
+        nume: r.session.nume,
+      })
+      router.replace(destinateDupaLogin(r.session))
+      return
+    }
+
     const r = loginElev(username, pin)
     setLoading(false)
     if (!r.ok) {
