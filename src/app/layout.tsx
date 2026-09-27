@@ -14,9 +14,38 @@ const body = Outfit({
 })
 
 export const metadata: Metadata = {
-  title: 'Code Kids Play Focșani — cursuri de programare pentru copii',
+  metadataBase: new URL('https://codekidsplay.vercel.app'),
+  applicationName: 'Code Kids Play',
+  title: {
+    default: 'Code Kids Play Focșani — cursuri de programare pentru copii',
+    template: '%s · Code Kids Play',
+  },
   description:
     'Atelier de coding în Focșani: Scratch, Python, C++, HTML/CSS/JS, Arduino și robotică. Copiii învață prin proiecte, acasă și în clasă.',
+  icons: {
+    icon: [
+      { url: '/logo-icon.png', type: 'image/png' },
+      { url: '/icons/icon-192.png', sizes: '192x192', type: 'image/png' },
+      { url: '/icons/icon-512.png', sizes: '512x512', type: 'image/png' },
+    ],
+    apple: [{ url: '/icons/apple-touch-icon.png', sizes: '180x180', type: 'image/png' }],
+  },
+  appleWebApp: {
+    capable: true,
+    title: 'Code Kids Play',
+    statusBarStyle: 'black-translucent',
+  },
+  formatDetection: {
+    telephone: false,
+  },
+  openGraph: {
+    type: 'website',
+    locale: 'ro_RO',
+    siteName: 'Code Kids Play',
+    title: 'Code Kids Play Focșani',
+    description: 'Cursuri de programare pentru copii — Focșani',
+    images: [{ url: '/logo-icon.png', width: 618, height: 618, alt: 'Code Kids Play' }],
+  },
 }
 
 export default function RootLayout({
