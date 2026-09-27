@@ -16,16 +16,25 @@ interface Props {
   href?: string | null
   className?: string
   priority?: boolean
+  /** Implicit cerc — brand mark Code Kids Play */
+  shape?: 'rounded' | 'circle'
+  /** Implicit mov din logo; `null` = fără inel */
+  ring?: string | null
 }
 
-/** Logo full Code Kids Play — peste tot, cu colțuri rotunjite */
+/** Logo full Code Kids Play — cerc + inel mov peste tot */
 export default function BrandLogo({
   size = 'md',
   href = '/',
   className = '',
   priority = false,
+  shape = 'circle',
+  ring = 'var(--ckp-purple)',
 }: Props) {
   const w = widths[size]
+  const isCircle = shape === 'circle'
+  const radius = isCircle ? 'rounded-full' : 'rounded-2xl'
+  const ringW = size === 'sm' ? 2 : 3
 
   const img = (
     <Image
@@ -35,8 +44,13 @@ export default function BrandLogo({
       height={w}
       priority={priority}
       unoptimized
-      className={`rounded-2xl object-cover shadow-sm ${className}`}
-      style={{ width: w, height: w }}
+      className={`${radius} object-cover shadow-sm ${className}`}
+      style={{
+        width: w,
+        height: w,
+        // Ring în afara imaginii (nu reduce aria vizibilă a logo-ului)
+        boxShadow: ring ? `0 0 0 ${ringW}px ${ring}` : undefined,
+      }}
     />
   )
 

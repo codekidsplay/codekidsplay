@@ -2,6 +2,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { cursuri, grupeVarsta, cursBlurbLanding, cursIconLanding } from '@/lib/mockData'
 import BrandLogo from '@/components/BrandLogo'
+import OchiPlay from '@/components/OchiPlay'
 
 const grupColors = ['var(--ckp-blue)', 'var(--ckp-purple)', 'var(--ckp-red)'] as const
 
@@ -33,9 +34,12 @@ export default function LandingPage() {
             <BrandLogo size="nav" href="/" priority />
             <Link
               href="/login"
-              className="text-sm font-semibold text-white bg-white/15 hover:bg-white/25 backdrop-blur-md border border-white/35 px-4 py-2 rounded-xl transition-all shadow-sm active:scale-95"
+              className="flex items-center justify-center size-[112px] rounded-full border-[3px] border-[var(--ckp-blue)] bg-white/12 hover:bg-white/22 backdrop-blur-md text-white text-sm font-semibold text-center leading-snug px-3 transition-all shadow-sm active:scale-95"
+              style={{ fontFamily: 'var(--font-body)' }}
             >
-              Intră în cont
+              Intră
+              <br />
+              în cont
             </Link>
           </nav>
 
@@ -76,12 +80,15 @@ export default function LandingPage() {
       {/* —— Cursuri pe vârstă —— */}
       <section id="cursuri" className="px-5 sm:px-8 lg:px-12 pt-10 sm:pt-14 pb-20 sm:pb-28">
         <div className="max-w-5xl mx-auto">
-          <h2
-            className="text-3xl sm:text-4xl font-semibold tracking-tight mb-3"
-            style={{ fontFamily: 'var(--font-display)' }}
-          >
-            Ce va învăța copilul tău
-          </h2>
+          <div className="flex items-center gap-3 sm:gap-4 mb-3">
+            <h2
+              className="text-3xl sm:text-4xl font-semibold tracking-tight"
+              style={{ fontFamily: 'var(--font-display)' }}
+            >
+              Ce va învăța copilul tău
+            </h2>
+            <OchiPlay />
+          </div>
           <p className="text-[var(--ckp-muted)] text-lg max-w-xl mb-14">
             În funcție de vârstă, copilul poate începe unul din aceste ateliere.
           </p>

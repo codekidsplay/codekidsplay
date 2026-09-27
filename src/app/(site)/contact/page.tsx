@@ -19,8 +19,14 @@ export default function ContactPage() {
     <div className="min-h-screen flex flex-col bg-[var(--ckp-foam)] text-[var(--ckp-ink)]">
       <header className="px-5 sm:px-8 lg:px-12 py-5 flex items-center justify-between border-b border-[var(--ckp-ink)]/10">
         <BrandLogo size="nav" href="/" />
-        <Link href="/" className="text-sm font-medium text-[var(--ckp-blue)] hover:underline">
-          Înapoi la site
+        <Link
+          href="/"
+          className="flex items-center justify-center size-[112px] rounded-full border-[3px] border-[var(--ckp-blue)] bg-white text-[var(--ckp-blue)] text-sm font-semibold text-center leading-snug px-3 hover:bg-[var(--ckp-mist)] transition-all shadow-sm active:scale-95"
+          style={{ fontFamily: 'var(--font-body)' }}
+        >
+          Înapoi
+          <br />
+          la site
         </Link>
       </header>
 
