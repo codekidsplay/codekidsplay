@@ -1,0 +1,31 @@
+Lecția trei. Nu călca pe lavă.
+
+Astăzi Scratch simte dacă atingi o culoare, un personaj sau marginea. Proiectul se numește Nu călca pe lavă. Fișierul: Prenume, linie jos, Nume, linie jos, L trei.
+
+Obiectivul. Folosești hexagoanele din Detectare în dacă atunci. Minim: o condiție dacă pe lavă, pe culoare, plus reset la start sigur. Complet: minim, plus dacă pe margine, plus monedă sau stea, atingere de personaj.
+
+De ce contează. În jocuri: lavă, monede, pereți. Personajul trebuie să știe ce a atins. Asta e Detectare.
+
+Primul pas pe ecran. Trei hexagoane utile. Atinge culoarea: Minim, lava. Atinge marginea: Complet. Atinge un personaj: Complet, moneda. Culoarea de lavă trebuie clară, roșu sau portocaliu, nu amestecată cu iarba.
+
+Al doilea pas pe ecran. Desenezi pe fundal o bandă de lavă. În hexagon, apeși pătrățelul de culoare. Cu pipeta, click pe lava de pe scenă, nu pe o culoare oarecare din paletă. Mută eroul pe lavă și pe iarbă. Vezi da versus nu.
+
+Al treilea pas pe ecran. Pattern Minim. La steag: du-te la un punct sigur, nu pe lavă, orientează-te nouăzeci, oprește sunetele. Forever pe erou. Control cu taste: dacă săgeată, atunci mergi. Tot în forever: dacă atinge culoarea lavă, atunci du-te la start, spune Ai călcat, pentru o secundă, pornește un sunet, așteaptă zero virgulă cinci. Fără așteaptă, spam.
+
+Al patrulea pas pe ecran, pentru Complet. Dacă atinge marginea, atunci întoarce cu o sută optzeci, așteaptă zero virgulă doi. Moneda e un al doilea personaj. Pe erou: dacă atinge Moneda, spune Yaay. Pe Monedă, script separat: la steag arată. Forever: dacă atinge Erou, atunci ascunde. La steag pe monedă: mereu arată, altfel dispare pe totdeauna. Fără mesaje broadcast. Asta vine la lecția opt.
+
+Greșeli frecvente. Dacă nu detectează lava, culoarea din hexagon nu e pe scenă. Re-pipetează. Dacă detectează tot fundalul, lava e prea mare sau aceeași culoare ca iarba. Dacă spam Ai călcat, lipsește așteaptă, sau startul e pe lavă. Dacă moneda nu revine, la steag pe monedă trebuie arată.
+
+Proiectul de azi. Nu călca pe lavă.
+
+Minim înseamnă: zonă lavă, control taste, o condiție dacă pe culoare, cu reset, mesaj și sunet, plus start sigur. Complet înseamnă: minim, plus margine, plus monedă. Dacă rămâi în urmă, salvează la Minim.
+
+În proiect, primul pas. Fundal cu lavă pipetată. Start pe zonă sigură. Erou cu taste în forever.
+
+În proiect, al doilea pas. Dacă lava, atunci start, mesaj, sunet, așteaptă. Zona sigură nu resetează. Salvezi.
+
+În proiect, al treilea pas, pentru Complet. Margine: întoarcere. Monedă: Yaay pe erou, ascunde pe monedă, arată la steag. Salvezi din nou.
+
+Recapitulare. Detectare înseamnă hexagoane da sau nu pentru dacă. Culoarea se ia cu pipeta pe scenă. Startul nu e pe lavă. Moneda are script pe fiecare personaj. Numele fișierului are prenumele și numele de familie.
+
+Succes la jocul tău cu lavă.

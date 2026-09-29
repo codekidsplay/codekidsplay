@@ -1,0 +1,31 @@
+Lecția șase. Ținta de scor.
+
+Astăzi compari și calculezi numere: mai mare, egal, plus, minus, în dacă. Proiectul se numește Ținta de scor. Fișierul: Prenume, linie jos, Nume, linie jos, L șase.
+
+Obiectivul. Folosești Operatori împreună cu scor ca să afișezi mesaje diferite față de o țintă. Minim: o comparație, scor versus țintă, cu mesaje diferite, pe butonul Verifică, plus reset la steag. Complet: minim, plus un calcul, plus sau minus, plus demonstrație de pierdere și victorie pe Verifică.
+
+De ce contează. Ai cinci stele e o comparație. Scor plus doi e un calcul. Fără operatori, variabilele doar stau pe ecran. Nu decid.
+
+Primul pas pe ecran. Familia de operatori. Plus și minus: adună și scade. Mai mic, egal, mai mare: compară. Comparațiile sunt hexagoane, intră în dacă. Plus și minus sunt rotunjite, intră în setează, modifică sau spune.
+
+Al doilea pas pe ecran. Setup. Scor pe scenă, pentru toți. La steag: setează scor la zero, du-te la start, anulează efectele, oprește sunetele. Ai un mod să crești scorul: stele sau click pe Bonus. Ținta aleasă, de exemplu opt, pe foaie sau pe un personaj.
+
+Al treilea pas pe ecran. Comparația doar pe butonul Verifică. Nu în forever. Altfel, cât timp ești sub țintă, vezi mereu Mai încearcă. Pe Verifică: când se dă clic pe acest personaj, dacă atunci altfel. Hexagon: scor mai mare decât șapte, pentru ținta opt. Atunci: Bravo, Ținta. Altfel: Mai încearcă. Demonstrezi ambele drumuri. Alternativă: scor egal cu opt.
+
+Al patrulea pas pe ecran. Calcule. Pe un Bonus sau o stea specială: setează scor la scor plus doi. Sau modifică cu doi. Poți spune scorul cu alătură: Ai, plus ovalul scor. Opțional, Penalty: scor minus unu.
+
+Greșeli frecvente. Dacă lanțul verde e în afara hexagonului, mută totul în dacă. Dacă modifică cu scor plus unu, e dublu. Fie modifică cu unu, fie setează la scor plus unu. Dacă mereu Mai încearcă, ai pus dacă altfel în forever. Mută-l pe click Verifică. Dacă ținta e opt și ai scor mai mare decât opt, optul nu câștigă. Folosește mai mare decât șapte, sau egal cu opt.
+
+Proiectul de azi. Ținta de scor.
+
+Minim înseamnă: scor, reset complet, o comparație pe Verifică, cu mesaje diferite. Complet înseamnă: minim, plus un calcul, plus demo pierdere și victorie. Dacă rămâi în urmă, salvează la Minim.
+
+În proiect, primul pas. Scor pe scenă. Steag cu reset. Mod de a crește scorul. Țintă aleasă.
+
+În proiect, al doilea pas. Buton Verifică cu dacă altfel pe scor versus țintă. Salvezi.
+
+În proiect, al treilea pas, pentru Complet. Un calcul, plus sau minus. Demonstrezi pierdere și victorie. Salvezi din nou.
+
+Recapitulare. Comparațiile sunt hexagoane pentru dacă. Plus și minus sunt calcule în setează. Verifici la click pe Verifică, nu în forever. Ținta trebuie să se potrivească cu egal sau mai mare. Numele fișierului are prenumele și numele de familie.
+
+Succes la ținta ta de scor.

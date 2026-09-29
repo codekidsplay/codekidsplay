@@ -1,0 +1,31 @@
+Lecția opt. Alarma.
+
+Astăzi un personaj anunță, altul reacționează, fără să se atingă neapărat. Proiectul se numește Alarma. Fișierul: Prenume, linie jos, Nume, linie jos, L opt.
+
+Obiectivul. Folosești trimite mesajul și când primesc mesajul, ca două personaje să coopereze: alarmă și liniște. Minim: testul buton către erou, mecanismul de bază. Complet: scenariul Senzor, Sirenă, Liniște, fără spam de alarmă.
+
+De ce contează. Ca în clasă: cineva strigă Pauză, toți reacționează. În Scratch, mesajul e un semnal.
+
+Primul pas pe ecran. Din Evenimente: trimite alarma, și când primesc alarma. Creezi mesajul din meniu: mesaj nou. Important: de fiecare dată când trimiți, Scratch pornește din nou scriptul când primesc. Dacă trimiți de zece ori rapid, Sirena poate avea mai multe instanțe odată. De aceea prevenim spam-ul.
+
+Al doilea pas pe ecran. Test Minim. Pe Buton: când se dă clic, trimite salut. Pe Erou: când primesc salut, spune Hei, pentru două secunde. Click pe buton. Eroul reacționează fără atingere. Numele mesajului trebuie identic la trimite și la primesc.
+
+Al treilea pas pe ecran, pentru Complet. Roluri: Senzor, Sirenă, Buton Liniște. Variabilă alarma activă, pentru toți. La steag: setează alarma activă la zero. Pe Senzor, în forever: dacă atinge pericolul, atunci dacă alarma activă egal cu zero, atunci setează alarma activă la unu, trimite alarma. Pe Buton Liniște: click, trimite liniște, setează alarma activă la zero. De ce: dacă stai tot pe pericol după Liniște, fără variabilă, Senzorul retrimite imediat și sirena se reaprinde.
+
+Al patrulea pas pe ecran. Pe Sirenă: când primesc alarma, sunet, spune Atenție, costum alertă. Când primesc liniște: oprește toate sunetele, costum normal. La steag pe toți: poziții și costume normale, oprește sunetele, anulează efectele, alarma activă la zero. Nu trimite alarma pe steag din greșeală.
+
+Greșeli frecvente. Dacă numele diferă, Alarma versus alarma, nu merge. Trebuie același mesaj din listă. Dacă spam, atingerea e continuă. Folosește alarma activă, nu doar așteaptă. Dacă Liniște apoi se reaprinde, ai resetat sunetul, dar Senzorul e tot pe pericol. Trimite doar când alarma activă e zero. Dacă ai folosit doar spune pe același personaj, azi vrem două personaje legate prin mesaj.
+
+Proiectul de azi. Alarma.
+
+Minim înseamnă: buton trimite, erou primește, fără atingere. Complet înseamnă: minim, plus Senzor, Sirenă, Liniște, plus anti-spam cu alarma activă, plus reset la steag. Dacă rămâi în urmă, salvează la Minim.
+
+În proiect, primul pas. Roluri: Minim, Buton și Erou. Complet: Senzor, Sirenă, Liniște.
+
+În proiect, al doilea pas. Click buton, eroul spune Hei. Salvezi.
+
+În proiect, al treilea pas, pentru Complet. Pericol trimite alarma o dată. Sirena reacționează. Liniște oprește și resetează flag-ul. Steag curat. Salvezi din nou.
+
+Recapitulare. Trimite și când primesc: același nume. Fiecare trimite poate porni un când primesc nou. Anti-spam: alarma activă, trimite doar dacă e zero. Liniște resetează flag-ul. Numele fișierului are prenumele și numele de familie.
+
+Succes la alarma ta.

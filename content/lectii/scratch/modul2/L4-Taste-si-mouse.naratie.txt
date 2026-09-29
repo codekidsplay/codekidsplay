@@ -1,0 +1,31 @@
+Lecția patru. Pilot în labirint.
+
+Astăzi tu controlezi eroul: săgeți sau WASD, și opțional mouse. Proiectul se numește Pilot în labirint. Fișierul: Prenume, linie jos, Nume, linie jos, L patru.
+
+Obiectivul. Miști fluid personajul cu tasta e apăsată, în forever. Minim: patru taste, reset complet, plus un obstacol, un perete care te trimite la start. Complet: minim, plus ieșire cu mesaj, cel puțin două obstacole, și opțional o demonstrație scurtă cu mouse.
+
+De ce contează. Labirinturile se joacă cu tastele. Pattern-ul e mereu același: steag, forever, dacă tasta, mișcă.
+
+Primul pas pe ecran. Pattern-ul de aur. La steag: du-te la start, anulează efectele, oprește sunetele. Forever. Patru dacă separate, nu dacă altfel. Dreapta: schimbă x cu cinci. Stânga: schimbă x cu minus cinci. Sus: schimbă y cu cinci. Jos: schimbă y cu minus cinci. Hexagonul: tasta e apăsată, din Detectare. Ordinea în forever: întâi mișcarea, apoi verificările pe perete sau ieșire.
+
+Al doilea pas pe ecran. Viteza: trei e lent, cinci e normal, opt e rapid. Alege una și ține-o. Dacă ții două săgeți odată, merge pieziș. E normal, nu greșeală.
+
+Al treilea pas pe ecran. Mouse, doar demo, Complet opțional. Hexagon: mouse-ul e apăsat. Poți du-te la indicatorul mouse-ului. Labirintul final se joacă cu tastele. Mouse-ul e bine să știi că există.
+
+Al patrulea pas pe ecran. Pereții pot fi culori pe fundal sau personaje. Ieșirea e un personaj sau o culoare verde clară. După cele patru taste, în forever: dacă atinge peretele, du-te la start. Dacă atinge ieșirea, spune Ai ajuns, plus sunet, plus așteaptă zero virgulă cinci. Fără scor azi. Scorul vine la lecțiile cinci și șase.
+
+Greșeli frecvente. Dacă se mișcă o singură dată, lipsește forever, sau ai amestecat când se apasă tasta din Evenimente cu tasta e apăsată din Detectare. Azi vrem Detectare în forever. Dacă se mișcă singur, ai un mergi în forever, în afara lui dacă. Dacă x și y sunt invers: stânga dreapta e x, sus jos e y. Dacă peretele nu simte, verificarea trebuie după mișcare, în forever.
+
+Proiectul de azi. Pilot în labirint.
+
+Minim înseamnă: reset complet, patru taste în forever, un obstacol care te trimite la start. Complet înseamnă: minim, plus ieșire cu mesaj și sunet, cel puțin două obstacole, opțional demo mouse. Dacă rămâi în urmă, salvează la Minim.
+
+În proiect, primul pas. Steag cu reset. Forever cu patru taste. Viteza aleasă.
+
+În proiect, al doilea pas. Cel puțin un obstacol. Atingere perete, reset start. Salvezi.
+
+În proiect, al treilea pas, pentru Complet. Cel puțin două obstacole. O ieșire clară, mesaj și sunet. Un coleg poate ajunge la ieșire. Salvezi din nou.
+
+Recapitulare. Control fluid înseamnă forever plus tasta e apăsată. X e stânga dreapta. Y e sus jos. Două taste înseamnă pieziș, și e ok. În forever: mișcare, apoi perete sau ieșire. Mouse e opțional. Numele fișierului are prenumele și numele de familie.
+
+Succes la pilotajul tău în labirint.

@@ -1,0 +1,33 @@
+Lecția unu. Atenție la margine.
+
+Astăzi personajul decide singur: dacă se întâmplă ceva, atunci face ceva. Proiectul se numește Atenție la margine. Fișierul: Prenume, linie jos, Nume, linie jos, L unu.
+
+Obiectivul. Folosești dacă atunci din Control, ca personajul să reacționeze când atinge marginea. Minim: o condiție dacă pe margine, plus reset la steag. Complet: minim, plus control cu tasta, a doua condiție dacă, plus sunet la margine.
+
+De ce contează. În viață: dacă plouă, atunci iei umbrela. În jocuri: dacă atingi peretele, atunci te întorci. Fără dacă, personajul face mereu același lucru.
+
+Primul pas pe ecran. Din Control iei dacă atunci. Sus e un hexagon gol: întrebarea da sau nu. Hexagonul vine din Detectare: tastă sau margine.
+
+Al doilea pas pe ecran. Test scurt cu tasta. La steagul verde pui forever. În forever: dacă tasta săgeată dreapta e apăsată, atunci mergi zece pași. Ții dreapta, merge. Lași, stă. Hexagonul trebuie în dacă, iar dacă trebuie în forever.
+
+Al treilea pas pe ecran. Nucleul Minim: pe margine. În forever: dacă atinge marginea, atunci întoarce-te la dreapta cu o sută optzeci de grade, apoi așteaptă zero virgulă doi. Fără așteaptă, se învârte de o sută de ori. Dacă după o sută optzeci apare cu capul în jos, setează stilul de rotație pe stânga dreapta.
+
+Al patrulea pas pe ecran. Ca să ajungă la margine, alege o singură metodă. Metoda A: în forever, în afara lui dacă, un mergi cinci, patrulează singur. Metoda B: dacă tasta, atunci mergi, fără mergi constant. Nu le amesteca pe amândouă.
+
+Al cincilea pas pe ecran. Chiar sub steag, înainte de forever: du-te la mijloc, orientează-te nouăzeci, oprește toate sunetele. Fără reset, la al doilea steag e haos.
+
+Greșeli frecvente. Dacă nu reacționează, dacă e lângă forever, nu în el, sau lipsește forever. Dacă hexagonul e afară, pune-l în spațiul hexagonal. Dacă se întoarce de o sută de ori, lipsește așteaptă. Dacă ai tastă și mergi constant, ai amestecat metoda A și B.
+
+Proiectul de azi. Atenție la margine.
+
+Minim înseamnă: reset, plus forever, plus o condiție dacă pe margine, cu întoarcere și așteaptă, plus o metodă de mișcare, A sau B. Complet înseamnă: minim, plus a doua condiție dacă pe tastă, plus sunet la margine. Dacă rămâi în urmă, salvează la Minim.
+
+În proiect, primul pas. La steag: loc de start, direcție, sunete oprite. O buclă forever pe personaj.
+
+În proiect, al doilea pas. Dacă atinge marginea, atunci întoarcere și așteaptă. Mișcare: doar A sau doar B. Salvezi.
+
+În proiect, al treilea pas, pentru Complet. A doua condiție dacă: tasta, mergi. La margine: un sunet scurt. Nu ai mergi constant și tasta odată. Salvezi din nou.
+
+Recapitulare. Dacă înseamnă întrebare da sau nu, plus acțiune. Hexagonul din Detectare stă în dacă. Forever verifică mereu. La steag: reset, apoi forever. Mișcare: A sau B, nu ambele. Numele fișierului are prenumele și numele de familie.
+
+Succes la atenția ta la margine.

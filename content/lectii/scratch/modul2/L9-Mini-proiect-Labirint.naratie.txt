@@ -1,0 +1,31 @@
+Lecția nouă. Labirintul meu.
+
+Astăzi pui împreună logica din Modulul doi: un labirint pe care îl controlezi, cu pereți, ieșire și restart curat. Proiectul se numește Labirintul meu. Fișierul: Prenume, linie jos, Nume, linie jos, L nouă.
+
+Obiectivul. Un labirint jucabil: taste, detectare pereți, ieșire cu mesaj și stop, steag egal restart, fără să explici regulile cu vocea. Minim: scheletul rulează. Control, un perete, o ieșire cu mesaj și stop all. Complet: minim, plus labirint plin, plus un extra: sunet, scor sau vieți.
+
+De ce contează. Lecțiile unu până la opt sunt piese. Azi e jocul tău. La lecția zece îl lustruiești și îl prezinți.
+
+Primul pas pe ecran. Reguli. Eroul se mișcă cu tastele, forever plus tasta e apăsată. Dacă atinge peretele, culoare, înapoi la start. Dacă atinge ieșirea: Ai scăpat, sunet, stop all. Steagul verde înseamnă restart curat. Minim e scheletul care rulează, nu labirintul perfect.
+
+Al doilea pas pe ecran. Ordinea bună. Fundal labirint, pereții o culoare clară. Erou mic, start pe zonă sigură. La steag: du-te la start, anulează efectele, oprește sunetele, și dacă ai, setează scor sau vieți. Forever: întâi patru direcții, schimbă x și y, apoi verificări. Dacă atinge culoarea perete, du-te la start. Ieșirea e personaj sau culoare diferită de perete.
+
+Al treilea pas pe ecran. Schelet Minim. Un perete detectat, pipetă pe pixelul de perete. O ieșire: spune Ai scăpat, pentru o secundă, pornește sunetul, stop all. Rulează o dată cap-coadă. Stop all e soluția simplă, fără spam. Variabila tip alarma activă e doar dacă la Bonus ai două ieșiri.
+
+Al patrulea pas pe ecran, pentru Complet. Completezi labirintul: mai mulți pereți, coridoare clare. Adaugi cel puțin un extra: sunet la victorie, sau vieți, sau o monedă cu scor plus unu. Un coleg poate termina fără explicație.
+
+Greșeli frecvente. Dacă peretele nu se detectează, re-pipetează. Dacă startul e pe perete, mori instant. Mută startul. Dacă viteza e prea mare, treci prin pereți. Coboară la trei sau patru. Dacă victorie spam, ai dacă ieșire în forever fără stop all. Pune stop all imediat. „Am scris” pe foaie nu înseamnă e gata. Rulează steagul.
+
+Proiectul de azi. Labirintul meu.
+
+Minim înseamnă: reset complet, control, un perete, o ieșire cu mesaj și stop all. Schelet care rulează. Complet înseamnă: minim, plus labirint plin, plus cel puțin un extra, plus un coleg poate termina. Dacă rămâi în urmă, salvează la Minim.
+
+În proiect, primul pas. Fundal clar. Erou. Start sigur. Steag egal restart.
+
+În proiect, al doilea pas. Control pe patru direcții. Perete trimite la start. Ieșire: mesaj și stop all. Salvezi.
+
+În proiect, al treilea pas, pentru Complet. Extra: sunet, scor sau vieți. Colegul termină fără voce. Salvezi din nou.
+
+Recapitulare. Control, detectare, stop all, restart. Culoarea peretelui trebuie pipetată bine. Victorie simplă înseamnă stop all. Lecția zece e completare și prezentare. Numele fișierului are prenumele și numele de familie.
+
+Succes la labirintul tău.

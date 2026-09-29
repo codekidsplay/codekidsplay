@@ -1,0 +1,31 @@
+Lecția doi. Zi sau noapte.
+
+Astăzi ai două drumuri: unul dacă e da, altul dacă e nu. Proiectul se numește Zi sau noapte. Fișierul: Prenume, linie jos, Nume, linie jos, L doi.
+
+Obiectivul. Folosești dacă atunci altfel ca să alegi între două reacții: fundal zi sau noapte, doar cu o tastă. Fără calcule mai mare sau mai mic. Minim: un dacă altfel care schimbă fundalul și mesajul, cu sau fără tasta z. Complet: minim, plus sunet pe fiecare drum, plus reset complet la steag.
+
+De ce contează. Dacă e soare, ieși afară. Altfel, stai înăuntru. În jocuri: două finaluri, două costume, două mesaje. Același dacă, dar cu plan B.
+
+Primul pas pe ecran. Din Control iei dacă atunci altfel. Sus, atunci, e drumul da. Jos, altfel, e drumul nu. Hexagonul e tot din Detectare, ca la lecția unu.
+
+Al doilea pas pe ecran. Nu verifica tasta o singură dată sub steag. Scratch o vede doar o clipă. Pui forever, iar în forever: dacă tasta z e apăsată. Atunci: spune Zi, fără durată, ca să nu blocheze bucla. Altfel: spune Noapte. Ții z, e zi. Lași, e noapte. Poți comuta de mai multe ori, fără steag din nou.
+
+Al treilea pas pe ecran. Pe Scenă adaugi două fundaluri, de exemplu zi și noapte, cu nume clare. În atunci: comută fundalul la zi, plus mesaj de dimineață. În altfel: fundal noapte, plus mesaj de noapte. Numele din bloc trebuie exact ca pe Scenă.
+
+Al patrulea pas pe ecran. Chiar sub steag, înainte de forever: comută fundalul la start, anulează efectele dacă le folosești, și la Complet oprește toate sunetele. Opțional, un spune scurt cu regula, pentru două secunde, apoi bucla preia controlul.
+
+Greșeli frecvente. Dacă mereu același drum, ai pus dacă altfel o singură dată, fără forever. Dacă mesajele se blochează, ai folosit spune pentru secunde în forever. Folosește spune fără durată. Dacă ai două dacă separate, azi vrem un singur dacă altfel. Dacă ai operator verde în hexagon, scoate-l. Doar Detectare, tasta. La Complet, după sunet: așteaptă zero virgulă cinci, ca să nu spam-uiască.
+
+Proiectul de azi. Zi sau noapte.
+
+Minim înseamnă: forever, plus un dacă altfel pe tasta z, fundal și mesaj pe fiecare drum, plus reset fundal la steag. Complet înseamnă: minim, plus sunet pe fiecare drum, plus reset complet. Dacă rămâi în urmă, salvează la Minim.
+
+În proiect, primul pas. Două fundaluri: zi și noapte. La steag: fundal de start curat.
+
+În proiect, al doilea pas. Dacă altfel în forever, cu tasta z. Atunci: zi. Altfel: noapte. Demonstrezi ambele drumuri. Salvezi.
+
+În proiect, al treilea pas, pentru Complet. Pe fiecare drum: un sunet diferit, plus așteaptă. La steag: fundal, anulează efectele, oprește sunetele. Salvezi din nou.
+
+Recapitulare. Atunci înseamnă da. Altfel înseamnă nu. Un singur hexagon decide drumul, verificat mereu în forever. Ții tasta înainte sau în timpul rulării. Fără operatori numerici azi. Numele fișierului are prenumele și numele de familie.
+
+Succes la ziua sau noaptea ta.

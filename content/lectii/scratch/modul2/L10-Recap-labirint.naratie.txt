@@ -1,0 +1,33 @@
+Lecția zece. Completare și prezentare.
+
+Astăzi termini labirintul, îl arăți clasei, și primești insigna Logic Explorer. Nu refaci de la zero. Deschizi proiectul de la lecția nouă și adaugi. Fișierul rămâne Prenume, linie jos, Nume, linie jos, L nouă. Sau o copie L zece, ca să nu strici versiunea veche.
+
+Obiectivul. Ai îmbunătățit labirintul, l-ai prezentat, și ai închis Modulul doi. Minim: o îmbunătățire din lista A până la F, plus restart curat, plus prezentare. Asta e suficient pentru insignă. Complet: două îmbunătățiri, plus prezentare, plus salvare.
+
+De ce contează. Proiectele bune se refac o dată, apoi se arată. Insigna Logic Explorer înseamnă: logica e la activ. Dacă, detectare, variabile, mesaje. Urmează Modulul trei: Jocuri.
+
+Lista de completări. A: monedă sau stea, scor plus unu. B: capcană, vieți minus unu. C: mesaj victorie, schimbă fundalul, broadcast. D: buton Joacă din nou. E: al doilea nivel, alt fundal. F: obstacol mobil, stânga dreapta. Minim înseamnă o literă testată. Complet înseamnă două litere. Nu începe a doua până prima nu rulează pe steag.
+
+Primul pas pe ecran. Alegi o literă pentru Minim. Alegi și o a doua țintă pentru Complet, pe care o faci după ce prima e gata. La minutul cincizeci și cinci prezinți oricum. Cu una e suficient pentru insignă.
+
+Al doilea pas pe ecran. Înainte să adaugi: verifică steagul. Reset complet: loc start, efecte anulate, sunete oprite, scor și vieți la zero sau trei, dacă există. Lipești o îmbunătățire. Steag de două ori. Labirintul încă se poate termina. Salvezi.
+
+Al treilea pas pe ecran. Reguli de prezentare. În unu sau două minute: eroul meu e, dacă ating peretele, azi am adăugat. Apeși steagul. Lasă demo-ul să ruleze. Clasa: aplauze și un compliment. Tu: Mulțumesc.
+
+Al patrulea pas pe ecran. Recap pe scurt cu profesorul. Dacă și dacă altfel. Detectare: culoare, personaj, margine. Taste și forever. Variabile și operatori. Stop și mesaje. Apoi: în Modulul trei apar jocurile, scor, nivele, clone.
+
+Greșeli frecvente. Dacă upgrade-ul strică controlul, viteză prea mare. Coboară viteza. Dacă la prezentare e haos, resetează înainte. Dacă încerci două upgrade-uri netestate, la prezentare e stricat. Fă una, testează, apoi a doua. Dacă crezi că fără două n-ai reușit: una plus prezentare egal Minim, egal insignă.
+
+Proiectul de azi. Completare pe Labirintul meu.
+
+Minim înseamnă: o îmbunătățire din A până la F, restart curat, prezentare, salvare. Complet înseamnă: două îmbunătățiri, prezentare, salvare. Dacă ai doar Minim, tot primești insigna.
+
+În proiect, primul pas. O completare din A până la F. Steag de două ori. Salvezi.
+
+În proiect, al doilea pas. Prezinți: cine, reguli, ce ai adăugat. Steag. Mulțumesc.
+
+În proiect, al treilea pas, pentru Complet. A doua completare, testată. Salvezi din nou. Insigna Logic Explorer.
+
+Recapitulare. Adaugi, nu refaci. O completare pentru Minim. Două pentru Complet. Prezinți scurt. Steagul trebuie să meargă. Ai terminat Modulul doi. Bravo.
+
+Succes la prezentarea ta.

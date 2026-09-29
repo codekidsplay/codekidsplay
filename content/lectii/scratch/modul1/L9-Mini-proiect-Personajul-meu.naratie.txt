@@ -16,7 +16,7 @@ Al treilea pas pe ecran. Introducere: cine e, cu spune sau gândește. Acțiune:
 
 Al patrulea pas pe ecran. Scheletul minim: reset, un spune cu numele, un repetă șase sau un traseu scurt, un sunet, spune la final. Rulează o dată. Verifică că merge curat. Nu cronometra încă.
 
-Greșeli frecvente. Dacă la steag e haos, lipsește resetul. Dacă e prea scurt, adaugă așteaptă. Dacă Gata apare de zece ori, finalul e în repetă. Mută-l sub buclă. Dacă ai C în C, scoate. Dacă nu se aude, verifică tab Sunete și oprește toate sunetele pe steag. Am scris nu înseamnă e gata. Rulează steagul de două ori.
+Greșeli frecvente. Dacă la steag e haos, lipsește resetul. Dacă e prea scurt, adaugă așteaptă. Dacă Gata apare de zece ori, finalul e în repetă. Mută-l sub buclă. Dacă ai C în C, scoate. Dacă nu se aude, verifică tab Sunete și oprește toate sunetele pe steag. „Am scris, deci e gata” e greșit. Rulează steagul de două ori.
 
 Proiectul de azi. Personajul meu.
 
