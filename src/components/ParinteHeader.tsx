@@ -2,7 +2,7 @@
 
 import { useRouter } from 'next/navigation'
 import { LogOut } from 'lucide-react'
-import { logout } from '@/lib/auth'
+import { logoutClient } from '@/lib/auth'
 import BrandLogo from '@/components/BrandLogo'
 
 export default function ParinteHeader({ email }: { email: string }) {
@@ -21,8 +21,7 @@ export default function ParinteHeader({ email }: { email: string }) {
         <button
           type="button"
           onClick={() => {
-            logout()
-            router.replace('/login')
+            void logoutClient().then(() => router.replace('/login'))
           }}
           className="inline-flex items-center gap-2 text-sm text-slate-500 hover:text-slate-800"
         >

@@ -142,10 +142,13 @@ export function getSession(): Session | null {
   }
 }
 
-function setSession(session: Session | null) {
+export function setSession(session: Session | null) {
   if (typeof window === 'undefined') return
-  if (!session) localStorage.removeItem(SESSION_KEY)
-  else localStorage.setItem(SESSION_KEY, JSON.stringify(session))
+  if (!session) {
+    localStorage.removeItem(SESSION_KEY)
+    return
+  }
+  localStorage.setItem(SESSION_KEY, JSON.stringify(session))
 }
 
 /** Adaugă un cursant pe lista profesorului (mock) și actualizează sesiunea. */
@@ -172,6 +175,20 @@ export function adaugaCursantLaProfesorSesiune(cursantId: string, profesorEmail?
 
 export function logout() {
   setSession(null)
+}
+
+/** Logout local + Supabase (când e configurat). */
+export async function logoutClient(): Promise<void> {
+  setSession(null)
+  try {
+    const { isSupabaseConfiguredClient } = await import('@/lib/supabase/publicFlag')
+    if (isSupabaseConfiguredClient()) {
+      const { logoutAction } = await import('@/app/actions/auth')
+      await logoutAction()
+    }
+  } catch {
+    /* ignore */
+  }
 }
 
 export type LoginResult =

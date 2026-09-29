@@ -11,7 +11,7 @@ import {
   LogOut,
   GraduationCap,
 } from 'lucide-react'
-import { getSession, logout } from '@/lib/auth'
+import { getSession, logoutClient } from '@/lib/auth'
 import { useEffect, useState } from 'react'
 import BrandLogo from '@/components/BrandLogo'
 
@@ -90,8 +90,7 @@ export default function Sidebar() {
         <button
           type="button"
           onClick={() => {
-            logout()
-            router.replace('/login')
+            void logoutClient().then(() => router.replace('/login'))
           }}
           className="w-full flex items-center gap-3 px-4 py-3 rounded-xl text-slate-400 hover:bg-slate-800 hover:text-white transition-all"
         >

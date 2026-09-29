@@ -5,7 +5,7 @@ import { useRouter } from 'next/navigation'
 import { LogOut } from 'lucide-react'
 import RequireAuth from '@/components/RequireAuth'
 import BrandLogo from '@/components/BrandLogo'
-import { getSession, logout } from '@/lib/auth'
+import { getSession, logoutClient } from '@/lib/auth'
 import { useEffect, useState } from 'react'
 
 function ElevChrome({ children }: { children: React.ReactNode }) {
@@ -33,8 +33,7 @@ function ElevChrome({ children }: { children: React.ReactNode }) {
           <button
             type="button"
             onClick={() => {
-              logout()
-              router.replace('/login')
+              void logoutClient().then(() => router.replace('/login'))
             }}
             className="inline-flex items-center gap-2 text-sm text-slate-500 hover:text-slate-800 transition-colors"
           >
