@@ -15,11 +15,14 @@ function isUuid(id: string): boolean {
   return /^[0-9a-f-]{36}$/i.test(id)
 }
 
-/** Verifică rolul apelantului + acces la cursant (admin = orice cursant, profesor = doar asignat). */
-async function verificaAcces(cursantId: string): Promise<
-  | { ok: true; userId: string; client: ReturnType<typeof createAdminClient> }
-  | { ok: false; error: string }
-> {
+type AccesOk = { ok: true; userId: string; client: ReturnType<typeof createAdminClient>; rol: string }
+type AccesFail = { ok: false; error: string }
+
+/** Acces staff (scriere) sau părinte/elev pe propriul cursant (citire). */
+async function verificaAcces(
+  cursantId: string,
+  mode: 'read' | 'write' = 'write',
+): Promise<AccesOk | AccesFail> {
   if (!isSupabaseConfigured()) return { ok: false, error: 'Supabase nu e configurat.' }
   if (!isUuid(cursantId)) return { ok: false, error: 'ID cursant invalid.' }
 
@@ -31,12 +34,14 @@ async function verificaAcces(cursantId: string): Promise<
 
   const { data: profile } = await client
     .from('profile')
-    .select('rol')
+    .select('rol, cursant_id')
     .eq('id', auth.user.id)
     .maybeSingle()
 
-  if (!profile || (profile.rol !== 'admin' && profile.rol !== 'profesor')) {
-    return { ok: false, error: 'Acces interzis.' }
+  if (!profile) return { ok: false, error: 'Acces interzis.' }
+
+  if (profile.rol === 'admin') {
+    return { ok: true, userId: auth.user.id, client, rol: profile.rol }
   }
 
   if (profile.rol === 'profesor') {
@@ -47,12 +52,29 @@ async function verificaAcces(cursantId: string): Promise<
       .eq('cursant_id', cursantId)
       .maybeSingle()
     if (!link) return { ok: false, error: 'Nu ai acces la acest cursant.' }
+    return { ok: true, userId: auth.user.id, client, rol: profile.rol }
   }
 
-  return { ok: true, userId: auth.user.id, client }
+  if (mode === 'read' && profile.rol === 'parinte') {
+    const { data: link } = await client
+      .from('parinte_cursanti')
+      .select('cursant_id')
+      .eq('parinte_id', auth.user.id)
+      .eq('cursant_id', cursantId)
+      .maybeSingle()
+    if (!link) return { ok: false, error: 'Nu ai acces la acest cursant.' }
+    return { ok: true, userId: auth.user.id, client, rol: profile.rol }
+  }
+
+  if (mode === 'read' && profile.rol === 'elev' && profile.cursant_id === cursantId) {
+    return { ok: true, userId: auth.user.id, client, rol: profile.rol }
+  }
+
+  return { ok: false, error: 'Acces interzis.' }
 }
 
 export type ProgresCursantData = {
+  cursant: { id: string; prenume: string; nume: string } | null
   inscrieri: Array<{
     id: string
     cursant_id: string
@@ -69,23 +91,46 @@ export type ProgresCursantData = {
   }>
   abonament: {
     id: string
+    tip: string
     sedinte_incluse: number
     sedinte_ramase: number
   } | null
+  sedinte: Array<{
+    id: string
+    cursant_id: string
+    abonament_id: string
+    data: string
+    prezent: boolean
+    consuma_sedinta: boolean
+    lectie_id: string | null
+    nota: string | null
+  }>
 }
 
 export async function getProgresCursantAction(
   cursantId: string,
 ): Promise<{ ok: true; data: ProgresCursantData } | { ok: false; error: string }> {
-  const acces = await verificaAcces(cursantId)
+  const acces = await verificaAcces(cursantId, 'read')
   if (!acces.ok) return acces
   const { client } = acces
 
-  const [{ data: inscrieri }, { data: progres }, { data: abonament }] = await Promise.all([
-    client.from('inscrieri').select('id, cursant_id, curs_id, modul_activ_id, activ').eq('cursant_id', cursantId),
-    client.from('progres').select('id, cursant_id, lectie_id, bifat, data_bifat').eq('cursant_id', cursantId),
-    client.from('abonamente').select('id, sedinte_incluse').eq('cursant_id', cursantId).eq('activ', true).maybeSingle(),
-  ])
+  const [{ data: cursant }, { data: inscrieri }, { data: progres }, { data: abonament }, { data: sedinte }] =
+    await Promise.all([
+      client.from('cursanti').select('id, prenume, nume').eq('id', cursantId).maybeSingle(),
+      client.from('inscrieri').select('id, cursant_id, curs_id, modul_activ_id, activ').eq('cursant_id', cursantId),
+      client.from('progres').select('id, cursant_id, lectie_id, bifat, data_bifat').eq('cursant_id', cursantId),
+      client
+        .from('abonamente')
+        .select('id, tip, sedinte_incluse')
+        .eq('cursant_id', cursantId)
+        .eq('activ', true)
+        .maybeSingle(),
+      client
+        .from('sedinte')
+        .select('id, cursant_id, abonament_id, data, prezent, consuma_sedinta, lectie_id, nota')
+        .eq('cursant_id', cursantId)
+        .order('data', { ascending: false }),
+    ])
 
   let ab: ProgresCursantData['abonament'] = null
   if (abonament) {
@@ -96,6 +141,7 @@ export async function getProgresCursantAction(
       .eq('consuma_sedinta', true)
     ab = {
       id: abonament.id,
+      tip: abonament.tip,
       sedinte_incluse: abonament.sedinte_incluse,
       sedinte_ramase: abonament.sedinte_incluse - (count ?? 0),
     }
@@ -103,7 +149,13 @@ export async function getProgresCursantAction(
 
   return {
     ok: true,
-    data: { inscrieri: inscrieri ?? [], progres: progres ?? [], abonament: ab },
+    data: {
+      cursant: cursant ?? null,
+      inscrieri: inscrieri ?? [],
+      progres: progres ?? [],
+      abonament: ab,
+      sedinte: sedinte ?? [],
+    },
   }
 }
 
@@ -111,7 +163,7 @@ export async function toggleInscriereCursAction(
   cursantId: string,
   cursId: string,
 ): Promise<{ ok: true; inscris: boolean } | { ok: false; error: string }> {
-  const acces = await verificaAcces(cursantId)
+  const acces = await verificaAcces(cursantId, 'write')
   if (!acces.ok) return acces
   const { client } = acces
 
@@ -146,7 +198,7 @@ export async function setModulActivAction(
   inscriereId: string,
   modulId: string,
 ): Promise<{ ok: true } | { ok: false; error: string }> {
-  const acces = await verificaAcces(cursantId)
+  const acces = await verificaAcces(cursantId, 'write')
   if (!acces.ok) return acces
   const { client } = acces
 
@@ -183,7 +235,7 @@ export async function bifareLectieAction(cursantId: string, lectieId: string): P
     ...extra,
   })
 
-  const acces = await verificaAcces(cursantId)
+  const acces = await verificaAcces(cursantId, 'write')
   if (!acces.ok) return empty({ error: acces.error })
   const { client, userId } = acces
 
@@ -222,16 +274,22 @@ export async function bifareLectieAction(cursantId: string, lectieId: string): P
     return sedinteIncluse - (count ?? 0)
   }
 
-  // Debifare: scoate unlock acasă; NU refundăm; păstrăm consum_sedinta_aplicat
   if (currentlyBifat) {
     if (existing) {
       await client.from('progres').update({ bifat: false, data_bifat: null }).eq('id', existing.id)
     }
     const ramase = abonament ? await sedinteRamaseFn(abonament.id, abonament.sedinte_incluse) : null
-    return { ok: true, bifat: false, consumNou: false, sedinteRamase: ramase, alertaSold: false, emailTrimis: false, whatsappMesaj: null }
+    return {
+      ok: true,
+      bifat: false,
+      consumNou: false,
+      sedinteRamase: ramase,
+      alertaSold: false,
+      emailTrimis: false,
+      whatsappMesaj: null,
+    }
   }
 
-  // Bifare: doar din modulul asociat
   const { data: inscriereOk } = await client
     .from('inscrieri')
     .select('id')

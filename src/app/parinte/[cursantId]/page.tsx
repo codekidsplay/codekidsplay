@@ -8,12 +8,10 @@ import ParinteHeader from '@/components/ParinteHeader'
 import CursantAvatar from '@/components/CursantAvatar'
 import { getSession, type Session } from '@/lib/auth'
 import { cursanti, lectii } from '@/lib/mockData'
-import { getStore } from '@/lib/mockStore'
-import {
-  istoriculSedinte,
-  progresPeModule,
-  rezumatCopil,
-} from '@/lib/parinteStats'
+import { listCopiiParinteAction, type CopilParinte } from '@/app/actions/cursanti'
+import { getProgresCursantAction, type ProgresCursantData } from '@/app/actions/progres'
+import { progresPeModuleLive, rezumatDinProgres } from '@/lib/progresLive'
+import { isSupabaseConfiguredClient } from '@/lib/supabase/publicFlag'
 import { ArrowLeft, CheckCircle2, Circle } from 'lucide-react'
 
 function ParinteCopilDetail() {
@@ -22,16 +20,63 @@ function ParinteCopilDetail() {
   const cursantId = params.cursantId
   const [session, setSession] = useState<Extract<Session, { rol: 'parinte' }> | null>(null)
   const [ready, setReady] = useState(false)
+  const [cursant, setCursant] = useState<CopilParinte | null>(null)
+  const [progres, setProgres] = useState<ProgresCursantData | null>(null)
 
   useEffect(() => {
     const s = getSession()
-    if (s?.rol === 'parinte') {
-      setSession(s)
-      if (!s.cursant_ids.includes(cursantId)) {
-        router.replace('/parinte')
+    if (s?.rol === 'parinte') setSession(s)
+
+    if (!isSupabaseConfiguredClient()) {
+      if (s?.rol === 'parinte') {
+        if (!s.cursant_ids.includes(cursantId)) {
+          router.replace('/parinte')
+          setReady(true)
+          return
+        }
+        const mock = cursanti.find(c => c.id === cursantId)
+        if (mock) {
+          setCursant({
+            id: mock.id,
+            nume: mock.nume,
+            prenume: mock.prenume,
+            email_parinte: mock.email_parinte,
+            telefon_parinte: mock.telefon_parinte,
+            activ: mock.activ,
+          })
+        }
       }
+      setReady(true)
+      return
     }
-    setReady(true)
+
+    void (async () => {
+      const r = await listCopiiParinteAction()
+      if (!r.ok || !r.cursant_ids.includes(cursantId)) {
+        router.replace('/parinte')
+        setReady(true)
+        return
+      }
+      try {
+        const raw = localStorage.getItem('ckp-session-v1')
+        if (raw) {
+          const prev = JSON.parse(raw) as Session
+          if (prev.rol === 'parinte') {
+            localStorage.setItem(
+              'ckp-session-v1',
+              JSON.stringify({ ...prev, cursant_ids: r.cursant_ids }),
+            )
+            setSession({ ...prev, cursant_ids: r.cursant_ids })
+          }
+        }
+      } catch {
+        /* ignore */
+      }
+      setCursant(r.data.find(c => c.id === cursantId) ?? null)
+      const p = await getProgresCursantAction(cursantId)
+      if (p.ok) setProgres(p.data)
+      setReady(true)
+    })()
   }, [cursantId, router])
 
   if (!ready || !session) {
@@ -42,9 +87,6 @@ function ParinteCopilDetail() {
     )
   }
 
-  if (!session.cursant_ids.includes(cursantId)) return null
-
-  const cursant = cursanti.find(c => c.id === cursantId)
   if (!cursant) {
     return (
       <div className="min-h-screen bg-slate-50">
@@ -59,9 +101,18 @@ function ParinteCopilDetail() {
     )
   }
 
-  const store = getStore()
-  const r = rezumatCopil(cursantId, store)
-  const sedinte = istoriculSedinte(cursantId, store)
+  const r = progres
+    ? rezumatDinProgres(cursantId, progres)
+    : {
+        sedinteRamase: null as number | null,
+        sedinteIncluse: null as number | null,
+        tipAbonament: null as string | null,
+        lectiiBifate: 0,
+        lectiiTotal: 0,
+        procent: 0,
+        cursuri: [] as ReturnType<typeof rezumatDinProgres>['cursuri'],
+      }
+  const sedinte = progres?.sedinte ?? []
 
   const soldLabel =
     r.sedinteRamase === null
@@ -107,9 +158,7 @@ function ParinteCopilDetail() {
           </p>
           <p className="font-semibold text-lg">{soldLabel}</p>
           {r.sedinteRamase !== null && r.sedinteRamase <= 0 && (
-            <p className="text-sm mt-1 opacity-80">
-              Contactează profesorul pentru reînnoire.
-            </p>
+            <p className="text-sm mt-1 opacity-80">Contactează profesorul pentru reînnoire.</p>
           )}
         </div>
 
@@ -122,7 +171,9 @@ function ParinteCopilDetail() {
           ) : (
             <div className="space-y-4">
               {r.cursuri.map(curs => {
-                const moduleInfo = progresPeModule(cursantId, curs.id, store)
+                const moduleInfo = progres
+                  ? progresPeModuleLive(curs.id, progres)
+                  : []
                 return (
                   <div
                     key={curs.id}

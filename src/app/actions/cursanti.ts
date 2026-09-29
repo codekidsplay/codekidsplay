@@ -567,3 +567,70 @@ export async function getProfesoriCursantAction(
   if (error) return { ok: false, error: error.message, profesor_ids: [] }
   return { ok: true, profesor_ids: (data ?? []).map(r => r.profesor_id) }
 }
+
+export type CopilParinte = {
+  id: string
+  nume: string
+  prenume: string
+  email_parinte: string
+  telefon_parinte: string | null
+  activ: boolean
+}
+
+/** Copiii legați de contul părinte logat (`parinte_cursanti`). */
+export async function listCopiiParinteAction(): Promise<
+  | { ok: true; data: CopilParinte[]; cursant_ids: string[] }
+  | { ok: false; error: string; data: []; cursant_ids: [] }
+> {
+  if (!isSupabaseConfigured()) {
+    return { ok: false, error: 'unconfigured', data: [], cursant_ids: [] }
+  }
+  const supabase = await createClient()
+  const { data: auth } = await supabase.auth.getUser()
+  if (!auth.user) {
+    return { ok: false, error: 'Neautentificat', data: [], cursant_ids: [] }
+  }
+
+  const admin = isSupabaseAdminConfigured() ? createAdminClient() : null
+  const client = admin ?? supabase
+
+  const { data: profile } = await client
+    .from('profile')
+    .select('rol')
+    .eq('id', auth.user.id)
+    .maybeSingle()
+  if (!profile || profile.rol !== 'parinte') {
+    return { ok: false, error: 'Acces interzis', data: [], cursant_ids: [] }
+  }
+
+  const { data: links, error: linkErr } = await client
+    .from('parinte_cursanti')
+    .select('cursant_id')
+    .eq('parinte_id', auth.user.id)
+  if (linkErr) {
+    return { ok: false, error: linkErr.message, data: [], cursant_ids: [] }
+  }
+
+  const ids = (links ?? []).map(l => l.cursant_id)
+  if (ids.length === 0) return { ok: true, data: [], cursant_ids: [] }
+
+  const { data, error } = await client
+    .from('cursanti')
+    .select('id, nume, prenume, email_parinte, telefon_parinte, activ')
+    .in('id', ids)
+    .order('prenume', { ascending: true })
+  if (error) return { ok: false, error: error.message, data: [], cursant_ids: [] }
+
+  return {
+    ok: true,
+    data: (data ?? []).map(c => ({
+      id: c.id,
+      nume: c.nume,
+      prenume: c.prenume,
+      email_parinte: c.email_parinte,
+      telefon_parinte: c.telefon_parinte,
+      activ: c.activ,
+    })),
+    cursant_ids: ids,
+  }
+}
