@@ -8,6 +8,8 @@ import { ArrowLeft, ArrowRight, CheckCircle2, Lock } from 'lucide-react'
 import { useElevCursantId } from '@/hooks/useElevCursantId'
 import { useProgresCursant } from '@/hooks/useProgresCursant'
 import LectieMarkdown from '@/components/LectieMarkdown'
+import AscultaScratchM1 from '@/components/AscultaScratchM1'
+import { SCRATCH_M1_MODUL_ID, isScratchM1Lesson } from '@/lib/scratchM1'
 
 export default function InvataLectiePage() {
   const params = useParams<{ cursId: string; lectieId: string }>()
@@ -85,6 +87,10 @@ export default function InvataLectiePage() {
         <div className="flex items-center gap-2 text-emerald-600 text-sm font-medium mb-4">
           <CheckCircle2 size={18} /> Deblocată de profesor — poți citi acasă
         </div>
+
+        {modul.id === SCRATCH_M1_MODUL_ID && isScratchM1Lesson(lectie.ordine) ? (
+          <AscultaScratchM1 ordine={lectie.ordine} accentColor={curs.culoare} />
+        ) : null}
 
         {markdown ? (
           <LectieMarkdown markdown={markdown} accentColor={curs.culoare} />
