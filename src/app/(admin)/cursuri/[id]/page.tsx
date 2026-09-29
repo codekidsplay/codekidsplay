@@ -3,6 +3,7 @@ import { hasLectieContent } from '@/lib/lectiiContent'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import { ArrowLeft, BookOpen, ChevronRight, FileText } from 'lucide-react'
+import ModulNivelBadge from '@/components/ModulNivelBadge'
 
 export default async function CursDetaliuPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params
@@ -47,8 +48,14 @@ export default async function CursDetaliuPage({ params }: { params: Promise<{ id
                 <BookOpen size={16} style={{ color: curs.culoare }} />
               </div>
               <div>
-                <h3 className="font-bold text-slate-900">{modul.nume}</h3>
-                <p className="text-slate-400 text-xs">{modul.lectii.length} lecții</p>
+                <h3 className="font-bold text-slate-900 inline-flex flex-wrap items-center gap-2">
+                  {modul.nume}
+                  {'nivel' in modul ? <ModulNivelBadge nivel={modul.nivel} /> : null}
+                </h3>
+                {'descriere' in modul && modul.descriere ? (
+                  <p className="text-sm text-slate-500 mt-0.5">{modul.descriere}</p>
+                ) : null}
+                <p className="text-slate-400 text-xs mt-0.5">{modul.lectii.length} lecții</p>
               </div>
             </div>
             <div className="p-3 space-y-1">

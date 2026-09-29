@@ -1,0 +1,29 @@
+Lecția opt. Apasă Start.
+
+Astăzi jocul are un meniu. Nu începe la întâmplare. Începe după ce apeși butonul Start. Deschizi proiectul din lecția șapte și salvezi ca Prenume, linie jos, Nume, linie jos, M trei, linie jos, L opt. Proiectul se numește Apasă Start.
+
+Obiectivul. Folosești trimite și când primesc, ca la Modulul doi, lecția opt. Jocul așteaptă clic pe Start. Minim: meniu cu titlu și buton, Start pornește jocul, butonul se ascunde, variabilele se resetează la Start. Complet: minim, plus revino meniu la final, cu toate scripturile de joc oprite, plus Start din nou fără steag.
+
+De ce contează. Fără meniu, jocul fuge din prima secundă. Steagul verde pregătește scena. Start e când jucătorul decide.
+
+Primul pas pe ecran. Două momente. Steag egal meniu: arată Titlu și Start, ascunde eroul, monedele, obstacolele. Click Start egal jocul: ascunde meniul, arată eroul, resetează scor, vieți, nivel, timp, pornește totul. Legătura: mesajul start joc.
+
+Al doilea pas pe ecran. Pe Buton Start: când se dă clic, trimite start joc, ascunde. Pe Titlu: când primesc start joc, ascunde. Pe Erou și Monedă: când primesc start joc, setează scor la zero, și celelalte variabile, arată, pornește forever sau generatorul. De ce reset la Start, nu doar la steag: dacă termini, revii la meniu și apeși Start fără steag, scorul trebuie din nou zero.
+
+Al treilea pas pe ecran, pentru Complet. La victorie sau Game Over: trimite revino meniu. Pe Titlu și Buton: când primesc, arată. Pe Erou: ascunde, oprește alte scripturi din personaj. Nu doar oprește acest script. Mișcarea poate rula în fundal. Pe Monedă: la fel. Altfel monedele tot cad în meniu. Același tipar pe Obstacol dacă are forever.
+
+Greșeli frecvente. Dacă jocul pornește fără Start, forever e la steag, nu în când primesc start joc. Dacă numele mesajului diferă, nu merge. Dacă butonul rămâne, uiți ascunde. Dacă revii la meniu dar jocul rulează, ai folosit oprește acest script. Trebuie oprește alte scripturi din personaj pe Erou și Monedă. Dacă al doilea Start păstrează scorul vechi, mută setează în când primesc start joc.
+
+Proiectul de azi. Apasă Start.
+
+Minim înseamnă: meniu, Start trimite, joc pornește, reset la Start, buton ascuns. Complet înseamnă: minim, plus revino meniu, plus oprire pe Erou și Monedă. Dacă rămâi în urmă, salvează la Minim.
+
+În proiect, primul pas. Titlu și Start. Steag: doar meniul.
+
+În proiect, al doilea pas. Click Start: joc curat, scor zero. Salvezi.
+
+În proiect, al treilea pas, pentru Complet. Final: meniu. Start din nou fără steag. Salvezi din nou.
+
+Recapitulare. Steag egal meniu. Start egal joc plus reset. Trimite și când primesc: același nume. La meniu: oprește alte scripturi din personaj pe Erou și Monedă. Numele fișierului are prenumele, numele, M trei și L opt.
+
+Succes la meniul tău Start.

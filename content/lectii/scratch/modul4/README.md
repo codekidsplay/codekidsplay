@@ -1,6 +1,7 @@
 # Scratch Modul 4 — Lista lecțiilor
 
 **Code Kids Play** · Proiecte & autonomie · Badge: **Scratch Creator**  
+**Proiecte:** 6 proiecte · 1 Creator (L1→L6→L7) + 5 antrenamente (L2–L5, L8).  
 **Limbaj:** clar, **8–10 ani** · ritm dens (warm-up → proiect gata în oră)  
 **Cei rapizi:** **Bonus / Provocare** pe fiecare lecție.  
 **Stil:** același schelet ca Modul 1–3 (Obiectiv, Minim/Complet, Pas cu pas, Greșeli, Schema pe scurt, Quiz).  

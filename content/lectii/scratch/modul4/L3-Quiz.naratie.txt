@@ -1,0 +1,31 @@
+Lecția trei. Quiz pe runde.
+
+Astăzi construiești un quiz pe runde: scor pe scenă, feedback, trecere Runda unu la Runda doi, final clar. Nu deschizi motorul. Fișier nou: Prenume, linie jos, Nume, linie jos, M patru, linie jos, L trei. Proiectul se numește Quiz pe runde.
+
+Obiectivul. Cineva termină ambele runde fără ajutor și vede scorul final. Minim: cel puțin șase întrebări, două runde vizibile, scor pe scenă, feedback corect și greșit, nu poți sări întrebarea, mesaj final X din N, steag egal restart Runda unu. Complet: minim, plus Runda trei, sau vieți cu trei greșeli egal Sfârșitul jocului, sau timer pe o întrebare.
+
+De ce contează. Quiz-ul e nivele de întrebări. Aceleași idei ca trecerea de nivel și scorul pe scenă din Modulul trei. Dacă tipul tău la motor e quiz, azi e antrenamentul pentru lecția șase.
+
+Primul pas pe ecran. Pe foaie, cinci minute: șase linii cu răspunsul corect, Runda unu ușor, Runda doi greu. Textul lung al întrebării îl pui în Scratch.
+
+Al doilea pas pe ecran. Variabila scor pe Scenă, vizibilă. La steag: setează scor la zero, semnal Runda unu, oprește sunetele. Pentru fiecare întrebare: afișezi textul, răspuns cu taste unu doi trei sau butoane, dacă corect atunci schimbă scor cu unu plus Corect, altfel feedback greșit obligatoriu, abia apoi trimite următoarea. Fără răspuns, nu treci.
+
+Al treilea pas pe ecran. După Runda unu: trimite Runda doi, întrebări mai grele. La final: mesaj X din N, cu valoarea scor. Steag egal mereu Runda unu. Cel puțin șase întrebări pe cele două runde.
+
+Al patrulea pas pe ecran, pentru Complet. Runda trei, sau vieți, sau timer pe o întrebare.
+
+Greșeli frecvente. Prea mult pe foaie. Scor pe personaj, nu pe Scenă. Fără feedback la greșit. Poți sări întrebarea. Runda doi aceleași întrebări. Final fără număr. Reset incomplet.
+
+Proiectul de azi. Quiz pe runde.
+
+Minim înseamnă: șase întrebări, două runde, scor, feedback corect și greșit, fără sărituri, final X din N, restart. Complet înseamnă: minim plus una din cele trei variante. Dacă rămâi în urmă, salvează la Minim.
+
+În proiect, primul pas. Lista pe foaie. Scor pe Scenă.
+
+În proiect, al doilea pas. Flux complet pe ambele runde. Salvezi.
+
+În proiect, al treilea pas, pentru Complet. Extinzi presiunea. Salvezi din nou.
+
+Recapitulare. Rundă egal nivel de întrebări. Scor pe Scenă. Feedback la corect și greșit. Fișier M patru L trei. Numele fișierului are prenumele, numele, M patru și L trei.
+
+Succes la quiz-ul tău pe runde.

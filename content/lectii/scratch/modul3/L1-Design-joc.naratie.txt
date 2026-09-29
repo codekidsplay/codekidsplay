@@ -1,0 +1,33 @@
+Lecția unu. Jocul meu pe hârtie și pe scenă.
+
+Astăzi proiectezi un joc pe hârtie, apoi îl construiești pe scenă: erou care se mișcă, un obstacol și o țintă. Este proiect nou. Nu continui labirintul din Modulul doi. Fișierul: Prenume, linie jos, Nume, linie jos, M trei, linie jos, L unu.
+
+Obiectivul. Ai o foaie cu regulile jocului și o scenă Scratch cu erou, obstacol și țintă, unde eroul se mișcă cu tastele. Minim: foaia de design, trei personaje redenumite pe scenă, eroul pe toate patru direcțiile, cu schimbă x și y, plus reset la steag. Complet: minim, plus titlu la start cu spune două secunde, plus obstacol care patrulează, cu reset la steag.
+
+De ce contează. Orice joc are aceleași trei lucruri: pe cine controlezi, eroul, ceva de evitat, obstacolul, ceva de câștigat, ținta. Dacă le desenezi întâi pe hârtie, știi ce construiești în Scratch. Azi faci scena. Regulile la atingere, scorul și viețile vin la lecțiile doi până la patru.
+
+Primul pas pe ecran. Pe hârtie: titlul jocului, desen cu erou, obstacol și țintă, fiecare cu nume. Sub desen: câștigi dacă, și ce se întâmplă la atingere: țintă versus obstacol. De exemplu Yaay sau Au. Le programezi la lecția doi.
+
+Al doilea pas pe ecran. Fundal din bibliotecă. Trei personaje. Le redenumești în panoul Personaj de sub scenă: Erou, Obstacol, Țintă. Nu în tab Costume. Altfel la lecția doi tot vezi Cat în atinge. Le așezi logic: eroul jos, ținta departe, obstacolul între ei.
+
+Al treilea pas pe ecran. Mișcarea pe patru direcții. Nu folosești mergi pentru taste. Folosești schimbă x și schimbă y. X e stânga minus, dreapta plus. Y e jos minus, sus plus. La steag: forever. În forever, patru dacă: dreapta, schimbă x cu zece. Stânga, minus zece. Sus, schimbă y cu zece. Jos, minus zece. Hexagonul: tasta e apăsată, din Detectare. Minim înseamnă toate patru.
+
+Al patrulea pas pe ecran. Chiar sub steag, înainte de forever: du-te la start, de exemplu x zero, y minus o sută. Fără reset, la al doilea steag eroul rămâne unde a rămas.
+
+Al cincilea pas pe ecran, pentru Complet. Pe Erou, la steag, în ordine: du-te la start, spune numele jocului timp de două secunde, apoi forever. Pe Obstacol: la steag, du-te la start, orientează-te nouăzeci, stil de rotație stânga dreapta. Forever: mergi doi. Dacă atinge marginea, întoarce o sută optzeci, așteaptă zero virgulă doi. Obligatoriu așteaptă, ca să nu tremure.
+
+Greșeli frecvente. Dacă dacă nu e în forever, verifică o singură dată. Dacă ai redenumit costumul, nu personajul, la lecția doi e greșit. Dacă ai doar două direcții, Minim cere patru. Dacă ai folosit mergi, pe patru săgeți te încurci. Dacă titlul e în forever cu spune timp de, blochează mișcarea.
+
+Proiectul de azi. Jocul meu pe hârtie și pe scenă.
+
+Minim înseamnă: foaia, fundal, trei personaje redenumite, patru direcții cu schimbă x y, reset la steag. Complet înseamnă: minim, plus titlu, plus obstacol care patrulează. Dacă rămâi în urmă, salvează la Minim.
+
+În proiect, primul pas. Foaia gata. Scena cu Erou, Obstacol, Țintă.
+
+În proiect, al doilea pas. Patru direcții. Reset. Salvezi.
+
+În proiect, al treilea pas, pentru Complet. Titlu două secunde. Obstacolul patrulează fără tremur. Salvezi din nou.
+
+Recapitulare. Orice joc: erou, obstacol, țintă. Patru direcții cu schimbă x y, nu mergi. Redenumești în panoul Personaj. Reset înainte de forever. Numele fișierului are prenumele, numele, M trei și L unu.
+
+Succes la jocul tău pe hârtie și pe scenă.

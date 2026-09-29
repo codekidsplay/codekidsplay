@@ -1,6 +1,7 @@
 # Scratch Modul 6 — Lume de cuburi
 
 **Code Kids Play** · **8–10 ani** · Badge / **insignă:** **Cube Crafter**  
+**Proiecte:** 1 proiect pe toate 10 lecțiile (Lume de cuburi).  
 **Stil:** schelet M1–M5 (Obiectiv, Minim/Complet, Pas cu pas, Schema pe scurt) · **ștachetă avansată** pe tot modulul.  
 **Premisă:** **un singur joc** pe 10 ședințe · `Prenume_Nume_M6_LumeCuburi`  
 **Nu** e Minecraft oficial — inspirat din idee (grilă / sparge / pune / inventar / craft).  

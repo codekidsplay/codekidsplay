@@ -1,0 +1,31 @@
+Lecția cinci. Ai douăzeci de secunde.
+
+Astăzi jocul are un cronometru. Trebuie să prinzi cinci stele înainte să treacă douăzeci de secunde. Deschizi proiectul din lecția patru și salvezi ca Prenume, linie jos, Nume, linie jos, M trei, linie jos, L cinci. Proiectul se numește Ai douăzeci de secunde.
+
+Obiectivul. Creezi variabila timp care scade automat, cu forever și așteaptă. Pierdere la zero. Minim: timp pornește de la douăzeci, scade minus unu pe secundă, Timpul a expirat la zero. Complet: minim, plus victorie dacă scor egal cu cinci înainte să se termine timpul. Cele două condiții concurează.
+
+De ce contează. Timpul limitat schimbă jocul. Fără el poți lua oricât. Cu el, trebuie să te grăbești. Devine cursă contra cronometru.
+
+Primul pas pe ecran. Creezi timp, pentru toate. Cronometrul stă pe Scenă. Două bucle diferite. Scena numără secundele. Nu pune spune pe Scenă. Scena nu are bulă de text. Eroul spune mesajul.
+
+Al doilea pas pe ecran. Pe Scenă, la steag: setează timp la douăzeci. Forever: întâi așteaptă o secundă, apoi schimbă timp cu minus unu. De ce întâi așteaptă: vezi douăzeci o secundă, apoi nouăsprezece. Dacă schimbi înainte, sare instant de la douăzeci la nouăsprezece.
+
+Al treilea pas pe ecran. Pe Erou, forever separat: dacă timp egal cu zero, spune Timpul a expirat timp de două secunde, oprește toate. Jocul se oprește. Nu continuă la minus unu.
+
+Al patrulea pas pe ecran, pentru Complet. Pe Erou, încă un forever: dacă scor egal cu cinci, spune Ai câștigat, oprește toate. Două scripturi separate. Oricare vine prima oprește totul. Cine câștigă cursa: prinzi cinci rapid, sau timpul expiră.
+
+Greșeli frecvente. Dacă schimbi înainte de așteaptă, sare instant. Dacă lipsește așteaptă, timpul cade la zero într-o clipă. Dacă spune e pe Scenă, nu apare bulă. Dacă uiți setează la douăzeci la steag, a doua rundă e greșită. Dacă scazi cu minus trei, poți sări peste zero. Azi doar minus unu.
+
+Proiectul de azi. Ai douăzeci de secunde.
+
+Minim înseamnă: pe Scenă countdown, pe Erou mesaj la zero. Complet înseamnă: minim, plus cinci stele și victorie pe scor. Dacă rămâi în urmă, salvează la Minim.
+
+În proiect, primul pas. Timp pe scenă. Pe Scenă: setează la douăzeci.
+
+În proiect, al doilea pas. Forever: așteaptă unu, schimbă minus unu. Pe Erou: timp egal cu zero, mesaj, stop. Salvezi.
+
+În proiect, al treilea pas, pentru Complet. Scor egal cu cinci: Ai câștigat. Demonstrezi câștig și pierdere pe timp. Salvezi din nou.
+
+Recapitulare. Countdown pe Scenă: așteaptă, apoi schimbă. Mesajul pe Erou. Două finale: timp zero versus scor cinci. Numele fișierului are prenumele, numele, M trei și L cinci.
+
+Succes la cursa ta contra cronometru.

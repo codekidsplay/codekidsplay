@@ -1,0 +1,33 @@
+Lecția zece. Portofoliu Creator.
+
+Insigna a fost la lecția nouă. Astăzi nu faci proiect nou din zero. Strângi ce ai făcut, lustruiești favoritul, dai feedback unui coleg și te uiți scurt spre Modulul cinci. Lucrezi în Scratch. Salvezi copia favorită ca Prenume, linie jos, Nume, linie jos, M patru, linie jos, L zece. Proiectul se numește Portofoliu Creator.
+
+Obiectivul. Ai un portofoliu pe foaie și o copie Scratch a proiectului favorit, testată. Minim: pe foaie cel puțin trei proiecte din Modulul patru, copie M patru L zece a favoritului, un polish mic pe copie, un feedback la un coleg, trei lucruri pe care le știi din Modulul patru. Complet: minim, plus proiectul în studio-ul clasei sau link pe foaie, sau remix scurt pe un proiect de coleg, sau pe foaie o idee pentru Modulul cinci, cum ar sări sau cădea eroul tău.
+
+De ce contează. Creator înseamnă și ce arăți după oră: ce ai în folder, ce funcționează, ce ai învățat. Nu e oră de limbaj nou. Rămânem în Scratch. Modulul cinci, Mecanici de joc, vine după, tot cu blocuri.
+
+Primul pas pe ecran. Harta ta pe foaie, câteva rânduri. Pentru fiecare, minim trei proiecte: titlu, tip, motor, poveste, quiz, clip, labirint, liber, felicitare, și merge, aproape sau lipsește. Încercuiești favoritul.
+
+Al doilea pas pe ecran. Deschizi favoritul, ideal L șapte sau L nouă. Salvează ca, Prenume, Nume, M patru, L zece. Un polish mic, nu refaci jocul: sunet, mesaj clar, restart, costum, o greșeală mică. Steagul verde. Testezi start, joacă, final sau restart. Polish-ul se vede. Nu ștergi proiectul vechi. Lucrezi pe copie.
+
+Al treilea pas pe ecran. Joacă un proiect de coleg, cinci minute. Pe foaie: un compliment plus o idee, clară, fără ironii. Spui ce merge și ce ai schimba, nu doar e drăguț.
+
+Al patrulea pas pe ecran, pentru Complet. Favoritul sau L zece în studio-ul clasei, sau link pe foaie. Sau remix scurt: schimbi unu două lucruri pe un proiect de coleg, cu acord, și salvezi remix-ul. Sau pe foaie idee Modulul cinci: eroul meu ar sări sau cădea așa, o frază plus un desen mic.
+
+Al cincilea pas pe ecran. Cu profesorul, pe scurt: Modulul cinci egal mecanici de joc, gravitație, inamici, liste, tot în Scratch. Nu e oră de Python azi.
+
+Greșeli frecvente. Proiect nou de la zero. Polish care strică jocul. Zero pe foaie. Feedback vag. Cauți Python sau editor text. Ștergi proiectul vechi în loc să lucrezi pe copia L zece.
+
+Proiectul de azi. Portofoliu Creator.
+
+Minim înseamnă: trei proiecte pe foaie, copie L zece, un polish, un feedback, trei lucruri învățate. Complet înseamnă: minim plus studio, remix sau idee Modulul cinci. Dacă rămâi în urmă, faci Minim.
+
+În proiect, primul pas. Harta pe foaie. Favoritul încercuit.
+
+În proiect, al doilea pas. Copie M patru L zece. Polish. Test. Salvezi.
+
+În proiect, al treilea pas. Feedback coleg. Complet dacă ai timp.
+
+Recapitulare. Portofoliu, nu joc nou. Copie L zece plus polish. Feedback scris. Rămâi în Scratch. Numele fișierului are prenumele, numele, M patru și L zece.
+
+Succes. Modulul patru Creator e închis cu demnitate.

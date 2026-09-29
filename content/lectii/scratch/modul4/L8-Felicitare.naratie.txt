@@ -1,0 +1,31 @@
+Lecția opt. Felicitare pe scene.
+
+Astăzi faci o felicitare interactivă: scene, mesaj personalizat, click sau taste, animație, sunet. Nu e proiectul din lecția unu. Fișier nou. Prenume, linie jos, Nume, linie jos, M patru, linie jos, L opt. Proiectul se numește Felicitarea mea.
+
+Obiectivul. Un coleg deschide felicitarea singur și ajunge la mesajul final. Minim: cel puțin două scene, două personaje sau personaj plus butoane, mesaj personalizat, două interacțiuni, animație pe cel puțin o scenă, sunet pe scena-cheie și la final, steag egal scena unu. Complet: minim, plus trei scene, sau alegere formal ori amuzant cu două mesaje, sau Trimite din nou, sau nume destinatar.
+
+De ce contează. Felicitarea e un cadou interactiv, nu un singur spune, La mulți ani. Exersezi scene, mesaje și polish scurt, utile și la trailer-ul proiectului Creator.
+
+Primul pas pe ecran. Pe foaie, cam zece minute. Pentru cine: prieten, familie, coleg. Mesajul: două până la patru fraze, personalizat. Scena unu, intro. Scena doi, surpriză sau mesaj. Opțional scena trei. Cele două interacțiuni: de exemplu click Deschide, tasta spațiu Continuă.
+
+Al doilea pas pe ecran. Proiect nou. Cel puțin două fundaluri. Cel puțin două personaje, sau un personaj plus butoane. La steag: scena unu, poziții, oprește toate sunetele. Steag egal mereu scena unu.
+
+Al treilea pas pe ecran. Interacțiunea unu: trimite scenă sau arată mesaj. Interacțiunea doi: avansează spre final. Mesajul personalizat clar pe scenă: text pe fundal, spune, sau costum. Animație: schimbă costum sau mișcare pe cel puțin o scenă. Sunet pe scena-cheie și la final. Colegul ajunge la mesaj fără ajutor.
+
+Al patrulea pas pe ecran, pentru Complet. Trei scene. Sau alegere formal și amuzant, două mesaje diferite. Sau buton Trimite din nou, care reia de la scena unu. Sau nume destinatar, întreabă sau variabilă afișată.
+
+Greșeli frecvente. Un singur spune pe fundal. Mesaj generic. Fără sunet la final. Steag pe scena doi. Butoane fără mesaj. Fișier pe proiectul L șapte, greșit, azi e L opt separat.
+
+Proiectul de azi. Felicitarea mea.
+
+Minim înseamnă: două scene, sprite-uri sau butoane, mesaj personal, două interacțiuni, animație, două sunete, restart. Complet înseamnă: minim plus una din cele patru variante. Dacă rămâi în urmă, salvează la Minim.
+
+În proiect, primul pas. Foaia: destinatar, mesaj, scene, interacțiuni.
+
+În proiect, al doilea pas. Flux pe Scratch. Livrare la un coleg. Salvezi.
+
+În proiect, al treilea pas, pentru Complet. Extinzi. Salvezi din nou.
+
+Recapitulare. Felicitare egal cadou pe scene, nu un singur text. Două interacțiuni plus mesaj personal egal Minim. Numele fișierului are prenumele, numele, M patru și L opt.
+
+Succes la felicitarea ta.

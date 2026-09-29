@@ -5,6 +5,7 @@ import { notFound, useParams } from 'next/navigation'
 import Link from 'next/link'
 import { ArrowLeft, Check, Lock, BookOpen } from 'lucide-react'
 import SedinteRamaseElev from '@/components/SedinteRamaseElev'
+import ModulNivelBadge from '@/components/ModulNivelBadge'
 import { useElevCursantId } from '@/hooks/useElevCursantId'
 import { useProgresCursant } from '@/hooks/useProgresCursant'
 
@@ -116,8 +117,16 @@ export default function InvataCursPage() {
                 <p className="text-xs font-semibold uppercase tracking-wide text-emerald-600 mb-0.5">
                   Modulul tău acum
                 </p>
-                <h2 className="font-bold text-slate-900">{modulActiv.nume}</h2>
-                <p className="text-xs text-slate-400">
+                <h2 className="font-bold text-slate-900 inline-flex flex-wrap items-center gap-2">
+                  {modulActiv.nume}
+                  {'nivel' in modulActiv ? (
+                    <ModulNivelBadge nivel={modulActiv.nivel} />
+                  ) : null}
+                </h2>
+                {'descriere' in modulActiv && modulActiv.descriere ? (
+                  <p className="text-sm text-slate-500 mt-0.5 max-w-xl">{modulActiv.descriere}</p>
+                ) : null}
+                <p className="text-xs text-slate-400 mt-1">
                   {
                     lectii
                       .filter(l => l.modul_id === modulActiv.id)
@@ -148,12 +157,18 @@ export default function InvataCursPage() {
                   const unlockedL = modul.lectii.filter(l => isUnlocked(l.id))
                   return (
                     <div key={modul.id}>
-                      <h3 className="text-sm font-semibold text-slate-600 mb-2">
+                      <h3 className="text-sm font-semibold text-slate-600 mb-0.5 inline-flex flex-wrap items-center gap-2">
                         {modul.nume}
-                        <span className="ml-2 text-xs font-normal text-slate-400">
+                        {'nivel' in modul ? <ModulNivelBadge nivel={modul.nivel} /> : null}
+                        <span className="text-xs font-normal text-slate-400">
                           {unlockedL.length} lecții
                         </span>
                       </h3>
+                      {'descriere' in modul && modul.descriere ? (
+                        <p className="text-xs text-slate-400 mb-2 max-w-xl">{modul.descriere}</p>
+                      ) : (
+                        <div className="mb-2" />
+                      )}
                       <ul className="space-y-2">
                         {modul.lectii.map(l => renderLectie(l, { showLocked: false }))}
                       </ul>

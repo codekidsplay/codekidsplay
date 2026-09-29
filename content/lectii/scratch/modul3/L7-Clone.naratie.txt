@@ -1,0 +1,31 @@
+Lecția șapte. Ploaie de monede.
+
+Astăzi un singur personaj se multiplică singur. Monedele cad din cer fără să le desenezi pe fiecare. Deschizi proiectul din lecția șase, sau cinci dacă n-ai nivele, și salvezi ca Prenume, linie jos, Nume, linie jos, M trei, linie jos, L șapte. Proiectul se numește Ploaie de monede.
+
+Obiectivul. Folosești creează o clonă de mine și când pornesc ca și clonă, din Control. Minim: clonele apar, cad până jos, y mai mic decât minus o sută șaizeci, și se șterg, fără să se adune pe ecran. Complet: minim, plus scor la prindere cu șterge imediat, plus viteză jucabilă.
+
+De ce contează. Un joc bun n-are nevoie de douăzeci de monede desenate manual. Scratch face copii din mers, ca ploaia sau inamicii dintr-un joc adevărat.
+
+Primul pas pe ecran. Clona e o copie temporară. Aceleași costume, scriptul când pornesc ca și clonă, poziție proprie. Nu e personajul original. Se creează și se șterg. Originalul rămâne.
+
+Al doilea pas pe ecran. Generatorul pe Monedă. La steag: ascunde. Originalul nu cade. Forever: așteaptă zero virgulă opt până la unu, creează o clonă de mine.
+
+Al treilea pas pe ecran. Nucleul Minim. Script nou: când pornesc ca și clonă. Arată. Du-te la x număr aleator între minus două sute și două sute, y o sută șaizeci. Nu o sută șaptezeci. Repetă până poziția y e mai mică decât minus o sută șaizeci. Înăuntru: schimbă y cu minus patru. După buclă: șterge această clonă. Important: nu folosi atinge marginea pentru cădere. La y o sută șaptezeci costumul poate atinge marginea de sus și clona moare înainte să cadă.
+
+Al patrulea pas pe ecran, pentru Complet. În bucla de cădere, după schimbă y: dacă atinge Erou, atunci schimbă scor cu unu, șterge această clonă. Șterge imediat, un singur plus unu, nu doi sau trei. Dacă ajunge jos fără prindere, tot șterge.
+
+Greșeli frecvente. Dacă atinge marginea la cădere, clona moare sus. Dacă nu ștergi, după cam treizeci de secunde nu mai apar monede. Scratch are maxim cam trei sute de clone. Dacă scor multiplu pe o monedă, lipsește șterge din dacă atinge Erou. Dacă originalul cade, uiți ascunde la steag. Dacă toate pe aceeași linie, lipsește număr aleator pe x.
+
+Proiectul de azi. Ploaie de monede.
+
+Minim înseamnă: generator, clone care cad cu y mai mic decât minus o sută șaizeci, șterge jos. Complet înseamnă: minim, plus prindere cu scor și șterge. Dacă rămâi în urmă, salvează la Minim.
+
+În proiect, primul pas. Erou pe patru direcții. Monedă ascunsă. Scor pe scenă.
+
+În proiect, al doilea pas. Generator. Clone cad și dispar jos. Salvezi.
+
+În proiect, al treilea pas, pentru Complet. Prindere: plus unu, șterge. Viteza jucabilă. Salvezi din nou.
+
+Recapitulare. Clonă e copie temporară. Cădere sigură: y mai mic decât minus o sută șaizeci. La prindere: plus unu și șterge imediat. Fără șterge, ploaia se oprește. Numele fișierului are prenumele, numele, M trei și L șapte.
+
+Succes la ploaia ta de monede.

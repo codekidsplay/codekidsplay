@@ -1,0 +1,31 @@
+Lecția patru. Trei vieți.
+
+Astăzi jocul are trei vieți. La fiecare pericol pierzi una. La zero apare Game Over. Deschizi proiectul din lecția trei și salvezi ca Prenume, linie jos, Nume, linie jos, M trei, linie jos, L patru. Proiectul se numește Trei vieți.
+
+Obiectivul. Creezi variabila vieti. Scade la coliziune cu pericolul. Oprește jocul la zero. Cu du-te la start, ca să nu pierzi toate viețile deodată. Minim: vieti pornește de la trei, scade minus unu, Game Over la zero. Complet: minim, plus du-te la start după lovitură, plus scorul din lecția trei pe scenă.
+
+De ce contează. Viețile dau o a doua șansă. Greșești o dată, nu se termină totul instant. Poți învăța, dar tot ai o limită.
+
+Primul pas pe ecran. Din Variabile: creează vieti, pentru toate. Pe Scenă sau Erou, la steag: setează vieti la trei. Ține minte: schimbă cu unu adaugă. Schimbă cu minus unu scade. În Scratch nu există blocul scade. Scăderea e adaugi un număr negativ. Fără minus, devii nemuritor.
+
+Al doilea pas pe ecran. Pe Erou, în forever, dacă atinge Obstacol: în ordine, schimbă vieti cu minus unu, pornește Bonk, spune Au timp de zero virgulă cinci. Schimbă primul, ca să vezi imediat pe scenă. Nu pune redă până la final înainte, altfel viața scade târziu.
+
+Al treilea pas pe ecran. Imunitate, ca la lecția doi. Imediat după Au: du-te la start. Întoarce o sută optzeci nu te scoate din obstacol. Fără du-te la, rămâi lipit și pierzi toate viețile într-o secundă.
+
+Al patrulea pas pe ecran. Game Over pe Scenă sau Erou. Forever: dacă vieti egal cu zero, spune Game Over timp de două secunde, oprește toate. Nu pe Obstacol. Verifică pe coliziune: doar minus unu, ca să nimerești zero.
+
+Greșeli frecvente. Dacă schimbă cu unu, viețile cresc. Dacă lipsește du-te la start, pierzi tot dintr-o atingere. Dacă vieti egal cu zero e pe Obstacol, greșești. Dacă uiți setează la trei la steag, a doua rundă e greșită. Dacă oprește toate lipsește, jocul continuă mort.
+
+Proiectul de azi. Trei vieți.
+
+Minim înseamnă: vieti trei la steag, minus unu la coliziune, Game Over la zero. Complet înseamnă: minim, plus du-te la start, o viață pe lovitură. Dacă rămâi în urmă, salvează la Minim.
+
+În proiect, primul pas. Vieti pe scenă. Setează la trei la steag.
+
+În proiect, al doilea pas. Pe Erou: minus unu, sunet, Au. Pe Scenă: Game Over. Salvezi.
+
+În proiect, al treilea pas, pentru Complet. După Au: du-te la start. Rămâi lipit trei secunde, pierzi o singură viață. Salvezi din nou.
+
+Recapitulare. Scădere înseamnă schimbă cu minus unu. Ordine: schimbă, pornește, spune, du-te la start. Game Over pe Scenă sau Erou. Numele fișierului are prenumele, numele, M trei și L patru.
+
+Succes la cele trei vieți ale tale.

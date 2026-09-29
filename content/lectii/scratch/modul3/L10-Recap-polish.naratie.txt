@@ -1,0 +1,33 @@
+Lecția zece. Polish, prezentare și insignă.
+
+Astăzi termini jocul din lecția nouă, îl lustruiești, îl arăți clasei și primești insigna Game Builder. Nu refaci de la zero. Deschizi Prinde obiectele și adaugi. Fișierul rămâne Prenume, linie jos, Nume, linie jos, M trei, linie jos, L nouă. Sau o copie L zece, ca să nu strici versiunea veche.
+
+Obiectivul. Ai îmbunătățit jocul, l-ai prezentat, și ai închis Modulul trei. Minim: o îmbunătățire din lista A până la F, plus restart curat, plus prezentare. Asta e suficient pentru insignă. Complet: două îmbunătățiri, plus prezentare, plus salvare.
+
+De ce contează. Proiectele bune se refac o dată, apoi se arată. Insigna Game Builder înseamnă: știi să pui împreună control, clone, scor, vieți sau timer și meniu, într-un joc care se termină. Urmează Modulul patru.
+
+Lista de completări. C: sunet sau efect la prindere, sigur și rapid. F: instrucțiuni pe meniu, tot sigur. B: meniu Start cu titlu, dacă lipsește. A: nivel doi. D: clonă rea, bombă. E: high score. Minim înseamnă o literă testată. Complet înseamnă două. Vrei Minim garantat: alege C sau F întâi. Nu începe a doua până prima nu rulează pe steag.
+
+Primul pas pe ecran. Alegi o literă pentru Minim. Opțional o a doua pentru Complet. La minutul cincizeci și cinci: Stop Cod. Salvezi. Ecran mare. Prezinți oricum, chiar cu o singură îmbunătățire.
+
+Al doilea pas pe ecran. Înainte să adaugi: steag, reset complet. Lipești o îmbunătățire. Steag de două ori. Jocul încă se poate termina. Salvezi.
+
+Al treilea pas pe ecran. Prezentare, unu sau două minute. Salut, jocul meu se numește. Regula: controlezi eroul și prinzi obiectul. Azi am adăugat litera aleasă. Demo: steag, Start, joci puțin. Mulțumesc. Clasa: aplauze și un compliment.
+
+Al patrulea pas pe ecran. Recap Modulul trei. Control și coliziuni. Scor, vieți, timer. Nivele. Clone. Meniu. Jocul Prinde obiectele. Azi polish și insignă. Apoi: Modulul patru.
+
+Greșeli frecvente. Dacă începi cu D sau E și rămâi fără Minim, fă întâi C sau F. Dacă la minutul cincizeci și cinci încă scrii cod, oprește-te și prezinți. Dacă crezi că fără două n-ai reușit: una plus prezentare egal Minim, egal insignă. Dacă prezentarea e haos, resetează înainte.
+
+Proiectul de azi. Completare pe Prinde obiectele.
+
+Minim înseamnă: o îmbunătățire, restart curat, prezentare, salvare. Complet înseamnă: două îmbunătățiri, prezentare, salvare. Dacă ai doar Minim, tot primești insigna.
+
+În proiect, primul pas. O literă din A până la F. Steag de două ori. Salvezi.
+
+În proiect, al doilea pas. Prezinți: titlu, regulă, ce ai adăugat, demo. Mulțumesc.
+
+În proiect, al treilea pas, pentru Complet. A doua literă, testată. Salvezi din nou. Insigna Game Builder.
+
+Recapitulare. Adaugi, nu refaci. O completare pentru Minim. Două pentru Complet. Minutul cincizeci și cinci: Stop Cod. Ai terminat Modulul trei. Bravo.
+
+Succes la prezentarea ta.

@@ -1,0 +1,31 @@
+Lecția patru. Clip pe acte.
+
+Astăzi faci un clip pe două acte, cam treizeci până la șaizeci de secunde: sincron sunet și mișcare, plus un input care contează. Completarea, după nucleu: extensii Muzică sau Stilou. Sunt singurele extensii din tot curriculumul Scratch la Code Kids Play. Fișier nou: Prenume, linie jos, Nume, linie jos, M patru, linie jos, L patru. Proiectul se numește Clip pe acte.
+
+Obiectivul. Stai pe scaun: clipul rulează, durează treizeci până la șaizeci de secunde, inputul e clar fără explicații. Minim: două personaje animate, două acte, sunet din tab Sunete, un input obligatoriu, stop sau mesaj final, steag egal Act unu, sincron fără blocaj. Complet: minim, plus Muzică sau Stilou pe bune, sau un al doilea input care schimbă finalul.
+
+De ce contează. Un clip Creator nu e doar personaje care se mișcă. Are acte, ca nivelele de scenă, și un moment în care tu schimbi ceva. Extensiile nu înlocuiesc logica. Îmbogățesc sunetul sau lasă urmă.
+
+Primul pas pe ecran. Timeline în trei pași, cinci minute. Act unu: ce se mișcă, ce sunet. Input: spațiu sau click, ce se schimbă. Act doi plus final. Durata totală: treizeci până la șaizeci de secunde.
+
+Al doilea pas pe ecran. Două personaje cu mișcare sau costum. Act unu la Act doi: treci la fundal sau trimite Act doi. Regula de aur anti-block: interzis spune timp de, în interiorul forever-ului de mișcare. Blochează tot clipul. Folosește așteaptă pe un lanț, sau trimite și când primesc pe alt script. Mișcarea poate rula paralel.
+
+Al treilea pas pe ecran. Input obligatoriu. Fără el, Act doi nu începe, sau scena se schimbă vizibil. Preferat: input, trimite Act doi. Inputul e în flux, nu decorativ.
+
+Al patrulea pas pe ecran, pentru Complet. După nucleu: Muzică, jingle pe Act unu sau la trecere. Sau Stilou: pen down pe personaj, urmă vizibilă, la steag șterge tot. Sau al doilea input pe final. Nu Detectare video, nu Face Sensing.
+
+Greșeli frecvente. Spune timp de în forever de mișcare. Extensii înaintea nucleului. Input decorativ. Acte cu același fundal. Stilou fără șterge tot. Clip de cinci secunde. Prea mult pe foaie.
+
+Proiectul de azi. Clip pe acte.
+
+Minim înseamnă: două personaje, două acte, sunet, un input, treizeci până la șaizeci de secunde, sync fără block. Complet înseamnă: minim plus Muzică sau Stilou sau al doilea input. Dacă rămâi în urmă, salvează la Minim.
+
+În proiect, primul pas. Timeline. Act unu, input, Act doi.
+
+În proiect, al doilea pas. Nucleu pe Scratch. Rulează pe scaun. Salvezi.
+
+În proiect, al treilea pas, pentru Complet. Extensie sau al doilea input. Salvezi din nou.
+
+Recapitulare. Timeline trei pași. Sincron cu așteaptă sau mesaje, nu spune timp de în forever. Extensii după nucleu. Numele fișierului are prenumele, numele, M patru și L patru.
+
+Succes la clipul tău pe acte.

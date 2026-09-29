@@ -6,8 +6,12 @@ import { ArrowLeft, ArrowRight, Eye } from 'lucide-react'
 import LectieMarkdown from '@/components/LectieMarkdown'
 import AscultaScratchM1 from '@/components/AscultaScratchM1'
 import AscultaScratchM2 from '@/components/AscultaScratchM2'
+import AscultaScratchM3 from '@/components/AscultaScratchM3'
+import AscultaScratchM4 from '@/components/AscultaScratchM4'
 import { SCRATCH_M1_CURS_ID, SCRATCH_M1_MODUL_ID, isScratchM1Lesson } from '@/lib/scratchM1'
 import { SCRATCH_M2_CURS_ID, SCRATCH_M2_MODUL_ID, isScratchM2Lesson } from '@/lib/scratchM2'
+import { SCRATCH_M3_CURS_ID, SCRATCH_M3_MODUL_ID, isScratchM3Lesson } from '@/lib/scratchM3'
+import { SCRATCH_M4_CURS_ID, SCRATCH_M4_MODUL_ID, isScratchM4Lesson } from '@/lib/scratchM4'
 
 export default async function ProfesorLectiePage({
   params,
@@ -64,6 +68,16 @@ export default async function ProfesorLectiePage({
         modul.id === SCRATCH_M2_MODUL_ID &&
         isScratchM2Lesson(lectie.ordine) ? (
           <AscultaScratchM2 ordine={lectie.ordine} accentColor={curs.culoare} />
+        ) : null}
+        {cursId === SCRATCH_M3_CURS_ID &&
+        modul.id === SCRATCH_M3_MODUL_ID &&
+        isScratchM3Lesson(lectie.ordine) ? (
+          <AscultaScratchM3 ordine={lectie.ordine} accentColor={curs.culoare} />
+        ) : null}
+        {cursId === SCRATCH_M4_CURS_ID &&
+        modul.id === SCRATCH_M4_MODUL_ID &&
+        isScratchM4Lesson(lectie.ordine) ? (
+          <AscultaScratchM4 ordine={lectie.ordine} accentColor={curs.culoare} />
         ) : null}
 
         {markdown ? (

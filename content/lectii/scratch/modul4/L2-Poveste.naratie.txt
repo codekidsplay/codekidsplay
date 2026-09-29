@@ -1,0 +1,31 @@
+Lecția doi. Povestea cu alegeri.
+
+Astăzi antrenezi povestea cu alegeri: scene, dialog, trimite și când primesc, finaluri diferite. Nu deschizi proiectul din lecția unu. Fișier nou: Prenume, linie jos, Nume, linie jos, M patru, linie jos, L doi. Proiectul se numește Povestea cu alegeri.
+
+Obiectivul. Cineva poate juca o cale întreagă până la un final, fără să îi explici. Minim: cel puțin trei fundaluri, două personaje, șase replici, două alegeri, două finaluri, restart la steag, un sunet, replici cu timp de, nu text zburător. Complet: minim, plus a treia alegere, sau final secret, sau inventar: o alegere deblochează o replică mai târziu.
+
+De ce contează. În jocuri interactive, alegerea schimbă ce urmează. În Scratch, alegerea e tastă sau click, apoi trimite, apoi altă scenă. Dacă tipul tău la motor e poveste, azi exersezi ce duci la lecția șase.
+
+Primul pas pe ecran. Pe foaie, cinci minute: titlu, Alegerea unu cu A și B, Alegerea doi, două finaluri, numele mesajelor, de exemplu cale A. Restul e Scratch.
+
+Al doilea pas pe ecran. Trei fundaluri redenumite logic. Două personaje. La steag: fundal start, poziții, oprește sunetele. Dialog: spune cu timp de, cel puțin șase replici. Regula duratei: două secunde plus o secundă la fiecare patru cuvinte. Sau scurt trei secunde, lung cinci. Între scene: trimite, când primesc, treci la fundal. Nu schimbi fundalul din ochi.
+
+Al treilea pas pe ecran. Alegerea unu: două butoane sau două taste. Fiecare cale, mesaj diferit. Alegerea doi pe cel puțin o ramură. Două finaluri, fundal și text diferite. Un sunet la un moment-cheie. Joacă ambele finaluri o dată.
+
+Al patrulea pas pe ecran, pentru Complet. A treia alegere, sau final secret pe o combinație rară, sau inventar cu variabilă, de exemplu are cheie egal unu.
+
+Greșeli frecvente. Prea mult pe foaie. Alegere fără mesaj. Un singur final. Restart rupt. Butoanele rămân pe toate scenele. Text zburător, spune fără timp de. Fișier pe motorul L unu, greșit.
+
+Proiectul de azi. Povestea cu alegeri.
+
+Minim înseamnă: trei fundaluri, două personaje, șase replici cu timp, două alegeri, două finaluri, sunet, restart. Complet înseamnă: minim plus una din cele trei variante. Dacă rămâi în urmă, salvează la Minim.
+
+În proiect, primul pas. Schița arborelui. Două alegeri, două finaluri.
+
+În proiect, al doilea pas. Dialog și alegeri pe Scratch. O cale jucată fără ajutor. Salvezi.
+
+În proiect, al treilea pas, pentru Complet. Extinzi arborele. Salvezi din nou.
+
+Recapitulare. Alegere egal input, trimite, altă cale. Spune cu timp de. Fișier separat M patru L doi. Numele fișierului are prenumele, numele, M patru și L doi.
+
+Succes la povestea ta cu alegeri.
