@@ -46,7 +46,7 @@
 | 4 | Vieți și Game Over | Flux de final |
 | 5 | Timer | Presiune de timp |
 | 6 | Nivele | Schimbare fundal / dificultate |
-| 7 | Clone-uri | Monede, inamici (intro) |
+| 7 | Clone | Monede, inamici (intro) |
 | 8 | Meniu Start | Buton + reset scor |
 | 9 | Mini-proiect: Prinde obiectele | Joc vertical / catcher |
 | 10 | Recap Modul 3 | Polish: viteză, sunet, UI |
@@ -66,23 +66,40 @@ Lecții full: `lectii/scratch/modul4/` · proiectul tău: L1 start → L6 final 
 | 7 | Bug hunt greu + polish + publicare | ≥3 bug-uri + polish Creator |
 | 8 | Proiect greu: Felicitare pe scene | 2+ scene, 2 interacțiuni |
 | 9 | Challenge greu + prezentare | Upgrade feature + showcase |
-| 10 | Badge + primul Python | print + variabilă + if (rulează) |
+| 10 | Portofoliu Creator | Harta M4 + copie favorit + feedback (+ poartă M5) |
 
-## Modul 5 — Lume de cuburi (stil Minecraft) · badge: Cube Crafter
+## Modul 5 — Mecanici de joc · badge: Maestru de jocuri
 
-Lecții full: `lectii/scratch/modul5/` · **un joc** pe 10 ședințe (`Nume_M5_LumeCuburi`)  
+Lecții: `lectii/scratch/modul5/` · L1–L6 antrenamente · L7–L10 **același** proiect (`Prenume_Nume_M5_Proiect`)
+
+| # | Titlu | Focus (~2h) |
+|---|--------|-------------|
+| 1 | Gravitație și săritură | `viteza_y`, sol, platforme |
+| 2 | Scroll / hărți | Lume > ecran |
+| 3 | Inamici AI simplu | Patrulare + detecție |
+| 4 | Liste și inventar | adaugă / conține? / șterge |
+| 5 | Blocuri proprii | My Blocks + parametri |
+| 6 | Magazin | Monede + upgrade-uri |
+| 7 | Proiect mare — arhitectură | Design + bază platformer/RPG |
+| 8 | Proiect mare — inamici/clone | Dificultate + colectabile |
+| 9 | Proiect mare — joc complet | Meniu, final, restart |
+| 10 | Polish + prezentare | Insignă Maestru de jocuri |
+
+## Modul 6 — Lume de cuburi (stil Minecraft) · badge: Cube Crafter
+
+Lecții full: `lectii/scratch/modul6/` · **un joc** pe 10 ședințe (`Nume_M6_LumeCuburi`)  
 Inspirat din Minecraft — nume/mecanici **CKP**, fără 3D / online / lume infinită.
 
 | # | Titlu | Focus (~2h) |
 |---|--------|-------------|
-| 1 | Grilă + erou | Mișcare pe celule |
-| 2 | Sparge blocuri | Mining |
-| 3 | Pune blocuri | Build |
-| 4 | Inventar | 2–3 tipuri pe ecran |
-| 5 | Două zone | 2 biomas / hărți |
-| 6 | Creatură / pericol | Mob sau lavă + vieți |
+| 1 | Punte M5 + grilă | Pași 32, recap M5 |
+| 2 | Sparge blocuri | Rază + resurse |
+| 3 | Pune blocuri | Snap 32 + tasta E |
+| 4 | Inventar | UI resurse pe scenă |
+| 5 | Două zone | Biomi / adâncime |
+| 6 | Creatură / pericol | HP + mob/lavă |
 | 7 | Crafting | Rețetă 2→1 |
-| 8 | Misiune | Obiectiv + victorie |
+| 8 | Misiune | Condiție de victorie |
 | 9 | Meniu + instrucțiuni | Start, controale, reset |
 | 10 | Showcase + badge | Cube Crafter |
 

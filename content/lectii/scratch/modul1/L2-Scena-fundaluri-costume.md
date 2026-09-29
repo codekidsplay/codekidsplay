@@ -140,6 +140,14 @@ Cei rapizi: Complet, apoi Bonus.
 3. Scena și personajul = **2 scripturi** — sincronizezi cu aceleași secunde în `așteaptă`  
 4. Nume: **`Prenume_Nume_L2`**  
 
+## Schema pe scurt *(pe foaie)*
+
+**Pe Scenă**  
+la steag → `comută fundalul la` 1 → `așteaptă` … → `comută fundalul la` 2
+
+**Pe Personaj**  
+la steag → `treci la costumul` A → `așteaptă` *(aceleași secunde)* → `treci la costumul` B
+
 **Quiz scurt (cu profesorul):**  
 - Unde adaugi un fundal nou?  
 - Ce bloc schimbă scena?  

@@ -154,6 +154,17 @@ Cei rapizi: Complet, apoi Bonus.
 3. Steagul = start + **reset** (loc + efecte)  
 4. Nume: **`Prenume_Nume_L4`**  
 
+## Schema pe scurt *(pe foaie)*
+
+**Script 1 — steag**  
+la steag → `du-te la` start → `anulează efectele grafice` → …
+
+**Script 2 — click pe personaj**  
+când se dă clic pe acest personaj → `modifică efectul culoare` …
+
+**Script 3 — tastă** *(Complet)*  
+când se apasă tasta spațiu → …
+
 **Quiz scurt (cu profesorul):**  
 - Steagul și click-ul fac același lucru?  
 - De ce anulăm efectele la steag?  

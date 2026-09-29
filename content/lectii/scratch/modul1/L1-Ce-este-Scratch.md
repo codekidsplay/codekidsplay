@@ -31,7 +31,7 @@ Fără steag și fără salvare, restul orelor nu pot începe.
 <span style="color:#E6A800;font-weight:700">Evenimente</span> · <span style="color:#9966FF;font-weight:700">Aspect</span> · <span style="color:#4C97FF;font-weight:700">Mișcare</span> · <span style="color:#FFAB19;font-weight:700">Control</span> · <span style="color:#CF63CF;font-weight:700">Sunet</span>  
 *(Detectare, Operatori, Variabile — Modulul 2.)*
 
-**Notă profesor (ritm):** cele 3 „Încearcă tu” = ~8–10 min de lucru copil + explicație scurtă. Dacă grupa e mare, lasă **Salvarea** pe scurt (numele pe tablă + 1 salvare colectivă), nu câte un tur individual.
+**Notă profesor (ritm):** cele 3 „Încearcă tu” = ~8–10 min de lucru copil + explicație scurtă. Dacă grupa e mare, lasă **Salvarea** pe scurt (numele pe ecran/foaie + 1 salvare colectivă), nu câte un tur individual.
 
 ---
 
@@ -155,6 +155,15 @@ Cei rapizi: Complet, apoi Bonus.
 2. Dialog = `spune` + `așteaptă`, pe **ambele** personaje  
 3. Nume fișier: **`Prenume_Nume_L1`** (unic în clasă)  
 4. Minim = Pasul 1+2 · Complet = +3+4  
+
+## Schema pe scurt *(pe foaie)*
+
+**Pe personajul 1**  
+la steag → `spune` … → `așteaptă` …
+
+**Pe personajul 2**  
+la steag → `așteaptă` … → `spune` …  
+*(dialog pe rând: secundele din `așteaptă` se potrivesc)*
 
 **Quiz scurt (cu profesorul):**  
 - Ce bloc pui primul?  

@@ -66,7 +66,7 @@ Dacă trimiți `alarma` de 10 ori rapid, Sirena poate avea **mai multe** instan�
 **A) Variabilă „am trimis deja”** (recomandat — ca L6/L7: nu lăsăm forever-ul să spam-uiască):  
 1. Creezi variabila `alarma_activa` (**pentru toți**), pe scenă opțional  
 2. La steag (pe Senzor sau pe Scenă): <span style="color:#FF8C1A;font-weight:700">setează alarma_activa la</span> `0`  
-3. Pe **Senzor**, în `forever`:  
+3. Pe **Senzor**, în bucla `forever`:  
    <span style="color:#FFAB19;font-weight:700">dacă</span> <span style="color:#5CB1D6;font-weight:700">atinge</span> (culoare / personaj periculos)  
    **atunci:**  
    <span style="color:#FFAB19;font-weight:700">dacă</span> <span style="color:#59C059;font-weight:700">alarma_activa = 0</span>  
@@ -168,6 +168,18 @@ Cei rapizi: Complet, apoi Bonus.
 3. Anti-spam: `alarma_activa` (trimite doar dacă e 0)  
 4. Liniște resetează flag-ul — altfel alarma se reaprinde pe pericol  
 5. Nume: **`Prenume_Nume_L8`**  
+
+## Schema pe scurt *(pe foaie)*
+
+**Pe Senzor**  
+`forever`: `dacă` pericol **și** `alarma_activa = 0` → `setează alarma_activa la 1` → `trimite alarma`
+
+**Pe Sirenă**  
+când primesc `alarma` → sunet + `spune Atenție!`  
+când primesc `liniste` → `oprește toate sunetele` + costum normal  
+
+**Pe buton Liniște**  
+click → `trimite liniste` → `setează alarma_activa la 0`
 
 **Quiz scurt (cu profesorul):**  
 - Ce e un mesaj (*broadcast*)?  

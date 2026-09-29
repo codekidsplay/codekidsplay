@@ -48,7 +48,7 @@ export default async function ProfesorLectiePage({
       </div>
 
       <article className="bg-white rounded-2xl border border-slate-100 shadow-sm p-6 md:p-8">
-        <p className="text-xs font-semibold uppercase tracking-wide mb-2" style={{ color: curs.culoare }}>
+        <p className="text-xs font-semibold uppercase tracking-wide mb-2 pl-0.5" style={{ color: curs.culoare }}>
           {curs.nume} · Lecția {lectie.ordine}
         </p>
         <h1 className="text-2xl md:text-3xl font-bold text-slate-900 mb-6">{lectie.titlu}</h1>

@@ -1,8 +1,21 @@
 # Lecția 6 — Proiectul tău — versiunea finală
-**Modulul 4 · Proiecte · Cam 2 ore · Fir greu: L1 → L6 → L7**  
+**Modulul 4 · Fir Creator: L1 → L6 → L7**  
 **Code Kids Play · Scratch Creator**
 
-> La finalul orei proiectul e **jucabil / privibil până la capăt**, cu reguli complete — nu doar „aproape”.
+> Azi motorul de la L1 devine **produs**: început → mijloc greu → final clar → restart.  
+> **Același proiect** ca L1. Salvezi ca `Prenume_Nume_M4_L6` (copie din L1 dacă vrei istoric).  
+> Proiect: **„Proiectul meu — final”**
+
+---
+
+## Obiectiv
+La finalul orei un coleg termină fluxul **fără** ajutor, iar tu explici regulile în 30 s.  
+**Minimum:** start clar · final clar · restart complet · ≥**2 sisteme** (scor / vieți / timer / mesaje / clone / meniu) · **nivele (≥2) SAU multiplayer local** · test coleg reușit.  
+**Ținta orei (Complet):** Minim + **3 sisteme** **sau** (nivele **și** schiță multiplayer) **sau** final alternativ / secret.
+
+## De ce contează
+L1 = motor. L6 = **termini**. L7 = repari și lustruiești.  
+Fără final + restart + wow A/B închis, nu ești gata de showcase.
 
 ---
 
@@ -10,67 +23,142 @@
 
 | Minute | Ce facem |
 |--------|----------|
-| 0–10 | Deschide proiectul + checklist L6 (greu) |
-| 10–95 | Completezi logică + final + restart |
-| 95–110 | Test „străin”: un coleg fără explicații |
+| 0–12 | Deschide proiectul + checklist L6 + „dacă L1 e incomplet” |
+| 12–30 | Plan pe foaie: ce lipsește până la Minim |
+| 30–95 | Completezi logică + final + wow (vezi **Minim vs Complet**) |
+| 95–110 | Test „străin”: coleg fără explicații |
 | 110–120 | Listă **3** bug-uri / îmbunătățiri pentru L7 |
 
----
+**Dacă L1 e incomplet:** primele ~15 min = ajungi la motorul L1 (interacțiune + wow început), apoi checklist-ul de azi.
 
-## Ideea principală
-Motorul de la L1 trebuie să devină **produs**: început → mijloc greu → final clar.  
-Folosești unelte din M2–M3: variabile, mesaje, coliziuni, (opțional) clone / nivele / meniu.
-
-### Dacă L1 e incomplet
-Primele 15 min = ajungi la **motorul L1**, apoi treci la checklist-ul de azi.
+**Capitole:** tot ce știi din M1–M3 — le **folosești**, nu le reînveți de la zero.
 
 ---
 
-## Proiect de finalizat AZI — „Terminat la nivel Creator”
-Același fișier: `Nume_M4_ProiectFinal`
+## Pas cu pas
 
-### Obligatoriu pentru TOȚI
-- [ ] **Start** clar (steag și/sau buton Start)  
-- [ ] **Final** clar (victorie / game over / scenă finală / scor final)  
-- [ ] **Restart** resetează tot ce trebuie (scor, vieți, poziții, nivel, mesaje)  
-- [ ] Cel puțin **2 sisteme** din listă: scor · vieți · timer · mesaje · clone · meniu  
-- [ ] **Nivele SAU multiplayer** (vezi mai jos) — obligatoriu, nu bonus  
-- [ ] Un coleg termină fluxul **fără** să îl ajuți  
-- [ ] Poți explica regulile în 30 secunde  
+### 1) Deschide + inventar pe foaie
+1. Deschizi `Prenume_Nume_M4_L1` (sau copia L6)  
+2. Pe foaie: **ce merge** / **ce lipsește** față de Minim  
+3. Confirmi wow-ul: **A nivele** sau **B multiplayer**
 
-### Nivele SAU multiplayer (alege una, termină-o)
-**A) Mai multe nivele (minim 2)**
-- [ ] Level 1 și Level 2 se joacă pe bune (fundal / greu / obstacole diferite)  
-- [ ] Trecerea: obiectiv atins → mesaj „level 2” (sau buton)  
-- [ ] La restart te întorci la Level 1  
+**Încearcă tu — inventar (8 min)**  
+- [ ] Știi tipul proiectului (joc / quiz / poveste / animație-joc)  
+- [ ] Ai bifat ce e deja gata din Minim  
 
-**B) Multiplayer local (2 jucători)**
-- [ ] Jucător 1 și Jucător 2: **taste diferite** (ex. săgeți vs WASD)  
-- [ ] Ambii apar pe scenă și pot influența jocul (scor / cursă / luptă / cooperare)  
-- [ ] E clar pe ecran cine a câștigat **sau** scor pe jucător  
+### 2) Start · mijloc · final · restart *(nucleul)*
+1. **Start:** steag și/sau buton Start (meniu ca M3 L8 = ideal)  
+2. **Mijloc:** jocul / povestea / quiz-ul e greu pe bune (nu doar ecran gol)  
+3. **Final:** victorie · Sfârșitul jocului · scenă finală · scor final — **clar pe scenă**  
+4. **Restart:** resetează scor, vieți, timp, nivel, poziții, mesaje, clone, sunete  
+
+**Încearcă tu — flux (20 min)**  
+- [ ] Steag de 2 ori → totul e curat  
+- [ ] Există un final pe care îl poți atinge  
+
+### 3) Două sisteme + wow obligatoriu *(Minim)*
+Bifează ≥**2** din: scor · vieți · timer · mesaje (`trimite`) · clone · meniu Start  
+
+**A — Nivele (≥2)**  
+- [ ] Level 1 și 2 **jucabile** și **diferite**  
+- [ ] Trecere la obiectiv → mesaj / fundal Level 2  
+- [ ] Restart → Level 1  
+
+**B — Multiplayer local**  
+- [ ] J1 și J2: **taste diferite** (săgeți vs WASD)  
+- [ ] Ambii influențează jocul  
+- [ ] Câștigător clar **sau** scor pe jucător  
 
 > Scratch = pe **aceeași** tastatură / același PC — nu online.
 
-### Minim pe tip (L6 — greu)
-| Tip | Gata când… |
-|-----|-------------|
-| **Joc / labirint** | Câștigi și pierzi + feedback + scor sau vieți + **nivele (≥2) sau 2 jucători** |
-| **Quiz** | ≥**5** întrebări + scor final + **2 runde/nivele de greu** (ex. ușor/greu) **sau** 2 jucători pe rând |
-| **Poveste cu alegeri** | ≥**3** scene + ≥**2** alegeri + final diferit (+ „capitole” = nivele de poveste) |
-| **Animație-joc** | 30–60 sec + input + final + **2 acte/nivele** sau 2 roluri controlabile |
+**Încearcă tu — wow închis (25–30 min)**  
+- [ ] Wow A sau B e **terminat**, nu schiță  
+- [ ] Colegul înțelege fără gura ta  
 
-### Nu conta ca „gata”
-- Doar motorul L1, fără final  
-- Final „spune bravo” fără restart care resetează  
-- Reguli pe care doar tu le știi (colegul se blochează)
+### 4) Minim pe tip *(ștachetă Creator)*
 
-## Pe foaie
-3 lucruri de reparat / îmbunătățit → **L7**.
+| Tip | Minim L6 |
+|-----|----------|
+| **Joc / labirint** | Câștigi + pierzi + feedback + scor/vieți + **nivele (≥2) sau 2 jucători** |
+| **Quiz** | ≥**6** întrebări + scor final + **2 runde** **sau** 2 jucători pe rând |
+| **Poveste** | ≥**3** scene + ≥**2** alegeri + **2 finaluri** (+ capitole = nivele de poveste) |
+| **Animație-joc** | 30–60 s + input + final + **2 acte** sau 2 roluri controlabile |
 
-## Bonus / Provocare (dacă ai terminat)
-- [ ] Ai **nivele (≥2) și** ceva multiplayer (chiar minimal)  
-- [ ] 3 sisteme din listă (nu doar 2)  
-- [ ] Final secret / ending alternativ
+### 5) Test coleg + listă L7
+1. Colegul joacă **fără** ajutor  
+2. Tu notezi **3** lucruri de reparat / lustruat → L7  
+3. Salvezi: `Prenume_Nume_M4_L6`
+
+**Nu contează ca „gata”:**  
+- doar motorul L1, fără final  
+- „Bravo” fără restart care resetează  
+- reguli pe care doar tu le știi  
+
+### 6) Complet
+Alege **cel puțin una**:  
+- [ ] **3 sisteme** din listă  
+- [ ] Nivele **și** ceva multiplayer (chiar minimal)  
+- [ ] Final secret / ending alternativ  
+
+---
+
+## Greșeli frecvente
+1. **„Aproape gata” fără final** — Minim cere final pe scenă.  
+2. **Restart parțial** — nivelul / clonele / scorul rămân; resetezi **tot**.  
+3. **Wow încă pe foaie** — la L6 wow-ul A/B trebuie **închis**.  
+4. **Proiect nou azi** — continui L1, nu începi altceva.  
+5. **Test doar pe tine** — Minim cere test coleg fără ajutor.  
+6. **Multiplayer cu aceleași taste** — controalele trebuie diferite.
+
+---
+
+## De făcut azi — „Proiectul meu — final”
+Salvat: `Prenume_Nume_M4_L6`
+
+### Minim vs Complet
+
+| | Ce trebuie |
+|--|------------|
+| **Minim** | Start · final · restart · ≥2 sisteme · nivele **sau** multiplayer · test coleg OK |
+| **Complet** | Minim + 3 sisteme **sau** nivele+multiplayer **sau** final alternativ |
+
+### Pasul 1 — Inventar
+- [ ] Ce lipsește pe foaie  
+
+### Pasul 2 — Minim
+- [ ] Checklist Minim + tipul tău  
+- [ ] Test coleg  
+
+### Pasul 3 — Listă L7
+- [ ] 3 bug-uri / polish pe foaie  
+
+---
+
+## Bonus (dacă ai terminat Complet)
+- [ ] Meniu Start + nivele + UI lizibil (scor/vieți/timer)  
+- [ ] Trailer 3–5 s înainte de Start  
+- [ ] Descriere scurtă pe foaie pentru publicare (L7)
+
+## Recapitulare rapidă
+1. L6 = produs jucabil, nu schiță  
+2. Wow A sau B e **obligatoriu** și **terminat**  
+3. 3 note pe foaie → L7 · fișier: **`Prenume_Nume_M4_L6`**
+
+## Schema pe scurt *(pe foaie)*
+
+**Flux produs**  
+start → joc greu (sisteme) → final clar → restart = totul de la zero  
+
+**Wow A**  
+obiectiv L1 → `trimite Nivelul 2` → L2 diferit → victorie → steag = L1  
+
+**Wow B**  
+J1 săgeți · J2 WASD · scor/câștigător pe scenă  
+
+**Quiz scurt (cu profesorul):**  
+- Ce e diferența dintre motor (L1) și produs (L6)?  
+- Ce resetează restart-ul la tine?  
+- Care sunt cele 3 note pentru L7?
 
 ## Temă
-Salvează. Fără proiect nou.
+Salvează. Fără proiect nou. Urmează L7 = **depanare + polish + publicare**.

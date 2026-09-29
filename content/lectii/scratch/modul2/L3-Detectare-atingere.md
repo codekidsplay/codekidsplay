@@ -9,7 +9,7 @@
 
 ## Obiectiv
 La finalul orei poți folosi hexagoanele din <span style="color:#5CB1D6;font-weight:700">Detectare</span> în <span style="color:#FFAB19;font-weight:700">dacă … atunci</span>.  
-**Minimum:** **un** `dacă` pe **lavă** (culoare) + reset la start sigur.  
+**Minimum:** **o** condiție `dacă` pe **lavă** (culoare) + reset la start sigur.  
 **Ținta orei (Complet):** Minim + `dacă` pe **margine** + **monedă/stea** (atingere personaj).
 
 ## De ce contează
@@ -75,13 +75,13 @@ Din <span style="color:#5CB1D6;font-weight:700">Detectare</span> (le pui **în**
 
 **Încearcă tu — lavă + forever (3–5 min)**  
 - [ ] Startul e pe zonă **sigură**  
-- [ ] `dacă` lavă e **în** `forever` pe erou  
+- [ ] Condiția `dacă` lavă e **în** bucla `forever` pe erou  
 - [ ] Călci pe lavă → înapoi la start + mesaj  
 - [ ] Traversarea zonei sigure **nu** resetează  
 - [ ] Salvat: `Prenume_Nume_L3`  
 
 ### 4) Complet: margine + monedă
-**Marginea** (tot pe **erou**, tot în `forever`):  
+**Marginea** (tot pe **erou**, tot în bucla `forever`):  
 <span style="color:#FFAB19;font-weight:700">dacă</span> <span style="color:#5CB1D6;font-weight:700">atinge marginea?</span>  
 **atunci:** <span style="color:#4C97FF;font-weight:700">întoarce-te la dreapta cu</span> `180` grade →  
 <span style="color:#FFAB19;font-weight:700">așteaptă</span> `0.2`  
@@ -90,7 +90,7 @@ Din <span style="color:#5CB1D6;font-weight:700">Detectare</span> (le pui **în**
 **Moneda / steaua** — **fără** mesaje între personaje (L8). Fiecare are **propriul** script:
 
 1. Adaugi un personaj = monedă (nume clar, ex. `Moneda`)  
-2. Pe **erou**, în forever:  
+2. Pe **erou**, în bucla `forever`:  
    <span style="color:#FFAB19;font-weight:700">dacă</span> <span style="color:#5CB1D6;font-weight:700">atinge</span> `Moneda`  
    **atunci:** <span style="color:#9966FF;font-weight:700">spune</span> `Yaay!` pentru `1` secundă  
 3. Pe **Moneda**, script separat:  
@@ -127,7 +127,7 @@ Salvat: `Prenume_Nume_L3`
 
 | | Ce trebuie |
 |--|------------|
-| **Minim („am reușit”)** | Zonă lavă + control taste + **un** `dacă` pe **culoare** (reset + mesaj + sunet) + start sigur |
+| **Minim („am reușit”)** | Zonă lavă + control taste + **o** condiție `dacă` pe **culoare** (reset + mesaj + sunet) + start sigur |
 | **Complet (ținta orei)** | Minim + `dacă` pe **margine** (întoarcere) + **monedă** (erou: `Yaay!` · monedă: `ascunde` / la steag `arată`) |
 
 Dacă rămâi în urmă: salvează la **Minim**.  
@@ -136,7 +136,7 @@ Cei rapizi: Complet, apoi Bonus.
 ### Pasul 1 — Scena
 - [ ] Fundal cu **zonă lavă** (culoare clară, pipetată)  
 - [ ] Punct de **start** pe zonă sigură  
-- [ ] Erou controlat cu **taste** (săgeți) în `forever`  
+- [ ] Erou controlat cu **taste** (săgeți) în bucla `forever`  
 
 ### Pasul 2 — Lavă *(Minim)*
 *(Ca la „Încearcă tu — lavă + forever”.)*
@@ -170,6 +170,18 @@ Cei rapizi: Complet, apoi Bonus.
 3. Startul nu e pe lavă  
 4. Monedă = **script pe fiecare** personaj (`ascunde` / `arată`), fără mesaje L8  
 5. Nume: **`Prenume_Nume_L3`**  
+
+## Schema pe scurt *(pe foaie)*
+
+**Pe Erou**  
+la steag → `du-te la` start *(zonă sigură)* → `forever`:  
+· taste (control)  
+· `dacă atinge culoarea` lavă? → `du-te la` start  
+· `dacă atinge marginea?` → …
+
+**Pe Monedă**  
+la steag → `arată`  
+`forever`: `dacă atinge [Erou]?` → sunet → `ascunde`
 
 **Quiz scurt (cu profesorul):**  
 - Care e diferența între `atinge culoarea` și `atinge personajul`?  

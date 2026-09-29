@@ -154,6 +154,13 @@ Cei rapizi: Complet, apoi Bonus.
 3. Dialog = pe rând + `așteaptă`  
 4. Nume: **`Prenume_Nume_L5`**  
 
+## Schema pe scurt *(pe foaie)*
+
+**Pe Personaj**  
+la steag → `setează mărimea la 100` → `anulează efectele grafice` →  
+`spune` / `gândește` pe rând + `așteaptă`  
+*(în clip: `modifică mărimea` / efect culoare — la steag resetezi cu `setează`)*
+
 **Quiz scurt (cu profesorul):**  
 - Diferența `spune` / `gândește`?  
 - De ce la reset folosim `setează mărimea la 100`, nu `modifică`?

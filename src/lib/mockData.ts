@@ -88,12 +88,13 @@ export const module = [
   // Robotică WeDo 2.0
   { id: 'm12', curs_id: 'c6', nume: 'Modul 1 — Construcție și senzori (WeDo 2.0)', ordine: 1, badge: 'Robot Starter' },
   { id: 'm13', curs_id: 'c6', nume: 'Modul 2 — Proiecte avansate (WeDo 2.0)', ordine: 2, badge: 'Robot Inventor' },
-  // Scratch — 4 module × 10 lecții (8–10 ani)
+  // Scratch — 6 module × 10 lecții (8–10 ani)
   { id: 'm16', curs_id: 'c7', nume: 'Modul 1 — Primii pași', ordine: 1, badge: 'Scratch Starter' },
   { id: 'm17', curs_id: 'c7', nume: 'Modul 2 — Logică', ordine: 2, badge: 'Logic Explorer' },
   { id: 'm18', curs_id: 'c7', nume: 'Modul 3 — Jocuri', ordine: 3, badge: 'Game Builder' },
   { id: 'm19', curs_id: 'c7', nume: 'Modul 4 — Proiecte și autonomie', ordine: 4, badge: 'Scratch Creator' },
-  { id: 'm20', curs_id: 'c7', nume: 'Modul 5 — Lume de cuburi', ordine: 5, badge: 'Cube Crafter' },
+  { id: 'm28', curs_id: 'c7', nume: 'Modul 5 — Mecanici de joc', ordine: 5, badge: 'Maestru de jocuri' },
+  { id: 'm20', curs_id: 'c7', nume: 'Modul 6 — Lume de cuburi', ordine: 6, badge: 'Cube Crafter' },
   // micro:bit — 3 module × 10 lecții
   { id: 'm21', curs_id: 'c8', nume: 'Modul 1 — MakeCode (blocuri)', ordine: 1, badge: 'micro:bit Starter' },
   { id: 'm22', curs_id: 'c8', nume: 'Modul 2 — Proiecte (blocuri + radio)', ordine: 2, badge: 'micro:bit Maker' },
@@ -228,7 +229,7 @@ export const lectii = [
     'Vieți și Sfârșitul jocului',
     'Timer',
     'Nivele',
-    'Clone-uri',
+    'Clone',
     'Meniu de start',
     'Mini-proiect: Prinde obiectele',
     'Depanare și finisare',
@@ -244,20 +245,33 @@ export const lectii = [
     'Depanare: găsești și repari greșelile',
     'Proiect: Felicitare pe scene',
     'Prezentare + insignă Scratch Creator',
-    'Punte: primul program în Python',
+    'Portofoliu Creator',
   ]),
-  // Scratch Modul 5 — Lume de cuburi (începe cu punte de recap)
+  // Scratch Modul 5 — Mecanici de joc
+  ...genLectii('m28', [
+    'Gravitație și săritură',
+    'Scroll / hărți extinse',
+    'Inamici: patrulare și detecție',
+    'Liste și inventar',
+    'Blocuri proprii (My Blocks)',
+    'Magazin cu monede',
+    'Proiect mare — arhitectură și design',
+    'Proiect mare — inamici, clone, coliziuni',
+    'Proiect mare — joc complet',
+    'Polish + prezentare + insignă Maestru de jocuri',
+  ]),
+  // Scratch Modul 6 — Lume de cuburi (începe cu punte de recap)
   ...genLectii('m20', [
-    'Punte: recap + erou pe grilă',
-    'Sparge blocuri',
-    'Pune blocuri',
-    'Inventar',
-    'Două zone',
-    'Creatură / pericol',
+    'Punte M5 + mișcare pe grilă',
+    'Sparge blocuri (minat)',
+    'Pune blocuri (construcție)',
+    'Inventar (resurse pe scenă)',
+    'Două zone / biomi',
+    'Creatură / pericol + HP',
     'Crafting simplu (2→1)',
-    'Misiune / obiectiv',
-    'Meniu de start + instrucțiuni',
-    'Prezentare + insignă Cube Crafter',
+    'Misiune / obiectiv de victorie',
+    'Meniu Start + instrucțiuni',
+    'Polish + prezentare + insignă Cube Crafter',
   ]),
   // micro:bit Modul 1 — blocuri
   ...genLectii('m21', [

@@ -88,7 +88,7 @@ Nu refaci de la zero. Deschizi „Labirintul meu” și **adaugi**.
 |------|------|
 | `dacă` / `dacă … altfel` | L1–L2 |
 | Detectare (culoare, personaj, margine) | L3 |
-| Taste + forever | L4, L7 |
+| Taste + bucla `forever` | L4, L7 |
 | Variabile + operatori | L5–L6 |
 | Stop / mesaje | L7–L8 |
 
@@ -166,6 +166,14 @@ La min **55** încep prezentările **oricum**.
 3. M2 = dacă, detectare, taste, variabile, operatori, forever/stop, mesaje  
 4. Insignă = **Logic Explorer** · M3 = **jocuri**  
 5. Nume: **`Prenume_Nume_L9`** / **`Prenume_Nume_L10`**  
+
+## Schema pe scurt *(pe foaie)*
+
+**Checklist prezentare**  
+1. Deschizi labirintul (`Prenume_Nume_L9` / L10)  
+2. Steag → joci până la ieșire (sau Game Over)  
+3. Spui în 30–60 s: ce ai folosit (`dacă`, detectare, variabile, mesaje…)  
+4. Colegul joacă fără explicații lungi
 
 **Quiz scurt (cu profesorul):**  
 1. Ce face `dacă … atunci`?  

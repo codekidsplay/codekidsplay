@@ -181,6 +181,14 @@ Cei rapizi: Complet, apoi Bonus.
 4. **Minim** = schelet care **rulează**; **Complet** = cele 8 + 30–60 sec  
 5. Nume: **`Prenume_Nume_L9`**  
 
+## Schema pe scurt *(pe foaie)*
+
+**Pe Personaj** *(ordine pe steag)*  
+1. **Reset:** `du-te la` · `anulează efectele` · `oprește toate sunetele`  
+2. **Intro:** `spune` / sunet scurt  
+3. **Acțiune:** `repetă` … + `așteaptă` (mișcare / costume)  
+4. **Final:** `spune Gata!` / sunet — **sub** bucle, o singură dată
+
 **Quiz scurt (cu profesorul):**  
 - Ce pui primul sub steag?  
 - Unde stă mesajul „Gata!” față de `repetă`?  

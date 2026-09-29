@@ -149,6 +149,15 @@ Cei rapizi: Complet, apoi Bonus.
 4. Minim = traseu + mesaj · Complet = + comoară **vizibilă**  
 5. Nume: **`Prenume_Nume_L7`**  
 
+## Schema pe scurt *(pe foaie)*
+
+**Pe Erou**  
+la steag → `du-te la x: … y: …` (start) →  
+`glisează` / `du-te la` puncte pe traseu → `spune` mesaj  
+
+**Pe Comoară** *(Complet)*  
+stă pe x/y citite de pe scenă (trage → citește → scrie)
+
 **Quiz scurt (cu profesorul):**  
 - Ce înseamnă x negativ?  
 - De ce `du-te la` la începutul scriptului?  

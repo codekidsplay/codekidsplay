@@ -45,7 +45,7 @@ când se face clic pe steagul verde
     — apoi verificările (perete / ieșire) —
 ```
 
-**Ordinea în `forever`:** întâi **mișcarea** (tastele), **apoi** `dacă` pe perete / ieșire.  
+**Ordinea în bucla `forever`:** întâi **mișcarea** (tastele), **apoi** `dacă` pe perete / ieșire.  
 Astfel personajul se mișcă, **apoi** Scratch verifică dacă a intrat în perete — ca la L3 (lavă după control).
 
 ### 2) Taste — pas cu pas *(nucleul Minim)*
@@ -63,10 +63,10 @@ Astfel personajul se mișcă, **apoi** Scratch verifică dacă a intrat în pere
 
 *Viteză:* 3 = lent, 5 = normal, 8 = rapid. Alege una și ține-o.
 
-*Bine de știut:* dacă ții **două** săgeți deodată (ex. dreapta + sus), personajul merge **pieziș** — e **normal**, nu o greșeală. Cele 4 `dacă` pot fi adevărate în același timp.
+*Bine de știut:* dacă ții **două** săgeți deodată (ex. dreapta + sus), personajul merge **pieziș** — e **normal**, nu o greșeală. Cele 4 condiții `dacă` pot fi adevărate în același timp.
 
 **Încearcă tu — taste (3–4 min)**  
-- [ ] Cele **4** direcții merg în `forever`  
+- [ ] Cele **4** direcții sunt în interiorul buclei `forever`  
 - [ ] La steag: reset (loc + efecte + sunete)  
 - [ ] Viteza e confortabilă (nu zboară din scenă)  
 - [ ] Ai încercat două taste odată → merge pieziș (intenționat)  
@@ -86,7 +86,7 @@ Astfel personajul se mișcă, **apoi** Scratch verifică dacă a intrat în pere
 ### 4) Labirint: perete + ieșire
 1. Pereți = **culori** pe fundal **sau** personaje-obstacol  
 2. Ieșire = personaj „ieșire” / culoare verde clară  
-3. În `forever`, **după** cele 4 taste:  
+3. În interiorul buclei `forever`, **după** cele 4 taste:  
    - dacă atinge **perete** (culoare / personaj) → <span style="color:#4C97FF;font-weight:700">du-te la</span> start (ca L3)  
    - dacă atinge **ieșirea** → <span style="color:#9966FF;font-weight:700">spune</span> `Ai ajuns!` + <span style="color:#CF63CF;font-weight:700">sunet</span> →  
      <span style="color:#FFAB19;font-weight:700">așteaptă</span> `0.5` *(evită spam-ul)*  
@@ -98,14 +98,14 @@ Astfel personajul se mișcă, **apoi** Scratch verifică dacă a intrat în pere
 **Încearcă tu — labirint (3–5 min)**  
 - [ ] Cel puțin **1** perete te resetează la start  
 - [ ] (Complet) ≥2 obstacole + ieșire → `Ai ajuns!` + sunet  
-- [ ] Ordinea: taste **sus** în forever, verificări **jos**  
+- [ ] Ordinea: taste **sus** în bucla `forever`, verificări **jos**  
 - [ ] Salvat: `Prenume_Nume_L4`  
 
 ---
 
 ## Greșeli frecvente
-1. **Se mișcă o singură dată** — lipsește `forever`; sau `dacă` e pe „când se apasă tasta” (eveniment) amestecat greșit cu „tasta e apăsată” (detectare). Azi vrem **Detectare** în forever.  
-2. **Se mișcă singur** — ai lăsat un `mergi` în forever **în afara** lui `dacă`.  
+1. **Se mișcă o singură dată** — lipsește bucla `forever`; sau `dacă` e pe „când se apasă tasta” (eveniment) amestecat greșit cu „tasta e apăsată” (detectare). Azi vrem **Detectare** în bucla `forever`.  
+2. **Se mișcă singur** — ai lăsat un `mergi` în bucla `forever` **în afara** condiției `dacă`.  
 3. **X/Y invers** — stânga/dreapta = **x**; sus/jos = **y**.  
 4. **Ciocnire ciudată** — personajul e mare; micșorează-l sau îngroașă pereții.  
 5. **„De ce merge pieziș?”** — două taste odată = diagonală; e intenționat.  
@@ -121,7 +121,7 @@ Salvat: `Prenume_Nume_L4`
 
 | | Ce trebuie |
 |--|------------|
-| **Minim („am reușit”)** | Reset complet + **4 taste** în `forever` + **1** obstacol (perete → start) |
+| **Minim („am reușit”)** | Reset complet + **4 taste** în bucla `forever` + **1** obstacol (perete → start) |
 | **Complet (ținta orei)** | Minim + **ieșire** cu mesaj (+ sunet) + **≥2** obstacole + (opțional) demo **mouse** ~5–10 sec |
 
 Dacă rămâi în urmă: salvează la **Minim**.  
@@ -165,6 +165,14 @@ Cei rapizi: Complet, apoi Bonus.
 3. În forever: **mișcare**, apoi **perete / ieșire**  
 4. Mouse = opțional; labirintul cere taste  
 5. Nume: **`Prenume_Nume_L4`**  
+
+## Schema pe scurt *(pe foaie)*
+
+**Pe Erou**  
+la steag → reset → `forever`:  
+· **întâi** cele 4 taste → `schimbă x/y`  
+· **apoi** `dacă atinge culoarea` perete? → `du-te la` start  
+· *(Complet)* `dacă atinge` ieșire? → …
 
 **Quiz scurt (cu profesorul):**  
 - De ce `forever` + „tasta e apăsată”, nu doar „când se apasă tasta”?  

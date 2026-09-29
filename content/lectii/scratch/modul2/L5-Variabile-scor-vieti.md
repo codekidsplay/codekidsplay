@@ -59,7 +59,7 @@ Fără scor, jocul nu „ține minte” câte stele ai prins.
 ### 3) +1 la stea *(pattern unic — pe stea)*
 *(Fără mesaje / broadcast — alea sunt L8. Scorul e „pentru toți”, deci **steaua** îl poate modifica.)*
 
-1. Erou: control cu taste în `forever` (ca L4) — **doar** mișcare (+ opțional obstacole)  
+1. Erou: control cu taste în bucla `forever` (ca L4) — **doar** mișcare (+ opțional obstacole)  
 2. Stele = alte personaje (ex. `Stea1`, `Stea2`…)  
 3. Pe **fiecare stea**, același tipar:  
    - La steag: <span style="color:#9966FF;font-weight:700">arată</span> → <span style="color:#4C97FF;font-weight:700">du-te la</span> poziția ei  
@@ -83,7 +83,7 @@ Fără scor, jocul nu „ține minte” câte stele ai prins.
 *(**Excepție / preview:** azi folosim **doar** semnul <span style="color:#59C059;font-weight:700">=</span> din <span style="color:#59C059;font-weight:700">Operatori</span>, ca să știm când s-a terminat jocul. Restul (`<`, `>`, `+`, `−`) rămân pentru **L6** — ca `forever` în Bonus M1 înainte de L7.)*
 
 1. Hexagon: <span style="color:#59C059;font-weight:700">(scor) = (5)</span>  
-2. Pe **erou**, în forever (după taste):  
+2. Pe **erou**, în bucla `forever` (după taste):  
    <span style="color:#FFAB19;font-weight:700">dacă</span> <span style="color:#59C059;font-weight:700">scor = 5</span>  
    **atunci:** <span style="color:#9966FF;font-weight:700">spune</span> `Ai câștigat!` pentru `2` secunde →  
    <span style="color:#CF63CF;font-weight:700">pornește sunetul</span> `…` →  
@@ -161,6 +161,17 @@ Cei rapizi: Complet, apoi Bonus.
 3. +1 pe **stea** (nu pe erou) + `ascunde` + `stop this script`  
 4. `scor = 5` = **preview** operatori; restul la L6  
 5. Nume: **`Prenume_Nume_L5`**  
+
+## Schema pe scurt *(pe foaie)*
+
+**Pe Erou / Scenă**  
+la steag → `setează scor la 0` → reset loc  
+
+**Pe fiecare Stea**  
+`forever`: `dacă atinge [Erou]?` → `schimbă scor cu 1` → `ascunde` → `oprește acest script`  
+
+**Pe Erou** *(preview Complet)*  
+`forever`: `dacă scor = 5` → `spune` victorie → `oprește toate`
 
 **Quiz scurt (cu profesorul):**  
 - Ce face `modifică scorul cu 1`?  

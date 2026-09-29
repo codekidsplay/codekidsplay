@@ -103,7 +103,7 @@ Până acum: personajul face ce îi zici, pas cu pas.
 4. Recunoaștere în clasă — nu notă, nu cont obligatoriu  
 
 *(Complet = 2 completări: ținta orei, nu pragul pentru insignă.)*  
-*(Aceeași convenție la M2–M5: Logic Explorer, Game Builder, Scratch Creator, Cube Crafter.)*
+*(Aceeași convenție la M2–M6: Logic Explorer, Game Builder, Scratch Creator, Maestru de jocuri, Cube Crafter.)*
 
 ---
 
@@ -170,6 +170,14 @@ La min **55** încep prezentările **oricum**.
 3. Modulul 1 = start, lume, mișcare, aspect, sunet, X/Y, `repetă` (+ Bonus: `forever`, ricoșeu)  
 4. Insigna = **Scratch Starter** · M2 = **alegeri** (`dacă…`)  
 5. Nume: **`Prenume_Nume_L9`** / **`Prenume_Nume_L10`**  
+
+## Schema pe scurt *(pe foaie)*
+
+**Checklist prezentare**  
+1. Deschizi `Prenume_Nume_L9` (sau L10)  
+2. Steag → proiectul rulează **curat** (reset → intro → acțiune → final)  
+3. Spui în 30–60 s: ce ai făcut + o completare față de L9  
+4. Colegul / profesorul joacă fără explicații lungi
 
 **Quiz scurt (cu profesorul):** *(5 dacă e timp; altfel 3)*  
 1. Ce face steagul verde?  

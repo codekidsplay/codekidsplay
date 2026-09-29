@@ -43,13 +43,13 @@ La finalul orei poți folosi <span style="color:#FFAB19;font-weight:700">dacă �
 - [ ] Vezi **două** guri: sus = atunci, jos = altfel  
 - [ ] Hexagonul e gol (încă fără tastă)
 
-### 2) Test cu tasta — în `forever` (ca la L1)
-*(Nu mai folosim „fereastra de 3 secunde”: Scratch verifică tasta **o clipă** dacă rulează o singură dată — greu de nimerit. Azi: `forever` verifică **de mai multe ori pe secundă**.)*
+### 2) Test cu tasta — în bucla `forever` (ca la L1)
+*(Nu mai folosim „fereastra de 3 secunde”: Scratch verifică tasta **o clipă** dacă rulează o singură dată — greu de nimerit. Azi: bucla `forever` verifică **de mai multe ori pe secundă**.)*
 
 1. Din <span style="color:#E6A800;font-weight:700">Evenimente</span>:  
    <span style="color:#3F8F2A;font-weight:700">când se face clic pe steagul verde</span>
 2. Din <span style="color:#FFAB19;font-weight:700">Control</span>: <span style="color:#FFAB19;font-weight:700">forever</span>
-3. **În** `forever`: <span style="color:#FFAB19;font-weight:700">dacă … atunci … altfel</span>  
+3. **În interiorul** buclei `forever`: <span style="color:#FFAB19;font-weight:700">dacă … atunci … altfel</span>  
    - hexagon, din <span style="color:#5CB1D6;font-weight:700">Detectare</span>:  
      <span style="color:#5CB1D6;font-weight:700">tasta</span> `z` <span style="color:#5CB1D6;font-weight:700">e apăsată?</span>  
    - **atunci:** <span style="color:#9966FF;font-weight:700">spune</span> `Zi!` *(fără „pentru … secunde” — ca să nu blocheze bucla)*  
@@ -59,7 +59,7 @@ La finalul orei poți folosi <span style="color:#FFAB19;font-weight:700">dacă �
    - Scriptul verifică mereu: **ții Z** → „Zi!”; **lași** → „Noapte!”
 
 **Încearcă tu — mecanismul cu tasta (2–3 min)**  
-- [ ] `dacă … altfel` e **în** `forever` (nu o singură dată sub steag)  
+- [ ] Condiția `dacă … altfel` e **în interiorul** buclei `forever` (nu o singură dată sub steag)  
 - [ ] Hexagonul e tasta `z` (Detectare — **fără** operatori verzi)  
 - [ ] Ții Z → mesaj de zi; lași → mesaj de noapte  
 - [ ] Poți comuta de mai multe ori, fără să reapeși steagul  
@@ -78,11 +78,11 @@ La finalul orei poți folosi <span style="color:#FFAB19;font-weight:700">dacă �
 - [ ] Drumurile **atunci** și **altfel** arată **diferit**  
 
 ### 4) Reset la steag
-1. **Chiar sub** steag, **înainte** de `forever`:  
+1. **Chiar sub** steag, **înaintea** buclei `forever`:  
    <span style="color:#9966FF;font-weight:700">comută fundalul la</span> (fundalul de start) →  
    <span style="color:#9966FF;font-weight:700">anulează efectele grafice</span> (dacă le folosești) →  
    <span style="color:#CF63CF;font-weight:700">oprește toate sunetele</span> *(la Complet, când ai sunete)*
-2. Opțional, înainte de `forever`:  
+2. Opțional, înaintea buclei `forever`:  
    <span style="color:#9966FF;font-weight:700">spune</span> `Ține Z = zi · lasă = noapte` pentru `2` secunde  
    *(explicație o dată; apoi bucla preia controlul)*
 
@@ -95,9 +95,9 @@ La finalul orei poți folosi <span style="color:#FFAB19;font-weight:700">dacă �
 ---
 
 ## Greșeli frecvente
-1. **Mereu același drum** — ai pus `dacă … altfel` **o singură dată** (fără `forever`); treci la tiparul din pasul 2.  
-2. **Mesajele se calcă / se blochează** — ai folosit `spune … pentru … secunde` **în** `forever`; folosește `spune` **fără** durată.  
-3. **Ai folosit două `dacă` separate** — azi vrem un singur `dacă/altfel` ca să se vadă „da vs nu”.  
+1. **Mereu același drum** — ai pus condiția `dacă … altfel` **o singură dată** (fără bucla `forever`); treci la tiparul din pasul 2.  
+2. **Mesajele se calcă / se blochează** — ai folosit `spune … pentru … secunde` **în** bucla `forever`; folosește `spune` **fără** durată.  
+3. **Ai folosit două condiții `dacă` separate** — azi vrem un singur `dacă/altfel` ca să se vadă „da vs nu”.  
 4. **Fundalurile lipsesc** — tab Scenă: 2 fundaluri + numele exact în `comută fundalul`.  
 5. **Operator verde în hexagon** — scoate-l; doar Detectare (tastă).  
 6. **Sunet spam** (la Complet) — pune <span style="color:#FFAB19;font-weight:700">așteaptă</span> `0.5` după sunet pe fiecare drum.  
@@ -112,7 +112,7 @@ Salvat: `Prenume_Nume_L2`
 
 | | Ce trebuie |
 |--|------------|
-| **Minim („am reușit”)** | `forever` + **un** `dacă … altfel` pe tasta `z` → **fundal + mesaj** pe fiecare drum + reset fundal la steag |
+| **Minim („am reușit”)** | bucla bucla `forever` + **o** condiție `dacă … altfel` pe tasta `z` → **fundal + mesaj** pe fiecare drum + reset fundal la steag |
 | **Complet (ținta orei)** | Minim + **sunet pe fiecare drum** + **reset complet** (fundal + efecte + `oprește toate sunetele`) |
 
 Dacă rămâi în urmă: salvează la **Minim**.  
@@ -125,7 +125,7 @@ Cei rapizi: Complet, apoi Bonus.
 ### Pasul 2 — Alegerea *(Minim)*
 *(Ca la „Încearcă tu — mecanismul” + „fundaluri”.)*
 
-- [ ] Un <span style="color:#FFAB19;font-weight:700">dacă … altfel</span> **în** `forever`, cu tasta `z`  
+- [ ] O condiție <span style="color:#FFAB19;font-weight:700">dacă … altfel</span> **în** bucla `forever`, cu tasta `z`  
 - [ ] **Atunci:** fundal zi + mesaj de zi  
 - [ ] **Altfel:** fundal noapte + mesaj de noapte  
 - [ ] Demonstrezi **ambele** drumuri (ții Z / lași)  
@@ -135,7 +135,7 @@ Cei rapizi: Complet, apoi Bonus.
 
 ### Pasul 3 — Sunet + reset complet *(Complet)*
 - [ ] Pe **fiecare** drum: un <span style="color:#CF63CF;font-weight:700">sunet</span> diferit (+ `așteaptă` `0.5` ca să nu spam-uiască)  
-- [ ] La steag, înainte de `forever`: fundal start + `anulează efectele` + `oprește toate sunetele`  
+- [ ] La steag, înaintea buclei `forever`: fundal start + `anulează efectele` + `oprește toate sunetele`  
 - [ ] Un coleg înțelege regula fără să îi explici  
 - [ ] Salvat din nou  
 
@@ -146,18 +146,26 @@ Cei rapizi: Complet, apoi Bonus.
 ## Bonus (dacă ai terminat Complet)
 - [ ] Pe fiecare drum: **costum** diferit pe personaj (nu doar fundal)  
 - [ ] Al 2-lea personaj: pe steag, alt `dacă/altfel` cu **altă** tastă (ex. `n` = forțează noapte pe un mesaj)  
-- [ ] La început (înainte de `forever`): `spune` scurt cu regula, apoi bucla  
+- [ ] La început (înaintea buclei `forever`): `spune` scurt cu regula, apoi bucla  
 
 ## Recapitulare rapidă
 1. **Atunci** = da · **Altfel** = nu  
-2. Un singur hexagon decide drumul — verificat mereu în `forever`  
+2. Un singur hexagon decide drumul — verificat mereu în bucla `forever`  
 3. Ții tasta **înainte** / în timpul rulării — nu „o fereastră de 3 secunde”  
 4. Fără operatori numerici în M2 L2 — doar taste / atingere  
 5. Nume: **`Prenume_Nume_L2`**  
 
+## Schema pe scurt *(pe foaie)*
+
+**Pe Personaj / Scenă**  
+la steag → fundal start → `forever`:  
+· `dacă` tasta `z` e apăsată?  
+  · **atunci:** fundal zi + `spune` mesaj zi  
+  · **altfel:** fundal noapte + `spune` mesaj noapte
+
 **Quiz scurt (cu profesorul):**  
 - Ce se întâmplă dacă răspunsul e „nu”?  
-- De ce punem `dacă … altfel` în `forever`, nu o singură dată?  
+- De ce punem condiția `dacă … altfel` în bucla `forever`, nu o singură dată?  
 - De ce nu folosim azi `x > 0`?
 
 ## Temă

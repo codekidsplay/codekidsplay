@@ -33,7 +33,7 @@ L1–L8 = piese. L9 = **jocul tău**. La L10 îl lustruiești și îl prezinți 
 
 ## Pas cu pas
 
-### 1) Reguli (pe tablă)
+### 1) Reguli
 1. Eroul se mișcă cu **tastele** (`forever` + `tasta e apăsată?`) — ca L4  
 2. Dacă atinge **peretele** (culoare) → înapoi la **start** — ca L3  
 3. Dacă atinge **ieșirea** → `Ai scăpat!` + sunet + <span style="color:#FFAB19;font-weight:700">stop all</span> — ca L7  
@@ -51,7 +51,7 @@ L1–L8 = piese. L9 = **jocul tău**. La L10 îl lustruiești și îl prezinți 
    <span style="color:#9966FF;font-weight:700">anulează efectele grafice</span> →  
    <span style="color:#CF63CF;font-weight:700">oprește toate sunetele</span> →  
    (dacă ai) <span style="color:#FF8C1A;font-weight:700">setează scor / vieti</span>  
-4. `forever` + 4 direcții (mișcare **întâi**, verificări **după** — ca L4)  
+4. bucla `forever` + 4 direcții (mișcare **întâi**, verificări **după** — ca L4)  
 5. `dacă atinge culoarea` (perete) → `du-te la` start  
 6. Ieșire = personaj sau **culoare diferită** de perete → victorie  
 7. Opțional Complet: `scor` / `vieti` / mesaj `trimite` la victorie (L5–L8)
@@ -97,7 +97,7 @@ Variabila / flag (ca `alarma_activa` la L8) = doar dacă la Bonus ai **2 ieșiri
 1. **Pipeta greșită** — peretele nu se detectează; re-pipetează pe pixelul de perete.  
 2. **Start pe perete** — te teleportezi și „mor” instant; mută startul.  
 3. **Viteză prea mare** — treci prin pereți; coboară la 3–4.  
-4. **Victorie spam** — `dacă ieșire` în forever **fără** `stop all`; pune `stop all` imediat (ca L7).  
+4. **Victorie spam** — `dacă ieșire` în bucla `forever` **fără** `stop all`; pune `stop all` imediat (ca L7).  
 5. **Reset incomplet** — lipsește `anulează efectele` / `oprește toate sunetele`.  
 6. **Nume fișier** — `Prenume_Nume_L9`, nu doar `Ana_L9`.
 
@@ -145,10 +145,10 @@ Cei rapizi: Complet, apoi Bonus.
 ---
 
 ## Bonus (dacă ai terminat Complet)
-- [ ] **2 ieșiri** (una e **capcană**): folosește **culori diferite** (sau 2 personaje), cu **2** `dacă` separate — **nu** același hexagon de culoare pentru ambele. Capcana → start / −1 viață; ieșirea bună → `stop all`.  
+- [ ] **2 ieșiri** (una e **capcană**): folosește **culori diferite** (sau 2 personaje), cu **2** condiții `dacă` separate — **nu** același hexagon de culoare pentru ambele. Capcana → start / −1 viață; ieșirea bună → `stop all`.  
 - [ ] Timer sau vieți pe scenă  
 - [ ] Nivel 2: alt fundal după prima ieșire (mesaj `nivel2`)  
-- [ ] Obstacol care se mișcă stânga–dreapta (`forever` + `glisează`)  
+- [ ] Obstacol care se mișcă stânga–dreapta (bucla `forever` + `glisează`)  
 
 ## Recapitulare rapidă
 1. Control + detectare + `stop all` / restart  
@@ -157,8 +157,16 @@ Cei rapizi: Complet, apoi Bonus.
 4. L10 = completare + prezentare  
 5. Nume: **`Prenume_Nume_L9`**  
 
+## Schema pe scurt *(pe foaie)*
+
+**Pe Erou**  
+la steag → reset start → `forever`:  
+· 4 taste (`schimbă x/y`)  
+· `dacă atinge culoarea` perete? → `du-te la` start  
+· `dacă atinge` ieșire? → `spune` → `oprește toate`
+
 **Quiz scurt (cu profesorul):**  
-- Ce pui în `forever` pentru control?  
+- Ce pui în bucla `forever` pentru control?  
 - Cum știi că ai atins ieșirea?  
 - De ce `stop all` la ieșire, nu doar `spune`?
 

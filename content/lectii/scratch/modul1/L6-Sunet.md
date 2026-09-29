@@ -154,6 +154,15 @@ Cei rapizi: Complet, apoi Bonus.
 3. La steag: deseori `oprește toate sunetele` înainte  
 4. Nume: **`Prenume_Nume_L6`**  
 
+## Schema pe scurt *(pe foaie)*
+
+**Tab Sunete:** adaugi sunetele pe personaj  
+
+**Pe Personaj**  
+la steag → `oprește toate sunetele` → `pornește sunetul` A  
+când se dă clic pe acest personaj → `pornește sunetul` B  
+*(Complet: știi și `redă … până la final`)*
+
 **Quiz scurt (cu profesorul):**  
 - Unde adaugi un sunet nou?  
 - Diferența `pornește` / `până la final`?  

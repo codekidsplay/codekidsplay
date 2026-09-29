@@ -9,7 +9,7 @@
 
 ## Obiectiv
 La finalul orei știi diferența <span style="color:#FFAB19;font-weight:700">repetă N</span> vs <span style="color:#FFAB19;font-weight:700">forever</span>, folosești <span style="color:#FFAB19;font-weight:700">stop all</span> / <span style="color:#FFAB19;font-weight:700">stop this script</span>, și un joc mic se oprește la victorie, apoi repornește curat la steag.  
-**Minimum:** un `forever` principal + victorie cu `stop all` + reset la steag.  
+**Minimum:** o buclă `forever` principal + victorie cu `stop all` + reset la steag.  
 **Ținta orei (Complet):** Minim + buton **STOP** separat + demonstrație: joacă → câștigă → steag → joacă din nou.
 
 ## De ce contează
@@ -63,11 +63,11 @@ Din <span style="color:#FFAB19;font-weight:700">Control</span>:
    <span style="color:#FFAB19;font-weight:700">stop all</span>
 
 *Legătură cu L6:* acolo verificam **doar la click pe Verifică**, ca să nu vezi „Mai încearcă” în buclă.  
-Aici verificăm **continuu** în `forever`, dar fiindcă **`stop all` oprește totul imediat**, nu apare spam.  
+Aici verificăm **continuu** în bucla `forever`, dar fiindcă **`stop all` oprește totul imediat**, nu apare spam.  
 **Regula de bază:** verificare continuă e ok **doar** când urmează un `stop` (sau ascunzi / oprești scriptul). Fără stop → la L6: click Verifică.
 
 **Încearcă tu — victorie cu oprire (3–4 min)**  
-- [ ] Un `forever` principal (control + verificare victorie)  
+- [ ] O buclă `forever` principal (control + verificare victorie)  
 - [ ] La `scor = 5` → mesaj + `stop all` (jocul se oprește)  
 - [ ] **Nu** rămâne mesajul care se tot repetă  
 - [ ] Salvat: `Prenume_Nume_L7`  
@@ -90,8 +90,8 @@ Aici verificăm **continuu** în `forever`, dar fiindcă **`stop all` oprește t
 1. **După stop, steagul nu mai face nimic** — ai uitat resetul (scor / `arată` pe stele); verifică ce e sub steag.  
 2. **5 forever** — mișcarea e dublă / haotică; păstrează unul pentru control.  
 3. **`stop this script` pe steag** — oprește doar acel script; controlul poate rula mai departe — pentru victorie e mai clar `stop all`.  
-4. **Victorie spam** — `dacă scor = 5` în forever **fără** `stop`: mesajul se tot repetă; pune `stop all` imediat.  
-5. **„Dar la L6 ziceai să nu verific în forever…”** — vezi nota din pasul 3: fără stop = Verifică; cu `stop all` = ok.  
+4. **Victorie spam** — `dacă scor = 5` în bucla `forever` **fără** `stop`: mesajul se tot repetă; pune `stop all` imediat.  
+5. **„Dar la L6 ziceai să nu verific în bucla `forever`…”** — vezi nota din pasul 3: fără stop = Verifică; cu `stop all` = ok.  
 6. **Nume fișier** — `Prenume_Nume_L7`, nu doar `Ana_L7`.
 
 ---
@@ -111,7 +111,7 @@ Cei rapizi: Complet, apoi Bonus.
 
 ### Pasul 1 — Jocul *(parte din Minim)*
 - [ ] Control taste + scor (poți refolosi ideea din L5)  
-- [ ] Un `forever` principal  
+- [ ] O buclă `forever` principal  
 - [ ] Steag: scor 0 + loc + efecte + sunete (+ stele `arată`)  
 
 ### Pasul 2 — Victorie cu oprire *(Minim)*
@@ -135,20 +135,29 @@ Cei rapizi: Complet, apoi Bonus.
 
 ## Bonus (dacă ai terminat Complet)
 - [ ] La victorie: `stop this script` pe control, **nu** `stop all` — ca alte scripturi să poată rula **muzica / animația de fanfară** după câștig  
-- [ ] Timer: variabilă `timp` care crește în forever până la stop  
+- [ ] Timer: variabilă `timp` care crește în bucla `forever` până la stop  
 - [ ] Pauză: variabilă `pauza` — dacă e 1, nu te miști  
 
 ## Recapitulare rapidă
 1. `forever` = aprins · `stop` = stins  
 2. Steag = reset + play  
 3. Un forever de control e destul  
-4. Verificare în forever **doar** cu `stop` imediat (altfel = tiparul Verifică din L6)  
+4. Verificare în bucla `forever` **doar** cu `stop` imediat (altfel = tiparul Verifică din L6)  
 5. Nume: **`Prenume_Nume_L7`**  
+
+## Schema pe scurt *(pe foaie)*
+
+**Pe Erou**  
+la steag → reset → `forever`: taste / joc  
+`forever`: `dacă scor = 5` → `spune` → `oprește toate`  
+
+**Pe buton Stop** *(dacă ai)*  
+click → `oprește toate`
 
 **Quiz scurt (cu profesorul):**  
 - Când folosești `repetă` și când `forever`?  
 - Ce face `stop all`?  
-- De ce e ok `scor = 5` în forever aici, dar nu „Mai încearcă” în forever la L6?
+- De ce e ok `scor = 5` în bucla `forever` aici, dar nu „Mai încearcă” în bucla `forever` la L6?
 
 ## Temă
 Opțional: buton „Reîncepe” (click → scor 0 + du la start) **fără** `stop all` — `Prenume_Nume_L7`.

@@ -136,7 +136,7 @@ Cei rapizi: Complet, apoi Bonus.
 - [ ] O buclă **rapidă** și una **lentă** (`așteaptă` diferit)  
 - [ ] **`forever` de decor** (al 2-lea script pe steag, după ce `repetă` e gata):  
   `forever` → `următorul costum` → `așteaptă` `0.2`  
-  *(Oprești cu stop. Nu pune `Gata!` în `forever`.)*  
+  *(Oprești cu stop. Nu pune `Gata!` în bucla `forever`.)*  
 - [ ] Explorare în clasă: schimbă o dată numărul din `repetă` (ex. 4 → 8) — ce observi pe scenă?  
 
 ## Recapitulare rapidă
@@ -145,6 +145,14 @@ Cei rapizi: Complet, apoi Bonus.
 3. Două bucle = **una sub alta**, nu una în alta  
 4. `spune` final = **sub** bucle  
 5. Nume: **`Prenume_Nume_L8`**  
+
+## Schema pe scurt *(pe foaie)*
+
+**Pe Personaj**  
+la steag → `du-te la` start →  
+`repetă` N: `mergi` / schimbă costum → `așteaptă` …  
+*(Complet: a 2-a buclă **sub** prima)*  
+apoi *(sub bucle)*: `spune Gata!`
 
 **Quiz scurt (cu profesorul):**  
 - Unde trebuie să fie blocurile ca să se repete?  

@@ -150,6 +150,13 @@ Cei rapizi: Complet, apoi Bonus.
 3. Blocurile pe **personaj**; la steag: `du-te la`  
 4. Nume: **`Prenume_Nume_L3`**  
 
+## Schema pe scurt *(pe foaie)*
+
+**Pe Personaj**  
+la steag → `du-te la` start →  
+`mergi` … → `așteaptă` … → `întoarce-te` … → `mergi` …  
+*(Complet: + `glisează` + `spune Am ajuns!`)*
+
 **Quiz scurt (cu profesorul):**  
 - Unde lipești blocurile de mișcare?  
 - De ce `du-te la` la început?  

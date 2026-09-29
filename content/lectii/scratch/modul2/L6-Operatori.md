@@ -61,7 +61,7 @@ Comparațiile (`< = >`) sunt **hexagoane** → intră în `dacă`.
 - [ ] Poți crește scorul măcar o dată  
 
 ### 3) Comparație — **doar** pe butonul „Verifică”
-*(Nu verifica în `forever` în fiecare clipă — altfel, cât timp scorul e sub țintă, vezi mereu „Mai încearcă”. Azi: **un click = o verificare**.)*
+*(Nu verifica în bucla `forever` în fiecare clipă — altfel, cât timp scorul e sub țintă, vezi mereu „Mai încearcă”. Azi: **un click = o verificare**.)*
 
 1. Adaugi un personaj = buton **Verifică**  
 2. Pe **Verifică**:  
@@ -77,7 +77,7 @@ Comparațiile (`< = >`) sunt **hexagoane** → intră în `dacă`.
 **Încearcă tu — comparație / Verifică (3–4 min)**  
 - [ ] Butonul Verifică are `dacă … altfel` cu `scor > 7` (sau `= 8`)  
 - [ ] Demonstrezi **ambele** drumuri (sub țintă **și** la țintă)  
-- [ ] **Nu** ai pus această verificare într-un `forever` pe erou  
+- [ ] **Nu** ai pus această verificare într-o buclă `forever` pe erou  
 - [ ] Salvat: `Prenume_Nume_L6`  
 
 ### 4) Calcule (`+` / `−`)
@@ -99,7 +99,7 @@ Comparațiile (`< = >`) sunt **hexagoane** → intră în `dacă`.
 ## Greșeli frecvente
 1. **Ai pus `5 = scor` greșit în afara hexagonului** — tot lanțul verde stă **în** `dacă`.  
 2. **`modifică cu (scor + 1)` dublu** — fie `modifică cu 1`, fie `setează la scor+1`, nu ambele.  
-3. **Mereu „Mai încearcă”** — ai pus `dacă/altfel` în `forever`; mută-l pe **click Verifică**.  
+3. **Mereu „Mai încearcă”** — ai pus condiția `dacă/altfel` în bucla `forever`; mută-l pe **click Verifică**.  
 4. **Ținta 8 cu `scor > 8`** — atunci 8 nu câștigă; folosește `scor > 7` sau `scor = 8`.  
 5. **Nume fișier** — `Prenume_Nume_L6`, nu doar `Ana_L6`.
 
@@ -154,14 +154,22 @@ Cei rapizi: Complet, apoi Bonus.
 ## Recapitulare rapidă
 1. Comparațiile = hexagoane pentru `dacă`  
 2. `+` / `−` = calcule în `setează`  
-3. Verifici **la click pe Verifică**, nu în `forever`  
+3. Verifici **la click pe Verifică**, nu în bucla `forever`  
 4. Ținta trebuie să se potrivească cu `=` / `>`  
 5. Nume: **`Prenume_Nume_L6`**  
+
+## Schema pe scurt *(pe foaie)*
+
+**Pe butonul Verifică**  
+când se dă clic pe acest personaj →  
+· `dacă scor = țintă` **atunci** `spune Bravo!`  
+· **altfel** `spune Mai încearcă`  
+*(verificare la click — **nu** în `forever`)*
 
 **Quiz scurt (cu profesorul):**  
 - Ce tip de bloc intră în hexagonul lui `dacă`?  
 - De ce `scor > 7` pentru ținta 8?  
-- De ce nu punem „Mai încearcă” într-un `forever`?
+- De ce nu punem „Mai încearcă” într-o buclă `forever`?
 
 ## Temă
 Opțional: schimbă ținta la 10 — același fișier `Prenume_Nume_L6`.
