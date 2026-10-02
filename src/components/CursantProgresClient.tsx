@@ -2,7 +2,9 @@
 
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import Link from 'next/link'
-import { ArrowLeft, Edit } from 'lucide-react'
+import { ArrowLeft, Edit, GraduationCap } from 'lucide-react'
+import { getProfesoriCursantAction } from '@/app/actions/cursanti'
+import { listStaffAction } from '@/app/actions/profesori'
 import { cursuri, module, lectii } from '@/lib/mockData'
 import { getStore, type BifareResult } from '@/lib/mockStore'
 import ProgresLectiiMock from '@/components/ProgresLectiiMock'
@@ -55,6 +57,28 @@ export default function CursantProgresClient({ cursant }: { cursant: Cursant }) 
   useEffect(() => {
     void refreshRemote()
   }, [refreshRemote])
+
+  // Profesorii asignați (doar cursanți reali)
+  const [profesori, setProfesori] = useState<string[] | null>(null)
+  useEffect(() => {
+    if (!useSupabase) return
+    let cancelled = false
+    void (async () => {
+      const [asign, staff] = await Promise.all([
+        getProfesoriCursantAction(cursant.id),
+        listStaffAction(),
+      ])
+      if (cancelled || !asign.ok || !staff.ok) return
+      const nume = asign.profesor_ids
+        .map(pid => staff.data.find(s => s.id === pid))
+        .filter((s): s is NonNullable<typeof s> => Boolean(s))
+        .map(s => s.nume || s.email)
+      setProfesori(nume)
+    })()
+    return () => {
+      cancelled = true
+    }
+  }, [useSupabase, cursant.id])
 
   // eslint-disable-next-line react-hooks/exhaustive-deps
   const store = useMemo(() => getStore(), [tick, lastBifare])
@@ -143,6 +167,18 @@ export default function CursantProgresClient({ cursant }: { cursant: Cursant }) 
             </p>
           ) : null}
           <p className="text-slate-400 text-sm mt-0.5">{cursant.email_parinte}</p>
+          {profesori !== null && (
+            <p className="mt-2 inline-flex items-center gap-1.5 text-sm text-slate-600">
+              <GraduationCap size={15} className="text-rose-500" />
+              {profesori.length > 0 ? (
+                <>
+                  Profesor: <span className="font-medium text-slate-800">{profesori.join(', ')}</span>
+                </>
+              ) : (
+                <span className="text-amber-700">Neasignat unui profesor</span>
+              )}
+            </p>
+          )}
         </div>
         <Link
           href={`/cursanti/${cursant.id}/editeaza`}
