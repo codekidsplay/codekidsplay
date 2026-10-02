@@ -29,6 +29,8 @@ export function genereazaParola(len = 8): string {
   return s
 }
 
+const SITE_LOGIN_URL = 'https://codekidsplay.vercel.app/login'
+
 export function mesajWhatsAppLogin(opts: {
   prenume: string
   username: string
@@ -37,15 +39,21 @@ export function mesajWhatsAppLogin(opts: {
   parola_parinte: string
 }): string {
   return [
-    `Salut! Conturi Code Kids Play pentru ${opts.prenume}:`,
+    `Bună ziua! 👋`,
+    `Iată conturile Code Kids Play pentru ${opts.prenume}:`,
     ``,
-    `Părinte: ${opts.email_parinte}`,
+    `👨‍👩‍👧 *Cont părinte*`,
+    `Email: ${opts.email_parinte}`,
     `Parolă: ${opts.parola_parinte}`,
     ``,
-    `Elev: username ${opts.username}`,
+    `🎮 *Cont elev*`,
+    `Username: ${opts.username}`,
     `PIN: ${opts.pin}`,
     ``,
-    `Intră pe site → Login.`,
+    `🔗 Intrați aici: ${SITE_LOGIN_URL}`,
+    ``,
+    `Mulțumim și mult succes! 🚀`,
+    `Echipa Code Kids Play`,
   ].join('\n')
 }
 

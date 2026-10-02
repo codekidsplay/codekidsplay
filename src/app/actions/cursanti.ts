@@ -520,6 +520,77 @@ export async function updateCursantAction(
   return { ok: true }
 }
 
+/**
+ * Șterge definitiv un cursant (DOAR admin).
+ * - Blocat dacă are plăți înregistrate (se dezactivează în schimb).
+ * - Șterge contul elevului; contul părintelui rămâne dacă mai are alți copii.
+ */
+export async function stergeCursantAction(
+  cursantId: string,
+): Promise<{ ok: true } | { ok: false; error: string }> {
+  if (!isSupabaseAdminConfigured()) return { ok: false, error: 'Supabase Admin neconfigurat.' }
+  if (!/^[0-9a-f-]{36}$/i.test(cursantId)) return { ok: false, error: 'ID cursant invalid.' }
+
+  const supabase = await createClient()
+  const { data: auth } = await supabase.auth.getUser()
+  if (!auth.user) return { ok: false, error: 'Neautentificat.' }
+
+  const admin = createAdminClient()
+  const { data: me } = await admin.from('profile').select('rol').eq('id', auth.user.id).maybeSingle()
+  if (me?.rol !== 'admin') return { ok: false, error: 'Doar adminul poate șterge cursanți.' }
+
+  const { count: nrPlati } = await admin
+    .from('plati')
+    .select('id', { count: 'exact', head: true })
+    .eq('cursant_id', cursantId)
+  if ((nrPlati ?? 0) > 0) {
+    return {
+      ok: false,
+      error: `Cursantul are ${nrPlati} plăți înregistrate și nu poate fi șters. Dezactivează-l (debifează „Cursant activ”).`,
+    }
+  }
+
+  const { data: cursant } = await admin
+    .from('cursanti')
+    .select('id, email_parinte')
+    .eq('id', cursantId)
+    .maybeSingle()
+  if (!cursant) return { ok: false, error: 'Cursantul nu a fost găsit.' }
+
+  // Conturi legate: elevul (profile.cursant_id) și părinții (parinte_cursanti)
+  const { data: elevi } = await admin
+    .from('profile')
+    .select('id')
+    .eq('cursant_id', cursantId)
+    .eq('rol', 'elev')
+  const { data: linkuri } = await admin
+    .from('parinte_cursanti')
+    .select('parinte_id')
+    .eq('cursant_id', cursantId)
+
+  const { error: delErr } = await admin.from('cursanti').delete().eq('id', cursantId)
+  if (delErr) return { ok: false, error: delErr.message }
+
+  for (const e of elevi ?? []) {
+    await admin.from('profile').delete().eq('id', e.id)
+    await admin.auth.admin.deleteUser(e.id)
+  }
+
+  // Părinte fără alți copii: ștergem și contul lui
+  for (const l of linkuri ?? []) {
+    const { count } = await admin
+      .from('parinte_cursanti')
+      .select('cursant_id', { count: 'exact', head: true })
+      .eq('parinte_id', l.parinte_id)
+    if ((count ?? 0) === 0) {
+      await admin.from('profile').delete().eq('id', l.parinte_id).eq('rol', 'parinte')
+      await admin.auth.admin.deleteUser(l.parinte_id)
+    }
+  }
+
+  return { ok: true }
+}
+
 export async function setProfesoriCursantAction(
   cursantId: string,
   profesorIds: string[],

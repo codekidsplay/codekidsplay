@@ -2,9 +2,11 @@
 
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
-import { ArrowLeft, Save, UserRound } from 'lucide-react'
-import { getCursantAction, updateCursantAction } from '@/app/actions/cursanti'
+import { useRouter } from 'next/navigation'
+import { ArrowLeft, Save, Trash2, UserRound } from 'lucide-react'
+import { getCursantAction, stergeCursantAction, updateCursantAction } from '@/app/actions/cursanti'
 import { getCursant } from '@/lib/mockStore'
+import { getSession } from '@/lib/auth'
 import { isSupabaseConfiguredClient } from '@/lib/supabase/publicFlag'
 import ConturiAccesPanel from '@/components/ConturiAccesPanel'
 import AsigneazaProfesorPanel from '@/components/AsigneazaProfesorPanel'
@@ -14,6 +16,10 @@ function isUuid(id: string) {
 }
 
 export default function EditeazaCursantForm({ cursantId }: { cursantId: string }) {
+  const router = useRouter()
+  const [esteAdmin, setEsteAdmin] = useState(false)
+  const [confirmStergere, setConfirmStergere] = useState('')
+  const [stergere, setStergere] = useState(false)
   const [loading, setLoading] = useState(true)
   const [saving, setSaving] = useState(false)
   const [error, setError] = useState<string | null>(null)
@@ -27,6 +33,10 @@ export default function EditeazaCursantForm({ cursantId }: { cursantId: string }
     data_nastere: '',
     activ: true,
   })
+
+  useEffect(() => {
+    setEsteAdmin(getSession()?.rol === 'admin')
+  }, [])
 
   useEffect(() => {
     const load = async () => {
@@ -245,6 +255,50 @@ export default function EditeazaCursantForm({ cursantId }: { cursantId: string }
       <ConturiAccesPanel cursant={cursantPentruPanouri} />
 
       <AsigneazaProfesorPanel cursantId={cursantId} />
+
+      {esteAdmin && isSupabaseConfiguredClient() && isUuid(cursantId) ? (
+        <div className="mt-8 max-w-xl rounded-2xl border border-red-200 bg-red-50/60 p-6">
+          <h2 className="font-bold text-red-700 mb-1">Zonă periculoasă</h2>
+          <p className="text-sm text-slate-600 mb-4">
+            Șterge definitiv cursantul, progresul și contul lui de elev. Contul părintelui se
+            șterge doar dacă nu mai are alți copii. Nu se poate șterge un cursant cu plăți
+            înregistrate – dezactivează-l în schimb.
+          </p>
+          <p className="text-sm text-slate-700 mb-2">
+            Scrie <strong>{form.prenume} {form.nume}</strong> pentru confirmare:
+          </p>
+          <input
+            value={confirmStergere}
+            onChange={e => setConfirmStergere(e.target.value)}
+            className="w-full rounded-xl border border-red-200 bg-white px-4 py-2.5 mb-3 outline-none focus:border-red-500"
+            autoComplete="off"
+          />
+          <button
+            type="button"
+            disabled={
+              stergere ||
+              confirmStergere.trim().toLowerCase() !==
+                `${form.prenume} ${form.nume}`.trim().toLowerCase()
+            }
+            onClick={async () => {
+              setStergere(true)
+              setError(null)
+              const r = await stergeCursantAction(cursantId)
+              if (!r.ok) {
+                setError(r.error)
+                setStergere(false)
+                window.scrollTo({ top: 0, behavior: 'smooth' })
+                return
+              }
+              router.push('/cursanti')
+            }}
+            className="inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 disabled:opacity-40 text-white font-medium px-5 py-2.5 rounded-xl transition-colors"
+          >
+            <Trash2 size={18} />
+            {stergere ? 'Șterg…' : 'Șterge cursantul'}
+          </button>
+        </div>
+      ) : null}
     </div>
   )
 }
