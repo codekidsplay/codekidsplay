@@ -98,7 +98,7 @@ export async function adaugaCursantAction(
     return { ok: false, error: 'Data nașterii invalidă.' }
   }
 
-  let username = normalizeUsername(input.username || '') || genereazaUsername(prenume, nume)
+  const username = normalizeUsername(input.username || '') || genereazaUsername(prenume, nume)
   if (!/^[a-z0-9._-]{2,32}$/.test(username)) {
     return { ok: false, error: 'Username invalid (2–32 caractere: a-z, 0-9, . _ -).' }
   }
@@ -288,6 +288,10 @@ export async function usernameDisponibilAction(username: string): Promise<boolea
   if (!isSupabaseAdminConfigured()) return true
   const u = normalizeUsername(username)
   if (!u) return false
+  // Doar utilizatori autentificați (staff) — altfel s-ar putea enumera username-urile elevilor.
+  const supabaseAuth = await createClient()
+  const { data: authUser } = await supabaseAuth.auth.getUser()
+  if (!authUser.user) return false
   const admin = createAdminClient()
   const { data } = await admin.from('cursanti').select('id').eq('username', u).maybeSingle()
   return !data
