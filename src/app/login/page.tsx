@@ -124,17 +124,62 @@ export default function LoginForm() {
   }
 
   return (
-    <div className="min-h-screen flex items-start justify-center bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900 px-4 pt-[38px] pb-16">
-      <div className="w-full max-w-md">
-        <div className="text-center mb-8">
+    <div className="relative min-h-screen flex items-start justify-center overflow-hidden px-4 pt-[38px] pb-16 bg-[var(--ckp-foam)]">
+      <div aria-hidden className="absolute inset-0 overflow-hidden">
+        <div
+          className="ckp-login-blob ckp-login-blob-a"
+          style={{
+            width: '55vw',
+            height: '55vw',
+            maxWidth: 520,
+            maxHeight: 520,
+            top: '-12%',
+            left: '-10%',
+            background: 'rgba(8, 64, 200, 0.32)',
+          }}
+        />
+        <div
+          className="ckp-login-blob ckp-login-blob-b"
+          style={{
+            width: '48vw',
+            height: '48vw',
+            maxWidth: 440,
+            maxHeight: 440,
+            top: '18%',
+            right: '-14%',
+            background: 'rgba(136, 32, 184, 0.28)',
+          }}
+        />
+        <div
+          className="ckp-login-blob ckp-login-blob-c"
+          style={{
+            width: '42vw',
+            height: '42vw',
+            maxWidth: 380,
+            maxHeight: 380,
+            bottom: '-8%',
+            left: '28%',
+            background: 'rgba(248, 48, 48, 0.22)',
+          }}
+        />
+      </div>
+
+      <div className="relative w-full max-w-md">
+        <div className="ckp-fade-up text-center mb-8">
           <Link href="/" className="inline-flex flex-col items-center gap-3">
             <BrandLogo size="lg" href={null} priority />
-            <p className="text-slate-300 text-sm">Autentificare</p>
+            <p
+              className="text-sm font-medium tracking-tight text-[var(--ckp-ink)]"
+              style={{ fontFamily: 'var(--font-display)' }}
+            >
+              Code Kids Play
+            </p>
+            <p className="text-[var(--ckp-muted)] text-sm -mt-1">Autentificare</p>
           </Link>
         </div>
 
-        <div className="bg-white rounded-2xl shadow-xl p-6">
-          <div className="flex rounded-xl bg-slate-100 p-1 mb-6">
+        <div className="ckp-fade-up-delay bg-white/90 backdrop-blur-sm rounded-2xl border border-[var(--ckp-ink)]/8 p-6 shadow-sm">
+          <div className="flex rounded-xl bg-[var(--ckp-foam)] p-1 mb-6">
             <button
               type="button"
               onClick={() => {
@@ -142,7 +187,9 @@ export default function LoginForm() {
                 setError('')
               }}
               className={`flex-1 py-2.5 text-sm font-medium rounded-[10px] transition-colors ${
-                tab === 'adult' ? 'bg-white text-slate-900 shadow-sm' : 'text-slate-500'
+                tab === 'adult'
+                  ? 'bg-white text-[var(--ckp-ink)] shadow-sm'
+                  : 'text-[var(--ckp-muted)]'
               }`}
             >
               Profesor / Părinte
@@ -154,7 +201,9 @@ export default function LoginForm() {
                 setError('')
               }}
               className={`flex-1 py-2.5 text-sm font-medium rounded-[10px] transition-colors ${
-                tab === 'elev' ? 'bg-white text-slate-900 shadow-sm' : 'text-slate-500'
+                tab === 'elev'
+                  ? 'bg-white text-[var(--ckp-ink)] shadow-sm'
+                  : 'text-[var(--ckp-muted)]'
               }`}
             >
               Elev
@@ -171,7 +220,7 @@ export default function LoginForm() {
                   autoComplete="username"
                   value={email}
                   onChange={e => setEmail(e.target.value)}
-                  className="w-full border border-slate-200 rounded-xl px-4 py-2.5 text-slate-900 focus:outline-none focus:ring-2 focus:ring-sky-500"
+                  className="w-full border border-[var(--ckp-ink)]/12 rounded-xl px-4 py-2.5 text-[var(--ckp-ink)] focus:outline-none focus:ring-2 focus:ring-[var(--ckp-blue)]"
                   placeholder="email@exemplu.ro"
                 />
               </div>
@@ -183,14 +232,14 @@ export default function LoginForm() {
                   autoComplete="current-password"
                   value={parola}
                   onChange={e => setParola(e.target.value)}
-                  className="w-full border border-slate-200 rounded-xl px-4 py-2.5 text-slate-900 focus:outline-none focus:ring-2 focus:ring-sky-500"
+                  className="w-full border border-[var(--ckp-ink)]/12 rounded-xl px-4 py-2.5 text-[var(--ckp-ink)] focus:outline-none focus:ring-2 focus:ring-[var(--ckp-blue)]"
                 />
               </div>
               {error && <p className="text-sm text-red-600">{error}</p>}
               <button
                 type="submit"
                 disabled={loading}
-                className="w-full bg-sky-600 hover:bg-sky-700 text-white font-medium py-3 rounded-xl disabled:opacity-60"
+                className="w-full bg-[var(--ckp-blue)] hover:bg-[var(--ckp-blue-deep)] text-white font-medium py-3 rounded-xl disabled:opacity-60 transition-colors"
               >
                 Intră
               </button>
@@ -204,7 +253,7 @@ export default function LoginForm() {
                   autoComplete="username"
                   value={username}
                   onChange={e => setUsername(e.target.value)}
-                  className="w-full border border-slate-200 rounded-xl px-4 py-2.5 text-slate-900 focus:outline-none focus:ring-2 focus:ring-sky-500"
+                  className="w-full border border-[var(--ckp-ink)]/12 rounded-xl px-4 py-2.5 text-[var(--ckp-ink)] focus:outline-none focus:ring-2 focus:ring-[var(--ckp-purple)]"
                   placeholder="andrei.p"
                 />
               </div>
@@ -218,7 +267,7 @@ export default function LoginForm() {
                   autoComplete="one-time-code"
                   value={pin}
                   onChange={e => setPin(e.target.value.replace(/\D/g, ''))}
-                  className="w-full border border-slate-200 rounded-xl px-4 py-2.5 text-slate-900 tracking-widest focus:outline-none focus:ring-2 focus:ring-sky-500"
+                  className="w-full border border-[var(--ckp-ink)]/12 rounded-xl px-4 py-2.5 text-[var(--ckp-ink)] tracking-widest focus:outline-none focus:ring-2 focus:ring-[var(--ckp-purple)]"
                   placeholder="••••"
                 />
               </div>
@@ -226,7 +275,7 @@ export default function LoginForm() {
               <button
                 type="submit"
                 disabled={loading}
-                className="w-full bg-amber-500 hover:bg-amber-600 text-white font-medium py-3 rounded-xl disabled:opacity-60"
+                className="w-full bg-[var(--ckp-red)] hover:bg-[var(--ckp-red-deep)] text-white font-medium py-3 rounded-xl disabled:opacity-60 transition-colors"
               >
                 Intră la lecții
               </button>

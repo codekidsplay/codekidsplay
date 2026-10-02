@@ -96,6 +96,52 @@ body {
   animation: ckp-fade-in 1s ease both;
 }
 
+@keyframes ckp-blob-drift {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  40% {
+    transform: translate(2.5%, -1.5%) scale(1.04);
+  }
+  70% {
+    transform: translate(-1.5%, 2%) scale(0.98);
+  }
+}
+
+@keyframes ckp-blob-drift-alt {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  35% {
+    transform: translate(-2%, 2.5%) scale(1.03);
+  }
+  65% {
+    transform: translate(2%, -1%) scale(0.97);
+  }
+}
+
+.ckp-login-blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(56px);
+  pointer-events: none;
+  will-change: transform;
+}
+
+.ckp-login-blob-a {
+  animation: ckp-blob-drift 18s ease-in-out infinite;
+}
+
+.ckp-login-blob-b {
+  animation: ckp-blob-drift-alt 22s ease-in-out infinite;
+}
+
+.ckp-login-blob-c {
+  animation: ckp-blob-drift 26s ease-in-out infinite reverse;
+}
+
 @keyframes ckp-ochi-to180 {
   0% {
     transform: scale(1) translateY(0) rotateY(0deg);
@@ -173,7 +219,10 @@ body {
   .ckp-fade-up-delay,
   .ckp-fade-up-delay-2,
   .ckp-ken,
-  .ckp-fade-in {
+  .ckp-fade-in,
+  .ckp-login-blob-a,
+  .ckp-login-blob-b,
+  .ckp-login-blob-c {
     animation: none;
   }
 
