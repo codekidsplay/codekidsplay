@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useState } from 'react'
+import Link from 'next/link'
 import { GraduationCap, Save, Shield } from 'lucide-react'
 import {
   adaugaProfesorAction,
@@ -93,6 +94,14 @@ export default function ProfesoriPanel() {
                       ) : null}
                     </div>
                   </div>
+                  {m.rol === 'profesor' && isAdmin && isSupabaseConfiguredClient() ? (
+                    <Link
+                      href={`/profesori/${m.id}`}
+                      className="text-xs text-blue-600 hover:underline font-medium whitespace-nowrap"
+                    >
+                      Activitate →
+                    </Link>
+                  ) : null}
                   <span
                     className={`text-xs px-2.5 py-1 rounded-[10px] font-medium border whitespace-nowrap ${
                       m.rol === 'admin'

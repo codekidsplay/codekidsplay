@@ -112,6 +112,10 @@ export async function resetParolaParinteAction(cursantId: string): Promise<Reset
     u => u.email?.toLowerCase() === cursant.email_parinte.toLowerCase(),
   )
   if (!parinteUser) return { ok: false, error: 'Contul părintelui nu a fost găsit în Auth.' }
+  const { data: rolP } = await admin.from('profile').select('rol').eq('id', parinteUser.id).maybeSingle()
+  if (rolP && rolP.rol !== 'parinte') {
+    return { ok: false, error: 'Emailul acesta aparține unui cont de personal – nu poate fi resetat de aici.' }
+  }
 
   const parola = genereazaParola(8)
   const { error: updErr } = await admin.auth.admin.updateUserById(parinteUser.id, { password: parola })

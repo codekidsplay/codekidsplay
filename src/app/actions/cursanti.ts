@@ -64,6 +64,20 @@ export async function adaugaCursantAction(
     }
   }
 
+  // Doar personalul (admin / profesor) poate crea cursanți
+  const supabaseAuth = await createClient()
+  const { data: authUser } = await supabaseAuth.auth.getUser()
+  if (!authUser.user) return { ok: false, error: 'Neautentificat.' }
+  const { data: rolRow } = await createAdminClient()
+    .from('profile')
+    .select('rol')
+    .eq('id', authUser.user.id)
+    .maybeSingle()
+  const rolStaff = rolRow?.rol
+  if (rolStaff !== 'admin' && rolStaff !== 'profesor') {
+    return { ok: false, error: 'Acces interzis.' }
+  }
+
   const prenume = input.prenume.trim()
   const nume = input.nume.trim()
   const emailParinte = input.email_parinte.trim().toLowerCase()
@@ -106,19 +120,28 @@ export async function adaugaCursantAction(
     return { ok: false, error: `Username-ul „${username}” e deja folosit.` }
   }
 
-  const { data: cursant, error: cursantErr } = await admin
+  const randCursant = {
+    prenume,
+    nume,
+    email_parinte: emailParinte,
+    telefon_parinte: telefon,
+    data_nastere: dataNastere,
+    username,
+    activ: true,
+  }
+  let { data: cursant, error: cursantErr } = await admin
     .from('cursanti')
-    .insert({
-      prenume,
-      nume,
-      email_parinte: emailParinte,
-      telefon_parinte: telefon,
-      data_nastere: dataNastere,
-      username,
-      activ: true,
-    })
+    .insert({ ...randCursant, creat_de: authUser.user.id })
     .select('id')
     .single()
+  // Migrarea `creat_de` încă nerulată: salvăm fără autor
+  if (cursantErr && /creat_de/i.test(cursantErr.message)) {
+    ;({ data: cursant, error: cursantErr } = await admin
+      .from('cursanti')
+      .insert(randCursant)
+      .select('id')
+      .single())
+  }
 
   if (cursantErr || !cursant) {
     return { ok: false, error: cursantErr?.message ?? 'Nu am putut crea fișa cursantului.' }
@@ -166,9 +189,21 @@ export async function adaugaCursantAction(
   )
 
   if (existingParinte) {
+    // Emailul nu poate aparține unui cont de personal (admin/profesor) sau de elev
+    const { data: rolExistent } = await admin
+      .from('profile')
+      .select('rol')
+      .eq('id', existingParinte.id)
+      .maybeSingle()
+    if (rolExistent && rolExistent.rol !== 'parinte') {
+      await admin.from('profile').delete().eq('id', elevAuth.user.id)
+      await admin.auth.admin.deleteUser(elevAuth.user.id)
+      await admin.from('cursanti').delete().eq('id', cursant.id)
+      return { ok: false, error: 'Acest email aparține unui cont de personal. Folosește emailul părintelui.' }
+    }
     parinteUserId = existingParinte.id
-    // Nu returnăm parola veche (nu o cunoaștem) — admin setează una nouă dacă a completat câmpul
-    if (parolaParinte.length >= 6) {
+    // Parola unui părinte existent o poate schimba doar adminul (profesorul nu).
+    if (parolaParinte.length >= 6 && rolStaff === 'admin') {
       await admin.auth.admin.updateUserById(existingParinte.id, {
         password: parolaParinte,
       })
@@ -222,7 +257,7 @@ export async function adaugaCursantAction(
   // Asignare profesor
   const supabase = await createClient()
   const { data: auth } = await supabase.auth.getUser()
-  let profesorId = input.profesor_id?.trim() || null
+  let profesorId = rolStaff === 'admin' ? input.profesor_id?.trim() || null : null
   if (!profesorId && auth.user) {
     const { data: me } = await admin
       .from('profile')
@@ -630,7 +665,14 @@ export async function getProfesoriCursantAction(
   if (!/^[0-9a-f-]{36}$/i.test(cursantId)) {
     return { ok: false, error: 'Cursant demo — folosește Adaugă cursant.', profesor_ids: [] }
   }
-  const admin = isSupabaseAdminConfigured() ? createAdminClient() : await createClient()
+  const sb = await createClient()
+  const { data: au } = await sb.auth.getUser()
+  if (!au.user) return { ok: false, error: 'Neautentificat', profesor_ids: [] }
+  const admin = isSupabaseAdminConfigured() ? createAdminClient() : sb
+  const { data: rolCurent } = await admin.from('profile').select('rol').eq('id', au.user.id).maybeSingle()
+  if (rolCurent?.rol !== 'admin' && rolCurent?.rol !== 'profesor') {
+    return { ok: false, error: 'Acces interzis', profesor_ids: [] }
+  }
   const { data, error } = await admin
     .from('profesor_cursanti')
     .select('profesor_id')
