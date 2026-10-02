@@ -56,7 +56,7 @@ export default function CursantAbonamentDetail({ cursantId }: { cursantId: strin
           <ArrowLeft size={22} />
         </Link>
         <div className="flex-1">
-          <h1 className="text-3xl font-bold text-slate-900">{cursant.nume} {cursant.prenume}</h1>
+          <h1 className="text-3xl font-bold text-slate-900">{cursant.prenume} {cursant.nume}</h1>
           <p className="text-slate-500 mt-1">{cursant.email_parinte}</p>
         </div>
         <Link href={`/cursanti/${cursantId}`} className="text-sm text-blue-600 hover:underline font-medium">
@@ -104,7 +104,7 @@ export default function CursantAbonamentDetail({ cursantId }: { cursantId: strin
           <AdaugaPlataButton
             cursantId={cursantId}
             abonamentId={aboActiv?.id}
-            numarCursant={`${cursant.nume} ${cursant.prenume}`}
+            numarCursant={`${cursant.prenume} ${cursant.nume}`}
             onSaved={refresh}
           />
         </div>

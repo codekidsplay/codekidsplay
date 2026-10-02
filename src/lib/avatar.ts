@@ -21,6 +21,12 @@ export function avatarColors(key: string) {
   return AVATAR_PALETTE[hashString(key) % AVATAR_PALETTE.length]
 }
 
+/** Inițiale: prenume + nume (ex. Ana Pop → AP) */
 export function avatarInitials(nume: string, prenume: string) {
-  return `${nume[0] ?? ''}${prenume[0] ?? ''}`.toUpperCase()
+  return `${prenume[0] ?? ''}${nume[0] ?? ''}`.toUpperCase()
+}
+
+/** Afișare pe site: prenumele, apoi numele de familie */
+export function formatNumeCopil(prenume: string, nume: string) {
+  return `${prenume} ${nume}`.trim()
 }

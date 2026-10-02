@@ -2,10 +2,10 @@
 
 import RequireAuth from '@/components/RequireAuth'
 
-/** Doar adminul vede abonamentele și plățile */
+/** Admin: toți cursanții. Profesor: doar cursanții asignați lui. */
 export default function AbonamenteLayout({ children }: { children: React.ReactNode }) {
   return (
-    <RequireAuth roles={['admin']} fallback="/admin">
+    <RequireAuth roles={['admin', 'profesor']} fallback="/admin">
       {children}
     </RequireAuth>
   )

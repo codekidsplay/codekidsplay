@@ -67,7 +67,10 @@ export function aniDisponibili(plati: PlataLike[]): number[] {
 
 type CursantLike = { id: string; nume: string; prenume: string }
 
-/** Deschide fereastră print → Salvează ca PDF. */
+const esc = (t: string) =>
+  t.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+
+/** Deschide dialogul print → Salvează ca PDF. */
 export function descarcaPdfIncasari(opts: {
   luna: number
   an: number
@@ -84,10 +87,10 @@ export function descarcaPdfIncasari(opts: {
       const data = new Date(p.data_plata + 'T12:00:00').toLocaleDateString('ro-RO')
       return `<tr>
         <td>${data}</td>
-        <td>${nume}</td>
+        <td>${esc(nume)}</td>
         <td>${p.metoda}</td>
         <td style="text-align:right">${p.suma} lei</td>
-        <td>${p.nota ?? ''}</td>
+        <td>${esc(p.nota ?? '')}</td>
       </tr>`
     })
     .join('')
@@ -127,15 +130,26 @@ export function descarcaPdfIncasari(opts: {
       ${rows || '<tr><td colspan="5">Nicio plată în această perioadă.</td></tr>'}
     </tbody>
   </table>
-  <script>window.onload = () => { window.print(); }</script>
 </body>
 </html>`
 
-  const w = window.open('', '_blank', 'noopener,noreferrer,width=900,height=700')
-  if (!w) {
-    alert('Permite ferestre pop-up pentru a genera PDF-ul.')
+  // iframe ascuns: nu poate fi blocat ca pop-up
+  const iframe = document.createElement('iframe')
+  iframe.style.cssText = 'position:fixed;right:0;bottom:0;width:0;height:0;border:0;visibility:hidden'
+  document.body.appendChild(iframe)
+  const doc = iframe.contentDocument
+  const win = iframe.contentWindow
+  if (!doc || !win) {
+    iframe.remove()
+    alert('Nu s-a putut genera PDF-ul. Încearcă din alt browser.')
     return
   }
-  w.document.write(html)
-  w.document.close()
+  doc.open()
+  doc.write(html)
+  doc.close()
+  setTimeout(() => {
+    win.focus()
+    win.print()
+    setTimeout(() => iframe.remove(), 60_000)
+  }, 300)
 }

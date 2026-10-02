@@ -96,7 +96,7 @@ export default function AbonamenteLista() {
       if (status === 'inactiv' && c.activ) return false
 
       if (query) {
-        const full = `${c.nume} ${c.prenume} ${c.email_parinte}`.toLowerCase()
+        const full = `${c.prenume} ${c.nume} ${c.email_parinte}`.toLowerCase()
         if (!full.includes(query)) return false
       }
 
@@ -401,7 +401,7 @@ export default function AbonamenteLista() {
                           <AdaugaPlataButton
                             cursantId={c.id}
                             abonamentId={aboActiv?.id}
-                            numarCursant={`${c.nume} ${c.prenume}`}
+                            numarCursant={`${c.prenume} ${c.nume}`}
                             onSaved={refresh}
                           />
                           <Link

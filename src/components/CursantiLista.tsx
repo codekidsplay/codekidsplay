@@ -144,7 +144,7 @@ export default function CursantiLista() {
       if (status === 'inactiv' && c.activ) return false
 
       if (query) {
-        const full = `${c.nume} ${c.prenume} ${c.email_parinte}`.toLowerCase()
+        const full = `${c.prenume} ${c.nume} ${c.email_parinte}`.toLowerCase()
         if (!full.includes(query)) return false
       }
 
@@ -388,7 +388,7 @@ export default function CursantiLista() {
                         <div className="flex items-center gap-3">
                           <CursantAvatar id={c.id} nume={c.nume} prenume={c.prenume} />
                           <p className="font-semibold text-slate-900">
-                            {c.nume} {c.prenume}
+                            {c.prenume} {c.nume}
                           </p>
                         </div>
                       </td>

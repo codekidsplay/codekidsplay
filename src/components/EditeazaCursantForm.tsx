@@ -135,7 +135,7 @@ export default function EditeazaCursantForm({ cursantId }: { cursantId: string }
         <div>
           <h1 className="text-3xl font-bold text-slate-900">Editează cursant</h1>
           <p className="text-slate-500 mt-1">
-            {form.nume} {form.prenume}
+            {form.prenume} {form.nume}
           </p>
         </div>
       </div>

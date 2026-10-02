@@ -184,7 +184,7 @@ export default function DashboardHome() {
                     <CursantAvatar id={c.id} nume={c.nume} prenume={c.prenume} />
                     <div>
                       <p className="font-semibold text-slate-900">
-                        {c.nume} {c.prenume}
+                        {c.prenume} {c.nume}
                       </p>
                       <p className="text-slate-400 text-xs">
                         {new Date(c.data_inscriere).toLocaleDateString('ro-RO')}

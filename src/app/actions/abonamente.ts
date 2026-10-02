@@ -4,15 +4,35 @@ import { createAdminClient } from '@/lib/supabase/admin'
 import { createClient } from '@/lib/supabase/server'
 import { isSupabaseAdminConfigured, isSupabaseConfigured } from '@/lib/supabase/env'
 
-async function verificaAdmin() {
+/**
+ * Admin: acces la toți cursanții.
+ * Profesor: doar la cursanții asignați lui (profesor_cursanti).
+ * `cursantIds === null` înseamnă fără restricție (admin).
+ */
+async function verificaAcces() {
   if (!isSupabaseAdminConfigured()) return { ok: false as const, error: 'Supabase Admin neconfigurat.' }
   const supabase = await createClient()
   const { data: auth } = await supabase.auth.getUser()
   if (!auth.user) return { ok: false as const, error: 'Neautentificat.' }
   const admin = createAdminClient()
   const { data: profile } = await admin.from('profile').select('rol').eq('id', auth.user.id).maybeSingle()
-  if (profile?.rol !== 'admin') return { ok: false as const, error: 'Doar adminul are acces la zona financiară.' }
-  return { ok: true as const, admin, userId: auth.user.id }
+  if (profile?.rol === 'admin') {
+    return { ok: true as const, admin, userId: auth.user.id, rol: 'admin' as const, cursantIds: null as string[] | null }
+  }
+  if (profile?.rol === 'profesor') {
+    const { data: links } = await admin
+      .from('profesor_cursanti')
+      .select('cursant_id')
+      .eq('profesor_id', auth.user.id)
+    const cursantIds = (links ?? []).map(l => l.cursant_id as string)
+    return { ok: true as const, admin, userId: auth.user.id, rol: 'profesor' as const, cursantIds }
+  }
+  return { ok: false as const, error: 'Acces interzis.' }
+}
+
+/** Profesorul poate lucra doar cu cursanții asignați lui. */
+function poateCursant(acces: { cursantIds: string[] | null }, cursantId: string): boolean {
+  return acces.cursantIds === null || acces.cursantIds.includes(cursantId)
 }
 
 export type AbonamenteDate = {
@@ -48,16 +68,33 @@ export async function listAbonamenteAction(): Promise<
   { ok: true; data: AbonamenteDate } | { ok: false; error: string }
 > {
   if (!isSupabaseConfigured()) return { ok: false, error: 'Supabase nu e configurat.' }
-  const acces = await verificaAdmin()
+  const acces = await verificaAcces()
   if (!acces.ok) return acces
-  const { admin } = acces
+  const { admin, cursantIds } = acces
+
+  // Profesor fără cursanți asignați: nimic de afișat
+  if (cursantIds !== null && cursantIds.length === 0) {
+    return { ok: true, data: { cursanti: [], abonamente: [], sedinte: [], plati: [] } }
+  }
+
+  const filtru = <T extends { in: (col: string, vals: string[]) => T }>(q: T, col: string): T =>
+    cursantIds === null ? q : q.in(col, cursantIds)
 
   const [{ data: cursanti }, { data: abonamente }, { data: sedinte }, { data: plati }] =
     await Promise.all([
-      admin.from('cursanti').select('id, nume, prenume, email_parinte, activ').order('created_at', { ascending: false }),
-      admin.from('abonamente').select('id, cursant_id, tip, sedinte_incluse, pret, data_start, activ'),
-      admin.from('sedinte').select('id, cursant_id, abonament_id, prezent'),
-      admin.from('plati').select('id, cursant_id, abonament_id, suma, data_plata, metoda, nota').order('data_plata', { ascending: false }),
+      filtru(
+        admin.from('cursanti').select('id, nume, prenume, email_parinte, activ'),
+        'id',
+      ).order('created_at', { ascending: false }),
+      filtru(
+        admin.from('abonamente').select('id, cursant_id, tip, sedinte_incluse, pret, data_start, activ'),
+        'cursant_id',
+      ),
+      filtru(admin.from('sedinte').select('id, cursant_id, abonament_id, prezent'), 'cursant_id'),
+      filtru(
+        admin.from('plati').select('id, cursant_id, abonament_id, suma, data_plata, metoda, nota'),
+        'cursant_id',
+      ).order('data_plata', { ascending: false }),
     ])
 
   return {
@@ -90,8 +127,9 @@ export async function getDetaliiCursantAbonamentAction(
 ): Promise<{ ok: true; data: DetaliiCursantAbonament } | { ok: false; error: string }> {
   if (!isSupabaseConfigured()) return { ok: false, error: 'Supabase nu e configurat.' }
   if (!/^[0-9a-f-]{36}$/i.test(cursantId)) return { ok: false, error: 'ID cursant invalid.' }
-  const acces = await verificaAdmin()
+  const acces = await verificaAcces()
   if (!acces.ok) return acces
+  if (!poateCursant(acces, cursantId)) return { ok: false, error: 'Nu ai acces la acest cursant.' }
   const { admin } = acces
 
   const [{ data: cursant }, { data: abonamente }, { data: sedinte }, { data: plati }] =
@@ -138,11 +176,14 @@ export type InregistreazaPlataInput = {
 export async function inregistreazaPlataAction(
   input: InregistreazaPlataInput,
 ): Promise<{ ok: true } | { ok: false; error: string }> {
-  const acces = await verificaAdmin()
+  const acces = await verificaAcces()
   if (!acces.ok) return acces
   const { admin } = acces
 
   if (!/^[0-9a-f-]{36}$/i.test(input.cursant_id)) return { ok: false, error: 'Cursant invalid.' }
+  if (!poateCursant(acces, input.cursant_id)) {
+    return { ok: false, error: 'Nu ai acces la acest cursant.' }
+  }
   if (!(input.suma > 0)) return { ok: false, error: 'Sumă invalidă.' }
   if (!(input.sedinte_incluse > 0)) return { ok: false, error: 'Număr ședințe invalid.' }
 

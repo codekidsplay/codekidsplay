@@ -134,7 +134,7 @@ export default function CursantProgresClient({ cursant }: { cursant: Cursant }) 
         </Link>
         <div className="flex-1">
           <h1 className="text-3xl font-bold text-slate-900">
-            {cursant.nume} {cursant.prenume}
+            {cursant.prenume} {cursant.nume}
           </h1>
           {cursant.data_nastere ? (
             <p className="text-slate-500 mt-1">

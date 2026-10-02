@@ -24,7 +24,7 @@ const navItems: {
   { href: '/admin', label: 'Dashboard', icon: LayoutDashboard },
   { href: '/cursanti', label: 'Cursanți', icon: Users },
   { href: '/cursuri', label: 'Lecții', icon: BookOpen },
-  { href: '/abonamente', label: 'Abonamente & Plăți', icon: CreditCard, roles: ['admin'] },
+  { href: '/abonamente', label: 'Abonamente & Plăți', icon: CreditCard },
   { href: '/profesori', label: 'Profesori', icon: GraduationCap, roles: ['admin'] },
 ]
 
