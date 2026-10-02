@@ -1,6 +1,16 @@
 import { createServerClient } from '@supabase/ssr'
 import { NextResponse, type NextRequest } from 'next/server'
 
+const PREFIXE_PROTEJATE = [
+  '/admin',
+  '/profesori',
+  '/cursanti',
+  '/cursuri',
+  '/abonamente',
+  '/invata',
+  '/parinte',
+]
+
 export async function middleware(request: NextRequest) {
   let supabaseResponse = NextResponse.next({ request })
 
@@ -28,7 +38,24 @@ export async function middleware(request: NextRequest) {
   })
 
   // Reîmprospătează sesiunea (nu elimina — necesar pentru SSR)
-  await supabase.auth.getUser()
+  const {
+    data: { user },
+  } = await supabase.auth.getUser()
+
+  // Protecție de rută: zonele private cer sesiune. Rolurile se verifică
+  // în continuare în layout-uri și în acțiunile de pe server.
+  const { pathname } = request.nextUrl
+  const esteProtejat = PREFIXE_PROTEJATE.some(
+    p => pathname === p || pathname.startsWith(`${p}/`)
+  )
+  if (esteProtejat && !user) {
+    const login = request.nextUrl.clone()
+    login.pathname = '/login'
+    login.search = ''
+    const redirect = NextResponse.redirect(login)
+    for (const c of supabaseResponse.cookies.getAll()) redirect.cookies.set(c)
+    return redirect
+  }
 
   return supabaseResponse
 }

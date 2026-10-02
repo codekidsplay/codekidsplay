@@ -347,13 +347,29 @@ export async function bifareLectieAction(cursantId: string, lectieId: string): P
           })
           .select('id')
           .single()
-        if (sedErr || !noua) {
+        if (sedErr?.code === '23505') {
+          // Cursă: o altă cerere a consumat deja ședința de azi (index unic)
+          const { data: concurenta } = await client
+            .from('sedinte')
+            .select('id')
+            .eq('cursant_id', cursantId)
+            .eq('data', azi)
+            .eq('consuma_sedinta', true)
+            .limit(1)
+            .maybeSingle()
+          if (!concurenta) {
+            return empty({ error: 'Nu am putut scădea ședința. Încearcă din nou.' })
+          }
+          sedintaId = concurenta.id
+          consumNou = false
+        } else if (sedErr || !noua) {
           return empty({
             error: `Nu am putut scădea ședința: ${sedErr?.message ?? 'eroare necunoscută'}. Lecția nu a fost bifată.`,
           })
+        } else {
+          sedintaId = noua.id
+          consumNou = true
         }
-        sedintaId = noua.id
-        consumNou = true
       }
     }
 
