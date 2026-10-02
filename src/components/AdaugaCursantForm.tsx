@@ -1,9 +1,9 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
-import { ArrowLeft, Save } from 'lucide-react'
+import { ArrowLeft, CheckCircle2, MessageCircle, Save } from 'lucide-react'
 import { cursuri } from '@/lib/mockData'
 import { adaugaCursant } from '@/lib/mockStore'
 import {
@@ -14,7 +14,7 @@ import {
   getSession,
   usernameElevDisponibil,
 } from '@/lib/auth'
-import { genereazaParola } from '@/lib/authHelpers'
+import { genereazaParola, mesajWhatsAppLogin } from '@/lib/authHelpers'
 import { adaugaCursantAction } from '@/app/actions/cursanti'
 import { listStaffAction, type StaffMember } from '@/app/actions/profesori'
 import { isSupabaseConfiguredClient } from '@/lib/supabase/publicFlag'
@@ -35,6 +35,25 @@ export default function AdaugaCursantForm() {
   const [isAdmin, setIsAdmin] = useState(false)
   const [error, setError] = useState<string | null>(null)
   const [saving, setSaving] = useState(false)
+  const trimiteWa = useRef(false)
+  const [salvat, setSalvat] = useState<{ id: string; waUrl: string | null } | null>(null)
+
+  /** După salvare: ecran cu butonul WhatsApp (link real, nu poate fi blocat ca pop-up). */
+  const arataWhatsApp = (id: string) => {
+    const mesaj = mesajWhatsAppLogin({
+      prenume: prenume.trim(),
+      username: username.trim(),
+      pin: pin.trim(),
+      email_parinte: email.trim(),
+      parola_parinte: parolaParinte.trim(),
+    })
+    const cifre = telefon.replace(/\D/g, '')
+    const nr = cifre.startsWith('40') ? cifre : cifre.startsWith('0') ? `4${cifre}` : cifre ? `40${cifre}` : ''
+    // fără număr: WhatsApp deschide alegerea contactului
+    const waUrl = `https://wa.me/${nr}?text=${encodeURIComponent(mesaj)}`
+    setSalvat({ id, waUrl })
+    setSaving(false)
+  }
 
   useEffect(() => {
     const s = getSession()
@@ -126,6 +145,10 @@ export default function AdaugaCursantForm() {
         } else if (profesorId) {
           // admin a asignat — ok în DB
         }
+        if (trimiteWa.current) {
+          arataWhatsApp(r.cursant_id)
+          return
+        }
         router.push(`/cursanti/${r.cursant_id}`)
         return
       }
@@ -168,11 +191,47 @@ export default function AdaugaCursantForm() {
         adaugaCursantLaProfesorSesiune(cursant.id, profesorId)
       }
 
+      if (trimiteWa.current) {
+        arataWhatsApp(cursant.id)
+        return
+      }
       router.push(`/cursanti/${cursant.id}`)
     } catch {
       setError('Nu am putut salva cursantul. Încearcă din nou.')
       setSaving(false)
     }
+  }
+
+  if (salvat) {
+    return (
+      <div className="max-w-xl bg-white rounded-2xl shadow-sm border border-slate-100 p-8 text-center">
+        <CheckCircle2 size={44} className="text-emerald-500 mx-auto mb-3" />
+        <h1 className="text-2xl font-bold text-slate-900 mb-1">
+          {prenume} {nume} a fost salvat
+        </h1>
+        <p className="text-slate-500 text-sm mb-6">
+          Trimite părintelui datele de logare pe WhatsApp.
+          {!telefon.trim() && ' (Nu ai completat telefonul – alegi contactul în WhatsApp.)'}
+        </p>
+        <div className="flex flex-wrap justify-center gap-3">
+          <a
+            href={salvat.waUrl ?? '#'}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white font-medium px-5 py-2.5 rounded-xl transition-colors"
+          >
+            <MessageCircle size={18} /> Trimite pe WhatsApp
+          </a>
+          <button
+            type="button"
+            onClick={() => router.push(`/cursanti/${salvat.id}`)}
+            className="inline-flex items-center px-5 py-2.5 rounded-xl border border-slate-200 text-slate-600 hover:bg-slate-50"
+          >
+            Deschide cursantul
+          </button>
+        </div>
+      </div>
+    )
   }
 
   return (
@@ -352,10 +411,20 @@ export default function AdaugaCursantForm() {
           <button
             type="submit"
             disabled={saving}
+            onClick={() => { trimiteWa.current = false }}
             className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 disabled:opacity-60 text-white font-medium px-5 py-2.5 rounded-xl transition-colors"
           >
             <Save size={18} />
             {saving ? 'Salvez…' : 'Salvează'}
+          </button>
+          <button
+            type="submit"
+            disabled={saving}
+            onClick={() => { trimiteWa.current = true }}
+            className="inline-flex items-center gap-2 bg-emerald-500 hover:bg-emerald-600 disabled:opacity-60 text-white font-medium px-5 py-2.5 rounded-xl transition-colors"
+          >
+            <MessageCircle size={18} />
+            Salvează + WhatsApp
           </button>
           <Link
             href="/cursanti"
