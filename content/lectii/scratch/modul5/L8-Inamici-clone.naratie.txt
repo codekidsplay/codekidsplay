@@ -1,0 +1,27 @@
+Lecția opt. Proiectul mare: inamici, clone, atingeri.
+
+Astăzi continui proiectul mare. Folosești același fișier din lecția șapte: Prenume, linie jos, Nume, linie jos, M cinci, linie jos, Proiect. Nu faci proiect nou. Azi adaugi dificultate: inamici, clone și lucruri de colectat.
+
+Obiectivul. Ai cel puțin un fel de pericol, un inamic care patrulează sau clone periculoase. Ai cel puțin un fel de lucru de colectat. Lovitura are o reacție, viață sau restart. Între lovituri există o pauză. Resetul curăță clonele. Asta e Minim. Complet înseamnă Minim, plus două feluri de inamici sau de colectabile, sau generare dinamică pe hartă, sau viață pe Scenă și Sfârșitul jocului.
+
+De ce contează. O clonă e o copie temporară a unui personaj. Dintr-un singur personaj poți face mai mulți inamici sau mai multe monede. Fără pericol și fără colectabile, lecția șapte e doar un trambulin. Azi pregătești și finalurile din lecția nouă.
+
+Primul pas, pe foaie, cinci minute. Din cele trei note de la lecția șapte alegi pentru Minim un pericol, adică un inamic care patrulează, și un colectabil, adică monede din clone.
+
+Al doilea pas, inamicul pe traseu. Creezi variabila viață, pentru toate sprite-urile. Pe steag, la Erou, setează viață la trei. Sprite-ul Inamic are variabila dir, numai pentru acest sprite. Patrularea e ca în lecția trei, dar pe o platformă. Du-te la x zero, y la înălțimea platformei. Apoi repetă la nesfârșit: schimbă x cu dir ori doi, și întoarcere la limitele platformei. La Erou, în repetă la nesfârșit: dacă atinge Inamic, schimbă viață cu minus unu, du-te la start, spune Au timp de o secundă. Inamicul patrulează doar pe platforma lui. Te atinge și pierzi o viață, nu toate deodată.
+
+Al treilea pas, colectabilul din clone. Sprite-ul Monedă are variabilele scor și k, pentru toate sprite-urile. Pe steag: ascunde, setează scor la zero, setează k la zero. Apoi repetă cinci ori: schimbă k cu unu, du-te la x minus două sute plus k ori optzeci, y la înălțimea unei monede, și creează o clonă a mea. La când încep ca o clonă: arată, apoi repetă la nesfârșit. Dacă atinge Erou, schimbă scor cu unu și șterge această clonă. Pe traseu apar cinci monede. Când le atingi, scorul crește cu unu și moneda dispare o singură dată.
+
+Al patrulea pas, resetul, cinci minute. Apeși din nou steagul. Monedele reapar, iar viața și scorul sunt iar la început. Clonele se șterg automat la steag sau la oprire. Dacă ai derulare, inamicul și monedele trebuie să se miște cu lumea, nu să rămână lipite de ecran.
+
+Al cincilea pas, pentru Complet. Alegi cel puțin una. Generator: în Monedă, după primele cinci, repetă la nesfârșit, așteaptă trei secunde, creează o clonă a mea, la o poziție aleatorie pe x. Viață pe Scenă: viața se afișează mare. La viață egal cu zero, spune Sfârșit și oprește tot. Al doilea tip: un inamic mai rapid sau o monedă care valorează cinci.
+
+Greșeli frecvente. Mori imediat: lipsește spune timp de o secundă, sau du-te la start după lovitură. Monedele apar peste tot sau nu apar deloc: verifici formula pentru x și că k e zero la steag. Clonele rămân la restart: oprește tot le șterge, iar steagul le recreează curat. O monedă dă scor de mai multe ori: lipsește șterge această clonă. Inamicul iese de pe platformă: limitele nu se potrivesc cu platforma.
+
+Proiectul de azi. Inamici, clone, atingeri.
+
+Minim înseamnă: pericol, colectabil, reacție și reset al clonelor. Complet înseamnă: Minim plus generator, sau viață finală, sau al doilea tip. Dacă rămâi în urmă, salvează la Minim.
+
+Recapitulare. Pericol și recompensă. Clone curate la reset. Lecția nouă aduce meniul, victoria și înfrângerea.
+
+Succes cu inamicii și monedele tale.

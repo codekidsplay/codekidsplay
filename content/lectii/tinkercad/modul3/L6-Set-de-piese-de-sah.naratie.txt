@@ -1,0 +1,27 @@
+Lecția șase. Șahul meu.
+
+Astăzi faci un set: piese diferite, dar din aceeași familie, pentru că au aceeași bază. Nu facem tot setul de șah, două sau trei piese sunt suficiente. Fișier nou: Prenume, linie jos, Nume, linie jos, T trei, linie jos, L șase. Proiectul se numește Șahul meu.
+
+Obiectivul. La final ai cel puțin două piese de șah pe baze identice, care se recunosc. Minim: bază cu diametru treizeci și grosime patru, aceeași la toate. Pionul are gât cu diametru paisprezece și înălțime optsprezece, plus cap sferă cu diametru șaisprezece. Turnul are corp cu diametru optsprezece și înălțime treizeci și patru, plus coroană cu diametru douăzeci și patru și înălțime opt, cu creneluri tăiate în cruce. Piesele stau în rând, la patruzeci de milimetri una de alta. Complet: minim, plus un nebun, din con cu diametru optsprezece și înălțime treizeci și doi, cu cap sferic cu crestătură, și o copie a pionului în altă culoare, alb și negru.
+
+De ce contează. Un set are reguli comune: aceeași bază, aceleași proporții. Copiezi baza o dată, apoi construiești fiecare piesă pe ea.
+
+Primul pas pe ecran. Create new design, cu numele fișierului. Snap Grid pe unu milimetru. Un Cylinder de treizeci pe treizeci pe patru, baza. Control și D de două ori, mutând copiile pe rând la patruzeci de milimetri una de alta, cu Snap Grid pe cinci, opt sărituri. Ai trei baze. Atenție la Align: mută ambele piese. Trage forma nouă peste baza ei înainte de tasta L, ca baza să rămână pe loc.
+
+Al doilea pas pe ecran. Pionul. Snap Grid pe unu. Un Cylinder de paisprezece pe paisprezece pe optsprezece, gâtul, aliniat cu prima bază pe cele două direcții de pe plan. O Sphere de șaisprezece pe șaisprezece pe șaisprezece, capul, aliniată cu prima bază, nu cu gâtul. O ridici cu conul negru la paisprezece milimetri. Din Front, vezi silueta pionului. Selectezi baza, gâtul și capul cu Shift și click, Control și G.
+
+Al treilea pas pe ecran. Turnul. Un Cylinder de optsprezece pe optsprezece pe treizeci și patru, corpul, aliniat cu a doua bază. Un Cylinder de douăzeci și patru pe douăzeci și patru pe opt, coroana, aliniat la fel, ridicat la treizeci de milimetri. Un Box de șase pe douăzeci și opt pe opt, Hole, un crenel. Îl aliniezi cu a doua bază pe cele două direcții, apoi cu coroana, punctul de sus. Îl ridici cu doi milimetri: taie șase milimetri adâncime în coroană. Control și D, rotești copia nouăzeci de grade, patru pași de câte douăzeci și doi virgulă cinci: crenelurile sunt în cruce. Selectezi baza, corpul, coroana și cele două Hole-uri, Control și G. Din Top, patru creneluri. Din Front, turnul e mai înalt decât pionul.
+
+Al patrulea pas pe ecran, pentru Complet. Nebunul. Un Cone de optsprezece pe optsprezece pe treizeci și doi, aliniat cu a treia bază. O Sphere de doisprezece pe doisprezece pe doisprezece, capul, aliniată la fel și ridicată la douăzeci și opt. Un Box de doi pe douăzeci pe opt, Hole, crestătura, aliniat cu a treia bază, ridicat la treizeci și patru și rotit patruzeci și cinci de grade. Selectezi baza, conul, capul și crestătura, Control și G. Din Front, nebunul e cel mai înalt, patruzeci de milimetri. Turnul are treizeci și opt, pionul treizeci.
+
+Al cincilea pas pe ecran. Snap Grid pe cinci. Pionul, Control și D, copia la o sută douăzeci de milimetri de prima bază. La Color, pionul original alb sau deschis, copia neagră sau închisă. La fel poți colora turnul.
+
+Greșeli frecvente. Piesele nu au aceeași bază: copiază aceeași bază. Capul plutește: ridică sfera la paisprezece milimetri. Crenelurile nu taie: Hole-urile nu sunt grupate cu turnul. Crenelurile taie prea adânc: ridică-le cu conul negru. Ai grupat toate piesele: Ungroup, apoi fiecare piesă se grupează singură, cu baza ei. Piesele se ating: păstrează patruzeci de milimetri între baze.
+
+Proiectul de azi. Șahul meu.
+
+Minim înseamnă: pion și turn pe baze identice, la patruzeci de milimetri, cu crenelurile în cruce. Complet înseamnă: minim, plus nebun și pion în altă culoare.
+
+Recapitulare. Un set are bază comună. Fiecare piesă se grupează cu propria bază. Hole-urile se grupează doar cu piesa pe care o taie. Din Front compari înălțimile.
+
+Succes la setul tău de șah.

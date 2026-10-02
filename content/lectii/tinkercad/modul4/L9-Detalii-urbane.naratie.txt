@@ -1,0 +1,31 @@
+Lecția nouă. Detalii urbane.
+
+Astăzi aduci orașul la viață cu felinare, semafoare și indicatoare: piese mici, multe, făcute cu Control și D. Faci o copie a proiectului din lecția opt, cu Duplicate, și o redenumești: Prenume, linie jos, Nume, linie jos, T patru, linie jos, L zero nouă. Proiectul se numește Detaliile mele.
+
+Obiectivul. La final ai detalii urbane pe lângă străzile tale. Minim: patru felinare la douăzeci de milimetri unul de altul, un semafor cu trei lumini și un indicator. Complet: minim, plus opt felinare, pe ambele părți ale străzii, patru semafoare, câte unul la fiecare colț al intersecției, și trei indicatoare.
+
+De ce contează. Detaliile mici dau viață unui oraș. Dar nu le faci pe rând, una câte una. Faci o piesă bună, o grupezi și o copiezi cu aceeași mutare. Așa lucrează și arhitecții.
+
+Primul pas pe ecran. La Snap Grid, jos în dreapta, pui zero virgulă cinci milimetri. Toate piesele stau pe zone, la un milimetru de marginea dinspre stradă, la patru milimetri. Nu pe trotuar și nu pe asfalt. Începi cu felinarul. Un Box de zero virgulă opt pe zero virgulă opt pe opt: stâlpul, gri, ridicat la patru milimetri. Un Box de trei pe unu virgulă doi pe unu: capul, galben, ridicat la doisprezece milimetri, deasupra stâlpului. Apeși tasta L, pentru Align, cu stâlpul și capul: mijloc pe stânga spre dreapta și mijloc pe față spre spate. Capul stă centrat deasupra stâlpului, ca un T. Apoi apeși tasta Control și G împreună. Pe Mac, Command și G. Acesta e felinarul.
+
+Al doilea pas pe ecran. Felinarele în șir. Pui felinarul pe zona din spate, la un milimetru de marginea dinspre strada orizontală și la trei milimetri de colțul stâng al zonei. Pui Snap Grid la doi milimetri. Apeși tasta Control și D împreună și muți copia douăzeci de milimetri spre dreapta. Apeși Control și D încă de două ori. Ai patru felinare egal distanțate.
+
+Al treilea pas pe ecran. Semaforul. Un Cylinder de zero virgulă opt pe zero virgulă opt pe nouă: stâlpul, gri, la patru milimetri. Un Box de doi pe doi pe cinci: cutia, neagră, la opt milimetri. Tasta L: mijloc pe ambele axe cu stâlpul. O Sphere de unu virgulă cinci pe unu virgulă cinci pe unu virgulă cinci, roșie, la unsprezece milimetri, cu mijloc pe stânga spre dreapta cu cutia. Tasta L pe marginea din față a cutiei și apoi o muți zero virgulă cinci milimetri spre față. Control și D pe sferă, muți copia unu virgulă cinci milimetri în jos, o faci galbenă. Încă un Control și D, unu virgulă cinci milimetri în jos, o faci verde. De sus în jos: roșu, galben, verde. Selectezi stâlpul, cutia și cele trei sfere și apeși Control și G.
+
+Al patrulea pas pe ecran. Indicatorul. Un Cylinder de zero virgulă șase pe zero virgulă șase pe șapte, gri, la patru milimetri. Un Box de trei pe zero virgulă trei pe trei: placa, roșie sau albastră, la opt milimetri, cu mijloc pe ambele axe cu stâlpul. Apoi Control și G.
+
+Al cincilea pas pe ecran, pentru Complet. Felinare pe ambele părți. Selectezi cele patru felinare, Control și D, și muți copiile optsprezece milimetri spre față. Sunt șaisprezece milimetri cât e golul, plus doi. Ajung pe zona de cealaltă parte a străzii, tot la un milimetru de margine. Cu Snap Grid doi milimetri sunt nouă sărituri. Verifici din Top, în View Cube: patru felinare pe fiecare parte a străzii.
+
+Al șaselea pas pe ecran. Semafoarele la colțuri. Pui semaforul la colțul intersecției, pe zona din dreapta spate, adică parcul, în colțul dinspre intersecție, la un milimetru de ambele margini. Control și D, optsprezece milimetri spre stânga, la colțul de peste strada verticală. Selectezi ambele, Control și D, optsprezece milimetri spre față. Ai patru semafoare. Snap Grid rămâne la doi milimetri.
+
+Al șaptelea pas pe ecran. Trei indicatoare. Pui indicatorul pe marginile străzilor. Control și D de două ori, alte culori și alte locuri. Unul de STOP, unul de parcare și unul pentru pietoni.
+
+Greșeli frecvente. Felinarele nu sunt egal distanțate: prima mutare de douăzeci de milimetri, apoi doar Control și D. Capul plutește lângă stâlp: nu ai folosit tasta L. Semaforul nu are lumini: sferele sunt în cutie, mută-le zero virgulă cinci milimetri spre față. Luminile sunt în ordine greșită: roșu sus, galben la mijloc, verde jos. Piesele sunt pe stradă: așază-le pe marginea zonei. Nu ai grupat: la mutare rămân piese în urmă. Prea mari: un felinar de opt milimetri înseamnă patru metri în realitate.
+
+Proiectul de azi. Detaliile mele.
+
+Minim înseamnă: patru felinare la douăzeci de milimetri, un semafor cu trei lumini și un indicator. Complet înseamnă: minim, plus opt felinare, patru semafoare și trei indicatoare. Dacă rămâi în urmă, salvează la Minim.
+
+Recapitulare. Un detaliu bun e o piesă făcută o dată și copiată. Distanțele egale vin de la Control și D. La semafor, luminile sunt roșu, galben, verde, de sus în jos. Numele fișierului are prenumele, numele, T patru și L zero nouă.
+
+Succes la detaliile tale.

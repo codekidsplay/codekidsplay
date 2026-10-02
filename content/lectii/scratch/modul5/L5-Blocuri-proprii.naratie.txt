@@ -1,0 +1,27 @@
+Lecția cinci. Cod curat pe blocuri.
+
+Astăzi îți faci propriile blocuri, ca să nu copiezi același cod de mai multe ori. Pornești de la jocul din lecția trei, Evită patrula. Îl salvezi ca o copie, cu numele Prenume, linie jos, Nume, linie jos, M cinci, linie jos, L cinci. Proiectul se numește Cod curat pe blocuri.
+
+Obiectivul. Faci cel puțin un bloc propriu, de exemplu reset erou. Îl folosești de cel puțin două ori în proiect. Jocul merge la fel ca înainte, sau mai curat. Asta e Minim. Complet înseamnă Minim, plus un bloc cu valoare primită, sau bifa Rulează fără reîmprospătarea ecranului pe un bloc de atingere sau de mișcare fină.
+
+De ce contează. Blocurile proprii sunt ca niște funcții, pe înțelesul copiilor. Fără reîmprospătare înseamnă atingeri mai strânse și mai puține sacadări. E important la platforme și la grila din modulul șase.
+
+Primul pas, pe foaie, cinci minute. Un bloc propriu e o bucată de cod cu nume. Îl scrii o dată și îl folosești de câte ori vrei. Dacă vrei să schimbi ceva, schimbi într-un singur loc. În jocul din lecția trei, du-te la start apare de două ori: la steag și la lovitură. Faci blocul reset erou. Scrie pe foaie ce face: du-te la x minus două sute, y minus o sută, și setează viață la trei.
+
+Al doilea pas pe ecran. Deschizi proiectul din lecția trei. Alegi Fișier, apoi Salvează o copie, cu numele nou.
+
+Al treilea pas, creezi blocurile. La Erou deschizi paleta Blocurile mele, cea roz, jos. Apeși Fă un bloc, îl numești du-te la start și apeși O K. Sub definește du-te la start pui du-te la x minus două sute, y minus o sută. Faci încă un bloc, reset erou. Sub definește reset erou pui blocul du-te la start și setează viață la trei. În paleta roz ar trebui să vezi două blocuri.
+
+Al patrulea pas, folosești blocurile. Pe steag, la Erou, ștergi vechile blocuri și pui un singur bloc: reset erou. La lovitură ștergi du-te la x minus două sute, y minus o sută și pui du-te la start. Doar poziția. Viața rămâne cum e. Blocul du-te la start e folosit în două locuri. Jocul merge la fel, dar scriptul e mai scurt.
+
+Complet, alegi una. Varianta A, valoare primită. Faci un bloc nou, lovitură. Bifezi Adaugă o intrare, număr, numită cât. Sub definiție: schimbă viață cu zero minus cât, și du-te la start. Inamicul mic apelează lovitură unu. Inamicul mare apelează lovitură doi. Varianta B, fără reîmprospătarea ecranului, pe jocul din lecția unu, într-o copie. Faci blocul ieși din podea, cu repetă până când nu atinge Teren, schimbă y cu unu. Bifezi Rulează fără reîmprospătarea ecranului. Eroul nu mai tremură la aterizare.
+
+Greșeli frecvente. Blocul e făcut, dar nu e folosit. Jocul s-a stricat după mutare, pentru că ai uitat să ștergi blocurile vechi. Viața revine la trei la fiecare lovitură: ai pus reset erou în loc de du-te la start. Tot jocul într-un singur bloc: extrage doar o bucată mică. La lovitură lipsește numărul. Fără reîmprospătare nu se pune pe animații, ci doar pe bucle strânse.
+
+Proiectul de azi. Cod curat pe blocuri.
+
+Minim înseamnă: un bloc propriu, apelat de cel puțin două ori, proiect jucabil. Complet înseamnă: Minim plus valoare primită sau fără reîmprospătare. Dacă rămâi în urmă, salvează la Minim.
+
+Recapitulare. Blocul propriu e o bucată de cod cu nume. Îl definești o dată și îl apelezi de câte ori ai nevoie. Numele fișierului are prenumele, numele, M cinci și L cinci.
+
+Succes la codul tău curat.

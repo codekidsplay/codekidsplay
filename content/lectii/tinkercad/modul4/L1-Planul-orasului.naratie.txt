@@ -1,0 +1,27 @@
+Lecția unu. Planul orașului.
+
+Astăzi stabilim scara și placa pe care construiești tot modulul: un cartier mic al orașului nostru. Proiectul se numește Cartierul meu. În Tinkercad faci un Create new design și îl numești: Prenume, linie jos, Nume, linie jos, T patru, linie jos, L zero unu. Poți adăuga la sfârșit și zona: Nord, Est, Sud sau Vest, tot cu linie jos.
+
+Obiectivul. La final ai o placă de o sută cincizeci pe o sută cincizeci de milimetri, cu patru zone colorate și cu scara scrisă pe ea: un metru real înseamnă doi milimetri în model. Minim: placa, scara scrisă cu Text și cele patru zone, în colțuri, cu un gol de șaisprezece milimetri între ele, fiecare de altă culoare. Complet: minim, plus legenda, numele cartierului și o săgeată N pentru nord.
+
+De ce contează. Toți elevii folosesc aceeași placă și aceeași scară, ca plăcile să se potrivească la sfârșit într-un oraș mare. Scara te ajută să știi cât de mare e o casă, o stradă sau o mașină față de realitate. O casă de zece metri lungime are douăzeci de milimetri. O stradă de opt metri lățime are șaisprezece milimetri. Azi imprimanta trei D nu se folosește. Facem doar design.
+
+Primul pas pe ecran. Mai întâi, pe foaie, faci calculul scării. Un metru este doi milimetri. O casă de zece metri are douăzeci de milimetri. O mașină de patru metri are opt milimetri. O stradă de opt metri are șaisprezece milimetri. Apoi, în Tinkercad, uită-te jos, în dreapta ecranului, la Snap Grid, și pune unu milimetru.
+
+Al doilea pas pe ecran. Din lista de forme, din dreapta, tragi un Box pe Workplane. Îi scrii mărimile: o sută cincizeci, o sută cincizeci, trei. Este un pătrat de șaptezeci și cinci de metri în realitate. Îi dai o culoare neutră, gri deschis.
+
+Al treilea pas pe ecran. Tragi un Box nou, de șaizeci și șapte pe șaizeci și șapte pe unu. Selectezi Box-ul și placa și apeși tasta L, pentru Align. Alegi punctul din stânga și punctul din spate. Zona stă acum în colțul din stânga spate. Cu conul negru de deasupra o ridici la trei milimetri, ca să stea pe placă. Apoi apeși tasta Control și D împreună. Pe Mac, în loc de Control, apeși Command. Aliniezi copia cu placa: punctul din dreapta și punctul din spate. Încă o dată Control și D, apoi tasta L: stânga și față. Ultima copie: dreapta și față. Între zone rămâne un gol de șaisprezece milimetri. Acolo vor veni străzile. Cu Color, pui culorile: stânga spate, locuințe, galben. Dreapta spate, parc, verde. Stânga față, centru, portocaliu. Dreapta față, clădiri publice, albastru.
+
+Al patrulea pas pe ecran. Din Basic Shapes iei Text. Scrii scara: cifra unu, litera m, semnul egal, cifra doi, literele m m. La Height pui un milimetru. Îl tragi de pătratele albe până are cam treizeci de milimetri lungime. Îl pui pe zona de locuințe, lângă marginea plăcii, ridicat la patru milimetri. Nu îl pune în golurile dintre zone, pentru că în lecția cinci acolo vin străzile și ți-ar acoperi textul. Din View Cube, de sus din stânga, alegi Top și verifici că se citește.
+
+Al cincilea pas pe ecran, pentru Complet. Legenda: patru pătrățele de cinci pe cinci pe unu, în culorile zonelor, într-un rând pe zona de parc, lângă marginea din spate a plăcii, ridicate la patru milimetri. Lângă fiecare pui un Text mic cu numele zonei. Poți scrie nume scurte. Apoi numele cartierului, de exemplu Cartierul Nord, cu Text, pe zona de centru, lângă marginea plăcii, ridicat la patru milimetri. Apoi săgeata: un Wedge sau un Cone mic, de șase milimetri, plus litera N, pe zona de locuințe, lângă marginea din spate, la patru milimetri. Tot ce scrii rămâne la marginea zonelor, ca să fie loc pentru clădiri.
+
+Greșeli frecvente. Scara schimbată: toate piesele trebuie să respecte un metru egal doi milimetri, deci calculezi înainte. Zonele se ating: ai uitat golul de șaisprezece milimetri. Zonele sunt în aer: ai uitat să le ridici la trei milimetri. Textul nu se vede: e prea mic sau are culoarea plăcii. Placa nu are o sută cincizeci: plăcile trebuie să fie identice pentru toți. Textul e îngropat: ridică-l la patru milimetri, pe zonă.
+
+Proiectul de azi. Cartierul meu.
+
+Minim înseamnă: placă, scara scrisă și patru zone în colțuri, de culori diferite. Complet înseamnă: minim, plus legenda, numele cartierului și săgeata N. Dacă rămâi în urmă, salvează la Minim.
+
+Recapitulare. Scara orașului: un metru egal doi milimetri. Placa: o sută cincizeci pe o sută cincizeci pe trei, la fel pentru toți. Zonele sunt în colțuri, cu șaisprezece milimetri între ele. Din lecția cinci, în gol vin străzile. Numele fișierului are prenumele, numele, T patru și L zero unu.
+
+Succes la planul orașului tău.

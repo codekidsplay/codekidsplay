@@ -10,11 +10,11 @@
 
 ## Obiectiv
 La finalul orei ai un joc jucabil de la Start la final: meniu + erou + obiecte care cad (clone) + scor + vieți **sau** timer + mesaj de final.  
-**Minimum:** scheletul rulează — erou **stânga/dreapta** *(sau 4 dir.)* + **un** generator de clone + scor la prindere + reset.  
+**Minim:** scheletul rulează — erou **stânga/dreapta** *(sau 4 dir.)* + **un** generator de clone + scor la prindere + reset.  
 **Ținta orei (Complet):** Minim + **meniu Start** + **vieți** *(recomandat)* **sau** timer + final clar + un coleg joacă fără explicații.
 
 ## De ce contează
-L1–L8 = piese. L9 = **jocul tău**, pus cap la cap. La L10 îl lustruiești și îl prezinți.
+L1–L8 = piese. L9 = **jocul tău**, pus cap la cap. La L10 îl îmbunătățești și îl prezinți.
 
 ---
 
@@ -23,7 +23,7 @@ L1–L8 = piese. L9 = **jocul tău**, pus cap la cap. La L10 îl lustruiești ș
 | Minute | Ce facem |
 |--------|----------|
 | 0–10 | Obiectiv + **regula de aur** + Minim vs Complet |
-| 10–30 | Pas cu pas: checkpoint-uri (**Încearcă tu**) |
+| 10–30 | Pas cu pas: mini-verificări (**Încearcă tu**) |
 | 30–50 | **Doar scheletul Minim** — **fără** costume / fundaluri noi |
 | 50–100 | Complet: meniu + vieți (sau timer) + final · apoi decor |
 | 100–120 | Recap, bonus, salvare / pregătire L10 |
@@ -32,13 +32,13 @@ L1–L8 = piese. L9 = **jocul tău**, pus cap la cap. La L10 îl lustruiești ș
 Până atunci = **doar arhitectura** (control + clone + scor).  
 După ce scorul crește la prindere și clonele cad corect → poți deschide editorul grafic.
 
-**De reținut — regula de aur catcher:**  
+**De reținut — regula de aur la jocul de prins obiecte:**  
 - **Erou** = **doar** mișcarea.  
 - **Monedă / Fruct** = **doar** generatorul de clone + căderea (`schimbă y cu -4`).  
 **Nu** copia tastele pe obiectul care cade!  
 
-**Catcher = de obicei stânga / dreapta** (`schimbă x`). E suficient și mai ușor de controlat.  
-Dacă adaugi și **sus / jos**: nu urca eroul aproape de `y = 160` (acolo apar monedele) — altfel le prinzi **instant**, cum se nasc.
+**Cel care prinde = de obicei stânga / dreapta** (`schimbă x`). E suficient și mai ușor de controlat.  
+Dacă adaugi și **sus / jos**: nu urca eroul aproape de `y = 160` (acolo apar monedele) — altfel le prinzi **imediat**, cum se nasc.
 
 ---
 
@@ -62,7 +62,7 @@ Dacă adaugi și **sus / jos**: nu urca eroul aproape de `y = 160` (acolo apar m
 4. Steag / `start_joc`: reset `scor` (+ `vieti` dacă ai), poziție erou, efecte, sunete  
 
 **Încearcă tu — control + generator (2–3 min)**  
-- [ ] Eroul se mișcă stânga / dreapta *(sau 4 direcții, fără să urce în zona de spawn)*  
+- [ ] Eroul se mișcă stânga / dreapta *(sau 4 direcții, fără să urce în zona de apar)*  
 - [ ] Clonele apar și cad — **fără** taste pe Monedă  
 
 ### 3) Prindere + scor *(Minim)*
@@ -79,7 +79,7 @@ După buclă: `șterge această clonă` *(a ajuns jos)*
 **→ Minim când:** steag → miști → prinzi → scorul crește, fără morman de clone.
 
 ### 4) Complet — vieți *(recomandat)* sau timer
-*(30–50 = Minim. După 50: alegi finalul. **Viețile** sunt mai intuitive la catcher: vezi moneda care scapă pe jos.)*
+*(30–50 = Minim. După 50: alegi finalul. **Viețile** sunt mai ușor de înțeles la jocul de prins obiecte: vezi moneda care scapă pe jos.)*
 
 **Opțiunea A — Vieți** *(recomandat pentru nivel mediu)*  
 Pe clonă, **după** bucla de cădere *(doar dacă n-a fost ștearsă la prindere)*:  
@@ -90,7 +90,7 @@ Schema pe clonă:
 `repetă până y < -160`: `schimbă y -4` → `dacă atinge Erou?` → +1 scor + **șterge** →  
 *(jos, neratată în buclă = a scăpat)* `schimbă vieti cu -1` → `șterge`  
 
-Pe Scenă/Erou: `dacă vieti = 0` → „Game Over” → `oprește toate` (sau `revino_meniu`, ca L8).
+Pe Erou: `dacă vieti = 0` → „Game Over” → `oprește toate` (sau `revino_meniu`, ca L8).
 
 **Opțiunea B — Timer**  
 Ca L5: countdown pe Scenă; la `timp = 0` mesaj pe Erou.  
@@ -108,7 +108,7 @@ Ca L5: countdown pe Scenă; la `timp = 0` mesaj pe Erou.
 
 ## Greșeli frecvente
 1. **Taste pe Monedă** — mișcarea e **doar** pe Erou; pe Monedă doar clone + cădere.  
-1b. **Erou urcat la `y ≈ 160`** — prinzi monedele instant la spawn; la catcher, preferă **doar** stânga/dreapta.  
+1b. **Erou urcat la `y ≈ 160`** — prinzi monedele imediat ce apar; la jocul de prins obiecte, preferă **doar** stânga/dreapta.  
 2. **Clonele nu se șterg** — `șterge` la prindere **și** jos (`y < -160`).  
 3. **Scor multiplu** — lipsește `șterge` din `dacă atinge Erou?`.  
 4. **Decor înainte de minutul 50** — mai întâi scheletul; apoi frumosul.  
@@ -163,8 +163,8 @@ Cei rapizi: Complet, apoi Bonus / decor.
 ## Recapitulare rapidă
 1. Erou = mișcare · Obiect = clone + cădere  
 2. Minim întâi (până la min 50), decor după  
-3. Catcher: **vieți** la ratare e cel mai clar; timer e alternativa  
-4. L10 = polish + prezentare + insignă  
+3. Joc de prins obiecte: **vieți** la ratare e cel mai clar; timer e alternativa  
+4. L10 = finisări + prezentare + insignă  
 5. Nume: **`Prenume_Nume_M3_L9`**
 
 ## Schema pe scurt *(pe foaie)*
@@ -173,7 +173,7 @@ Cei rapizi: Complet, apoi Bonus / decor.
 când primesc `start_joc` → `arată` → `forever`:  
 · `dacă` tasta dreapta → `schimbă x cu 8`  
 · `dacă` tasta stânga → `schimbă x cu -8`  
-*(sus/jos opțional; dacă le ai: nu urca lângă `y = 160` — spawn monede)*  
+*(sus/jos opțional; dacă le ai: nu urca lângă `y = 160` — apar monede)*  
 *(la Start: și `setează scor la 0` / `vieti la 3`)*  
 
 când primesc `revino_meniu` → `ascunde` → `oprește alte scripturi din personaj`
@@ -198,4 +198,4 @@ când primesc `revino_meniu` → `ascunde` → `oprește alte scripturi din pers
 
 ## Temă
 Opțional: varianta pe care n-ai ales-o (vieți ↔ timer) — același `Prenume_Nume_M3_L9`.  
-La **L10**: polish + prezentare + insignă.
+La **L10**: finisări + prezentare + insignă.

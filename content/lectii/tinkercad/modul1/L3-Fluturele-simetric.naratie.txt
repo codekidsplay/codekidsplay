@@ -1,0 +1,31 @@
+Lecția trei. Fluturele meu.
+
+Astăzi folosești oglindirea, cu tasta M, și alinierea, cu tasta L, ca să obții simetrie. Proiectul se numește Fluturele meu. Numele fișierului este: Prenume, linie jos, Nume, linie jos, T unu, linie jos, L zero trei. Imprimanta trei D nu o folosim la oră. Azi doar proiectezi.
+
+Obiectivul. La final ai un fluture simetric: o aripă făcută o singură dată, apoi copiată și oglindită. Minim: corp pe plan, o aripă asimetrică, adică un Wedge culcat sau un Box înclinat, dublată cu tasta M, aripile de o parte și de alta a corpului, totul verificat din Top. Complet: minim, plus cap din sferă, antene, a doua pereche de aripi, mai mici, și culori.
+
+De ce contează. Multe obiecte sunt simetrice. Faci o jumătate și o oglindești. Nu construiești de două ori.
+
+Primul pas pe ecran. Create new design. Sus scrii numele Prenume, linie jos, Nume, linie jos, T unu, linie jos, L zero trei. Salvarea este automată. Verifici numele.
+
+Al doilea pas pe ecran. Corpul, pe plan. Tragi un Cylinder subțire: opt pe opt pe patruzeci. Îl rotești culcat cu săgeata curbă, nouăzeci de grade. Apoi, din View Cube, alegi Top. Corpul trebuie să arate ca o baghetă în sus și în jos pe ecran, iar aripile vor ieși spre stânga și spre dreapta. Dacă e pe orizontală, îl rotești încă nouăzeci de grade, pe verticală. Dacă după rotire plutește, apeși tasta D.
+
+Al treilea pas pe ecran. O aripă, care trebuie să fie asimetrică. Tragi un Wedge din Basic Shapes și îl culci pe o latură, cu o rotire de nouăzeci de grade, cu săgeata curbă. Te oprești când, din Top, vezi un triunghi. Apoi îl subțiezi, din pătrățelul de sus, la trei milimetri înălțime și îl faci de aproximativ treizeci pe douăzeci și doi, văzut din Top. Îl așezi pe plan cu tasta D. Varianta: un Box de treizeci pe cincisprezece pe trei, înclinat cam douăzeci și doi de grade cu săgeata curbă. Atenție: dacă aripa este perfect simetrică, de exemplu o sferă turtită, după M arată la fel, parcă nu s-a întâmplat nimic. Aripa este o singură piesă. O așezi lângă corp, pe o parte, intrată unu sau doi milimetri în corp.
+
+Al patrulea pas pe ecran. Duplicarea. Selectezi aripa și apeși Control și D împreună. Pe Mac, Command și D. Copia apare peste original. O tragi în lateral.
+
+Al cincilea pas pe ecran. Oglindirea. Selectezi copia și apeși tasta M. Apar săgeți pe laturile piesei. Apeși săgeata care o întoarce stânga și dreapta, cea de pe latura din stânga sau din dreapta. Dacă aripa s-a răsturnat sus și jos, sau cu fața în jos, apeși Control și Z și încerci altă săgeată. Aripa oglindită trebuie să fie înclinată invers. Așa știi că M a mers. Copia rămâne în același loc, peste original. O muți în linie dreaptă, orizontal, pe cealaltă parte a corpului, la aceeași distanță ca prima. Pentru corecții mici poți folosi și săgețile de la tastatură.
+
+Al șaselea pas pe ecran. Simetria. Verifici din Top: aripile sunt una oglinda celeilalte, iar corpul este la mijloc. Pentru aliniere cu L, selectezi cele două aripi, cu Shift și click pe fiecare, și apeși tasta L. Apar puncte negre pe margini. Fiecare aliniază pe o direcție. Alegi punctul din mijloc pe direcția în sus și în jos din Top, adică pe lungimea corpului. Aripile ajung la același nivel. Nu apăsa punctele pe direcția stânga și dreapta, pentru că lipești aripile una peste alta. Dacă aripile ajung peste corp sau Align te încurcă, apeși Control și Z și muți manual din Top. Pentru Minim este în regulă.
+
+Al șaptelea pas pe ecran, pentru Complet. Capul: o Sphere de aproximativ doisprezece milimetri, la un capăt al corpului, intrată doi milimetri în corp. O antenă: un cilindru subțire, doi pe doi pe paisprezece, înclinat cam douăzeci și doi de grade spre exterior, înfipt în cap. Apoi Control și D, apoi M, și o muți pe cealaltă parte, înclinată invers. A doua pereche de aripi: Control și D pe o aripă mare, o micșorezi cu Shift, o așezi lângă partea din spate a corpului, pe plan, intrată unu sau doi milimetri în corp. Apoi Control și D, M, și pe cealaltă parte. La final, Color pe corp și pe aripi.
+
+Greșeli frecvente. M nu face nimic: aripa este prea simetrică, folosești Wedge sau o înclini. Control și D nu face nimic: copia este peste original, o muți. După L, aripile sunt peste corp: Control și Z, altă aliniere sau mutare manuală din Top. Aripa a fost doar mutată, nu oglindită: după M înclinarea trebuie să fie inversă. Antenele nu au cap: pui mai întâi sfera. Corpul are direcția greșită: din Top, aripile trebuie să iasă spre stânga și spre dreapta. Fluturele plutește: tasta D.
+
+Proiectul de azi. Fluturele meu.
+
+Minim înseamnă: corp pe plan, aripă înclinată, copie oglindită cu M, și simetrie vizibilă din Top. Complet înseamnă: minim, plus cap, antene, a doua pereche de aripi, mai mică, și culori. Dacă rămâi în urmă, salvează la Minim. Ești la Minim când, din Top, se vede clar un fluture.
+
+Recapitulare. O aripă asimetrică face ca M să se vadă. Control și D face o copie, pe care apoi o muți. M oglindește. L aliniază, iar tu verifici mereu din Top. Numele fișierului are T unu și L zero trei.
+
+Succes la fluturele tău.

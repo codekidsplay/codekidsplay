@@ -1,0 +1,31 @@
+Lecția patru. Labirintul meu.
+
+Astăzi planifici un traseu pe o placă și te asiguri că bila încape peste tot. Fișier nou: Prenume, linie jos, Nume, linie jos, T trei, linie jos, L patru. Proiectul se numește Labirintul meu.
+
+Obiectivul. La final ai un labirint pe o placă de o sută pe o sută de milimetri, cu pereți, start, final și o bilă, adică o sferă cu diametru zece. Minim: placă cu cadru, cu pereți de trei milimetri și înălțime zece. Trei pereți interiori de șaptezeci și cinci pe trei pe zece, puși alternativ, la câte douăzeci și cinci de milimetri unul de altul, cu culoar de douăzeci și doi. Start și final marcate, bila pe start. Complet: minim, plus doi pinteni, adică pereți scurți care ies din perete, pe care bila îi ocolește. Verifici traseul de la start la final și adaugi culori.
+
+De ce contează. Lățimea culoarului se alege după bilă. Culoarul de douăzeci și doi de milimetri e de peste două ori mai lat decât bila de zece. Un plan pe hârtie te scutește să muți pereții de zece ori.
+
+Primul pas pe ecran. Create new design, cu numele fișierului. Pe foaie desenezi pătratul de o sută pe o sută, trei pereți orizontali și săgeți: drumul merge în zigzag, de jos în sus. Pe ecran, Snap Grid pe unu milimetru.
+
+Al doilea pas pe ecran. Un Box de o sută pe o sută pe patru, placa. Un Box de o sută pe o sută pe zece, cadrul, încă plin. Un Box de nouăzeci și patru pe nouăzeci și patru pe paisprezece, Hole. Selectezi Hole-ul și cadrul, tasta L, mijloc pe cele trei direcții, apoi Control și G: un inel cu pereți de trei milimetri. Selectezi placa și inelul, L, mijloc pe cele două direcții de pe plan. Tasta D pe inel, apoi îl ridici cu conul negru cu patru milimetri, ca să stea pe placă. Control și G.
+
+Al treilea pas pe ecran. Un Box de șaptezeci și cinci pe trei pe zece, primul perete. Selectezi peretele și placa, L, punctul din stânga și punctul de la marginea din față. Îl ridici cu patru milimetri. Cu Snap Grid pe cinci, îl muți douăzeci și cinci de milimetri spre spate. Culoarul de jos are douăzeci și doi.
+
+Al patrulea pas pe ecran. Primul perete, Control și D, copia încă douăzeci și cinci spre spate. Cu placa, L, punctul din dreapta: peretele se lipește de dreapta, golul rămâne în stânga. Primul perete, Control și D, copia cincizeci spre spate, lipită de stânga. Din Top, pereții alternează: gol la dreapta, la stânga, la dreapta.
+
+Al cincilea pas pe ecran. Snap Grid pe unu. Un Box de doisprezece pe doisprezece pe unu, marcajul de start. Cu placa, L, punctul din stânga și punctul din față. Îl muți cinci milimetri spre dreapta și cinci spre spate, apoi îl ridici la patru. Control și D: marcajul de final, la fel, în colțul din stânga spate, cinci spre dreapta și cinci spre față. La Color, start verde, final roșu.
+
+Al șaselea pas pe ecran. O Sphere de zece pe zece pe zece. Cu marcajul de start, L, mijloc pe cele două direcții. O ridici la cinci milimetri. Selectezi tot labirintul, fără bilă: Control și A, apoi Shift și click pe bilă, ca s-o scoți. Control și G.
+
+Al șaptelea pas pe ecran, pentru Complet. Doi pereți scurți de trei pe opt pe zece, ridicați patru milimetri, lipiți de un perete lung și ieșiți în culoar. Între pinten și peretele din față rămân paisprezece milimetri, deci bila trece. Trasezi cu degetul pe ecran drumul de la start la final. Cu Ruler măsori culoarul și bila. Pentru culori, desfaci labirintul cu Control, Shift și G, colorezi, apoi regrupezi fără bilă.
+
+Greșeli frecvente. Traseul e blocat: doi pereți se ating sau un pinten e prea lung. Culoarul e prea îngust: păstrează douăzeci și doi. Pereții nu alternează. Bila e în aer: pune-o la cinci milimetri. Ai grupat și bila: tasta Control și Z împreună. Cadrul nu are fund: ai uitat placa.
+
+Proiectul de azi. Labirintul meu.
+
+Minim înseamnă: placă cu cadru, trei pereți alternativ, start verde, final roșu, bila pe start. Complet înseamnă: minim, plus doi pinteni, test cu bila, Ruler și culori.
+
+Recapitulare. Culoarul se alege după bilă. Pereții se lipesc când de stânga, când de dreapta. Din Top verifici că drumul nu e blocat. Bila rămâne piesă separată.
+
+Succes la labirintul tău.

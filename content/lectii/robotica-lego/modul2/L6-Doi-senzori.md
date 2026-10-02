@@ -11,7 +11,7 @@
 
 | Minute | Ce facem |
 |--------|----------|
-| 0–20 | Scenarii pe tablă |
+| 0–20 | Scenarii pe foaie |
 | 20–40 | Diagramă pe foaie |
 | 40–105 | Implementare pe proiect ales |
 | 105–120 | Test + temă |

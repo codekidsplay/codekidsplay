@@ -1,0 +1,33 @@
+Lecția patru. Brânza cu găuri.
+
+Astăzi folosești Hole și Group ca să decupezi găuri adevărate. Proiectul se numește Brânza cu găuri. Numele fișierului este: Prenume, linie jos, Nume, linie jos, T unu, linie jos, L zero patru. Imprimanta trei D nu o folosim la oră. Azi doar proiectezi.
+
+Obiectivul. La final ai o felie de brânză cu găuri care trec prin ea. Nu sunt cercuri lipite pe față. Minim: un Wedge pentru felie, cel puțin trei cilindri Hole și grupare cu Control și G împreună, iar găurile se văd și din spate. Complet: minim, plus găuri de mărimi diferite și culoare. Complet plus, opțional: un șoricel din forme simple lângă brânză, doar dacă ai timp. Nu este obligatoriu.
+
+De ce contează. Hole este unul dintre cele mai folosite instrumente din Tinkercad. Cu el faci ferestre, uși și o cană goală. Atenție: Hole nu taie până nu dai Group. Fără Group rămân doar niște cilindri dungați pe brânză.
+
+Primul pas pe ecran. Create new design. Sus scrii numele Prenume, linie jos, Nume, linie jos, T unu, linie jos, L zero patru. Salvarea este automată. Verifici numele.
+
+Al doilea pas pe ecran. Brânza, adică felia. Tragi un Wedge pe plan. Este o rampă, înaltă la un capăt și ascuțită la celălalt. Din pătrățelele albe îl scalezi ca să arate a felie: aproximativ șaizeci pe patruzeci pe treizeci. Trebuie să stea pe plan. Dacă plutește, apeși tasta D. Rămâne Solid.
+
+Al treilea pas pe ecran. Cilindrii care vor tăia. Tragi un Cylinder. Rămâne în picioare, vertical. Îl faci opt pe opt și înalt de patruzeci, mai înalt decât felia, care are treizeci. Îl muți în interiorul conturului feliei, privind din Top, în partea înaltă a rampei, nu pe margine. Altfel taie doar un colț. Cilindrul trebuie să iasă deasupra feliei, iar jos să treacă de fundul ei. Îl lași cu baza pe plan. Fundul feliei este tot pe plan, deci taie prin tot. Dacă vrei să fii sigur, îl poți coborî cu conul negru la minus doi. Dacă Tinkercad nu te lasă sub plan, rămâne la zero, și merge și așa. Din View Cube alegi Front sau Right și verifici: capătul de sus iese deasupra feliei. Apoi apeși Control și D pentru încă doi cilindri. De fiecare dată copia apare peste original, deci o muți. Pentru Minim ai cel puțin trei cilindri. Pentru Complet faci acum unul mai mare, de exemplu doisprezece pe doisprezece, și unul mai mic, cinci pe cinci, cu Shift pe colț.
+
+Al patrulea pas pe ecran. Hole. Dai click pe un cilindru, ca să se deschidă panoul Shape. Alegi Hole, varianta cu dungi, nu Solid. La fel faci pentru ceilalți cilindri. Brânza rămâne Solid.
+
+Al cincilea pas pe ecran. Group, adică momentul tăierii. Apeși Control și A împreună, dar doar dacă pe plan sunt numai brânza și cilindrii. Dacă ai și altceva, de exemplu șoricelul, ții Shift și dai click pe felie și pe fiecare cilindru. Apoi apeși Control și G. Pe Mac, Command și G. Găurile dispar ca piese și rămân goluri în felie.
+
+Al șaselea pas pe ecran. Verificarea. Rotești vederea. Găurile se văd și din spate? Dacă nu, apeși Control, Shift și G ca să desfaci grupul, lungești sau muți cilindrii, pui Hole din nou dacă trebuie, și apeși iar Control și G.
+
+Al șaptelea pas pe ecran, pentru Complet. Selectezi grupul, adică brânza cu găuri. În panoul Shape, lângă Solid și Hole, apeși Color și alegi gălbui sau portocaliu. Dacă panoul arată altfel, caută pătrățelul de culoare. Dacă nu ai deja găuri de mărimi diferite, desfaci grupul cu Control, Shift și G, scalezi un cilindru cu Shift pe colț, cu înălțimea peste treizeci, și grupezi din nou cu Control și G.
+
+Pentru Complet plus, opțional, faci șoricelul: o Sphere pentru corp, sfere mici pentru cap și urechi, și un cilindru subțire pentru coadă. Îl pui lângă brânză, pe plan.
+
+Greșeli frecvente. Gaura nu trece: din lateral, cilindrul nu iese deasupra feliei, sau stă prea sus și nu atinge planul. Îl înalți din pătrățelul alb de sus. Cilindrul stă pe margine: îl muți înăuntrul conturului. Ai dat Group și nimic nu s-a schimbat: cilindrii sunt încă Solid, pui Hole, apoi Group. Brânza a dispărut: și ea este Hole, desfaci grupul și îi pui înapoi Solid. Ai grupat doar găurile, sau ai grupat și șoricelul: selectezi doar felia și cilindrii, cu Shift și click. Vrei să modifici după Group: Control, Shift și G, modifici, regrupezi. Nu vezi panoul Shape: dai click din nou pe piesă.
+
+Proiectul de azi. Brânza cu găuri.
+
+Minim înseamnă: Wedge, cel puțin trei cilindri Hole și Group, cu găuri vizibile din spate. Complet înseamnă: minim, plus mărimi diferite și Color pe brânză. Complet plus înseamnă și un șoricel, fără presiune. Dacă rămâi în urmă, salvează la Minim.
+
+Recapitulare. Cilindrul străpunge felia: iese deasupra, iar jos pornește de pe plan. Hole pe cilindru, Solid pe brânză. Control și G înseamnă tăiere. Fără Group, Hole nu taie. Ungroup desface grupul, ca să poți modifica.
+
+Succes la brânza ta.

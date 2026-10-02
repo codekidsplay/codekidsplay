@@ -10,7 +10,7 @@
 
 ## Obiectiv
 La finalul orei poți crea o variabilă <span style="color:#FF8C1A;font-weight:700">scor</span> (capitolul <span style="color:#FF8C1A;font-weight:700">Variabile</span>) care crește la fiecare țintă prinsă și declanșează victoria la 5.  
-**Minimum:** variabila `scor` pe scenă, crește +1 pe coliziune, resetată la steag.  
+**Minim:** variabila `scor` pe scenă, crește +1 pe atingere, resetată la steag.  
 **Ținta orei (Complet):** Minim + verificare `scor = 5` cu <span style="color:#59C059;font-weight:700">Operatori</span> → mesaj de victorie + oprirea jocului.
 
 ## De ce contează
@@ -23,7 +23,7 @@ Scorul e ce face un joc **măsurabil**: fără el, „ai jucat bine” e doar o 
 | Minute | Ce facem |
 |--------|----------|
 | 0–10 | Recap L2 + **`setează` vs `schimbă`** (vezi mai jos) |
-| 10–30 | Variabilă `scor` + +1 la coliziune — checkpoint-uri (**Încearcă tu**) |
+| 10–30 | Variabilă `scor` + +1 la atingere — mini-verificări (**Încearcă tu**) |
 | 30–100 | Proiectul „Prinde 5 stele” (vezi **Minim vs Complet**) |
 | 100–120 | Joacă o rundă, arată colegilor, salvare |
 
@@ -50,13 +50,14 @@ Azi la steag: **setează la 0**. La prindere: **schimbă cu 1**.
 - [ ] Poți muta căsuța cu scorul unde vrei pe scenă  
 - [ ] Știi pe de rost: **setează** = fixează · **schimbă** = adaugă
 
-### 2) Scor +1 la coliziune *(nucleul Minim)*
-*(Reconectezi coliziunea de pe **Țintă** din L2 — acolo e `dacă atinge [Erou]?` — și adaugi scor.)*
+### 2) Scor +1 la atingere *(nucleul Minim)*
+*(Reconectezi atingerea de pe **Țintă** din L2 — acolo e `dacă atinge [Erou]?` — și adaugi scor.)*
 
 1. Selectezi **Ținta** — scriptul din L2: `forever` + `dacă atinge [Erou]?`
-2. **În interiorul** acelei condiții `dacă`, adaugi:  
+2. **În interiorul** acelei condiții `dacă`, adaugi blocul:  
    <span style="color:#FF8C1A;font-weight:700">schimbă</span> `scor` <span style="color:#FF8C1A;font-weight:700">cu</span> `1`  
-   *(nu `setează la 1` — altfel scorul rămâne mereu 1)*
+   *(nu `setează la 1` — altfel scorul rămâne mereu 1)*  
+   Pune-l **imediat sub** `pornește sunetul`, **înainte** de `spune Yaay!`. Ordinea: sunet → `schimbă scor` → `spune` → `ascunde`. Așa scorul crește chiar la atingere, nu după o secundă.
 3. Click pe **Scenă** (sau pe **Erou**) — la steag, **înaintea** buclei `forever`:  
    <span style="color:#FF8C1A;font-weight:700">setează</span> `scor` <span style="color:#FF8C1A;font-weight:700">la</span> `0`  
    *(resetul e pe Scenă/Erou — „arbitrii” care nu dispar)*
@@ -81,7 +82,7 @@ Azi la steag: **setează la 0**. La prindere: **schimbă cu 1**.
 Explicație pentru copii: *„Eroul și Scena sunt mereu acolo, nu dispar — ei pot fi arbitrii jocului!”*  
 **Nu** pune victoria pe o Țintă: ea se ascunde.)*
 
-1. Click pe **Scenă** (recomandat) — sau pe **Erou**
+1. Click pe **Erou** *(Scena nu are blocul `spune`, deci mesajul „Ai câștigat!” trebuie să fie pe Erou)*
 2. Din <span style="color:#E6A800;font-weight:700">Evenimente</span>: steag → din <span style="color:#FFAB19;font-weight:700">Control</span>: <span style="color:#FFAB19;font-weight:700">forever</span>
 3. **În interiorul** buclei, o condiție `dacă` cu hexagon din <span style="color:#59C059;font-weight:700">Operatori</span>:  
    `scor` <span style="color:#59C059;font-weight:700">=</span> `5`  
@@ -90,18 +91,17 @@ Explicație pentru copii: *„Eroul și Scena sunt mereu acolo, nu dispar — ei
    <span style="color:#9966FF;font-weight:700">spune</span> `Ai câștigat!` timp de `2` secunde →  
    <span style="color:#FFAB19;font-weight:700">oprește</span> `toate`
 
-*(Notă profesor: dacă un copil are din greșeală `schimbă scor cu 2`, scorul poate sări peste 5 și `=` nu se mai declanșează. Verifică la clasă: pe fiecare țintă e **cu 1**, nu 2. `<` / `>` / „≥ 5” vin la L6 — nu azi.)*
 
 **Încearcă tu — victorie (3 min)**  
 - [ ] Prinzi toate cele 5 ținte → apare „Ai câștigat!” și jocul se oprește  
-- [ ] Scriptul de victorie e pe **Scenă** (sau Erou), nu pe o Țintă  
+- [ ] Scriptul de victorie e pe **Erou**, nu pe o Țintă (ea se ascunde)  
 - [ ] Salvat: `Prenume_Nume_M3_L3`
 
 ---
 
 ## Greșeli frecvente
-1. **`setează` în loc de `schimbă` la coliziune** — scorul sare la 1 și rămâne 1; la prindere folosești **`schimbă … cu 1`**.
-2. **`schimbă scor cu 1` e în afara condiției `dacă`** — atunci crește mereu, nu doar la coliziune.
+1. **`setează` în loc de `schimbă` la atingere** — scorul sare la 1 și rămâne 1; la prindere folosești **`schimbă … cu 1`**.
+2. **`schimbă scor cu 1` e în afara condiției `dacă`** — atunci crește mereu, nu doar la atingere.
 3. **Uiți `setează scor la 0` la steag** — scorul continuă de la runda trecută.
 4. **Țintele una peste alta** — după **duplică**, trage fiecare stea în alt loc; altfel scorul sare dintr-o dată.
 5. **`schimbă scor cu 2` (sau alt număr)** — cu victoria `scor = 5`, poți sări peste 5 și jocul **nu se mai oprește**. Pe fiecare țintă: **doar +1**.
@@ -120,7 +120,7 @@ Salvat: `Prenume_Nume_M3_L3`
 
 | | Ce trebuie |
 |--|------------|
-| **Minim („am reușit”)** | Variabila `scor` pe scenă, resetată la steag (`setează la 0`), crește +1 la fiecare coliziune (măcar 3 ținte **separate**) |
+| **Minim („am reușit”)** | Variabila `scor` pe scenă, resetată la steag (`setează la 0`), crește +1 la fiecare atingere (măcar 3 ținte **separate**) |
 | **Complet (ținta orei)** | Minim + **5** ținte + pe **Scenă/Erou**: `scor = 5` → „Ai câștigat!” + `oprește toate` |
 
 Dacă rămâi în urmă: **termină întâi Minim, apoi salvează.**  
@@ -130,7 +130,7 @@ Cei rapizi: Complet, apoi Bonus.
 - [ ] Variabila `scor`, vizibilă pe scenă  
 - [ ] Pe **Scenă** sau **Erou**: `setează scor la 0` la steag  
 
-### Pasul 2 — Coliziune + scor *(Minim)*
+### Pasul 2 — Atingere + scor *(Minim)*
 - [ ] Pe **Țintă**: `dacă atinge [Erou]?` → sunet + **`schimbă scor cu 1`** + `ascunde`  
 - [ ] Măcar 3 ținte pe scenă, **trase în locuri diferite**, fiecare cu propriul script  
 - [ ] Salvat: `Prenume_Nume_M3_L3`
@@ -148,7 +148,7 @@ Cei rapizi: Complet, apoi Bonus.
 ---
 
 ## Bonus (dacă ai terminat Complet)
-- [ ] Țintă mai grea: **10** stele + mesaj special de campion *(și `scor = 10` pe Scenă)*  
+- [ ] Țintă mai grea: **10** stele + mesaj special de campion *(și `scor = 10` pe Erou)*  
 - [ ] Scorul final apare mare pe ecran la victorie (<span style="color:#9966FF;font-weight:700">spune</span> combinat cu `scor`, folosind blocul `unește` din Operatori)  
 - [ ] Combo: 2 stele prinse la rând, rapid → +1 punct bonus
 
@@ -162,7 +162,7 @@ Cei rapizi: Complet, apoi Bonus.
 
 ## Schema pe scurt *(pe foaie)*
 
-**Pe Scenă** *(sau Erou — arbitrul)*  
+**Pe Erou** *(arbitrul)*  
 la steag → `setează scor la 0` → `forever`:  
 · `dacă scor = 5` → `spune Ai câștigat!` 2 s → `oprește toate`
 

@@ -10,7 +10,7 @@ Primul pas pe ecran. Selectezi personajul. Tab Sunete, adaugi din bibliotecă, d
 
 Al doilea pas pe ecran. La steagul verde: pornește sunetul. Pornește înseamnă: sunetul începe, și programul merge mai departe imediat.
 
-Al treilea pas pe ecran. Încearcă și: redă sunetul până la final. Asta așteaptă să se termine sunetul, apoi trece la blocul de sub el. La start deseori pornește. Când următorul bloc trebuie să aștepte muzica, folosești până la final.
+Al treilea pas pe ecran. Încearcă și: redă sunetul până la final. Asta așteaptă să se termine sunetul, apoi trece la blocul de sub el. De exemplu, la steag: redă sunetul start până la final, apoi spune Gata, pentru o secundă. Replica apare după sunet. La start deseori pornește. Când următorul bloc trebuie să aștepte muzica, folosești până la final.
 
 Al patrulea pas pe ecran. Al doilea sunet pe click pe personaj. Steag: sunetul A. Click: sunetul B.
 

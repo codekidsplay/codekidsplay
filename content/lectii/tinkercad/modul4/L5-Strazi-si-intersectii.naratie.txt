@@ -1,0 +1,31 @@
+Lecția cinci. Străzi și intersecții.
+
+Astăzi legi cartierul cu străzi: o intersecție cu treceri de pietoni, trotuare și un sens giratoriu. Faci o copie a proiectului din lecția patru, cu Duplicate, și o redenumești: Prenume, linie jos, Nume, linie jos, T patru, linie jos, L zero cinci. Proiectul se numește Străzile mele.
+
+Obiectivul. La final ai pe placă două străzi care se întretaie, în golul dintre zone, cu treceri de pietoni. Minim: două străzi de asfalt, una orizontală și una verticală, centrate pe placă, și două treceri de pietoni pe strada orizontală, câte una de o parte și de alta a intersecției. Fiecare trecere are șase dungi. Complet: minim, plus treceri și pe strada verticală, opt trotuare și un sens giratoriu.
+
+De ce contează. Pe străzi circulă oamenii și mașinile. Golul de șaisprezece milimetri din lecția unu înseamnă opt metri în realitate: șase metri de asfalt, cu două benzi, și câte un metru de trotuar pe fiecare parte. Trecerile de pietoni se fac din dungi egale, iar Control și D le repetă perfect.
+
+Primul pas pe ecran. La Snap Grid, jos în dreapta, pui unu milimetru. La mutările mari, de cincisprezece sau treizeci de milimetri, treci pe cinci milimetri, ca să nu apeși de treizeci de ori. Din View Cube alegi Top. Vezi golul în formă de cruce dintre cele patru zone.
+
+Al doilea pas pe ecran. Asfaltul. Un Box de o sută cincizeci pe doisprezece pe unu: strada orizontală. Selectezi strada și placa și apeși tasta L, pentru Align. Alegi mijlocul pe stânga spre dreapta și mijlocul pe față spre spate. Acum e centrată. O ridici la trei milimetri, pe suprafața plăcii. Apoi un Box de doisprezece pe o sută cincizeci pe unu: strada verticală. La fel, centrată pe placă și ridicată la trei milimetri. Din Top vezi o cruce de asfalt prin golul dintre zone. O colorezi gri închis.
+
+Al treilea pas pe ecran. Prima trecere. Un Box de șase pe unu pe zero virgulă patru este o dungă. O faci albă cu Color. Tasta L cu strada orizontală: mijloc pe stânga spre dreapta și mijloc pe față spre spate. Cu Snap Grid cinci milimetri, o muți cincisprezece milimetri spre dreapta de centrul străzii. Dunga ocupă între doisprezece și optsprezece milimetri de centru, lângă intersecție. O ridici la patru milimetri, deasupra asfaltului. Cu Snap Grid unu milimetru, o muți cinci milimetri spre față. Apeși tasta Control și D împreună, iar pe Mac Command și D. Muți copia doi milimetri spre spate. Apeși Control și D încă de patru ori. Ai șase dungi egale. Le selectezi și apeși Control și G: este trecerea.
+
+Al patrulea pas pe ecran. A doua trecere. Trecerea, Control și D, apoi cu Snap Grid cinci milimetri muți copia treizeci de milimetri spre stânga. Ajunge simetric, de cealaltă parte a intersecției. Verifici din Top.
+
+Al cincilea pas pe ecran, pentru Complet. Selectezi ambele treceri, Control și D, și rotești copiile cu patru pași ai săgeții curbe, adică nouăzeci de grade. Se rotesc în jurul centrului lor, care e intersecția. Ajung pe strada verticală, simetric. Din Top vezi patru treceri, câte una pe fiecare braț al intersecției.
+
+Al șaselea pas pe ecran. Trotuarele. Un Box de șaizeci și șapte pe doi pe doi, ridicat la trei milimetri, gri deschis. Tasta L cu placa: marginea din stânga. Apoi tasta L cu strada orizontală: marginea din spate. O muți doi milimetri spre spate, ca să se lipească de asfalt. Control și D, tasta L cu placa, marginea din dreapta. Nu o muți pe față spre spate. Selectezi ambele, Control și D, și muți copiile paisprezece milimetri spre față. Ai patru trotuare. Le selectezi, Control și D, și rotești copiile nouăzeci de grade. Ai opt trotuare. Dacă un trotuar iese din gol, verifici din Top.
+
+Al șaptelea pas pe ecran. Sensul giratoriu. Un Cylinder de douăzeci pe douăzeci pe unu, centrat pe placă, ridicat la trei milimetri, gri închis. Apoi un Cylinder de opt pe opt pe trei virgulă cinci: insula. Centrat pe placă, ridicat la trei milimetri, verde. Din Top vezi un inel de asfalt în jurul unei insule verzi.
+
+Greșeli frecvente. Asfaltul nu e centrat: folosește tasta L cu placa, mijloc pe ambele axe. Dungile sunt la înălțimi diferite sau neegale: mută prima, apoi doar Control și D cu doi milimetri. Dunga e ascunsă sub asfalt: nu e ridicată la patru milimetri. Trotuarul intră în zonă: ai mutat doi milimetri în direcția greșită. Sensul giratoriu acoperă zonele: diametrul douăzeci e destul, mai mare atinge colțurile. Scara greșită: o stradă de șase metri are doisprezece milimetri.
+
+Proiectul de azi. Străzile mele.
+
+Minim înseamnă: două străzi centrate și două treceri pe strada orizontală. Complet înseamnă: minim, plus treceri pe strada verticală, opt trotuare și sens giratoriu. Dacă rămâi în urmă, salvează la Minim.
+
+Recapitulare. Golul de șaisprezece milimetri înseamnă o stradă de doisprezece milimetri și două trotuare de câte doi. Dungile: prima la loc, restul cu Control și D, la doi milimetri. Centrat înseamnă tasta L cu placa, mijloc pe ambele axe. Numele fișierului are prenumele, numele, T patru și L zero cinci.
+
+Succes la străzile tale.

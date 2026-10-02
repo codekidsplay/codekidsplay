@@ -1,33 +1,33 @@
-Lecția șapte. Depanare, polish și publicare.
+Lecția șapte. Depanare, finisări și publicare.
 
-Astăzi înveți depanarea: reproduci, îngustezi, schimbi o chestie, verifici. Apoi polish Creator și publicare. Nu începi un joc nou. Închizi ce ai. Proiectul se numește Proiectul meu, public. Fișierul: Prenume, linie jos, Nume, linie jos, M patru, linie jos, L șapte. Același fir L unu, L șase.
+Astăzi înveți repararea: repeți greșeala, cauți unde e, schimbi o chestie, verifici. Apoi finisări Creator și publicare. Nu începi un joc nou. Închizi ce ai. Proiectul se numește Proiectul meu, public. Fișierul: Prenume, linie jos, Nume, linie jos, M patru, linie jos, L șapte. Același fir L unu, L șase.
 
-Obiectivul. Colegul trece singur de la start la final, înțelegând controalele din proiect, nu din gura ta. Minim: metoda pe foaie, cel puțin trei bug-uri reparate și notate, cel puțin patru bifă polish, partajat sau gata de prezentare, test coleg cinci minute fără ajutor. Complet: minim, plus patru sau mai multe bug-uri, sau trailer ori titlu de cinci secunde, sau un bug greu găsit de coleg, reparat pe loc.
+Obiectivul. Colegul trece singur de la start la final, înțelegând controalele din proiect, nu din gura ta. Minim: metoda pe foaie, cel puțin trei greșeli reparate și notate, cel puțin patru bifă finisări, partajat sau gata de prezentare, test coleg cinci minute fără ajutor. Complet: minim, plus patru sau mai multe greșeli, sau trailer ori titlu de cinci secunde, sau o greșeală grea găsit de coleg, reparat pe loc.
 
 De ce contează. Nivel Creator înseamnă că proiectul rezistă când îl joacă altcineva. Depanarea e meserie: nu mai apasă o dată, ci găsești cauza.
 
-Primul pas pe ecran. Metoda pe foaie, pentru fiecare bug. Unu: reproduci, ce apeși ca să apară. Doi: îngustezi, care personaj, care script. Trei: schimbi o singură chestie, testezi. Patru: bifezi, reparat, și ce ai reparat. Spui metoda cu voce tare.
+Primul pas pe ecran. Metoda pe foaie, pentru fiecare greșeală. Unu: repeți greșeala, ce apeși ca să apară. Doi: cauți unde e, care personaj, care script. Trei: schimbi o singură chestie, testezi. Patru: bifezi, reparat, și ce ai reparat. Spui metoda cu voce tare.
 
-Al doilea pas pe ecran. Bug Hunter. În clasă schimbați locurile. La PC-ul colegului schimbi exact două blocuri: un număr, o tastă, un setează, un mesaj. Interzis: ștergere proiect, ștergere personaje, salvare peste cu alt nume. Te întorci. Colegul găsește ce s-a schimbat și repară. Pe foaie: am schimbat, am găsit. Acasă, solo: schimbi tu două blocuri, apoi le găsești. Cauți și bug-uri reale: scor sau nivel care nu se resetează, rămâi pe Level doi după steag, mesaje aprinse, multiplayer pe aceleași taste, clone care nu dispar.
+Al doilea pas pe ecran. Vânătorii de greșeli. În clasă schimbați locurile. La calculatorul colegului schimbi exact două blocuri: un număr, o tastă, un setează, un mesaj. Interzis: ștergere proiect, ștergere personaje, salvare peste cu alt nume. Te întorci. Colegul găsește ce s-a schimbat și repară. Pe foaie: am schimbat, am găsit. Acasă, solo: schimbi tu două blocuri, apoi le găsești. Cauți și greșeli reale: scor sau nivel care nu se resetează, rămâi pe Level doi după steag, mesaje aprinse, doi jucători pe aceleași taste, clone care nu dispar.
 
 Al treilea pas pe ecran. Repară cel puțin trei de pe listă. Pentru fiecare: metoda. Steag de două ori după fiecare reparație. Pe foaie: trei linii, reparat.
 
-Al patrulea pas pe ecran. Polish Creator, cel puțin patru bifă. Nume proiect clar. Instrucțiuni pe proiect: cum începi, scop, controale. Dacă ai nivele, se vede Level unu, Level doi pe ecran. Start și final evidente. Sunete utile, se opresc la final. Nimic mort pe scenă. Scor, vieți sau timer lizibile. Controalele se citesc fără să explici.
+Al patrulea pas pe ecran. Finisări Creator, cel puțin patru bifă. Nume proiect clar. Instrucțiuni pe proiect: cum începi, scop, controale. Dacă ai nivele, se vede Level unu, Level doi pe ecran. Start și final evidente. Sunete utile, se opresc la final. Nimic mort pe scenă. Scor, vieți sau timer lizibile. Controalele se citesc fără să explici.
 
 Al cincilea pas pe ecran. Publicare. Partajează, studio clasă, link sau stick. În descriere: două nivele, sau doi jucători cu tastele. Coleg: cinci minute, zero ajutor, start până la final.
 
-Greșeli frecvente. Strici jocul de tot la Bug Hunter. Schimbi cinci lucruri odată la reparat. Merge la mine, fără test. Feature nouă în loc să repari. Instrucțiuni doar verbale. Publicare fără controale pe proiect.
+Greșeli frecvente. Strici jocul de tot la Vânătorii de greșeli. Schimbi cinci lucruri odată la reparat. Merge la mine, fără test. Feature nouă în loc să repari. Instrucțiuni doar verbale. Publicare fără controale pe proiect.
 
 Proiectul de azi. Proiectul meu, public.
 
-Minim înseamnă: metodă, Bug Hunter, trei reparate, patru polish, partajat, test cinci minute. Complet înseamnă: minim plus una din cele trei variante. Dacă rămâi în urmă, salvează la Minim pe L șapte.
+Minim înseamnă: metodă, Vânătorii de greșeli, trei reparate, patru finisări, partajat, test cinci minute. Complet înseamnă: minim plus una din cele trei variante. Dacă rămâi în urmă, salvează la Minim pe L șapte.
 
-În proiect, primul pas. Bug Hunter. Două blocuri. Lista de probleme.
+În proiect, primul pas. Vânătorii de greșeli. Două blocuri. Lista de probleme.
 
-În proiect, al doilea pas. Trei reparate. Patru polish. Salvezi.
+În proiect, al doilea pas. Trei reparate. Patru finisări. Salvezi.
 
 În proiect, al treilea pas. Partajat. Test cinci minute reușit.
 
-Recapitulare. Bug Hunter egal două blocuri, nu distrugere. Depanare: reproduci, îngustezi, o schimbare, verifici. Fișierul: prenumele, numele, M patru și L șapte. Gata pentru lecția nouă.
+Recapitulare. Vânătorii de greșeli egal două blocuri, nu distrugere. Depanare: repeți greșeala, cauți unde e, o schimbare, verifici. Fișierul: prenumele, numele, M patru și L șapte. Gata pentru lecția nouă.
 
-Succes la depanare și publicare.
+Succes la reparare și publicare.

@@ -1,31 +1,31 @@
-Lecția unu. Motorul meu.
+Lecția unu. Baza jocului meu.
 
-Modulul patru e Creator: proiecte pe care le arăți. Astăzi construiești motorul, baza pe care o termini la lecția șase și o lustruiești la lecția șapte. Proiectul se numește Motorul meu. Fișierul: Prenume, linie jos, Nume, linie jos, M patru, linie jos, L unu. Același fișier îl continui la lecțiile șase și șapte.
+Modulul patru e Creator: proiecte pe care le arăți. Astăzi construiești baza jocului, baza pe care o termini la lecția șase și o îmbunătățești la lecția șapte. Proiectul se numește Baza jocului meu. Fișierul: Prenume, linie jos, Nume, linie jos, M patru, linie jos, L unu. Același fișier îl continui la lecțiile șase și șapte.
 
-Obiectivul. Ai un motor jucabil: restart curat, interacțiune reală, o condiție dacă, și începutul direcției wow, nivele sau multiplayer local, vizibil pe scenă. Minim: reset la steag, două personaje care interacționează, cel puțin un dacă, wow A sau B pe scenă. Complet: minim, plus una din: meniu Start, sau trecere reală Nivel unu la doi, sau scoruri separate pentru jucător unu și doi.
+Obiectivul. Ai o bază jucabilă: restart curat, interacțiune reală, o condiție dacă, și începutul direcției ideea specială, nivele sau joc cu doi jucători, pe același calculator, vizibil pe scenă. Minim: reset la steag, două personaje care interacționează, cel puțin un dacă, ideea specială A sau B pe scenă. Complet: minim, plus una din: meniu Start, sau trecere reală Nivel unu la doi, sau scoruri separate pentru jucător unu și doi.
 
-De ce contează. În Modulul trei ai făcut jocuri pe rețetă. În Modulul patru tu alegi tipul și îl duci până la produs. Fără motor solid azi, lecția șase e panică. Cu motor azi, lecția șase e finisaj.
+De ce contează. În Modulul trei ai făcut jocuri pe rețetă. În Modulul patru tu alegi tipul și îl duci până la produs. Fără bază solidă azi, lecția șase e panică. Cu o bază azi, lecția șase e finisaj.
 
-Primul pas pe ecran. Pe foaie, maxim cinci minute, nu o oră de plan. Titlu, tip, wow A sau B, ce trebuie să meargă azi. Restul e Scratch. Wow A: nivele, Nivel unu plus semnal spre Nivel doi. Wow B: multiplayer, jucător unu săgeți, jucător doi WASD.
+Primul pas pe ecran. Pe foaie, maxim cinci minute, nu o oră de plan. Titlu, tip, ideea specială A sau B, ce trebuie să meargă azi. Restul e Scratch. Ideea specială A: nivele, Nivel unu plus semnal spre Nivel doi. Ideea specială B: Doi jucători, jucător unu săgeți, jucător doi W, A, S, D.
 
-Al doilea pas pe ecran. Proiect nou. Cel puțin două personaje care interacționează: atingere, mesaj sau scor. Nu doar stau pe fundal. La steag, reset universal: arată sau ascunde ce trebuie, du-te la start, setează variabilele, treci la fundalul start, anulează efectele, oprește toate sunetele. Cel puțin un dacă pe bune. Steag de două ori, aceeași stare.
+Al doilea pas pe ecran. Proiect nou. Cel puțin două personaje care interacționează: atingere, mesaj sau scor. Nu doar stau pe fundal. La steag, reset complet: arată sau ascunde ce trebuie, du-te la start, setează variabilele, treci la fundalul start, anulează efectele, oprește toate sunetele. Cel puțin un dacă pe bune. Steag de două ori, aceeași stare.
 
-Al treilea pas pe ecran. Primul pas wow, obligatoriu la Minim. Dacă A: Nivel unu jucabil, semnal clar spre Nivel doi, iar Nivelul doi are măcar fundal diferit sau un obstacol în plus. Dacă B: ambii pe scenă, se mișcă simultan, pe taste diferite, și un scor sau cursă care ține cont de amândoi. Wow-ul se vede pe scenă, nu doar pe foaie.
+Al treilea pas pe ecran. Primul pas special, obligatoriu la Minim. Dacă A: Nivel unu jucabil, semnal clar spre Nivel doi, iar Nivelul doi are măcar fundal diferit sau un obstacol în plus. Dacă B: ambii pe scenă, se mișcă simultan, pe taste diferite, și un scor sau cursă care ține cont de amândoi. Ideea specială se vede pe scenă, nu doar pe foaie.
 
 Al patrulea pas pe ecran, pentru Complet. Alege una: meniu Start ca în Modulul trei, sau trecere reală Nivel unu la doi, sau scor separat pe jucători. Demo treizeci de secunde. Pe foaie: ce lipsește pentru lecția șase.
 
-Greșeli frecvente. Prea mult pe foaie. Doar mișcare pe fundal, fără interacțiune. Wow pe foaie, zero pe scenă. Reset incomplet. Nivele egale două fundaluri goale. Multiplayer cu aceleași taste. Complet nu înseamnă toate trei variantele, ci una.
+Greșeli frecvente. Prea mult pe foaie. Doar mișcare pe fundal, fără interacțiune. Ideea specială pe foaie, zero pe scenă. Reset incomplet. Nivele egale două fundaluri goale. Doi jucători cu aceleași taste. Complet nu înseamnă toate trei variantele, ci una.
 
-Proiectul de azi. Motorul meu.
+Proiectul de azi. Baza jocului meu.
 
-Minim înseamnă: reset universal, interacțiune, dacă, wow pe scenă. Complet înseamnă: minim plus una din cele trei variante. Dacă rămâi în urmă, salvează la Minim.
+Minim înseamnă: reset complet, interacțiune, dacă, ideea specială pe scenă. Complet înseamnă: minim plus una din cele trei variante. Dacă rămâi în urmă, salvează la Minim.
 
-În proiect, primul pas. Schiță cinci minute. Tip și wow.
+În proiect, primul pas. Schiță cinci minute. Tip și ideea specială.
 
-În proiect, al doilea pas. Motor plus wow pe scenă. Steag de două ori curat. Salvezi.
+În proiect, al doilea pas. Baza jocului plus ideea specială pe scenă. Steag de două ori curat. Salvezi.
 
 În proiect, al treilea pas, pentru Complet. Una din variante. Demo. Salvezi din nou.
 
-Recapitulare. Modulul patru Creator: L unu, L șase, L șapte pe același fir. Schiță scurtă, apoi Scratch. Reset universal la steag. Numele fișierului are prenumele, numele, M patru și L unu.
+Recapitulare. Modulul patru Creator: L unu, L șase, L șapte pe același fir. Schiță scurtă, apoi Scratch. Reset complet la steag. Numele fișierului are prenumele, numele, M patru și L unu.
 
-Succes la motorul tău.
+Succes la baza jocului tău.

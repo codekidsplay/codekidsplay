@@ -9,7 +9,7 @@
 
 ## Obiectiv
 La finalul orei poți folosi <span style="color:#FFAB19;font-weight:700">dacă … atunci</span> (capitolul <span style="color:#FFAB19;font-weight:700">Control</span>) ca personajul să reacționeze când **atinge marginea**.  
-**Minimum:** **un** `dacă … atunci` funcțional (reacție la margine + reset la steag).  
+**Minim:** **un** `dacă … atunci` funcțional (reacție la margine + reset la steag).  
 **Ținta orei (Complet):** Minim + **control cu tasta** (a 2-a condiție `dacă`) + sunet la margine.
 
 ## De ce contează
@@ -23,7 +23,7 @@ La finalul orei poți folosi <span style="color:#FFAB19;font-weight:700">dacă �
 | Minute | Ce facem |
 |--------|----------|
 | 0–8 | Recap M1 + ce e o **condiție** (1 exemplu pe foaie) |
-| 8–30 | Pas cu pas: checkpoint-uri (**Încearcă tu**) |
+| 8–30 | Pas cu pas: mini-verificări (**Încearcă tu**) |
 | 30–100 | Proiectul „Atenție la margine” (vezi **Minim vs Complet**) |
 | 100–120 | Recap, bonus, salvare |
 
@@ -74,7 +74,7 @@ La finalul orei poți folosi <span style="color:#FFAB19;font-weight:700">dacă �
    <span style="color:#5CB1D6;font-weight:700">atinge marginea?</span>
 3. Înăuntru:  
    <span style="color:#4C97FF;font-weight:700">întoarce-te la dreapta cu</span> `180` grade →  
-   <span style="color:#FFAB19;font-weight:700">așteaptă</span> `0.2` *(evită spam-ul de întoarceri)*  
+   <span style="color:#FFAB19;font-weight:700">așteaptă</span> `0.2` *(ca să nu se întoarcă de prea multe ori)*  
    *(Sunetul = la Complet.)*  
    **Notă:** la 180°, personajul poate apărea **cu capul în jos**. În <span style="color:#4C97FF;font-weight:700">Mișcare</span> → **stil de rotație**: alege **stânga-dreapta** (sau un costum care arată bine pe spate).
 4. **Ca să ajungă la margine — alege UNA din cele două metode, nu ambele:**  
@@ -99,7 +99,7 @@ La finalul orei poți folosi <span style="color:#FFAB19;font-weight:700">dacă �
 - [ ] Steag de două ori: personajul reîncepe din același loc  
 - [ ] Salvat: `Prenume_Nume_L1`  
 
-*(Azi **nu** folosim operatori pe scor. La **L5**: preview doar `scor = 5` (victorie). `<` `>` `+` pe îndelete la **L6**.)*
+*(Azi **nu** folosim operatori pe scor. La **L5**: exemplu doar `scor = 5` (victorie). `<` `>` `+` pe îndelete la **L6**.)*
 
 ---
 
@@ -122,7 +122,7 @@ Salvat: `Prenume_Nume_L1`
 
 | | Ce trebuie |
 |--|------------|
-| **Minim („am reușit”)** | Reset + bucla bucla `forever` + **o** condiție `dacă` pe **margine** (întoarcere + `așteaptă`) + **o** metodă de mișcare (A **sau** B) |
+| **Minim („am reușit”)** | Reset + bucla `forever` + **o** condiție `dacă` pe **margine** (întoarcere + `așteaptă`) + **o** metodă de mișcare (A **sau** B) |
 | **Complet (ținta orei)** | Minim + **a 2-a** condiție `dacă` pe **tastă** (control) + **sunet** la atingerea marginii |
 
 Dacă rămâi în urmă: salvează la **Minim**.  
@@ -143,7 +143,7 @@ Cei rapizi: Complet, apoi Bonus.
 - [ ] Mișcare: **doar** metoda A (`mergi` `5` în bucla `forever`) **sau** **doar** metoda B (`dacă` tasta → `mergi`) — **nu ambele**  
 - [ ] Salvat: `Prenume_Nume_L1`  
 
-**→ Minim când:** steag → ajunge la margine → se întoarce (fără spam).
+**→ Minim când:** steag → ajunge la margine → se întoarce (fără repetări).
 
 ### Pasul 3 — Tastă + sunet *(Complet)*
 *(Ca la „Încearcă tu — tasta”, plus sunet.)*
@@ -162,7 +162,7 @@ Cei rapizi: Complet, apoi Bonus.
 ## Bonus (dacă ai terminat Complet)
 - [ ] La spațiu: `dacă` tasta spațiu → <span style="color:#9966FF;font-weight:700">spune</span> `Stop!` *(a 3-a condiție `dacă` în bucla `forever`)*  
 - [ ] La margine: <span style="color:#9966FF;font-weight:700">efect culoare</span> o clipă, apoi <span style="color:#9966FF;font-weight:700">anulează efectele grafice</span>  
-- [ ] Al 2-lea personaj: dacă **tu** atingi **acel** personaj → `spune` `Au!` *(preview L3)*  
+- [ ] Al 2-lea personaj: dacă **tu** atingi **acel** personaj → `spune` `Au!` *(exemplu pentru L3)*  
 
 ## Recapitulare rapidă
 1. <span style="color:#FFAB19;font-weight:700">dacă</span> = întrebare da/nu + acțiune  

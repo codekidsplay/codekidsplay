@@ -11,7 +11,7 @@
 
 | Minute | Ce facem |
 |--------|----------|
-| 0–20 | Recap M1 pe tablă |
+| 0–20 | Recap M1 pe foaie |
 | 20–40 | Ce e Modulul 2: proiecte mai grele |
 | 40–100 | Prototip: mecanism + 1 senzor |
 | 100–120 | Pitch 30 sec / echipă |

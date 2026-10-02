@@ -10,7 +10,7 @@
 
 ## Obiectiv
 La finalul orei poți crea variabila <span style="color:#FF8C1A;font-weight:700">timp</span> care scade automat, cu <span style="color:#FFAB19;font-weight:700">Control</span> (bucla `forever` + `așteaptă`), și declanșează pierderea la 0.  
-**Minimum:** `timp` pornește de la 20, scade −1 în fiecare secundă, „Timpul a expirat!” la 0.  
+**Minim:** `timp` pornește de la 20, scade −1 în fiecare secundă, „Timpul a expirat!” la 0.  
 **Ținta orei (Complet):** Minim + victorie dacă `scor = 5` **înainte** să se termine timpul (cele două condiții „concurează”).
 
 ## De ce contează
@@ -23,7 +23,7 @@ Timpul limitat schimbă complet cum se joacă un joc: fără el poți lua oricâ
 | Minute | Ce facem |
 |--------|----------|
 | 0–10 | Recap: `setează` vs `schimbă` · **2 scripturi** (Scenă = cronometru, Erou = mesaj) |
-| 10–30 | Variabilă `timp` + countdown pe **Scenă** — checkpoint-uri (**Încearcă tu**) |
+| 10–30 | Variabilă `timp` + countdown pe **Scenă** — mini-verificări (**Încearcă tu**) |
 | 30–100 | Expirare pe **Erou** + victorie `scor = 5` (vezi **Minim vs Complet**) |
 | 100–120 | Echilibrezi jocul (15 / 20 / 30 s), salvare |
 
@@ -34,7 +34,7 @@ Timpul limitat schimbă complet cum se joacă un joc: fără el poți lua oricâ
    `forever` → `dacă timp = 0` → `spune Timpul a expirat!` → `oprește toate`
 
 **De ce întâi `așteaptă`, apoi `schimbă`?**  
-La steag vezi `20` o secundă, apoi `19`, `18`… Dacă pui **`schimbă` înaintea** lui `așteaptă`, sare **instant** de la 20 la 19 — pare greșit.
+La steag vezi `20` o secundă, apoi `19`, `18`… Dacă pui **`schimbă` înaintea** lui `așteaptă`, sare **imediat** de la 20 la 19 — pare greșit.
 
 **Capitole azi:**  
 <span style="color:#FF8C1A;font-weight:700">Variabile</span> (`timp`) · <span style="color:#FFAB19;font-weight:700">Control</span> (`forever`, `așteaptă`, `dacă`, `oprește`) · <span style="color:#59C059;font-weight:700">Operatori</span> (`=`) — plus din L3: <span style="color:#FF8C1A;font-weight:700">scor</span>.
@@ -45,7 +45,7 @@ La steag vezi `20` o secundă, apoi `19`, `18`… Dacă pui **`schimbă` înaint
 
 ### 1) Creezi variabila `timp`
 1. Din <span style="color:#FF8C1A;font-weight:700">Variabile</span>: **Creează o variabilă** → `timp` → **Pentru toate personajele**
-2. Click pe **Scenă** (tab-ul decor / backdrop) — aici stă cronometrul
+2. Click pe **Scenă** (tab-ul decor (în engleză: backdrop)) — aici stă cronometrul
 
 **Încearcă tu — variabila (2 min)**  
 - [ ] Vezi `timp` pe scenă  
@@ -63,7 +63,7 @@ La steag vezi `20` o secundă, apoi `19`, `18`… Dacă pui **`schimbă` înaint
 
 **Încearcă tu — countdown (4–5 min)**  
 - [ ] Steag → vezi `20` ~1 s, apoi 19, 18, 17… o dată pe secundă  
-- [ ] Nu sare instant 20→19 (ai `așteaptă` **înainte** de `schimbă`)
+- [ ] Nu sare imediat 20→19 (ai `așteaptă` **înainte** de `schimbă`)
 
 ### 3) Timpul expiră → pe Erou *(nucleul Minim)*
 *(Scena **nu** are `spune … timp de …`. Mesajul stă pe **Erou** — ca arbitrii din L3–L4.)*
@@ -84,7 +84,7 @@ La steag vezi `20` o secundă, apoi `19`, `18`… Dacă pui **`schimbă` înaint
 ### 4) Victoria „concurează” cu timpul *(Complet)*
 *(Scorul din L3: acum ai **două** finale care se întrec.)*
 
-1. Pe **Erou** (sau pe **Scenă**, dacă victoria e deja acolo din L3):  
+1. Pe **Erou** (victoria din L3 e deja acolo):  
    `forever` separat → `dacă scor = 5` →  
    <span style="color:#9966FF;font-weight:700">spune</span> `Ai câștigat!` timp de `2` secunde →  
    <span style="color:#FFAB19;font-weight:700">oprește</span> `toate`  
@@ -99,7 +99,7 @@ La steag vezi `20` o secundă, apoi `19`, `18`… Dacă pui **`schimbă` înaint
 ---
 
 ## Greșeli frecvente
-1. **`schimbă timp cu -1` înaintea lui `așteaptă 1`** — sare instant 20→19; pune **întâi** pauza.
+1. **`schimbă timp cu -1` înaintea lui `așteaptă 1`** — sare imediat 20→19; pune **întâi** pauza.
 2. **`schimbă timp cu -1` fără `așteaptă`** — timpul cade la 0 într-o clipă.
 3. **`spune` pe Scenă** — Scena **nu are** bulă; pune „Timpul a expirat!” / „Ai câștigat!” pe **Erou**.
 4. **Uiți `setează timp la 20` la steag** — a doua rundă pornește de unde a rămas.
@@ -149,7 +149,7 @@ Cei rapizi: Complet, apoi Bonus.
 - [ ] Ultimele 5 secunde: <span style="color:#CF63CF;font-weight:700">sunet</span> de tensiune sau <span style="color:#9966FF;font-weight:700">efect culoare</span> pe Erou  
 - [ ] Obiect bonus: `schimbă timp cu 3` — *atenție: poți sări peste 0; testează!*  
 - [ ] Fundal diferit la victorie vs. expirare (`comută fundalul`)  
-- [ ] Echilibru: încearcă **15** sau **30** de secunde — care e mai fun?
+- [ ] Echilibru: încearcă **15** sau **30** de secunde — care e mai distractiv?
 
 ## Recapitulare rapidă
 1. Countdown pe **Scenă**: `așteaptă 1` → `schimbă timp cu -1`  

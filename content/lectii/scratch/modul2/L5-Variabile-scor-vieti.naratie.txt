@@ -12,7 +12,7 @@ Al doilea pas pe ecran. Chiar sub steag, pe erou: setează scor la zero, du-te l
 
 Al treilea pas pe ecran. Plus unu pe stea, nu pe erou. Eroul: doar control cu taste în forever. Pe fiecare stea: la steag, arată, du-te la poziția ei. Forever: dacă atinge Erou, atunci modifică scorul cu unu, ascunde, stop this script. Stop this script oprește forever-ul stelei, ca să nu mai adauge plus unu cât stai pe loc. Copiezi scriptul pe celelalte stele, pe poziții diferite.
 
-Al patrulea pas pe ecran. Victorie: preview doar egal din Operatori. Pe erou, în forever, după taste: dacă scor egal cu cinci, atunci spune Ai câștigat, pentru două secunde, plus sunet, plus opțional stop all. Restul operatorilor, mai mic, mai mare, plus, minus, vin la lecția șase.
+Al patrulea pas pe ecran. Victorie: exemplu doar egal din Operatori. Pe erou, în forever, după taste: dacă scor egal cu cinci, atunci spune Ai câștigat, pentru două secunde, plus sunet, plus opțional stop all. Restul operatorilor, mai mic, mai mare, plus, minus, vin la lecția șase.
 
 Greșeli frecvente. Dacă scorul nu apare, nu e bifată variabila. Dacă nu crește, modifică e pe personajul greșit. Trebuie pe stea, și steaua atinge Erou. Dacă crește de o sută de ori, lipsește ascunde și stop this script. Dacă la steag rămâne cinci, ai uitat setează scor la zero. Dacă stelele nu reapar, pe fiecare stea, la steag: arată.
 
@@ -26,6 +26,6 @@ Minim înseamnă: scor vizibil, reset la steag, cel puțin o stea care dă plus 
 
 În proiect, al treilea pas, pentru Complet. Cinci stele. Dacă scor egal cu cinci, Ai câștigat. Salvezi din nou.
 
-Recapitulare. Variabilă înseamnă cutie cu nume și număr. Steag resetează scorul și locul. Plus unu pe stea, plus ascunde, plus stop this script. Scor egal cu cinci e preview operatori. Numele fișierului are prenumele și numele de familie.
+Recapitulare. Variabilă înseamnă cutie cu nume și număr. Steag resetează scorul și locul. Plus unu pe stea, plus ascunde, plus stop this script. Scor egal cu cinci e exemplu operatori. Numele fișierului are prenumele și numele de familie.
 
 Succes la cele cinci stele ale tale.

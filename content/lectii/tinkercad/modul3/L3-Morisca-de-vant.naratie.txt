@@ -1,0 +1,33 @@
+Lecția trei. Morișca mea.
+
+Astăzi faci un rotor care stă pe un stâlp și se poate învârti în jurul lui, fără să cadă. Fișier nou: Prenume, linie jos, Nume, linie jos, T trei, linie jos, L trei. Proiectul se numește Morișca mea.
+
+Obiectivul. La final ai o morișcă din două piese separate: baza cu stâlp și rotorul, adică un butuc cu palete, pus pe stâlp. Minim: bază cu diametru cincizeci și grosime cinci, stâlp cu diametru opt și înălțime șaptezeci, capac cu diametru paisprezece și grosime patru, pe vârf. Rotor: butuc cu diametru douăzeci și înălțime opt, cu gaură de diametru nouă, plus patru palete, din două bare de optzeci pe doisprezece pe doi milimetri, în cruce. Rotorul stă pe stâlp, la patruzeci de milimetri, nelipit. Complet: minim, plus opt palete egale, adică patru bare la patruzeci și cinci de grade, culori și Ruler.
+
+De ce contează. Un rotor se învârte pentru că are loc pe ax: gaura e mai mare decât stâlpul, nouă față de opt. Capacul de sus împiedică rotorul să iasă. E același principiu ca la roțile mașinuței, dar acum în plan orizontal.
+
+Primul pas pe ecran. Create new design, cu numele fișierului. Snap Grid pe unu milimetru, jos în dreapta.
+
+Al doilea pas pe ecran. Un Cylinder de cincizeci pe cincizeci pe cinci, baza. Un Cylinder de opt pe opt pe șaptezeci, stâlpul. Le selectezi, tasta L, mijloc pe ambele direcții de pe plan, apoi Control și G. Pui Snap Grid pe cinci, muți grupul o sută de milimetri deoparte, pentru că rotorul se face separat, și revii pe unu.
+
+Al treilea pas pe ecran. Un Cylinder de douăzeci pe douăzeci pe opt, butucul. Un Cylinder de nouă pe nouă pe paisprezece, Hole. Selectezi gaura și butucul, tasta L, mijloc pe cele trei direcții. Gaura iese sus și jos.
+
+Al patrulea pas pe ecran. Un Box de optzeci pe doisprezece pe doi, prima bară, adică două palete. Selectezi butucul, gaura și bara, L, mijloc pe cele trei direcții, toate împreună. Bara iese în ambele părți. Control și D, și rotești copia nouăzeci de grade, patru pași de câte douăzeci și doi virgulă cinci. A doua bară e în cruce. Selectezi cu Shift și click butucul, gaura și cele două bare, nu Control și A, că ar prinde și baza. Control și G. Din View Cube, Top: patru palete egale.
+
+Al cincilea pas pe ecran. Tasta D pe rotor. Selectezi rotorul și baza cu stâlp, L, mijloc pe ambele direcții de pe plan. Cu Snap Grid pe cinci, ridici rotorul cu conul negru la patruzeci de milimetri, opt sărituri. Din Front, stâlpul trece prin gaura rotorului.
+
+Al șaselea pas pe ecran. Un Cylinder de paisprezece pe paisprezece pe patru, capacul, tras peste stâlp. Selectezi capacul și baza cu stâlp, L, mijloc pe ambele direcții și punctul de sus. Capacul e mai lat decât stâlpul. Control și G. Rotorul rămâne separat.
+
+Al șaptelea pas pe ecran. Din Front, rotorul nu atinge nici baza, nici capacul. Click pe el: se selectează singur.
+
+Al optulea pas pe ecran, pentru Complet. Desfaci rotorul cu Control, Shift și G. O bară, Control și D, copia rotită patruzeci și cinci de grade. Apoi bara de la nouăzeci de grade, Control și D, încă patruzeci și cinci. Ai bare la zero, patruzeci și cinci, nouăzeci, apoi o sută treizeci și cinci de grade: opt palete. Selectezi butucul, gaura și cele patru bare, Control și G. Cu Ruler măsori gaura de nouă și stâlpul de opt. La Color, paletele în culori diferite.
+
+Greșeli frecvente. Rotorul e lipit de stâlp: nu-l grupa cu el. Paletele nu sunt în cruce: a doua bară nu e rotită nouăzeci de grade. Rotorul atinge baza: ridică-l la patruzeci. Capacul e prea mic: dacă îl faci de opt, rotorul poate ieși. Cele opt palete nu sunt egale: rotește de fiecare dată exact patruzeci și cinci de grade.
+
+Proiectul de azi. Morișca mea.
+
+Minim înseamnă: bază, stâlp și capac, rotor cu gaură și patru palete, separat, la patruzeci de milimetri. Complet înseamnă: minim, plus opt palete, Ruler și culori.
+
+Recapitulare. Rotorul e separat de stâlp. Gaura mai mare decât stâlpul dă joc. Capacul oprește rotorul. Control și D, plus o rotire exactă, dau palete egale.
+
+Succes la morișca ta.

@@ -9,11 +9,11 @@
 
 ## Obiectiv
 La finalul orei miști fluid personajul cu <span style="color:#5CB1D6;font-weight:700">tasta … e apăsată?</span> în <span style="color:#FFAB19;font-weight:700">forever</span>.  
-**Minimum:** **4 taste** + reset complet + **un** obstacol (perete) funcțional.  
+**Minim:** **4 taste** + reset complet + **un** obstacol (perete) funcțional.  
 **Ținta orei (Complet):** Minim + **ieșire** cu mesaj + **≥2** obstacole + (opțional) demonstrație **mouse**.
 
 ## De ce contează
-Labirinturile și jocurile se joacă cu **tastele**. Pattern-ul din Scratch e mereu același: steag → forever → dacă tasta → mișcă.
+Labirinturile și jocurile se joacă cu **tastele**. Tiparul din Scratch e mereu același: steag → forever → dacă tasta → mișcă.
 
 ---
 
@@ -22,7 +22,7 @@ Labirinturile și jocurile se joacă cu **tastele**. Pattern-ul din Scratch e me
 | Minute | Ce facem |
 |--------|----------|
 | 0–10 | Recap atingere + obiectiv control |
-| 10–30 | Pas cu pas: checkpoint-uri (**Încearcă tu**) |
+| 10–30 | Pas cu pas: mini-verificări (**Încearcă tu**) |
 | 30–100 | Proiectul „Pilot în labirint” (vezi **Minim vs Complet**) |
 | 100–120 | Recap, bonus, salvare |
 
@@ -30,7 +30,7 @@ Labirinturile și jocurile se joacă cu **tastele**. Pattern-ul din Scratch e me
 
 ## Pas cu pas
 
-### 1) Pattern-ul de aur (copiază mental)
+### 1) Tiparul de aur (copiază mental)
 ```
 când se face clic pe steagul verde
   du-te la start
@@ -89,7 +89,7 @@ Astfel personajul se mișcă, **apoi** Scratch verifică dacă a intrat în pere
 3. În interiorul buclei `forever`, **după** cele 4 taste:  
    - dacă atinge **perete** (culoare / personaj) → <span style="color:#4C97FF;font-weight:700">du-te la</span> start (ca L3)  
    - dacă atinge **ieșirea** → <span style="color:#9966FF;font-weight:700">spune</span> `Ai ajuns!` + <span style="color:#CF63CF;font-weight:700">sunet</span> →  
-     <span style="color:#FFAB19;font-weight:700">așteaptă</span> `0.5` *(evită spam-ul)*  
+     <span style="color:#FFAB19;font-weight:700">așteaptă</span> `0.5` *(ca să nu se repete prea des)*  
      *(fără `scor > …` — scorul e L5/L6)*
 
 **Minim:** ajunge să ai **1** perete care te trimite la start.  

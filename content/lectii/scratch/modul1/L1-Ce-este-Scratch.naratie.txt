@@ -20,15 +20,15 @@ Greșeli frecvente. Dacă nu se întâmplă nimic, lipsește steagul, sau nu ai 
 
 Proiectul de azi. Cardul meu animat.
 
-Minim înseamnă: două personaje și dialog pe rând, salvat. Complet înseamnă: minim, plus mișcare sau aspect, plus sunet, și clipul ține cel puțin douăzeci de secunde. Dacă rămâi în urmă, oprește-te la Minim și salvează. Nu e eșec. E baza pentru lecția următoare.
+Minim înseamnă: două personaje și dialog pe rând, salvat. Complet înseamnă: minim, plus mișcare sau aspect, plus sunet, și clipul ține cel puțin zece secunde. Dacă rămâi în urmă, oprește-te la Minim și salvează. Nu e eșec. E baza pentru lecția următoare.
 
-În proiect, primul pas. Schimbi personajul din start. Adaugi un al doilea personaj. Îi așezi stânga și dreapta, ca să se vadă amândouă.
+În proiect, primul pas. Schimbi personajul din start. Adaugi un al doilea personaj. Îi așezi stânga și dreapta, ca să se vadă amândouă. Scripturile celor două personaje pornesc în același moment la steag. Ca să nu vorbească deodată, personajul doi începe cu așteaptă, cât durează replicile personajului unu. De exemplu: două spune de două secunde plus așteaptă o secundă înseamnă așteaptă cinci.
 
-În proiect, al doilea pas. Pe personajul unu: steag și cel puțin două spune, cu așteaptă între ele. Pe personajul doi: la fel. În total cel puțin patru spune, împărțite pe cele două personaje. Din dialog se înțelege cine ești: numele tău și un lucru despre tine. Apoi salvezi.
+În proiect, al doilea pas. Pe personajul unu: steag și cel puțin două spune, cu așteaptă între ele. Pe personajul doi: la fel, dar începe cu așteaptă, ca să nu vorbiți deodată. În total cel puțin patru spune, împărțite pe cele două personaje. Din dialog se înțelege cine ești: numele tău și un lucru despre tine. Apoi salvezi.
 
 În proiect, al treilea pas, pentru Complet. Cel puțin un personaj se mișcă, cu mergi sau glisează. Schimbi costumul sau efectul de cel puțin două ori.
 
-În proiect, al patrulea pas, pentru Complet. Adaugi un sunet. Clipul ține cel puțin douăzeci de secunde. Rulezi din nou pe steag. Salvezi din nou.
+În proiect, al patrulea pas, pentru Complet. Adaugi un sunet. Clipul ține cel puțin zece secunde. Rulezi din nou pe steag. Salvezi din nou.
 
 Recapitulare. Steagul înseamnă start. Dialogul înseamnă spune plus așteaptă, pe ambele personaje. Numele fișierului are prenumele și numele de familie. Minim e primul și al doilea pas din proiect. Complet adaugă al treilea și al patrulea.
 

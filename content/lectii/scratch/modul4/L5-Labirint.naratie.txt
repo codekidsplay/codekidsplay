@@ -1,18 +1,18 @@
 Lecția cinci. Labirint pe nivele.
 
-Astăzi construiești un labirint cu Level unu și Level doi, presiune cu vieți sau timer, restart curat. Fișier nou. Poate inspira motorul, dar nu e același proiect. Fișierul: Prenume, linie jos, Nume, linie jos, M patru, linie jos, L cinci. Proiectul se numește Labirint pe nivele.
+Astăzi construiești un labirint cu Level unu și Level doi, presiune cu vieți sau timer, restart curat. Fișier nou. Poate inspira baza jocului, dar nu e același proiect. Fișierul: Prenume, linie jos, Nume, linie jos, M patru, linie jos, L cinci. Proiectul se numește Labirint pe nivele.
 
 Obiectivul. Cineva trece ambele nivele fără ajutor. Minim: control erou, Level unu și doi diferite, trecere automată la obiectiv, ziduri care trimit la start, vieți sau timer pe scenă, victorie pe Level doi, steag egal Level unu plus reset. Complet: minim, plus Level trei, sau vieți și timer împreună, sau cheie și ușă, sau cursă cu doi jucători.
 
-De ce contează. Labirintul pe nivele adună coliziune, mesaje și presiune din Modulele doi și trei. Dacă tipul tău la motor e labirint, azi exersezi trecerea pe care o termini la lecția șase.
+De ce contează. Labirintul pe nivele adună atingere, mesaje și presiune din Modulele doi și trei. Dacă tipul tău la bază e labirint, azi exersezi trecerea pe care o termini la lecția șase.
 
 Primul pas pe ecran. Schiță trei puncte, cinci minute. Level unu: cale simplă. Level doi: cale în S, mai greu. Presiune: vieți sau timer.
 
 Al doilea pas pe ecran. Erou pe patru direcții cu schimbă x și y. Ziduri: o culoare pe fundal. Dacă atinge culoarea zid, du-te la start. Nu înapoi un pas la Minim. Obiectiv pe Level unu. La steag: start, fundal unu, reset variabile.
 
-Al treilea pas pe ecran. La finish Level unu: trimite Nivelul doi. Level doi vizibil mai greu, cale în S. Finish Level doi: mesaj victorie. Steag egal mereu Level unu. Presiune: vieti pe Scenă, minus unu la greșeală, zero egal Sfârșitul jocului. Sau timp pe Scenă, așteaptă unu, schimbă minus unu, zero egal Sfârșitul jocului.
+Al treilea pas pe ecran. La finish Level unu: trimite Nivelul doi. Ca trecerea să nu se repete, folosești variabila nivel, pentru toți. La steag: setează nivel la unu. Pe Erou, în forever: dacă atinge Finish și nivel egal cu unu, atunci setează nivel la doi și trimite Nivelul doi. Pe Finish, la Nivelul doi, du-te la finișul din nivelul doi. Pe Scenă, comută fundalul la Nivel doi. Pe Erou, du-te la startul din nivelul doi. Level doi vizibil mai greu, cale în S. Finish Level doi: mesaj victorie. Steag egal mereu Level unu. Presiune: vieti pe Scenă, minus unu la greșeală, zero egal Sfârșitul jocului. Sau timp pe Scenă, așteaptă unu, schimbă minus unu, zero egal Sfârșitul jocului.
 
-Al patrulea pas pe ecran, pentru Complet. Level trei, sau vieți și timer, sau cheie care deblochează finish-ul, sau cursă: jucător unu săgeți, jucător doi WASD.
+Al patrulea pas pe ecran, pentru Complet. Level trei, sau vieți și timer, sau cheie care deblochează finish-ul, sau cursă: jucător unu săgeți, jucător doi W, A, S, D.
 
 Greșeli frecvente. Prea mult pe foaie. Level doi egal Level unu cu alt fundal gol. Trecere manuală. Ziduri fantomă, culoarea greșită. Timer pe Erou, nu pe Scenă. Fără reset. Control pe un singur ax.
 

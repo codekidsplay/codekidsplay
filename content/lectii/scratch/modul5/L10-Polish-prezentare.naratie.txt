@@ -1,0 +1,27 @@
+Lecția zece. Finisări, prezentare și insigna Maestru de jocuri.
+
+Astăzi e ultima oră pe proiectul mare: Prenume, linie jos, Nume, linie jos, M cinci, linie jos, Proiect. Faci finisări, la minutul cincizeci și cinci oprești codul, apoi îți prezinți jocul într-un minut sau două. Primești insigna Maestru de jocuri.
+
+Obiectivul. Faci cel puțin trei finisări din cele șase, de la A la F. Steagul merge curat de două ori la rând. Prezentarea are cinci pași. Salvezi proiectul și primești insigna. Asta e Minim. Complet înseamnă Minim, plus cel puțin cinci finisări, sau una sigură și una avansată, de exemplu sunete sau instrucțiuni plus scorul cel mai mare sau un bonus în magazin, sau o părere primită și aplicată în cinci minute.
+
+De ce contează. Maestru de jocuri înseamnă reguli de joc grele și un joc pe care îl poți prezenta. E podul spre Cube Crafter, în modulul șase.
+
+Primul pas, finisările, patruzeci de minute. Cele sigure, de unde începi. A, nume pe meniu: în sprite-ul Meniu, textul cu titlul jocului, făcut cu unealta de text din editorul de costume. B, sunete: pornește sunetul Pop când iei o monedă, alt sunet la săritură și un sunet scurt la lovitură. La win, la lose și la revino meniu pui oprește toate sunetele. C, controale: pe meniu scrii Săgeți pentru mers, Spațiu pentru sari. Cele avansate. D, date lizibile: bifezi variabilele viață, scor și monede, și le tragi ordonat în colț. E, record: variabila record. La win, dacă scor este mai mare decât record, setează record la scor. O arăți pe meniu. F, finaluri curate: după win și lose nu rămâne nimic mort pe scenă. Steagul și Start pornesc curat de fiecare dată.
+
+La minutul cincizeci și cinci oprești codul. După aceea repari doar greșeli mici și nu mai adaugi nimic.
+
+Al doilea pas, căutarea greșelilor, zece minute. Joci și încerci să strici jocul. Apeși spațiu în aer: nu trebuie să sari a doua oară. Apeși steagul de două ori la rând: nu apar monede în plus. Pierzi o dată și câștigi o dată: ambele merg. După win, apeși Start: jocul începe de la zero. Nu poți câștiga la start. Găsești și repari măcar o greșeală, sau un coleg joacă și spune că e în regulă.
+
+Al treilea pas, prezentarea, un minut sau două. Scrii pe foaie cinci propoziții. Prima: Jocul meu se numește. A doua: În el tu sari, eviți sau cumperi. A treia: Partea grea a fost, și am rezolvat-o cu viteza y, cu o listă sau cu magazinul. A patra: Sunt mândru de. A cincea e demonstrația de treizeci, patruzeci de secunde: Start, joci, final. Regulile sălii: aplauze la final. Fiecare spune un compliment și o idee.
+
+Al patrulea pas, insigna. Ai parcurs modulul cinci, sau ai recuperat lecțiile lipsă. Ai prezentat. Primești insigna Maestru de jocuri.
+
+Greșeli frecvente. Faci o funcție mare după minutul cincizeci și cinci: oprește-te și las-o pentru proiectul următor. Prezentare fără demonstrație: arată jocul, nu doar spune. Sunetele nu se opresc: lipsește oprește toate sunetele la final. Variabile risipite pe scenă: bifează doar viață, scor și monede. Steagul nu mai merge: repară înainte de prezentare. Confuzia cu Cube Crafter: acela e modulul șase.
+
+Proiectul de azi. Proiectul mare, finisat.
+
+Minim înseamnă: cel puțin trei finisări, prezentare, insignă. Complet înseamnă: Minim plus cel puțin cinci finisări, sau una sigură și una avansată, sau o părere aplicată.
+
+Recapitulare. Ai învățat fizică, derulare, inamici, liste, blocuri proprii, magazin și un proiect mare. Acum urmează modulul șase, Lume de cuburi.
+
+Felicitări, Maestru de jocuri. Succes la prezentare.

@@ -1,0 +1,29 @@
+Lecția șapte. Șirul de cuburi.
+
+Astăzi construiești forme cu blocuri de cod, în loc de mouse. O buclă repetă o comandă, iar un număr schimbat schimbă tot obiectul. Creezi un design nou și îl numești Prenume, linie jos, Nume, linie jos, T cinci, linie jos, L șapte. Proiectul se numește Șirul de cuburi. Imprimanta trei D nu se folosește la oră. Lecția este opțională pentru cei sub doisprezece ani, care au varianta fără cod.
+
+Obiectivul. Ai un șir de cinci cuburi egale, la distanțe egale. Minim cu Codeblocks: un program cu o buclă care se repetă de cinci ori. Face un cub de zece pe zece pe zece și îl mută cincisprezece milimetri spre dreapta. Apeși Run și apare șirul. Minim fără Codeblocks: același șir făcut cu Control și D, plus două propoziții pe foaie despre ce ar face o buclă. Complet: minim, plus două variabile, n pentru câte cuburi și pas pentru cât de departe, plus o scară, în care fiecare cub este cu cinci milimetri mai înalt decât cel dinainte.
+
+De ce contează. Calculatorul e bun la lucruri care se repetă. Îi spui fă un cub, mută-te, repetă de cinci ori, și el face lucrul perfect. Dacă schimbi un număr, schimbi tot obiectul. Așa gândesc inginerii care fac piese parametrice.
+
+Primul pas pe ecran. Creezi un design nou și alegi Codeblocks. Îi pui numele.
+
+Al doilea pas pe ecran. Din blocurile de forme tragi blocul care creează un cub. Îi pui mărimile zece, zece, zece. Apeși Run și apare un cub pe plan. Apoi ștergi sau resetezi.
+
+Al treilea pas pe ecran, bucla. Din blocurile de repetare tragi blocul repetă de ori și pui cinci. În buclă pui blocul care creează cubul de zece pe zece pe zece. Sub el, în aceeași buclă, pui blocul care mută pe axa X cu cincisprezece. Apeși Run. Vezi cinci cuburi, la cincisprezece milimetri unul de altul, cu cinci milimetri între ele. Ordinea contează. Întâi creezi cubul, apoi te muți. Încearcă și invers și compară rezultatele.
+
+Al patrulea pas pe ecran, pentru Complet. Creezi variabila n și o pui pe cinci. Creezi variabila pas și o pui pe cincisprezece. În buclă, în loc de cinci pui n, iar la mutare pui pas. Schimbi n în opt și apeși Run. Apar opt cuburi. Schimbi pas în douăzeci. Cuburile sunt mai depărtate.
+
+Al cincilea pas pe ecran, tot pentru Complet. Creezi variabila h și o pui pe zece, înainte de buclă. Cubul din buclă are înălțimea h. La sfârșitul buclei, h devine h plus cinci. Apeși Run. Cuburile cresc ca niște trepte. Pe foaie scrii cât e înălțimea ultimului cub, când n este cinci. Răspunsul este treizeci, pentru că înălțimile sunt zece, cincisprezece, douăzeci, douăzeci și cinci, treizeci.
+
+Varianta fără Codeblocks. Tragi un Box de zece pe zece pe zece. Pui Snap Grid pe unu virgulă zero milimetri. Apeși Control și D și muți copia cincisprezece milimetri spre dreapta, adică cincisprezece apăsări de săgeată. Apoi apeși Control și D de încă trei ori. Fiecare repetă aceeași mutare. Ai cinci cuburi. Din Top sunt egale, la cinci milimetri distanță. Pe foaie scrii două propoziții. Dacă aș avea o buclă, aș scrie. Cu o variabilă n aș putea. Pentru Complet fără cod, al doilea cub are cincisprezece milimetri înălțime, al treilea douăzeci, și tot așa. Apoi apeși L și le aliniezi jos, pe plan.
+
+Greșeli frecvente. Cuburile sunt unul peste altul, pentru că lipsește blocul de mutare din buclă. Ai un singur cub, pentru că blocurile sunt în afara buclei. Ai prea multe cuburi, pentru că ai pus cincizeci în loc de cinci. Nu se întâmplă nimic, pentru că n-ai apăsat Run. Cuburile se ating, pentru că pasul este zece sau mai mic. Variabila n nu schimbă nimic, pentru că bucla folosește numărul cinci. Scara nu crește, pentru că lipsește blocul h devine h plus cinci.
+
+Proiectul de azi. Șirul de cuburi.
+
+Minim cu cod înseamnă: buclă de cinci, cub de zece pe zece pe zece, mutare cincisprezece, Run reușit. Minim fără cod înseamnă: cinci cuburi cu Control și D și două propoziții despre buclă. Complet înseamnă: minim, plus variabilele n și pas și scara. Faci două rulări cu valori diferite. Dacă rămâi în urmă, salvează la Minim.
+
+Recapitulare. Bucla repetă aceleași comenzi. Variabila este un număr cu nume, pe care îl poți schimba. Întâi creezi, apoi muți. Fără cod, Control și D face același lucru.
+
+Succes la șirul tău de cuburi.

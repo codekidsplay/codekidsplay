@@ -1,0 +1,27 @@
+Lecția patru. Inventarul meu.
+
+Astăzi faci prima ta listă Scratch pe bune. Folosești adaugă, șterge și conține, iar inventarul se vede pe scenă. Faci un fișier nou. Îl salvezi ca Prenume, linie jos, Nume, linie jos, M cinci, linie jos, L patru. Proiectul se numește Inventarul meu.
+
+Obiectivul. Ai o listă numită inventar. Colectezi cel puțin trei iteme cu adaugă. Lista se vede pe scenă. Blocul conține decide ceva în joc. Poți șterge, adică să consumi, cel puțin un item. La steag, lista se golește. Asta e Minim. Complet înseamnă Minim, plus două tipuri de iteme, sau să nu adaugi duplicat dacă lista conține deja itemul, sau sloturi pe ecran, făcute din sprite-uri, pe lângă listă.
+
+De ce contează. Inventarul e lista lucrurilor pe care le ai la tine: chei, monede, unelte. În Scratch o ții într-o listă. Blocul conține este baza pentru chei, puteri și magazin. În modulul șase vei folosi cantități, de exemplu lemn cinci și piatră trei. Azi lucrezi cu nume.
+
+Primul pas, pe foaie, cinci minute. O listă e un rând de cutii cu nume: Cheie, Monedă. Faci trei lucruri cu ea. Adaugi în ea. Întrebi dacă ceva e înăuntru. Scoți ceva din ea. Desenează lista după ce iei Cheia, apoi Moneda, apoi folosești Cheia.
+
+Al doilea pas pe ecran. Faci proiect nou. În paleta Variabile apeși Creează o listă și o numești inventar, pentru toate sprite-urile. Bifezi căsuța, ca s-o vezi pe scenă. Eroul stă la x minus două sute, y zero. Pe steag: șterge tot din inventar și du-te la x minus două sute, y zero. În repetă la nesfârșit, cu săgețile: schimbă x cu patru sau minus patru, și schimbă y cu patru sau minus patru.
+
+Al treilea pas, colectarea. Faci trei sprite-uri: Cheie, Monedă și Floare. Fiecare are același script. Pe steag: arată și du-te la un loc diferit. Așteaptă până când atinge Erou. Adaugă numele lui la inventar. Ascunde. Un sprite ascuns nu mai poate fi atins, deci nu se adaugă de o sută de ori.
+
+Al patrulea pas, Ușa. Sprite-ul Ușă are un repetă la nesfârșit. Dacă atinge Erou, atunci: dacă inventar conține Cheie, șterge poziția lui Cheie din inventar, adică consumi cheia. Apoi spune Deschis timp de două secunde și ascunde. Altfel, spune Îți trebuie Cheia timp de o secundă. Testezi de fiecare dată. Fără cheie, vezi mesajul. Cu cheie, ușa se deschide, iar în listă rămân Moneda și Floarea.
+
+Complet, alegi cel puțin una. Doi itemi cu reacții diferite: Moneda schimbă puncte cu unu, Cheia deschide ușa. Fără duplicat: înainte de adaugă, pui dacă nu inventar conține Floare. Iconițe: un sprite mic pentru fiecare obiect; dacă inventar conține Cheie, arată, altfel ascunde.
+
+Greșeli frecvente. Folosești doar o variabilă pentru cheie: Minim cere listă. Lista nu se vede: bifează căsuța. Cheie apare de sute de ori: lipsește ascunde după adaugă. Ușa se deschide fără cheie: verifici alt nume, iar litera mare contează. Cheia nu dispare din listă: lipsește șterge poziția lui.
+
+Proiectul de azi. Inventarul meu.
+
+Minim înseamnă: adaugă, conține, șterge, afișaj, reset și test cu un coleg. Colegul trebuie să afle singur dacă are cheia. Complet înseamnă: Minim plus una dintre cele trei variante. Dacă rămâi în urmă, salvează la Minim.
+
+Recapitulare. Lista e inventarul pe nume. Blocul conține deschide uși și puteri. Numele fișierului are prenumele, numele, M cinci și L patru.
+
+Succes la inventarul tău.

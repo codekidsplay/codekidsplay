@@ -1,0 +1,31 @@
+Lecția opt. Misiune și victorie.
+
+Astăzi jocul primește un scop clar. Nu mai e doar sandbox, are o condiție de victorie. Continui fișierul Prenume, linie jos, Nume, linie jos, M șase, linie jos, Lume Cuburi.
+
+Obiectivul. Minim: misiune scrisă pe scenă, o condiție care se poate verifica, mesajul Ai câștigat, iar tu poți pierde în continuare, prin vieți. Un coleg înțelege scopul fără tine. Complet: minim, plus o misiune care cere craft, sau două zone, sau înfrângerea creaturii cu un item craftat.
+
+De ce contează. Sandbox fără obiectiv înseamnă doar plimbare. Misiunea transformă lumea într-un joc pe care îl prezinți în lecția zece.
+
+Primul pas pe ecran. Alegi o singură misiune, nu cinci. Exemple: construiești o casă cu cel puțin opt blocuri puse și un târnăcop craftat. Sau învingi creatura cu o sabie craftată. Sau aduni cincisprezece lemn și vizitezi ambele zone. Azi lucrăm cu o frază care se poate verifica: Construiește un adăpost din opt blocuri. Sau, mai greu: Fă un târnăcop și construiește opt blocuri.
+
+Al doilea pas pe ecran. Variabila misiune, cu text, mare, bifată pe scenă. Pe steag: setează misiune la Construiește opt blocuri. Variabila puse, câte blocuri ai pus. Pe steag: setează puse la zero. În scriptul de pus din lecția trei, după ce apare blocul: schimbă puse cu unu. Verifici: misiunea se vede pe ecran, iar puse crește cu unu la fiecare bloc pus.
+
+Al treilea pas pe ecran. Condiția de victorie. La Scenă, sau la Erou, repetă la nesfârșit: dacă puse mai mare decât șapte, atunci trimite win și oprește acest script. Un sprite Final, ascuns la steag, cu costumul Ai câștigat. Când primesc win: arată, treci în față, iar după o secundă oprește tot.
+
+Pentru Complet alegi cel puțin una. Craft: dacă puse mai mare decât șapte și târnăcop mai mare decât zero. Două zone: câștigi cu cel puțin patru blocuri puse în fiecare zonă. Creatura: faci o variabilă creatura învinsă, pentru toate, pusă pe zero la steag. Pe Creatură, când primesc creatura lovită, o setezi pe unu. Câștigi dacă sabie mai mare decât zero și creatura învinsă egal cu unu.
+
+Verifici de fiecare dată. La steag, puse egal cu zero și nu apare Ai câștigat. Pui șapte blocuri, încă nimic. Pui al optulea bloc și apare Ai câștigat, iar jocul se oprește. Poți pierde în continuare, prin viețile din lecția șase.
+
+Al patrulea pas pe ecran, pentru Complet. Alegi cel puțin una. Craft: dacă puse mai mare decât șapte și tarnacop mai mare decât zero. Două zone: două variabile, una pentru Pădure și una pentru Deșert, și câștigi cu cel puțin patru în fiecare. Sau creatura: câștigi dacă ai sabie și creatura e eliminată.
+
+Al cincilea pas pe ecran. Test cu un coleg, cinci minute. Colegul citește misiunea de pe ecran și o îndeplinește fără ajutor.
+
+Greșeli frecvente. Câștigi la steag: puse nu e pus pe zero la start. Puse nu crește: schimbă puse cu unu e în afara scriptului de pus. Mesajul apare în fiecare cadru: lipsește oprește acest script după trimite win. Misiunea e doar în cap, nu pe ecran. Nu poți pierde: verifici vieți. Condiția e imposibilă într-o sesiune.
+
+Proiectul de azi. Misiune și victorie.
+
+Minim înseamnă: o misiune pe scenă, victorie clară, test cu un coleg. Complet înseamnă: minim plus craft, zone sau creatură în condiție.
+
+Recapitulare. O misiune, clară, pe ecran. Victoria este un eveniment, nu un bravo spus oricând. Lecția nouă aduce meniu și instrucțiuni.
+
+Succes la misiunea ta.

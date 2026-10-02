@@ -11,7 +11,7 @@
 
 | Minute | Ce facem |
 |--------|----------|
-| 0–20 | Recap pe tablă: cout, cin, tipuri, if, switch |
+| 0–20 | Recap pe foaie: cout, cin, tipuri, if, switch |
 | 20–40 | Alege proiectul + checklist |
 | 40–100 | Construiești mini-proiectul |
 | 100–115 | Demo pe rând |

@@ -1,0 +1,29 @@
+Lecția nouă. Meniu Start și instrucțiuni.
+
+Astăzi jocul are un ecran Start, un reset curat și un ghid de taste, ca un joc gata de prezentat. Continui același fișier: Prenume, linie jos, Nume, linie jos, M șase, linie jos, Lume Cuburi. Nu faci proiect nou.
+
+Obiectivul. Minim: un meniu Start cu buton, mesajul start joc pornește lumea, steagul readuce meniul sau resetează tot, iar pe scenă scrii cum minezi, cum pui și cum craftezi. Un coleg începe singur din meniu. Complet: minim, plus revino meniu, instrucțiuni pe un ecran separat sau ajutor cu tasta I, și controale pe mai multe rânduri clare.
+
+De ce contează. Fără meniu, jocul începe în mijloc. Instrucțiunile înlocuiesc vocea ta la prezentarea din lecția zece.
+
+Primul pas pe ecran. Planul, pe foaie. Trei mesaje, trimise cu trimite către toți. Start joc pornește lumea. Win sau lose înseamnă că jocul s-a terminat. Revino meniu duce înapoi la meniu. Desenezi fluxul: steag, meniu, Start, joc, win sau lose, meniu.
+
+Al doilea pas pe ecran. Meniul. Un sprite nou, Meniu, cu textul Start pe un buton mare și titlul jocului. Pe steag: arată, du-te la x zero, y zero, treci în față. La click pe acest personaj: trimite start joc și ascunde. Generatorul de blocuri nu mai pornește la steag, ci sub când primesc start joc. Pe steag, la Bloc, Erou, Creatură, Craft și Final, doar ascunde. Sub când primesc start joc, la fiecare: arată, unde e cazul, și scripturile de joc, patrulare, click, mers. Primul bloc sub când primesc start joc este oprește celelalte scripturi din acest sprite. Verifici: apeși steagul și se vede doar meniul. Apeși Start și apare lumea.
+
+Al treilea pas pe ecran. Resetul complet. Sub când primesc start joc, la Erou, înainte de joc: setezi lemn, piatra, pamant, tarnacop, puse și, dacă ai făcut-o în lecția șapte, sabie, la zero, vieti la trei, raza la optzeci, tip activ la unu, și du-te la x zero, y minus o sută șaizeci. Verifici: joci, ajungi la meniu, apeși Start din nou și totul e curat.
+
+Al patrulea pas pe ecran. Instrucțiunile. Pe Meniu, un al doilea costum sau text, cel mult cinci sau șase rânduri. Săgeți, mers. Click, sparge. E, pune. Unu, doi, trei, tipul. Click pe Craft, faci un târnăcop. Verifici: un coleg care n-a mai văzut jocul găsește singur cum se minează.
+
+Al cincilea pas pe ecran. Întoarcerea la meniu. Când win sau lose, după trei secunde, trimite revino meniu. Meniul, când primește revino meniu, arată și trece în față. Celelalte sprite-uri oprește celelalte scripturi din acest sprite și ascund. Clonele de bloc: șterge această clonă.
+
+Pentru Complet, alegi cel puțin una. Tasta M trimite revino meniu. Un ecran separat Cum se joacă, cu buton pe meniu. Sau tasta I arată și ascunde ajutorul în timpul jocului, cu variabila ajutor, zero sau unu.
+
+Greșeli frecvente. Lumea apare înainte de Start: scripturile sunt încă la steag. Start de două ori dublează blocurile: lipsește oprirea scripturilor sau clonele vechi nu se șterg. Meniul rămâne peste joc: lipsește ascunde. Resetul e parțial. Nimeni nu știe controalele. Steagul duce direct în joc.
+
+Proiectul de azi. Meniu și instrucțiuni.
+
+Minim înseamnă: meniu Start, reset, controale pe scenă, test cu un coleg. Complet înseamnă: minim plus revino meniu, sau ecran de ajutor, sau tasta I.
+
+Recapitulare. Meniu, Start, reset. Controalele stau pe ecran. Lecția zece aduce finisări, prezentare și insigna.
+
+Succes la meniul tău.

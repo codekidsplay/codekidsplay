@@ -2,23 +2,23 @@ Lecția șase. Nivelul unu și doi.
 
 Astăzi jocul are două nivele. Termini nivelul unu: fundal nou, scor resetat, stelele reapar, nivelul doi e mai greu. Deschizi proiectul din lecția cinci și salvezi ca Prenume, linie jos, Nume, linie jos, M trei, linie jos, L șase. Proiectul se numește Nivelul unu și doi.
 
-Obiectivul. Folosești variabila nivel ca jocul să treacă singur de la unu la doi, cu fundal nou, ținte readuse și dificultate mai mare. Minim: o trecere, fundal, scor zero, stele arată prin mesaj, fără spam. Complet: minim, plus nivelul doi vizibil mai greu, nivel pe scenă, mesaj Nivelul doi, final pe nivelul doi.
+Obiectivul. Folosești variabila nivel ca jocul să treacă singur de la unu la doi, cu fundal nou, ținte readuse și dificultate mai mare. Minim: o trecere, fundal, scor zero, stele arată prin mesaj, fără repetări. Complet: minim, plus nivelul doi vizibil mai greu, nivel pe scenă, mesaj Nivelul doi, final pe nivelul doi.
 
 De ce contează. Un joc care rămâne la fel e plictisitor. Nivelele dau progres: am trecut de nivelul unu.
 
 Primul pas pe ecran. Ce schimbă un nivel: fundal nou, stelele reapar, scor zero, ceva puțin mai greu. Creezi nivel, pentru toate, pe scenă. Al doilea fundal, diferit clar. La steag: setează nivel la unu, scor la zero, comută fundalul la fundal unu. Pe fiecare Țintă: arată.
 
-Al doilea pas pe ecran. Trecerea. Pe Erou, în forever: dacă scor egal cu trei și nivel egal cu unu. Blocul și din Operatori: două lacăte pe aceeași ușă. Atunci, în ordine: setează nivel la doi, scor la zero, timp la douăzeci dacă ai cronometru din lecția cinci, comută fundalul doi, trimite Nivelul doi, spune Nivelul doi. De ce și nivel egal cu unu: după trecere, nivelul e doi, condiția e falsă, fără spam. Fără setează timp, poți intra pe nivelul doi cu două secunde pe ceas și pierzi imediat.
+Al doilea pas pe ecran. Trecerea. Pe Erou, în forever: dacă scor egal cu trei și nivel egal cu unu. Blocul și din Operatori: două lacăte pe aceeași ușă. Atunci, în ordine: setează nivel la doi, scor la zero, timp la douăzeci dacă ai cronometru din lecția cinci, comută fundalul doi, trimite Nivelul doi, spune Nivelul doi. De ce și nivel egal cu unu: după trecere, nivelul e doi, condiția e falsă, fără repetări. Fără setează timp, poți intra pe nivelul doi cu două secunde pe ceas și pierzi imediat.
 
 Al treilea pas pe ecran. Stelele reapar. Obligatoriu. Pe fiecare Țintă: când primesc Nivelul doi, arată. Fără asta, fundalul doi apare, dar stelele rămân ascunse. Numele mesajului trebuie exact Nivelul doi la trimite și la primesc.
 
 Al patrulea pas pe ecran, pentru Complet. Nivelul doi puțin mai greu: viteză mai mare, sau obstacol nou care apare la mesaj, sau final la scor egal cu cinci. Final pe Erou: dacă scor egal cu cinci și nivel egal cu doi, spune Ai terminat jocul, oprește toate.
 
-Greșeli frecvente. Dacă fundalul doi fără stele, uiți trimite sau când primesc arată. Dacă fundalul se schimbă la infinit, lipsește garda nivel egal cu unu. Dacă scorul nu se resetează, treci instant pe nivelul doi. Dacă timpul nu se resetează, pierzi imediat. Dacă mesajul e Nivel doi versus Nivelul doi, nu se potrivesc.
+Greșeli frecvente. Dacă fundalul doi fără stele, uiți trimite sau când primesc arată. Dacă fundalul se schimbă la infinit, lipsește garda nivel egal cu unu. Dacă scorul nu se resetează, treci imediat pe nivelul doi. Dacă timpul nu se resetează, pierzi imediat. Dacă mesajul e Nivel doi versus Nivelul doi, nu se potrivesc.
 
 Proiectul de azi. Nivelul unu și doi.
 
-Minim înseamnă: nivel, două fundaluri, trecere cu și, timp douăzeci, trimite, stele arată, fără spam. Complet înseamnă: minim, plus dificultate pe nivelul doi, plus final. Dacă rămâi în urmă, salvează la Minim.
+Minim înseamnă: nivel, două fundaluri, trecere cu și, timp douăzeci, trimite, stele arată, fără repetări. Complet înseamnă: minim, plus dificultate pe nivelul doi, plus final. Dacă rămâi în urmă, salvează la Minim.
 
 În proiect, primul pas. Două fundaluri. Nivel pe scenă. Steag: nivel unu, scor zero, stele vizibile.
 

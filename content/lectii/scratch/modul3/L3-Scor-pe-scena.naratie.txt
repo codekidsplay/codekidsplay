@@ -2,23 +2,23 @@ Lecția trei. Prinde cinci stele.
 
 Astăzi jocul ține minte câte stele ai prins, cu variabila scor pe ecran. Deschizi proiectul din lecția doi și salvezi ca Prenume, linie jos, Nume, linie jos, M trei, linie jos, L trei. Proiectul se numește Prinde cinci stele.
 
-Obiectivul. Creezi variabila scor din Variabile. Crește la fiecare țintă prinsă. La cinci, victorie. Minim: scor pe scenă, plus unu pe coliziune, resetată la steag. Complet: minim, plus scor egal cu cinci, mesaj Ai câștigat, oprește toate.
+Obiectivul. Creezi variabila scor din Variabile. Crește la fiecare țintă prinsă. La cinci, victorie. Minim: scor pe scenă, plus unu pe atingere, resetată la steag. Complet: minim, plus scor egal cu cinci, mesaj Ai câștigat, oprește toate.
 
 De ce contează. Scorul face jocul măsurabil. Vezi pe ecran cât de bine te-ai descurcat.
 
-Primul pas pe ecran. Din Variabile: creează scor, pentru toate personajele. Bifează ca să apară pe scenă. Ține minte: setează fixează. Schimbă adaugă. La steag: setează scor la zero. La prindere: schimbă scor cu unu. Nu setează la unu pe coliziune, altfel rămâne mereu unu.
+Primul pas pe ecran. Din Variabile: creează scor, pentru toate personajele. Bifează ca să apară pe scenă. Ține minte: setează fixează. Schimbă adaugă. La steag: setează scor la zero. La prindere: schimbă scor cu unu. Nu setează la unu pe atingere, altfel rămâne mereu unu.
 
 Al doilea pas pe ecran. Pe Țintă, în dacă atinge Erou: adaugi schimbă scor cu unu, lângă sunet și ascunde. Resetul setează scor la zero pe Scenă sau pe Erou, înainte de forever. Ei sunt arbitrii. Nu dispar.
 
 Al treilea pas pe ecran. Duplică Ținta de patru ori, total cinci. După fiecare duplicare, trage steaua în alt colț. Dacă rămân una peste alta, scorul sare cu doi sau trei dintr-o dată. Fiecare copie are propriul script. La steag, fiecare face arată.
 
-Al patrulea pas pe ecran, pentru Complet. Pe Scenă sau Erou, forever: dacă scor egal cu cinci, din Operatori, atunci spune Ai câștigat timp de două secunde, oprește toate. Nu pune victoria pe o Țintă. Ea se ascunde. Azi doar egal. Mai mic și mai mare vin la lecția șase.
+Al patrulea pas pe ecran, pentru Complet. Pe Erou, forever: dacă scor egal cu cinci. Scena nu poate spune, de aceea mesajul e pe Erou, din Operatori, atunci spune Ai câștigat timp de două secunde, oprește toate. Nu pune victoria pe o Țintă. Ea se ascunde. Azi doar egal. Mai mic și mai mare vin la lecția șase.
 
-Greșeli frecvente. Dacă setează pe coliziune, scorul rămâne unu. Dacă schimbă e în afara lui dacă, crește mereu. Dacă uiți setează la zero la steag, scorul continuă. Dacă stelele sunt una peste alta, scorul sare. Dacă schimbă cu doi, poți sări peste cinci și victoria nu pornește. Pe fiecare țintă: doar plus unu.
+Greșeli frecvente. Dacă setează pe atingere, scorul rămâne unu. Dacă schimbă e în afara lui dacă, crește mereu. Dacă uiți setează la zero la steag, scorul continuă. Dacă stelele sunt una peste alta, scorul sare. Dacă schimbă cu doi, poți sări peste cinci și victoria nu pornește. Pe fiecare țintă: doar plus unu.
 
 Proiectul de azi. Prinde cinci stele.
 
-Minim înseamnă: scor pe scenă, reset la steag, plus unu pe coliziune, măcar trei ținte separate. Complet înseamnă: cinci ținte, plus victorie pe Scenă sau Erou. Dacă rămâi în urmă, salvează la Minim.
+Minim înseamnă: scor pe scenă, reset la steag, plus unu pe atingere, măcar trei ținte separate. Complet înseamnă: cinci ținte, plus victorie pe Erou. Dacă rămâi în urmă, salvează la Minim.
 
 În proiect, primul pas. Scor vizibil. Setează la zero la steag.
 
@@ -26,6 +26,6 @@ Minim înseamnă: scor pe scenă, reset la steag, plus unu pe coliziune, măcar 
 
 În proiect, al treilea pas, pentru Complet. Cinci ținte. Dacă scor egal cu cinci: Ai câștigat, oprește toate. Salvezi din nou.
 
-Recapitulare. Schimbă adaugă. Setează fixează. Plus unu pe Țintă, în dacă. Reset și victorie pe Scenă sau Erou. Scor egal cu cinci din Operatori. Numele fișierului are prenumele, numele, M trei și L trei.
+Recapitulare. Schimbă adaugă. Setează fixează. Plus unu pe Țintă, în dacă. Reset pe Scenă sau Erou, victoria pe Erou. Scor egal cu cinci din Operatori. Numele fișierului are prenumele, numele, M trei și L trei.
 
 Succes la cele cinci stele ale tale.

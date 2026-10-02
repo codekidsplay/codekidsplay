@@ -1,0 +1,37 @@
+Lecția nouă. Lanterna mea.
+
+Astăzi aprinzi un LED într-un circuit simulat și îi faci o carcasă trei D, cu loc pentru LED și pentru baterie. Creezi un circuit nou și îl numești Prenume, linie jos, Nume, linie jos, T cinci, linie jos, L nouă. Proiectul se numește Lanterna mea. Totul azi este simulat. Nu atingi baterii sau fire adevărate. În simulator, o greșeală nu strică nimic. Imprimanta trei D nu se folosește la oră. Lecția este opțională pentru cei sub doisprezece ani, care au varianta cu carcasă.
+
+Obiectivul. Minim cu Circuits: un circuit cu o baterie de nouă volți, un rezistor de patru sute șaptezeci de ohmi și un LED. Apeși Start Simulation și LED-ul se aprinde. Minim fără Circuits: carcasa trei D, adică o cutie, un capac cu gaură pentru LED și loc pentru baterie, plus schema circuitului desenată pe foaie. Complet: minim cu Circuits, plus un Arduino care face LED-ul să clipească, plus carcasa trei D.
+
+De ce contează. O lanternă nu are doar formă, ci și circuit. Un designer bun gândește amândouă.
+
+Primul pas pe ecran. În Tinkercad alegi Circuits, apoi Create new Circuit. Îi pui numele.
+
+Al doilea pas pe ecran. Din lista de componente tragi o baterie de nouă volți, un rezistor și un LED. Faci click pe rezistor și, în căsuța care apare, scrii Resistance patru sute șaptezeci de ohmi. LED-ul are un picior lung, anodul, plus, și unul scurt, catodul, minus.
+
+Al treilea pas pe ecran, firele. Faci click pe piciorul plus al bateriei și tragi un fir până la un capăt al rezistorului. De la celălalt capăt al rezistorului tragi un fir la anodul LED-ului. De la catodul LED-ului tragi un fir la piciorul minus al bateriei. Circuitul este un cerc complet. Plus de la baterie, rezistor, LED, minus la baterie.
+
+Al patrulea pas pe ecran. Apeși Start Simulation. LED-ul se aprinde. Apoi Stop Simulation, înainte să muți piesele. Rezistorul limitează curentul, ca LED-ul să nu se ardă. Încearcă, doar în simulator, un rezistor de un kiloohm. LED-ul luminează mai slab. Cu cât rezistorul e mai mare, cu atât trece mai puțin curent. Revino la patru sute șaptezeci de ohmi.
+
+Al cincilea pas pe ecran, pentru Complet. Tragi o placă Arduino Uno. Pui un LED și un rezistor de două sute douăzeci de ohmi. Pinul treisprezece merge la rezistor, rezistorul la anodul LED-ului, iar catodul la GND. La Code alegi Blocks. Programul spune: repetă pentru totdeauna, pinul treisprezece HIGH, așteaptă o secundă, pinul treisprezece LOW, așteaptă o secundă. Apeși Start Simulation și LED-ul clipește.
+
+Carcasa trei D. Un LED standard are diametrul de cinci milimetri. Gaura are joc, deci diametru cinci virgulă patru.
+
+Al șaselea pas pe ecran, cutia. Design trei D nou, cu numele terminat în Carcasa. Snap Grid zero virgulă cinci milimetri. Tragi un Box de șaizeci pe treizeci și șase pe douăzeci. Apoi un Box de cincizeci și șase pe treizeci și doi pe șaisprezece, ca Hole. Cu tasta L îl centrezi pe stânga dreapta și pe față spate și îl ridici la cinci milimetri. Pereții au doi milimetri. Tragi un Cylinder de douăzeci virgulă patru pe douăzeci virgulă patru pe patru, tot Hole, pentru o baterie nasture. Îl centrezi cu L pe ambele axe și îl ridici la unu virgulă șase milimetri. Fundul rămâne de unu virgulă șase. Grupezi cu cutia, cu Control și G.
+
+Al șaptelea pas pe ecran, capacul. Tragi un Box de șaizeci pe treizeci și șase pe trei. Cu L îl aliniezi la cutie, pe marginea din stânga și cea din față, și îl ridici la douăzeci. Tragi un Cylinder de cinci virgulă patru pe cinci virgulă patru pe cinci, Hole. Îl centrezi pe capac și îl ridici la nouăsprezece. Grupezi cu capacul. Rămân două piese separate, cutia și capacul.
+
+Al optulea pas pe ecran, pentru Complet, două LED-uri. Desfaci capacul cu Control, Shift și G. Copiezi gaura LED și o muți douăzeci de milimetri spre dreapta, iar originalul douăzeci spre stânga. Găurile sunt la zece și cincizeci de milimetri de margine, fiecare cu marginea la mai mult de cinci milimetri de capac. Selectezi capacul și cele două găuri și grupezi.
+
+Apoi desenezi schema pe foaie, cu plus și minus marcate, și scrii patru sute șaptezeci de ohmi, sau două sute douăzeci la Arduino.
+
+Greșeli frecvente. LED-ul e pus invers. Anodul merge spre rezistor și baterie plus. Un fir nu e conectat la capăt. Lipsește rezistorul. Rezistorul e prea mic. Pinul e greșit. Carcasa nu are gaură pentru LED. Capacul e grupat cu cutia. Gaura de cinci milimetri e prea strânsă.
+
+Proiectul de azi. Lanterna mea.
+
+Minim cu Circuits înseamnă: baterie, rezistor, LED aprins în simulare. Minim fără Circuits înseamnă: carcasa cu gaură de cinci virgulă patru și schema pe foaie. Complet înseamnă: Arduino cu clipire, plus carcasa trei D. Dacă rămâi în urmă, salvează la Minim.
+
+Recapitulare. Piciorul lung al LED-ului este plus, anodul. Cel scurt este minus, catodul. LED-ul are mereu nevoie de rezistor. Circuitul este un cerc închis. Carcasa are gaura mai mare decât LED-ul.
+
+Succes la lanterna ta.

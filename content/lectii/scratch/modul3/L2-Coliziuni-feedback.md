@@ -1,4 +1,4 @@
-# Lecția 2 — Coliziuni și feedback: „Yaay!” sau „Au!”
+# Lecția 2 — Atingeri și reacții: „Yaay!” sau „Au!”
 **Modulul 3 · Jocuri**  
 **Code Kids Play · Game Builder**
 
@@ -10,11 +10,11 @@
 
 ## Obiectiv
 La finalul orei poți folosi <span style="color:#5CB1D6;font-weight:700">atinge…?</span> (capitolul <span style="color:#5CB1D6;font-weight:700">Detectare</span>) ca jocul să răspundă diferit când eroul atinge **Ținta** sau **Obstacolul**.  
-**Minimum:** **ambele** coliziuni: Țintă → „Yaay!” (+ sunet + dispare) **și** obstacol → „Au!” (+ sunet).  
+**Minim:** **ambele** atingeri: Țintă → „Yaay!” (+ sunet + dispare) **și** obstacol → „Au!” (+ sunet).  
 **Ținta orei (Complet):** Minim + după „Au!” eroul **revine la start** (fără sunet repetat când stai lipit).
 
 ## De ce contează
-Fără feedback, un joc pare „mort” — apeși, se mișcă, dar nu simți nimic. **Sunetul + mesajul** la coliziune sunt ce fac un joc să pară viu: exact ca în orice joc video, când lovești ceva primești imediat un semnal.
+Fără reacție, un joc pare „mort” — apeși, se mișcă, dar nu simți nimic. **Sunetul + mesajul** la atingere sunt ce fac un joc să pară viu: exact ca în orice joc video, când lovești ceva primești imediat un semnal.
 
 ---
 
@@ -23,7 +23,7 @@ Fără feedback, un joc pare „mort” — apeși, se mișcă, dar nu simți ni
 | Minute | Ce facem |
 |--------|----------|
 | 0–10 | Recap foaia L1: citește **„Ce se întâmplă la atingere?”** — azi programăm exact asta |
-| 10–30 | Ce e o coliziune? Pas cu pas: checkpoint-uri (**Încearcă tu**) |
+| 10–30 | Ce e o atingere? Pas cu pas: mini-verificări (**Încearcă tu**) |
 | 30–100 | Proiectul „Țintă sau pericol” (vezi **Minim vs Complet**) |
 | 100–120 | Test, prezentare scurtă, salvare |
 
@@ -46,8 +46,8 @@ Fără feedback, un joc pare „mort” — apeși, se mișcă, dar nu simți ni
 - [ ] Ai găsit `atinge…?` în Detectare  
 - [ ] Ai ales din dropdown personajul **Erou**
 
-### 2) Coliziune cu Ținta *(nucleul Minim — tot pe Țintă)*
-*(Un personaj **nu** poate ascunde alt personaj. De aceea **toată** reacția „Yaay!” stă pe **Țintă**, într-un singur script — fără probleme de sincronizare.)*
+### 2) Atingere cu Ținta *(nucleul Minim — tot pe Țintă)*
+*(Un personaj **nu** poate ascunde alt personaj. De aceea **toată** reacția „Yaay!” stă pe **Țintă**, într-un singur script — fără probleme de potrivire a timpilor.)*
 
 1. Selectezi **Țintă**. Tab **Sunete** → adaugi din bibliotecă un sunet scurt (ex. `Pop`)  
    *(fără sunet în tab, blocul din Sunet n-are ce reda — ca în M1 L6)*
@@ -59,7 +59,7 @@ Fără feedback, un joc pare „mort” — apeși, se mișcă, dar nu simți ni
 4. Din <span style="color:#FFAB19;font-weight:700">Control</span>: <span style="color:#FFAB19;font-weight:700">forever</span>
 5. **În interiorul** buclei `forever`, o <span style="color:#FFAB19;font-weight:700">condiție `dacă … atunci`</span> cu hexagon:  
    <span style="color:#5CB1D6;font-weight:700">atinge</span> `Erou` <span style="color:#5CB1D6;font-weight:700">?</span>
-6. În interiorul condiției, **în ordine** *(reacție instantanee)*:  
+6. În interiorul condiției, **în ordine** *(reacție imediată)*:  
    <span style="color:#CF63CF;font-weight:700">pornește sunetul</span> `Pop` →  
    <span style="color:#9966FF;font-weight:700">spune</span> `Yaay!` timp de `1` secundă →  
    <span style="color:#9966FF;font-weight:700">ascunde</span>  
@@ -73,7 +73,7 @@ Fără feedback, un joc pare „mort” — apeși, se mișcă, dar nu simți ni
 - [ ] Ținta dispare după atingere  
 - [ ] Steag din nou → Ținta **reapare** (`arată`)
 
-### 3) Coliziune cu obstacolul *(tot Minim — pe Erou)*
+### 3) Atingere cu obstacolul *(tot Minim — pe Erou)*
 *(Rămâne pe **Erou**, ca la Complet să poți trimite eroul înapoi la start. Hexagonul e altul; **nu** ascunzi obstacolul.)*
 
 1. Selectezi **Erou**. Tab **Sunete** → adaugi un sunet scurt (ex. `Bonk` din Efecte — sau `Oops` / `Lose`)
@@ -91,7 +91,7 @@ Fără feedback, un joc pare „mort” — apeși, se mișcă, dar nu simți ni
 - [ ] Ai reacție pe **Țintă** (`atinge Erou?`) **și** pe **Erou** (`atinge Obstacol?`)  
 - [ ] Observi (dacă rămâi lipit): sunetul se repetă — asta e pentru Complet
 
-### 4) Fără spam: înapoi la start *(Complet)*
+### 4) Fără repetare: înapoi la start *(Complet)*
 *(`întoarce-te 180` **nu** mută eroul — cu `schimbă x/y` din L1 rămâi lipit. `așteaptă` pe Erou îl blochează și nu poate fugi. Fixul simplu: **du-te la** poziția de start, ca în L1.)*
 
 1. **Imediat după** `spune Au!`, pe Erou:  
@@ -100,7 +100,7 @@ Fără feedback, un joc pare „mort” — apeși, se mișcă, dar nu simți ni
 2. Opțional: <span style="color:#FFAB19;font-weight:700">așteaptă</span> `0.2` după `du-te la` — doar dacă mai rămâi lipit o clipă; de obicei nu e nevoie  
    *(`oprește alte scripturi` / „îngheț” separat — **nu** azi: mișcarea e în același `forever`, deci `spune … timp de` o oprește deja.)*
 
-**Încearcă tu — fără spam (2–3 min)**  
+**Încearcă tu — fără repetări (2–3 min)**  
 - [ ] Atingi obstacolul → un „Au!”, apoi eroul e înapoi la start  
 - [ ] Nu mai auzi „Au!” la nesfârșit  
 - [ ] Salvat: `Prenume_Nume_M3_L2`
@@ -126,8 +126,8 @@ Salvat: `Prenume_Nume_M3_L2`
 
 | | Ce trebuie |
 |--|------------|
-| **Minim („am reușit”)** | Erou cu 4 direcții + **ambele** coliziuni: Țintă → „Yaay!” (+ sunet + `ascunde` / `arată` la steag) **și** obstacol → „Au!” (+ sunet) |
-| **Complet (ținta orei)** | Minim + după „Au!”: `du-te la` start — un singur „Au!”, fără spam |
+| **Minim („am reușit”)** | Erou cu 4 direcții + **ambele** atingeri: Țintă → „Yaay!” (+ sunet + `ascunde` / `arată` la steag) **și** obstacol → „Au!” (+ sunet) |
+| **Complet (ținta orei)** | Minim + după „Au!”: `du-te la` start — un singur „Au!”, fără repetări |
 
 Dacă rămâi în urmă: **termină întâi Minim, apoi salvează.**  
 Cei rapizi: Complet, apoi Bonus.
@@ -146,15 +146,15 @@ Cei rapizi: Complet, apoi Bonus.
 
 **→ Minim când:** steag → Țintă = „Yaay!” **și** obstacol = „Au!” (ambele dintr-o rulare); Ținta reapare la steag.
 
-### Pasul 3 — Fără spam *(Complet)*
-*(Ca la „Încearcă tu — fără spam”.)*
+### Pasul 3 — Fără repetare *(Complet)*
+*(Ca la „Încearcă tu — fără repetări”.)*
 
 - [ ] După „Au!”: `du-te la` poziția de start (aceeași ca la resetul L1)  
 - [ ] Rulează ≥10 secunde fără „Au!” repetat la nesfârșit  
 - [ ] Un coleg vede: un „Au!”, apoi eroul e la start  
 - [ ] Salvat din nou
 
-**Gata Complet când:** ambele coliziuni merg **curat**, fără spam.
+**Gata Complet când:** ambele atingeri merg **curat**, fără repetări.
 ---
 
 ## Bonus (dacă ai terminat Complet)
@@ -165,7 +165,7 @@ Cei rapizi: Complet, apoi Bonus.
 ## Recapitulare rapidă
 1. <span style="color:#5CB1D6;font-weight:700">atinge…?</span> = întrebare da/nu, cu personajul ales din dropdown  
 2. Reacția țintei = **tot pe Țintă** (`atinge [Erou]?` + sunet + spune + `ascunde` / `arată`)  
-3. Fără spam la obstacol = `du-te la` start după „Au!”  
+3. Fără repetare la obstacol = `du-te la` start după „Au!”  
 4. Nume: **`Prenume_Nume_M3_L2`**
 
 ## Schema pe scurt *(pe foaie)*

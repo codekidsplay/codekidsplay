@@ -1,0 +1,31 @@
+Lecția unu. Piesa cu cote.
+
+Astăzi lucrezi ca un inginer. Fiecare piesă are cote, adică mărimi pe care le poți spune cu voce tare, fără cuvântul aproximativ. Faci o plăcuță cu două găuri, folosind numai numere, și o fișă de cote pe foaie. Creezi un design nou și îl numești Prenume, linie jos, Nume, linie jos, T cinci, linie jos, L unu. Proiectul se numește Piesa cu cote. Imprimanta trei D nu se folosește la oră.
+
+Obiectivul. Minim: o placă de șaizeci pe treizeci pe cinci și două găuri cu diametru șase, cu centrele la zece milimetri de capete. Distanța dintre ele este de patruzeci de milimetri. Le verifici cu Ruler, iar marginile găurilor trebuie să fie la șapte și treisprezece, apoi la patruzeci și șapte și cincizeci și trei. Completezi și fișa de cote. Complet: minim, plus o fantă de douăzeci pe șase pe șapte, exact la mijloc, cu toate cotele verificate cu Ruler.
+
+De ce contează. Un obiect care se va imprima trebuie să fie exact. O gaură făcută din ochi poate ieși cu un milimetru mai încolo, iar piesa nu se mai potrivește cu alta. Azi înveți trei obiceiuri. Tastezi mărimile. Folosești Snap Grid fin. Verifici cu Ruler.
+
+Primul pas pe ecran. Alegi Create new design. Jos, în dreapta, pui Snap Grid pe unu virgulă zero milimetri. Un truc pentru toată ora: selectezi piesa și apeși săgețile de la tastatură. O apăsare mută piesa cu un pas de Snap Grid. La unu milimetru, șapte apăsări înseamnă șapte milimetri. În Tinkercad scrii zecimalele cu punct, nu cu virgulă.
+
+Al doilea pas pe ecran. Tragi un Box pe plan. Apuci mânerul alb din colț și tastezi șaizeci, treizeci, cinci. Aceasta este placa.
+
+Al treilea pas pe ecran. Tragi un Cylinder și tastezi șase, șase, șapte. Îl faci Hole. Selectezi gaura și placa și apeși tasta L, pentru Align. Alegi mijlocul pe față spate. Apoi selectezi iar gaura și placa, apeși L și alegi marginea din stânga. Muți gaura șapte milimetri spre dreapta. Marginea ei stângă e la șapte, iar raza e trei, deci centrul ajunge la zece milimetri. Cobori gaura un milimetru cu conul negru. Așa trece prin toată placa.
+
+Al patrulea pas pe ecran. Apeși tasta Control și D împreună. Muți copia patruzeci de milimetri spre dreapta, adică patruzeci de apăsări de săgeată. Centrul ei ajunge la cincizeci, tot la zece de celălalt capăt. Selectezi placa și ambele găuri și apeși Control și G, pentru Group. Pe Mac apeși Command în loc de Control.
+
+Al cincilea pas pe ecran. Apeși Ruler, în colțul din dreapta sus, și îl pui pe colțul din stânga față al plăcii. Selectezi o gaură, iar Ruler arată distanțele până la marginile ei. Prima gaură are marginile la șapte și treisprezece. A doua, la patruzeci și șapte și cincizeci și trei.
+
+Al șaselea pas pe ecran, pentru Complet. Tragi un Box de douăzeci pe șase pe șapte și îl faci Hole. Cu L îl centrezi pe placă, pe ambele axe. Îl cobori un milimetru și îl grupezi cu placa. Cu Ruler, fanta începe la douăzeci de milimetri de capătul stâng și se termină la patruzeci. Verifici că nu atinge găurile.
+
+Al șaptelea pas pe ecran. Pe foaie completezi fișa de cote. Placa, șaizeci pe treizeci pe cinci. Fiecare gaură, diametru șase, cu centrul la zece, respectiv cincizeci. Distanța dintre găuri, patruzeci. Fanta, douăzeci pe șase, începe la douăzeci.
+
+Greșeli frecvente. Tragi din colț fără să tastezi. Confunzi diametrul cu raza. Gaura nu taie, pentru că nu e Hole sau nu ai grupat. Uiți să cobori gaura un milimetru. Măsori de la margine, nu de la centru. Ai Snap Grid prea mare.
+
+Proiectul de azi. Piesa cu cote.
+
+Minim înseamnă: placa, două găuri la zece și cincizeci de milimetri, verificate cu Ruler, și fișa de cote. Complet înseamnă: minim, plus fanta centrată, verificată de la douăzeci la patruzeci de milimetri. Dacă rămâi în urmă, salvează la Minim.
+
+Recapitulare. Tastezi mărimile, nu tragi din ochi. Diametrul este lățimea întreagă a găurii, iar poziția o măsori până la centru. Hole și Group înseamnă decupaj. Ruler verifică ce ai desenat.
+
+Succes la piesa ta cu cote.

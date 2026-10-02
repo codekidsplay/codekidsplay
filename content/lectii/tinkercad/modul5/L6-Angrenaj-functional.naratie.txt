@@ -1,0 +1,33 @@
+Lecția șase. Angrenajul meu.
+
+Astăzi folosești generatorul de roți dințate din Tinkercad. Așezi două roți pe axe, la distanța potrivită, și calculezi raportul de transmisie. Creezi un design nou și îl numești Prenume, linie jos, Nume, linie jos, T cinci, linie jos, L șase. Proiectul se numește Angrenajul meu. Imprimanta trei D nu se folosește la oră.
+
+Obiectivul. Minim: o roată mică cu doisprezece dinți și o roată mare cu douăzeci și patru de dinți, pe o placă. Axele au diametru cinci. Găsești distanța dintre centre și o verifici din Top. Completezi tabelul cu dinți și diametre. Complet: minim, plus o manivelă pe roata mare și raportul unu la doi, explicat în trei propoziții.
+
+De ce contează. În modulul trei ai făcut o roată cu dinți făcuți de mână. Acum folosești o unealtă care calculează dinții singură. Tu trebuie să știi cât de departe pui roțile, ca dinții să se prindă. Roata mică, cu doisprezece dinți, face două ture când cea mare, cu douăzeci și patru, face una. Pentru amândouă roțile folosești aceeași mărime a dintelui, ca să se potrivească.
+
+Primul pas pe ecran. Design nou, Snap Grid zero virgulă cinci milimetri.
+
+Al doilea pas pe ecran, roata mică. Din lista de forme alegi Shape Generators și găsești Gear. O tragi pe plan. În meniul ei pui doisprezece dinți. Restul valorilor rămân cele de bază. Cu Ruler măsori diametrul exterior și îl notezi pe foaie ca D unu. Dacă roata nu are gaură în mijloc, tragi un Cylinder cu diametru cinci virgulă opt și înălțimea cât grosimea roții plus doi milimetri. Îl faci Hole, îl centrezi cu tasta L pe ambele axe, îl cobori un milimetru și grupezi cu roata, cu Control și G.
+
+Al treilea pas pe ecran, roata mare. Tragi a doua roată din generator, cu douăzeci și patru de dinți. Restul valorilor, mărimea dintelui și grosimea, rămân la fel ca la prima. Măsori D doi. Dacă nu are gaură, faci la fel o gaură cu diametru cinci virgulă opt.
+
+Al patrulea pas pe ecran, distanța dintre axe. Distanța teoretică este aproximativ jumătate din suma lui D unu și D doi. Dinții intră unul în altul, deci poate fi puțin mai mică. Pui roțile pe același rând, cu L, mijloc pe față spate, și le muți până când centrele sunt la această distanță. Privești din Top, mărit la maximum. Dinții unei roți intră în golurile celeilalte, fără să se suprapună. Dacă se suprapun, depărtezi cu zero virgulă cinci milimetri. Dacă e gol mare între ei, apropii cu zero virgulă cinci. Notezi pe foaie distanța finală. Dacă dinții se ciocnesc, dar distanța pare bună, rotește roata mică cu cincisprezece grade, jumătate din pasul unui dinte. Privește din nou din Top.
+
+Al cincilea pas pe ecran, axele și placa. Tragi un Cylinder cu diametru cinci, în centrul fiecărei roți, aliniat cu L pe ambele axe. Înălțimea lui este grosimea roții plus șase milimetri, ca să încapă și manivela. Îl ridici la patru milimetri. Tragi un Box pentru placă, gros de patru milimetri. Lungimea este distanța dintre centre, plus jumătate din fiecare diametru, plus zece. Lățimea este cea mai mare roată, plus zece. O aliniezi cu L la cele două axe. Axele și placa le grupezi cu Control și G. Roțile le ridici la cinci milimetri, deci un milimetru de aer față de placă. Roțile nu se grupează cu axele sau cu placa. Din Front, roțile plutesc pe ax și nu ating placa.
+
+Al șaselea pas pe ecran, tabelul pe foaie. Roata mică, doisprezece dinți, D unu. Roata mare, douăzeci și patru de dinți, D doi. Dedesubt, distanța dintre axe.
+
+Al șaptelea pas pe ecran, pentru Complet. Manivela este un Box lung de cel mult douăzeci și cinci de milimetri, dar mai mic decât distanța dintre axe minus cinci, lat de șase și gros de patru. Cu L îl aliniezi la axul roții mari, pe mijloc față spate și pe margine, de preferat în partea opusă roții mici. O ridici pe roata mare, la cinci milimetri plus grosimea roții. Peste ax pui un Hole cu diametru cinci virgulă opt. Grupezi manivela, gaura și roata mare.
+
+Apoi scrii raportul. Douăzeci și patru împărțit la doisprezece face doi. Trei propoziții. Când roata mare face o tură, roata mică face două ture. Roata mică se învârte mai repede decât cea mare. Pentru o roată mai încet și cu mai multă forță, o conectezi la o roată mai mare.
+
+Greșeli frecvente. Dinții au mărimi diferite. Roțile se suprapun sau sunt prea departe. Roțile sunt grupate cu placa. Axul e prea gros. Calculezi raportul invers. Roata cu mai puțini dinți se învârte mai repede.
+
+Proiectul de azi. Angrenajul meu.
+
+Minim înseamnă: roata cu doisprezece dinți, roata cu douăzeci și patru, axe, distanța verificată din Top și tabelul completat. Complet înseamnă: minim, plus manivela și raportul. Dacă rămâi în urmă, salvează la Minim.
+
+Recapitulare. Mai puțini dinți înseamnă că roata se învârte mai repede. Aceeași mărime a dintelui la ambele roți. Distanța dintre axe se verifică din Top.
+
+Succes la angrenajul tău.

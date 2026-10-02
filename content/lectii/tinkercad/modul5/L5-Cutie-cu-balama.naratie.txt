@@ -1,0 +1,39 @@
+Lecția cinci. Cutia cu balama.
+
+Astăzi faci o cutie cu capac și balama, care s-ar putea imprima dintr-o singură bucată. Capacul se învârte pe un știft, fără să fie lipit de el. Creezi un design nou și îl numești Prenume, linie jos, Nume, linie jos, T cinci, linie jos, L cinci. Proiectul se numește Cutia cu balama. Imprimanta trei D nu se folosește la oră. Lecția cere atenție la numere, așa că lucrează încet.
+
+Obiectivul. Minim: o cutie de cincizeci pe patruzeci pe douăzeci, cu pereți de doi virgulă patru milimetri. Un capac de cincizeci pe treizeci și nouă virgulă cinci pe trei. Balamaua pe latura din spate are două articulații fixe pe cutie, cu diametru opt și lungime treisprezece, o articulație pe capac, cu diametru opt și lungime douăzeci și trei, cu gaură cu diametru cinci, și un știft cu diametru patru și lungime cincizeci. Între piese ai zero virgulă cinci milimetri joc. Cutia și capacul rămân grupuri separate. Complet: minim, plus o adâncitură pentru deget, Hole cu diametru doisprezece, plus numele tău pe capac.
+
+De ce contează. Imprimantele pot face piese care se mișcă, deja montate, dacă lași joc între ele. Știftul trece prin articulația capacului cu zero virgulă cinci milimetri de aer pe fiecare parte.
+
+Primul pas pe ecran. Design nou, Snap Grid zero virgulă cinci milimetri.
+
+Al doilea pas pe ecran, cutia. Tragi un Box de cincizeci pe patruzeci pe douăzeci. Tragi un Box de patruzeci și cinci virgulă doi pe treizeci și cinci virgulă doi pe nouăsprezece, ca Hole. Cu tasta L îl centrezi pe stânga dreapta și pe față spate. Îl ridici la doi milimetri, ca fundul să rămână de doi. Selectezi ambele și apeși Control și G.
+
+Al treilea pas pe ecran, capacul. Tragi un Box de cincizeci pe treizeci și nouă virgulă cinci pe trei. Cu L îl aliniezi la cutie, pe marginea din stânga și pe cea din față. Îl ridici la douăzeci virgulă cinci milimetri, deci zero virgulă cinci de aer peste cutie. Rămâne obiect separat.
+
+Al patrulea pas pe ecran, articulația capacului. Tragi un Cylinder de opt pe opt pe douăzeci și trei. Îl rotești cu patru pași, adică nouăzeci de grade, ca să stea culcat, cu lungimea pe stânga dreapta. Din Top trebuie să fie un dreptunghi lung. Dacă e lung pe față spate, apeși Control și Z și folosești cealaltă săgeată curbă. Cu L îl aliniezi la cutie, pe marginea din stânga, din față și de jos. Apoi îl muți treisprezece virgulă cinci milimetri spre dreapta, patruzeci spre spate și șaptesprezece virgulă cinci în sus. Cu Ruler verifici că marginea din spate e la patruzeci și opt, iar cea de sus la douăzeci și cinci virgulă cinci.
+
+Al cincilea pas pe ecran, știftul. Apeși Control și D pe articulație. Copiei îi tastezi cincizeci, patru, patru. Cu L, față de articulația mare, o centrezi pe față spate și pe verticală. Cu L, față de cutie, o aliniezi pe marginea din stânga.
+
+Al șaselea pas pe ecran, articulațiile cutiei. Copiezi articulația capacului și o faci treisprezece pe opt pe opt. Cu L, față de cutie, o aliniezi doar pe marginea din stânga. Apeși Control și D și o muți treizeci și șapte de milimetri spre dreapta.
+
+Al șaptelea pas pe ecran, punțile. Un Box de treisprezece pe șase pe șase, lipit de cutie, mutat treizeci și nouă spre spate și ridicat la paisprezece. Îl copiezi cu treizeci și șapte de milimetri spre dreapta. Puntea capacului este un Box de douăzeci și trei pe șase pe trei, mutat treizeci și opt spre spate și ridicat la douăzeci virgulă cinci, aliniat cu L pe marginea din stânga a articulației capacului.
+
+Al optulea pas pe ecran, gaura din capac. Copiezi știftul, îi dai douăzeci și cinci, cinci, cinci și îl faci Hole. Cu L îl centrezi în articulația mare, pe toate cele trei axe.
+
+Al nouălea pas pe ecran, grupurile. Foarte important. Capacul, articulația lui, puntea și gaura formează un grup. Cutia, cele două articulații, cele două punți și știftul formează alt grup. Rămân două obiecte. Nu le grupezi între ele.
+
+Al zecelea pas pe ecran, verificarea. Din View Cube, Right, vezi un inel de aer între gaură și știft. Din Top, între articulații e un spațiu de zero virgulă cinci milimetri. Din Front, între cutie și capac e tot zero virgulă cinci.
+
+Al unsprezecelea pas pe ecran, pentru Complet. Un Cylinder de doisprezece pe doisprezece pe cinci, ca Hole, centrat pe mijloc, la marginea din față a capacului, mutat șase milimetri spre față și ridicat la nouăsprezece. Apoi un Text cu numele tău, Hole, înalt de doi milimetri, cel mult treizeci lung, centrat pe capac și ridicat la douăzeci și doi virgulă cinci. Grupezi fiecare cu capacul.
+
+Greșeli frecvente. Capacul și cutia s-au lipit. Articulațiile nu sunt culcate. Articulațiile se ating. Capacul are patruzeci în loc de treizeci și nouă virgulă cinci. Punțile nu ating cutia.
+
+Proiectul de azi. Cutia cu balama.
+
+Minim înseamnă: cutie, capac, balama cu jocuri de zero virgulă cinci și două grupuri separate. Complet înseamnă: minim, plus adâncitura și numele. Dacă rămâi în urmă, salvează la Minim.
+
+Recapitulare. Balama înseamnă știft și articulații cu joc. Capacul și cutia sunt două grupuri. Verifici din Right și Top.
+
+Succes la cutia ta cu balama.

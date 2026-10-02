@@ -1,0 +1,31 @@
+Lecția patru. Îmbinarea mea.
+
+Astăzi faci o îmbinare cu cheie, ca la agățătoarele de perete. Un bolț cu cap trece printr-o gaură mare, apoi alunecă într-o fantă îngustă, unde se blochează. Creezi un design nou și îl numești Prenume, linie jos, Nume, linie jos, T cinci, linie jos, L patru. Proiectul se numește Îmbinarea mea. Imprimanta trei D nu se folosește la oră.
+
+Obiectivul. Minim: placa A, de patruzeci pe treizeci pe cinci, cu o gaură cu diametru zece și o fantă de paisprezece pe cinci virgulă patru. Placa B, de treizeci pe douăzeci pe trei, cu un bolț. Axul are diametru cinci și înălțime șase, iar capul are diametru nouă și înălțime doi. Piesele rămân separate. Din Front verifici că capul încape prin gaură, dar nu prin fantă. Complet: minim, plus al doilea bolț și a doua gaură cu cheie, la douăzeci și doi de milimetri de primele, plus piesele puse împreună, cu placa A împinsă șapte milimetri în poziția blocată.
+
+De ce contează. Multe obiecte se țin cu îmbinări. Ideea este simplă: o parte lată trece printr-un loc larg, apoi stă într-unul îngust. Mărimile au joc. Capul de nouă trece prin gaura de zece, iar axul de cinci stă în fanta de cinci virgulă patru.
+
+Pe foaie desenezi placa A de sus. Un cerc mare și, lipită de el, o fantă spre dreapta. Scrii cotele. Întrebare pentru tine: de ce capul trebuie să fie mai mic decât gaura, dar mai mare decât fanta?
+
+Primul pas pe ecran. Design nou, Snap Grid zero virgulă cinci milimetri. Zecimalele le tastezi cu punct.
+
+Al doilea pas pe ecran. Tragi un Box de patruzeci pe treizeci pe cinci, placa A. Tragi un Cylinder de zece pe zece pe șapte și îl faci Hole. Apeși tasta L și îl aliniezi la placă, pe mijloc față spate și pe marginea din stânga. Îl muți cinci milimetri spre dreapta, deci centrul e la zece de margine. Îl cobori un milimetru. Tragi un Box de paisprezece pe cinci virgulă patru pe șapte, ca Hole. Cu L îl aliniezi la fel, apoi îl muți zece milimetri spre dreapta. Fanta începe chiar din centrul găurii. O cobori un milimetru. Din Top, fanta pornește din mijlocul cercului și merge paisprezece milimetri spre dreapta. Selectezi placa și ambele Hole-uri și apeși Control și G.
+
+Al treilea pas pe ecran. Tragi un Box de treizeci pe douăzeci pe trei, placa B, în afara plăcii A. Tragi un Cylinder de cinci pe cinci pe șase, axul. Cu L îl aliniezi pe mijloc față spate și pe marginea din stânga. Îl muți șapte virgulă cinci milimetri spre dreapta, deci centrul e la zece, și îl ridici la trei milimetri. Tragi un Cylinder de nouă pe nouă pe doi, capul. Cu L îl centrezi pe ax, pe ambele axe, și îl ridici la nouă milimetri, în vârful axului. Selectezi placa B, axul și capul și apeși Control și G. Din Front vezi placa, axul subțire și capul lat.
+
+Al patrulea pas pe ecran. Verifici pe foaie. Gaura de zece este mai mare decât capul de nouă. Capul este mai mare decât fanta de cinci virgulă patru. Fanta este mai mare decât axul de cinci.
+
+Al cincilea pas pe ecran, pentru Complet. Ridici placa A la trei milimetri, ca să stea pe placa B. Cu L, față de placa B, o aliniezi pe marginea din stânga și pe mijloc față spate. Gaura din A e exact peste bolț. Din Front, axul trece prin A, iar capul e deasupra, cu un milimetru de aer. Apoi muți placa A șapte milimetri spre stânga. Bolțul ajunge în fanta îngustă. Din Top, axul e în fantă, iar capul stă peste margini. E blocat.
+
+Al șaselea pas pe ecran, pentru Complet. Atenție, dacă mărești un Group, întinzi și bolțul, și găurile. Desfaci întâi Group-ul cu Control, Shift și G. Mărești doar placa B la patruzeci și cinci pe douăzeci pe trei, trăgând din dreapta. Selectezi bolțul, apeși Control și D și îl muți douăzeci și doi de milimetri spre dreapta. Grupezi din nou. Pe placa A faci la fel. O mărești la cincizeci și cinci pe treizeci pe cinci, tot din dreapta. Copiezi gaura și fanta, cu Control și D, douăzeci și doi de milimetri spre dreapta, și grupezi. Refaci asamblarea, cu A împinsă tot șapte milimetri.
+
+Greșeli frecvente. Capul nu trece prin gaură. Capul trece prin fantă. Axul nu intră în fantă. Fanta nu pornește din centrul găurii. Hole-urile nu sunt grupate cu placa A. Placa A și placa B sunt grupate între ele. Capul e lipit de placa A.
+
+Proiectul de azi. Îmbinarea mea.
+
+Minim înseamnă: placa A cu gaură și fantă, placa B cu bolț, piese separate, verificate din Front. Complet înseamnă: minim, plus al doilea bolț și asamblarea cu A împinsă șapte milimetri. Dacă rămâi în urmă, salvează la Minim.
+
+Recapitulare. O parte lată trece printr-un loc larg și stă într-unul îngust. Gaura este mai mare decât capul. Fanta este mai mare decât axul, dar mai mică decât capul. Piesele rămân separate. Verifici din Front.
+
+Succes la îmbinarea ta.

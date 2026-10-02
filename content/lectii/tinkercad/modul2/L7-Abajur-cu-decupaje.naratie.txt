@@ -1,0 +1,29 @@
+Lecția șapte. Abajurul meu.
+
+Astăzi faci un abajur cu ferestre prin care iese lumina, aranjate în jurul lui ca un model. Creezi un design nou și îl salvezi cu numele: Prenume, linie jos, Nume, linie jos, T doi, linie jos, L șapte. Proiectul se numește Abajurul meu. Siguranță: abajurul se folosește doar cu lumină LED, lanternă sau bec cu LED. Niciodată cu lumânare sau cu bec fierbinte.
+
+Obiectivul. La final ai un abajur, adică un tub gol, cu decupaje repetate în jurul lui. Minim: tub cu diametru șaptezeci și înălțime șaptezeci, cu pereți de trei milimetri, deschis sus și jos, plus patru bare Hole rotite din patruzeci și cinci în patruzeci și cinci de grade. Rezultă opt ferestre în jurul lui. Apoi Group. Complet: minim, plus un al doilea rând de ferestre, decalat cu douăzeci și doi virgulă cinci grade, și culoare.
+
+De ce contează. Un model se face dintr-o formă repetată și rotită. Iese un model simetric. Lumina trece doar prin golurile pe care le-ai tăiat tu.
+
+Primul pas pe ecran. Apasă Create new design și scrie numele. Jos, în dreapta, la Snap Grid, alege cinci milimetri.
+
+Al doilea pas pe ecran. Trage un Cylinder și scrie: șaptezeci, șaptezeci, șaptezeci. Apoi alt Cylinder: șaizeci și patru, șaizeci și patru, optzeci. În panoul Shape alege Hole. Selectează Hole-ul și cilindrul, apasă tasta L pentru Align și alege mijlocul pe toate cele trei direcții: stânga și dreapta, față și spate, sus și jos. Hole-ul iese deasupra și dedesubt, deci tubul e deschis la capete, cu pereți de trei milimetri. Apasă Control și A, apoi Control și G. Apasă tasta D, iar tubul coboară pe plan.
+
+Al treilea pas pe ecran. Trage un Box și scrie: nouăzeci, opt, cincisprezece. În panoul Shape alege Hole. Selectează bara și tubul, apasă L și alege mijlocul pe ambele direcții de pe plan. Bara e mai lungă decât tubul, deci taie ambii pereți dintr-o singură mișcare. Ridică bara cu conul negru la zece milimetri de plan. Scrie zece. Fereastra începe la zece milimetri și urcă până la douăzeci și cinci.
+
+Al patrulea pas pe ecran. Selectează bara și apasă Control și D. Rotește copia patruzeci și cinci de grade, adică doi pași de câte douăzeci și doi virgulă cinci, pe săgeata curbă. Apasă din nou Control și D. Rotirea se repetă singură. Încă o dată Control și D, și apare a patra bară. Ai patru bare, la zero grade, patruzeci și cinci de grade, nouăzeci de grade și o sută treizeci și cinci de grade. Asta înseamnă opt ferestre în jurul tubului.
+
+Al cincilea pas pe ecran. Apasă Control și A, apoi Control și G. În View Cube alege Top: tubul gol, cu opt deschideri în perete.
+
+Al șaselea pas pe ecran, pentru Complet. Dacă ai grupat deja, desfă totul cu Control, Shift și G. Apasă Control și A, apoi Shift și click pe tub. Rămân selectate doar cele patru bare Hole. Apasă Control și D. Ridică copiile cu conul negru la patruzeci de milimetri de plan. Rotește copiile cu douăzeci și doi virgulă cinci grade, un singur pas. Ferestrele de sus sunt acum decalate față de cele de jos. Apasă Control și A, apoi Control și G. La final alege o culoare.
+
+Greșeli frecvente. Barele nu taie: nu sunt Hole sau lipsește Group. Taie doar un perete: bara e prea scurtă, păstrează nouăzeci de milimetri, mai mult decât tubul. Ferestrele nu sunt la distanțe egale: ai rotit fiecare copie cu ochiul. Șterge copiile, rotește o dată cu patruzeci și cinci de grade, apoi doar Control și D. Tubul nu e gol sus: Hole-ul e mai scurt decât tubul, deci pune optzeci și centrează-l pe înălțime.
+
+Proiectul de azi. Abajurul meu.
+
+Minim înseamnă: tub gol, cu pereți de trei milimetri, patru bare Hole rotite la patruzeci și cinci de grade, opt ferestre și Group. Complet înseamnă: minim, plus al doilea rând decalat cu douăzeci și doi virgulă cinci grade și Color. Dacă rămâi în urmă, salvează la Minim.
+
+Recapitulare. Tubul este un Cylinder Solid cu un Cylinder Hole mai mic și mai înalt. O bară Hole mai lungă decât tubul taie ambii pereți. Control și D repetă și rotirea, deci modelul iese regulat. Rândul decalat înseamnă o rotire de jumătate de pas.
+
+Succes la abajurul tău.

@@ -1,0 +1,29 @@
+Lecția nouă. Proiectul mare: joc complet.
+
+Astăzi închizi jocul ca pe un produs. Faci meniu Start, reset, victorie și Sfârșitul jocului. Poți face și un al doilea nivel. Rămâi în același fișier: Prenume, linie jos, Nume, linie jos, M cinci, linie jos, Proiect.
+
+Obiectivul. Ai un meniu Start. Jocul rulează după ce apeși Start. Ai un final clar: victorie și game over, sau măcar unul, cu mesaj. Restartul sau steagul curăță tot. Un coleg termină tot fluxul fără ajutor. Asta e Minim. Complet înseamnă Minim, plus ambele finaluri, sau nivel doi cu tranziție, sau magazin sau inventar legat de victorie.
+
+De ce contează. Fără start și final, la lecția zece prezinți doar o schiță. Ideea de azi: jocul nu mai pornește la steag, ci când apeși Start.
+
+Primul pas, pe foaie, cinci minute. Ai trei mesaje, trimise cu trimite către toți. Start joc pornește jocul. Win și lose spun că jocul s-a terminat. Revino meniu te duce înapoi la început. Desenează fluxul: steag, meniu, apeși Start, joci, victorie sau înfrângere, meniu.
+
+Al doilea pas, meniul. Faci un sprite nou, Meniu, cu textul Start. Dacă vrei, scrii și controalele: Săgeți pentru mers, Spațiu pentru sari. Pe steag: arată, du-te la x zero, y zero, treci în față. La click pe acest sprite: trimite start joc și ascunde. La toate celelalte sprite-uri, pe steag, doar ascunde. Scripturile de joc, adică gravitația, patrula și monedele, le muți sub când primesc start joc, cu arată la început. La fiecare sprite, primul bloc sub când primesc start joc este oprește celelalte scripturi din acest sprite, ca jocul să nu pornească de două ori. Apeși steagul și vezi doar meniul. Apeși Start și jocul apare.
+
+Al treilea pas, resetul total. Sub când primesc start joc, la Erou, înainte de joc: setează viață la trei, setează scor la zero, setează monede la zero, setează viteza y la zero, șterge tot din inventar, dacă ai listă, și du-te la start. Joci puțin, ajungi la meniu, apeși Start din nou: totul începe curat.
+
+Al patrulea pas, victoria și înfrângerea. Victoria: la Țel, sub când primesc start joc, repetă la nesfârșit. Dacă atinge Erou, trimite win și oprește acest script. Înfrângerea: la Erou, când viață este egal cu zero, trimite lose și oprește acest script. Faci un sprite Final, cu două costume: Ai câștigat și Sfârșitul jocului. La când primesc win: treci la costumul Ai câștigat, arată, așteaptă trei secunde, ascunde, trimite revino meniu. La când primesc lose: la fel, cu al doilea costum. Meniul, la când primesc revino meniu, arată. Celelalte sprite-uri, la revino meniu, oprește celelalte scripturi din acest sprite și ascunde. Clonele șterg această clonă. Poți câștiga și poți pierde. După fiecare vezi mesajul trei secunde și revii la meniu.
+
+Al cincilea pas, test cu un coleg, zece minute. Colegul joacă fără ajutor. Dacă se blochează, notezi unde. Acolo repari.
+
+Complet, alegi cel puțin una. Ambele finaluri complete, cu mesaje clare. Nivel doi: la win, trimite nivel doi, iar Teren și Țel trec la alt costum. Sau un obiect, cheia din lecția patru sau un upgrade din lecția șase, necesar pentru victorie: Țel verifică dacă inventar conține Cheie.
+
+Greșeli frecvente. Câștigi imediat: Țel e atins încă de la start. Meniul rămâne peste joc: lipsește ascunde după click, sau treci în față la alt sprite. Restartul pornește jocul de două ori: lipsește oprește celelalte scripturi. Rămân clone sau viață veche. Nu poți câștiga niciodată: verifici unde a ajuns Țel. Controalele nu sunt scrise. Ai făcut proiect nou.
+
+Proiectul de azi. Joc complet.
+
+Minim înseamnă: meniu, Start, cel puțin un final, reset, test cu un coleg. Complet înseamnă: Minim plus ambele finaluri, sau nivel doi, sau magazin sau inventar în victorie. Dacă rămâi în urmă, salvează la Minim.
+
+Recapitulare. Start, joc, final. Resetul curăță tot. Lecția zece aduce finisările, prezentarea și insigna.
+
+Succes la jocul tău complet.

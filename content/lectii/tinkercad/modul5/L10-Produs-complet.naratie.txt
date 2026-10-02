@@ -1,0 +1,27 @@
+Lecția zece. Produsul meu.
+
+Astăzi faci proiectul final. Pornești de la o problemă reală, schițezi, construiești un produs din mai multe piese, cu tot ce ai învățat, și îl prezinți. Creezi un design nou și îl numești Prenume, linie jos, Nume, linie jos, T cinci, linie jos, L zece. Proiectul se numește Produsul meu. Imprimanta trei D nu se folosește la oră. Printarea, dacă se face, se face după ore.
+
+Obiectivul. La final ai un produs trei D care rezolvă o problemă mică și o prezentare de un minut. Minim: problema scrisă într-o propoziție, o schiță cu cel puțin patru cote, un model din cel puțin două piese separate și un joc corect între ele. Jocul este de zero virgulă doi milimetri pe parte la piesele strânse și de zero virgulă cinci milimetri la piesele care se mișcă. Pereții au cel puțin unu virgulă doi milimetri. Plus prezentarea. Complet: minim, plus o tehnică din modulul cinci în plus, adică balama, îmbinare cu cheie, simbol S V G, angrenaj, cod sau circuit, plus lista gata de print bifată și prezentarea fără foaie.
+
+De ce contează. Un designer nu începe cu forma, ci cu problema. Apoi schițează, alege mărimile, verifică potrivirea și arată ce a făcut. Azi parcurgi tot drumul.
+
+Primul pas pe ecran. Alegi problema, pe foaie. Poți propune și tu una, cu acordul profesorului. Produsul trebuie să aibă cel puțin două piese separate, care se potrivesc. Idei din listă. Cablurile se încurcă pe birou, deci un suport de cabluri cu trei fante și bază. Telefonul nu stă drept, deci un suport de telefon cu fantă înclinată. Nu găsești bijuteriile, deci o cutie cu balama. Cheile se pierd, deci un breloc cu simbol și suport de chei. Cutia nu stă închisă, deci o cutie cu închizătoare cu cheie. Vrei un joc, deci un mecanism cu roți dințate și manivelă. Vrei o lanternă, deci o carcasă cu LED și capac.
+
+Al doilea pas pe ecran, schița, pe foaie. Desenezi trei idei foarte mici. Alegi una și o desenezi mare, din față și de sus. Scrii cel puțin patru cote: lungime, lățime, înălțime și o gaură sau o fantă. Marchezi piesele separate și locul unde este joc. De exemplu, gaură șase virgulă patru pentru știft șase.
+
+Al treilea pas pe ecran, construcția, cu numere. Design nou, Snap Grid zero virgulă cinci milimetri, sau un milimetru. Fiecare piesă o faci tastând mărimile din schiță. Pentru centrare și poziții folosești Align, adică tasta L, și mutări cu pași fixi. Pentru copii folosești Control și D. Piesele care se mișcă sau se îmbină rămân separate. Nu le grupezi între ele. Jocul este de zero virgulă doi milimetri pe parte pentru strâns sau zero virgulă cinci pentru mobil. Pereții au cel puțin unu virgulă doi milimetri. Fața de jos a fiecărei piese este plată.
+
+Al patrulea pas pe ecran, verificarea. Bifezi pe foaie lista gata de print. Toate piesele au o față plată în jos. Niciun perete nu e mai subțire de unu virgulă doi milimetri. Între piesele care se potrivesc este joc, măsurat cu Ruler. Nu există piese în aer, pe care le verifici din Front și Right. Nu mai sunt Hole-uri negrupate. Mărimile din Tinkercad sunt cele din schiță. Numele fișierului este corect.
+
+Al cincilea pas pe ecran, prezentarea de un minut. Pe foaie scrii patru propoziții. Problema pe care am vrut s-o rezolv este. Produsul meu are cât de multe piese, și care. Cea mai importantă mărime este, pentru că. Am folosit din modulul cinci.
+
+Greșeli frecvente. Începi fără schiță, și piesele nu se potrivesc. Fără joc, deci gaura și știftul au aceeași mărime. Totul într-un singur Group, deci piesele mobile se lipesc. Prea ambițios. Mai bine un produs curat, cu două piese, decât cinci neterminate. Pereți subțiri. Piese în aer. Prezentare lungă. Ai uitat problema.
+
+Proiectul de azi. Produsul meu.
+
+Minim înseamnă: problema, schița cu patru cote, două piese separate cu joc scris cu numere, pereți de cel puțin unu virgulă doi milimetri și prezentarea. Complet înseamnă: minim, plus o tehnică din modulul cinci, lista gata de print bifată și prezentarea fără foaie. Dacă rămâi în urmă, salvează la Minim.
+
+Recapitulare. Un produs bun înseamnă problemă, schiță, cote și joc. Pereții sunt de cel puțin unu virgulă doi milimetri, iar fața de jos este plată. Piesele care se potrivesc rămân separate. Prezentarea are patru propoziții.
+
+Succes la produsul tău.

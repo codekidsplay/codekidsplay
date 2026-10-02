@@ -1,0 +1,27 @@
+Lecția trei. Evită patrula.
+
+Astăzi faci un inamic care patrulează între două limite. Dacă îl atingi, pierzi o viață. Faci un fișier nou. Îl salvezi ca Prenume, linie jos, Nume, linie jos, M cinci, linie jos, L trei. Proiectul se numește Evită patrula. Inteligența inamicului nu e magie. Sunt doar reguli simple.
+
+Obiectivul. Ai cel puțin un inamic care patrulează între x unu și x doi. Atingerea are o reacție: pierzi viață sau te întorci la start. Poți evita inamicul. Resetul e curat. Asta e Minim. Complet înseamnă Minim, plus doi inamici, sau o rază în care inamicul aleargă când ești aproape, sau o platformă cu inamic pe ea.
+
+De ce contează. Patrularea e baza inamicilor din proiectul mare. Limitele sunt mai stabile decât mișcarea aleatorie.
+
+Primul pas, pe foaie, cinci minute. Inamicul are variabila dir. Unu înseamnă că merge spre dreapta. Minus unu înseamnă spre stânga. La fiecare pas se mută cu dir ori doi. Când ajunge la o limită, dir își schimbă semnul și inamicul se întoarce. Încearcă pe foaie: limitele sunt minus o sută și o sută. Pasul e doi. Câți pași are o plimbare dus și întors? O sută dus și o sută întors.
+
+Al doilea pas pe ecran, eroul. Faci proiect nou. Creezi variabila viață, pentru toate sprite-urile. Pe steag, la Erou: du-te la x minus două sute, y minus o sută, și setează viață la trei. În repetă la nesfârșit, mersul stânga și dreapta cu schimbă x cu patru și minus patru. Săritura simplă: dacă tasta spațiu apăsată, repetă zece ori schimbă y cu șase, apoi repetă zece ori schimbă y cu minus șase. Eroul sare cam șaizeci de pași și revine unde era.
+
+Al treilea pas, inamicul. Sprite-ul Inamic are variabila dir, numai pentru acest sprite. Pe steag: du-te la x o sută, y minus o sută, și setează dir la unu. Apoi repetă la nesfârșit: schimbă x cu dir ori doi. Dacă x poziția este mai mare decât o sută, setează dir la minus unu. Dacă x poziția este mai mică decât minus o sută, setează dir la unu.
+
+Al patrulea pas, lovitura. La Erou, în același repetă la nesfârșit: dacă atinge Inamic, schimbă viață cu minus unu. Du-te la x minus două sute, y minus o sută. Spune Au timp de o secundă. Dacă viață este egal cu zero, spune Game over și oprește tot. Pierzi o viață, nu trei deodată. Poți trece sărind peste inamic.
+
+Complet, alegi cel puțin una. Al doilea inamic: duplici sprite-ul și schimbi limitele și startul. Rază: dacă valoarea absolută din diferența dintre x al inamicului și x al lui Erou este mai mică decât optzeci, schimbă x cu dir ori trei. Platformă: un sprite la y minus patruzeci, cu inamicul pe el.
+
+Greșeli frecvente. Inamicul iese din scenă: lipsesc cele două dacă de întoarcere. Pierzi trei vieți deodată: lipsește spune timp de o secundă, sau du-te la start. Inamicul se blochează în limită: folosește mai mare și mai mic, nu egal. Doi inamici au aceeași dir: variabila trebuie să fie numai pentru acest sprite. Săritura nu revine: cele două repetă zece trebuie să fie egale.
+
+Proiectul de azi. Evită patrula.
+
+Minim înseamnă: patrulare, atingere cu reacție, inamic evitabil, reset. Complet înseamnă: Minim plus una dintre cele trei variante. Dacă rămâi în urmă, salvează la Minim.
+
+Recapitulare. Limitele fac patrularea. Lovitura are reacție și pauză. Numele fișierului are prenumele, numele, M cinci și L trei.
+
+Succes la patrula ta.

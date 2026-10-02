@@ -1,0 +1,31 @@
+Lecția opt. Turnul parametric.
+
+Astăzi construiești un turn parametric. Schimbi un număr, etaje, și obții un turn mai mic sau mai mare. Aceeași idee, mai multe obiecte. Creezi un design nou și îl numești Prenume, linie jos, Nume, linie jos, T cinci, linie jos, L opt. Proiectul se numește Turnul parametric. Imprimanta trei D nu se folosește la oră. Lecția este opțională pentru cei sub doisprezece ani, care au varianta fără cod.
+
+Obiectivul. Ai două turnuri din aceeași idee, unul cu cinci etaje și unul cu opt. Minim cu Codeblocks: o buclă care pune pe verticală etaje de douăzeci pe douăzeci pe șase, fiecare cu doi milimetri mai îngust decât cel dinainte. Rulezi cu etaje egal cu cinci și cu etaje egal cu opt. Salvezi două capturi sau două proiecte. Minim fără Codeblocks: același turn făcut manual, în două înălțimi. Complet: minim, plus un al doilea parametru, lățimea de bază L, care poate fi douăzeci sau treizeci, plus o explicație de trei propoziții despre ce a schimbat fiecare parametru.
+
+De ce contează. Un șablon nu face un singur obiect, ci o familie de obiecte. În modulul patru ai făcut un șablon de casă. Acum îl faci din cod, cu un singur număr de schimbat. Așa se fac produsele care vin în mai multe mărimi, ca vasele, suporturile sau turnurile.
+
+Mai întâi planul pe foaie. Etajul unu are lățimea douăzeci și începe la zero. Etajul doi, optsprezece, începe la șase. Etajul trei, șaisprezece, la doisprezece. Etajul patru, paisprezece, la optsprezece. Etajul cinci, doisprezece, la douăzeci și patru. Fiecare etaj are șase milimetri înălțime. Regula este simplă: la fiecare etaj lățimea scade cu doi, iar înălțimea de start crește cu șase. La opt etaje, ultimul are lățimea șase și începe la patruzeci și doi.
+
+Primul pas pe ecran. Design nou, Codeblocks, cu numele lecției.
+
+Al doilea pas pe ecran, variabilele. Creezi variabila etaje, egală cu cinci. Variabila lat, egală cu douăzeci, lățimea etajului curent. Variabila z, egală cu zero, înălțimea la care începe etajul curent.
+
+Al treilea pas pe ecran, bucla. Tragi blocul repetă de etaje ori. În buclă pui, în ordine, un bloc Group. În el pui un box cu mărimile lat, lat, șase, apoi o mutare pe înălțime cu z, centrat pe mijlocul planului. Group-ul face ca mutarea să nu miște și etajele de dinainte. În afara Group-ului, dar tot în buclă, pui lat devine lat minus doi. Apoi z devine z plus șase. Apeși Run. Apare turnul cu cinci etaje, treptat mai îngust.
+
+Al patrulea pas pe ecran, a doua rulare. Salvezi sau faci o captură cu numele Turn cinci. Schimbi etaje în opt și apeși Run. Salvezi Turn opt. Compari. Care e mai înalt, și cu cât? Trei etaje de câte șase milimetri înseamnă optsprezece milimetri.
+
+Al cincilea pas pe ecran, pentru Complet. Creezi variabila L, cu literă mare, egală cu douăzeci, lățimea de bază. Variabila lat pornește de la L. Rulezi cu L egal cu treizeci și etaje egal cu opt. Atenție, opt etaje cu pasul de doi ajung la lățimea șaisprezece, deci turnul e mai gros. Pe foaie scrii trei propoziții. Dacă schimb etaje, se schimbă. Dacă schimb L, se schimbă. Un parametru bun este, deoarece.
+
+Varianta fără Codeblocks. Tragi un Box de douăzeci pe douăzeci pe șase, baza. Apoi un Box de optsprezece pe optsprezece pe șase, aliniat cu L pe mijloc stânga dreapta și pe mijloc față spate cu baza, ridicat la șase milimetri. Apoi șaisprezece, ridicat la doisprezece. Paisprezece, ridicat la optsprezece. Doisprezece, ridicat la douăzeci și patru. Grupezi cu Control și G și numești Turn cinci. Pentru al doilea turn apeși Control și D și muți copia treizeci de milimetri într-o parte. Adaugi etajele șase, șapte și opt. Zece pe zece pe șase la treizeci, opt pe opt pe șase la treizeci și șase, șase pe șase pe șase la patruzeci și doi. Fiecare se centrează cu L pe ambele axe față de turn. Grupezi și numești Turn opt. Pe foaie răspunzi: ce parametru ai schimbat de fapt? Numărul de etaje.
+
+Greșeli frecvente. Etajele sunt unul lângă altul, pentru că z nu crește cu șase. Etajele au aceeași mărime, pentru că lat nu scade cu doi. Turnul ajunge la zero, pentru că ai prea multe etaje. Alege cel mult nouă. Bucla folosește numărul cinci, nu variabila etaje. Turnul nu e centrat. Ai uitat să salvezi varianta cu cinci etaje înainte să schimbi în opt.
+
+Proiectul de azi. Turnul parametric.
+
+Minim cu cod înseamnă: buclă cu etaje de la douăzeci la doisprezece și două rulări, cu cinci și cu opt etaje. Minim fără cod înseamnă: Turn cinci și Turn opt făcute manual. Complet înseamnă: minim, plus parametrul L și trei propoziții. Dacă rămâi în urmă, salvează la Minim.
+
+Recapitulare. Parametrul este un număr care schimbă obiectul. Bucla pune etajele, variabilele le schimbă mărimea. Două rulări dau două variante din aceeași idee. Fără cod, aceeași idee se face cu Box-uri.
+
+Succes la turnul tău parametric.

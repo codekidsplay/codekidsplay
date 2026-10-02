@@ -1,0 +1,35 @@
+Lecția nouă. Caruselul meu.
+
+Astăzi construiești un singur mecanism de atracție: un carusel care se poate roti pe stâlpul lui. Parcul întreg și orașul vin în Modulul patru. Fișier nou: Prenume, linie jos, Nume, linie jos, T trei, linie jos, L nouă. Proiectul se numește Caruselul meu.
+
+Obiectivul. La final ai un carusel din două piese: baza cu stâlp central și rotorul, adică platformă, opt stâlpi cu scaun și acoperiș, pus pe stâlp. Minim: bază cu diametru o sută și grosime patru, stâlp cu diametru doisprezece și înălțime șaizeci, capac cu diametru optsprezece și grosime trei. Rotor: platformă cu diametru optzeci și grosime patru, opt stâlpi cu diametru patru și înălțime treizeci și șase, la raza treizeci, fiecare cu scaun de zece pe zece pe trei, acoperiș con cu diametru nouăzeci și înălțime paisprezece, și gaură centrală cu diametru treisprezece. Rotorul stă pe stâlp la opt milimetri de bază, nelipit. Complet: minim, plus un steag pe vârf, culori și Ruler.
+
+De ce contează. E același principiu ca la morișcă: rotorul are o gaură mai mare decât stâlpul pe care stă. Stâlpii în cerc îi faci cu Control și D plus rotire.
+
+Primul pas pe ecran. Create new design, cu numele fișierului. Snap Grid pe unu milimetru. Un Cylinder de o sută pe o sută pe patru, baza. Un Cylinder de doisprezece pe doisprezece pe șaizeci, stâlpul, aliniat cu baza pe cele două direcții de pe plan. Un Cylinder de optsprezece pe optsprezece pe trei, capacul, tras peste stâlp. Selectezi capacul, stâlpul și baza, tasta L, mijloc pe cele două direcții. Apoi capacul și stâlpul, L, punctul de sus. Așa stâlpul rămâne în centru. Control și G. Muți grupul o sută cincizeci de milimetri deoparte.
+
+Al doilea pas pe ecran. Un Cylinder de optzeci pe optzeci pe patru, platforma rotorului. Snap Grid rămâne pe unu.
+
+Al treilea pas pe ecran. Un Cylinder de patru pe patru pe treizeci și șase, stâlpul, și un Box de zece pe zece pe trei, scaunul, trase peste platformă. Selectezi platforma, stâlpul și scaunul, L, mijloc pe cele două direcții. Ridici scaunul la zece milimetri. Stâlpul și scaunul, Control și G. Snap Grid pe cinci, muți stâlpul cu scaun treizeci de milimetri spre dreapta, șase sărituri: raza treizeci.
+
+Al patrulea pas pe ecran. Control și D pe stâlpul cu scaun. Muți copia șaizeci de milimetri spre stânga, douăsprezece sărituri. Cei doi stâlpi, Control și G: o bară, centrată pe platformă.
+
+Al cincilea pas pe ecran. Bara, Control și D, copia rotită patruzeci și cinci de grade, doi pași de câte douăzeci și doi virgulă cinci. Control și D repetă rotirea, apoi încă o dată. Din Top, patru bare sunt opt stâlpi în cerc.
+
+Al șaselea pas pe ecran. Un Cone de nouăzeci pe nouăzeci pe paisprezece, tras peste platformă. Selectezi conul, platforma și cele patru bare, L, mijloc pe cele două direcții. Apoi doar conul, ridicat la treizeci și cinci de milimetri, șapte sărituri. Din Front, stâlpii ating acoperișul.
+
+Al șaptelea pas pe ecran. Un Cylinder de treisprezece pe treisprezece pe șaptezeci, Hole, tras peste platformă și aliniat doar pe cele două direcții de pe plan, nu pe înălțime. Platforma, cele patru bare, acoperișul și gaura, cu Shift și click, Control și G: rotorul. Gaura de treisprezece e mai mare decât stâlpul de doisprezece: zero virgulă cinci milimetri joc pe parte.
+
+Al optulea pas pe ecran. Rotorul și baza cu stâlp, L, mijloc pe cele două direcții. Tasta D, apoi ridici rotorul cu conul negru la opt milimetri, cu Snap Grid pe unu. Din Front, stâlpul trece prin rotor, care stă între bază și capac, nelipit.
+
+Al nouălea pas pe ecran, pentru Complet. Un Cylinder de doi pe doi pe cincisprezece, steagul, aliniat cu baza cu stâlp și ridicat la cincizeci și opt. Un Box de zece pe unu virgulă cinci pe șase, panoul, aliniat cu steagul: mijloc pe adâncime, punctul de sus și marginea din stânga. Steagul, panoul și baza cu stâlp, Control și G. Rotorul rămâne separat. Cu Ruler măsori gaura și stâlpul. La Color, acoperiș, scaune și platformă în culori diferite.
+
+Greșeli frecvente. Stâlpii nu sunt în cerc: bara nu e centrată pe platformă. Rotorul s-a lipit de stâlp. Scaunele sunt la înălțimi diferite: ridică-l o dată, înainte de Control și D. Gaura nu trece prin acoperiș: nu e destul de înaltă. Ai dat Control și A: selectează cu Shift și click.
+
+Proiectul de azi. Caruselul meu.
+
+Minim înseamnă: bază cu stâlp și capac, rotor cu platformă, opt stâlpi cu scaun, acoperiș și gaură, rotor separat, la opt milimetri. Complet înseamnă: minim, plus steag, Ruler și culori.
+
+Recapitulare. Rotorul se mișcă, stâlpul stă pe loc. O bară cu doi stâlpi, Control și D și patruzeci și cinci de grade dau stâlpii în cerc. Capacul împiedică rotorul să iasă.
+
+Succes la caruselul tău.

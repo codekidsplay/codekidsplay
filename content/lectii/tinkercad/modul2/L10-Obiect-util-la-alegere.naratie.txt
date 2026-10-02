@@ -1,0 +1,29 @@
+Lecția zece. Obiectul meu util.
+
+Astăzi alegi tu un obiect util și folosești tot ce ai învățat în Modulul doi: mărimi cu numere, Hole, Align, copii egale și piese care se potrivesc. Creezi un design nou și îl salvezi cu numele: Prenume, linie jos, Nume, linie jos, T doi, linie jos, L zece. Proiectul se numește Obiectul meu util.
+
+Obiectivul. La final ai un obiect util, cu mărimi gândite, pe care îl poți explica în treizeci de secunde: la ce folosește și de ce are aceste mărimi. Minim: o schiță cu cel puțin trei mărimi scrise, obiectul modelat cu aceste numere, cel puțin un Hole și Group, cel puțin o piesă repetată cu Control și D, la distanțe egale, și obiectul stă pe plan. Complet: minim, plus o a doua piesă care se potrivește cu prima, cu joc, sau un test de stabilitate, plus Ruler pe o mărime importantă, Color și prezentarea.
+
+De ce contează. Ai învățat nouă lecții. Azi pornești tu de la o nevoie și ajungi la un obiect. Așa lucrează un designer.
+
+Primul pas pe ecran. Alegi un singur obiect, sau propui tu unul, cu acordul profesorului. Creioniera: un tub gol și o matrice de găuri, ca la lecția șase. Suportul pentru telefon: o bază lată și un șanț Hole în care intră telefonul, cu grosimea telefonului plus un milimetru joc. Două sau trei șanțuri egale sunt piesa repetată. Organizatorul de birou: o cutie cu două sau trei compartimente, cu pereții Box adăugați după Group, și un capac cu joc. Agățătoarea de chei: o placă, cârlige și găuri de montaj. Suportul de lumânare LED: un tub cu ferestre rotite, doar pentru lumânare LED, niciodată cu flacără. Sau ceva al tău, cu mărimi gândite.
+
+Al doilea pas pe ecran. Pe hârtie, desenezi obiectul din față și de sus. Scrii cel puțin trei mărimi. Marchezi unde ai Hole, unde ai piese repetate și unde piesele se potrivesc.
+
+Al treilea pas pe ecran. Apasă Create new design și scrie numele. Jos, în dreapta, la Snap Grid, alege un milimetru pentru mărimi fine sau cinci milimetri pentru copii mari. Începe cu piesa mare, cutia, baza sau tubul.
+
+Al patrulea pas pe ecran. Hole-urile trebuie să treacă prin tot ce vrei să taie și să iasă puțin, cel puțin un milimetru, din piesă, dar să nu atingă pereții. Un Hole taie tot ce e în același Group. Piesele pline care trebuie să rămână, de exemplu pereții interiori, le adaugi după Group. Apoi dai Group din nou. O piesă repetată o faci o dată, apoi apeși Control și D și repeți aceeași mutare. Pentru centre folosești Align, cu tasta L. După Group apasă tasta D, dacă piesa a rămas ridicată de pe plan.
+
+Al cincilea pas pe ecran, pentru Complet. Faci a doua piesă, capac, farfurie sau suport, cu joc de zero virgulă cinci milimetri pe parte. Sau faci un test: din Front, partea de sus nu iese în afara bazei. Apoi folosești Ruler pe o mărime importantă și compari cu schița. La final alegi culori potrivite.
+
+Al șaselea pas pe ecran. Verificarea finală. Rotește vederea din toate părțile: nimic nu trebuie să plutească. Verifică numele proiectului. Verifică dacă mărimile din Tinkercad se potrivesc cu schița.
+
+Greșeli frecvente. Ai început fără schiță, deci piesele nu se potrivesc. Hole fără Group nu taie. Și invers: un perete adăugat înainte de Group dispare. Distanțele cu ochiul: folosește Control și D și aceeași mutare. Două piese care trebuie să se potrivească, dar fără joc: adaugă zero virgulă cinci milimetri pe parte.
+
+Proiectul de azi. Obiectul meu util.
+
+Minim înseamnă: schiță cu trei mărimi, model cu acele numere, Hole și Group, o piesă repetată cu Control și D, obiectul stă pe plan. Complet înseamnă: minim, plus a doua piesă cu joc sau test de stabilitate, Ruler, Color și prezentare de treizeci de secunde: ce este, la ce folosește și ce mărimi are. Dacă rămâi în urmă, salvează la Minim.
+
+Recapitulare. Modulul doi înseamnă numere în loc de ochi, Hole, Align, Control și D și piese cu joc. Întâi schița cu mărimi, apoi modelul. Un obiect curat valorează mai mult decât trei neterminate.
+
+Succes la obiectul tău util.

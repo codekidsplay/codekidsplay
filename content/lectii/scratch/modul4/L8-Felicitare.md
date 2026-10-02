@@ -10,12 +10,12 @@
 
 ## Obiectiv
 La finalul orei un coleg deschide felicitarea **singur** și ajunge la mesajul final.  
-**Minimum:** ≥**2** scene · ≥**2** personaje sau personaj+butoane · mesaj personalizat · ≥**2** interacțiuni · animație pe ≥1 scenă · sunet pe scenă-cheie **și** la final · steag = scena 1.  
+**Minim:** ≥**2** scene · ≥**2** personaje sau personaj+butoane · mesaj personalizat · ≥**2** interacțiuni · animație pe ≥1 scenă · sunet pe scenă-cheie **și** la final · steag = scena 1.  
 **Ținta orei (Complet):** Minim + **3 scene** **sau** alegere formal/amuzant (2 mesaje) **sau** „Trimite din nou”.
 
 ## De ce contează
 Felicitarea e un **cadou interactiv**, nu un singur `spune` „La mulți ani”.  
-Exersezi scene + mesaje + polish scurt — utile și la trailer-ul proiectului Creator.
+Exersezi scene + mesaje + finisări scurt — utile și la trailer-ul proiectului Creator.
 
 ---
 
@@ -26,7 +26,7 @@ Exersezi scene + mesaje + polish scurt — utile și la trailer-ul proiectului C
 | 0–12 | Felicitare = mini-poveste cadou |
 | 12–28 | Pentru cine + text pe foaie + 2–3 scene |
 | 28–100 | Construiești (vezi **Minim vs Complet**) |
-| 100–120 | „Livrează” unui coleg (el clickuiește) |
+| 100–120 | „Livrează” unui coleg (el dă click) |
 
 **Capitole:**  
 <span style="color:#E6A800;font-weight:700">Evenimente</span> · <span style="color:#9966FF;font-weight:700">Aspect</span> · <span style="color:#CF63CF;font-weight:700">Sunet</span> · <span style="color:#FFAB19;font-weight:700">Control</span> · <span style="color:#5CB1D6;font-weight:700">Detectare</span>

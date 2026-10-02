@@ -10,7 +10,7 @@
 
 ## Obiectiv
 La finalul orei ai o foaie cu regulile jocului tău **și** o scenă Scratch cu **erou + obstacol + țintă**, unde eroul se mișcă cu tastele.  
-**Minimum:** foaia de design + 3 personaje redenumite pe scenă + eroul se mișcă pe **toate 4 direcțiile** (săgeți, cu `schimbă x/y`).  
+**Minim:** foaia de design + 3 personaje redenumite pe scenă + eroul se mișcă pe **toate 4 direcțiile** (săgeți, cu `schimbă x/y`).  
 **Ținta orei (Complet):** Minim + **titlu** la start (`spune` 2s) + **obstacol care patrulează** (cu reset la steag).
 
 ## De ce contează
@@ -31,7 +31,7 @@ Orice joc — de la Mario la jocurile de telefon — are aceleași 3 lucruri: **
 **Capitole azi:**  
 **Nou (blocul pe care îl înveți azi):** <span style="color:#4C97FF;font-weight:700">Mișcare</span> — `schimbă x cu` / `schimbă y cu`  
 **Recap (le știi din M1–M2):** <span style="color:#E6A800;font-weight:700">Evenimente</span> (steag) · <span style="color:#FFAB19;font-weight:700">Control</span> (`forever`, `dacă`) · <span style="color:#5CB1D6;font-weight:700">Detectare</span> (tasta e apăsată?) · la Complet și <span style="color:#9966FF;font-weight:700">Aspect</span> (`spune`)  
-*(Variabile / scor / coliziuni pe personaj — **nu** azi; vin la **L2–L3**.)*
+*(Variabile / scor / atingeri pe personaj — **nu** azi; vin la **L2–L3**.)*
 
 ---
 
@@ -106,7 +106,7 @@ Orice joc — de la Mario la jocurile de telefon — are aceleași 3 lucruri: **
 4. **Prea puține condiții `dacă`** — Minim cere **4** (stânga, dreapta, sus, jos), nu doar 2.
 5. **Ai folosit `mergi` în loc de `schimbă x/y`** — `mergi` ține de direcția personajului; pe 4 săgeți te încurci.
 6. **Fără reset** — eroul „rătăcește” de la o rulare la alta.
-7. **Titlul blochează tastele 2s** — <span style="color:#9966FF;font-weight:700">spune</span> … **timp de** `2` **înaintea** buclei `forever` = 2s fără control; e normal. Problema reală: același `spune` … **timp de** `2` **în** `forever` blochează mișcarea mereu. *(Un `spune` fără timp, în `forever`, e inofensiv — nu spam-uiește.)*
+7. **Titlul blochează tastele 2s** — <span style="color:#9966FF;font-weight:700">spune</span> … **timp de** `2` **înaintea** buclei `forever` = 2s fără control; e normal. Problema reală: același `spune` … **timp de** `2` **în** `forever` blochează mișcarea mereu. *(Un `spune` fără timp, în `forever`, e inofensiv — nu repetare-uiește.)*
 8. **Personajele suprapuse perfect** — greu de văzut cine e cine; le tragi puțin distanță.
 9. **Obstacolul tremură pe margine** — ai uitat <span style="color:#FFAB19;font-weight:700">așteaptă</span> `0.2` după întoarcere (obligatoriu, ca în M2).
 
@@ -122,7 +122,6 @@ Salvat: `Prenume_Nume_M3_L1`
 | **Minim („am reușit”)** | Foaia de design (inclusiv „la atingere”) + fundal + 3 personaje **redenumite** (panoul Personaj) + eroul pe **4 direcții** cu `schimbă x/y` + reset la steag |
 | **Complet (ținta orei)** | Minim + titlu la steag (`spune` 2s) + **obstacol care patrulează** (reset + stil rotație + `așteaptă` `0.2` la margine) |
 
-*(Notă profesor: Complet e realist pentru cei rapizi în slotul Scratch; mulți rămân la Minim — e ok. L2 pornește de pe scena Minim.)*
 
 Dacă rămâi în urmă: **termină întâi Minim, apoi salvează.**  
 Cei rapizi: Complet, apoi Bonus.

@@ -1,0 +1,29 @@
+Lecția nouă. Cana mea.
+
+Astăzi faci un obiect gol pe dinăuntru: o cană cu perete, fund și toartă. Proiectul se numește Cana mea. Numele fișierului este: Prenume, linie jos, Nume, linie jos, T unu, linie jos, L zero nouă. Imprimanta trei D nu o folosim la oră. Azi doar proiectezi.
+
+Obiectivul. La final ai o cană goală, cu fund și cu pereți care nu sunt prea subțiri. Minim: corpul din Cylinder, golul dintr-un Cylinder Hole mai îngust, care începe mai sus de plan și iese deasupra cănii, și Group. Cana are fund. Complet: minim, plus toartă din Torus, culori și un model pe cană.
+
+De ce contează. Cavitățile sunt peste tot: căni, cutii, vaze. Ordinea pieselor contează. Contează și grosimea peretelui și a fundului.
+
+Primul pas pe ecran. Create new design. Sus scrii numele Prenume, linie jos, Nume, linie jos, T unu, linie jos, L zero nouă. Salvarea este automată. Verifici numele.
+
+Al doilea pas pe ecran. Corpul. Tragi un Cylinder și îl faci patruzeci pe patruzeci pe patruzeci și cinci: diametru patruzeci, înălțime patruzeci și cinci. Acesta este corpul cănii. Trebuie să stea pe plan. Dacă plutește, apeși tasta D.
+
+Al treilea pas pe ecran. Golul, adică Hole. Tragi al doilea Cylinder, mai îngust decât corpul: treizeci și doi pe treizeci și doi pe patruzeci și doi. Peretele va avea patru milimetri. În panoul Shape îl pui pe Hole, varianta cu dungi. Apoi îl ridici cu conul negru la cinci. Golul începe la cinci milimetri de plan, deci fundul are cinci milimetri, și urcă până la patruzeci și șapte. Adică iese deasupra cănii, care are patruzeci și cinci. Altfel ar rămâne un capac. Golul este puțin mai scund decât corpul, dar nu coboară până la plan. Îl pui în centru: selectezi corpul și golul, cu Shift și click, apeși tasta L și alegi punctul din mijloc pe ambele direcții din Top. Verifici din Top că peretele are aceeași grosime peste tot. Apoi verifici din Front: golul începe deasupra planului, la cinci milimetri, și iese deasupra marginii cănii.
+
+Al patrulea pas pe ecran, pentru Complet. Toarta, înainte de Group. Tragi un Torus, gogoașa din Basic Shapes, și îl scalezi cu Shift la aproximativ douăzeci și cinci de milimetri diametru. Îl rotești nouăzeci de grade cu săgeata curbă, ca să stea vertical și, din Front, să vezi un cerc, un inel. Dacă vezi doar o linie, rotești nouăzeci de grade pe cealaltă axă. Îl lipești pe o parte a corpului, la dreapta, în Front. Marginea lui interioară intră aproximativ trei milimetri în perete. Îl ridici la aproximativ zece, ca să fie pe la mijlocul cănii. Dacă iese prea mare sau strâmb, îl scalezi din pătrățelele albe, cu Shift. Verifici din Top: toarta intră doar în perete. Peretele are patru milimetri, deci toarta nu intră mai mult de trei, ca să nu ajungă în gol.
+
+Al cincilea pas pe ecran. Group. Selectezi corpul, golul Hole și toarta, cu Shift și click. Apeși Control și G. Pe Mac, Command și G. Rotești vederea: cana este goală, are fund, iar toarta este afară. Dacă toarta intră în cavitate, adică Hole o taie, apeși Control, Shift și G ca să desfaci grupul, o muți spre exterior și apeși din nou Control și G.
+
+Al șaselea pas pe ecran, tot pentru Complet. Color. Selectezi grupul și alegi o singură culoare pentru tot. Dacă vrei culori diferite la cană și la toartă, le colorezi înainte de Group. Apoi modelul: cercuri mici sau dungi subțiri, lipite pe exterior, ca formă Solid, nu Hole. La final verifici numele proiectului.
+
+Greșeli frecvente. Cana nu are fund: golul a coborât până la plan, trebuie să înceapă la cinci. Îl ridici cu conul negru. Cana are capac: golul nu iese deasupra marginii, patruzeci și șapte față de patruzeci și cinci. Îl înalți. Peretele este prea subțire: micșorezi golul sau mărești corpul. Toarta intră în gol: Hole o taie, deci o muți spre exterior înainte de Group. Toarta este culcată: săgeata curbă, nouăzeci de grade. Golul nu este în centru: din Top, cu L, sau muți. Dacă dai Group doar pe corp și gol, toarta rămâne separată. O poți alipi, dar Group pe toate odată este mai simplu la început.
+
+Proiectul de azi. Cana mea.
+
+Minim înseamnă: corp, gol Hole mai îngust, ridicat la cinci milimetri și ieșit deasupra cănii, fund gros verificat din Front, și Group. Complet înseamnă: minim, plus toartă din Torus vertical, culori și model. Dacă rămâi în urmă, salvează la Minim. Ești la Minim când cana este goală sus și închisă jos.
+
+Recapitulare. Cavitatea este un Hole mai îngust, care începe mai sus de plan, pentru fund, și iese deasupra, ca să fie deschis sus. Fundul și peretele nu trebuie să fie prea subțiri. Toarta este un Torus rotit nouăzeci de grade, în perete, nu în gol.
+
+Succes la cana ta.

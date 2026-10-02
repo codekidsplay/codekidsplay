@@ -1,0 +1,31 @@
+Lecția nouă. Clema mea.
+
+Astăzi pornești de la un obiect real: măsori un cablu și faci o clemă exact pe mărimea lui. Creezi un design nou și îl salvezi cu numele: Prenume, linie jos, Nume, linie jos, T doi, linie jos, L nouă. Proiectul se numește Clema mea.
+
+Obiectivul. La final ai o clemă în formă de C, care ține un cablu, pe o plăcuță cu găuri de prindere. Minim: măsori un cablu, de exemplu de cinci milimetri. Faci un inel cu gaura de șase milimetri, exteriorul de doisprezece, lung de doisprezece, și fanta de sus de patru. Plăcuța are treizeci pe doisprezece pe trei, cu două găuri cu diametru trei. Apoi Group. Complet: minim, plus o a doua clemă pentru un cablu mai gros, calculată de tine cu aceeași regulă, plus Ruler și culoare.
+
+De ce contează. O piesă pentru un obiect real are nevoie de măsurare și de toleranță. Gaura e ceva mai mare decât cablul. Fanta e ceva mai îngustă: ține cablul înăuntru, dar cablul poate fi apăsat să intre. Regula de azi: gaura este cablul plus un milimetru, fanta este cablul minus un milimetru, exteriorul este gaura plus șase.
+
+Primul pas pe ecran. Apasă Create new design și scrie numele. Pe foaie calculezi, pentru cablul de cinci milimetri: gaura, cinci plus unu, șase. Fanta, cinci minus unu, patru. Exteriorul, șase plus șase, doisprezece. Jos, în dreapta, la Snap Grid, alege un milimetru.
+
+Al doilea pas pe ecran. Trage un Cylinder și scrie: doisprezece, doisprezece, doisprezece. Alt Cylinder: șase, șase, șaisprezece, și alege Hole. Selectează Hole-ul și cilindrul, apasă tasta L pentru Align și alege mijlocul pe cele trei direcții. Apasă Control și A, apoi Control și G, apoi tasta D. Ai un tub scurt, cu pereți de trei milimetri.
+
+Al treilea pas pe ecran. Selectează tubul și rotește-l nouăzeci de grade, cu o săgeată curbă de pe lateral: patru pași de douăzeci și doi virgulă cinci grade, sau scrii nouăzeci. Tubul stă culcat. În View Cube alege Top. Trebuie să vezi un dreptunghi lung, între față și spate, deci cablul va trece orizontal. Dacă vezi un cerc, mai rotești nouăzeci de grade pe altă săgeată curbă. Dacă tubul plutește sau a rămas sub plan, apasă tasta D.
+
+Al patrulea pas pe ecran. Trage un Box și scrie: treizeci, doisprezece, trei. Selectează tubul și plăcuța, apasă L și alege mijlocul pe ambele direcții de pe plan. Apoi selectează tubul și ridică-l cu conul negru la doi milimetri. Se înfige un milimetru în plăcuță.
+
+Al cincilea pas pe ecran. Trage un Box și scrie: patru, doisprezece, zece. Alege Hole. Selectează fanta și tubul, apasă L și alege mijlocul pe cele două direcții de pe plan. Ridică fanta cu conul negru la opt milimetri de plan. Ea pornește de la mijlocul tubului și iese patru milimetri deasupra. Apasă Control și A, apoi Control și G.
+
+Al șaselea pas pe ecran. Trage un Cylinder și scrie: trei, trei, opt. Alege Hole. Selectează gaura și plăcuța, apasă L și alege punctul din stânga și mijlocul dintre față și spate. Apasă de patru ori săgeata dreapta: marginea găurii e la patru milimetri de capăt, în partea fără tub. Coboară gaura cu un milimetru sub plan, ca să treacă prin plăcuță. Apasă Control și D, selectează copia și plăcuța, apasă L, alege punctul din dreapta și apasă de patru ori săgeata stânga. Apoi Control și A, Control și G.
+
+Al șaptelea pas pe ecran, pentru Complet. Un cablu gros de opt milimetri: gaura nouă, fanta șapte, exteriorul cincisprezece. Refaci pașii cu numerele noi: tub cincisprezece pe cincisprezece pe cincisprezece, Hole nouă pe nouă pe nouăsprezece, plăcuță treizeci și șase pe cincisprezece pe trei, fantă șapte pe cincisprezece pe zece, ridicată la nouă milimetri, tubul la doi milimetri și găuri cu diametru trei la patru milimetri de capete. Pune a doua clemă lângă prima. Cu Ruler măsoară gaura, șase, și fanta, patru, la prima clemă. Hole-urile se măsoară doar separat, cu Control, Shift și G. La final alege culori.
+
+Greșeli frecvente. Cablul nu intră: gaura e exact cât cablul. Cablul iese singur: fanta e prea largă. Ai măsurat cu ochiul: folosește rigla.
+
+Proiectul de azi. Clema mea.
+
+Minim înseamnă: cablu măsurat, calcul pe foaie, tub cu gaura șase, fantă patru, plăcuță cu două găuri și Group. Complet înseamnă: minim, plus a doua clemă pentru cablul de opt milimetri, Ruler și Color. Dacă rămâi în urmă, salvează la Minim.
+
+Recapitulare. O piesă pentru un obiect real începe cu măsurarea. Gaura este obiectul plus un milimetru, fanta este obiectul minus un milimetru. Toleranța este spațiul mic care face piesa să se potrivească.
+
+Succes la clema ta.

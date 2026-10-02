@@ -9,7 +9,7 @@
 
 ## Obiectiv
 La finalul orei știi diferența <span style="color:#FFAB19;font-weight:700">repetă N</span> vs <span style="color:#FFAB19;font-weight:700">forever</span>, folosești <span style="color:#FFAB19;font-weight:700">stop all</span> / <span style="color:#FFAB19;font-weight:700">stop this script</span>, și un joc mic se oprește la victorie, apoi repornește curat la steag.  
-**Minimum:** o buclă `forever` principal + victorie cu `stop all` + reset la steag.  
+**Minim:** o buclă `forever` principal + victorie cu `stop all` + reset la steag.  
 **Ținta orei (Complet):** Minim + buton **STOP** separat + demonstrație: joacă → câștigă → steag → joacă din nou.
 
 ## De ce contează
@@ -22,7 +22,7 @@ La finalul orei știi diferența <span style="color:#FFAB19;font-weight:700">rep
 | Minute | Ce facem |
 |--------|----------|
 | 0–10 | Recap operatori (L6) + „când se oprește jocul?” |
-| 10–30 | Pas cu pas: checkpoint-uri (**Încearcă tu**) |
+| 10–30 | Pas cu pas: mini-verificări (**Încearcă tu**) |
 | 30–100 | Mini-proiect buclă curată (vezi **Minim vs Complet**) |
 | 100–120 | Recap, bonus, salvare |
 
@@ -63,7 +63,7 @@ Din <span style="color:#FFAB19;font-weight:700">Control</span>:
    <span style="color:#FFAB19;font-weight:700">stop all</span>
 
 *Legătură cu L6:* acolo verificam **doar la click pe Verifică**, ca să nu vezi „Mai încearcă” în buclă.  
-Aici verificăm **continuu** în bucla `forever`, dar fiindcă **`stop all` oprește totul imediat**, nu apare spam.  
+Aici verificăm **continuu** în bucla `forever`, dar fiindcă **`stop all` oprește totul imediat**, mesajul nu se repetă.  
 **Regula de bază:** verificare continuă e ok **doar** când urmează un `stop` (sau ascunzi / oprești scriptul). Fără stop → la L6: click Verifică.
 
 **Încearcă tu — victorie cu oprire (3–4 min)**  
@@ -90,7 +90,7 @@ Aici verificăm **continuu** în bucla `forever`, dar fiindcă **`stop all` opre
 1. **După stop, steagul nu mai face nimic** — ai uitat resetul (scor / `arată` pe stele); verifică ce e sub steag.  
 2. **5 forever** — mișcarea e dublă / haotică; păstrează unul pentru control.  
 3. **`stop this script` pe steag** — oprește doar acel script; controlul poate rula mai departe — pentru victorie e mai clar `stop all`.  
-4. **Victorie spam** — `dacă scor = 5` în bucla `forever` **fără** `stop`: mesajul se tot repetă; pune `stop all` imediat.  
+4. **Victorie care se repetă** — `dacă scor = 5` în bucla `forever` **fără** `stop`: mesajul se tot repetă; pune `stop all` imediat.  
 5. **„Dar la L6 ziceai să nu verific în bucla `forever`…”** — vezi nota din pasul 3: fără stop = Verifică; cu `stop all` = ok.  
 6. **Nume fișier** — `Prenume_Nume_L7`, nu doar `Ana_L7`.
 

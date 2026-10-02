@@ -1,8 +1,8 @@
-# Lecția 10 — Polish, prezentare și insignă
+# Lecția 10 — Finisări, prezentare și insignă
 **Modulul 3 · Jocuri**  
 **Code Kids Play · Game Builder**
 
-> Azi **termini** jocul din L9, îl **lustruiești**, îl **arăți** clasei și primești insigna **Game Builder**.  
+> Azi **termini** jocul din L9, îl **îmbunătățești**, îl **arăți** clasei și primești insigna **Game Builder**.  
 > Fișier: `Prenume_Nume_M3_L9` *(sau `Prenume_Nume_M3_L10` = copie, ca să nu strici versiunea veche)*  
 > Exemple: `Ana_Pop_M3_L9` · `Ana_Pop_M3_L10`
 
@@ -10,7 +10,7 @@
 
 ## Obiectiv
 La finalul orei ai îmbunătățit jocul „Prinde obiectele”, l-ai prezentat clasei și ai închis Modulul 3.  
-**Minimum:** **1** îmbunătățire din A–F + restart curat + prezentare → **e suficient pentru insignă**.  
+**Minim:** **1** îmbunătățire din A–F + restart curat + prezentare → **e suficient pentru insignă**.  
 **Ținta orei (Complet):** **2** îmbunătățiri din A–F + prezentare + salvare.
 
 ## De ce contează
@@ -24,8 +24,8 @@ Insigna **Game Builder** = știi să pui împreună control, clone, scor, vieți
 | Minute | Ce facem |
 |--------|----------|
 | 0–10 | Obiectiv + Minim vs Complet + **harta M3** |
-| 10–25 | Alegi din A–F *(sigur vs avansat)* + checkpoint-uri |
-| 25–55 | **Polish** pe joc (lucru individual) |
+| 10–25 | Alegi din A–F *(sigur vs avansat)* + mini-verificări |
+| 25–55 | **Finisări** pe joc (lucru individual) |
 | **55** | **Stop cod** → salvezi → **Ecran mare** — încep prezentările |
 | 55–75 | Prezentări (~1–2 min × max. **10** elevi) |
 | 75–120 | Quiz recap + **insignă** + ce urmează în M4 (+ Bonus dacă e timp) |
@@ -100,13 +100,13 @@ Clasa: aplauze + 1 compliment.
 
 | | Ce ai învățat |
 |--|----------------|
-| ✔ L1–L2 | Control + coliziuni |
+| ✔ L1–L2 | Control + atingeri |
 | ✔ L3–L5 | Scor, vieți & timer (finale) |
 | ✔ L6 | Nivele & fundal |
 | ✔ L7 | Clone |
 | ✔ L8 | Meniu Start (mesaje) |
 | ✔ L9 | Jocul „Prinde obiectele” |
-| ★ L10 | Polish, prezentare & **insignă Game Builder** |
+| ★ L10 | Finisări, prezentare & **insignă Game Builder** |
 
 ### 6) Ce urmează (Modulul 4) — 2–3 minute
 M3 = jocuri. M4 = pasul următor pe modulele Code Kids Play.
@@ -130,7 +130,7 @@ M3 = jocuri. M4 = pasul următor pe modulele Code Kids Play.
 
 ---
 
-## De făcut azi — Polish + prezentare + insignă
+## De făcut azi — Finisări + prezentare + insignă
 Salvat: `Prenume_Nume_M3_L9` și/sau `Prenume_Nume_M3_L10`
 
 ### Minim vs Complet
@@ -143,7 +143,7 @@ Salvat: `Prenume_Nume_M3_L9` și/sau `Prenume_Nume_M3_L10`
 Dacă rămâi în urmă: **prezinți cu o îmbunătățire — e suficient pentru insignă.**  
 La min **55**: Stop Cod → ecran mare → prezentări **oricum**.
 
-### Pasul 1 — Polish
+### Pasul 1 — Finisări
 - [ ] L9 deschis (sau copia L10)  
 - [ ] **Minim:** 1 din A–F testată (notezi litera)  
 - [ ] **Complet:** încă 1 — după ce prima e gata  
@@ -166,7 +166,7 @@ La min **55**: Stop Cod → ecran mare → prezentări **oricum**.
 
 ## Bonus (dacă ai terminat Complet / după prezentare)
 - [ ] A 3-a literă din A–F  
-- [ ] Schimb cu un coleg: joacă 3 min, notează 1 bug  
+- [ ] Schimb cu un coleg: joacă 3 min, notează 1 greșeală  
 - [ ] Pe foaie: **1 idee** pentru un joc și mai mare  
 
 ## Recapitulare rapidă
@@ -187,7 +187,7 @@ La min **55**: Stop Cod → ecran mare → prezentări **oricum**.
 4. Demo: steag → Start → joacă puțin  
 5. Mulțumesc  
 
-**Harta M3:** L1–L2 control/coliziuni · L3–L5 scor/vieți/timer · L6 nivele · L7 clone · L8 meniu · L9 joc · ★ L10 polish + insignă  
+**Harta M3:** L1–L2 control/atingeri · L3–L5 scor/vieți/timer · L6 nivele · L7 clone · L8 meniu · L9 joc · ★ L10 finisări + insignă  
 
 **Quiz scurt (cu profesorul):**  
 1. Ce e o **clonă**?  

@@ -1,0 +1,29 @@
+Lecția zece. Insula mea.
+
+Astăzi este mini-proiectul modulului. Combini tot ce ai învățat în Modulul unu într-o scenă a ta. Proiectul se numește Insula mea. Numele fișierului este: Prenume, linie jos, Nume, linie jos, T unu, linie jos, L zece. Imprimanta trei D nu o folosim la oră. Azi doar proiectezi.
+
+Obiectivul. La final ai o insulă: teren și elemente, în care ai refolosit piese din lecțiile anterioare. Minim: teren și patru elemente, dintre care cel puțin două refolosite din proiectele vechi. Nimic nu plutește. Complet: minim, plus șase elemente, o piesă cu Hole și Group, un text cu numele insulei și culori coerente.
+
+De ce contează. Un proiect propriu arată ce ai reținut. Îți pregătește și portofoliul pentru Modulul doi.
+
+Primul pas pe ecran. Create new design. Sus scrii numele Prenume, linie jos, Nume, linie jos, T unu, linie jos, L zece. Pe o foaie desenezi o insulă și patru până la șase elemente: ce pui și unde. Salvarea este automată. Verifici numele.
+
+Al doilea pas pe ecran. Terenul. Tragi un Cylinder plat și îl faci o sută douăzeci pe o sută douăzeci pe șase. Este cel mai simplu: suprafața este plată și elementele se așază ușor. Apeși Color și alegi verde sau galben, ca nisipul. Trebuie să stea pe plan. Dacă plutește, apeși tasta D. Un Half Sphere turtit arată mai bine, dar suprafața este curbă. Faci asta doar dacă vrei să te complici.
+
+Al treilea pas pe ecran. Refolosirea, minimum două elemente. Deschizi un proiect vechi, de exemplu casa, omul de zăpadă, barca, castelul sau racheta, într-un alt tab. Îl găsești în lista Designs a contului tău. Selectezi toate piesele obiectului. Folosești Control și A, dacă în proiect este doar obiectul acela. Altfel ții Shift și dai click pe fiecare piesă. Apoi apeși Control și C. Pe Mac, Command și C. Revii în proiectul nou și apeși Control și V. Pe Mac, Command și V. Piesele apar pe plan, deja selectate. Le scalezi cu Shift, pe un colț, ca să încapă. De exemplu, casa are aproximativ treizeci lățime. Le muți pe insulă și le ridici cu conul negru la cinci. Terenul are șase milimetri, deci piesele intră un milimetru în el. Dacă nu ai proiectul vechi, refaci rapid o versiune simplă, Minimul din lecția aceea. Dacă piesele includ o bază sau apă, de exemplu apa de la barcă, le ștergi. Nu le vrei pe insulă.
+
+Al patrulea pas pe ecran. Elementele noi. Copacii: un Cylinder pentru trunchi, patru pe patru pe zece, la cinci, și un Cone pentru coroană, șaisprezece pe șaisprezece pe optsprezece, ridicat la paisprezece. Cu Control și D faci mai mulți copaci. Stâncile: sfere turtite. Poteca: un Box plat, colorat. Fiecare element stă pe teren, nu în aer. Baza lui este la cinci milimetri. O ridici cu conul negru și intră un milimetru în teren. Tasta D nu ajută aici, pentru că dă jos elementul pe plan, adică în teren.
+
+Al cincilea pas pe ecran, pentru Complet. O piesă cu Hole și Group: o peșteră, o fereastră la casă sau o poartă. Apoi un text cu numele insulei, pe o plăcuță. Plăcuța este un Box de patruzeci pe cincisprezece pe trei, ca la lecția cinci. Textul are cinci milimetri înălțime. Ambele sunt ridicate la cinci, pe teren. Textul nu trebuie oglindit. Alegi culori coerente, nu toate la întâmplare. Ajungi la șase elemente, fără să strici ce ai.
+
+Al șaselea pas pe ecran. Verificarea finală. Rotești vederea: nimic nu plutește și nimic nu este în aer. Verifici din Top și din Front. Numele proiectului trebuie să fie corect.
+
+Greșeli frecvente. Piesele copiate sunt prea mari: le scalezi cu Shift. Elementele plutesc sau sunt îngropate: conul negru la cinci milimetri, nu tasta D, care le bagă în teren. Apoi verifici din Front. Prea multe elemente, nefinisate: mai bine cinci curate decât zece neterminate. Nu ai salvat sub numele corect: verifici sus. Ai dat Group pe toată insula: Group doar la piesa cu Hole.
+
+Proiectul de azi. Insula mea.
+
+Minim înseamnă: teren, patru elemente, dintre care două refolosite, și nimic nu plutește. Complet înseamnă: șase elemente, o piesă cu Hole, text cu numele insulei și culori coerente. Dacă rămâi în urmă, salvează la Minim. La final urmează prezentări scurte, de aproximativ un minut fiecare, și un formular de păreri.
+
+Recapitulare. Modulul unu înseamnă forme, scalare, tasta M, tasta L, Hole, text și Control și D. Refolosești piese între proiecte cu Control și C, apoi Control și V. Calitatea contează: cinci elemente curate valorează mai mult decât zece neterminate.
+
+Succes la insula ta.

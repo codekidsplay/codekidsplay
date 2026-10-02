@@ -10,7 +10,7 @@
 
 ## Obiectiv
 La finalul orei folosești <span style="color:#FFAB19;font-weight:700">creează o clonă de mine</span> și <span style="color:#FFAB19;font-weight:700">când pornesc ca și clonă</span> (capitolul <span style="color:#FFAB19;font-weight:700">Control</span>) ca monedele să cadă singure.  
-**Minimum:** clonele apar, cad până jos (`y < -160`) și **se șterg** corect — fără să se adune pe ecran.  
+**Minim:** clonele apar, cad până jos (`y < -160`) și **se șterg** corect — fără să se adune pe ecran.  
 **Ținta orei (Complet):** Minim + scor la prindere (`șterge` imediat) + viteză **jucabilă**.
 
 ## De ce contează
@@ -24,7 +24,7 @@ Scratch poate face **copii** ale unui personaj, din mers — exact ca ploaia, gl
 | Minute | Ce facem |
 |--------|----------|
 | 0–10 | Ce e o clonă? + **`y < -160`** (nu `atinge marginea`) |
-| 10–35 | Pas cu pas: checkpoint-uri (**Încearcă tu**) |
+| 10–35 | Pas cu pas: mini-verificări (**Încearcă tu**) |
 | 35–100 | Proiectul „Ploaie de monede” (vezi **Minim vs Complet**) |
 | 100–110 | Ajustezi viteza / cât de des apar monedele |
 | 110–120 | Recap, bonus, salvare |
@@ -149,7 +149,7 @@ Cei rapizi: Complet, apoi Bonus.
 - [ ] Un coleg prinde cel puțin o monedă din prima  
 - [ ] Salvat din nou  
 
-**Gata Complet când:** controlezi eroul, prinzi monede, scorul crește curat, fără lag.
+**Gata Complet când:** controlezi eroul, prinzi monede, scorul crește curat, fără sacadări.
 
 ---
 

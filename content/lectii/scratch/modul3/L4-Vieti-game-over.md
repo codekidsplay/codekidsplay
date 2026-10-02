@@ -9,12 +9,12 @@
 ---
 
 ## Obiectiv
-La finalul orei poți crea variabila <span style="color:#FF8C1A;font-weight:700">vieti</span> care scade la coliziune cu pericolul și oprește jocul la 0, cu **repoziționare la start** ca să nu pierzi toate viețile deodată.  
-**Minimum:** `vieti` pornește de la 3, scade −1 la coliziune, „Game Over” la 0.  
+La finalul orei poți crea variabila <span style="color:#FF8C1A;font-weight:700">vieti</span> care scade la atingere cu pericolul și oprește jocul la 0, cu **repoziționare la start** ca să nu pierzi toate viețile deodată.  
+**Minim:** `vieti` pornește de la 3, scade −1 la atingere, „Game Over” la 0.  
 **Ținta orei (Complet):** Minim + după lovitură: `du-te la` start (imunitate clară) + scorul din L3 combinat cu viețile.
 
 ## De ce contează
-Viețile dau o **a doua șansă**: greșești o dată, nu se termină totul instant. E diferența dintre un joc frustrant (mori din prima) și unul corect (poți învăța din greșeli, dar tot ai o limită).
+Viețile dau o **a doua șansă**: greșești o dată, nu se termină totul imediat. E diferența dintre un joc frustrant (mori din prima) și unul corect (poți învăța din greșeli, dar tot ai o limită).
 
 ---
 
@@ -23,7 +23,7 @@ Viețile dau o **a doua șansă**: greșești o dată, nu se termină totul inst
 | Minute | Ce facem |
 |--------|----------|
 | 0–10 | Recap L3 + **`schimbă … cu 1` vs `cu -1`** |
-| 10–30 | Variabilă `vieti` + coliziune −1 — checkpoint-uri (**Încearcă tu**) |
+| 10–30 | Variabilă `vieti` + atingere −1 — mini-verificări (**Încearcă tu**) |
 | 30–100 | Proiectul „3 vieți” (vezi **Minim vs Complet**) |
 | 100–120 | Test: pierzi o rundă corect, salvare |
 
@@ -50,15 +50,15 @@ Viețile dau o **a doua șansă**: greșești o dată, nu se termină totul inst
 - [ ] Steag din nou → rămâne 3 (reset funcționează)  
 - [ ] Știi: **`cu -1`** scade · **`cu 1`** adaugă
 
-### 2) Coliziune cu pericolul → −1 viață *(nucleul Minim)*
-*(Reconectezi coliziunea cu obstacolul din L2, pe **Erou**.)*
+### 2) Atingere cu pericolul → −1 viață *(nucleul Minim)*
+*(Reconectezi atingerea cu obstacolul din L2, pe **Erou**.)*
 
 1. Pe **Erou**, în bucla `forever` (cea cu tastele), condiția `dacă atinge [Obstacol]?`
-2. În interiorul condiției, **în ordine** *(reacție instantanee pe ecran)*:  
+2. În interiorul condiției, **în ordine** *(reacție imediată pe ecran)*:  
    <span style="color:#FF8C1A;font-weight:700">schimbă</span> `vieti` <span style="color:#FF8C1A;font-weight:700">cu</span> `-1` →  
    <span style="color:#CF63CF;font-weight:700">pornește sunetul</span> `Bonk` →  
    <span style="color:#9966FF;font-weight:700">spune</span> `Au!` timp de `0.5` secunde  
-   *(`schimbă` **primul** = vezi imediat `vieti` pe scenă. `pornește` = sunet neblocant. Nu pune `redă … până la final` înainte — altfel viața scade cu întârziere.)*
+   *(`schimbă` **primul** = vezi imediat `vieti` pe scenă. `pornește` = sunet care nu oprește restul. Nu pune `redă … până la final` înainte — altfel viața scade cu întârziere.)*
 
 **Încearcă tu — pierzi o viață (3–4 min)**  
 - [ ] Atingi obstacolul → `vieti` scade **imediat** cu 1  
@@ -79,18 +79,17 @@ Viețile dau o **a doua șansă**: greșești o dată, nu se termină totul inst
 ### 4) Game Over la `vieti = 0` *(pe Scenă / Erou)*
 *(Ca la victoria din L3: verificările globale stau pe **Scenă** sau **Erou** — „arbitrii”. **Nu** pe Obstacol.)*
 
-1. Click pe **Scenă** (recomandat) — sau pe **Erou**
+1. Click pe **Erou** *(Scena nu are blocul `spune`; „Game Over” trebuie spus de Erou)*
 2. Steag → (dacă nu ai deja) `setează vieti la 3` → o buclă `forever` **separată** (doar pentru Game Over), cu condiție `dacă`:  
    `vieti` <span style="color:#59C059;font-weight:700">=</span> `0`
 3. În interiorul condiției:  
    <span style="color:#9966FF;font-weight:700">spune</span> `Game Over` timp de `2` secunde →  
    <span style="color:#FFAB19;font-weight:700">oprește</span> `toate`
 
-*(Notă profesor: ca la L3 cu `scor = 5` — azi predăm `=`. Dacă cineva scade cu −2, poate sări peste 0; verifică pe coliziune: **doar `cu -1`**.)*
 
 **Încearcă tu — Game Over (3 min)**  
 - [ ] Lovești obstacolul de 3 ori (cu `du-te la` start) → „Game Over” + jocul se oprește  
-- [ ] Scriptul `vieti = 0` e pe **Scenă** (sau Erou)  
+- [ ] Scriptul `vieti = 0` e pe **Erou** (nu pe Obstacol)  
 - [ ] Salvat: `Prenume_Nume_M3_L4`
 
 ---
@@ -103,7 +102,8 @@ Viețile dau o **a doua șansă**: greșești o dată, nu se termină totul inst
 5. **`vieti = 0` pe Obstacol / Țintă** — pune-l pe **Scenă** sau **Erou**.
 6. **Uiți `setează vieti la 3` la steag** — a doua rundă pornește greșit.
 7. **`oprește toate` lipsă la Game Over** — jocul continuă „mort”.
-8. **Nume fișier** — `Prenume_Nume_M3_L4`, nu doar `Ana_M3_L4`.
+8. **`schimbă vieti cu -2` (sau alt număr)** — poți sări peste 0 și „Game Over” nu se mai declanșează. Pe fiecare lovitură: **doar `-1`**.
+9. **Nume fișier** — `Prenume_Nume_M3_L4`, nu doar `Ana_M3_L4`.
 
 ---
 
@@ -115,7 +115,7 @@ Salvat: `Prenume_Nume_M3_L4`
 
 | | Ce trebuie |
 |--|------------|
-| **Minim („am reușit”)** | `vieti = 3` la steag (Scenă/Erou), la coliziune: `schimbă cu -1` + sunet + „Au!”, pe Scenă/Erou: `vieti = 0` → „Game Over” + `oprește toate` |
+| **Minim („am reușit”)** | `vieti = 3` la steag (Scenă/Erou), la atingere: `schimbă cu -1` + sunet + „Au!”, pe Scenă/Erou: `vieti = 0` → „Game Over” + `oprește toate` |
 | **Complet (ținta orei)** | Minim + după „Au!”: **`du-te la` start** (o viață pe lovitură) + opțional `scor` din L3 pe scenă |
 
 Dacă rămâi în urmă: **termină întâi Minim, apoi salvează.**  
@@ -125,9 +125,9 @@ Cei rapizi: Complet, apoi Bonus.
 - [ ] Variabila `vieti`, vizibilă pe scenă  
 - [ ] Pe **Scenă** sau **Erou**: `setează vieti la 3` la steag  
 
-### Pasul 2 — Coliziune + Game Over *(Minim)*
+### Pasul 2 — Atingere + Game Over *(Minim)*
 - [ ] Pe **Erou**: `dacă atinge [Obstacol]?` → **`schimbă vieti cu -1`** → `pornește Bonk` → „Au!”  
-- [ ] Pe **Scenă** (sau Erou): `forever` → `dacă vieti = 0` → „Game Over” + `oprește toate`  
+- [ ] Pe **Erou**: `forever` → `dacă vieti = 0` → „Game Over” + `oprește toate`  
 - [ ] Salvat: `Prenume_Nume_M3_L4`
 
 **→ Minim când:** steag → lovești de 3 ori → „Game Over” clar *(fără Complet, poate scădea rapid dacă stai lipit)*.
@@ -156,7 +156,7 @@ Cei rapizi: Complet, apoi Bonus.
 
 ## Schema pe scurt *(pe foaie)*
 
-**Pe Scenă** *(sau Erou)*  
+**Pe Erou** *(arbitrul)*  
 la steag → `setează vieti la 3` → `forever`:  
 · `dacă vieti = 0` → `spune Game Over` 2 s → `oprește toate`
 

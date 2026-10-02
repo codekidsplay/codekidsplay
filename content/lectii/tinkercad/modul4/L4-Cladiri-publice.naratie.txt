@@ -1,0 +1,29 @@
+Lecția patru. Clădiri publice.
+
+Astăzi construiești școala orașului: o clădire mai lată, cu trepte, ușă, ferestre și steag. Faci o copie a proiectului din lecția trei, cu Duplicate, și o redenumești: Prenume, linie jos, Nume, linie jos, T patru, linie jos, L zero patru. Proiectul se numește Școala mea.
+
+Obiectivul. La final ai o școală pe zona de clădiri publice, recunoscută după trepte, ușă și steag. Minim: corp de douăzeci de metri pe zece pe opt, ușă, două ferestre, două trepte și un steag, ridicate la patru milimetri. Complet: minim, plus acoperiș cu margine, patru coloane la intrare și o a doua clădire: spitalul, cu o cruce roșie din două Box-uri.
+
+De ce contează. O casă are ușă și ferestre mici. O clădire publică se recunoaște: trepte mari, o intrare clară și un semn, de exemplu steag, cruce sau coloane. Fără semn, un cub gri poate fi orice.
+
+Primul pas pe ecran. La Snap Grid, jos în dreapta, pui unu milimetru. Tragi un Box de patruzeci pe douăzeci pe șaisprezece, deocamdată în afara plăcii. Pentru ușă, un Box de șase pe patru pe zece, făcut Hole. Apeși tasta L, pentru Align, cu corpul: mijloc pe stânga spre dreapta, punctul de jos și punctul din față. Apoi muți ușa doi milimetri spre față.
+
+Al doilea pas pe ecran. Fereastra: un Box de șase pe patru pe cinci, făcut Hole. Tasta L cu corpul, punctul din față. Doi milimetri spre față, cincisprezece milimetri spre stânga de mijloc, și ridicată la șase milimetri. Apeși tasta Control și D împreună, iar pe Mac Command și D. Muți copia treizeci de milimetri spre dreapta: fereastra din dreapta. Selectezi corpul, ușa și ferestrele și apeși Control și G. Ordinea contează: dai Control și G acum, înainte de trepte și coloane, ca Hole-urile să taie doar corpul.
+
+Al treilea pas pe ecran. Treptele. Un Box de paisprezece pe șase pe unu este treapta de jos. Tasta L cu corpul: mijloc pe stânga spre dreapta, punctul de jos și punctul din față. O muți șase milimetri spre față. Se lipește de perete. Un Box de paisprezece pe trei pe doi este treapta de sus. Aceleași aliniări, apoi trei milimetri spre față. Din Right vezi două trepte, ca o scară mică spre ușă.
+
+Al patrulea pas pe ecran. Steagul. Un Cylinder de unu pe unu pe paisprezece este stâlpul. Îl ridici la șaisprezece milimetri, pe acoperiș, într-un colț al clădirii. Pânza e un Box de șase pe zero virgulă cinci pe patru. O lipești de stâlp, sus, și o ridici la douăzeci și șase de milimetri. Vârful stâlpului e la treizeci, minus patru cât are pânza. Pânza o faci roșie sau albastră.
+
+Al cincilea pas pe ecran. Pe placă. Ții Shift apăsat și selectezi tot: corpul grupat, treptele, stâlpul și pânza. Le ridici la patru milimetri și le muți pe zona de clădiri publice, dreapta față. Cu Color, pereții într-o culoare deschisă, treptele gri. Dacă faci doar Minim, cu tot selectat apeși Control și G. Dacă mergi la Complet, nu grupa încă, pentru că ai nevoie să te aliniezi la corp. Grupezi la sfârșit.
+
+Al șaselea pas pe ecran, pentru Complet. Acoperișul: un Box de patruzeci și doi pe douăzeci și șase pe unu virgulă cinci. Tasta L cu corpul, mijloc pe ambele axe. Îl ridici la douăzeci de milimetri, adică șaisprezece cât e corpul, plus patru de la placă. Iese un milimetru pe laterale și trei milimetri în față și în spate. Coloanele: un Cylinder de trei pe trei pe șaisprezece. Tasta L cu corpul: mijloc pe stânga spre dreapta, punctul din față și punctul de jos, cel de la patru milimetri. O muți trei milimetri spre față și treisprezece spre stânga de mijloc. Rămâne în afara treptelor. Control și D, patru milimetri spre dreapta: a doua coloană. Selectezi ambele, Control și D, douăzeci și doi de milimetri spre dreapta. Ai patru coloane simetrice, la treisprezece și la nouă milimetri de o parte și de alta a mijlocului. Pentru mutările mari, pui Snap Grid la doi milimetri. Spitalul: un Box de treizeci pe optsprezece pe douăzeci și patru, plus un Hole pentru ușă, de șase pe patru pe opt, ca la școală. Îl aliniezi pe față, îl muți doi milimetri spre față și dai Control și G. Îl pui pe aceeași zonă, în spatele școlii, la patru milimetri. Școala cu trepte are douăzeci și șase de milimetri adâncime, spitalul optsprezece, deci încap în șaizeci și șapte. Crucea: două Box-uri roșii, de opt pe unu pe doi și de doi pe unu pe opt. Le grupezi cu Control și G. Tasta L cu spitalul: mijloc pe stânga spre dreapta, mijloc sus spre jos și punctul din față. Apoi o muți un milimetru spre față. La sfârșit grupezi școala cu tot ce ține de ea: corp, trepte, steag, acoperiș și coloane. Spitalul rămâne separat.
+
+Greșeli frecvente. Ușa nu se vede: ai dat Control și G după trepte, iar Hole-ul a tăiat și treptele. Treptele sunt în perete: nu le-ai mutat șase și trei milimetri spre față. Steagul stă în aer: stâlpul nu e ridicat la șaisprezece milimetri. Coloanele nu sunt simetrice: mută prima, apoi doar Control și D. Școala și spitalul se așază unul în spatele celuilalt, nu unul lângă altul, pentru că patruzeci plus treizeci e mai mult de șaizeci și șapte. Scara greșită: douăzeci de metri înseamnă patruzeci de milimetri.
+
+Proiectul de azi. Școala mea.
+
+Minim înseamnă: corp, ușă, două ferestre, două trepte și steag, pe zona de clădiri publice. Complet înseamnă: minim, plus acoperiș, patru coloane și spital cu cruce. Dacă rămâi în urmă, salvează la Minim.
+
+Recapitulare. O clădire publică are trepte, intrare și semn. Control și G pe corp și găuri, înainte de trepte. La coloane, prima o pui la loc, restul cu Control și D. Numele fișierului are prenumele, numele, T patru și L zero patru.
+
+Succes la școala ta.

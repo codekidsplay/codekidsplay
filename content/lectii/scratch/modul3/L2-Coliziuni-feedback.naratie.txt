@@ -2,9 +2,9 @@ Lecția doi. Țintă sau pericol.
 
 Astăzi jocul reacționează când eroul atinge ceva: țintă înseamnă bravo, obstacol înseamnă Au. Deschizi proiectul din lecția unu și salvezi ca Prenume, linie jos, Nume, linie jos, M trei, linie jos, L doi. Proiectul se numește Țintă sau pericol. Ținta ta poate fi stea, ușă sau comoară. Numele personajului rămâne Țintă.
 
-Obiectivul. Folosești atinge din Detectare ca jocul să răspundă diferit la Țintă sau Obstacol. Minim: ambele coliziuni. Țintă: Yaay, sunet, dispare. Obstacol: Au, sunet. Complet: minim, plus după Au eroul revine la start, fără sunet repetat când stai lipit.
+Obiectivul. Folosești atinge din Detectare ca jocul să răspundă diferit la Țintă sau Obstacol. Minim: ambele atingeri. Țintă: Yaay, sunet, dispare. Obstacol: Au, sunet. Complet: minim, plus după Au eroul revine la start, fără sunet repetat când stai lipit.
 
-De ce contează. Fără feedback, jocul pare mort. Sunetul și mesajul la coliziune fac jocul viu.
+De ce contează. Fără reacție, jocul pare mort. Sunetul și mesajul la atingere fac jocul viu.
 
 Primul pas pe ecran. Pe Țintă, din Detectare: atinge Erou. Hexagonul răspunde da sau nu. Îl pui în dacă atunci.
 
@@ -12,20 +12,20 @@ Al doilea pas pe ecran. Tot pe Țintă. Tab Sunete: un sunet scurt, de exemplu P
 
 Al treilea pas pe ecran. Pe Erou, în același forever cu cele patru taste. Tab Sunete: Bonk sau Oops. Dacă atinge Obstacol, atunci pornește Bonk, spune Au timp de zero virgulă cinci. Dacă stai lipit, sunetul se repetă. Asta o repari la Complet.
 
-Al patrulea pas pe ecran, pentru Complet. Imediat după spune Au: du-te la start, aceleași numere ca la resetul din lecția unu. Întoarce o sută optzeci nu mută eroul când folosești schimbă x y. Du-te la scoate eroul din obstacol. Un singur Au, fără spam.
+Al patrulea pas pe ecran, pentru Complet. Imediat după spune Au: du-te la start, aceleași numere ca la resetul din lecția unu. Întoarce o sută optzeci nu mută eroul când folosești schimbă x y. Du-te la scoate eroul din obstacol. Un singur Au, fără repetări.
 
 Greșeli frecvente. Dacă dacă e în afara forever, se verifică o singură dată. Dacă ai ales personajul greșit în dropdown, atinge verifică exact ce ai selectat. Dacă ascunde e pe Erou, greșești. Yaay e pe Țintă. Dacă Ținta nu reapare, lipsește arată la steag. Dacă Au la nesfârșit, lipsește du-te la start.
 
 Proiectul de azi. Țintă sau pericol.
 
-Minim înseamnă: erou pe patru direcții, plus ambele coliziuni, Yaay și Au. Complet înseamnă: minim, plus du-te la start după Au. Dacă rămâi în urmă, salvează la Minim.
+Minim înseamnă: erou pe patru direcții, plus ambele atingeri, Yaay și Au. Complet înseamnă: minim, plus du-te la start după Au. Dacă rămâi în urmă, salvează la Minim.
 
 În proiect, primul pas. Ai salvat ca L doi. Erou, Obstacol, Țintă pe scenă. Patru direcții.
 
 În proiect, al doilea pas. Pe Țintă: Yaay, sunet, ascunde, arată la steag. Pe Erou: Au și sunet. Salvezi.
 
-În proiect, al treilea pas, pentru Complet. După Au: du-te la start. Rulează fără spam. Salvezi din nou.
+În proiect, al treilea pas, pentru Complet. După Au: du-te la start. Rulează fără repetări. Salvezi din nou.
 
-Recapitulare. Atinge e da sau nu, cu personajul din listă. Reacția țintei e tot pe Țintă. Fără spam la obstacol: du-te la start. Numele fișierului are prenumele, numele, M trei și L doi.
+Recapitulare. Atinge e da sau nu, cu personajul din listă. Reacția țintei e tot pe Țintă. Fără repetare la obstacol: du-te la start. Numele fișierului are prenumele, numele, M trei și L doi.
 
 Succes la țintele și pericolele tale.

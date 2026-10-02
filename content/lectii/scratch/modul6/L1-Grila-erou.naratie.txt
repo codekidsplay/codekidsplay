@@ -1,0 +1,29 @@
+Lecția unu. Punte din M cinci și eroul pe grilă.
+
+Astăzi faci prima parte din Cube Crafter, o lume de cuburi în două dimensiuni. Nu este Minecraft oficial, este proiect Code Kids Play. Începi un proiect nou și îl salvezi ca Prenume, linie jos, Nume, linie jos, M șase, linie jos, Lume Cuburi. Folosești același fișier până la lecția zece.
+
+Obiectivul. La final, eroul stă pe o lume făcută din pătrățele egale, iar steagul verde pornește mereu curat. Minim: bifezi recapitularea din M cinci, eroul merge pe patru direcții cu pași de treizeci și doi, fixi, pe scenă sunt cel puțin douăsprezece blocuri, iar steagul pune totul la start. Complet: minim, plus grilă vizibilă sau aliniere perfectă pe celule, și vederea aleasă, de sus sau din lateral, scrisă pe foaie.
+
+De ce contează. Grila înseamnă că lumea e împărțită în pătrățele egale, ca o foaie cu pătrățele. În M cinci aveai săritură fluidă. Aici eroul sare o celulă la fiecare apăsare. Fără grilă, blocurile din lecțiile următoare ar sta strâmb.
+
+Primul pas pe ecran. Puntea din M cinci, zece minute, pe foaie. Bifezi: o variabilă vizibilă pe scenă, blocul dacă cu detectare, ce este o clonă, ce este o listă, și steagul verde ca pornire curată. Dacă ceva lipsește, recuperezi înainte de grilă.
+
+Al doilea pas pe ecran. Ideea, pe foaie. Lumea are celule de treizeci și doi pe treizeci și doi. Pozițiile sunt multipli de treizeci și doi. Câte celule încap pe lățime? Patru sute optzeci împărțit la treizeci și doi, adică cincisprezece. Pe înălțime, trei sute șaizeci împărțit la treizeci și doi dă unsprezece virgulă douăzeci și cinci, deci încap unsprezece rânduri întregi.
+
+Al treilea pas pe ecran. Eroul. Face un pătrat de aproximativ douăzeci și opt pe douăzeci și opt, puțin mai mic decât celula. Pe steag: du-te la x zero, y minus o sută șaizeci, apoi treci în față. Apoi patru scripturi separate. Când se apasă tasta săgeată dreapta: dacă x poziția mai mic decât două sute douăzeci și patru, schimbă x cu treizeci și doi. Stânga: dacă x poziția mai mare decât minus două sute douăzeci și patru, schimbă x cu minus treizeci și doi. La fel pentru sus și jos, cu y. Verifici: fiecare apăsare te mută exact o celulă, nu ieși din ecran, iar steagul te readuce la start.
+
+Al patrulea pas pe ecran. Blocurile lumii. Sprite nou, Bloc, pătrat de treizeci și doi pe treizeci și doi, cu două costume: lemn, maro, și piatră, gri. Variabile pentru toate sprite-urile: c x și c y. Pe steag: ascunde, setează c x la minus două sute douăzeci și patru. Repetă cincisprezece, pentru coloane: setează c y la o sută șaizeci, apoi repetă nouă, pentru rânduri: du-te la x c x, y c y, costum aleatoriu între unu și doi, creează o clonă a mea, schimbă c y cu minus treizeci și doi. La final, schimbă c x cu treizeci și doi. Când încep ca o clonă: arată. Verifici: apare un câmp de cincisprezece pe nouă blocuri, iar jos rămân două rânduri libere.
+
+Al cincilea pas pe ecran. Blocurile nu se traversează. În fiecare script de mers, după schimbă x sau y, adaugi: dacă atinge Bloc, mișcarea inversă.
+
+Greșeli frecvente. Pași inegali, de exemplu zece pe x și treizeci și doi pe y. Eroul prea mare. Lipsește mișcarea inversă. Schimbă c y în afara buclei interioare. Lipsește arată sub când încep ca o clonă.
+
+Proiectul de azi. Lumea pe grilă.
+
+Minim înseamnă: puntea, pași de treizeci și doi pe patru direcții, cel puțin douăsprezece blocuri, restart. Complet înseamnă: minim plus margine neagră pe costume sau vederea aleasă pe foaie. Dacă rămâi în urmă, salvează la Minim.
+
+În proiect, primul pas. Puntea și foaia. Al doilea pas. Eroul pe grilă și blocurile. Al treilea pas, pentru Complet. Una dintre variante. Salvezi.
+
+Recapitulare. Cuburile sunt celule, nu platformer fluid. Pasul fix este treizeci și doi, tot modulul. Același fișier până la lecția zece.
+
+Succes la lumea ta pe grilă.

@@ -14,6 +14,8 @@ Al treilea pas pe ecran. Schimbă efectul culoare de cel puțin două ori, cu a�
 
 Al patrulea pas pe ecran. Chiar sub steag, înainte de dialog: setează mărimea la o sută, anulează efectele grafice. Fără asta, la al doilea steag rămâne uriaș sau colorat straniu.
 
+Al cincilea pas pe ecran. Două personaje, pe rând. Scripturile pornesc deodată la steag. Reporterul spune: Cum te cheamă, pentru două secunde. Intervievatul începe cu așteaptă două, apoi spune: Mă cheamă, pentru două secunde. Intervievatul așteaptă cât vorbește reporterul, altfel vorbesc amândoi odată.
+
 Greșeli frecvente. Dacă vorbesc amândoi odată, lipsește așteaptă. Dacă rămâne uriaș, lipsește pe steag setează mărimea la o sută. Dacă ai pus pe steag modifică cu minus douăzeci ca să resetezi, nu ajunge mereu la o sută. Folosește setează.
 
 Proiectul de azi. Interviul.

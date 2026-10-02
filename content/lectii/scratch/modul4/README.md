@@ -10,22 +10,22 @@
 
 | # | Fișier | Titlu / proiect |
 |---|--------|-----------------|
-| 1 | [L1-Start-proiect.md](./L1-Start-proiect.md) | Motorul — „Motorul meu” |
+| 1 | [L1-Start-proiect.md](./L1-Start-proiect.md) | Baza jocului — „Baza jocului meu” |
 | 2 | [L2-Poveste.md](./L2-Poveste.md) | Poveste cu alegeri — `…_M4_L2` |
 | 3 | [L3-Quiz.md](./L3-Quiz.md) | Quiz pe runde — `…_M4_L3` |
 | 4 | [L4-Animatie-muzica.md](./L4-Animatie-muzica.md) | Clip pe acte (+ **Muzică** / **Stilou**) |
 | 5 | [L5-Labirint.md](./L5-Labirint.md) | Labirint pe nivele — `…_M4_L5` |
 | 6 | [L6-Proiect-liber.md](./L6-Proiect-liber.md) | Proiectul tău — versiunea finală |
-| 7 | [L7-Bug-polish-publicare.md](./L7-Bug-polish-publicare.md) | Depanare + polish + publicare |
+| 7 | [L7-Bug-polish-publicare.md](./L7-Bug-polish-publicare.md) | Depanare + finisări + publicare |
 | 8 | [L8-Felicitare.md](./L8-Felicitare.md) | Felicitare pe scene — `…_M4_L8` |
 | 9 | [L9-Prezentare-showcase.md](./L9-Prezentare-showcase.md) | Prezentare + **insignă** Scratch Creator |
-| 10 | [L10-Portofoliu-creator.md](./L10-Portofoliu-creator.md) | Portofoliu Creator (+ poartă spre M5) |
+| 10 | [L10-Portofoliu-creator.md](./L10-Portofoliu-creator.md) | Colecție de proiecte Creator (+ poartă spre M5) |
 
-**Flux:** L1→L6→L7 = **același** proiect · L2–L5, L8 = fișiere **separate** · L9 = prezentare + insignă · L10 = portofoliu Scratch (fără Python)  
+**Flux:** L1→L6→L7 = **același** proiect · L2–L5, L8 = fișiere **separate** · L9 = prezentare + insignă · L10 = colecție de proiecte Scratch (fără Python)  
 
 **Salvare:** `Prenume_Nume_M4_L1` … `M4_L10`
 
-**Vocabular:** română pentru 8–10 (`Sfârșitul jocului`, `insignă`, `prezentare`, `depanare`). Termenii englezi din Scratch (ex. *broadcast*) se explică o dată, pe scurt, ca `trimite` / `când primesc`.
+**Vocabular:** română pentru 8–10 (`Sfârșitul jocului`, `insignă`, `prezentare`, `reparare`). Termenii englezi din Scratch (ex. *broadcast*) se explică o dată, pe scurt, ca `trimite` / `când primesc`.
 
 ---
 
@@ -33,33 +33,33 @@
 
 | Idee | Unde |
 |------|------|
-| Motor + wow început (nivele **sau** multiplayer) | L1 |
+| Baza + ideea specială început (nivele **sau** 2 jucători) | L1 |
 | Poveste cu alegeri + mesaje | L2 |
 | Quiz pe runde + scor | L3 |
 | Clip pe acte + extensii Muzică/Stilou | L4 |
 | Labirint pe nivele + presiune | L5 |
-| Produs final (start/final/restart + wow închis) | L6 |
-| Depanare + polish + publicare | L7 |
+| Produs final (start/final/restart + ideea specială închis) | L6 |
+| Depanare + finisări + publicare | L7 |
 | Felicitare interactivă | L8 |
-| Challenge + prezentare + insignă | L9 |
-| Portofoliu Creator (+ poartă M5) | L10 |
+| Provocare + prezentare + insignă | L9 |
+| Colecție de proiecte Creator (+ poartă M5) | L10 |
 
-**Regulă:** fiecare oră se închide cu un **proiect jucabil / privibil** (Minim). Complet = finisaje + Bonus.
+**Regulă:** fiecare oră se închide cu un **proiect jucabil / vizibil** (Minim). Complet = finisaje + Bonus.
 
 ### Minim ridicat (ștachetă Creator)
 
 | Lecție | Minim (ștachetă) |
 |--------|------------------|
-| L1 | Motor + interacțiune + **wow A/B început pe scenă** |
+| L1 | Baza jocului + interacțiune + **ideea specială A/B început pe scenă** |
 | L2 | 2 alegeri + **2 finaluri** + 6 replici |
-| L3 | **6** întrebări + 2 runde + feedback C/G + final X din N |
-| L4 | 2 acte + 1 input + 30–60 s (extensii = Complet) |
+| L3 | **6** întrebări + 2 runde + reacție la corect/greșit + final X din N |
+| L4 | 2 acte + 1 acțiune a jucătorului + 30–60 s (extensii = Complet) |
 | L5 | L1+L2 diferite + trecere auto + vieți **sau** timer |
-| L6 | Start/final/restart + ≥2 sisteme + **nivele sau multiplayer** închis |
-| L7 | ≥3 bug-uri reparate + ≥4 polish + test coleg 5 min |
+| L6 | Start/final/restart + ≥2 sisteme + **nivele sau 2 jucători** închis |
+| L7 | ≥3 greșeli reparate + ≥4 finisări + test coleg 5 min |
 | L8 | 2 scene + 2 interacțiuni + mesaj personal + 2 sunete |
 | L9 | 1 feature **nouă** + prezentare + insignă |
-| L10 | ≥3 proiecte pe foaie + copie `M4_L10` + 1 polish + 1 feedback coleg |
+| L10 | ≥3 proiecte pe foaie + copie `M4_L10` + 1 finisare + 1 părere de la coleg |
 
 ---
 

@@ -14,7 +14,7 @@ Al treilea pas pe ecran. Pe Scenă adaugi două fundaluri, de exemplu zi și noa
 
 Al patrulea pas pe ecran. Chiar sub steag, înainte de forever: comută fundalul la start, anulează efectele dacă le folosești, și la Complet oprește toate sunetele. Opțional, un spune scurt cu regula, pentru două secunde, apoi bucla preia controlul.
 
-Greșeli frecvente. Dacă mereu același drum, ai pus dacă altfel o singură dată, fără forever. Dacă mesajele se blochează, ai folosit spune pentru secunde în forever. Folosește spune fără durată. Dacă ai două dacă separate, azi vrem un singur dacă altfel. Dacă ai operator verde în hexagon, scoate-l. Doar Detectare, tasta. La Complet, după sunet: așteaptă zero virgulă cinci, ca să nu spam-uiască.
+Greșeli frecvente. Dacă mereu același drum, ai pus dacă altfel o singură dată, fără forever. Dacă mesajele se blochează, ai folosit spune pentru secunde în forever. Folosește spune fără durată. Dacă ai două dacă separate, azi vrem un singur dacă altfel. Dacă ai operator verde în hexagon, scoate-l. Doar Detectare, tasta. La Complet, după sunet: așteaptă zero virgulă cinci, ca să nu se repete sunetul.
 
 Proiectul de azi. Zi sau noapte.
 

@@ -19,6 +19,11 @@ const MODUL_FOLDER: Record<string, string> = {
   m25: 'roblox/modul2',
   m26: 'roblox/modul3',
   m27: 'roblox/modul4',
+  m29: 'tinkercad/modul1',
+  m30: 'tinkercad/modul2',
+  m31: 'tinkercad/modul3',
+  m32: 'tinkercad/modul4',
+  m33: 'tinkercad/modul5',
 }
 
 function contentRoot() {

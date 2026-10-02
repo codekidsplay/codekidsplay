@@ -10,11 +10,11 @@ Primul pas pe ecran. Reguli. Eroul se mișcă cu tastele, forever plus tasta e a
 
 Al doilea pas pe ecran. Ordinea bună. Fundal labirint, pereții o culoare clară. Erou mic, start pe zonă sigură. La steag: du-te la start, anulează efectele, oprește sunetele, și dacă ai, setează scor sau vieți. Forever: întâi patru direcții, schimbă x și y, apoi verificări. Dacă atinge culoarea perete, du-te la start. Ieșirea e personaj sau culoare diferită de perete.
 
-Al treilea pas pe ecran. Schelet Minim. Un perete detectat, pipetă pe pixelul de perete. O ieșire: spune Ai scăpat, pentru o secundă, pornește sunetul, stop all. Rulează o dată cap-coadă. Stop all e soluția simplă, fără spam. Variabila tip alarma activă e doar dacă la Bonus ai două ieșiri.
+Al treilea pas pe ecran. Schelet Minim. Un perete detectat, pipetă pe pixelul de perete. O ieșire: spune Ai scăpat, pentru o secundă, pornește sunetul, stop all. Rulează o dată cap-coadă. Stop all e soluția simplă, fără repetări. Variabila tip alarma activă e doar dacă la Bonus ai două ieșiri.
 
 Al patrulea pas pe ecran, pentru Complet. Completezi labirintul: mai mulți pereți, coridoare clare. Adaugi cel puțin un extra: sunet la victorie, sau vieți, sau o monedă cu scor plus unu. Un coleg poate termina fără explicație.
 
-Greșeli frecvente. Dacă peretele nu se detectează, re-pipetează. Dacă startul e pe perete, mori instant. Mută startul. Dacă viteza e prea mare, treci prin pereți. Coboară la trei sau patru. Dacă victorie spam, ai dacă ieșire în forever fără stop all. Pune stop all imediat. „Am scris” pe foaie nu înseamnă e gata. Rulează steagul.
+Greșeli frecvente. Dacă peretele nu se detectează, re-pipetează. Dacă startul e pe perete, mori imediat. Mută startul. Dacă viteza e prea mare, treci prin pereți. Coboară la trei sau patru. Dacă mesajul de victorie se repetă, ai dacă ieșire în forever fără stop all. Pune stop all imediat. „Am scris” pe foaie nu înseamnă e gata. Rulează steagul.
 
 Proiectul de azi. Labirintul meu.
 

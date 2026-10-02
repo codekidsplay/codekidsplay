@@ -4,7 +4,7 @@ Astăzi faci o felicitare interactivă: scene, mesaj personalizat, click sau tas
 
 Obiectivul. Un coleg deschide felicitarea singur și ajunge la mesajul final. Minim: cel puțin două scene, două personaje sau personaj plus butoane, mesaj personalizat, două interacțiuni, animație pe cel puțin o scenă, sunet pe scena-cheie și la final, steag egal scena unu. Complet: minim, plus trei scene, sau alegere formal ori amuzant cu două mesaje, sau Trimite din nou, sau nume destinatar.
 
-De ce contează. Felicitarea e un cadou interactiv, nu un singur spune, La mulți ani. Exersezi scene, mesaje și polish scurt, utile și la trailer-ul proiectului Creator.
+De ce contează. Felicitarea e un cadou interactiv, nu un singur spune, La mulți ani. Exersezi scene, mesaje și finisări scurt, utile și la trailer-ul proiectului Creator.
 
 Primul pas pe ecran. Pe foaie, cam zece minute. Pentru cine: prieten, familie, coleg. Mesajul: două până la patru fraze, personalizat. Scena unu, intro. Scena doi, surpriză sau mesaj. Opțional scena trei. Cele două interacțiuni: de exemplu click Deschide, tasta spațiu Continuă.
 

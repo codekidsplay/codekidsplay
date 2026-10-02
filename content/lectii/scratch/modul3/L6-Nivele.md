@@ -10,7 +10,7 @@
 
 ## Obiectiv
 La finalul orei folosești o variabilă <span style="color:#FF8C1A;font-weight:700">nivel</span> ca jocul să **treacă singur** de la nivelul 1 la nivelul 2, cu fundal nou, ținte readuse pe scenă și dificultate mai mare.  
-**Minimum:** **o** trecere nivel 1 → nivel 2 (fundal + scor resetat + stele `arată` via mesaj) — fără spam.  
+**Minim:** **o** trecere nivel 1 → nivel 2 (fundal + scor resetat + stele `arată` via mesaj) — fără repetări.  
 **Ținta orei (Complet):** Minim + nivelul 2 vizibil **mai dificil** + `nivel` pe scenă + mesaj „Nivelul 2!” + final pe nivelul 2.
 
 ## De ce contează
@@ -24,7 +24,7 @@ Nivelele dau un sentiment de progres: „am trecut de nivelul 1” e o mică vic
 | Minute | Ce facem |
 |--------|----------|
 | 0–10 | Recap L3–L5 + blocul **ȘI** + mesajul `Nivelul 2` |
-| 10–30 | Variabila `nivel` + 2 fundaluri + trecerea cu `și` — checkpoint-uri |
+| 10–30 | Variabila `nivel` + 2 fundaluri + trecerea cu `și` — mini-verificări |
 | 30–100 | Stelele reapar + nivelul 2 mai greu + final (vezi **Minim vs Complet**) |
 | 100–120 | Recap, bonus, salvare |
 
@@ -71,7 +71,7 @@ Nivelele dau un sentiment de progres: „am trecut de nivelul 1” e o mică vic
 ### 3) Trecerea la nivelul 2 *(nucleul Minim)*
 *Garda: verifici trecerea **doar** pe nivelul 1 — altfel „treci” la infinit.*
 
-1. Pe **Erou** (sau Scenă), în `forever`:  
+1. Pe **Erou**, în `forever`:  
    <span style="color:#FFAB19;font-weight:700">dacă</span>  
    <span style="color:#59C059;font-weight:700">(scor) = (3)</span>  
    <span style="color:#59C059;font-weight:700">și</span>  
@@ -85,7 +85,7 @@ Nivelele dau un sentiment de progres: „am trecut de nivelul 1” e o mică vic
    <span style="color:#E6A800;font-weight:700">trimite</span> `Nivelul 2` →  
    <span style="color:#9966FF;font-weight:700">spune</span> `Nivelul 2!` timp de `2` secunde  
    *(`spune` pe Erou, nu pe Scenă. **`setează timp la 20`** — dacă ții cronometrul din L5: altfel poți intra pe nivelul 2 cu 2 s pe ceas și pierzi imediat.)*
-3. **De ce `nivel = 1` în ȘI:** după trecere, `nivel` e 2 → condiția e falsă → **fără spam**.
+3. **De ce `nivel = 1` în ȘI:** după trecere, `nivel` e 2 → condiția e falsă → **fără repetări**.
 
 **Încearcă tu — trecerea (3–4 min)**  
 - [ ] Prinzi **3** obiecte pe nivelul 1 → fundal 2 + „Nivelul 2!” + scor 0  
@@ -141,7 +141,7 @@ Final de joc (pe **Erou**):
 1. **Fundalul 2, dar zero stele** — uiți `trimite Nivelul 2` / `când primesc` → `arată` pe **fiecare** Țintă.  
 2. **Fundalul se schimbă la infinit** — lipsește garda `nivel = 1` din blocul **ȘI**.  
 3. **Hexagonul ȘI e greșit asamblat** — ambele condiții (`scor = …` și `nivel = …`) stau **în** cele două sloturi ale blocului verde `și`.  
-4. **Scorul nu se resetează** la trecere — treci instant „gata” pe nivelul 2.  
+4. **Scorul nu se resetează** la trecere — treci imediat „gata” pe nivelul 2.  
 5. **Timpul nu se resetează** (cronometru din L5) — intri pe nivelul 2 cu 1–2 s pe ceas și pierzi imediat; la trecere: **`setează timp la 20`**.  
 6. **Doar 2 stele pe nivelul 2** — cele neprinse din nivelul 1; toate trebuie `arată` la mesaj.  
 7. **Mesaj cu nume diferit** — `Nivelul 2` vs `nivel 2` vs `Nivel 2` — trebuie **identic**.  
@@ -158,7 +158,7 @@ Salvat: `Prenume_Nume_M3_L6`
 
 | | Ce trebuie |
 |--|------------|
-| **Minim („am reușit”)** | `nivel` + 2 fundaluri + `dacă scor = 3 și nivel = 1` → nivel 2, scor 0, **timp 20** (din L5), fundal 2, **`trimite Nivelul 2`**, stelele `arată` — fără spam |
+| **Minim („am reușit”)** | `nivel` + 2 fundaluri + `dacă scor = 3 și nivel = 1` → nivel 2, scor 0, **timp 20** (din L5), fundal 2, **`trimite Nivelul 2`**, stelele `arată` — fără repetări |
 | **Complet (ținta orei)** | Minim + nivelul 2 **mai greu** (o opțiune din tabel) + final `scor = 5 și nivel = 2` + mesaj „Nivelul 2!” |
 
 Dacă rămâi în urmă: **termină întâi Minim, apoi salvează.**  

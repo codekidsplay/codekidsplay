@@ -10,7 +10,7 @@
 
 ## Obiectiv
 La finalul orei ai îmbunătățit labirintul, l-ai prezentat, și ai închis Modulul 2.  
-**Minimum:** **1** îmbunătățire din A–F + restart curat + prezentare → **e suficient pentru insignă**.  
+**Minim:** **1** îmbunătățire din A–F + restart curat + prezentare → **e suficient pentru insignă**.  
 **Ținta orei (Complet):** **2** îmbunătățiri din A–F + prezentare + salvare.
 
 ## De ce contează
@@ -24,12 +24,12 @@ Insigna **Logic Explorer** = logica (dacă, detectare, variabile, mesaje) e la a
 | Minute | Ce facem |
 |--------|----------|
 | 0–10 | Obiectiv + **Minim vs Complet** + reguli prezentare |
-| 10–25 | Pas cu pas: lista A–F + checkpoint-uri (**Încearcă tu**) |
+| 10–25 | Pas cu pas: lista A–F + mini-verificări (**Încearcă tu**) |
 | 25–55 | **Completare** pe labirint (lucru individual) |
 | 55–75 | Prezentări (~1–2 min × max. **10** elevi) |
 | 75–120 | Quiz recap + **insignă** + ce urmează în M3 (+ Bonus dacă e timp) |
 
-*(Repere profesor: la ~40 min fiecare copil are **cel puțin 1** îmbunătățire lipită și testată — checkpoint Minim; la ~55 min — gata de steag curat pentru prezentare, indiferent dacă e Minim sau Complet.)*
+*(Repere profesor: la ~40 min fiecare copil are **cel puțin 1** îmbunătățire lipită și testată — verificare Minim; la ~55 min — gata de steag curat pentru prezentare, indiferent dacă e Minim sau Complet.)*
 
 *(Grupa ≤10: prezentările nu umplu ora — nucleul e **completarea L9**. Dacă prezentările se termină la ~70 min → Bonus / quiz mai din timp.)*
 
@@ -59,11 +59,11 @@ Nu refaci de la zero. Deschizi „Labirintul meu” și **adaugi**.
 ### 2) Restart curat + prima îmbunătățire
 1. Înainte să adaugi: verifică steagul — reset **complet**:  
    loc start → efecte anulate → sunete oprite → scor/vieți la 0 / 3 (dacă există)  
-2. Lipesti **1** upgrade din listă  
+2. Lipești **1** upgrade din listă  
 3. Steag de **două** ori — labirintul încă se poate termina  
 
 **Încearcă tu — 1 îmbunătățire gata și testată (mijlocul intervalului, ~min 40)**  
-*(Checkpoint Minim — nu începe a doua până aici.)*
+*(Verificare Minim — nu începe a doua până aici.)*
 
 - [ ] **1** din A–F e **lipită** și rulează pe steag  
 - [ ] Steag de două ori → restart curat (fără haos)  
@@ -157,7 +157,7 @@ La min **55** încep prezentările **oricum**.
 
 ## Bonus (dacă ai terminat Complet / după prezentare)
 - [ ] A 3-a îmbunătățire  
-- [ ] Schimb cu un coleg: joacă 3 min, notează 1 bug  
+- [ ] Schimb cu un coleg: joacă 3 min, notează 1 greșeală  
 - [ ] Pe foaie: **1 idee** pentru Modulul 3 (joc cu scor / nivele / clone)
 
 ## Recapitulare rapidă

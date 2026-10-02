@@ -1,0 +1,27 @@
+Lecția zece. Asamblare și prezentare.
+
+Astăzi termini placa, o verifici cu o listă și prezinți cartierul în patruzeci și cinci de secunde. Plăcile tuturor se așază una lângă alta și formează orașul. Deschizi proiectul din lecția nouă, faci o copie cu Duplicate și o redenumești: Prenume, linie jos, Nume, linie jos, T patru, linie jos, L zece. Proiectul se numește Cartierul meu, gata de tur.
+
+Obiectivul. La final placa ta e gata de tur: arată bine, e la scară și o poți prezenta fără ajutor. Minim: placă de o sută cincizeci pe o sută cincizeci pe trei, cu cel puțin patru elemente din cele făcute, de exemplu o casă, o clădire publică, străzile, un pod sau parcul. Plus verificarea cu lista și o prezentare de patruzeci și cinci de secunde. Complet: minim, plus toate cele șase tipuri de elemente: case, bloc, clădire publică, străzi, râu cu pod și parc. Plus numele cartierului scris cu Text și prezentarea fără foaie.
+
+De ce contează. Plăcile tuturor au aceeași mărime, o sută cincizeci de milimetri, și aceeași scară, un metru egal doi milimetri. Străzile pornesc din mijlocul fiecărei laturi. De aceea, dacă pui patru plăci una lângă alta, străzile se continuă de la o placă la alta, ca într-un oraș adevărat. Lipirea și printarea plăcilor se fac după ore, opțional.
+
+Primul pas pe ecran. Lista de verificare, cu creionul, în cincisprezece minute. Placa are o sută cincizeci pe o sută cincizeci pe trei milimetri. Verifici cu Ruler, sau dai click pe ea și citești mărimile de la pătratele albe. Cele patru zone sunt la locul lor, cu șaisprezece milimetri între ele. Străzile sunt centrate pe placă și ajung la margini. Casele, blocul și clădirea publică stau pe zone: nu plutesc și nu sunt în aer. Nimic nu iese peste marginea plăcii. Râul trece prin zona de parc și podul stă pe ambele maluri, dacă l-ai făcut. Numele fișierului are T patru, linie jos, L zece.
+
+Al doilea pas pe ecran. Finisajul, în douăzeci de minute. Din View Cube, sus în stânga, privești placa din toate părțile: Top, Front și Right. Repari ce nu e bine: piesă în aer, piesă care se suprapune, culoare neclară. Cu Color: asfalt gri închis, trotuare gri deschis, apă albastră, copaci verzi, acoperișuri roșii sau maro.
+
+Al treilea pas pe ecran. Numele cartierului. Cu Text, de exemplu Cartierul Nord, pe zona de centru, lângă marginea plăcii, ridicat la patru milimetri. Nu în gol, pentru că acolo e asfalt. Apoi un N de la Nord, pe zona de locuințe, lângă marginea din spate, la patru milimetri, dacă nu ai pus unul în lecția unu.
+
+Al patrulea pas pe ecran. Prezentarea, pe foaie, în zece minute. Scrii patru rânduri scurte. Primul: Cartierul meu se numește, și numele. Al doilea: Aici sunt, și trei lucruri, de exemplu școala, podul, parcul. Al treilea: Scara este un metru egal doi milimetri, deci o mașină de cinci metri are zece milimetri. Al patrulea: Cel mai greu a fost, sau Sunt mândru de, și ce simți.
+
+Al cincilea pas pe ecran. Turul orașului. Fiecare prezintă patruzeci și cinci de secunde, iar profesorul cronometrează. Plăcile se așază împreună. Fizic, pe masă, dacă s-au printat, sau pe ecran, ca imagini puse în grilă, două pe două. Străzile de la marginea unei plăci trebuie să se continue pe placa vecină.
+
+Greșeli frecvente. Refaci tot orașul: azi doar finisezi și prezinți. Prezentare prea lungă: patruzeci și cinci de secunde înseamnă patru rânduri scurte. Placa nu are o sută cincizeci de milimetri: nu se mai potrivește cu a colegilor, deci verifici cu Ruler. Străzile nu ajung la margine: vecinul nu are cu ce să le lege. Piese în aer: verifici din Front. Text pe stradă: numele cartierului stă pe zona de centru, la patru milimetri, nu pe asfalt și nu în gol.
+
+Proiectul de azi. Cartierul meu, gata de tur.
+
+Minim înseamnă: placa cu patru elemente, lista bifată și prezentarea de patruzeci și cinci de secunde. Complet înseamnă: minim, plus toate cele șase tipuri de elemente, numele cu Text și prezentarea fără foaie. La final completezi formularul de păreri și salvezi cu numele Prenume, linie jos, Nume, linie jos, T patru, linie jos, L zece.
+
+Recapitulare. Modulul patru înseamnă scară comună, placă comună și un oraș din multe cartiere. Străzile pornesc din mijlocul laturilor, ca plăcile să se lege. Prezentarea are patru rânduri scurte, în patruzeci și cinci de secunde. Urmează Design Pro, Modulul cinci.
+
+Succes la turul cartierului tău.

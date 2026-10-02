@@ -2,16 +2,16 @@
 **Modulul 4 · Antrenament (fișier separat)**  
 **Code Kids Play · Scratch Creator**
 
-> Azi faci un **clip pe 2 acte** (~30–60 s): sincron sunet + mișcare + **input** care contează.  
+> Azi faci un **clip pe 2 acte** (~30–60 s): sincron sunet + mișcare + **acțiune** care contează.  
 > **Completare (după nucleu):** extensii **Muzică** și/sau **Stilou** — singurele extensii din tot curriculumul CKP Scratch.  
 > Fișier **nou**: `Prenume_Nume_M4_L4` · proiect: **„Clip pe acte”**
 
 ---
 
 ## Obiectiv
-La finalul orei stai pe scaun: clipul **rulează**, durează 30–60 s, iar inputul e clar fără explicații.  
-**Minimum (nucleu):** ≥2 personaje animate · **2 acte** · sunet din tab **Sunete** · **1 input** obligatoriu · stop / mesaj final · steag = Act 1 · sincron **fără** blocaj.  
-**Ținta orei (Complet):** Minim + **extensia Muzică SAU Stilou** folosită pe bune **sau** al 2-lea input care schimbă finalul.
+La finalul orei stai pe scaun: clipul **rulează**, durează 30–60 s, iar acțiunea e clar fără explicații.  
+**Minim (nucleu):** ≥2 personaje animate · **2 acte** · sunet din tab **Sunete** · **1 acțiune a jucătorului** obligatoriu · stop / mesaj final · steag = Act 1 · sincron **fără** blocaj.  
+**Ținta orei (Complet):** Minim + **extensia Muzică SAU Stilou** folosită pe bune **sau** a 2-a acțiune a jucătorului care schimbă finalul.
 
 ## De ce contează
 Un clip Creator nu e doar „personaje care se mișcă”: are **acte** (ca nivelele de scenă) și un moment în care **tu** schimbi ceva.  
@@ -23,8 +23,8 @@ Extensiile **nu** înlocuiesc logica — îmbogățesc sunetul (Muzică) sau las
 
 | Minute | Ce facem |
 |--------|----------|
-| 0–10 | Clip vs clip cu acte + demo input + **regula anti-block** |
-| 10–15 | Timeline **3 pași** (5 min max — foaie sau direct Scratch) |
+| 0–10 | Clip vs clip cu acte + demo acțiune + **regula „fără blocare”** |
+| 10–15 | Ordinea momentelor **3 pași** (5 min max — foaie sau direct Scratch) |
 | 15–90 | **Nucleu** (fără extensii încă) |
 | 90–110 | **Completare** Muzică / Stilou (cine a terminat nucleul) |
 | 110–120 | Rulează pe scaun + temă |
@@ -41,17 +41,17 @@ Extensiile **nu** înlocuiesc logica — îmbogățesc sunetul (Muzică) sau las
 
 ## Pas cu pas
 
-### 1) Timeline în 3 pași *(5 min max)*
+### 1) Ordinea în 3 pași *(5 min max)*
 Nu scenarii lungi. Doar:
 
 1. **Act 1** — ce se mișcă / ce sunet (~15–30 s)  
-2. **Input** — spațiu sau click → ce se schimbă  
+2. **Acțiune** — spațiu sau click → ce se schimbă  
 3. **Act 2 + final** — fundal / mesaj „Act 2” · stop clar  
 
 Durata totală țintă: **30–60 s**.
 
 **Încearcă tu (5 min)**  
-- [ ] Știi Act 1 / input / Act 2  
+- [ ] Știi Act 1 / acțiune / Act 2  
 - [ ] Treci la Scratch  
 
 ### 2) Nucleu — personaje + acte
@@ -64,11 +64,11 @@ Durata totală țintă: **30–60 s**.
 - [ ] Se vede clar trecerea Act 1 → Act 2  
 - [ ] Steag → mereu Act 1  
 
-### 3) Sincron *(regula de aur — anti-block)*
+### 3) Sincron *(regula de aur — fără blocare)*
 **Interzis la Minim:** <span style="color:#9966FF;font-weight:700">spune</span> … **timp de** X **în interiorul** buclei `forever` de mișcare — blochează tot clipul.
 
 **Folosește în schimb (alege stilul):**  
-- <span style="color:#FFAB19;font-weight:700">așteaptă</span> `X` pe un lanț de scripturi (timeline), **sau**  
+- <span style="color:#FFAB19;font-weight:700">așteaptă</span> `X` pe un lanț de scripturi (ordinea momentelor), **sau**  
 - <span style="color:#E6A800;font-weight:700">trimite</span> `replica_2` / `Act_2` → pe alt personaj: <span style="color:#E6A800;font-weight:700">când primesc</span> → următorul moment  
 - Mișcarea poate rula **paralel** (alt script); dialogul / pauza nu blochează `forever`-ul de mișcare
 
@@ -81,14 +81,14 @@ Durata totală țintă: **30–60 s**.
 - [ ] Personajele încă se mișcă în timp ce „povestea” avansează (sau pauza e intenționată pe lanț)  
 - [ ] Sunetul e pe bune pe scenă  
 
-### 4) Input obligatoriu *(Minim)*
+### 4) Acțiune obligatorie a jucătorului (apeși ceva) *(Minim)*
 1. **Spațiu** sau **click pe personaj** — fără el, Act 2 **nu** începe **sau** scena se schimbă vizibil  
-2. Preferat: input → `trimite Act_2` (clar, ca nivelele)  
-3. Inputul e **în** flux (nu decorativ)
+2. Preferat: acțiune → `trimite Act_2` (clar, ca nivelele)  
+3. Acțiunea e **în** flux (nu decorativ)
 
-**Încearcă tu — input (10 min)**  
-- [ ] Fără input, ceva **nu** se întâmplă  
-- [ ] Cu input, schimbarea e clară  
+**Încearcă tu — acțiune (10 min)**  
+- [ ] Fără acțiune, ceva **nu** se întâmplă  
+- [ ] Cu acțiune, schimbarea e clară  
 
 ### 5) Completare — extensii *(Complet sau Bonus)*
 
@@ -105,18 +105,18 @@ Durata totală țintă: **30–60 s**.
 - [ ] Urmă vizibilă pe Act 1 sau 2  
 - [ ] La steag / Act nou: `șterge tot`  
 
-**Complet** = nucleu + (Muzică **sau** Stilou **sau** al 2-lea input care schimbă finalul).
+**Complet** = nucleu + (Muzică **sau** Stilou **sau** a 2-a acțiune a jucătorului care schimbă finalul).
 
 ---
 
 ## Greșeli frecvente
 1. **`spune … timp de` în `forever` de mișcare** — totul îngheață; folosește `așteaptă` pe lanț sau `trimite` / `când primesc`.  
 2. **Extensii înaintea nucleului** — întâi Sunet clasic; abia apoi Muzică/Stilou.  
-3. **Input decorativ** — apeși spațiu și nu se schimbă nimic.  
+3. **Acțiune decorativ** — apeși spațiu și nu se schimbă nimic.  
 4. **Acte = același fundal** — Act 2 trebuie **vizibil** diferit.  
-5. **Stilou fără clear** — al 2-lea steag e plin de linii vechi.  
+5. **Stilou fără „șterge tot”** — al 2-lea steag e plin de linii vechi.  
 6. **Clip de 5 secunde** — Minim cere 30–60 s.  
-7. **Prea mult pe foaie** — 5 min timeline, restul Scratch.
+7. **Prea mult pe foaie** — 5 min ordinea momentelor, restul Scratch.
 
 ---
 
@@ -127,17 +127,17 @@ Salvat: `Prenume_Nume_M4_L4`
 
 | | Ce trebuie |
 |--|------------|
-| **Minim** | 2 personaje · 2 acte · sunet · 1 input · 30–60 s · sync fără block · restart Act 1 |
-| **Complet** | Minim + Muzică **sau** Stilou **sau** al 2-lea input pe final |
+| **Minim** | 2 personaje · 2 acte · sunet · 1 acțiune a jucătorului · 30–60 s · timpi potriviți fără blocare · restart Act 1 |
+| **Complet** | Minim + Muzică **sau** Stilou **sau** a 2-a acțiune a jucătorului pe final |
 
-### Pasul 1 — Timeline (5 min)
-- [ ] Act 1 / input / Act 2  
+### Pasul 1 — Ordinea momentelor (5 min)
+- [ ] Act 1 / acțiune / Act 2  
 
 ### Pasul 2 — Nucleu (Minim)
 - [ ] Checklist Minim · rulează pe scaun  
 
 ### Pasul 3 — Completare (Complet)
-- [ ] Muzică / Stilou / al 2-lea input  
+- [ ] Muzică / Stilou / a 2-a acțiune a jucătorului  
 
 ---
 
@@ -147,7 +147,7 @@ Salvat: `Prenume_Nume_M4_L4`
 - [ ] Costum pe ritmul notei (`așteaptă` fin)  
 
 ## Recapitulare rapidă
-1. Timeline 3 pași → Scratch  
+1. Ordinea momentelor 3 pași → Scratch  
 2. Sincron = `așteaptă` / mesaje — **nu** `spune timp de` în `forever` de mișcare  
 3. Extensii = după nucleu  
 4. Fișier: **`Prenume_Nume_M4_L4`**
@@ -155,12 +155,12 @@ Salvat: `Prenume_Nume_M4_L4`
 ## Schema pe scurt *(pe foaie)*
 
 **Nucleu**  
-steag → Act 1 (mișcare || sunet) → **input** → `trimite Act_2` → Act 2 → final  
+steag → Act 1 (mișcare || sunet) → **acțiune** → `trimite Act_2` → Act 2 → final  
 
-**Anti-block**  
+**Fără blocare**  
 mișcare în `forever` · dialog/pauze pe **alt** script cu `așteaptă` sau `când primesc`  
 
-**Input**  
+**Acțiune**  
 spațiu / click → `trimite Act_2`  
 
 **Stilou / Muzică** — doar după nucleu  
@@ -171,4 +171,4 @@ spațiu / click → `trimite Act_2`
 - Când adaugi Muzică/Stilou?
 
 ## Temă
-Opțional: al 2-lea input în Act 2 **sau** jingle / urmă. Urmează L5 = **labirint pe nivele**.
+Opțional: a 2-a acțiune a jucătorului în Act 2 **sau** jingle / urmă. Urmează L5 = **labirint pe nivele**.

@@ -1,0 +1,29 @@
+Lecția cinci. Puzzle-ul meu.
+
+Astăzi faci un cub tăiat în două piese care se potrivesc: una are un dop, cealaltă are un locaș pe măsură. Fișier nou: Prenume, linie jos, Nume, linie jos, T trei, linie jos, L cinci. Proiectul se numește Puzzle-ul meu.
+
+Obiectivul. La final ai un cub de patruzeci pe patruzeci pe patruzeci, din două piese separate: jos, piesa cu dop, sus, piesa cu locaș în care intră dopul, cu joc. Minim: piesa A e un cub de patruzeci pe patruzeci pe douăzeci, plus un dop de șaisprezece pe șaisprezece pe zece. Piesa B e un cub de patruzeci pe patruzeci pe douăzeci, din care scazi un locaș de șaisprezece virgulă patru pe șaisprezece virgulă patru, adică zero virgulă doi milimetri joc pe parte. B stă pe A, dopul intră în locaș. Complet: minim, plus un al doilea dop, mai mic, de opt pe opt pe zece, care face ca piesele să se potrivească într-un singur fel, plus culori diferite.
+
+De ce contează. O îmbinare reală are nevoie de joc: locașul e puțin mai mare decât dopul. Dacă ar fi exact la fel de mare, la printare piesele nu ar intra una în alta. Un dop asimetric arată cum pui piesa: nu se poate întoarce greșit. Jocul îl scrii cu numere, nu îl tragi cu mouse-ul.
+
+Primul pas pe ecran. Create new design, cu numele fișierului. Snap Grid pe unu milimetru, jos în dreapta.
+
+Al doilea pas pe ecran. Piesa A. Un Box de patruzeci pe patruzeci pe douăzeci. Un Box de șaisprezece pe șaisprezece pe zece, dopul. Selectezi dopul și cubul, tasta L, mijloc pe cele două direcții de pe plan. Ridici dopul cu conul negru la douăzeci de milimetri, pe fața de sus. Control și G.
+
+Al treilea pas pe ecran. Piesa B. Un Box de patruzeci pe patruzeci pe douăzeci. Selectezi B și A, L, mijloc pe cele două direcții. Ridici B cu conul negru la douăzeci de milimetri. Stă exact pe A, ca un cub întreg de patruzeci.
+
+Al patrulea pas pe ecran. Locașul. Un Box de șaisprezece virgulă patru pe șaisprezece virgulă patru pe doisprezece, Hole. Scrii zecimala cum cere Tinkercad, cu punct sau cu virgulă. Selectezi locașul și piesa A, L, mijloc pe cele două direcții. Ridici locașul la nouăsprezece milimetri. Taie B de la douăzeci în sus, unsprezece milimetri adâncime, și iese un milimetru sub B. Din Front, locașul înconjoară dopul, cu loc pe lateral. Selectezi locașul și B, dar nu și A, apoi Control și G.
+
+Al cincilea pas pe ecran. Selectezi B și o muți șaizeci de milimetri lateral, în aer, și e în regulă. Sunt două piese. În View Cube, Front: dopul la A, locașul la B. Muți B șaizeci de milimetri înapoi, deasupra lui A. Dopul intră în locaș.
+
+Al șaselea pas pe ecran, pentru Complet. Piesa A, Control, Shift și G. Un Box de opt pe opt pe zece, dopul mic, aliniat pe cubul A pe cele două direcții, mutat paisprezece milimetri spre dreapta și ridicat la douăzeci. Cubul A și cele două dopuri, Control și G. Piesa B, Control, Shift și G. Un locaș nou de opt virgulă patru pe opt virgulă patru pe doisprezece, Hole, aliniat cu cubul B, mutat paisprezece spre dreapta, ca dopul mic, și ridicat la nouăsprezece. Selectezi B și cele două locașuri, Control și G. La Color, A o culoare, B alta. Rotești B o sută optzeci de grade, pe loc: dopul mic nu mai are locaș, deci piesele se potrivesc într-un singur fel.
+
+Greșeli frecvente. Piesa B s-a lipit de A: locașul se grupează doar cu B. Locașul nu taie: nu e Hole sau n-ai dat Group. Dopul nu intră: folosește șaisprezece virgulă patru, nu șaisprezece. Jocul e prea mare: dacă faci douăzeci, piesele se mișcă prea tare. La al doilea dop piesa nu se potrivește: locașul mic nu e la paisprezece milimetri de centru sau nu e la nouăsprezece înălțime.
+
+Proiectul de azi. Puzzle-ul meu.
+
+Minim înseamnă: A cu dop, B cu locaș, B pe A, două piese separate. Complet înseamnă: minim, plus dopul mic și locașul de opt virgulă patru, un singur fel de potrivire și culori.
+
+Recapitulare. Dop în A, locaș în B: îmbinare. Locașul e dopul plus zero virgulă patru milimetri, adică zero virgulă doi pe parte. Locașul se grupează numai cu piesa lui.
+
+Succes la puzzle-ul tău.

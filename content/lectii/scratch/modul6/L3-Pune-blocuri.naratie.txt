@@ -1,0 +1,31 @@
+Lecția trei. Pune blocuri.
+
+Astăzi construiești. Dacă ai resursă mai mare decât zero, pui un bloc pe grilă, în celula din fața eroului. Continui același fișier: Prenume, linie jos, Nume, linie jos, M șase, linie jos, Lume Cuburi.
+
+Obiectivul. Minim: tasta E pune bloc, doar cu resursă cel puțin unu, blocul stă exact pe grilă, în celula din fața eroului, se consumă unu din inventar, și poți construi un adăpost mic din cel puțin patru blocuri. Complet: minim, plus nu pui peste erou sau peste alt bloc, sau selectezi tipul unu sau doi, sau un indicator care arată tipul activ.
+
+De ce contează. Dacă doar spargi, e doar farm. Alinierea pe grilă face lumea să arate a cuburi, nu a haos.
+
+Primul pas pe ecran. Controalele, pe foaie. Săgețile merg. Clic stânga sparge. Tasta E pune blocul din fața eroului. Fața eroului este ultima direcție în care a mers. O ținem minte în două variabile, d x și d y. După ce apeși stânga, d x este minus unu și d y este zero.
+
+Al doilea pas pe ecran. Direcția eroului. Variabile pentru toate sprite-urile: d x, d y, t x și t y. La fiecare din cele patru scripturi de mers adaugi la început setează d x și setează d y. Dreapta: unu și zero. Stânga: minus unu și zero. Sus: zero și unu. Jos: zero și minus unu. Pe steag: d x zero, d y unu. Verifici: bifezi d x și d y și vezi cum se schimbă la fiecare săgeată.
+
+Al treilea pas pe ecran. Mesajul pune. La Erou: când se apasă tasta e. Setează t x la x poziția plus d x ori treizeci și doi. Setează t y la y poziția plus d y ori treizeci și doi. Dacă lemn mai mare decât zero, atunci trimite pune. Altfel, spune Nu ai lemn, timp de o secundă.
+
+Al patrulea pas pe ecran. Blocul apare. La Bloc, un script nou, doar pentru original, nu pentru clone. O variabilă numai pentru acest sprite, setată pe zero pe steag, înainte de generator. În când încep ca o clonă, primul bloc o setează pe unu. Scriptul nou: când primesc pune, dacă variabila e egală cu zero, atunci: du-te la x t x, y t y, treci la costumul unu, arată, creează o clonă a mea, ascunde, schimbă lemn cu minus unu.
+
+Verifici. Cu lemn zero, apeși E, apare mesajul și nu se pune nimic. Cu lemn cel puțin unu, apare un bloc în celula din fața eroului, aliniat pe grilă, iar lemn scade cu unu. Poți sparge blocul pus și lemnul revine.
+
+Al cincilea pas pe ecran. Adăpostul. Spargi patru până la șase blocuri, apoi pui cel puțin patru blocuri, un zid sau un colț. Verifici: lemn a scăzut cu patru.
+
+Pentru Complet, alegi cel puțin una. Nu pui peste alt bloc sau peste erou: după arată, dacă nu atinge Bloc sau atinge Erou, abia atunci creezi clona și scazi lemnul. Un sprite ascuns nu detectează atingerea, de aceea îl arătăm o clipă. Sau limite, sau un indicator pe scenă.
+
+Greșeli frecvente. Se pun zeci de blocuri: lipsește condiția, fiecare clonă răspunde la pune. Blocul e strâmb: t x și t y nu sunt multipli de treizeci și doi. Pune oriunde: nu ai setat direcția. Lemnul scade fără bloc. Blocul apare peste erou.
+
+Proiectul de azi. Pune blocuri.
+
+Minim înseamnă: E pune, aliniere pe grilă, consum, adăpost de cel puțin patru. Complet înseamnă: minim plus una dintre variante.
+
+Recapitulare. Alinierea pe treizeci și doi face cuburi drepte. E pune, clicul sparge. Resursă zero, nu construiești.
+
+Succes la adăpostul tău.

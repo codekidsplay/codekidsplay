@@ -8,7 +8,7 @@
 ---
 
 ## Obiectiv
-**Minimum:** meniu/buton craft · ≥**1** rețetă clară (ex. lemn ≥2 → −2 lemn · +1 `usa` sau `tarnacop`) · UI arată itemul craftat · nu craftezi dacă lipsesc resurse.  
+**Minim:** meniu/buton craft · ≥**1** rețetă clară (ex. lemn ≥2 → −2 lemn · +1 `tarnacop`) · afișajul arată itemul craftat · nu craftezi dacă lipsesc resurse.  
 **Complet:** Minim + **2** rețete **sau** item craftat folosit în joc (spargi mai tare / ușă pe casă / lovitură mob).
 
 ## De ce contează
@@ -21,7 +21,7 @@ Leagă inventarul (L4) de misiune (L8).
 
 | Minute | Ce facem |
 |--------|----------|
-| 0–12 | Rețetă pe tablă: 2 lemn → 1 ușă |
+| 0–12 | Rețetă pe foaie: 2 lemn → 1 ușă |
 | 12–25 | Pe foaie: 1–2 rețete + ce face itemul |
 | 25–100 | Buton craft + logică + (Complet) folosire |
 | 100–120 | Test coleg: craft fără ajutor |
@@ -30,37 +30,39 @@ Leagă inventarul (L4) de misiune (L8).
 
 ## Pas cu pas
 
-### 1) Rețeta pe foaie
-Exemplu Minim:  
-`dacă lemn ≥ 2` → `schimbă lemn cu -2` → `schimbă usa cu 1` (sau listă / flag `are_usa`)
+### 1) Rețeta *(5 minute, pe foaie)*
+Un craft are aceiași trei pași ca magazinul din M5: **verifici** dacă ai destul, **scazi**, **dai** itemul.
 
-**Încearcă tu (5 min)**  
-- [ ] Rețeta scrisă cu numere  
+**Rețeta 1:** 2 lemn → 1 târnăcop. În Scratch: `dacă lemn ≥ 2` *(adică `lemn > 1`)* → `schimbă lemn cu -2` → `schimbă tarnacop cu 1`.
 
-### 2) Buton craft *(Minim)*
-1. Sprite „Craft” / masă de lucru  
-2. La click: verifică resurse → consumă → dă item  
-3. Altfel: „Îți trebuie 2 lemn!”  
-4. Variabilă / icon pe scenă pentru itemul craftat  
+**Încearcă tu — pe foaie (3 min):** ai 5 lemn. Cât rămâne după un craft? *(3)* Câte târnăcoape? *(1)*
 
-**Încearcă tu (25 min)**  
-- [ ] Cu 1 lemn: nu merge  
-- [ ] Cu 2+: merge o dată, inventarul scade  
+### 2) Butonul de craft *(Minim · 25 minute)*
+1. Variabila `tarnacop` *(pentru toate sprite-urile, bifată)*; pe steag: `setează tarnacop la 0`  
+2. Sprite `Craft` *(un buton cu text „Craft: 2 lemn → târnăcop”)*, într-un colț liber, de exemplu `x: 200 y: -160`  
+3. Scriptul lui: `când se dă click pe acest personaj`:  
+   - `dacă <lemn > 1>` **atunci** → `schimbă lemn cu -2` → `schimbă tarnacop cu 1` → `spune Ai făcut un târnăcop!` timp de `1` secundă  
+   - `altfel` → `spune Îți trebuie 2 lemn!` timp de `2` secunde
 
-### 3) Complet — itemul contează în joc
-Alege **cel puțin una**:  
-- [ ] A 2-a rețetă (ex. 3 piatră → sabie)  
-- [ ] Ușa se **pune** pe casă  
-- [ ] Sabie / târnăcop: spargi fără rază mai mare **sau** mobul moare din 1–2 lovituri  
+**Verifici (de fiecare dată):**  
+- Cu 1 lemn: click pe `Craft` → „Îți trebuie 2 lemn!”, lemnul rămâne 1.  
+- Cu 2 sau mai mult: click → lemn scade cu 2 și `tarnacop` crește cu 1.
+
+### 3) Complet — itemul contează *(alege cel puțin una)*
+- [ ] **Târnăcopul sparge mai departe:** la steag, `setează raza la 80`. În scriptul de craft, după ce dai târnăcopul: `setează raza la 128`. *(Spargerea din L2 folosește `raza`.)*  
+- [ ] **A doua rețetă:** al doilea buton `Craft sabie` — 3 piatră → 1 sabie: `dacă piatra > 2` → `schimbă piatra cu -3` → `schimbă sabie cu 1`  
+- [ ] **Sabia elimină creatura:** la Erou, în scriptul de lovitură: `dacă <sabie > 0>` **atunci** `trimite creatura_lovita`, **altfel** pierzi viață. La `Creatură`: `când primesc creatura_lovita` → `ascunde` și `oprește celelalte scripturi din acest sprite`
+
 
 ---
 
 ## Greșeli frecvente
-1. **Craft infinit** — nu scazi resursele.  
-2. **Item invizibil** — trebuie pe UI.  
-3. **Rețetă doar pe foaie** — Minim = buton pe scenă.  
-4. **Craft care nu schimbă jocul** — Complet cere folosire.  
-5. **Uiți reset** — steagul resetează și itemele craftate (sau le documentezi).
+1. **Craftezi fără lemn suficient** — lipsește `dacă lemn > 1`.  
+2. **Lemnul scade, dar nu apare itemul** — lipsește `schimbă tarnacop cu 1`, sau variabila nu e bifată.  
+3. **Craftezi la nesfârșit** — click o dată = o rețetă; un buton nu e într-un `repetă`.  
+4. **Itemul nu schimbă nimic** — la „Complet”, `raza` se schimbă; altfel e doar un număr.  
+5. **Raza rămâne mare la steag** — pe steag, `setează raza la 80`.  
+6. **Butonul e acoperit de blocuri** — pune-l într-un colț liber.
 
 ---
 
@@ -71,7 +73,7 @@ Salvat: `Prenume_Nume_M6_LumeCuburi`
 
 | | Ce trebuie |
 |--|------------|
-| **Minim** | 1 rețetă 2→1 · buton · UI · blocat fără resurse |
+| **Minim** | 1 rețetă 2→1 · buton · afișaj · blocat fără resurse |
 | **Complet** | Minim + 2 rețete **sau** item folosit în lume |
 
 ---
@@ -88,7 +90,7 @@ Salvat: `Prenume_Nume_M6_LumeCuburi`
 ## Schema pe scurt
 
 **Craft**  
-click Craft → `dacă lemn ≥ 2` → lemn −2 · usa +1 · altfel mesaj  
+click Craft → `dacă lemn ≥ 2` → lemn −2 · tarnacop +1 · altfel mesaj  
 
 **Quiz scurt:**  
 - Ce se întâmplă la 1 lemn?  

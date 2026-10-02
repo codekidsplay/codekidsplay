@@ -9,8 +9,8 @@
 
 ## Obiectiv
 La finalul orei muți personajul cu blocuri din <span style="color:#4C97FF;font-weight:700">Mișcare</span> pe un traseu clar, cu **reset la steag**.  
-**Minimum:** `mergi` + `întoarce` + `așteaptă` (traseu vizibil).  
-**Ținta orei (Complet):** + `glisează` + final `spune` / sunet (≥15 secunde).
+**Minim:** `mergi` + `întoarce` + `așteaptă` (traseu vizibil).  
+**Ținta orei (Complet):** + `glisează` + final `spune` / sunet (≥5 secunde).
 
 ## De ce contează
 În jocuri, personajul nu stă pe loc: merge, se întoarce, alunecă spre o țintă.  
@@ -23,7 +23,7 @@ La finalul orei muți personajul cu blocuri din <span style="color:#4C97FF;font-
 | Minute | Ce facem |
 |--------|----------|
 | 0–5 | Obiectiv + unde e capitolul Mișcare |
-| 5–30 | Pas cu pas: **3** checkpoint-uri (**Încearcă tu**) |
+| 5–30 | Pas cu pas: **3** mini-verificări (**Încearcă tu**) |
 | 30–100 | Proiectul „Plimbarea mea” (vezi **Minim vs Complet**) |
 | 100–120 | Recap, bonus, salvare |
 
@@ -47,18 +47,18 @@ La finalul orei muți personajul cu blocuri din <span style="color:#4C97FF;font-
    <span style="color:#4C97FF;font-weight:700">întoarce-te la dreapta cu</span> `90` grade →  
    <span style="color:#FFAB19;font-weight:700">așteaptă</span> `0.5` →  
    <span style="color:#4C97FF;font-weight:700">mergi</span> `50` pași
-5. Apeși steagul — traseu în **U**, pe care îl **vezi** (nu un flash)
+5. Apeși steagul — traseu cu 2 cotituri (ca un **C** întors), pe care îl **vezi** (nu o clipire rapidă)
 
 Fără `așteaptă`, cele 3 `mergi` durează sub o secundă — nu poți urmări traseul.
 
-**Încearcă tu — traseu U (3–4 min)**  
+**Încearcă tu — traseu cu cotituri (3–4 min)**  
 - [ ] Script pe **personaj**  
 - [ ] ≥ **3** `mergi` + ≥ **2** `întoarce`  
 - [ ] `așteaptă` `0.5` **între** mișcări  
 - [ ] Se vede clar forma traseului  
 
 ### 2) Glisează (mișcare lină)
-1. Tot pe personaj, **după** traseul U (sau sub el):  
+1. Tot pe personaj, **după** traseu (sub ultimul `mergi`):  
    <span style="color:#4C97FF;font-weight:700">glisează</span> în `1` secundă la `x:` `100` `y:` `0`
 2. Personajul **alunecă** spre punct — nu sare brusc
 3. Compară: `mergi` = pași rapizi · `glisează` = timp + loc
@@ -92,7 +92,7 @@ Fără `așteaptă`, cele 3 `mergi` durează sub o secundă — nu poți urmări
 2. **Dispare de pe scenă** — prea mulți pași fără `du-te la` la steag.  
 3. **Se învârte haotic** — lipsește `orientează-te în direcția` `90` la start.  
 4. **Capul în jos** — stil rotație „toate direcțiile”; în Mișcare, schimbă pe **stânga-dreapta**.  
-5. **Traseul e un flash (&lt;15 sec)** — ai uitat `așteaptă` între `mergi` / `întoarce`.  
+5. **Traseul trece prea repede (&lt;5 sec)** — ai uitat `așteaptă` între `mergi` / `întoarce`.  
 6. **Nume fișier** — `Prenume_Nume_L3`, nu doar `Ana_L3`.
 
 ---
@@ -105,7 +105,7 @@ Salvat: `Prenume_Nume_L3`
 | | Ce trebuie |
 |--|------------|
 | **Minim („am reușit”)** | **Pasul 1 + Pasul 2** — start cu `du-te la` + traseu cu `mergi` + `întoarce` + `așteaptă` |
-| **Complet (ținta orei)** | Minim + **Pasul 3** — `glisează` + final `spune` (≥15 secunde vizibile) |
+| **Complet (ținta orei)** | Minim + **Pasul 3** — `glisează` + final `spune` (≥5 secunde vizibile) |
 
 Dacă rămâi în urmă: salvează la **Minim**.  
 Cei rapizi: Complet, apoi Bonus.
@@ -115,21 +115,21 @@ Cei rapizi: Complet, apoi Bonus.
 - [ ] La steag: <span style="color:#4C97FF;font-weight:700">du-te la</span> un loc de start clar + `orientează-te` `90`  
 
 ### Pasul 2 — Traseu simplu *(parte din Minim)*
-*(Ca la „Încearcă tu — traseu U”.)*
+*(Ca la „Încearcă tu — traseu cu cotituri”.)*
 
 - [ ] ≥ **3** <span style="color:#4C97FF;font-weight:700">mergi</span>  
 - [ ] ≥ **2** <span style="color:#4C97FF;font-weight:700">întoarce</span>  
 - [ ] <span style="color:#FFAB19;font-weight:700">așteaptă</span> **între** mișcări (obligatoriu)  
 - [ ] Salvat: `Prenume_Nume_L3`  
 
-**→ Minim când:** un coleg vede un traseu cu întoarceri, nu un flash.
+**→ Minim când:** un coleg vede un traseu cu întoarceri, nu o clipire rapidă.
 
 ### Pasul 3 — Glisează + final *(Complet)*
 *(Ca la „Încearcă tu — glisează” + final.)*
 
 - [ ] ≥ **1** <span style="color:#4C97FF;font-weight:700">glisează</span> (~1 secundă)  
 - [ ] La capăt: <span style="color:#9966FF;font-weight:700">spune</span> `Am ajuns!` (sau mesaj scurt)  
-- [ ] Tot traseul se vede ≥ **15 secunde** (cu `așteaptă` + `glisează` + `spune`)  
+- [ ] Tot traseul se vede ≥ **5 secunde** (cu `așteaptă` + `glisează` + `spune`)  
 - [ ] Steag din nou → **reîncepe** din același loc  
 - [ ] Salvat din nou  
 
@@ -146,7 +146,7 @@ Cei rapizi: Complet, apoi Bonus.
 
 ## Recapitulare rapidă
 1. `mergi` = pași · `întoarce` = direcție · `glisează` = alunecă în timp  
-2. `așteaptă` = vezi traseul (fără el = flash)  
+2. `așteaptă` = vezi traseul (fără el = prea repede)  
 3. Blocurile pe **personaj**; la steag: `du-te la`  
 4. Nume: **`Prenume_Nume_L3`**  
 

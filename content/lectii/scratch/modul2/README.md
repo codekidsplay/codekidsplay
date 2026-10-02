@@ -1,7 +1,7 @@
 # Scratch Modul 2 — Lista lecțiilor
 
 **Code Kids Play** · Logică · Badge: **Logic Explorer**  
-**Proiecte:** 9 proiecte noi + L10 polish pe labirint.  
+**Proiecte:** 9 proiecte noi + L10 finisări pe labirint.  
 **Limbaj:** clar, **8–10 ani** · ritm dens (warm-up → proiect)  
 **Cei rapizi:** **Bonus / Provocare** pe fiecare lecție.  
 **Culori blocuri:** [`_culori-scratch.md`](../_culori-scratch.md)
@@ -31,19 +31,13 @@
 | **Detectare:** tastă / mouse + control fluid | L4 |
 | **Variabile:** scor, vieți | L5 |
 | **Operatori:** `+ −` și `< = >` (în `dacă`) | L6 |
-| **Control:** `forever` + `stop` (joc „aprins”) | L7 *(preview scurt deja în L1/L4)* |
+| **Control:** `forever` + `stop` (joc „aprins”) | L7 *(exemplu scurt deja în L1/L4)* |
 | **Evenimente:** mesaje (*broadcast*) | L8 |
-| Capstone | L9 Labirint + L10 completare |
+| Proiect final | L9 Labirint + L10 completare |
 
-**Regula dependențelor:** L1–L4 folosesc condiții tip **atinge / tastă** — **fără** operatori pe scor. La **L5**: variabile + preview doar `scor = 5` (victorie). `<` `>` `+` `−` pe îndelete la **L6**.
+**Regula dependențelor:** L1–L4 folosesc condiții tip **atinge / tastă** — **fără** operatori pe scor. La **L5**: variabile + exemplu doar `scor = 5` (victorie). `<` `>` `+` `−` pe îndelete la **L6**.
 
 **Extensii:** nu în M2 (Muzică + Stilou = completare la animație în **M4 / L4**).
 
-## Note profesor
-
-1. La L1, `forever` e doar cât să țină „dacă atinge marginea” — aprofundare la L7.  
-2. L2: **fără** operatori (`x > 0`, `mărime > 100`) — doar taste / evenimente.  
-3. L5: excepție / preview — doar `=` din Operatori (`scor = 5`); L6 exersează `<` `>` `+` pe îndelete.  
-4. L9–L10 = același labirint (ca L9–L10 din M1).
 
 Modul 1: `../modul1/` · Modul 3: `../modul3/`

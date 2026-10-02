@@ -18,10 +18,10 @@
 | 7 | [L7-Crafting.md](./L7-Crafting.md) | Crafting simplu (2→1) |
 | 8 | [L8-Misiune.md](./L8-Misiune.md) | Misiune / obiectiv de victorie |
 | 9 | [L9-Meniu-instructiuni.md](./L9-Meniu-instructiuni.md) | Meniu Start + instrucțiuni |
-| 10 | [L10-Showcase-badge.md](./L10-Showcase-badge.md) | Polish + prezentare + insignă |
+| 10 | [L10-Showcase-badge.md](./L10-Showcase-badge.md) | Finisări + prezentare + insignă |
 
 **Flux:** același fișier L1→L10.  
-**Prerequisit:** Modul 3–5 (ideal **M5 Mecanici de joc** — grilă / liste / clone).
+**Ce trebuie să știi:** Modul 3–5 (ideal **M5 Reguli de joc** — grilă / liste / clone).
 
 ---
 
@@ -34,11 +34,11 @@
 | Pune pe grilă (snap) + consum resursă | L3 |
 | Inventar vizibil (2–3 tipuri) | L4 |
 | 2 zone / biomi, resurse diferite | L5 |
-| Creatură / spawn + HP erou | L6 |
+| Creatură + HP erou | L6 |
 | Crafting 2→1 | L7 |
 | Condiție clară de victorie | L8 |
 | Meniu Start + ghid controale | L9 |
-| Polish A–F + prezentare + **Cube Crafter** | L10 |
+| Finisări A–F + prezentare + **Cube Crafter** | L10 |
 
 ### 3 reguli tehnice (pe tot modulul)
 
@@ -54,8 +54,8 @@
 | Bloc | Minim |
 |------|--------|
 | L1–L3 | Grilă + sparge + pune **rulează** (cu rază) |
-| L4–L6 | Inventar UI + 2 zone + creatură/HP pe **același** joc |
+| L4–L6 | Inventar pe ecran + 2 zone + creatură/HP pe **același** joc |
 | L7–L9 | Craft + misiune + meniu; coleg joacă fără ajutor |
-| L10 | Polish + prezentare 1–2 min + insignă |
+| L10 | Finisări + prezentare 1–2 min + insignă |
 
-Module: `../modul1/` · `../modul2/` · `../modul3/` · `../modul4/` · `../modul5/` (Mecanici de joc)
+Module: `../modul1/` · `../modul2/` · `../modul3/` · `../modul4/` · `../modul5/` (Reguli de joc)

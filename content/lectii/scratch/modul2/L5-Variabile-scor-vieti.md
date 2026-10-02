@@ -9,7 +9,7 @@
 
 ## Obiectiv
 La finalul orei poți crea variabile în <span style="color:#FF8C1A;font-weight:700">Variabile</span>, le arăți pe scenă, le **resetezi la steag**, și crești scorul când atingi o stea.  
-**Minimum:** `scor` funcțional (**+1** la atingere, **0** la steag), pe cel puțin **1** stea.  
+**Minim:** `scor` funcțional (**+1** la atingere, **0** la steag), pe cel puțin **1** stea.  
 **Ținta orei (Complet):** Minim + **5** stele + victorie când <span style="color:#59C059;font-weight:700">scor = 5</span>.
 
 ## De ce contează
@@ -23,7 +23,7 @@ Fără scor, jocul nu „ține minte” câte stele ai prins.
 | Minute | Ce facem |
 |--------|----------|
 | 0–10 | Recap control + „ce e o cutie cu număr?” |
-| 10–30 | Pas cu pas: checkpoint-uri (**Încearcă tu**) |
+| 10–30 | Pas cu pas: mini-verificări (**Încearcă tu**) |
 | 30–100 | Proiectul „Prinde 5 stele” (vezi **Minim vs Complet**) |
 | 100–120 | Recap, bonus, salvare |
 
@@ -56,7 +56,7 @@ Fără scor, jocul nu „ține minte” câte stele ai prins.
 - [ ] La steag: `scor` = 0 pe ecran  
 - [ ] Loc start + efecte anulate + sunete oprite  
 
-### 3) +1 la stea *(pattern unic — pe stea)*
+### 3) +1 la stea *(tipar unic — pe stea)*
 *(Fără mesaje / broadcast — alea sunt L8. Scorul e „pentru toți”, deci **steaua** îl poate modifica.)*
 
 1. Erou: control cu taste în bucla `forever` (ca L4) — **doar** mișcare (+ opțional obstacole)  
@@ -79,8 +79,8 @@ Fără scor, jocul nu „ține minte” câte stele ai prins.
 - [ ] Steag din nou → steaua reapare, scorul e 0  
 - [ ] Salvat: `Prenume_Nume_L5`  
 
-### 4) Victorie — preview `=` din Operatori
-*(**Excepție / preview:** azi folosim **doar** semnul <span style="color:#59C059;font-weight:700">=</span> din <span style="color:#59C059;font-weight:700">Operatori</span>, ca să știm când s-a terminat jocul. Restul (`<`, `>`, `+`, `−`) rămân pentru **L6** — ca `forever` în Bonus M1 înainte de L7.)*
+### 4) Victorie — exemplu `=` din Operatori
+*(**Excepție / exemplu:** azi folosim **doar** semnul <span style="color:#59C059;font-weight:700">=</span> din <span style="color:#59C059;font-weight:700">Operatori</span>, ca să știm când s-a terminat jocul. Restul (`<`, `>`, `+`, `−`) rămân pentru **L6** — ca `forever` în Bonus M1 înainte de L7.)*
 
 1. Hexagon: <span style="color:#59C059;font-weight:700">(scor) = (5)</span>  
 2. Pe **erou**, în bucla `forever` (după taste):  
@@ -97,7 +97,7 @@ Fără scor, jocul nu „ține minte” câte stele ai prins.
 ### 5) Vieți (Bonus — nu e în Minim/Complet)
 1. Variabilă `vieti`, start la 3  
 2. Dacă atinge lavă / obstacol → `modifică vieti cu -1`  
-3. Dacă `vieti = 0` → `Sfârșitul jocului` (*Game Over* — tot cu preview `=`)
+3. Dacă `vieti = 0` → `Sfârșitul jocului` (*Game Over* — tot cu exemplu `=`)
 
 ---
 
@@ -159,7 +159,7 @@ Cei rapizi: Complet, apoi Bonus.
 1. Variabilă = cutie cu nume + număr  
 2. Steag = **resetează** (scor + loc + efecte + sunete)  
 3. +1 pe **stea** (nu pe erou) + `ascunde` + `stop this script`  
-4. `scor = 5` = **preview** operatori; restul la L6  
+4. `scor = 5` = **exemplu** operatori; restul la L6  
 5. Nume: **`Prenume_Nume_L5`**  
 
 ## Schema pe scurt *(pe foaie)*
@@ -170,7 +170,7 @@ la steag → `setează scor la 0` → reset loc
 **Pe fiecare Stea**  
 `forever`: `dacă atinge [Erou]?` → `schimbă scor cu 1` → `ascunde` → `oprește acest script`  
 
-**Pe Erou** *(preview Complet)*  
+**Pe Erou** *(exemplu Complet)*  
 `forever`: `dacă scor = 5` → `spune` victorie → `oprește toate`
 
 **Quiz scurt (cu profesorul):**  
@@ -180,4 +180,4 @@ la steag → `setează scor la 0` → reset loc
 
 ## Temă
 Opțional: la scor 3 → `spune` `Mai ai puțin!` — `Prenume_Nume_L5`.  
-*(Tot cu preview `=` sau, dacă n-ai ajuns la victorie, doar un `dacă scor = 3` pe erou.)*
+*(Tot cu exemplu `=` sau, dacă n-ai ajuns la victorie, doar un `dacă scor = 3` pe erou.)*

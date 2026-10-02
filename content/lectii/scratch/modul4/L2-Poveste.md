@@ -10,7 +10,7 @@
 
 ## Obiectiv
 La finalul orei cineva poate juca **o cale întreagă** până la un final, fără să-i explici.  
-**Minimum:** ≥3 fundaluri · ≥2 personaje · ≥6 replici · **2 alegeri** · **2 finaluri** · restart la steag · ≥1 sunet · replici cu **timp de** (nu text zburător).  
+**Minim:** ≥3 fundaluri · ≥2 personaje · ≥6 replici · **2 alegeri** · **2 finaluri** · restart la steag · ≥1 sunet · replici cu **timp de** (nu text zburător).  
 **Ținta orei (Complet):** Minim + **a 3-a alegere** **sau** final secret **sau** inventar (o alegere deblochează o replică mai târziu).
 
 ## De ce contează
@@ -86,6 +86,19 @@ Start → Alegerea 1 (A / B) → pe fiecare cale Alegerea 2 → 2 finaluri difer
 4. **2 finaluri** (fundal + text diferit)  
 5. ≥**1 sunet** la un moment-cheie (`pornește sunetul` sau `redă … până la final`)
 
+**Exemplu concret — Alegerea 1 cu 2 butoane** *(poți copia ideea pentru restul poveștii)*  
+1. Adaugi 2 personaje-buton: `Buton_A` (ex. „Pădure”) și `Buton_B` (ex. „Castel”)  
+2. La steag, pe **ambele** butoane: <span style="color:#9966FF;font-weight:700">ascunde</span> *(un personaj ascuns nu poate fi apăsat)*  
+3. Pe **Narator**: steag → <span style="color:#9966FF;font-weight:700">spune</span> `Mergem în pădure sau la castel?` timp de `3` secunde → <span style="color:#E6A800;font-weight:700">trimite</span> `alegere_1`  
+4. Pe **ambele** butoane: <span style="color:#E6A800;font-weight:700">când primesc</span> `alegere_1` → <span style="color:#9966FF;font-weight:700">arată</span>  
+5. Pe `Buton_A`: <span style="color:#E6A800;font-weight:700">când se dă clic pe acest personaj</span> → <span style="color:#E6A800;font-weight:700">trimite</span> `cale_A`  
+6. Pe `Buton_B`: același lucru, dar <span style="color:#E6A800;font-weight:700">trimite</span> `cale_B`  
+7. Pe **ambele** butoane: <span style="color:#E6A800;font-weight:700">când primesc</span> `cale_A` și încă unul pentru `cale_B` → <span style="color:#9966FF;font-weight:700">ascunde</span>  
+8. Pe **Scenă**: <span style="color:#E6A800;font-weight:700">când primesc</span> `cale_A` → <span style="color:#9966FF;font-weight:700">comută fundalul la</span> `Padure` · la fel pentru `cale_B` → `Castel`  
+9. Pe **Erou**: <span style="color:#E6A800;font-weight:700">când primesc</span> `cale_A` → <span style="color:#9966FF;font-weight:700">spune</span> `Ce pădure frumoasă!` timp de `3` secunde  
+
+**Verifici:** Click pe A → butoanele dispar, fundalul se schimbă, eroul vorbește. Steag din nou → butoanele sunt ascunse până la întrebare.  
+
 **Încearcă tu — alegeri (20–25 min)**  
 - [ ] Joacă **ambele** finaluri o dată (nu doar unul)  
 - [ ] Cineva joacă o cale fără ajutor (coleg / părinte / autotest)  
@@ -105,7 +118,7 @@ Alege **cel puțin una**:
 4. **Restart rupt** — al 2-lea steag începe din mijloc; resetezi fundal + poziții + variabile.  
 5. **Butoanele rămân pe toate scenele** — `ascunde` / `arată` la mesajele potrivite.  
 6. **Text zburător** — `spune` fără **timp de**; folosește regula 2 + 1/4 cuvinte (sau 3 s / 5 s).  
-7. **Fișier greșit** — azi e `Prenume_Nume_M4_L2`, **nu** motorul L1.
+7. **Fișier greșit** — azi e `Prenume_Nume_M4_L2`, **nu** baza jocului L1.
 
 ---
 
@@ -137,7 +150,7 @@ Salvat: `Prenume_Nume_M4_L2`
 
 ## Recapitulare rapidă
 1. Schiță scurtă → **Scratch** (nu oră de desen)  
-2. Alegere = input → `trimite` → altă cale  
+2. Alegere = acțiune → `trimite` → altă cale  
 3. `spune` cu **timp de** (anti-text zburător)  
 4. Fișier: **`Prenume_Nume_M4_L2`**
 

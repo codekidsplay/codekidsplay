@@ -9,7 +9,7 @@
 
 ## Obiectiv
 La finalul orei ai un clip care pornește curat la <span style="color:#3F8F2A;font-weight:700">steag verde</span>, cu mișcare/animație, replică și sunet — fără să îi explici colegului cu vocea.  
-**Minimum:** scheletul rulează (reset + 1 `spune` + 1 buclă/traseu + 1 sunet + final), chiar dacă e sub 30 sec.  
+**Minim:** scheletul rulează (reset + 1 `spune` + 1 buclă/traseu + 1 sunet + final), chiar dacă e sub 30 sec.  
 **Ținta orei (Complet):** **toate cele 8 elemente** din checklist + durata **30–60 sec**.
 
 ## De ce contează
@@ -23,7 +23,7 @@ Azi e **filmul tău scurt**: aceleași blocuri, dar o poveste cap-coadă.
 | Minute | Ce facem |
 |--------|----------|
 | 0–10 | Obiectiv + checklist (cele 8) + **Minim vs Complet** |
-| 10–30 | Pas cu pas + checkpoint-uri (**Încearcă tu**) |
+| 10–30 | Pas cu pas + mini-verificări (**Încearcă tu**) |
 | 30–50 | Proiect: **Minim** (scheletul rulează curat) |
 | 50–100 | Proiect: **Complet** (cele 8 + 30–60 sec, arăți unui coleg) |
 | 100–120 | Recap, bonus, arăți clasei / salvare |
@@ -83,7 +83,7 @@ Pe personajul tău (și scenă, dacă schimbi fundalul):
 *(Profesorul te întreabă „Ce vrei să se întâmple primul?” — tu alegi; el nu face proiectul în locul tău.)*
 
 **Încearcă tu — scheletul rulează curat (3–5 min)**  
-*(Checkpoint Minim — „am scris cod” ≠ „am verificat că merge”.)*
+*(Verificare Minim — „am scris cod” ≠ „am verificat că merge”.)*
 
 - [ ] La steag: reset loc + costum (+ mărime / efecte dacă le-ai folosit)  
 - [ ] Ai intro (`spune`) + acțiune (buclă **sau** traseu) + final (`spune` + sunet)  
@@ -97,7 +97,7 @@ Pe personajul tău (și scenă, dacă schimbi fundalul):
 3. Cronometrează: cam **30–60 sec**. Dacă e scurt: mai mult `așteaptă` sau încă o buclă **sub** prima  
 
 **Încearcă tu — cele 8 + durată (3–5 min)**  
-*(Checkpoint Complet — verifică pe listă, nu „doar am scris”.)*
+*(Verificare Complet — verifică pe listă, nu „doar am scris”.)*
 
 - [ ] Toate cele **8** din tabelul de la pasul 1 sunt prezente  
 - [ ] Clipul durează cam **30–60 sec**  

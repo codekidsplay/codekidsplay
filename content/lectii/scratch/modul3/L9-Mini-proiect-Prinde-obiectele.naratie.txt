@@ -4,15 +4,15 @@ Astăzi pui împreună tot ce ai învățat în Modulul trei: un joc întreg, cu
 
 Obiectivul. Un joc jucabil de la Start la final: meniu, erou, obiecte care cad ca clone, scor, vieți sau timer, mesaj de final. Minim: scheletul rulează. Erou stânga dreapta, sau patru direcții, un generator de clone, scor la prindere, reset. Complet: minim, plus meniu Start, plus vieți recomandat sau timer, plus final clar, plus un coleg joacă fără explicații.
 
-De ce contează. Lecțiile unu până la opt sunt piese. Azi e jocul tău. La lecția zece îl lustruiești și îl prezinți.
+De ce contează. Lecțiile unu până la opt sunt piese. Azi e jocul tău. La lecția zece îl îmbunătățești și îl prezinți.
 
-Primul pas pe ecran. Regula de aur. Erou egal doar mișcarea. Monedă egal doar generatorul și căderea. Nu copia tastele pe obiectul care cade. Catcher e de obicei stânga dreapta. Dacă adaugi sus jos, nu urca eroul aproape de y o sută șaizeci. Acolo apar monedele. Le-ai prinde instant.
+Primul pas pe ecran. Regula de aur. Erou egal doar mișcarea. Monedă egal doar generatorul și căderea. Nu copia tastele pe obiectul care cade. Cel care prinde e de obicei stânga dreapta. Dacă adaugi sus jos, nu urca eroul aproape de y o sută șaizeci. Acolo apar monedele. Le-ai prinde imediat.
 
 Al doilea pas pe ecran. Scheletul. Erou: forever cu stânga dreapta. Personaj cădere: la steag ascunde. Forever: așteaptă, creează clonă. Pe clonă: când pornesc ca și clonă, arată, du-te la x aleator y o sută șaizeci, repetă până y mai mic decât minus o sută șaizeci, schimbă y minus patru. Dacă atinge Erou: schimbă scor cu unu, șterge. După buclă: șterge. Până la minutul cincizeci: fără costume noi, fără fundaluri complexe. Doar arhitectura.
 
-Al treilea pas pe ecran, pentru Complet. Opțiunea A, vieți, recomandat. După bucla de cădere, dacă moneda a scăpat: schimbă vieti cu minus unu, șterge. Pe Scenă: vieti egal cu zero, Game Over. Opțiunea B: timer ca la lecția cinci. Nu combina azi vieți și timer. Plus meniu ca la lecția opt: Start, reset, revino meniu, oprește alte scripturi pe Erou și Monedă.
+Al treilea pas pe ecran, pentru Complet. Opțiunea A, vieți, recomandat. După bucla de cădere, dacă moneda a scăpat: schimbă vieti cu minus unu, șterge. Pe Erou: dacă vieti egal cu zero, spune Game Over, oprește toate. Opțiunea B: timer ca la lecția cinci. Nu combina azi vieți și timer. Plus meniu ca la lecția opt: Start, reset, revino meniu, oprește alte scripturi pe Erou și Monedă.
 
-Greșeli frecvente. Dacă tastele sunt pe Monedă, greșești. Dacă eroul e la y o sută șaizeci, prinzi instant. Dacă clonele nu se șterg, se adună. Dacă scor multiplu, lipsește șterge din dacă atinge. Dacă faci decor înainte de minutul cincizeci, greșești ritmul. Dacă viața nu scade la ratare, schimbă vieti stă după buclă, nu la fiecare pas înăuntru.
+Greșeli frecvente. Dacă tastele sunt pe Monedă, greșești. Dacă eroul e la y o sută șaizeci, prinzi imediat. Dacă clonele nu se șterg, se adună. Dacă scor multiplu, lipsește șterge din dacă atinge. Dacă faci decor înainte de minutul cincizeci, greșești ritmul. Dacă viața nu scade la ratare, schimbă vieti stă după buclă, nu la fiecare pas înăuntru.
 
 Proiectul de azi. Prinde obiectele.
 
@@ -24,6 +24,6 @@ Minim înseamnă: erou, generator, prindere cu scor, fără focus pe decor. Comp
 
 În proiect, al treilea pas, pentru Complet. Meniu. Vieți sau timer. Final clar. Salvezi din nou.
 
-Recapitulare. Erou egal mișcare. Obiect egal clone și cădere. Minim întâi, decor după. Viețile la ratare sunt cele mai clare. Lecția zece e polish și prezentare. Numele fișierului are prenumele, numele, M trei și L nouă.
+Recapitulare. Erou egal mișcare. Obiect egal clone și cădere. Minim întâi, decor după. Viețile la ratare sunt cele mai clare. Lecția zece e finisări și prezentare. Numele fișierului are prenumele, numele, M trei și L nouă.
 
 Succes la jocul tău Prinde obiectele.

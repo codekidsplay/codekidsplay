@@ -1,0 +1,35 @@
+Lecția opt. Fortăreața mea.
+
+Astăzi construiești o fortăreață și un pod care stă pe o balama, adică o piesă mică ce se poate roti pe un ax. Fișier nou: Prenume, linie jos, Nume, linie jos, T trei, linie jos, L opt. Proiectul se numește Fortăreața mea. În Tinkercad podul rămâne într-o singură poziție, dar tu verifici că are loc să se rotească.
+
+Obiectivul. La final ai o fortăreață, adică zid cu poartă și doi turnuri, pe o placă, plus un pod separat, prins pe un ax în dreptul porții, cu joc. Minim: placă de o sută douăzeci pe șaptezeci pe patru milimetri. Zid de optzeci pe opt pe treizeci, cu poartă de douăzeci pe doisprezece pe douăzeci și doi. Doi turnuri cu diametru douăzeci și înălțime patruzeci. Ax cu diametru patru și lungime douăzeci și patru. Pod de optsprezece pe douăzeci și patru pe doi, cu butuc de balama cu diametru zece și gaură cu diametru cinci. Complet: minim, plus trei creneluri în zid, Ruler pentru gaura de cinci și axul de patru, și culori.
+
+De ce contează. O balama e o piesă care se rotește pe un ax. E același principiu ca la roțile mașinuței: gaura e mai mare decât axul. Axul e prins în zid, iar podul e separat.
+
+Primul pas pe ecran. Create new design, cu numele fișierului. Snap Grid pe unu milimetru. Un Box de o sută douăzeci pe șaptezeci pe patru, placa.
+
+Al doilea pas pe ecran. Un Box de optzeci pe opt pe treizeci, zidul. Un Box de douăzeci pe doisprezece pe douăzeci și doi, Hole, poarta. Selectezi poarta și zidul, tasta L, mijloc pe cele două direcții de pe plan și punctul de jos. Control și G. Poarta e mai groasă decât zidul, deci taie complet.
+
+Al treilea pas pe ecran. Un Cylinder de douăzeci pe douăzeci pe patruzeci, turnul. Cu zidul, L, marginea din stânga și mijloc pe adâncime. Control și D, apoi copia cu zidul, L, marginea din dreapta. Zidul și cele două turnuri, Control și G.
+
+Al patrulea pas pe ecran. Fortul și placa, L, mijloc pe cele două direcții. Control și G.
+
+Al cincilea pas pe ecran. Balamaua o faci lângă fort. Atenție la Align: mută ambele piese. Un Cylinder de patru pe patru pe douăzeci și patru, axul, rotit nouăzeci de grade, patru pași de câte douăzeci și doi virgulă cinci, până când, în View Cube la Right, se vede ca un cerc. Un Cylinder de zece pe zece pe optsprezece, butucul, rotit la fel. Un Cylinder de cinci pe cinci pe douăzeci și doi, Hole, rotit la fel. Tragi butucul și gaura peste ax. Selectezi butucul, gaura și axul, L, mijloc pe cele trei direcții. Apoi doar butucul și gaura, Control și G. Axul rămâne separat, cu zero virgulă cinci milimetri joc pe parte.
+
+Al șaselea pas pe ecran. Butucul și axul, Control și G temporar, apoi tasta D. Un Box de optsprezece pe douăzeci și patru pe doi, podul, tras în fața butucului. Cu grupul temporar, L, mijloc pe stânga dreapta, punctul de jos și punctul din spate: podul iese în față. Desfaci grupul cu Control, Shift și G. Selectezi podul și butucul, Control și G. Axul nu e în acest grup.
+
+Al șaptelea pas pe ecran. Axul și podul cu balama, Control și G temporar. Cu fortăreața, L, mijloc pe stânga dreapta și pe adâncime. Cu Snap Grid pe unu, muți grupul șapte milimetri spre față, ca axul să ajungă în mijlocul porții. Îl ridici cu conul negru cu patru milimetri: axul e la nouă milimetri de plan. Control, Shift și G pe grupul temporar.
+
+Al optulea pas pe ecran. Din Right, axul se vede ca un cerc mic în gaura butucului. Din Top, axul trece prin poartă, cu doi milimetri în fiecare perete lateral, iar podul stă în dreptul porții. Selectezi axul și fortăreața, Control și G. Click pe pod: se selectează singur.
+
+Al nouălea pas pe ecran, pentru Complet. Un Box de șase pe doisprezece pe opt, Hole, aliniat cu fortăreața pe cele două direcții. Cu Snap Grid pe cinci, îl ridici la douăzeci și cinci. Control și D, copia zece milimetri spre dreapta. Crenelul din centru, Control și D, copia zece spre stânga. Cele trei creneluri și fortăreața, Control și G. Cu Ruler măsori gaura butucului și axul. La Color, zid, turnuri și pod în culori diferite.
+
+Greșeli frecvente. Podul e lipit de fortăreață: lasă-l separat. Axul nu se vede ca un cerc: mai rotește nouăzeci de grade. Axul nu trece prin butuc: gaura e prea mică sau n-ai selectat toate trei piesele. Podul intră în podea: n-ai ridicat grupul cu patru milimetri. Poarta nu taie zidul: lipsește Group sau nu e Hole.
+
+Proiectul de azi. Fortăreața mea.
+
+Minim înseamnă: placă, zid cu poartă, doi turnuri, ax, pod cu butuc, podul separat. Complet înseamnă: minim, plus trei creneluri, Ruler și culori.
+
+Recapitulare. Balama înseamnă ax și butuc cu gaură mai mare. Axul se prinde de fort, podul rămâne liber. Gaura butucului e axul plus un milimetru.
+
+Succes la fortăreața ta.

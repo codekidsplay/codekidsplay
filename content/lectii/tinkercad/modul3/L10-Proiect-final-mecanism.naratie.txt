@@ -1,0 +1,29 @@
+Lecția zece. Mecanismul meu.
+
+Astăzi alegi tu un mecanism și îl construiești cu tot ce ai învățat în Modulul trei: ax, joc, piese separate, copii egale. Fișier nou: Prenume, linie jos, Nume, linie jos, T trei, linie jos, L zece. Proiectul se numește Mecanismul meu.
+
+Obiectivul. La final ai un mecanism cu cel puțin o piesă care se poate mișca, adică se rotește, pe o altă piesă, cu joc scris cu numere. Minim: o schiță cu cel puțin trei mărimi și piesa mobilă marcată. Un model cu două piese separate: una fixă, cu ax, și una mobilă, cu gaură mai mare decât axul. Gaura e axul plus un milimetru, adică zero virgulă cinci milimetri joc pe parte. Cel puțin o repetare cu Control și D și cel puțin un Hole, plus Group. Complet: minim, plus o a doua piesă mobilă sau un test de potrivire, cu Ruler, Right și Top, plus culori și o prezentare de un minut.
+
+De ce contează. Ai făcut nouă proiecte: roți dințate, mașinuță, morișcă, labirint, puzzle, șah, zar, pod și carusel. Azi pornești de la o idee a ta și o transformi într-un obiect cu mărimi gândite. Așa lucrează un inginer.
+
+Primul pas pe ecran. Alegi mecanismul. Alege unul, sau propune tu, cu acordul profesorului. Roți dințate cu manivelă, cu roata dințată și pivoții din lecția unu. Mașinuță sau cărucior, cu roți pe axe, din lecția doi. Morișcă sau elice, cu rotor pe stâlp, din lecția trei. Carusel sau roată mare, cu stâlpi în cerc, din lecția nouă. Pod sau capac cu balama, cu ax, butuc și pod, din lecția opt. Cutie cu capac pe balama, cu dop și locaș din lecția cinci, plus ax și butuc din lecția opt. Sau ceva al tău, cu mărimi gândite.
+
+Al doilea pas pe ecran, pe hârtie. Desenezi mecanismul din față și de sus. Marchezi piesa fixă și piesa mobilă. Scrii cel puțin trei mărimi, inclusiv axul și gaura, cu axul plus un milimetru pentru gaură.
+
+Al treilea pas pe ecran. Create new design, cu numele fișierului. Alegi un Snap Grid potrivit: unu milimetru pentru mărimi fine, cinci milimetri pentru mutări mari. Faci piesa fixă: baza și axul, grupate între ele. Atenție la Align: mută ambele piese. Tragi forma nouă peste cea veche. Ce trebuie să rămână împreună, grupezi temporar cu Control și G, aliniezi, apoi Control, Shift și G.
+
+Al patrulea pas pe ecran. Piesa mobilă, cu un Hole mai mare decât axul. Repetările le faci cu Control și D, cu aceeași mutare sau aceeași rotire. Piesa mobilă rămâne separată de piesa fixă: nu le grupezi între ele.
+
+Al cincilea pas pe ecran. Verificarea. În View Cube alegi Right și Top: axul trece prin gaură, iar nimic nu se atinge. Mărimile din Tinkercad se potrivesc cu schița. Cu Ruler măsori gaura și axul.
+
+Al șaselea pas pe ecran, pentru Complet. Faci a doua piesă mobilă, un alt rotor sau o altă roată. Sau spui din ce vedere verifici că rotirea e liberă. Colorezi coerent. Pregătești prezentarea: ce se mișcă, pe ce se mișcă, ce joc ai.
+
+Greșeli frecvente. Fără schiță, piesele nu se potrivesc: oprește-te și desenează cu mărimi. Axul și gaura au aceeași mărime: nu e joc, adaugă un milimetru la gaură. Piesa mobilă e grupată cu cea fixă: se lipesc, trebuie să rămână două piese. Hole fără Group nu taie. Copii făcute cu ochiul: folosește Control și D. Prea ambițios: mai bine un mecanism curat decât trei neterminate.
+
+Proiectul de azi. Mecanismul meu.
+
+Minim înseamnă: schiță cu trei mărimi, piesa fixă cu ax, piesa mobilă cu gaură mai mare, o repetare cu Control și D, un Hole cu Group. Complet înseamnă: minim, plus a doua piesă mobilă sau test de potrivire, Ruler, Color și prezentare.
+
+Recapitulare. Modulul trei înseamnă ax, joc, piese separate, copii egale. Gaura e axul plus un milimetru. Piesa mobilă nu se grupează cu cea fixă.
+
+Succes la mecanismul tău.

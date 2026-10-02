@@ -10,7 +10,7 @@
 
 ## Obiectiv
 La finalul orei ai îmbunătățit „Personajul meu”, l-ai prezentat clasei, și ai insigna **Scratch Starter**.  
-**Minimum:** **1** completare din A–F + reset curat + prezentare → **e suficient pentru insignă**.  
+**Minim:** **1** completare din A–F + reset curat + prezentare → **e suficient pentru insignă**.  
 **Ținta orei (Complet):** **2** completări din A–F + prezentare + salvare.
 
 ## De ce contează
@@ -24,12 +24,12 @@ Insigna **Scratch Starter** (*badge*) = Modulul 1 e încheiat; Modulul 2 începe
 | Minute | Ce facem |
 |--------|----------|
 | 0–10 | Obiectiv + **Minim vs Complet** + reguli prezentare |
-| 10–25 | Pas cu pas: lista A–F + checkpoint-uri (**Încearcă tu**) |
+| 10–25 | Pas cu pas: lista A–F + mini-verificări (**Încearcă tu**) |
 | 25–55 | **Completare** pe „Personajul meu” (lucru individual) |
 | 55–75 | Prezentări (~1–2 min × max. **10** copii ≈ 10–20 min) |
 | 75–120 | Quiz recap + **insignă** + ce urmează în M2 (+ Bonus dacă e timp) |
 
-*(Repere profesor: la ~40 min fiecare copil are **cel puțin 1** îmbunătățire lipită și testată — checkpoint Minim; la ~55 min — gata de steag curat pentru prezentare, indiferent dacă e Minim sau Complet.)*
+*(Repere profesor: la ~40 min fiecare copil are **cel puțin 1** îmbunătățire lipită și testată — verificare Minim; la ~55 min — gata de steag curat pentru prezentare, indiferent dacă e Minim sau Complet.)*
 
 *(Grupa ≤10: prezentările nu umplu ora — nucleul e **completarea L9**. Dacă prezentările se termină la ~70 min → Bonus / quiz mai din timp.)*
 
@@ -65,7 +65,7 @@ Alege din lista de mai jos (bifezi în „De făcut azi”):
 4. **Salvează** (`Prenume_Nume_L9` sau `Prenume_Nume_L10`)
 
 **Încearcă tu — 1 completare gata și testată (mijlocul intervalului, ~min 40)**  
-*(Checkpoint Minim — nu începe a doua până aici.)*
+*(Verificare Minim — nu începe a doua până aici.)*
 
 - [ ] **1** completare din A–F e **lipită** și rulează pe steag  
 - [ ] Steag de **două** ori → reset curat (fără haos)  
@@ -159,7 +159,7 @@ La min **55** încep prezentările **oricum**.
 
 ## Bonus (dacă ai terminat Complet / după prezentare)
 - [ ] A 3-a completare din lista A–F  
-- [ ] Un detaliu cerut pe loc de un coleg (feedback rapid)  
+- [ ] Un detaliu cerut pe loc de un coleg (părere rapidă)  
 - [ ] **`forever` de decor** (costum care clipește) — ca la Bonus L8 — pe un script separat  
 - [ ] **Ricoșeu pe margine** — ca la Bonus L9 (`dacă atinge marginea, sari înapoi`)  
 - [ ] Pe foaie: **1 idee** pentru Modulul 2 (labirint / dacă apeși… / dacă atingi…)

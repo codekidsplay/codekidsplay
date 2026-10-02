@@ -1,0 +1,27 @@
+Lecția zece. Finisări, prezentare și insigna Cube Crafter.
+
+Astăzi este ultima oră pe fișierul Prenume, linie jos, Nume, linie jos, M șase, linie jos, Lume Cuburi. Faci finisări de la A la F, testezi steagul, prezinți jocul una sau două minute și primești insigna Cube Crafter.
+
+Obiectivul. Minim: cel puțin trei finisări din A până la F, steagul apăsat de două ori rămâne curat, o prezentare de un minut sau două cu titlu, ce faci, partea grea și de ce ești mândru, proiect salvat, insignă. Complet: minim, plus cel puțin cinci finisări, sau o funcție nouă mică, sau o părere aplicată pe loc, în cinci minute.
+
+De ce contează. Cube Crafter înseamnă că lumea ta poate fi jucată de altcineva, nu doar că merge la tine.
+
+Primul pas pe ecran. Finisările A până la F, patruzeci de minute. A, numele jocului: titlu pe meniu, cu unealta de text din editorul de costume. B, sunete utile: pornește sunetul Pop la spargere, alt sunet la craft și la lovitură, iar oprește toate sunetele la win, lose și revino meniu. C, date lizibile: pe scenă doar lemn, piatra, pamant, vieti și misiune, ordonate în colț și mari. D, nimic mort: niciun buton care nu face nimic, nicio clonă rămasă după revino meniu. E, controale complete pe meniu: click, E, unu, doi, trei, Craft. F, finaluri clare: Ai câștigat și Sfârșitul jocului, apoi revii la meniu, iar restartul e curat.
+
+Regula sălii: la aproximativ minutul cincizeci și cinci, stop cod. După aceea repari doar greșeli mici, nu adaugi funcții noi.
+
+Al doilea pas pe ecran. Căutarea greșelilor, zece minute. Joci și încerci să-l strici. Spargi de departe: nu merge. Pui cu zero resurse: nu merge. Pierzi toate viețile: apare Sfârșitul jocului. Câștigi, apeși Start: jocul începe de la zero. Apeși steagul de două ori: lumea nu se dublează. Nu poți câștiga la start. Verifici: ai găsit și reparat cel puțin o greșeală, sau un coleg a jucat și a scris ok.
+
+Al treilea pas pe ecran. Prezentarea. Patru propoziții pe foaie, înainte. Jocul meu se numește. În el tu minezi, construiești, faci un târnăcop. Partea grea a fost, și am rezolvat-o cu. Sunt mândru de. Apoi un demo de treizeci până la patruzeci de secunde: Start, minezi, pui sau faci craft, misiunea.
+
+Al patrulea pas pe ecran. Insigna. Ai parcurs modulul șase, sau ai recuperat lecțiile lipsă. Ai prezentat. Primești Cube Crafter.
+
+Greșeli frecvente. O funcție mare după minutul cincizeci și cinci: oprește-te, fă finisări. Prezentare fără demo. Sunete care continuă: lipsește oprește toate sunetele. Prea multe numere pe scenă. Steag rupt: repară înainte de insignă. Confuzia cu M cinci: azi este Cube Crafter, nu Maestru de jocuri.
+
+Proiectul de azi. Prezentarea jocului Cube Crafter.
+
+Minim înseamnă: cel puțin trei finisări, prezentare, proiect salvat, insignă. Complet înseamnă: minim plus cel puțin cinci finisări, sau o funcție mică nouă, sau o părere aplicată.
+
+Recapitulare. Lume pe grilă, sparge și pune, inventar, zone, pericol, craft, misiune, meniu. Apoi finisări și prezentare. Insigna este Cube Crafter, iar modulul șase este închis.
+
+Felicitări, Cube Crafter!

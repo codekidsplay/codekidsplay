@@ -1,0 +1,27 @@
+Lecția doi. Breloc cu simbol.
+
+Astăzi transformi un desen plat într-un obiect trei D. Faci un breloc cu simbolul tău. Desenul este un fișier S V G. Creezi un design nou și îl numești Prenume, linie jos, Nume, linie jos, T cinci, linie jos, L doi. Proiectul se numește Breloc cu simbol. Imprimanta trei D nu se folosește la oră.
+
+Obiectivul. Minim: un simbol importat, cu latura cea mai lungă de douăzeci de milimetri și grosimea de doi milimetri, pe o placă de cincizeci pe treizeci pe trei, centrat. Complet: minim, plus o gaură de breloc cu diametru patru, cu marginea la cinci milimetri de capătul plăcii, plus numele tău gravat pe spatele plăcii.
+
+De ce contează. Un fișier S V G nu e o poză cu pixeli. E un desen făcut din linii. De aceea Tinkercad îl poate umfla într-o formă trei D. Alege un simbol simplu, dintr-o singură bucată, fără detalii mici. Dacă nu ai fișier, folosești o stea sau o inimă din formele gata făcute. Restul lecției este la fel.
+
+Primul pas pe ecran. Creezi design nou și pui Snap Grid pe unu virgulă zero milimetri. Apeși Import, sus, în dreapta, și alegi fișierul S V G. În fereastra de import lași valorile și apeși Import. Simbolul apare pe plan, probabil prea mare sau prea mic. Dacă importul nu merge, pui o stea sau o inimă.
+
+Al doilea pas pe ecran. Selectezi simbolul. Ții apăsată tasta Shift și tragi de un mâner alb din colț, ca proporțiile să rămână. Apoi corectezi cu numere, până când latura cea mai lungă are douăzeci de milimetri. Dacă simbolul iese întins sau turtit, ai uitat Shift. Apeși tasta Control și Z împreună și reiei. Apoi tastezi doar înălțimea, grosimea, la doi milimetri. Lungimea și lățimea nu le mai atingi.
+
+Al treilea pas pe ecran. Tragi un Box de cincizeci pe treizeci pe trei. Aceasta este placa. Selectezi simbolul și placa și apeși tasta L, pentru Align. Alegi mijloc pe stânga dreapta și mijloc pe față spate. Apoi selectezi doar simbolul și îl ridici la trei milimetri, cu conul negru. Acum stă pe placă. Cu Color dai plăcii o culoare și simbolului alta.
+
+Al patrulea pas pe ecran, pentru Complet. Tragi un Cylinder de patru pe patru pe șapte și îl faci Hole. Cu L, față de placă, alegi mijloc pe față spate și marginea din stânga. Muți gaura cinci milimetri spre dreapta. Marginea ei e la cinci, iar raza e doi, deci centrul e la șapte. Cobori gaura un milimetru. O grupezi cu placa, nu cu simbolul. Simbolul ocupă de la cincisprezece la treizeci și cinci de milimetri, iar gaura e între cinci și nouă, deci nu se ating. Dacă simbolul tău e mai lat, mută-l spre dreapta.
+
+Al cincilea pas pe ecran, tot pentru Complet. Adaugi un Text cu numele tău. Lungimea e cel mult treizeci de milimetri, literele au cam opt milimetri înălțime, iar grosimea e doi. Îl faci Hole. Apeși litera M, pentru Mirror, și tragi săgeata de pe lateral, ca textul să se citească pe dedesubt. Cu L îl centrezi pe placă și îl cobori un milimetru. Adâncimea e un milimetru. Îl grupezi cu placa. Dacă nu reușești, lași numele ca Text normal pe placă. Tot Complet este. La final selectezi tot și apeși Control și G.
+
+Greșeli frecvente. Simbolul e uriaș, pentru că nu ai verificat mărimea după import. Simbolul e deformat, pentru că ai tras fără Shift. Simbolul e plat, pentru că grosimea e prea mică. Simbolul plutește sau e băgat în placă. Gaura taie simbolul.
+
+Proiectul de azi. Brelocul meu.
+
+Minim înseamnă: simbol de douăzeci de milimetri, gros de doi, pe placa de cincizeci pe treizeci pe trei, centrat și ridicat la trei milimetri. Complet înseamnă: minim, plus gaura cu diametru patru și numele pe spate. Dacă rămâi în urmă, salvează la Minim.
+
+Recapitulare. S V G este un desen din linii, nu din pixeli. După import verifici mărimea și grosimea. Shift la scalare păstrează forma. Centrat înseamnă tasta L.
+
+Succes la brelocul tău.

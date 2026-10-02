@@ -1,0 +1,27 @@
+Lecția șapte. Crafting simplu.
+
+Astăzi faci o rețetă doi pentru unu. Consumi resurse și primești un item craftat, de exemplu un târnăcop. Continui fișierul Prenume, linie jos, Nume, linie jos, M șase, linie jos, Lume Cuburi.
+
+Obiectivul. Minim: un buton de craft, cel puțin o rețetă clară, de exemplu doi lemn înseamnă minus doi lemn și plus un târnăcop, afișajul arată itemul, și nu craftezi dacă lipsesc resurse. Complet: minim, plus a doua rețetă, sau itemul folosit în joc: spargi mai departe, ușă pe casă sau lovitură împotriva creaturii.
+
+De ce contează. Craftingul este magia lumii de cuburi: transformi munca de minat în putere. Leagă inventarul de misiunea din lecția opt.
+
+Primul pas pe ecran. Rețeta, pe foaie. Un craft are aceiași trei pași ca magazinul din M cinci: verifici dacă ai destul, scazi, dai itemul. Rețeta unu: doi lemn pentru un târnăcop. În Scratch: dacă lemn mai mare decât unu, schimbă lemn cu minus doi, schimbă tarnacop cu unu. Ai cinci lemn. Câte rămân după un craft? Trei. Câte târnăcoape? Unul.
+
+Al doilea pas pe ecran. Butonul de craft. Variabila tarnacop, pentru toate sprite-urile, bifată, pusă pe zero la steag. Un sprite Craft, un buton cu textul Craft, doi lemn, târnăcop, într-un colț liber, de exemplu la x două sute, y minus o sută șaizeci. Scriptul lui: când se dă click pe acest personaj. Dacă lemn mai mare decât unu, atunci schimbă lemn cu minus doi, schimbă tarnacop cu unu, spune Ai făcut un târnăcop, timp de o secundă. Altfel, spune Îți trebuie doi lemn, timp de două secunde.
+
+Verifici de fiecare dată. Cu un lemn, clic pe Craft: apare Îți trebuie doi lemn, iar lemnul rămâne unu. Cu doi sau mai mulți, lemnul scade cu doi, iar tarnacop crește cu unu.
+
+Al treilea pas pe ecran, pentru Complet. Itemul contează. Alegi cel puțin una. Târnăcopul sparge mai departe: la steag, setează raza la optzeci. În scriptul de craft, după ce dai târnăcopul, setează raza la o sută douăzeci și opt. Spargerea din lecția doi folosește raza. A doua rețetă: al doilea buton, Craft sabie. Trei piatră pentru o sabie: dacă piatra mai mare decât doi, schimbă piatra cu minus trei, schimbă sabie cu unu. Sau sabia elimină creatura: la Erou, în scriptul de lovitură, dacă sabie mai mare decât zero, atunci trimite creatura lovita, altfel pierzi viață. La Creatură, când primesc creatura lovita: ascunde și oprește celelalte scripturi din acest sprite.
+
+Greșeli frecvente. Craftezi fără lemn suficient: lipsește condiția lemn mai mare decât unu. Lemnul scade, dar nu apare itemul: lipsește schimbă tarnacop cu unu, sau variabila nu e bifată. Craftezi la nesfârșit: un clic înseamnă o rețetă, butonul nu stă într-un repetă. Itemul nu schimbă nimic: la Complet se schimbă raza, altfel e doar un număr. Raza rămâne mare după steag: la steag setezi raza la optzeci. Butonul e acoperit de blocuri: îl pui într-un colț liber.
+
+Proiectul de azi. Crafting simplu.
+
+Minim înseamnă: o rețetă doi pentru unu, buton, afișaj, blocat fără resurse. Complet înseamnă: minim plus două rețete, sau item folosit în lume.
+
+În proiect, primul pas. Rețeta pe foaie. Al doilea pas. Butonul și scriptul. Al treilea pas, pentru Complet. Salvezi.
+
+Recapitulare. Doi pentru unu înseamnă consum plus produs. Buton și mesaj la eșec. Lecția opt aduce misiunea care cere craft.
+
+Succes la craftul tău.

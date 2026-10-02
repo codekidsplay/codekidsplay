@@ -1,0 +1,33 @@
+Lecția șapte. Zarul meu.
+
+Astăzi faci un zar pe care punctele sunt la locul lor, iar fețele opuse dau mereu suma șapte. Fișier nou: Prenume, linie jos, Nume, linie jos, T trei, linie jos, L șapte. Proiectul se numește Zarul meu.
+
+Obiectivul. La final ai un cub de patruzeci pe patruzeci pe patruzeci, cu puncte pe toate cele șase fețe. Minim: punctele sunt găuri rotunde cu diametru șase, adânci de doi milimetri. Unu e opus lui șase, doi lui cinci, trei lui patru. Punctele sunt aranjate simetric, la zece milimetri unul de altul. Complet: minim, plus un al doilea zar, în altă culoare, și verificarea că fiecare pereche de fețe dă șapte.
+
+De ce contează. Într-un zar, fețele opuse dau șapte: unu plus șase, doi plus cinci, trei plus patru. Așa zarul nu poate fi încărcat. Ca să pui punctele exact, faci câte o pereche de fețe odată, într-un singur Group de Hole-uri, și o rotești la locul ei.
+
+Primul pas pe ecran. Create new design, cu numele fișierului. Snap Grid pe unu milimetru, pentru adâncimi. Un Box de patruzeci pe patruzeci pe patruzeci.
+
+Al doilea pas pe ecran. Un punct: un Cylinder de șase pe șase pe patru, Hole. Tasta L cu cubul: mijloc pe cele două direcții de pe plan și punctul de sus. Îl ridici cu conul negru cu doi milimetri: taie doi milimetri în fața de sus și iese afară. Apoi Snap Grid pe cinci milimetri, pentru mutări de zece.
+
+Cum așezi punctele, față de centrul feței. Unu: un punct în centru. Doi: două puncte pe diagonală, la zece milimetri de centru. Trei: aceleași două, plus centrul. Patru: câte un punct în fiecare colț, tot la zece milimetri. Cinci: cele patru colțuri, plus centrul. Șase: două coloane de câte trei puncte, în stânga și în dreapta. Orice punct nou: Control și D pe un punct, apoi îl muți două sărituri, adică zece milimetri.
+
+Al treilea pas pe ecran. Perechea unu și șase. Punctul din pasul doi e fața unu. Pentru fața șase, jos: Control și D, copia o cobori cu conul negru cu patruzeci de milimetri, opt sărituri. Ajunge la minus doi milimetri și taie doi în fața de jos. Îl muți zece milimetri spre stânga și zece spre față: primul punct din colț. Control și D, zece spre spate. Control și D, încă zece spre spate. Selectezi cele trei puncte, Control și D, muți copiile douăzeci de milimetri spre dreapta. Selectezi cele șapte puncte, Control și G. Din Front: un punct sus, șase jos. Muți perechea șaizeci de milimetri deoparte.
+
+Al patrulea pas pe ecran. Perechea doi și cinci. Un punct nou de șase pe șase pe patru, Hole, ca în pasul doi. Sus doi, jos cinci, punctele din descriere, cele de jos coborâte cu patruzeci de milimetri. Cele șapte puncte, Control și G. Rotești grupul nouăzeci de grade, patru pași de câte douăzeci și doi virgulă cinci, pe săgeata curbă care îl culcă. Fețele sunt acum stânga și dreapta. Muți perechea șaizeci de milimetri deoparte, în altă direcție.
+
+Al cincilea pas pe ecran. Perechea trei și patru, la fel: sus trei, jos patru, Control și G. Rotești nouăzeci de grade pe cealaltă săgeată curbă. Fețele sunt acum față și spate. Muți perechea deoparte, în altă direcție.
+
+Al șaselea pas pe ecran. Selectezi cubul și cele trei perechi, patru obiecte, tasta L, mijloc pe cele trei direcții, o singură dată. Apoi cubul și perechile, Control și G. Rotești vederea: unu opus lui șase, doi lui cinci, trei lui patru. Adunate câte două, dau șapte.
+
+Al șaptelea pas pe ecran, pentru Complet. Zarul, Control și D, copia șaizeci de milimetri lateral. La Color, un zar într-o culoare, celălalt în alta. Spui pe rând: unu plus șase, doi plus cinci, trei plus patru. Toate dau șapte.
+
+Greșeli frecvente. Punctele nu se văd: Hole-ul nu iese în afară sau n-ai dat Group. Punctele sunt prea adânci: doi milimetri e bine. Perechea nu a ajuns pe fețele laterale: n-ai rotit grupul sau n-ai centrat totul cu tasta L. Două fețe au același număr: ai rotit aceeași pereche de două ori. Ai grupat punctele cu cubul prea devreme: grupează întâi cele șapte puncte între ele.
+
+Proiectul de azi. Zarul meu.
+
+Minim înseamnă: cub de patruzeci, șase fețe cu puncte adânci de doi milimetri, perechile unu și șase, doi și cinci, trei și patru. Complet înseamnă: minim, plus al doilea zar în altă culoare și verificarea sumei șapte.
+
+Recapitulare. Fețele opuse dau șapte. O pereche e un Group de Hole-uri, rotit la locul lui. La final, Control și G cu cubul.
+
+Succes la zarul tău.

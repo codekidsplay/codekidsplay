@@ -1,0 +1,29 @@
+Lecția șase. Barca mea.
+
+Astăzi împarți un obiect real în forme simple: semisferă, pană și cilindru. Din ele faci o barcă. Proiectul se numește Barca mea. Numele fișierului este: Prenume, linie jos, Nume, linie jos, T unu, linie jos, L zero șase. Imprimanta trei D nu o folosim la oră. Azi doar proiectezi.
+
+Obiectivul. La final ai o barcă pe care o recunoști din lateral: corp, catarg și cel puțin o pânză, pe plan. Minim: corpul din Half Sphere, cu partea plată sus, un catarg și o pânză din Wedge. Nimic nu plutește, verificat din Front sau Right. Complet: minim, plus a doua pânză, steag, culori și apă, în care barca stă puțin înfundată.
+
+De ce contează. Înveți să privești un obiect real și să-l împarți în forme simple. Așa vei face mai târziu racheta și castelul.
+
+Primul pas pe ecran. Create new design. Sus scrii numele Prenume, linie jos, Nume, linie jos, T unu, linie jos, L zero șase. Salvarea este automată. Verifici numele.
+
+Al doilea pas pe ecran. Corpul bărcii. Din Basic Shapes tragi un Half Sphere. Din pătrățelele albe îl scalezi lung și îngust: șaizeci lungime, douăzeci lățime, cincisprezece înălțime. Partea plată trebuie să fie sus, iar partea rotundă dedesubt, ca la o barcă pe apă. Un Half Sphere nou are, de obicei, partea rotundă sus, deci trebuie întors. Îl rotești o sută optzeci de grade, cu o săgeată curbă de pe latură, adică de două ori nouăzeci de grade, în pași de douăzeci și doi virgulă cinci grade. Urmărești unghiul afișat. Din Front sau Right verifici: rotundul este jos și plat sus? Baza, acum vârful rotund, trebuie să fie pe plan. Dacă plutește, apeși tasta D.
+
+Al treilea pas pe ecran. Catargul. Tragi un Cylinder subțire și înalt: trei pe trei pe patruzeci. Îl pui pe mijlocul bărcii, pe partea plată de sus, și verifici din Top. Îl ridici cu conul negru la paisprezece. Puntea este la cincisprezece, deci catargul intră un milimetru în corp. Din Front verifici: catargul intră puțin în barcă și nu plutește.
+
+Al patrulea pas pe ecran. Pânza. Tragi un Wedge, adică o pană. Îl rotești pe verticală până când, din Front, vezi un triunghi. Dacă vezi un dreptunghi, rotești nouăzeci de grade în jurul axei de sus. Latura dreaptă, verticală, o pui lângă catarg. Îl scalezi subțire, ca o pânză, nu ca un zid: doi milimetri grosime, aproximativ douăzeci și cinci lungime și treizeci înălțime, văzut din Front. Îl ridici cu conul negru la cincisprezece, pe punte. Îl muți cu mouse-ul, din Top și din Front, până când latura dreaptă intră un milimetru în catarg. Tasta L nu este necesară azi. Muți manual.
+
+Al cincilea pas pe ecran, pentru Complet. A doua pânză, mai mică, de cealaltă parte a catargului. Apeși Control și D pe prima, o micșorezi cu Shift, o oglindești cu tasta M, ca în lecția trei, astfel încât latura dreaptă să fie tot lângă catarg, apoi o muți. Steagul: un Box plat și mic, opt pe unu pe cinci, ridicat la patruzeci și nouă, lipit de vârful catargului. Catargul se termină la cincizeci și patru. La final folosești Color pe barcă, pânze și steag.
+
+Al șaselea pas pe ecran, tot pentru Complet. Apa. Un Box plat, albastru, nouăzeci pe cincizeci pe opt, pe plan, în jurul bărcii. Barca stă pe plan, deci jumătatea ei de jos intră în apă. Îl centrezi din Top. Apa are opt milimetri, barca are cincisprezece. Puțin peste jumătate din corp este în apă, iar restul iese deasupra. Din Front verifici: barca nu zboară deasupra apei, iar apa nu acoperă puntea.
+
+Greșeli frecvente. Barca are fundul plat în jos: o rotești o sută optzeci de grade și verifici din Front. Catargul nu stă pe barcă: conul negru, apoi Front. Pânza este prea groasă: scalezi pe grosime. Pânza este departe de catarg: o muți până atinge catargul. Ceva plutește: tasta D pe bază, sau cobori cu conul negru. Apa este deasupra bărcii: barca stă în apă, nu sub ea, iar apa are doar opt milimetri. Nu apeși D pe catarg sau pe pânză, pentru că le coboară în corp. Le ridici cu conul negru.
+
+Proiectul de azi. Barca mea.
+
+Minim înseamnă: Half Sphere cu partea plată sus, catarg și o pânză din Wedge, iar nimic nu plutește. Complet înseamnă: minim, plus a doua pânză, steag, apă și culori. Dacă rămâi în urmă, salvează la Minim. Ești la Minim când profesorul spune: arată-mi barca din lateral, și se vede clar o barcă.
+
+Recapitulare. Orice obiect se împarte în forme simple. O rotire de o sută optzeci de grade, cu săgeata curbă, răstoarnă o piesă. Front și Right sunt vederile din lateral, cu care verifici.
+
+Succes la barca ta.

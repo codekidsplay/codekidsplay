@@ -1,0 +1,29 @@
+Lecția unu. Căsuța mea.
+
+Astăzi cunoști interfața Tinkercad și construiești prima ta casă din forme: un cub pentru corp și o piramidă pentru acoperiș. Proiectul se numește Căsuța mea. Numele fișierului este: Prenume, linie jos, Nume, linie jos, T unu, linie jos, L zero unu. Imprimanta trei D nu o folosim la oră. Azi doar proiectezi.
+
+Obiectivul. La final deschizi un proiect nou, te miști pe planul trei D, știi să anulezi și să ștergi, și ai o casă clară, cu corp și acoperiș, cu numele corect. Minim: un cub și o piramidă așezate ca o casă, vederea rotită și proiectul redenumit. Complet: minim, plus culori diferite pe corp și pe acoperiș, plus o ușă sau o fereastră lipită pe fațadă.
+
+De ce contează. Tinkercad este ca un atelier trei D. Tragi forme și le așezi pe Workplane, adică planul de lucru. Fără cameră, fără plan, fără Undo și fără nume de proiect, orele următoare se blochează.
+
+Primul pas pe ecran. Deschizi pagina Tinkercad, cu contul școlii. Apeși Create new design și alegi Design trei D, nu Circuits. Sus, pe nume, dai click și scrii Prenume, linie jos, Nume, linie jos, T unu, linie jos, L zero unu. Tinkercad salvează singur. Tu doar verifici că numele este corect.
+
+Al doilea pas pe ecran. Provocarea cu cinci forme. În panoul din dreapta, la Basic Shapes, tragi pe plan cinci forme diferite: de exemplu Box, Pyramid, Cylinder, Sphere și Cone. Le așezi una lângă alta, pe plan, nu în aer. Selectezi una și apeși Delete. Apoi anulezi cu tasta Control și Z împreună. Pe Mac, Command și Z. Forma se întoarce. La final, ca să cureți planul, apeși Control și A împreună, apoi Delete.
+
+Al treilea pas pe ecran. Cum te uiți în spațiu. Click dreapta și tragere rotește vederea. Pe touchpad, folosești gestul de click dreapta. Rotița mouse-ului face zoom. Pentru a muta vederea, ții Shift și click dreapta, sau apeși rotița și tragi. Colțul cu View Cube te întoarce pe o față, de exemplu Top sau Front. Atenție: dacă rotești doar camera, obiectele rămân pe loc.
+
+Al patrulea pas pe ecran. Cubul este corpul casei. Tragi un Box pe plan și îl selectezi. Tragi de pătrățelele albe din colțuri și schimbi lățimea și lungimea. În timp ce tragi, vezi numere în milimetri. Te oprești la patruzeci pe patruzeci. Apoi tragi de pătrățelul alb de sus și schimbi înălțimea. Te oprești la douăzeci și cinci. Dacă vrei, ții Shift cât tragi de un colț, ca să scalezi proporțional. Dacă piesa plutește, o selectezi și apeși tasta D. Cade pe plan.
+
+Al cincilea pas pe ecran. Piramida este acoperișul. Tragi un Pyramid pe plan. Din pătrățelele albe de colț faci baza de cincizeci pe cincizeci, puțin mai mare decât cubul, pentru streașină. Înălțimea poate rămâne cum este. Apoi o ridici pe cub: tragi în sus de conul negru de deasupra piesei și te oprești la douăzeci și cinci, cât înălțimea cubului. Din Top o centrezi peste cub, ca streașina să fie egală pe toate laturile. Privește din două unghiuri. Trebuie să arate a căsuță.
+
+Al șaselea pas pe ecran, pentru Complet. Selectezi corpul și, în fereastra care apare, apeși pătrățelul Color și alegi o culoare. Selectezi acoperișul, apeși Color și alegi altă culoare. Pentru ușă, pui un Box de aproximativ zece pe patru pe șaisprezece, pe plan, în mijlocul fațadei, intrat doi milimetri în perete. Pentru fereastră, un Box de aproximativ opt pe patru pe opt, ridicat cu conul negru la aproximativ zece, tot intrat doi milimetri în perete.
+
+Greșeli frecvente. Piramida stă lângă cub, nu pe el: ridic-o cu conul negru. Obiectul plutește: selectezi și apeși D. Dar nu folosi D pe acoperiș sau pe fereastră, pentru că le coboară în cub. Ușa stă lângă perete: trebuie să atingă fațada sau să intre puțin. Nu găsești formele: sunt în panoul din dreapta, la Basic Shapes. Ai deschis Circuits: creează un Design trei D. Dacă ștergi greșit, apeși Control și Z.
+
+Proiectul de azi. Căsuța mea.
+
+Minim înseamnă: proiect redenumit, cinci forme cu Delete și Undo, navigare reușită, și un cub cu o piramidă care arată ca o casă. Complet înseamnă: minim, plus culori și o ușă sau o fereastră lipită. Dacă rămâi în urmă, salvează la Minim. Ești la Minim când un coleg spune: e o casă, fără explicații.
+
+Recapitulare. Planul este masa pe care construiești. Camera se rotește, obiectele stau pe loc. D așază piesa pe plan. Delete șterge, Control și Z anulează. Color schimbă culoarea. Casa este un cub și o piramidă.
+
+Succes la căsuța ta.

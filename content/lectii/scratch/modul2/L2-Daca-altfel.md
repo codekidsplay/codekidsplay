@@ -9,7 +9,7 @@
 
 ## Obiectiv
 La finalul orei poți folosi <span style="color:#FFAB19;font-weight:700">dacă … atunci … altfel</span> ca să alegi între **două** reacții (fundal zi vs noapte), doar cu o tastă — **fără** calcule `>` / `<`.  
-**Minimum:** un `dacă … altfel` care schimbă **fundal + mesaj** (cu / fără tasta `z`).  
+**Minim:** un `dacă … altfel` care schimbă **fundal + mesaj** (cu / fără tasta `z`).  
 **Ținta orei (Complet):** Minim + **sunet pe fiecare drum** + **reset complet** la steag.
 
 ## De ce contează
@@ -23,7 +23,7 @@ La finalul orei poți folosi <span style="color:#FFAB19;font-weight:700">dacă �
 | Minute | Ce facem |
 |--------|----------|
 | 0–10 | Recap `dacă … atunci` (L1) + ce e **altfel** |
-| 10–30 | Pas cu pas: checkpoint-uri (**Încearcă tu**) |
+| 10–30 | Pas cu pas: mini-verificări (**Încearcă tu**) |
 | 30–100 | Proiectul „Zi sau noapte” (vezi **Minim vs Complet**) |
 | 100–120 | Recap, bonus, salvare |
 
@@ -55,7 +55,7 @@ La finalul orei poți folosi <span style="color:#FFAB19;font-weight:700">dacă �
    - **atunci:** <span style="color:#9966FF;font-weight:700">spune</span> `Zi!` *(fără „pentru … secunde” — ca să nu blocheze bucla)*  
    - **altfel:** <span style="color:#9966FF;font-weight:700">spune</span> `Noapte!`
 4. Cum testezi:  
-   - **Ține Z** apăsată **înainte** să apeși steagul, **sau** apas-o rapid după  
+   - **Ține Z** apăsată **înainte** să apeși steagul, **sau** apasă-o rapid după  
    - Scriptul verifică mereu: **ții Z** → „Zi!”; **lași** → „Noapte!”
 
 **Încearcă tu — mecanismul cu tasta (2–3 min)**  
@@ -90,7 +90,7 @@ La finalul orei poți folosi <span style="color:#FFAB19;font-weight:700">dacă �
 - [ ] Steag de două ori → fundalul de start e curat, apoi alegerea rulează din nou  
 - [ ] Salvat: `Prenume_Nume_L2`  
 
-*(**Nu** azi: `dacă x > 0`, `dacă mărime > 100`. <span style="color:#59C059;font-weight:700">Operatori</span>: la **L5** doar un preview `=` (victorie scor); `<` `>` `+` pe îndelete la **L6**.)*
+*(**Nu** azi: `dacă x > 0`, `dacă mărime > 100`. <span style="color:#59C059;font-weight:700">Operatori</span>: la **L5** doar un exemplu `=` (victorie scor); `<` `>` `+` pe îndelete la **L6**.)*
 
 ---
 
@@ -100,7 +100,7 @@ La finalul orei poți folosi <span style="color:#FFAB19;font-weight:700">dacă �
 3. **Ai folosit două condiții `dacă` separate** — azi vrem un singur `dacă/altfel` ca să se vadă „da vs nu”.  
 4. **Fundalurile lipsesc** — tab Scenă: 2 fundaluri + numele exact în `comută fundalul`.  
 5. **Operator verde în hexagon** — scoate-l; doar Detectare (tastă).  
-6. **Sunet spam** (la Complet) — pune <span style="color:#FFAB19;font-weight:700">așteaptă</span> `0.5` după sunet pe fiecare drum.  
+6. **Sunet care se repetă** (la Complet) — pune <span style="color:#FFAB19;font-weight:700">așteaptă</span> `0.5` după sunet pe fiecare drum.  
 7. **Nume fișier** — `Prenume_Nume_L2`, nu doar `Ana_L2`.
 
 ---
@@ -112,7 +112,7 @@ Salvat: `Prenume_Nume_L2`
 
 | | Ce trebuie |
 |--|------------|
-| **Minim („am reușit”)** | bucla bucla `forever` + **o** condiție `dacă … altfel` pe tasta `z` → **fundal + mesaj** pe fiecare drum + reset fundal la steag |
+| **Minim („am reușit”)** | bucla `forever` + **o** condiție `dacă … altfel` pe tasta `z` → **fundal + mesaj** pe fiecare drum + reset fundal la steag |
 | **Complet (ținta orei)** | Minim + **sunet pe fiecare drum** + **reset complet** (fundal + efecte + `oprește toate sunetele`) |
 
 Dacă rămâi în urmă: salvează la **Minim**.  
@@ -134,7 +134,7 @@ Cei rapizi: Complet, apoi Bonus.
 **→ Minim când:** steag → ții Z = zi; lași = noapte (fără să reapeși steagul).
 
 ### Pasul 3 — Sunet + reset complet *(Complet)*
-- [ ] Pe **fiecare** drum: un <span style="color:#CF63CF;font-weight:700">sunet</span> diferit (+ `așteaptă` `0.5` ca să nu spam-uiască)  
+- [ ] Pe **fiecare** drum: un <span style="color:#CF63CF;font-weight:700">sunet</span> diferit (+ `așteaptă` `0.5` ca să nu se repete sunetul)  
 - [ ] La steag, înaintea buclei `forever`: fundal start + `anulează efectele` + `oprește toate sunetele`  
 - [ ] Un coleg înțelege regula fără să îi explici  
 - [ ] Salvat din nou  

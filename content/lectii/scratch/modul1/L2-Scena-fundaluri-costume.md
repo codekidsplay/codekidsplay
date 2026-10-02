@@ -56,20 +56,25 @@ Ca într-un joc sau o poveste pe telefon: schimbi **locul** (oraș → pădure) 
 ### 4) Trecere la scena 2 + sincron cu personajul
 **Pe Scenă** (același script de la pasul 2), adaugi **sub** start:
 
-1. <span style="color:#FFAB19;font-weight:700">așteaptă</span> `3` secunde  
+1. <span style="color:#FFAB19;font-weight:700">așteaptă</span> `5` secunde  
 2. <span style="color:#9966FF;font-weight:700">comută fundalul la</span> `Parc`
 
-**Pe personaj** — ca dialogul să se potrivească cu scena:
+**Pe personaj** — ca dialogul să se potrivească cu scena, adaugi sub scriptul de la pasul 3 (după `repetă 10`, care durează 2 secunde):
+
+1. <span style="color:#9966FF;font-weight:700">spune</span> `Suntem acasă!` pentru `3` secunde  
+2. <span style="color:#9966FF;font-weight:700">spune</span> `Am ajuns în parc!` pentru `3` secunde
+
+Prima replică se termină la 2 + 3 = **5** secunde, cât timp se vede `Casa`. Deci Scena așteaptă tot **5**.
 
 | Când (timp) | Pe personaj (exemplu) |
 |-------------|------------------------|
-| Primele ~3 sec (încă pe `Casa`) | `spune` ceva despre **scena 1** → `așteaptă` până se apropie de 3 sec |
-| După ce Scena a comutat | `spune` ceva despre **scena 2** |
+| Primele 5 sec (încă pe `Casa`) | animația de costume (2 s) + `spune` despre **scena 1** (3 s) |
+| După ce Scena a comutat (secunda 5) | `spune` despre **scena 2** (3 s) |
 
-*Regulă simplă:* timpul total de `așteaptă` + `spune` pe personaj **înainte** de replica de pe scena 2 ≈ **aceleași 3 secunde** pe care le așteaptă Scena.  
-Nu există un „cablu” între cele două scripturi — **tu** potrivești numerele. Dacă schimbi `3` pe Scenă, schimbă și pe personaj.
+*Regulă simplă:* timpul total de `așteaptă` + `spune` pe personaj **înainte** de replica de pe scena 2 = **aceleași 5 secunde** pe care le așteaptă Scena.  
+Nu există un „cablu” între cele două scripturi — **tu** potrivești numerele. Dacă schimbi `5` pe Scenă, schimbă și pe personaj.
 
-*(Mesajele / broadcast le învățăm în Modulul 2 — azi sincronizăm cu `așteaptă`.)*
+*(Mesajele / broadcast le învățăm în Modulul 2 — azi potrivim timpii cu `așteaptă`.)*
 
 ---
 
@@ -77,7 +82,7 @@ Nu există un „cablu” între cele două scripturi — **tu** potrivești num
 - [ ] Ai **2 fundaluri** cu nume clare  
 - [ ] La steag începi **mereu** pe scena 1 (bloc pe **Scenă**)  
 - [ ] Personaj: `repetă 10` + `următorul costum` + `așteaptă 0.2`  
-- [ ] După ~3 sec, fundalul trece la scena 2  
+- [ ] După 5 sec, fundalul trece la scena 2  
 
 ---
 
@@ -85,8 +90,8 @@ Nu există un „cablu” între cele două scripturi — **tu** potrivești num
 1. **Fundalul nu se schimbă** — ai lipit pe **personaj** în loc de **Scenă**, sau în bloc e alt nume decât `Parc` / `Casa`.  
 2. **Costumele nu se văd** — rulezi pe un personaj, te uiți la altul.  
 3. **La steag rămâi pe scena 2** — lipsește la start `comută fundalul la` scena 1.  
-4. **Dialogul „vorbește pe scena greșită”** — Scena așteaptă 3 sec, dar pe personaj ai `așteaptă` 1 sec (sau 5). **Potrivește timpii:** replica pentru scena 2 începe **după** aceleași ~3 secunde. Testează de 2–3 ori și ajustează numerele.  
-5. **Nume fișier** — folosește `Prenume_Nume_L2`, nu doar `Ana_L2` (coliziune în clasă).
+4. **Dialogul „vorbește pe scena greșită”** — Scena așteaptă 5 sec, dar pe personaj replicile durează doar 2 sec (sau 9). **Potrivește timpii:** replica pentru scena 2 începe **după** aceleași 5 secunde. Testează de 2–3 ori și ajustează numerele.  
+5. **Nume fișier** — folosește `Prenume_Nume_L2`, nu doar `Ana_L2` (se suprascriu în clasă).
 
 ---
 
@@ -98,7 +103,7 @@ Salvat: `Prenume_Nume_L2`
 | | Ce trebuie |
 |--|------------|
 | **Minim („am reușit”)** | **Pasul 1 + Pasul 2** — 2 fundaluri, start pe scena 1, ≥3 costume + animație scurtă `repetă 10` |
-| **Complet (ținta orei)** | Minim + **Pasul 3** — trecere la scena 2 + câte un `spune` pe fiecare scenă, sincronizat |
+| **Complet (ținta orei)** | Minim + **Pasul 3** — trecere la scena 2 + câte un `spune` pe fiecare scenă, potrivit în timp |
 
 Dacă rămâi în urmă: salvează la **Minim**. Nu e eșec.  
 Cei rapizi: Complet, apoi Bonus.
@@ -115,10 +120,10 @@ Cei rapizi: Complet, apoi Bonus.
 **→ Minim când:** steagul arată scena 1 + personajul își schimbă costumele.
 
 ### Pasul 3 — Povestea pe 2 locuri *(Complet)*
-- [ ] Pe **Scenă**: după `așteaptă` **`3`** (sau numărul tău), `comută fundalul la` scena 2  
+- [ ] Pe **Scenă**: după `așteaptă` **`5`** (sau numărul tău), `comută fundalul la` scena 2  
 - [ ] Pe **personaj**: **1** `spune` pentru scena 1 + **1** `spune` pentru scena 2  
 - [ ] Timpii pe personaj **potriviți** cu `așteaptă` de pe Scenă (vezi pasul 4 + greșeala 4)  
-- [ ] Rulează ≥ **25 de secunde** fără ajutor  
+- [ ] Rulează ≥ **8 secunde** (5 pe scena 1 + 3 pe scena 2) fără ajutor  
 - [ ] Salvat din nou  
 
 **Gata Complet când:** un coleg vede clar **2 locuri**, fără explicație cu vocea.
@@ -137,7 +142,7 @@ Cei rapizi: Complet, apoi Bonus.
 ## Recapitulare rapidă
 1. **Fundal** = locul · **Costum** = look-ul  
 2. Schimbarea scenei azi = blocuri pe **Scenă**  
-3. Scena și personajul = **2 scripturi** — sincronizezi cu aceleași secunde în `așteaptă`  
+3. Scena și personajul = **2 scripturi** — potrivești aceleași secunde în `așteaptă`  
 4. Nume: **`Prenume_Nume_L2`**  
 
 ## Schema pe scurt *(pe foaie)*

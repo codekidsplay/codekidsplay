@@ -1,0 +1,31 @@
+Lecția unu. Cuierul meu.
+
+Astăzi treci de la formele frumoase la un obiect util. Faci un cuier cu mărimi alese de tine. Creezi un design nou și îl salvezi cu numele: Prenume, linie jos, Nume, linie jos, T doi, linie jos, L unu. Proiectul se numește Cuierul meu.
+
+Obiectivul. La final ai o placă de o sută douăzeci pe treizeci pe cinci milimetri, trei cârlige la distanțe egale și două găuri pentru șuruburi, făcute cu Hole. Minim: placa, trei cârlige egale, două găuri care trec prin placă și Group. Complet: minim, plus o bilă pe fiecare cârlig, distanța măsurată cu Ruler și culoare.
+
+De ce contează. Un obiect real are mărimi exacte. Dacă cârligele sunt prea aproape, nu încape a doua haină. Azi înveți să scrii mărimile cu numere, nu doar să măsori cu ochiul.
+
+Primul pas pe ecran. Apasă Create new design și scrie numele. Apoi uită-te jos, în dreapta, la Snap Grid. Alege cinci milimetri. Piesa selectată se mută și cu săgețile de la tastatură. O apăsare este un pas de grilă, adică cinci milimetri.
+
+Al doilea pas pe ecran. Trage un Box pe plan și dă click pe el. În colțuri apar pătrățele albe. Apasă pe unul. Apar trei numere: lungimea, lățimea și înălțimea. Apasă pe fiecare și scrie: o sută douăzeci, treizeci, cinci. Asta este placa.
+
+Al treilea pas pe ecran. Trage un Cylinder și scrie: zece, zece, douăzeci și cinci. Este primul cârlig. Selectează cilindrul și placa și apasă tasta L pentru Align. Dă click pe punctul din stânga și pe punctul de mijloc dintre față și spate. Nu alege nimic pe direcția sus și jos. Apoi apasă săgeata dreapta de cinci ori. Centrul cârligului ajunge la treizeci de milimetri de capăt. Cârligul se înfige în placă.
+
+Al patrulea pas pe ecran. Cu cârligul selectat, apasă tasta Control și D împreună. Pe Mac, Command și D. Copia apare peste original. Mută-o treizeci de milimetri spre dreapta, adică șase sărituri de câte cinci. Apasă din nou Control și D. Mutarea se repetă singură. Ai cârlige la treizeci, șaizeci și nouăzeci de milimetri.
+
+Al cincilea pas pe ecran. Trage un Cylinder și scrie: șase, șase, cincisprezece. În panoul Shape alege Hole. Selectează gaura și placa, apasă L, alege punctul din stânga și mijlocul dintre față și spate. Apasă o dată săgeata dreapta. Gaura e la cinci milimetri de capăt, departe de cârlige. Coboară-o cu conul negru, cam doi milimetri sub plasă, ca să treacă prin toată placa. Apoi Control și D, copia și placa, L, punctul din dreapta și o dată săgeata stânga.
+
+Al șaselea pas pe ecran. Apasă Control și A, apoi Control și G. Dacă placa pare ridicată, apasă tasta D. În View Cube alege Top: găurile se văd ca goluri. Apoi alege Front: cârligele ies în sus.
+
+Al șaptelea pas pe ecran, pentru Complet. Trage o Sphere de doisprezece pe doisprezece pe doisprezece. Selectează sfera și un cârlig, apasă L și alege mijlocul pe ambele direcții de pe plan. Ridică-o cu conul negru la nouăsprezece milimetri. Fă două copii, mutate câte treizeci de milimetri. Apoi apasă Ruler, sus în dreapta. Pune rigla pe plan la marginea stângă a primului cârlig și dă click pe al doilea. Citești treizeci de milimetri. Dacă cârligele sunt în Group, desfă întâi cu Control, Shift și G, măsoară, apoi grupează la loc. La final alege o culoare în panoul Shape.
+
+Greșeli frecvente. Distanțe inegale: ai mutat copiile cu ochiul. Șterge-le și refă cu Control și D. Găurile nu se văd: nu ai dat Group sau cilindrii sunt încă Solid. Bilele plutesc: se vede un gol din Front. Număr greșit: Control și Z împreună.
+
+Proiectul de azi. Cuierul meu.
+
+Minim înseamnă: placă de o sută douăzeci pe treizeci pe cinci, trei cârlige egale, două găuri Hole aproape de capete și Group. Complet înseamnă: minim, plus bile pe cârlige, Ruler la treizeci de milimetri și Color. Dacă rămâi în urmă, salvează la Minim.
+
+Recapitulare. Mărimile se scriu cu numere, în pătrățelul alb. Control și D plus aceeași mutare dă copii egale. Hole taie doar după Group și doar dacă trece prin toată placa.
+
+Succes la cuierul tău.

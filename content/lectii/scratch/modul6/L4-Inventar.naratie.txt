@@ -1,0 +1,27 @@
+Lecția patru. Inventar pe scenă.
+
+Astăzi inventarul se vede clar pe ecran: câte resurse ai și ce tip este activ. Continui fișierul Prenume, linie jos, Nume, linie jos, M șase, linie jos, Lume Cuburi. Inventarul de azi are resurse de lume: lemn, piatră și pământ.
+
+Obiectivul. Minim: cel puțin două tipuri vizibile pe scenă, ideal trei, spargerea crește numărul, punerea îl scade, nu poți pune la zero, steagul resetează, iar un coleg citește inventarul fără explicații. Complet: minim, plus selectare cu tastele unu, doi, trei și indicator pentru tipul activ, sau limită maximă pe tip, sau o listă Scratch pe lângă variabile.
+
+De ce contează. Fără afișaj, nimeni nu știe ce poate construi. Inventarul leagă minatul, construcția și craftul din lecția șapte.
+
+Primul pas pe ecran. Ideea, pe foaie. Inventarul e un tablou de bord: pentru fiecare tip de bloc, un număr pe scenă. Spargi, numărul crește. Pui, numărul scade. Dacă e zero, nu poți pune. Ai lemn trei și piatră unu. Pui doi lemn și o piatră. Rămân lemn unu și piatră zero.
+
+Al doilea pas pe ecran. Al treilea tip, pământul. La Bloc, al treilea costum, verde cu maro. O variabilă pamant, pentru toate sprite-urile, bifată pe scenă. Pe steag: setează pamant la zero. La generator: treci la un costum aleatoriu între unu și trei. La spargere adaugi: dacă costum număr egal cu trei, schimbă pamant cu unu. Verifici: spargi mai multe blocuri și toate cele trei numere cresc, după culoare.
+
+Al treilea pas pe ecran. Tipul activ. O variabilă tip activ, setată pe unu la steag. La Erou, trei scripturi: când se apasă tasta unu, setează tip activ la unu, și la fel pentru doi și trei. Apoi refaci scriptul tastei E. Dacă tip activ egal cu unu și lemn mai mare decât zero, trimite pune și schimbă lemn cu minus unu. La fel pentru tipul doi cu piatra, și tipul trei cu pamant. Altfel, spune Nu ai destule, timp de o secundă. La Bloc, în când primesc pune, treci la costumul tip activ și ștergi vechiul schimbă lemn cu minus unu, pentru că scăderea e acum la Erou.
+
+Verifici. Spargi trei blocuri, pui două, rămâne unul pe ecran. Schimbi tipul cu tastele unu, doi, trei și pui blocuri de altă culoare. Cu zero dintr-un tip, nu pui nimic.
+
+Al patrulea pas pe ecran, pentru Complet. Alegi cel puțin una. Indicator: un sprite mic Activ, cu trei costume, care trece la costumul tip activ. Limită: la spargere, dacă lemn mai mic decât douăzeci, abia atunci schimbi lemn cu unu. Sau o listă speciale, în care adaugi Comoară când spargi un bloc rar.
+
+Greșeli frecvente. Numerele nu se văd de departe: le pui mari, în colț. Pui un tip și scade altul: verifici același tip activ. Lemnul scade de două ori: a rămas vechiul bloc din lecția trei. Resursa ajunge negativă: lipsește mai mare decât zero. Crește lemn când spargi pământ: număr greșit de costum. Steagul nu resetează.
+
+Proiectul de azi. Inventar pe scenă.
+
+Minim înseamnă: cel puțin două tipuri vizibile, spargerea crește, punerea scade, blocat la zero, reset, test cu un coleg. Complet înseamnă: minim plus una dintre variante.
+
+Recapitulare. Inventarul pe scenă este obligatoriu. Zero înseamnă că nu construiești. Tipul activ pregătește craftul.
+
+Succes la inventarul tău.

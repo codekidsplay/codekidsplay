@@ -10,11 +10,11 @@
 
 ## Obiectiv
 La finalul orei cineva trece **ambele nivele** fără ajutor.  
-**Minimum:** control erou · L1 + L2 **diferite** · trecere automată la obiectiv · ziduri care opresc / trimit înapoi · **vieți SAU timer** pe scenă · victorie pe L2 · steag = L1 + reset.  
+**Minim:** control erou · L1 + L2 **diferite** · trecere automată la obiectiv · ziduri care opresc / trimit înapoi · **vieți SAU timer** pe scenă · victorie pe L2 · steag = L1 + reset.  
 **Ținta orei (Complet):** Minim + **Level 3** **sau** (vieți **și** timer) **sau** cheie/ușă **sau** cursă 2 jucători.
 
 ## De ce contează
-Labirintul pe nivele = tot ce ai din M2–M3: coliziune, mesaje, presiune de timp/vieți.  
+Labirintul pe nivele = tot ce ai din M2–M3: atingere, mesaje, presiune de timp/vieți.  
 Dacă tipul tău la L1 e labirint/joc, azi exersezi trecerea de nivel pe care o termini la L6.
 
 ---
@@ -54,10 +54,10 @@ Nu desenezi labirint artistic. Doar **3 puncte**:
 2. Erou: 4 direcții cu `schimbă x/y` (săgeți **sau** WASD)  
 3. Ziduri: **o culoare** pe fundal (sau sprite)  
 
-**De reținut — coliziune clasică (Minim):**  
+**De reținut — atingere clasică (Minim):**  
 `dacă` <span style="color:#5CB1D6;font-weight:700">atinge culoarea</span> `[zid]?` → <span style="color:#4C97FF;font-weight:700">du-te la</span> x: … y: … *(poziția de start)*  
 
-*(Nu „înapoi un pas” la Minim — e mai bug-prone. Start curat = mai sigur.)*
+*(Nu „înapoi un pas” la Minim — e mai predispus la greșeli. Start curat = mai sigur.)*
 
 4. Obiectiv L1 (sprite sau culoare finish)  
 5. La steag: poziție start · fundal L1 · reset variabile · oprește sunete
@@ -75,6 +75,17 @@ Nu desenezi labirint artistic. Doar **3 puncte**:
 **Încearcă tu — L1→L2 (20 min)**  
 - [ ] Trecerea e **automată** la obiectiv  
 - [ ] L2 se simte mai greu (nu doar alt titlu)  
+
+**Exemplu concret — trecerea L1 → L2** *(variabila `nivel` evită trecerea repetată)*  
+1. Variabilă `nivel` (pentru toți). La steag: <span style="color:#FF8C1A;font-weight:700">setează</span> `nivel` la `1`  
+2. Pe **Finish**: steag → <span style="color:#4C97FF;font-weight:700">du-te la</span> (finishul L1) → <span style="color:#FFAB19;font-weight:700">forever</span> → <span style="color:#FFAB19;font-weight:700">dacă</span> <span style="color:#5CB1D6;font-weight:700">atinge</span> `Erou` **atunci:**  
+   <span style="color:#FFAB19;font-weight:700">dacă</span> `nivel = 1` → `setează nivel la 2` → <span style="color:#E6A800;font-weight:700">trimite</span> `Nivelul_2` → <span style="color:#FFAB19;font-weight:700">așteaptă</span> `0.5` *(timp ca eroul să ajungă la noul start)*  
+   **altfel:** <span style="color:#9966FF;font-weight:700">spune</span> `Ai câștigat!` timp de `2` secunde → <span style="color:#FFAB19;font-weight:700">oprește</span> `toate`  
+3. Pe **Finish**: <span style="color:#E6A800;font-weight:700">când primesc</span> `Nivelul_2` → <span style="color:#4C97FF;font-weight:700">du-te la</span> (finishul L2)  
+4. Pe **Scenă**: <span style="color:#E6A800;font-weight:700">când primesc</span> `Nivelul_2` → <span style="color:#9966FF;font-weight:700">comută fundalul la</span> `Nivel2`  
+5. Pe **Erou**: <span style="color:#E6A800;font-weight:700">când primesc</span> `Nivelul_2` → <span style="color:#4C97FF;font-weight:700">du-te la</span> (startul L2)  
+
+Zidurile sunt desenate pe fiecare fundal, în aceeași culoare pipetată. **Verifici:** atingi Finish pe L1 → fundalul L2 și eroul la noul start; atingi Finish pe L2 → „Ai câștigat!”.  
 
 ### 4) Presiune: vieți sau timer *(Minim)*
 **Varianta A — Vieți**  
@@ -97,7 +108,7 @@ Alege **cel puțin una**:
 - [ ] **Level 3** jucabil  
 - [ ] **Vieți și timer** împreună  
 - [ ] **Cheie / ușă:** variabilă `are_cheie` deblochează finish-ul  
-- [ ] **Multiplayer cursă:** J1 săgeți · J2 WASD · cine ajunge primul  
+- [ ] **Cursă cu 2 jucători:** J1 săgeți · J2 WASD · cine ajunge primul  
 
 ---
 
@@ -159,7 +170,7 @@ steag → `setează timp la …` → `forever` → `așteaptă 1` → `schimbă 
 **Quiz scurt:**  
 - Care e rețeta la zid?  
 - Cum e L2 diferit de L1?  
-- Ce ai lua în motorul L1?
+- Ce ai lua în baza jocului L1?
 
 ## Temă
 Sunet la trecerea de nivel. Urmează L6 = **proiectul tău** (deschizi `…_M4_L1` / salvezi ca L6).

@@ -1,0 +1,29 @@
+Lecția șapte. Racheta mea.
+
+Astăzi combini forme cu simetrie în jurul unei axe: cilindru, con, aripioare și hublou. Proiectul se numește Racheta mea. Numele fișierului este: Prenume, linie jos, Nume, linie jos, T unu, linie jos, L zero șapte. Imprimanta trei D nu o folosim la oră. Azi doar proiectezi.
+
+Obiectivul. La final ai o rachetă pe verticală, simetrică, care stă pe plan. Minim: corp din Cylinder, vârf din Cone și patru aripioare egale la coadă, în cruce, la nouăzeci de grade una de alta, verificate din Top. Complet: minim, plus un hublou făcut cu Hole și Group, flăcări pe care stă racheta, și culori.
+
+De ce contează. Exersezi tot ce ai învățat: rotirea, alinierea, Hole și Group.
+
+Primul pas pe ecran. Create new design. Sus scrii numele Prenume, linie jos, Nume, linie jos, T unu, linie jos, L zero șapte. Salvarea este automată. Verifici numele.
+
+Al doilea pas pe ecran. Corpul și vârful. Tragi un Cylinder în picioare, pe plan, și îl faci douăzeci pe douăzeci pe cincizeci. Apoi tragi un Cone deasupra și îl faci douăzeci pe douăzeci pe douăzeci și cinci. Îl ridici cu conul negru la patruzeci și nouă. Astfel intră un milimetru în cilindru. Tasta D o folosești doar dacă ai greșit cilindrul, nu pe con. Din Top verifici că vârful este pe mijlocul cilindrului. Dacă nu, îl muți cu mouse-ul. Dacă vârful este prea lat, scalezi lățimea, nu doar înălțimea.
+
+Al treilea pas pe ecran. Cele patru aripioare, în cruce. O piesă se rotește în jurul propriului centru. De aceea facem o placă simetrică, al cărei centru este chiar axa rachetei. Tragi un Roof din Basic Shapes. Din Front trebuie să vezi un triunghi cu vârful sus. Dacă nu, îl rotești nouăzeci de grade în jurul axei de sus. Îl scalezi: cincizeci lățime, doi grosime, douăzeci înălțime, pe plan. Selectezi corpul, adică cilindrul, și placa, cu Shift și click, apeși tasta L și alegi punctul din mijloc pe ambele direcții din Top. Placa ajunge centrată pe corp. Verifici din Top. Apoi selectezi placa și apeși Control și D. Copia stă peste original. O rotești nouăzeci de grade cu săgeata curbă, adică patru pași de douăzeci și doi virgulă cinci grade. Se rotește în jurul centrului, adică al axei rachetei. Verifici din Top: patru aripioare egale, în cruce, ca un semn plus. Din Front: aripioarele sunt la bază. Planul B, pentru Minim: aripioare din Box-uri subțiri, lipite manual pe față, pe spate, în stânga și în dreapta, privind din Top, la distanțe egale.
+
+Al patrulea pas pe ecran, pentru Complet. Hubloul. Tragi un Cylinder de opt pe opt pe treizeci. Îl culci cu săgeata curbă, nouăzeci de grade, și îl pui pe Hole. Îl așezi în mijlocul corpului, spre față, la înălțimea de aproximativ treizeci și cinci, cu conul negru. Corpul este plin, deci hubloul este un tunel care străpunge corpul și iese pe ambele părți, pentru că treizeci este mai mult decât douăzeci. Verifici din Top și din Front. Apoi apeși Control și G, doar pe corp și hublou. Ții Shift și dai click pe cele două piese. Nu pe vârf sau pe aripioare.
+
+Al cincilea pas pe ecran, tot pentru Complet. Flăcările. Racheta stă pe plan, deci flăcările nu pot fi sub ea. O ridicăm și o sprijinim pe flăcări. Apeși Control și A, pentru că pe plan este doar racheta, și ridici totul cu conul negru la șaptesprezece. Tragi un Cone de doisprezece pe doisprezece pe optsprezece și îl rotești o sută optzeci de grade, cu vârful în jos. Îl pui sub centrul rachetei, cu vârful pe plan. Verifici din Top și din Front. Mai faci încă două conuri, mai mici, cu Control și D și Shift, lângă el, tot cu vârful pe plan. Conurile intră un milimetru în baza rachetei: sus sunt la optsprezece, iar racheta începe la șaptesprezece. La final, Color: galben sau portocaliu.
+
+Al șaselea pas pe ecran. Verificarea finală. Din Front: racheta este dreaptă, iar aripioarele sunt la bază. Din Top: simetrie. La Minim, racheta stă pe plan. La Complet, stă pe flăcări, ale căror vârfuri ating planul.
+
+Greșeli frecvente. Aripioarele nu sunt egale: placa nu este centrată pe corp. Verifici din Top, realiniezi cu L, pe punctele din mijloc, apoi rotești din nou. Racheta este orizontală: ridici corpul vertical. Hubloul nu iese: nu este Hole, nu trece prin corp, treizeci de milimetri față de douăzeci, sau nu ai dat Group. Conul de vârf este prea lat: scalezi pe lățime. Flăcările sunt în sus: le rotești o sută optzeci de grade. Aripioarele sunt doar pe o parte: dezechilibru, le repartizezi.
+
+Proiectul de azi. Racheta mea.
+
+Minim înseamnă: corp, vârf și patru aripioare egale în cruce, verificate din Top. Complet înseamnă: minim, plus hublou cu Hole și Group, flăcări și culori. Dacă rămâi în urmă, salvează la Minim.
+
+Recapitulare. Aripioarele egale se verifică din Top, cu rotire sau cu poziții manuale. Hubloul este Hole și Group. Flăcările sunt conuri cu vârful în jos. A doua placă o rotești la nouăzeci de grade, iar placa trebuie să fie centrată pe corp.
+
+Succes la racheta ta.

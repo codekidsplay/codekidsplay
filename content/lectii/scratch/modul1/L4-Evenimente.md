@@ -9,7 +9,7 @@
 
 ## Obiectiv
 La finalul orei pornești acțiuni pe **evenimente diferite** din <span style="color:#E6A800;font-weight:700">Evenimente</span>.  
-**Minimum:** steag (= reset) + **un** eveniment nou (click pe personaj).  
+**Minim:** steag (= reset) + **un** eveniment nou (click pe personaj).  
 **Ținta orei (Complet):** + tastă (spațiu) + **buton** separat pe scenă.
 
 ## De ce contează
@@ -23,7 +23,7 @@ La finalul orei pornești acțiuni pe **evenimente diferite** din <span style="c
 | Minute | Ce facem |
 |--------|----------|
 | 0–5 | Obiectiv + ce e un eveniment |
-| 5–30 | Pas cu pas: **3** checkpoint-uri (**Încearcă tu**) |
+| 5–30 | Pas cu pas: **3** mini-verificări (**Încearcă tu**) |
 | 30–100 | Proiectul „Butonul magic” (vezi **Minim vs Complet**) |
 | 100–120 | Recap, bonus, salvare |
 
@@ -72,7 +72,7 @@ La finalul orei pornești acțiuni pe **evenimente diferite** din <span style="c
    *(în <span style="color:#9966FF;font-weight:700">Aspect</span> — sau `următorul costum`, din L2)*
 3. Apeși **spațiu** — alt eveniment, altă reacție
 
-*Atenție:* fiecare spațiu adaugă **încă** +25 la culoare (se **cumulează**). De aceea pe **steag** ai `anulează efectele grafice` — altfel, după multe apăsări, personajul arată „straniu” și nu mai știi de ce.
+*Atenție:* fiecare spațiu adaugă **încă** +25 la culoare (se **adună**). De aceea pe **steag** ai `anulează efectele grafice` — altfel, după multe apăsări, personajul arată „straniu” și nu mai știi de ce.
 
 **Încearcă tu — tastă (2 min)**  
 - [ ] Script pe spațiu  

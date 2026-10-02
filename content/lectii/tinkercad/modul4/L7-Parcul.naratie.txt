@@ -1,0 +1,29 @@
+Lecția șapte. Parcul.
+
+Astăzi umpli zona verde cu copaci, bănci, o alee și, la Complet, o fântână. Faci o copie a proiectului din lecția șase, cu Duplicate, și o redenumești: Prenume, linie jos, Nume, linie jos, T patru, linie jos, L zero șapte. Proiectul se numește Parcul meu.
+
+Obiectivul. La final ai un parc pe malurile râului: copaci egal distanțați, o bancă și o alee spre pod. Minim: patru copaci, trunchi și coroană grupate, la paisprezece milimetri unul de altul, o bancă și o alee. Complet: minim, plus opt copaci, două bănci și o fântână, cu bazin, apă, coloană și sferă.
+
+De ce contează. Un parc face orașul mai plăcut. Copacii se repetă cu Control și D, ca ferestrele din lecția trei, dar acum îi așezi în aer liber, cu distanțe egale între ei.
+
+Primul pas pe ecran. La Snap Grid, jos în dreapta, pui unu milimetru. Un copac. Un Cylinder de doi pe doi pe șase: trunchiul, maro. Un Cone de zece pe zece pe paisprezece: coroana, verde. Trunchiul îl ridici la patru milimetri, pe zona de parc. Coroana o ridici la opt milimetri. Se înfige doi milimetri în vârful trunchiului, care se termină la zece. Selectezi ambele și apeși tasta L, pentru Align. Alegi mijlocul pe stânga spre dreapta și mijlocul pe față spre spate, ca să aibă același centru. Apoi apeși tasta Control și G împreună. Pe Mac, Command și G. Acesta e copacul.
+
+Al doilea pas pe ecran. Copacii în rând. Pui copacul pe malul din spate al râului, în partea stângă a zonei de parc. Centrul lui e la șapte milimetri de marginea din stânga a zonei și la șapte milimetri de râu. În dreapta rămâne loc pentru pod și alee. Pui Snap Grid la doi milimetri. Apeși Control și D și muți copia paisprezece milimetri spre dreapta. Apeși Control și D încă de două ori. Ai patru copaci egal distanțați. Acesta e Minimul.
+
+Al treilea pas pe ecran. Banca. Un Box de opt pe trei pe unu: scaunul. Un Box de unu pe trei pe doi: piciorul. Piciorul îl ridici la patru milimetri, scaunul la șase milimetri, ca să se sprijine pe picior. Tasta L cu scaunul: marginea din stânga și mijloc pe față spre spate. Apoi Control și D pe picior, muți copia șapte milimetri spre dreapta. Ai două picioare, câte unul la fiecare capăt. Un Box de opt pe zero virgulă șase pe doi: spătarul. Îl aliniezi cu marginea din spate a scaunului, cu tasta L, și îl ridici la șapte milimetri, deasupra scaunului. Selectezi toate piesele și apeși Control și G: este banca. O pui pe mal, cu spătarul spre râu. Cu Snap Grid unu milimetru, banca stă pe mal la patru milimetri, cu picioarele pe zonă.
+
+Al patrulea pas pe ecran. Aleea. Un Box de patru pe douăzeci pe zero virgulă patru, de culoarea nisipului. Tasta L cu podul: mijloc pe stânga spre dreapta, iar marginea din spate a aleii o aliniezi cu marginea din față a podului. Aleea începe acolo unde se termină podul, pe malul dinspre stradă. O ridici la patru milimetri, pe mal. Ea merge de la pod spre stradă și nu trece printre copaci.
+
+Al cincilea pas pe ecran, pentru Complet. Mai mulți copaci și bănci. Selectezi cei patru copaci, Control și D, și cu Snap Grid doi milimetri muți copiile douăzeci și șase de milimetri spre față. Sunt șapte milimetri de mal, doisprezece de râu și iar șapte de mal. A doua bancă: Control și D pe prima, o rotești o sută optzeci de grade, adică opt pași, și o muți pe malul din față, tot cu spătarul spre râu.
+
+Al șaselea pas pe ecran. Fântâna. Pui Snap Grid la zero virgulă cinci milimetri. Un Cylinder de paisprezece pe paisprezece pe doi: bazinul, gri. Un Cylinder de unsprezece pe unsprezece pe doi, făcut Hole, ridicat cu zero virgulă cinci milimetri față de bazin. Rămâne un fund de zero virgulă cinci milimetri. Tasta L: mijloc pe ambele axe. Selectezi bazinul și gaura și apeși Control și G. Bazinul îl ridici la patru milimetri, pe un mal, departe de aleea de pod. Un Cylinder de unsprezece pe unsprezece pe unu: apa, albastră, la patru virgulă cinci milimetri, în bazin. Un Cylinder de doi pe doi pe cinci: coloana, la patru virgulă cinci milimetri, în centru. O Sphere de patru pe patru pe patru, deasupra coloanei, la nouă virgulă cinci milimetri, centrată. La sfârșit selectezi toate piesele fântânii și apeși Control și G.
+
+Greșeli frecvente. Coroana nu se sprijină pe trunchi: coroana la opt milimetri, trunchiul la patru. Copacii nu sunt egal distanțați: prima mutare de paisprezece milimetri, apoi doar Control și D. Copacul nu e grupat: la mutare rămâne coroana pe loc. Copacii acoperă aleea: lasă loc. Banca e prea sus: picioarele de doi milimetri, scaunul la șase. Fântâna nu are apă: lipsește cilindrul albastru sau gaura nu e grupată cu bazinul. Scara greșită: un copac de optsprezece milimetri are nouă metri în realitate.
+
+Proiectul de azi. Parcul meu.
+
+Minim înseamnă: patru copaci la paisprezece milimetri, o bancă și o alee spre pod. Complet înseamnă: minim, plus opt copaci, două bănci și fântână. Dacă rămâi în urmă, salvează la Minim.
+
+Recapitulare. Un copac e trunchi plus coroană, grupate. Distanțele egale vin de la Control și D. Parcul are copaci, bănci și alee. Numele fișierului are prenumele, numele, T patru și L zero șapte.
+
+Succes la parcul tău.

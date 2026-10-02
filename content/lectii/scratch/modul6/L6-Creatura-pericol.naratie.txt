@@ -1,0 +1,27 @@
+Lecția șase. Creatură și vieți.
+
+Astăzi apare pericolul. O creatură patrulează prin lume, iar eroul are vieți. Trebuie să supraviețuiești. Continui fișierul Prenume, linie jos, Nume, linie jos, M șase, linie jos, Lume Cuburi.
+
+Obiectivul. Minim: variabila vieti pe scenă, cel puțin o creatură care lovește, o reacție la lovitură, iar la zero apare Sfârșitul jocului. Poți evita creatura. Complet: minim, plus creaturi care apar la interval, sau o creatură care se apropie de erou, sau o creatură doar într-o zonă, de exemplu Deșertul.
+
+De ce contează. Fără pericol, lumea e un sandbox fără tensiune. Viețile și creatura pregătesc misiunea din lecția opt și craftul de sabie din lecția șapte.
+
+Primul pas pe ecran. Viețile. Variabila vieti, pentru toate sprite-urile, bifată pe scenă. Pe steag, la Erou: setează vieti la trei. Apoi un script la Erou, repetă la nesfârșit: dacă vieti egal cu zero, atunci spune Sfârșitul jocului și oprește tot. Meniul vine în lecția nouă, acum doar oprim jocul. Verifici: pe scenă se vede vieti egal cu trei, iar steagul îl pune la loc.
+
+Al doilea pas pe ecran. Creatura care patrulează. Sprite nou, Creatură, un pătrat roșu de douăzeci și opt pe douăzeci și opt. O variabilă dir, numai pentru acest sprite. Pe steag: du-te la x minus două sute douăzeci și patru, y minus o sută douăzeci și opt, setează dir la unu, arată. Apoi repetă la nesfârșit: schimbă x cu dir ori treizeci și doi. Dacă x poziția mai mare decât două sute douăzeci și trei, sau x poziția mai mic decât minus două sute douăzeci și trei, setează dir la zero minus dir. Așteaptă zero virgulă patru secunde. Creatura merge pe rândul liber de deasupra startului, la y minus o sută douăzeci și opt. Eroul trebuie s-o evite când urcă.
+
+Al treilea pas pe ecran. Lovitura. La Erou, în repetă la nesfârșit: dacă atinge Creatură, atunci schimbă vieti cu minus unu, du-te la x zero, y minus o sută șaizeci, și spune Au, timp de o secundă. Acea secundă este și pauza dintre lovituri.
+
+Verifici de fiecare dată. Creatura merge dus și întors, în pași de treizeci și doi, fără să iasă din ecran. Te atinge și pierzi o viață, nu trei, iar tu te întorci la start. Poți trece prin spatele ei, la timp. La vieti egal cu zero apare Sfârșitul jocului și totul se oprește.
+
+Al patrulea pas pe ecran, pentru Complet. Alegi cel puțin una. Apariții la interval: în Creatură, alt script, repetă la nesfârșit, așteaptă opt secunde, creează o clonă a mea. Patrularea clonei stă sub când încep ca o clonă. Creatura se apropie: dacă x poziția lui Erou mai mare decât x poziția, schimbă x cu treizeci și doi, altfel cu minus treizeci și doi, la fel pe y, o dată la zero virgulă șase secunde. Sau creatura pornește doar când x poziția lui Erou e mai mare decât zero, până atunci rămâne ascunsă.
+
+Greșeli frecvente. Pierzi trei vieți deodată: lipsește spune sau du-te la start după lovitură. Creatura iese din ecran: lipsesc limitele sau dir nu se schimbă. Creatura nu se simte: rândul ei e plin de blocuri. Jocul nu se oprește: dacă vieti egal cu zero nu e în repetă la nesfârșit. Lipsește setează vieti la trei.
+
+Proiectul de azi. Creatură și vieți.
+
+Minim înseamnă: vieți, pericol care lovește, pauză între lovituri, sfârșit de joc, creatură care se poate evita. Complet înseamnă: minim plus apariții, sau urmărire, sau doar într-o zonă.
+
+Recapitulare. Viață plus pauză între lovituri. Pericol care se poate evita. Lecția șapte aduce craftul.
+
+Succes cu creatura ta.

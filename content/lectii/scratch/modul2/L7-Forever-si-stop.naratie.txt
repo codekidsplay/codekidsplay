@@ -2,7 +2,7 @@ Lecția șapte. Bucla de joc curată.
 
 Astăzi ții jocul aprins cu forever și îl oprești când trebuie: victorie sau buton. Proiectul se numește Bucla de joc curată. Fișierul: Prenume, linie jos, Nume, linie jos, L șapte.
 
-Obiectivul. Știi diferența dintre repetă N și forever. Folosești stop all și stop this script. Un joc mic se oprește la victorie, apoi repornește curat la steag. Minim: o buclă forever principal, victorie cu stop all, plus reset la steag. Complet: minim, plus buton STOP separat, plus demonstrație: joacă, câștigă, steag, joacă din nou.
+Obiectivul. Știi diferența dintre repetă N și forever. Folosești stop all și stop this script. Un joc mic se oprește la victorie, apoi repornește curat la steag. Minim: o buclă forever principal, victorie cu stop all, plus reset la steag. Complet: minim, plus buton Stop separat, plus demonstrație: joacă, câștigă, steag, joacă din nou.
 
 De ce contează. Repetă zece se termină singur, din Modulul unu. Jocurile rămân aprinse până câștigi. Asta e forever plus stop.
 
@@ -12,21 +12,21 @@ Al doilea pas pe ecran. Două stop-uri din Control. Stop all oprește tot pe sce
 
 Al treilea pas pe ecran. Nucleul Minim. La steag: setează scor la zero, du-te la start, anulează efectele, oprește sunetele. Pe stele: arată. Un forever pentru control cu taste. Nu cinci forever care se calcă. Tot în acel forever, după taste: dacă scor egal cu cinci, atunci spune Gata, apoi stop all.
 
-Legătura cu lecția șase. Acolo verificai doar la click pe Verifică, ca să nu vezi Mai încearcă în buclă. Aici verifici continuu în forever, dar stop all oprește totul imediat, deci fără spam. Regula: verificare continuă e ok doar când urmează un stop. Fără stop, tiparul Verifică.
+Legătura cu lecția șase. Acolo verificai doar la click pe Verifică, ca să nu vezi Mai încearcă în buclă. Aici verifici continuu în forever, dar stop all oprește totul imediat, deci fără repetări. Regula: verificare continuă e ok doar când urmează un stop. Fără stop, tiparul Verifică.
 
-Al patrulea pas pe ecran, pentru Complet. Personaj STOP pe scenă. Când se dă clic: stop all. Steagul e singurul play curat. Test: joacă, câștigă sau STOP, steag, joacă din nou, scor zero.
+Al patrulea pas pe ecran, pentru Complet. Personaj Stop pe scenă. Când se dă clic: stop all. Steagul e singurul play curat. Test: joacă, câștigă sau Stop, steag, joacă din nou, scor zero.
 
-Greșeli frecvente. Dacă după stop steagul nu face nimic, lipsește resetul, sau arată pe stele. Dacă ai cinci forever, mișcarea e haotică. Păstrează unul pentru control. Dacă victorie spam, ai dacă scor egal cu cinci în forever fără stop. Pune stop all imediat. Dacă la lecția șase nu verificai în forever, aici e ok doar pentru că urmează stop.
+Greșeli frecvente. Dacă după stop steagul nu face nimic, lipsește resetul, sau arată pe stele. Dacă ai cinci forever, mișcarea e haotică. Păstrează unul pentru control. Dacă mesajul de victorie se repetă, ai dacă scor egal cu cinci în forever fără stop. Pune stop all imediat. Dacă la lecția șase nu verificai în forever, aici e ok doar pentru că urmează stop.
 
 Proiectul de azi. Bucla de joc curată.
 
-Minim înseamnă: forever principal, victorie cu scor egal țintă și stop all, plus reset complet la steag. Complet înseamnă: minim, plus buton STOP, plus demonstrație restart. Dacă rămâi în urmă, salvează la Minim.
+Minim înseamnă: forever principal, victorie cu scor egal țintă și stop all, plus reset complet la steag. Complet înseamnă: minim, plus buton Stop, plus demonstrație restart. Dacă rămâi în urmă, salvează la Minim.
 
 În proiect, primul pas. Control taste plus scor. O buclă forever. Steag cu reset și stele arată.
 
 În proiect, al doilea pas. Victorie: mesaj plus stop all. Salvezi.
 
-În proiect, al treilea pas, pentru Complet. Buton STOP. Demonstrezi: joacă, câștigă, steag, joacă din nou. Salvezi din nou.
+În proiect, al treilea pas, pentru Complet. Buton Stop. Demonstrezi: joacă, câștigă, steag, joacă din nou. Salvezi din nou.
 
 Recapitulare. Forever înseamnă aprins. Stop înseamnă stins. Steag înseamnă reset și play. Un forever de control e destul. Verificare în forever doar cu stop imediat. Numele fișierului are prenumele și numele de familie.
 

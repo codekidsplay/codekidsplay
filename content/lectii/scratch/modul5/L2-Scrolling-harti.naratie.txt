@@ -1,0 +1,29 @@
+Lecția doi. Exploratorul pe hartă.
+
+Astăzi faci o lume mai lată decât ecranul. Lumea se mișcă în sens opus eroului, ca o cameră. Faci un fișier nou. Îl salvezi ca Prenume, linie jos, Nume, linie jos, M cinci, linie jos, L doi. Proiectul se numește Exploratorul pe hartă.
+
+Obiectivul. Harta e pe axa x și e mai lungă decât scena. Eroul pare că merge prin lume. Există un obiectiv la capătul hărții. Steagul face resetul curat. Asta e Minim. Complet înseamnă Minim, plus două zone vizuale pe aceeași derulare, sau limite stânga și dreapta, sau un obstacol pe traseu.
+
+De ce contează. Derularea înseamnă că lumea e mai mare decât scena și se mișcă în spatele eroului. Dacă muți doar eroul pe o scenă mică, nu ai lume. Aceasta e baza platformerului mare din lecțiile șapte și opt.
+
+Primul pas, pe foaie, cinci minute. Scena are patru sute optzeci de pași lățime, dar harta ta e de trei ori mai lungă. Eroul nu se mișcă din mijloc. Când apeși săgeata dreapta, se schimbă un număr, camera x. Obiectele din lume își recalculează locul. Poziția pe ecran este locul din lume minus camera x. Exemplu: un copac stă în lume la patru sute. Când camera x este zero, copacul e la patru sute, în afara ecranului. Când camera x este trei sute, copacul e la o sută, pe ecran. Încearcă pe foaie: unde apare un copac din lume opt sute, când camera x este șase sute? Răspuns: două sute.
+
+Al doilea pas pe ecran. Faci proiect nou. Creezi variabila camera x, pentru toate sprite-urile. Eroul stă la x zero, y minus o sută. Faci trei sprite-uri pentru lume: Copac, Piatră și Țel. Pe steag, la Erou: du-te la x zero, y minus o sută, și setează camera x la zero.
+
+Al treilea pas, mersul. La Erou, în repetă la nesfârșit: dacă tasta săgeată dreapta apăsată, schimbă camera x cu patru. Dacă săgeata stânga, schimbă camera x cu minus patru. Eroul nu se mișcă pe ecran, dar camera x crește și scade.
+
+Al patrulea pas, lumea care alunecă. Începi cu Copac. Creezi variabila lume x, numai pentru acest sprite. Pe steag: setează lume x la patru sute și ascunde. Apoi repetă la nesfârșit: setează variabila poz la lume x minus camera x. Dacă valoarea absolută din poz este mai mică decât două sute cincizeci, du-te la x poz, y minus o sută, și arată. Altfel, ascunde. Copiezi scriptul în Piatră și în Țel și schimbi doar lume x. Piatră are opt sute. Țel are o mie două sute.
+
+Al cincilea pas, obiectivul. La Țel: dacă atinge Erou, spune Ai ajuns și oprește tot.
+
+Complet, alegi cel puțin una. Limite: dacă camera x este mai mică decât zero, setează zero. Dacă este mai mare decât o mie două sute, setează o mie două sute. Două zone: dacă camera x este mai mare decât șase sute, treci la fundalul doi, altfel la fundalul unu. Obstacol: sprite-ul Groapă, cu lume x șase sute. Dacă atinge Erou, setează camera x la zero.
+
+Greșeli frecvente. Copacul merge în același sens cu tine: ai scris plus în loc de minus. Variabila lume x e pentru toate sprite-urile, nu numai pentru unul. Eroul schimbă x, dar trebuie să schimbe doar camera x. Resetul uită camera x.
+
+Proiectul de azi. Exploratorul pe hartă.
+
+Minim înseamnă: derulare pe x, obiectiv pe hartă, reset. Complet înseamnă: Minim plus una dintre cele trei variante. Dacă rămâi în urmă, salvează la Minim.
+
+Recapitulare. Lumea se mișcă opus. Azi lucrezi doar pe axa x. Numele fișierului are prenumele, numele, M cinci și L doi.
+
+Succes la explorarea ta.

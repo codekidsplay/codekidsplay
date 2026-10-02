@@ -8,7 +8,7 @@
 ---
 
 ## Obiectiv
-**Minimum:** meniu Start (buton) · `start_joc` pornește lumea · restart / steag readuce meniul sau resetează tot · pe scenă: **Cum minezi / pui / craftezi** · coleg începe **singur** din meniu.  
+**Minim:** meniu Start (buton) · `start_joc` pornește lumea · restart / steag readuce meniul sau resetează tot · pe scenă: **Cum minezi / pui / craftezi** · coleg începe **singur** din meniu.  
 **Complet:** Minim + `revino_meniu` · instrucțiuni pe ecran separat **sau** pauză I · controale multi-linie clare (clic / E / 1-2-3).
 
 ## De ce contează
@@ -36,43 +36,60 @@ Instrucțiunile înlocuiesc gura ta la L10.
 
 ## Pas cu pas
 
-### 1) Meniu Start *(Minim)*
-1. Fundal / sprite meniu cu buton **Start**  
-2. Click Start → `trimite start_joc`  
-3. Pe Erou / Scenă / blocuri: `când primesc start_joc` → arată lumea, reset variabile, poziții  
-4. La steag: arată meniul, `ascunde` eroul/lumea **sau** oprește controalele până la Start  
+### 1) Planul *(5 minute, pe foaie)*
+Trei mesaje, trimise cu `trimite … către toți`:  
+- `start_joc` — pornește lumea  
+- `win` / `lose` — jocul s-a terminat  
+- `revino_meniu` — înapoi la meniu
 
-**Încearcă tu (25 min)**  
-- [ ] Steag → meniu, nu direct în peșteră  
-- [ ] Start → jocul rulează  
+**Încearcă tu — pe foaie (5 min):** desenează fluxul: *steag → meniu → Start → joc → win / lose → meniu*.
 
-### 2) Reset complet
-La Start (și la steag, după caz):  
-inventar · HP · clone · craft flags · zonă · poziție erou · `oprește toate sunetele`
+### 2) Meniul *(Minim, partea 1 · 25 minute)*
+1. Un sprite nou `Meniu`, cu textul **START** pe un buton mare și titlul jocului  
+2. Pe steag: `arată` · `du-te la x: 0 y: 0` · `treci în față`  
+3. `la click pe acest personaj`: `trimite start_joc` și `ascunde`  
+4. **Generatorul de blocuri** *(L1, la `Bloc`)* nu mai pornește la steag, ci sub `când primesc start_joc`  
+5. Pe steag, la `Bloc`, `Erou`, `Creatură`, `Craft`, `Final`: doar `ascunde`  
+6. Sub `când primesc start_joc`, la fiecare dintre ele: `arată` *(unde e cazul)* și scripturile de joc *(patrulare, click, mers)*  
+7. Primul bloc sub fiecare `când primesc start_joc`: `oprește [celelalte scripturi din acest sprite]`
 
-**Încearcă tu (15 min)**  
-- [ ] Start de 2 ori = stare curată  
+**Verifici:** apeși steagul — se vede doar meniul. Apeși Start — apare lumea cu eroul și blocurile.
 
-### 3) Instrucțiuni pe scenă *(Minim)*
-Text scurt (spune / sprite / fundal cu scriere) — maxim 5–6 rânduri.
+### 3) Resetul complet *(Minim, partea 2 · 15 minute)*
+Sub `când primesc start_joc` la Erou, înainte de joc: `setează lemn la 0` · `piatra` · `pamant` · `tarnacop` · `sabie` *(dacă ai făcut-o la L7)* · `puse` · `setează vieti la 3` · `setează raza la 80` · `setează tip_activ la 1` · `du-te la x: 0 y: -160`.
 
-**Încearcă tu (15 min)**  
-- [ ] Colegul găsește cum se minează fără să întrebe  
+**Verifici:** joci, ajungi la meniu, apeși Start din nou — totul e curat: numerele la 0, lumea refăcută.
 
-### 4) Complet
-Alege **cel puțin una**:  
-- [ ] Buton / tastă înapoi la meniu  
-- [ ] Ecran „Cum se joacă” separat  
-- [ ] Tasta I = arată/ascunde ajutor  
+### 4) Instrucțiunile *(Minim, partea 3 · 15 minute)*
+Pe `Meniu`, un al doilea costum sau text, maxim **5–6 rânduri**:
+- Săgeți = mers  
+- Click = sparge  
+- E = pune  
+- 1 / 2 / 3 = tipul  
+- Click pe Craft = fă un târnăcop
+
+**Verifici:** un coleg care n-a mai văzut jocul găsește singur cum se minează.
+
+### 5) Întoarcerea la meniu *(Minim · 10 minute)*
+1. Când `win` sau `lose`, după 3 secunde: `trimite revino_meniu`  
+2. Meniul: `când primesc revino_meniu` → `arată` și `treci în față`  
+3. Celelalte sprite-uri: `când primesc revino_meniu` → `oprește celelalte scripturi din acest sprite` și `ascunde`; clonele de bloc: `șterge această clonă`
+
+### 6) Complet *(alege cel puțin una)*
+- [ ] **Buton/tastă înapoi:** `când se apasă tasta m` → `trimite revino_meniu`  
+- [ ] **Ecran „Cum se joacă”** separat: un buton pe meniu care arată instrucțiunile  
+- [ ] **Tasta I** arată/ascunde ajutorul în timpul jocului *(variabila `ajutor` 0/1)*
+
 
 ---
 
 ## Greșeli frecvente
-1. **Proiect nou azi** — greșit; e polish pe LumeCuburi.  
-2. **Start fără reset** — clone și HP vechi.  
-3. **Instrucțiuni doar verbale** — Minim pe scenă.  
-4. **Meniu peste joc** — butoanele rămân clickabile în lume.  
-5. **Uiți raza în text** — scrie „aproape de tine”.
+1. **Lumea apare înainte de Start** — generatorul sau mersul sunt încă la `steag`, nu la `start_joc`.  
+2. **Start de două ori dublează blocurile** — lipsește `oprește celelalte scripturi din acest sprite` sau clonele vechi nu se șterg la `revino_meniu`.  
+3. **Meniul rămâne peste joc** — lipsește `ascunde` după click.  
+4. **Resetul e parțial** — rămân lemn, vieti, puse sau tarnacop din jocul anterior.  
+5. **Nimeni nu știe controalele** — scrie-le pe meniu.  
+6. **Steagul duce direct în joc** — la steag trebuie doar meniul.
 
 ---
 
@@ -95,7 +112,7 @@ Salvat: `Prenume_Nume_M6_LumeCuburi`
 ## Recapitulare rapidă
 1. Meniu → Start → reset  
 2. Controale pe ecran  
-3. L10 = polish + prezentare + insignă
+3. L10 = finisări + prezentare + insignă
 
 ## Schema pe scurt
 
@@ -105,7 +122,7 @@ steag → meniu · click Start → `trimite start_joc` → reset + joacă
 **Quiz scurt:**  
 - Ce resetează Start?  
 - Unde sunt controalele scrise?  
-- Ce polish vrei la L10?
+- Ce finisări vrei la L10?
 
 ## Temă
 20 s vorbite: titlu · misiune · de ce ești mândru. Urmează L10.

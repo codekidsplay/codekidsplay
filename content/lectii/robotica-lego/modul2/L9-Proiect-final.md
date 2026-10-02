@@ -11,7 +11,7 @@
 
 | Minute | Ce facem |
 |--------|----------|
-| 0–10 | Checklist final pe tablă |
+| 0–10 | Checklist final pe foaie |
 | 10–95 | Finalizezi proiectul |
 | 95–115 | Prova prezentării |
 | 115–120 | Temă |

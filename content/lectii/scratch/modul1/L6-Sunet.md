@@ -9,7 +9,7 @@
 
 ## Obiectiv
 La finalul orei adaugi sunete din bibliotecă și le pornești cu blocuri din <span style="color:#CF63CF;font-weight:700">Sunet</span>.  
-**Minimum:** 2 sunete pe 2 evenimente (steag + click).  
+**Minim:** 2 sunete pe 2 evenimente (steag + click).  
 **Ținta orei (Complet):** + știi diferența `pornește` / `până la final` și folosești `oprește toate sunetele` la steag.
 
 ## De ce contează
@@ -25,7 +25,7 @@ La finalul orei adaugi sunete din bibliotecă și le pornești cu blocuri din <s
 | Minute | Ce facem |
 |--------|----------|
 | 0–5 | Obiectiv + regulă volum/căști |
-| 5–30 | Pas cu pas: checkpoint-uri (**Încearcă tu**) |
+| 5–30 | Pas cu pas: mini-verificări (**Încearcă tu**) |
 | 30–100 | Proiectul „Soundtrack-ul meu” (vezi **Minim vs Complet**) |
 | 100–120 | Recap, bonus, salvare |
 
@@ -58,7 +58,7 @@ La finalul orei adaugi sunete din bibliotecă și le pornești cu blocuri din <s
 ### 3) Diferența: redă până la final
 1. Tot în <span style="color:#CF63CF;font-weight:700">Sunet</span>, încearcă:  
    <span style="color:#CF63CF;font-weight:700">redă sunetul</span> `…` <span style="color:#CF63CF;font-weight:700">până la final</span>
-2. Asta **așteaptă** să se termine sunetul, apoi trece la blocul de sub el
+2. Asta **așteaptă** să se termine sunetul, apoi trece la blocul de sub el. Exemplu pe steag: `redă sunetul` `start` `până la final` → `spune` `Gata!` pentru `1` secundă (replica apare **după** sunet)
 3. Regula: la start deseori `pornește`; când următorul bloc trebuie să aștepte muzica → `până la final`
 
 **Încearcă tu — până la final (2 min)**  

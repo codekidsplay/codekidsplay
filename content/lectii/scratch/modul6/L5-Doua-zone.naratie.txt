@@ -1,0 +1,25 @@
+Lecția cinci. Două zone.
+
+Astăzi lumea are două zone, ca două biomuri: Pădurea și Deșertul. Fiecare are resurse diferite. Continui fișierul Prenume, linie jos, Nume, linie jos, M șase, linie jos, Lume Cuburi.
+
+Obiectivul. Minim: două zone jucabile, trecere clară între ele, în fiecare zonă poți sparge și pune, cel puțin o resursă diferită pe zonă, iar inventarul rămâne la trecere. Complet: minim, plus fundal sau sunet diferit pe zonă, sau o creatură doar într-o zonă, ca schiță pentru lecția șase, sau mesajul Ai intrat în.
+
+De ce contează. O singură zonă verde e plictisitoare. Două zone înseamnă explorare și motive să te miști pe hartă. Pregătesc misiunea din lecția opt.
+
+Primul pas pe ecran. Alegi trecerea, pe foaie. Azi lumea se împarte pe x. Stânga, unde x e mai mic decât zero, este Pădurea. Dreapta, unde x e mai mare decât zero, este Deșertul. Pădurea are lemn și pământ, fundal verde. Deșertul are piatră și pământ, fundal galben. Ce resursă ai doar în Pădure? Lemnul. Doar în Deșert? Piatra.
+
+Al doilea pas pe ecran. Generatorul pe zone. La Bloc, în generator, înlocuiești treci la un costum aleatoriu cu o regulă. Dacă c x mai mic decât zero, adică Pădurea: dacă un număr aleatoriu între unu și doi egal cu unu, treci la costumul unu, lemn, altfel treci la costumul trei, pământ. Altfel, adică Deșertul: la fel, dar costumul doi, piatră, sau trei, pământ. Verifici: stânga are blocuri maro și verzi, dreapta gri și verzi.
+
+Al treilea pas pe ecran. Fundalul și trecerea. Faci două fundaluri, Pădure, verde, și Deșert, galben. La Scenă, repetă la nesfârșit: dacă x poziția lui Erou mai mic decât zero, treci la fundalul Pădure, altfel treci la fundalul Deșert. Inventarul nu se șterge la trecere, pentru că îl resetezi doar la steag. Verifici: mergi de la stânga la dreapta pe un rând liber, fundalul se schimbă la mijloc, numerele rămân, iar în cele două zone spargi tipuri diferite.
+
+Al patrulea pas pe ecran, pentru Complet. Alegi cel puțin una. Mesaj la intrare: o variabilă zona, unu pentru Pădure, doi pentru Deșert. Când zona nouă e alta decât zona veche, schimbi zona și Erou spune Ai intrat în Deșert, timp de două secunde. Sunet diferit la intrare în fiecare zonă. Sau un sprite static, Cactus, în Deșert. Mobul vine la lecția șase.
+
+Greșeli frecvente. Același tip de bloc peste tot: generatorul nu face diferența între c x mai mic decât zero și restul. Inventarul se șterge la trecere: setarea pe zero e în scriptul zonei, nu doar pe steag. Fundalul clipește: ai pus două dacă separate în loc de altfel. La x egal cu zero se aplică altfel, deci apare Deșertul. Fundalul nu se schimbă: lipsește repetă la nesfârșit. Mesajul se repetă la fiecare pas: îl trimiți doar când zona se schimbă. O zonă nu are nimic de minat.
+
+Proiectul de azi. Două zone.
+
+Minim înseamnă: două zone, trecere, conținut diferit, inventarul rămâne, test cu un coleg. Complet înseamnă: minim plus reacție la intrare, sau sunet, sau pericol schițat.
+
+Recapitulare. Două zone înseamnă două motive să explorezi. Inventarul călătorește cu tine. Lecția șase aduce creatura.
+
+Succes la zonele tale.

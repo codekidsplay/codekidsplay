@@ -1,0 +1,29 @@
+Lecția doi. Sparge blocuri.
+
+Astăzi spargi blocuri aproape de erou. Blocul dispare, iar tu primești o resursă într-o variabilă. Continui același fișier: Prenume, linie jos, Nume, linie jos, M șase, linie jos, Lume Cuburi. Nu faci proiect nou.
+
+Obiectivul. Minim: cel puțin două tipuri de bloc care se pot sparge, clic stânga pe bloc, o rază, plus unu la resursa potrivită, și cel puțin cinci spargeri într-o sesiune. Complet: minim, plus sunet sau costum la spargere, sau clone care se șterg curat, sau nu poți sparge aer, adică golul.
+
+De ce contează. Fără rază, jucătorul ar mina de la celălalt capăt al ecranului. Asta e o greșeală clasică. Spargerea hrănește inventarul și construcția din lecțiile următoare.
+
+Primul pas pe ecran. Regula, pe foaie. Un clic sparge un bloc doar dacă eroul e destul de aproape. Două celule vecine sunt la treizeci și doi. Două celule mai departe, la șaizeci și patru. Alegem raza optzeci. Eroul ajunge la blocurile de la cel mult două celule. Un bloc la trei celule, adică nouăzeci și șase, se sparge? Nu, pentru că nouăzeci și șase e mai mare decât optzeci.
+
+Al doilea pas pe ecran. Variabilele, pentru toate sprite-urile, bifate pe scenă: lemn, piatra și raza. Pe steag: setează lemn la zero, setează piatra la zero, setează raza la optzeci. Verifici: pe scenă se văd trei numere, zero, zero și optzeci.
+
+Al treilea pas pe ecran. Spargerea. La Bloc, un script nou. Când se dă click pe acest personaj. Dacă distanța până la Erou mai mică decât raza, atunci: dacă costum număr egal cu unu, schimbă lemn cu unu. Dacă costum număr egal cu doi, schimbă piatra cu unu. La final: șterge această clonă. Scriptul rulează pe fiecare clonă, nu pe original. Clona ștearsă nu mai e pe scenă, iar în locul ei rămâne un gol.
+
+Verifici de fiecare dată. Bloc departe: clic, nu se întâmplă nimic. Bloc aproape: dispare și lemn sau piatra crește cu unu, după culoare. Spargi cel puțin cinci blocuri și ai ambele resurse. Un clic pe gol nu face nimic.
+
+Al patrulea pas pe ecran, pentru Complet. Alegi cel puțin una. Sunet: pornește sunetul Pop, înainte de șterge această clonă. Gol curat: poți merge pe unde ai spart, pentru că atinge Bloc este fals. Sau bloc greu: un al treilea costum, negru, care cere două clicuri. La primul, doar treci la costumul doi. La al doilea, se sparge.
+
+Greșeli frecvente. Se sparge de departe: lipsește distanța sau raza nu e setată. Nu se sparge nimic: raza e zero, o setezi la optzeci pe steag. Resursa nu crește: verifici numărul costumului, unu pentru lemn, doi pentru piatră. Variabilele nu se văd: le faci pentru toate sprite-urile. Lipsește șterge această clonă. Click pe erou, nu pe bloc.
+
+Proiectul de azi. Sparge blocuri.
+
+Minim înseamnă: două tipuri, clic sparge, rază, plus resursă, restart. Complet înseamnă: minim plus reacție, sau gol curat, sau bloc greu.
+
+În proiect, primul pas. Regula razei. Al doilea pas. Variabilele și scriptul de spargere. Al treilea pas, pentru Complet. Salvezi.
+
+Recapitulare. Raza e regula de aur. Clic stânga sparge. Resursele stau pe scenă.
+
+Succes la minat.

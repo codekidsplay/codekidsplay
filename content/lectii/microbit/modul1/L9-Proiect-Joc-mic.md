@@ -11,7 +11,7 @@
 
 | Minute | Ce facem |
 |--------|----------|
-| 0–15 | Alege tipul de joc (listă pe tablă) |
+| 0–15 | Alege tipul de joc (listă pe foaie) |
 | 15–95 | Construiești jocul |
 | 95–115 | Playtest coleg |
 | 115–120 | Temă |

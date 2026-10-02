@@ -1,0 +1,27 @@
+Lecția șapte. Proiectul mare: cum îl organizezi.
+
+Astăzi începe proiectul mare, un platformer sau o aventură scurtă. Faci o schiță pe foaie și un schelet Minim. Lucrezi într-un fișier care rămâne același până la lecția zece: Prenume, linie jos, Nume, linie jos, M cinci, linie jos, Proiect.
+
+Regula minutului cincizeci. Până atunci nu faci decoruri complicate și nu desenezi costume noi. Faci doar organizarea.
+
+Obiectivul. Ai o foaie cu design: erou, ce e greu, cum câștigi. Pe scenă ai control și gravitație cu săritură, din lecția unu. Ai cel puțin un nivel sau un traseu început, care se poate juca. Steagul readuce totul la start. Asta e Minim. Complet înseamnă Minim, plus o schiță de inventar sau de monede pe scenă, sau început de derulare, sau un meniu Start schițat.
+
+De ce contează. Lecțiile de la unu la șase au fost piese. Azi alegi ce piese intră în jocul pe care îl prezinți la lecția zece.
+
+Primul pas, foaia de design, douăzeci de minute, înainte de Scratch. Completezi cu creionul. Unu: titlul jocului. Doi: eroul, cine e și ce poate face, de exemplu merge și sare. Trei: câștigi dacă, de exemplu ajungi la steag sau strângi cinci monede. Patru: pierzi dacă, de exemplu pierzi toate viețile sau cazi. Cinci: harta, un desen cu start, trei platforme și obiectivul. Șase: ce iei din lecțiile de la unu la șase. Alegi două sau trei, nu toate. Gravitația e obligatorie. Mai alegi, de exemplu, un inamic din lecția trei sau monede și magazin din lecția șase. Dacă arăți foaia cuiva, el trebuie să înțeleagă cum se câștigă.
+
+Al doilea pas, scheletul, până la minutul cincizeci. Deschizi fișierul din lecția unu. Alegi Fișier, apoi Salvează o copie, cu numele Prenume, linie jos, Nume, linie jos, M cinci, linie jos, Proiect. Ai deja eroul, gravitația, săritura și platformele. Adaptezi harta după foaia ta: muți platformele în sprite-ul Teren, ca să semene cu desenul. Adaugi sprite-ul Țel, un steag, la capătul hărții. La Țel: repetă la nesfârșit, dacă atinge Erou, spune Ai ajuns timp de două secunde. Pe steag, la Erou: du-te la x minus două sute, y minus o sută, și setează viteza y la zero. Verifici: sari de pe podea pe platforme, ajungi la Țel, iar steagul te readuce la start.
+
+Al treilea pas, după minutul cincizeci, pentru Complet. Alegi una. Monede: sprite-ul Monedă, pe steag la locul ei. Așteaptă până când atinge Erou, schimbă monede cu unu, ascunde. Variabila monede e zero la steag. Sau început de derulare, cu variabila camera x din lecția doi, un exemplu mai mare care cere timp. Sau un buton Start, care la click se ascunde. Meniul complet vine în lecția nouă.
+
+Al patrulea pas, cinci minute. Pe foaie scrii trei lucruri pe care le adaugi la lecția opt, de exemplu un inamic, monede din clone sau o a doua platformă mobilă.
+
+Greșeli frecvente. Decor înainte de fizică: încalci regula minutului cincizeci. Proiect nou la fiecare oră: lecțiile de la șapte la zece sunt în același fișier. Fără foaie: la lecția opt nu știi ce adaugi. Toate regulile din lecțiile de la unu la șase: alege două sau trei, bine făcute. Fără condiție de câștig: lecția nouă nu are ce închide. Platformele sunt prea sus: săritura urcă cam șaptezeci și opt de pași, deci pune-le la cel mult șaizeci de pași una deasupra celeilalte.
+
+Proiectul de azi. Proiectul mare.
+
+Minim înseamnă: foaia, gravitația și săritura, un traseu, reset, fără decor greu înainte de minutul cincizeci. Complet înseamnă: Minim plus monede, derulare sau Start. Dacă rămâi în urmă, salvează la Minim.
+
+Recapitulare. Întâi foaia, apoi scheletul, apoi frumosul. Același fișier până la lecția zece. Lecția opt aduce inamici și clone.
+
+Succes la proiectul tău mare.

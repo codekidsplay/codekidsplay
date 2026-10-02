@@ -1,0 +1,31 @@
+Lecția cinci. Ștampila mea.
+
+Astăzi folosești piesa Text și o oglindești, ca pe o ștampilă. Proiectul se numește Ștampila mea. Numele fișierului este: Prenume, linie jos, Nume, linie jos, T unu, linie jos, L zero cinci. Imprimanta trei D nu o folosim la oră. Azi doar proiectezi.
+
+Obiectivul. La final ai o bază cu text ridicat și oglindit, așezat pe bază. Minim: bază, text ridicat care iese doi milimetri deasupra bazei, oglindit cu tasta M, și centrat pe bază, cu tasta L sau manual. Din Top, literele se văd invers, ca pe o ștampilă. Complet: minim, plus mâner, margine decorativă și text de două cuvinte.
+
+De ce contează. O ștampilă lasă pe hârtie imaginea inversă față de cum o vezi pe ștampilă. Ca amprenta să iasă corectă, textul de pe ștampilă trebuie să fie oglindit.
+
+Primul pas pe ecran. Create new design. Sus scrii numele Prenume, linie jos, Nume, linie jos, T unu, linie jos, L zero cinci. Salvarea este automată. Verifici numele.
+
+Al doilea pas pe ecran. Baza. Tragi un Box și îl faci șaizeci pe treizeci pe cinci: lungime, lățime, înălțime. Trebuie să stea pe plan. Dacă plutește, apeși tasta D. Cinci milimetri grosime, ca să nu fie ca o foaie.
+
+Al treilea pas pe ecran. Textul. Din Basic Shapes tragi piesa Text pe plan. Îl selectezi. În panoul care apare, în câmpul de text, scrii un cuvânt scurt, de exemplu prenumele tău. Dacă diacriticele nu apar, folosești litere fără diacritice. Scalezi textul ținând Shift pe un pătrățel de colț, ca literele să nu se deformeze. Textul poate avea cel mult cincizeci de milimetri lungime și aproximativ paisprezece lățime. Trebuie să încapă pe baza de șaizeci pe treizeci, cu loc pe margini.
+
+Al patrulea pas pe ecran. Ridicarea. Textul trebuie să iasă deasupra bazei, ca niște litere în relief. Textul și baza stau amândouă pe plan. Baza are cinci milimetri înălțime, deci faci textul de șapte milimetri înalt, din pătrățelul alb de sus. Iese doi milimetri deasupra bazei și nu mai trebuie ridicat. Dacă literele sunt prea subțiri și nu se văd bine, încerci alt font din panou, dacă există, sau scrii cu litere mari.
+
+Al cincilea pas pe ecran. Oglindirea. Selectezi textul. Apeși tasta M. Apar săgeți pe laturi. Apeși săgeata care inversează stânga și dreapta, ca într-o oglindă. Dacă literele s-au răsturnat sus și jos, apeși Control și Z și încerci altă săgeată. Pe ștampila reală, textul oglindit apasă pe hârtie și iese corect.
+
+Al șaselea pas pe ecran. Așezarea pe bază. Muți textul peste bază, privind din Top. Dacă plutește, apeși D. Îl coboară pe plan, unde este și baza, exact cum vrem. Apoi selectezi textul și baza, cu Shift și click, și apeși tasta L. Alegi punctul din mijloc pe ambele direcții, stânga și dreapta, și sus și jos. Textul ajunge pe centrul bazei. Poți și să muți manual, din Top. Din Front verifici: textul iese doi milimetri deasupra bazei.
+
+Al șaptelea pas pe ecran, pentru Complet. Mânerul: un Box de douăzeci pe doisprezece pe doisprezece, sau un Cylinder, pe plan, lipit de capătul scurt al bazei, intrat doi milimetri în ea. Pe o ștampilă adevărată mânerul este pe spate. Aici desenăm fața în sus și mânerul în lateral. Marginea: patru Box-uri subțiri, de doi milimetri grosime și șapte milimetri înălțime, ca textul, pe marginea bazei, pe plan. Apoi textul cu două cuvinte: un text mai lung, care încape, de exemplu ANA POP, sau două piese Text, una sub alta. Pentru a doua apeși Control și D, schimbi cuvântul, și ambele rămân oglindite. La final folosești Color.
+
+Greșeli frecvente. Textul este subțire și nu se vede: scrii cu litere mari, îl faci mai mare sau încerci alt font. Textul nu este oglindit: tasta M și o săgeată pe stânga și dreapta. Textul depășește baza: îl micșorezi sau mărești baza. Diacriticele lipsesc: folosești litere fără diacritice. Textul este ascuns în bază: este mai scund de cinci milimetri, îl faci de șapte. Oglindirea este sus și jos: Control și Z, altă săgeată la M.
+
+Proiectul de azi. Ștampila mea.
+
+Minim înseamnă: bază pe plan, text ridicat și vizibil, oglindit cu M și aliniat pe bază. Complet înseamnă: minim, plus mâner, margine decorativă și text de două cuvinte, plus culori. Dacă rămâi în urmă, salvează la Minim. Ești la Minim când un coleg vede literele invers față de normal, dar clar pe bază.
+
+Recapitulare. Text este o piesă editabilă: schimbi cuvântul în panou. M oglindește textul pentru ștampilă. Text de șapte milimetri pe o bază de cinci milimetri iese doi milimetri. L centrează. Ștampila apasă pe hârtie și textul se citește corect.
+
+Succes la ștampila ta.

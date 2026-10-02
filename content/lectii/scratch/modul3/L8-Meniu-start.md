@@ -10,7 +10,7 @@
 
 ## Obiectiv
 La finalul orei folosești <span style="color:#E6A800;font-weight:700">trimite</span> / <span style="color:#E6A800;font-weight:700">când primesc</span> (Evenimente, *broadcast* — din M2 L8) ca jocul să **aștepte** clic pe Start.  
-**Minimum:** meniu (titlu + buton) + Start pornește jocul, butonul se ascunde.  
+**Minim:** meniu (titlu + buton) + Start pornește jocul, butonul se ascunde.  
 **Ținta orei (Complet):** Minim + la final **revii** la meniu (`revino_meniu`) cu **toate** scripturile de joc oprite + reset la Start (nu doar la steag).
 
 ## De ce contează
@@ -24,7 +24,7 @@ Steagul verde = pregătești scena. Butonul **Start** = jucătorul decide când 
 | Minute | Ce facem |
 |--------|----------|
 | 0–10 | De ce meniu? + **`oprește alte scripturi din personaj`** |
-| 10–30 | Pas cu pas: checkpoint-uri (**Încearcă tu**) |
+| 10–30 | Pas cu pas: mini-verificări (**Încearcă tu**) |
 | 30–95 | Proiectul „Apasă Start” (vezi **Minim vs Complet**) |
 | 95–110 | Test: meniu → Start → joc → meniu → Start din nou |
 | 110–120 | Recap, bonus, salvare |
@@ -94,14 +94,15 @@ Dacă termini runda, revii la meniu și apeși Start **fără** steag, scorul tr
    <span style="color:#E6A800;font-weight:700">când primesc</span> `revino_meniu` →  
    <span style="color:#9966FF;font-weight:700">ascunde</span> →  
    <span style="color:#FFAB19;font-weight:700">oprește</span> `alte scripturi din personaj`  
-   *(oprește mișcarea, coliziunile, verificările — tot ce rulează pe Erou)*
+   *(oprește mișcarea, atingerile, verificările — tot ce rulează pe Erou)*
 4. Pe **Monedă** *(obligatoriu dacă ai L7)*:  
    <span style="color:#E6A800;font-weight:700">când primesc</span> `revino_meniu` →  
    <span style="color:#9966FF;font-weight:700">ascunde</span> →  
    <span style="color:#FFAB19;font-weight:700">oprește</span> `alte scripturi din personaj`  
    *(oprește generatorul `forever` — altfel monedele tot cad în meniu!)*  
    Steagul șterge clonele; la `revino_meniu` fără steag, oprești generarea ca să nu mai apară altele.
-5. Același tipar pe **Obstacol** / alte personaje cu `forever` de joc
+5. Pe **Monedă** adaugi și: <span style="color:#E6A800;font-weight:700">când primesc</span> `revino_meniu` → <span style="color:#FFAB19;font-weight:700">șterge această clonă</span> *(clonele aflate în cădere dispar și ele; la original nu face nimic)*
+6. Același tipar pe **Obstacol** / alte personaje cu `forever` de joc
 
 **Încearcă tu — revii la meniu (3 min)**  
 - [ ] La final → meniul reapare  

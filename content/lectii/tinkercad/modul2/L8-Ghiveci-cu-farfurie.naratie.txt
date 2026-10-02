@@ -1,0 +1,31 @@
+Lecția opt. Ghiveciul meu.
+
+Astăzi faci două piese care lucrează împreună: ghiveciul și farfuria care prinde apa. Creezi un design nou și îl salvezi cu numele: Prenume, linie jos, Nume, linie jos, T doi, linie jos, L opt. Proiectul se numește Ghiveciul meu.
+
+Obiectivul. La final ai un ghiveci cu gaură de scurgere și o farfurie în care ghiveciul încape. Sunt două piese separate. Minim: ghiveci cu diametru șaizeci și înălțime cincizeci, gol, cu pereți de trei milimetri și fund de trei milimetri, cu o gaură de scurgere cu diametru opt în fund, plus o farfurie cu diametru șaptezeci și opt și înălțime doisprezece, goală, tot cu pereți și fund de trei milimetri. Ghiveciul stă în farfurie. Complet: minim, plus un guler, adică un inel decorativ, la marginea ghiveciului, plus Ruler pentru spațiul dintre ghiveci și farfurie și culori diferite.
+
+De ce contează. Farfuria trebuie să fie mai largă decât ghiveciul, ca să-l primească și să prindă apa.
+
+Primul pas pe ecran. Apasă Create new design și scrie numele. Jos, în dreapta, la Snap Grid, alege un milimetru.
+
+Al doilea pas pe ecran. Trage un Cylinder și scrie: șaizeci, șaizeci, cincizeci. Trage alt Cylinder: cincizeci și patru, cincizeci și patru, cincizeci. În panoul Shape alege Hole. Selectează Hole-ul și ghiveciul, apasă tasta L pentru Align și alege mijlocul pe ambele direcții de pe plan. Ridică Hole-ul cu trei milimetri, cu conul negru. Apasă Control și A, apoi Control și G.
+
+Al treilea pas pe ecran. Trage un Cylinder și scrie: opt, opt, zece. Alege Hole. Selectează gaura și ghiveciul, apasă L și alege mijlocul pe ambele direcții de pe plan. Coboară gaura cu un milimetru sub plan, cu conul negru. Ea taie complet fundul. Apasă Control și A, apoi Control și G.
+
+Al patrulea pas pe ecran. Trage un Cylinder și scrie: șaptezeci și opt, șaptezeci și opt, doisprezece. Pune-l lângă ghiveci. Trage alt Cylinder: șaptezeci și doi, șaptezeci și doi, doisprezece, și alege Hole. Selectează Hole-ul și farfuria, apasă L și alege mijlocul pe ambele direcții de pe plan. Ridică Hole-ul cu trei milimetri, cu conul negru. Apoi selectează Hole-ul și farfuria și apasă Control și G.
+
+Al cincilea pas pe ecran. De ce farfuria are șaptezeci și opt, și nu șaizeci? Golul farfuriei, șaptezeci și doi, trebuie să fie mai larg decât ghiveciul, de șaizeci. Trage ghiveciul complet în interiorul farfuriei. Apoi selectează ghiveciul și farfuria și apasă L, pe ambele direcții de pe plan. Farfuria rămâne pe loc. Nu alege nimic sus și jos. Ridică ghiveciul cu trei milimetri, cu conul negru. În View Cube alege Front: ghiveciul stă pe fundul farfuriei, între pereți.
+
+Al șaselea pas pe ecran, pentru Complet. Gulerul este un inel făcut separat. Trage un Cylinder de șaizeci și șase pe șaizeci și șase pe șase și un Cylinder Hole de cincizeci și patru pe cincizeci și patru pe zece. Centrează-le pe cele trei direcții cu tasta L. Apasă Control și G, apoi tasta D. Selectează inelul și ghiveciul, apasă L și alege mijlocul pe ambele direcții și punctul de sus. Inelul stă la marginea de sus, în jurul golului. Apasă Control și G. Golul rămâne deschis.
+
+Apoi apasă Ruler. Măsoară ghiveciul, șaizeci, și gaura farfuriei, șaptezeci și doi. Spațiul e de șase milimetri pe fiecare parte. Hole-ul farfuriei se măsoară doar separat. Desfă farfuria cu Control, Shift și G, măsoară, apoi grupează la loc. La final alege o culoare pentru ghiveci și alta pentru farfurie.
+
+Greșeli frecvente. Ghiveciul nu are fund: Hole-ul nu e ridicat cu trei milimetri. Ghiveciul nu încape în farfurie: gaura farfuriei e mai mică de șaizeci. Gulerul a acoperit golul: trebuie făcut ca inel, cu propriul Hole, nu ca disc plin. Ai grupat ghiveciul și farfuria: desfă cu Control, Shift și G. Trebuie să fie două piese.
+
+Proiectul de azi. Ghiveciul meu.
+
+Minim înseamnă: ghiveci gol, cu scurgere, farfurie goală și ghiveciul în farfurie, în două piese. Complet înseamnă: minim, plus guler cu diametru șaizeci și șase, Ruler și două culori. Dacă rămâi în urmă, salvează la Minim.
+
+Recapitulare. Hole-ul ridicat trei milimetri lasă fundul. Scurgerea este un Hole mic în centrul fundului. Golul farfuriei e mai mare decât ghiveciul. Două piese care lucrează împreună nu se grupează.
+
+Succes la ghiveciul tău.

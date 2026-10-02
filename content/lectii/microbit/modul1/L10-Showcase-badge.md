@@ -13,7 +13,7 @@
 |--------|----------|
 | 0–20 | Polish |
 | 20–90 | Prezentări 2 min |
-| 90–110 | Recap M1 pe tablă |
+| 90–110 | Recap M1 pe foaie |
 | 110–120 | Badge |
 
 ---

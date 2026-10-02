@@ -1,0 +1,29 @@
+Lecția șase. Râul și podul.
+
+Astăzi tai un râu prin parc cu un Hole și îl treci cu un pod. Faci o copie a proiectului din lecția cinci, cu Duplicate, și o redenumești: Prenume, linie jos, Nume, linie jos, T patru, linie jos, L zero șase. Proiectul se numește Râul și podul meu.
+
+Obiectivul. La final ai un râu cu apă albastră care străbate zona de parc și un pod cu parapete peste el. Minim: râul tăiat în zona de parc cu un Hole, astfel încât zona rămâne în două bucăți, apa albastră și podul, cu platformă și două parapete. Complet: minim, plus patru stâlpi pe capetele parapetelor și o barcă pe apă, cu corp, catarg și pânză.
+
+De ce contează. Un oraș are adesea un râu, iar podul leagă cele două maluri. Aici folosești Hole ca să tai o formă, cu un truc: grupezi gaura doar cu zona de parc, nu cu toată placa.
+
+Primul pas pe ecran. La Snap Grid, jos în dreapta, pui unu milimetru. Tragi un Box de șaizeci și șapte pe doisprezece pe doi și îl faci Hole. Are doi milimetri, ca să taie sigur toată zona, care are un milimetru. Selectezi gaura și zona de parc, cea verde, și apeși tasta L, pentru Align. Alegi mijlocul pe stânga spre dreapta și mijlocul pe față spre spate. O ridici la trei milimetri. Zona e între trei și patru milimetri, iar gaura între trei și cinci. Taie zona complet, dar nu atinge placa. Apoi selectezi doar gaura și zona de parc, cu Shift apăsat, și apeși tasta Control și G împreună. Pe Mac, Command și G. Atenție: nu selecta placa! Dacă o grupezi și pe ea, găurești tot cartierul. Din Top vezi zona de parc tăiată în două de un canal.
+
+Al doilea pas pe ecran. Apa. Pui Snap Grid la zero virgulă cinci milimetri. Tragi un Box de șaizeci și șapte pe doisprezece pe zero virgulă cinci și îl faci albastru cu Color. Tasta L cu zona de parc, mijloc pe ambele axe, adică în canal. O ridici la trei milimetri, pe placă. Din Top vezi un râu albastru între două maluri verzi. Apa e puțin mai jos decât malurile.
+
+Al treilea pas pe ecran. Podul. Pui Snap Grid la unu milimetru. Tragi un Box de opt pe douăzeci pe doi: platforma. Lungimea de douăzeci de milimetri trece peste râu și are câte patru milimetri pe fiecare mal. Tasta L cu zona de parc, mijloc pe față spre spate. Apoi o muți pe stânga spre dreapta, în partea dreaptă a zonei, cu marginea din dreapta a podului la patru milimetri de marginea zonei. În stânga rămâne loc pentru copacii din lecția șapte. O ridici la patru milimetri, ca să stea pe cele două maluri. O colorezi gri sau maro.
+
+Al patrulea pas pe ecran. Parapetele. Un Box de unu pe douăzeci pe unu virgulă cinci. Tasta L cu platforma: marginea din stânga și mijloc pe față spre spate. Îl ridici la șase milimetri, pe platformă. Apeși tasta Control și D împreună și muți copia șapte milimetri spre dreapta: parapetul de la marginea din dreapta. Selectezi platforma și parapetele și apeși Control și G. Acesta e podul.
+
+Al cincilea pas pe ecran, pentru Complet. Stâlpii. Un Cylinder de unu virgulă cinci pe unu virgulă cinci pe patru, ridicat la șase milimetri. Tasta L cu parapetul din stânga: mijloc pe stânga spre dreapta și punctul din spate al parapetului. Stâlpul stă pe capătul din spate și iese doi milimetri și jumătate deasupra parapetului. Control și D, și muți copia șapte milimetri spre dreapta. Selectezi ambii stâlpi, Control și D, selectezi și platforma, apeși tasta L și alegi punctul din față. Copiile se aliniază cu capătul din față al podului. Din Top vezi câte un stâlp la fiecare colț al podului.
+
+Al șaselea pas pe ecran. Barca. Pui Snap Grid la zero virgulă cinci milimetri. Un Box de opt pe trei pe unu: corpul, maro, pe apă, la trei virgulă cinci milimetri, departe de pod. Un Cylinder de zero virgulă șase pe zero virgulă șase pe șase: catargul, pe mijlocul bărcii, ridicat la patru virgulă cinci milimetri. Un Box de trei pe zero virgulă trei pe patru: pânza, albă, lipită de catarg, la șase milimetri. Apoi Control și G pe barcă.
+
+Greșeli frecvente. Râul a găurit toată placa: ai grupat și placa. Gaura se grupează doar cu zona de parc. Zona rămâne întreagă: gaura nu e Hole sau nu a fost grupată. Apa e sub placă: nu e ridicată la trei milimetri. Podul nu ajunge pe maluri: are mai puțin de douăzeci de milimetri lungime. Podul plutește: nu e ridicat la patru milimetri. Parapetele sunt la înălțimi diferite: mută primul, apoi doar Control și D. Barca stă în pod: mută-o pe apă, la alt loc.
+
+Proiectul de azi. Râul și podul meu.
+
+Minim înseamnă: râu cu Hole grupat cu zona, apă albastră și pod cu două parapete. Complet înseamnă: minim, plus patru stâlpi și o barcă pe apă. Dacă rămâi în urmă, salvează la Minim.
+
+Recapitulare. Râul este un Hole grupat doar cu zona de parc. Apa e mai jos decât malurile. Podul are patru milimetri pe fiecare mal. Numele fișierului are prenumele, numele, T patru și L zero șase.
+
+Succes la râul și podul tău.

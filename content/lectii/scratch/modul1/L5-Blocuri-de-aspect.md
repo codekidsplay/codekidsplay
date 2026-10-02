@@ -9,7 +9,7 @@
 
 ## Obiectiv
 La finalul orei folosești blocuri din <span style="color:#9966FF;font-weight:700">Aspect</span>.  
-**Minimum:** dialog pe 2 personaje cu `spune` / `gândește` + `așteaptă`.  
+**Minim:** dialog pe 2 personaje cu `spune` / `gândește` + `așteaptă`.  
 **Ținta orei (Complet):** + mărime, culoare și **reset curat** la steag (`setează mărimea la 100` + anulează efectele).
 
 ## De ce contează
@@ -23,7 +23,7 @@ La finalul orei folosești blocuri din <span style="color:#9966FF;font-weight:70
 | Minute | Ce facem |
 |--------|----------|
 | 0–5 | Obiectiv + unde e Aspect |
-| 5–30 | Pas cu pas: **3–4** checkpoint-uri (**Încearcă tu**) |
+| 5–30 | Pas cu pas: **3–4** mini-verificări (**Încearcă tu**) |
 | 30–100 | Proiectul „Interviul” (vezi **Minim vs Complet**) |
 | 100–120 | Recap, bonus, salvare |
 
@@ -57,7 +57,7 @@ La finalul orei folosești blocuri din <span style="color:#9966FF;font-weight:70
 
 | Bloc | Ce face |
 |------|---------|
-| <span style="color:#9966FF;font-weight:700">modifică mărimea cu</span> `20` | **adaugă** / scade față de acum (cumulativ) |
+| <span style="color:#9966FF;font-weight:700">modifică mărimea cu</span> `20` | **adaugă** / scade față de acum (se adună) |
 | <span style="color:#9966FF;font-weight:700">setează mărimea la</span> `100` | pune **exact** 100%, indiferent cât era înainte |
 
 *De-asta la **reset** (steag) folosim **`setează`**, nu `modifică`: nu contează cât a crescut în interviu — mereu ajunge înapoi la 100.*
@@ -71,11 +71,11 @@ La finalul orei folosești blocuri din <span style="color:#9966FF;font-weight:70
    <span style="color:#9966FF;font-weight:700">schimbă efectul culoare cu</span> `25` →  
    <span style="color:#FFAB19;font-weight:700">așteaptă</span> `0.5` →  
    încă de 1–2 ori `+25`
-2. Nuanța se schimbă pe rând (ca un flash)
+2. Nuanța se schimbă pe rând (ca o clipire de culori)
 
 **Încearcă tu — culoare (1–2 min)**  
 - [ ] ≥ **2** schimbări de efect culoare  
-- [ ] Vezi flash-ul pe steag  
+- [ ] Vezi culorile schimbându-se pe steag  
 
 ### 4) Reset curat la steag
 1. **Chiar sub** steag, **înainte** de dialog:  
@@ -87,6 +87,15 @@ La finalul orei folosești blocuri din <span style="color:#9966FF;font-weight:70
 **Încearcă tu — reset (1–2 min)**  
 - [ ] Steag de două ori: mărime și culoare revin la normal  
 - [ ] Salvat: `Prenume_Nume_L5`  
+
+### 5) Două personaje, pe rând
+1. Scripturile celor 2 personaje pornesc **deodată** la steag
+2. Reporter: steag → <span style="color:#9966FF;font-weight:700">spune</span> `Cum te cheamă?` pentru `2` secunde
+3. Intervievat: steag → <span style="color:#FFAB19;font-weight:700">așteaptă</span> `2` → <span style="color:#9966FF;font-weight:700">spune</span> `Mă cheamă …` pentru `2` secunde
+4. Intervievatul așteaptă cât vorbește reporterul — altfel vorbesc amândoi odată
+
+**Încearcă tu — doi pe rând (2 min)**  
+- [ ] Reporterul vorbește primul, apoi răspunde intervievatul  
 
 ---
 

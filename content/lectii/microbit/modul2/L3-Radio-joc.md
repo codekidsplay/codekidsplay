@@ -11,7 +11,7 @@
 
 | Minute | Ce facem |
 |--------|----------|
-| 0–15 | Reguli joc pe tablă |
+| 0–15 | Reguli joc pe foaie |
 | 15–100 | Implementare |
 | 100–115 | Meciuri scurte |
 | 115–120 | Temă |

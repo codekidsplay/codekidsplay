@@ -1,0 +1,29 @@
+Lecția cinci. Săpuniera mea.
+
+Astăzi faci o tavă cu găuri care chiar au rost: apa să iasă, săpunul să rămână. Creezi un design nou și îl salvezi cu numele: Prenume, linie jos, Nume, linie jos, T doi, linie jos, L cinci. Proiectul se numește Săpuniera mea.
+
+Obiectivul. La final ai o tavă cu pereți și fante de scurgere în fund. Minim: tavă de o sută pe șaptezeci pe douăzeci de milimetri, goală, cu pereți de trei milimetri și fund de trei milimetri, plus trei fante de șaptezeci pe șase, care trec prin fund, la distanțe egale. Apoi Group. Complet: minim, plus patru piciorușe, ca apa să curgă pe sub tavă, și culoare.
+
+De ce contează. Aici fantele lasă apa să curgă, dar nu lasă săpunul să cadă. Fanta nu atinge pereții. Dacă taie peretele, tava curge pe lateral.
+
+Primul pas pe ecran. Apasă Create new design și scrie numele. Jos, în dreapta, la Snap Grid, alege un milimetru.
+
+Al doilea pas pe ecran. Trage un Box și scrie: o sută, șaptezeci, douăzeci. Apoi alt Box: nouăzeci și patru, șaizeci și patru, douăzeci. În panoul Shape alege Hole. Selectează Hole-ul și tava, apasă tasta L pentru Align și alege mijlocul pe ambele direcții de pe plan. Ridică Hole-ul cu trei milimetri, cu conul negru. Rămâne un fund de trei milimetri. Apasă Control și A, apoi Control și G. Tava e goală.
+
+Al treilea pas pe ecran. Trage un Box și scrie: șaptezeci, șase, zece. În panoul Shape alege Hole. Selectează fanta și tava, apasă L și alege mijlocul pe ambele direcții de pe plan. Apoi coboară-o cu un milimetru sub plan, cu conul negru, ca să iasă și pe sub fund. Fanta trece prin fund și nu atinge pereții: ea are șaptezeci de milimetri, iar golul tăvii are nouăzeci și patru.
+
+Al patrulea pas pe ecran. Schimbă Snap Grid pe cinci milimetri. Uită-te la tavă din Top. Cu fanta selectată, mută-o cincisprezece milimetri spre față, cu săgeata în jos, de trei ori. Apasă tasta Control și D împreună și mută copia cincisprezece milimetri spre spate, din trei apăsări. Aceasta e fanta din mijloc. Apasă din nou Control și D. Mutarea se repetă singură și apare a treia fantă. Ai trei fante, la cincisprezece milimetri una de alta. Fanta de la margine ajunge la optsprezece milimetri de mijloc, iar peretele e la treizeci și doi.
+
+Al cincilea pas pe ecran. Apasă Control și A, apoi Control și G. În View Cube alege Top: se văd trei fante prin fund? Apoi alege Front: fantele nu ating pereții.
+
+Al șaselea pas pe ecran, pentru Complet. Schimbă Snap Grid înapoi pe un milimetru. Trage un Cylinder și scrie: zece, zece, cinci, lângă tavă. Selectează cilindrul și tava, apasă L și alege punctul din stânga și punctul din față. Nu alege nimic sus și jos. Piciorușul stă în colțul din stânga față. Apasă Control și D, selectează copia și tava, apasă L și alege punctul din dreapta. Tava nu se mișcă. Al doilea picioruș e în colțul din dreapta. Selectează cele două piciorușe, cu Shift și click, apasă Control și D, selectează copiile și tava, apasă L și alege punctul din spate. Ai patru piciorușe în colțuri. Ridică tava, adică grupul, cu patru milimetri, cu conul negru. Stă pe piciorușe și apa curge pe dedesubt. Piciorușele se înfig un milimetru în tavă. Apasă Control și A, apoi Control și G. Alege o culoare.
+
+Greșeli frecvente. Fanta nu taie fundul: nu e Hole sau nu ai dat Group. Fanta a tăiat un perete: e prea lungă, păstrează șaptezeci de milimetri, nu nouăzeci și patru. Fantele nu sunt egale: le-ai pus cu ochiul. Șterge-le și repetă Control și D. Fundul a rămas plin: fanta nu iese sub fund, coboară-o un milimetru. Piciorușele plutesc: ridică tava cu patru milimetri.
+
+Proiectul de azi. Săpuniera mea.
+
+Minim înseamnă: tavă goală, trei fante egale, prin fund, fără să atingă pereții, și Group. Complet înseamnă: minim, plus patru piciorușe în colțuri și Color. Dacă rămâi în urmă, salvează la Minim.
+
+Recapitulare. Gaura utilă are formă, loc și mărime alese. Fanta stă în fund, nu în pereți. Control și D plus aceeași mutare dă fante egale. Piciorușele lasă aer sub tavă.
+
+Succes la săpuniera ta.

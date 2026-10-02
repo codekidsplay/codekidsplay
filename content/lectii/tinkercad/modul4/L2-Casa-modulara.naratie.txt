@@ -1,0 +1,29 @@
+Lecția doi. Casa modulară.
+
+Astăzi faci o casă după șablon, cu corp, ușă și ferestre, și îi pui trei acoperișuri diferite. Lucrezi pe placa din lecția unu. Deschizi proiectul din lecția unu, faci o copie cu Duplicate din lista de proiecte și o redenumești: Prenume, linie jos, Nume, linie jos, T patru, linie jos, L zero doi. Proiectul se numește Casa mea.
+
+Obiectivul. La final ai cel puțin o casă pe zona de locuințe, la scară, cu ușă și ferestre tăiate cu Hole. Minim: o casă de doisprezece metri pe zece pe șase, cu ușă, două ferestre și acoperiș, ridicată la patru milimetri. Complet: minim, plus trei case din același corp, cu trei acoperișuri diferite: într-o apă, piramidal și plat. Plus patru ferestre pe casă, două sus și două jos.
+
+De ce contează. Un șablon este un corp făcut o dată și apoi copiat. Orașele sunt pline de case din același model, cu mici diferențe. Ușile și ferestrele de pe model sunt de două ori mai mari decât în realitate. La scara unu la cinci sute ar fi minuscule și nu s-ar vedea.
+
+Primul pas pe ecran. Dacă nu ai placa, o refaci rapid, ca la lecția unu: placa și cele patru zone. La Snap Grid, jos în dreapta, pui unu milimetru. Tragi un Box de douăzeci și patru pe douăzeci pe doisprezece, deocamdată în afara plăcii. Ține minte: douăzeci și patru de milimetri sunt doisprezece metri, douăzeci sunt zece metri, doisprezece sunt șase metri, adică două etaje.
+
+Al doilea pas pe ecran. Ușa. Tragi un Box de patru pe patru pe opt și îl faci Hole. Selectezi ușa și corpul, apeși tasta L și alegi mijlocul pe stânga spre dreapta și punctul de jos. Apoi selectezi iar ușa și corpul, tasta L, și alegi punctul din față al corpului. Acum ușa e cu fața lipită de perete. O muți doi milimetri spre față. Jumătate din Hole iese afară, jumătate taie peretele, cu o adâncime de doi milimetri.
+
+Al treilea pas pe ecran. Ferestrele de sus. Un Box de patru pe patru pe patru, făcut Hole. Ca la ușă: tasta L cu corpul, mijloc pe stânga spre dreapta, lipit de perete în față și mutat doi milimetri spre față. O muți șase milimetri spre stânga și o ridici cu conul negru la șase milimetri. Aceasta e fereastra de sus din stânga. Apeși tasta Control și D împreună, iar pe Mac Command și D. Muți copia doisprezece milimetri spre dreapta.
+
+Al patrulea pas pe ecran. Group. Selectezi corpul, ușa și cele două ferestre, ținând Shift apăsat, și apeși Control și G. Dacă faci și Complet, înainte să adaugi acoperișul, apeși Control și D de două ori pe corpul grupat și lași cele două copii deoparte, în afara plăcii. Vor fi casele doi și trei. Din Front, în View Cube, ușa e jos la mijloc, iar ferestrele sus. Din Right, golurile taie doar doi milimetri în perete.
+
+Al cincilea pas pe ecran. Primul acoperiș, într-o apă. Un Wedge de douăzeci și patru pe douăzeci pe opt. Îl rotești până când, din Right, vezi un triunghi cu partea înaltă spre spate. Tasta L cu casa, mijloc pe cele două direcții de pe plan, și îl ridici la doisprezece milimetri. Selectezi casa și acoperișul și apeși Control și G. Apoi ridici casa la patru milimetri și o muți pe zona de locuințe. Cu Color, pereții într-o culoare, acoperișul în alta.
+
+Al șaselea pas pe ecran, pentru Complet. Pe casa doi, înainte de acoperiș, desfaci grupul cu Control, Shift și G. Selectezi cele două ferestre de sus, Control și D, și muți copiile patru milimetri în jos. Rămân la doi milimetri de pământ, lângă ușă. Selectezi corpul, ușa și toate cele patru ferestre și apeși Control și G. Acoperiș pentru casa doi: Pyramid de douăzeci și patru pe douăzeci pe nouă, tasta L cu corpul, ridicat la doisprezece milimetri. Acoperiș pentru casa trei: Box de douăzeci și șase pe douăzeci și doi pe unu virgulă cinci, care iese un milimetru în afară, tasta L cu corpul, ridicat la doisprezece milimetri. Pe casele doi și trei grupezi corpul cu acoperișul. Le ridici la patru milimetri și le așezi pe zona de locuințe, cu spațiu între ele.
+
+Greșeli frecvente. Ușa nu taie: nu e Hole sau nu ai dat Control și G. Ușa taie prin toată casa: Hole-ul intră prea mult, trebuie doar doi milimetri. Ferestrele sunt la înălțimi diferite: ridică-o pe prima, apoi Control și D. Acoperișul e întors. Acoperișul plutește: nu e ridicat la doisprezece milimetri. Trei case încap greu pe zonă: așază-le în două rânduri. Scara greșită: o casă de doisprezece metri are douăzeci și patru de milimetri, nu doisprezece.
+
+Proiectul de azi. Casa mea.
+
+Minim înseamnă: o casă cu ușă, două ferestre și acoperiș, pe zona de locuințe. Complet înseamnă: minim, plus trei case cu trei acoperișuri diferite și patru ferestre pe o casă. Dacă rămâi în urmă, salvează la Minim.
+
+Recapitulare. Un șablon e un corp făcut o dată și copiat. Ușa și ferestrele sunt Hole-uri care taie doar doi milimetri în perete, apoi Group. Acoperișul se ridică la doisprezece milimetri. Numele fișierului are prenumele, numele, T patru și L zero doi.
+
+Succes la casa ta.

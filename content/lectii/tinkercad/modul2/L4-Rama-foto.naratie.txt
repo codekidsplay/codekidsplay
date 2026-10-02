@@ -1,0 +1,29 @@
+Lecția patru. Rama mea.
+
+Astăzi faci o ramă cu fereastră exactă și, dacă apuci, un loc unde se strecoară poza. Creezi un design nou și îl salvezi cu numele: Prenume, linie jos, Nume, linie jos, T doi, linie jos, L patru. Proiectul se numește Rama mea.
+
+Obiectivul. La final ai o ramă cu o fereastră tăiată prin ea, cu margini egale. Minim: placă de nouăzeci pe șaptezeci pe trei milimetri, cu o fereastră Hole de șaizeci pe patruzeci. Marginile sunt egale, de cincisprezece milimetri. Apoi Group. Golul se vede din ambele părți. Complet: minim, plus un strat din spate cu buzunar de șaptezeci pe cincizeci pentru poză, culoare și Ruler.
+
+De ce contează. O fereastră făcută cu ochiul iese strâmbă. Cu Align și cu numere, marginile ies egale pe toate laturile. Buzunarul din spate este o piesă făcută din două straturi.
+
+Primul pas pe ecran. Apasă Create new design și scrie numele. Jos, în dreapta, la Snap Grid, alege un milimetru.
+
+Al doilea pas pe ecran. Trage un Box și scrie: nouăzeci, șaptezeci, trei. Este o placă subțire. Rămâne Solid.
+
+Al treilea pas pe ecran. Trage alt Box și scrie: șaizeci, patruzeci, șapte. În panoul Shape alege Hole. Selectează Hole-ul și placa și apasă tasta L pentru Align. Dă click pe punctul de mijloc pe fiecare dintre cele trei direcții: stânga și dreapta, față și spate, sus și jos. Hole-ul e mai gros decât placa și centrat pe înălțime, deci iese doi milimetri sus și doi milimetri jos. Align poate ridica placa doi milimetri de pe plan. Apasă Control și A, apoi Control și G. Fereastra e tăiată. Apasă tasta D și rama coboară pe plan.
+
+Al patrulea pas pe ecran. În View Cube alege Top. Marginile sunt egale? Cincisprezece milimetri pe stânga și dreapta, cincisprezece sus și jos. Apoi deschide Ruler. Pune rigla în colțul plăcii și măsoară până la fereastră, pe marginea lungă și pe cea scurtă. Amândouă dau cincisprezece. Hole-ul se măsoară doar separat. Desfă cu Control, Shift și G, măsoară, apoi apasă Control și A, Control și G, și tasta D. Rotește vederea: golul se vede și din spate.
+
+Al cincilea pas pe ecran, pentru Complet. Trage un Box de nouăzeci pe șaptezeci pe trei, alt strat, la fel de mare. Pune-l lângă ramă, nu peste ea. Trage un Box Hole de șaptezeci pe cincizeci pe șapte și aliniază-l pe mijloc pe cele trei direcții cu stratul. Apasă Control și G, apoi tasta D. Ai un strat cu gol mai mare, șaptezeci pe cincizeci, decât fereastra, șaizeci pe patruzeci. Ridică stratul cu trei milimetri, cu conul negru, deasupra plăcii din față. Selectează ambele straturi, apasă L și alege mijlocul pe cele două direcții de pe plan. Apasă Control și A, apoi Control și G. Ai o ramă din două straturi.
+
+Al șaselea pas pe ecran. Rama stă pe plan cu fața în jos, iar stratul cu buzunar e deasupra, pe spate. Poza, de șaptezeci pe cincizeci, intră în buzunarul din stratul de sus. Fereastra din față, de șaizeci pe patruzeci, lasă poza să se vadă, dar nu o lasă să cadă. La final alege o culoare care se potrivește cu poza ta.
+
+Greșeli frecvente. Marginile nu sunt egale: n-ai aliniat pe mijloc. Fereastra nu taie: lipsește Group sau Box-ul e încă Solid. Rămâne o foiță în fereastră: Hole-ul e la fel de gros ca placa, deci fă-l mai gros, de șapte milimetri, și centrează-l și pe înălțime. Buzunarul e mai mic decât fereastra: șaptezeci pe cincizeci trebuie să fie mai mare decât șaizeci pe patruzeci. Ai grupat prea devreme: desfă cu Control, Shift și G, modifici, apoi regrupezi.
+
+Proiectul de azi. Rama mea.
+
+Minim înseamnă: placă de nouăzeci pe șaptezeci pe trei, cu Hole de șaizeci pe patruzeci centrat pe trei direcții, margini de cincisprezece milimetri și Group. Complet înseamnă: minim, plus strat din spate cu buzunar de șaptezeci pe cincizeci, Ruler și Color. Dacă rămâi în urmă, salvează la Minim.
+
+Recapitulare. Un Hole mai gros decât placa, centrat pe înălțime, taie complet. Tasta L pe trei direcții pune fereastra exact la mijloc. Rama cu buzunar are două straturi, iar golul din spate este mai mare. Ruler verifică marginile.
+
+Succes la rama ta.

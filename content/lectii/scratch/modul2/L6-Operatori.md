@@ -9,8 +9,8 @@
 
 ## Obiectiv
 La finalul orei folosești blocurile din <span style="color:#59C059;font-weight:700">Operatori</span> (`+`, `−`, `<`, `=`, `>`) împreună cu `scor` ca să afișezi mesaje diferite față de o **țintă**.  
-**Minimum:** o **comparație** (scor vs țintă) cu mesaje diferite + reset la steag — pe butonul **Verifică**.  
-**Ținta orei (Complet):** Minim + un **calcul** (`+` sau `−`) + pattern-ul Verifică curat (demo pierdere **și** victorie).
+**Minim:** o **comparație** (scor vs țintă) cu mesaje diferite + reset la steag — pe butonul **Verifică**.  
+**Ținta orei (Complet):** Minim + un **calcul** (`+` sau `−`) + tiparul Verifică curat (demo pierdere **și** victorie).
 
 ## De ce contează
 „Ai 5 stele?” e o **comparație**. „Scor + 2” e un **calcul**.  
@@ -23,7 +23,7 @@ Fără operatori, variabilele doar stau pe ecran — nu decid.
 | Minute | Ce facem |
 |--------|----------|
 | 0–10 | Recap variabile (L5) + de ce ne trebuie verdele |
-| 10–30 | Pas cu pas: checkpoint-uri (**Încearcă tu**) |
+| 10–30 | Pas cu pas: mini-verificări (**Încearcă tu**) |
 | 30–100 | Proiectul „Ținta de scor” (vezi **Minim vs Complet**) |
 | 100–120 | Recap, bonus, salvare |
 
@@ -39,7 +39,7 @@ Din <span style="color:#59C059;font-weight:700">Operatori</span>:
 | <span style="color:#59C059;font-weight:700">a + b</span> | adună |
 | <span style="color:#59C059;font-weight:700">a − b</span> | scade |
 | <span style="color:#59C059;font-weight:700">a < b</span> | e mai mic? |
-| <span style="color:#59C059;font-weight:700">a = b</span> | e egal? *(îl știi din preview L5)* |
+| <span style="color:#59C059;font-weight:700">a = b</span> | e egal? *(îl știi din exemplu de la L5)* |
 | <span style="color:#59C059;font-weight:700">a > b</span> | e mai mare? |
 
 Comparațiile (`< = >`) sunt **hexagoane** → intră în `dacă`.  

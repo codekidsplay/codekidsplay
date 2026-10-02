@@ -9,7 +9,7 @@
 ---
 
 ## Obiectiv
-La finalul orei pornești proiectul cu <span style="color:#3F8F2A;font-weight:700">steagul verde</span>, îl **salvezi** cu numele corect (`Prenume_Nume_L1`), și ai **minimum** un dialog pe **2 personaje**.  
+La finalul orei pornești proiectul cu <span style="color:#3F8F2A;font-weight:700">steagul verde</span>, îl **salvezi** cu numele corect (`Prenume_Nume_L1`), și ai **cel puțin** un dialog pe **2 personaje**.  
 Ținta orei (**Complet**): același clip, plus **mișcare** și **sunet**.
 
 ## De ce contează
@@ -23,15 +23,13 @@ Fără steag și fără salvare, restul orelor nu pot începe.
 | Minute | Ce facem |
 |--------|----------|
 | 0–5 | Obiectiv + tur pe ecran (scenă, personaj, steag, stop) |
-| 5–30 | Pas cu pas: **3** checkpoint-uri practice (nu 5 sprinturi) |
+| 5–30 | Pas cu pas: **3** mini-verificări (nu 5 sprinturi) |
 | 30–100 | Proiectul „Cardul meu animat” (vezi **Minim vs Complet**) |
 | 100–120 | Recap, bonus, arăți ce ai gata |
 
 **Capitole azi (doar acestea 5):**  
 <span style="color:#E6A800;font-weight:700">Evenimente</span> · <span style="color:#9966FF;font-weight:700">Aspect</span> · <span style="color:#4C97FF;font-weight:700">Mișcare</span> · <span style="color:#FFAB19;font-weight:700">Control</span> · <span style="color:#CF63CF;font-weight:700">Sunet</span>  
 *(Detectare, Operatori, Variabile — Modulul 2.)*
-
-**Notă profesor (ritm):** cele 3 „Încearcă tu” = ~8–10 min de lucru copil + explicație scurtă. Dacă grupa e mare, lasă **Salvarea** pe scurt (numele pe ecran/foaie + 1 salvare colectivă), nu câte un tur individual.
 
 ---
 
@@ -106,7 +104,7 @@ Salvat: `Prenume_Nume_L1`
 | | Ce trebuie |
 |--|------------|
 | **Minim („am reușit”)** | **Pasul 1 + Pasul 2** — 2 personaje + dialog pe rând, salvat |
-| **Complet (ținta orei)** | Minim + **Pasul 3** + **Pasul 4** (mișcare/aspect + sunet + ≥20 sec) |
+| **Complet (ținta orei)** | Minim + **Pasul 3** + **Pasul 4** (mișcare/aspect + sunet + ≥10 sec) |
 
 Dacă rămâi în urmă: **oprește-te la Minim** și salvează. Nu e eșec — e baza pentru L2.  
 Cei rapizi: Complet, apoi Bonus.
@@ -116,12 +114,15 @@ Cei rapizi: Complet, apoi Bonus.
 - [ ] Adaugi un **al doilea** personaj  
 - [ ] Îi așezi stânga / dreapta, ca să se vadă amândouă  
 
+**Cum vorbesc pe rând:** scripturile celor 2 personaje pornesc **în același moment** la steag. Ca să nu vorbească deodată, personajul 2 începe cu <span style="color:#FFAB19;font-weight:700">așteaptă</span> cât durează replicile personajului 1 (ex. 2 × `spune` 2 sec + `așteaptă` 1 sec = `5`).  
+
 ### Pasul 2 — Dialogul *(parte din Minim)*
 *(Ca la „Încearcă tu — start + ritm”, dar **acum pe amândouă** personajele.)*
 
 - [ ] Pe **personajul 1**: steag + cel puțin **2** <span style="color:#9966FF;font-weight:700">spune</span> cu <span style="color:#FFAB19;font-weight:700">așteaptă</span> între ele  
 - [ ] Pe **personajul 2**: steag + cel puțin **2** <span style="color:#9966FF;font-weight:700">spune</span> cu <span style="color:#FFAB19;font-weight:700">așteaptă</span> între ele  
 - [ ] În total ≥ **4** `spune` — **împărțite pe cele 2 personaje**, nu toate pe unul singur  
+- [ ] Personajul 2 începe cu `așteaptă` (cât durează personajul 1), ca să nu vorbiți deodată  
 - [ ] Din dialog se înțelege **cine ești** (nume + un lucru despre tine)  
 - [ ] Salvat: `Prenume_Nume_L1`  
 
@@ -137,7 +138,7 @@ Cei rapizi: Complet, apoi Bonus.
 *(<span style="color:#CF63CF;font-weight:700">Sunet</span> · salvezi din nou.)*
 
 - [ ] **1** <span style="color:#CF63CF;font-weight:700">sunet</span> (la început sau la final)  
-- [ ] Clipul ține ≥ **20 de secunde**  
+- [ ] Clipul ține ≥ **10 secunde**  
 - [ ] Steag din nou → reîncepe de la capăt  
 - [ ] Salvat din nou: `Prenume_Nume_L1`  
 

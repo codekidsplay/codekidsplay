@@ -1,0 +1,31 @@
+Lecția unu. Sărituri pe platforme.
+
+Astăzi construiești un erou care cade, sare și aterizează pe platforme. Fără săritură infinită și fără să treacă prin podea. Faci un fișier nou. Îl salvezi ca Prenume, linie jos, Nume, linie jos, M cinci, linie jos, L unu. Proiectul se numește Sărituri pe platforme.
+
+Obiectivul. Eroul merge stânga și dreapta, are variabila viteza y și gravitație, sare pe spațiu doar când stă pe sol, aterizează pe cel puțin două platforme și revine la start când apeși steagul. Asta e Minim. Complet înseamnă Minim, plus trei platforme pe traseu, sau un perete care te oprește pe x, sau o monedă pe ultima platformă.
+
+De ce contează. Fără viteza y, săritura e un teleport în sus, sau rămâi în aer. Aceeași gândire te ajută la jocuri grele și la proiectul mare din lecția șapte.
+
+Primul pas, pe foaie, cinci minute. Eroul are un număr secret, viteza y. Spune cât de repede urcă sau coboară la fiecare repetare. Când stă pe loc, viteza y este zero. Când sare, primește o împingere în sus: doisprezece. La fiecare pas, gravitația scade unu din ea. Doisprezece, unsprezece, zece, și tot așa, până la zero, vârful săriturii. Apoi minus unu, minus doi, și eroul cade. Săritura e o frână care devine cădere. Scrie pe foaie primele șase valori: doisprezece, unsprezece, zece, nouă, opt, șapte.
+
+Al doilea pas pe ecran. Faci proiect nou. Creezi sprite-ul Teren, dintr-un singur costum: o podea jos și două sau trei platforme deasupra. Platformele sunt la cel mult șaizeci de pași una deasupra celeilalte, fiindcă săritura urcă cam șaptezeci și opt. Pui eroul sus. Creezi variabilele viteza y și pe sol, pentru toate sprite-urile. Pe steag, la Erou: du-te la x minus două sute, y minus o sută. Setează viteza y la zero. Setează pe sol la zero.
+
+Al treilea pas, gravitația. Sub la apăsarea steagului pui repetă la nesfârșit. Înăuntru, în ordinea asta: schimbă viteza y cu minus unu, apoi schimbă y cu viteza y. Eroul cade și trece prin podea. Așa trebuie, încă.
+
+Al patrulea pas, podeaua. În același repetă la nesfârșit pui dacă, atunci, altfel. Dacă atinge Teren: dacă viteza y este mai mică decât zero, setează pe sol la unu. Apoi repetă până când nu atinge Teren, schimbă y cu unu. Apoi setează viteza y la zero. Altfel, setează pe sol la zero.
+
+Al cincilea pas, săritura. Dacă tasta spațiu apăsată și pe sol egal cu unu, atunci setează viteza y la doisprezece.
+
+Al șaselea pas. Dacă tasta săgeată dreapta apăsată, schimbă x cu patru. Dacă săgeata stânga, schimbă x cu minus patru.
+
+Greșeli frecvente. Eroul trece prin podea: lipsește repetă până când. Eroul tremură: ai pus schimbă y înaintea gravitației. Săritură infinită: spațiul nu verifică pe sol. Zboară prea sus: pune zece în loc de doisprezece. Blocurile sunt în afara lui repetă la nesfârșit.
+
+Proiectul de azi. Sărituri pe platforme.
+
+Minim înseamnă: viteza y, gravitație, pe sol, săritură doar pe sol, două platforme, reset. Complet înseamnă: Minim plus una dintre cele trei variante. Dacă rămâi în urmă, salvează la Minim.
+
+În proiect, primul pas. Scena, Teren și variabilele. Al doilea pas. Gravitația, podeaua și săritura. Testezi. Salvezi.
+
+Recapitulare. Viteza y face săritura. Pe sol, viteza este zero. Spațiul merge doar pe sol. Numele fișierului are prenumele, numele, M cinci și L unu.
+
+Succes la săriturile tale.

@@ -1,26 +1,26 @@
 Lecția șase. Proiectul tău, versiunea finală.
 
-Astăzi motorul de la lecția unu devine produs: început, mijloc greu, final clar, restart. Același fir Creator. Nu începi proiect nou. Nu deschizi antrenamentele de la lecțiile doi până la cinci. Salvezi ca Prenume, linie jos, Nume, linie jos, M patru, linie jos, L șase. Poți face Salvează ca din L unu, ca să păstrezi istoricul. Proiectul se numește Proiectul meu, final.
+Astăzi baza jocului de la lecția unu devine produs: început, mijloc greu, final clar, restart. Același fir Creator. Nu începi proiect nou. Nu deschizi antrenamentele de la lecțiile doi până la cinci. Salvezi ca Prenume, linie jos, Nume, linie jos, M patru, linie jos, L șase. Poți face Salvează ca din L unu, ca să păstrezi istoricul. Proiectul se numește Proiectul meu, final.
 
-Obiectivul. Un coleg termină fluxul fără ajutor, iar tu explici regulile în treizeci de secunde. Minim: start clar, final clar, restart complet, cel puțin două sisteme, scor, vieți, timer, mesaje, clone sau meniu, plus nivele, cel puțin două, sau multiplayer local, plus test coleg reușit. Complet: minim, plus trei sisteme, sau nivele și schiță multiplayer, sau final alternativ ori secret.
+Obiectivul. Un coleg termină fluxul fără ajutor, iar tu explici regulile în treizeci de secunde. Minim: start clar, final clar, restart complet, cel puțin două sisteme, scor, vieți, timer, mesaje, clone sau meniu, plus nivele, cel puțin două, sau joc cu doi jucători, pe același calculator, plus test coleg reușit. Complet: minim, plus trei sisteme, sau nivele și schiță cu doi jucători, sau final alternativ ori secret.
 
-De ce contează. Lecția unu e motorul. Lecția șase termini. Lecția șapte repari și lustruiești. Fără final, restart și wow A sau B închis, nu ești gata de prezentare.
+De ce contează. Lecția unu e baza jocului. Lecția șase termini. Lecția șapte repari și îmbunătățești. Fără final, restart și ideea specială A sau B închis, nu ești gata de prezentare.
 
-Primul pas pe ecran. Deschizi Prenume, Nume, M patru, L unu, sau copia L șase. Pe foaie: ce merge, ce lipsește față de Minim. Confirmi wow-ul: A nivele, sau B multiplayer. Dacă motorul L unu e incomplet, primele minute ajungi la interacțiune plus wow început, apoi checklist-ul de azi.
+Primul pas pe ecran. Deschizi Prenume, Nume, M patru, L unu, sau copia L șase. Pe foaie: ce merge, ce lipsește față de Minim. Confirmi ideea specială: A nivele, sau B doi jucători. Dacă baza jocului L unu e incomplet, primele minute ajungi la interacțiune plus ideea specială început, apoi checklist-ul de azi.
 
 Al doilea pas pe ecran. Nucleul produsului. Start: steag și, ideal, buton Start. Mijloc: jocul, povestea sau quiz-ul e greu pe bune, nu ecran gol. Final: victorie, Sfârșitul jocului, scenă finală sau scor final, clar pe scenă. Restart: resetează scor, vieți, timp, nivel, poziții, mesaje, clone, sunete. Steag de două ori, totul curat.
 
-Al treilea pas pe ecran. Două sisteme din listă, plus wow obligatoriu închis. Wow A: Level unu și doi jucabile și diferite, trecere la obiectiv, restart egal Level unu. Wow B: jucător unu săgeți, jucător doi WASD, ambii influențează jocul, câștigător sau scor pe jucător. Scratch e pe aceeași tastatură, nu online.
+Al treilea pas pe ecran. Două sisteme din listă, plus ideea specială obligatoriu închis. Ideea specială A: Level unu și doi jucabile și diferite, trecere la obiectiv, restart egal Level unu. Ideea specială B: jucător unu săgeți, jucător doi W, A, S, D, ambii influențează jocul, câștigător sau scor pe jucător. Scratch e pe aceeași tastatură, nu online.
 
-Al patrulea pas pe ecran. Minim pe tip. Joc sau labirint: câștigi, pierzi, feedback, scor sau vieți, nivele sau doi jucători. Quiz: șase întrebări, scor final, două runde sau doi jucători pe rând. Poveste: trei scene, două alegeri, două finaluri. Animație-joc: treizeci până la șaizeci de secunde, input, final, două acte sau două roluri.
+Al patrulea pas pe ecran. Minim pe tip. Joc sau labirint: câștigi, pierzi, reacție, scor sau vieți, nivele sau doi jucători. Quiz: șase întrebări, scor final, două runde sau doi jucători pe rând. Poveste: trei scene, două alegeri, două finaluri. Animație-joc: treizeci până la șaizeci de secunde, acțiune, final, două acte sau două roluri.
 
-Al cincilea pas pe ecran. Colegul joacă fără ajutor. Tu notezi trei lucruri de reparat sau lustruat pentru lecția șapte. Salvezi L șase.
+Al cincilea pas pe ecran. Colegul joacă fără ajutor. Tu notezi trei lucruri de reparat sau îmbunătățit pentru lecția șapte. Salvezi L șase.
 
-Greșeli frecvente. Aproape gata fără final. Restart parțial. Wow încă pe foaie. Proiect nou azi. Test doar pe tine. Multiplayer cu aceleași taste.
+Greșeli frecvente. Aproape gata fără final. Restart parțial. Ideea specială încă pe foaie. Proiect nou azi. Test doar pe tine. Doi jucători cu aceleași taste.
 
 Proiectul de azi. Proiectul meu, final.
 
-Minim înseamnă: start, final, restart, două sisteme, nivele sau multiplayer, test coleg. Complet înseamnă: minim plus una din cele trei variante. Dacă rămâi în urmă, salvează la Minim pe L șase.
+Minim înseamnă: start, final, restart, două sisteme, nivele sau doi jucători, test coleg. Complet înseamnă: minim plus una din cele trei variante. Dacă rămâi în urmă, salvează la Minim pe L șase.
 
 În proiect, primul pas. Inventar pe foaie. Ce lipsește.
 
@@ -28,6 +28,6 @@ Minim înseamnă: start, final, restart, două sisteme, nivele sau multiplayer, 
 
 În proiect, al treilea pas. Trei note pe foaie pentru lecția șapte.
 
-Recapitulare. Lecția șase e produs jucabil, nu schiță. Wow A sau B e obligatoriu și terminat. Fișierul: prenumele, numele, M patru și L șase.
+Recapitulare. Lecția șase e produs jucabil, nu schiță. Ideea specială A sau B e obligatoriu și terminat. Fișierul: prenumele, numele, M patru și L șase.
 
 Succes la versiunea finală.

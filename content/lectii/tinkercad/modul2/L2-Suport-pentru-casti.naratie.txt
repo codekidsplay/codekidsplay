@@ -1,0 +1,31 @@
+Lecția doi. Suportul meu.
+
+Astăzi faci un obiect care trebuie să stea în picioare. Baza decide totul. Creezi un design nou și îl salvezi cu numele: Prenume, linie jos, Nume, linie jos, T doi, linie jos, L doi. Proiectul se numește Suportul meu.
+
+Obiectivul. La final ai un suport cu trei părți: baza, stâlpul și bara de sus, unde se așază căștile. Minim: bază cu diametru șaptezeci și înălțime opt milimetri, stâlp cu diametru paisprezece și înălțime o sută cincizeci de milimetri, pe centrul bazei, și o bară de șaizeci pe paisprezece pe doisprezece, pe vârf. Apoi Group. Din Front, capetele barei sunt deasupra bazei. Complet: minim, plus bile pe capetele barei, verificare cu Ruler și culoare.
+
+De ce contează. Un obiect înalt se răstoarnă dacă baza e prea mică. Regula de azi: partea de sus nu iese în afara bazei. Mai înveți Align, ca să pui piesele exact pe același centru.
+
+Primul pas pe ecran. Apasă Create new design și scrie numele. Jos, în dreapta, la Snap Grid, alege un milimetru.
+
+Al doilea pas pe ecran. Trage un Cylinder și scrie: șaptezeci, șaptezeci, opt. Este un disc lat, baza.
+
+Al treilea pas pe ecran. Trage alt Cylinder și scrie: paisprezece, paisprezece, o sută cincizeci. Este stâlpul. Pune-l oriunde lângă bază, pe plan.
+
+Al patrulea pas pe ecran. Selectează baza și stâlpul, cu Shift și click. Apasă tasta L pentru Align. Apar puncte negre. Dă click pe punctul de mijloc pe fiecare dintre cele două direcții de pe plan: stânga și dreapta, apoi față și spate. Stâlpul stă acum în mijlocul bazei și se înfige în ea. Apasă Control și G împreună. Baza și stâlpul sunt o singură piesă.
+
+Al cincilea pas pe ecran. Trage un Box și scrie: șaizeci, paisprezece, doisprezece. Este bara. Selectează bara și grupul, apoi apasă L. Dă click pe punctul de mijloc pe ambele direcții de pe plan și pe punctul de sus, pe înălțime. Bara urcă și se așază la vârf. Trece peste stâlp ca un T. Căștile se agață pe ea.
+
+Al șaselea pas pe ecran. În View Cube alege Front. Capetele barei sunt la treizeci de milimetri de centru. Marginea bazei e la treizeci și cinci. Deci capetele sunt în interiorul bazei. Apoi apasă Control și A, și Control și G.
+
+Al șaptelea pas pe ecran, pentru Complet. Selectează suportul și apasă Control, Shift și G. Bara e din nou separată. Trage o Sphere de șaisprezece pe șaisprezece pe șaisprezece. Selectează sfera și bara, apasă L și alege punctul din stânga al barei, plus mijlocul pe celelalte două direcții. Apasă Control și D, selectează copia și bara, apasă L și alege punctul din dreapta al barei. Apoi deschide Ruler. Pune rigla pe plan în centrul bazei. Dă click pe bară: capătul ei e la treizeci de milimetri. Dă click pe bază: marginea e la treizeci și cinci. Dacă baza e încă în Group cu stâlpul, desface și acel Group cu Control, Shift și G. La final grupează totul, de câte ori e nevoie, până rămâne un singur suport. Alege o culoare pentru tot suportul.
+
+Greșeli frecvente. Stâlpul nu e pe centru: ai sărit peste Align. Bara plutește: nu ai aliniat sus. Suportul se răstoarnă: capetele barei ies în afara bazei, deci lărgești baza sau scurtezi bara. Baza prea subțire: sub șase milimetri se rupe ușor, lasă-o la opt. Sfera se aliniază la tot suportul: bara e încă în Group, desfă-l întâi.
+
+Proiectul de azi. Suportul meu.
+
+Minim înseamnă: bază, stâlp și bară, aliniate, în Group, cu capetele barei deasupra bazei. Complet înseamnă: minim, plus bile pe capete, Ruler la treizeci și la treizeci și cinci de milimetri și Color. Dacă rămâi în urmă, salvează la Minim.
+
+Recapitulare. Baza e mai lată decât tot ce e deasupra. Tasta L este Align și pune piesele pe același centru. Din Front verifici dacă partea de sus iese în afara bazei. Group se dă la sfârșit, nu la început.
+
+Succes la suportul tău.

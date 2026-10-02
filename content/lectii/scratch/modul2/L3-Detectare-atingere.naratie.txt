@@ -10,11 +10,11 @@ Primul pas pe ecran. Trei hexagoane utile. Atinge culoarea: Minim, lava. Atinge 
 
 Al doilea pas pe ecran. Desenezi pe fundal o bandă de lavă. În hexagon, apeși pătrățelul de culoare. Cu pipeta, click pe lava de pe scenă, nu pe o culoare oarecare din paletă. Mută eroul pe lavă și pe iarbă. Vezi da versus nu.
 
-Al treilea pas pe ecran. Pattern Minim. La steag: du-te la un punct sigur, nu pe lavă, orientează-te nouăzeci, oprește sunetele. Forever pe erou. Control cu taste: dacă săgeată, atunci mergi. Tot în forever: dacă atinge culoarea lavă, atunci du-te la start, spune Ai călcat, pentru o secundă, pornește un sunet, așteaptă zero virgulă cinci. Fără așteaptă, spam.
+Al treilea pas pe ecran. Tipar Minim. La steag: du-te la un punct sigur, nu pe lavă, orientează-te nouăzeci, oprește sunetele. Forever pe erou. Control cu taste: dacă săgeată, atunci mergi. Tot în forever: dacă atinge culoarea lavă, atunci du-te la start, spune Ai călcat, pentru o secundă, pornește un sunet, așteaptă zero virgulă cinci. Fără așteaptă, mesajul se repetă.
 
 Al patrulea pas pe ecran, pentru Complet. Dacă atinge marginea, atunci întoarce cu o sută optzeci, așteaptă zero virgulă doi. Moneda e un al doilea personaj. Pe erou: dacă atinge Moneda, spune Yaay. Pe Monedă, script separat: la steag arată. Forever: dacă atinge Erou, atunci ascunde. La steag pe monedă: mereu arată, altfel dispare pe totdeauna. Fără mesaje broadcast. Asta vine la lecția opt.
 
-Greșeli frecvente. Dacă nu detectează lava, culoarea din hexagon nu e pe scenă. Re-pipetează. Dacă detectează tot fundalul, lava e prea mare sau aceeași culoare ca iarba. Dacă spam Ai călcat, lipsește așteaptă, sau startul e pe lavă. Dacă moneda nu revine, la steag pe monedă trebuie arată.
+Greșeli frecvente. Dacă nu detectează lava, culoarea din hexagon nu e pe scenă. Re-pipetează. Dacă detectează tot fundalul, lava e prea mare sau aceeași culoare ca iarba. Dacă „Ai călcat” se repetă, lipsește așteaptă, sau startul e pe lavă. Dacă moneda nu revine, la steag pe monedă trebuie arată.
 
 Proiectul de azi. Nu călca pe lavă.
 

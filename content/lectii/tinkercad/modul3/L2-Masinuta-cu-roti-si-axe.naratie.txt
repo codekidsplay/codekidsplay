@@ -1,0 +1,33 @@
+Lecția doi. Mașinuța mea.
+
+Astăzi faci o mașinuță ale cărei roți stau pe axe separate, cu joc, ca să se poată învârti. Fișier nou: Prenume, linie jos, Nume, linie jos, T trei, linie jos, L doi. Proiectul se numește Mașinuța mea. În Tinkercad roțile nu se învârt, dar tu vezi că ar avea loc să se învârtă.
+
+Obiectivul. La final ai o mașinuță cu o caroserie, două axe și patru roți, toate piese separate. Axele trec prin găuri din caroserie, iar roțile stau pe capetele axelor. Minim: caroserie de optzeci pe treizeci și șase pe doisprezece milimetri, cu două găuri de diametru șapte, plus o cabină de patruzeci pe treizeci și doi pe doisprezece. Două axe cu diametru cinci și lungime cincizeci și doi. Patru roți cu diametru douăzeci și patru și grosime șase, cu gaură de diametru șapte, care din Front se văd ca cercuri. Complet: minim, plus două faruri, culori și Ruler, ca să măsori gaura de șapte milimetri și axul de cinci.
+
+De ce contează. Ca să se învârtă, roata are nevoie de loc pe ax: gaura e mai mare decât axul. Spațiul acesta se numește joc. Azi ai un milimetru joc pe parte: gaura de șapte, axul de cinci.
+
+Primul pas pe ecran. Create new design, cu numele fișierului. Snap Grid pe unu milimetru, jos în dreapta. Mașinuța merge spre stânga și spre dreapta, văzută din Front. Axele merg pe adâncime.
+
+Al doilea pas pe ecran. O roată. Un Cylinder de douăzeci și patru pe douăzeci și patru pe șase, discul. Un Cylinder de șapte pe șapte pe zece, Hole. Le selectezi, tasta L, mijloc pe cele trei direcții, apoi Control și G. Rotești roata nouăzeci de grade, patru pași de câte douăzeci și doi virgulă cinci. În View Cube apasă Front: roata trebuie să fie un cerc. Dacă vezi o linie, mai rotești nouăzeci de grade pe cealaltă săgeată. Apoi tasta D.
+
+Al treilea pas pe ecran. Axul: un Cylinder de cinci pe cinci pe cincizeci și doi, rotit la fel, până se vede din Front ca un cerc mic. Apoi tasta D.
+
+Al patrulea pas pe ecran. Roata, Control și D, ai două roți. Le tragi peste ax, între capetele lui. Selectezi axul și roțile, tasta L, mijloc pe direcția stânga dreapta și pe înălțime. Apoi axul și prima roată, L, pe adâncime, la capătul din spate. Axul și a doua roată, L, la capătul din față. Roțile nu sunt lipite de ax. Selectezi cele trei piese, Control și D, și muți copia cincizeci de milimetri pe lungimea mașinii, cu Snap Grid pe cinci, zece sărituri.
+
+Al cincilea pas pe ecran. Grupezi temporar cele două seturi și le muți șaizeci de milimetri spre față. Un Box de optzeci pe treizeci și șase pe doisprezece, caroseria. Un Cylinder de șapte pe șapte pe patruzeci, Hole, rotit ca axul. Îl aliniezi cu caroseria pe cele trei direcții, apoi îl muți douăzeci și cinci de milimetri spre stânga. Control și D, copia la cincizeci spre dreapta. Selectezi cu Shift și click caroseria și cele două găuri, nu Control și A, că ar prinde și roțile. Control și G. Apeși D, apoi o ridici cu conul negru cu șase milimetri.
+
+Al șaselea pas pe ecran. Selectezi grupul temporar și caroseria, tasta L, mijloc pe stânga dreapta și pe față spate, dar nu pe înălțime. Apoi desfaci grupul temporar cu Control, Shift și G. Din Front și Top, axele trec prin găuri.
+
+Al șaptelea pas pe ecran. Un Box de patruzeci pe treizeci și doi pe doisprezece, cabina. Îl aliniezi cu caroseria pe cele două direcții de pe plan și îl ridici la optsprezece milimetri. Cabină și caroserie, Control și G.
+
+Al optulea pas pe ecran, pentru Complet. O Sphere de șase pe șase pe șase, far, aliniată la marginea din dreapta, ieșită trei milimetri și ridicată la nouă. Control și D, copia douăzeci de milimetri pe adâncime. Cu Ruler măsori gaura roții și axul. Apoi Color.
+
+Greșeli frecvente. Roata se vede ca o linie: mai rotește nouăzeci de grade. Roata e lipită de ax: nu le grupa. Axul nu trece: lipsește Hole sau Group. Roțile intră în caroserie: păstrează lungimea cincizeci și doi. Ai aliniat setul pe înălțime: tasta Control și Z împreună.
+
+Proiectul de azi. Mașinuța mea.
+
+Minim înseamnă: caroserie cu cabină, două găuri, două axe, patru roți, cercuri din Front. Complet înseamnă: minim, plus faruri, Ruler și culori.
+
+Recapitulare. Roată, ax și caroserie sunt trei tipuri de piese separate. Gaura mai mare decât axul dă joc. Din Front, roata e un cerc.
+
+Succes la mașinuța ta.

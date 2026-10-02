@@ -9,8 +9,8 @@
 
 ## Obiectiv
 La finalul orei folosești <span style="color:#E6A800;font-weight:700">trimite mesajul …</span> și <span style="color:#E6A800;font-weight:700">când primesc mesajul …</span> (*broadcast*) ca două personaje să coopereze (alarmă / liniște).  
-**Minimum:** testul **buton → erou** (mecanismul de bază funcțional).  
-**Ținta orei (Complet):** scenariul **Senzor → Sirenă → Liniște**, fără spam de alarmă.
+**Minim:** testul **buton → erou** (mecanismul de bază funcțional).  
+**Ținta orei (Complet):** scenariul **Senzor → Sirenă → Liniște**, fără alarmă repetată.
 
 ## De ce contează
 Ca în clasă: cineva strigă „Pauză!”, toți reacționează.  
@@ -23,7 +23,7 @@ Ca în clasă: cineva strigă „Pauză!”, toți reacționează.
 | Minute | Ce facem |
 |--------|----------|
 | 0–10 | Recap stop (L7) + de ce „strigăm” între sprite-uri |
-| 10–30 | Pas cu pas: checkpoint-uri (**Încearcă tu**) |
+| 10–30 | Pas cu pas: mini-verificări (**Încearcă tu**) |
 | 30–100 | Proiectul „Alarma” (vezi **Minim vs Complet**) |
 | 100–120 | Recap, bonus, salvare |
 
@@ -39,7 +39,7 @@ Din <span style="color:#E6A800;font-weight:700">Evenimente</span>:
 Creezi mesajul din meniul dropdown → **mesaj nou…**
 
 *Important:* de fiecare dată când cineva **trimite** mesajul, Scratch **pornește din nou** scriptul `când primesc` pe cei care ascultă — chiar dacă unul rulează deja.  
-Dacă trimiți `alarma` de 10 ori rapid, Sirena poate avea **mai multe** instanțe odată (sunet / costum / `spune` se calcă). De aceea prevenim spam-ul la pasul 3.
+Dacă trimiți `alarma` de 10 ori rapid, Sirena poate avea **mai multe** scripturi pornite odată (sunet / costum / `spune` se calcă). De aceea oprim repetarea la pasul 3.
 
 **Încearcă tu — perechea (1–2 min)**  
 - [ ] Ai creat un mesaj cu nume clar (ex. `salut` sau `alarma`)  
@@ -60,27 +60,28 @@ Dacă trimiți `alarma` de 10 ori rapid, Sirena poate avea **mai multe** instan�
 - [ ] Numele mesajului e **identic** la trimite și la primesc  
 - [ ] Salvat: `Prenume_Nume_L8`  
 
-### 3) Alarma completă — fără spam *(Complet)*
+### 3) Alarma completă — fără repetări *(Complet)*
 **Roluri:** Senzor · Sirenă · Buton **Liniște**
 
-**A) Variabilă „am trimis deja”** (recomandat — ca L6/L7: nu lăsăm forever-ul să spam-uiască):  
+**A) Variabilă „am trimis deja”** (recomandat — ca L6/L7: nu lăsăm forever-ul să trimită mesajul mereu):  
 1. Creezi variabila `alarma_activa` (**pentru toți**), pe scenă opțional  
 2. La steag (pe Senzor sau pe Scenă): <span style="color:#FF8C1A;font-weight:700">setează alarma_activa la</span> `0`  
-3. Pe **Senzor**, în bucla `forever`:  
+3. Pe **Senzor**, în bucla `forever`, un `dacă … atunci … altfel`:  
    <span style="color:#FFAB19;font-weight:700">dacă</span> <span style="color:#5CB1D6;font-weight:700">atinge</span> (culoare / personaj periculos)  
-   **atunci:**  
+   **atunci:** (înăuntru, încă un `dacă`)  
    <span style="color:#FFAB19;font-weight:700">dacă</span> <span style="color:#59C059;font-weight:700">alarma_activa = 0</span>  
    **atunci:**  
    <span style="color:#FF8C1A;font-weight:700">setează alarma_activa la</span> `1` →  
    <span style="color:#E6A800;font-weight:700">trimite</span> `alarma`  
-4. Pe **Buton Liniște**: click →  
-   <span style="color:#E6A800;font-weight:700">trimite</span> `liniste` →  
+   **altfel** (nu atinge pericolul):  
    <span style="color:#FF8C1A;font-weight:700">setează alarma_activa la</span> `0`  
-5. **De ce:** dacă Senzorul stă tot pe pericol după Liniște, **nu** retrimite până când `alarma_activa` e din nou 0 **și** (dacă vrei) ieși din zonă și reintri — altfel, fără variabilă, Liniște → sirena se stinge → **imediat** Senzorul retrimite `alarma` și se reaprinde.
+4. Pe **Buton Liniște**: click →  
+   <span style="color:#E6A800;font-weight:700">trimite</span> `liniste`  *(**nu** atingi `alarma_activa` aici)*  
+5. **De ce:** `alarma_activa` rămâne 1 cât timp Senzorul e pe pericol, deci după Liniște **nu** retrimite alarma. Se face 0 abia când **ieși** din zonă; la următoarea intrare sună din nou. Dacă Liniște ar pune variabila pe 0, Senzorul ar retrimite `alarma` imediat și sirena s-ar reaprinde.
 
 *Variantă mai scurtă (dacă rămâi în urmă pe variabile):*  
 `forever` → `dacă atinge pericol` → `trimite alarma` → <span style="color:#FFAB19;font-weight:700">așteaptă</span> `1`  
-*(înceționează spam-ul, dar **nu** rezolvă singur „Liniște apoi reaprinde” — mai bine variabila.)*
+*(încetinește repetarea, dar **nu** rezolvă singur „Liniște apoi reaprinde” — mai bine variabila.)*
 
 **B) Sirena**  
 1. `când primesc` `alarma` → sunet + `spune` `Atenție!` + costum „alertă”  
@@ -89,7 +90,7 @@ Dacă trimiți `alarma` de 10 ori rapid, Sirena poate avea **mai multe** instan�
 **Încearcă tu — alarma completă (4–5 min)**  
 - [ ] Pericol → o **singură** alarmă (nu 30/sec)  
 - [ ] Liniște → sunet/costum normal; **nu** se reaprinde imediat dacă încă ești pe pericol  
-- [ ] Click din nou pe pericol (după ce `alarma_activa` e 0) → poate alarma din nou  
+- [ ] Ieși din zonă de pericol și intri din nou → alarma sună din nou  
 - [ ] Știi: fiecare `trimite` poate porni un script `când primesc` **nou**  
 
 ### 4) Steagul (reset)
@@ -109,9 +110,9 @@ Dacă trimiți `alarma` de 10 ori rapid, Sirena poate avea **mai multe** instan�
 ## Greșeli frecvente
 1. **Nume diferite** — `Alarma` vs `alarma` / `alarmă` — trebuie același mesaj din listă.  
 2. **Script pe personajul greșit** — `când primesc` e pe sirenă, `trimite` pe senzor.  
-3. **Spam alarma** — atingerea e continuă; folosește tiparul `alarma_activa` (pasul 3), nu doar „așteaptă undeva”.  
-4. **Liniște → se reaprinde** — ai resetat sunetul, dar Senzorul e tot pe pericol și trimite din nou; setează `alarma_activa` la 0 **doar** la Liniște/steag, și trimite **doar** când e 0.  
-5. **Sirenă dublă / haotică** — ai trimis `alarma` de multe ori; fiecare `când primesc` pornește o instanță nouă.  
+3. **Alarma se repetă** — atingerea e continuă; folosește tiparul `alarma_activa` (pasul 3), nu doar „așteaptă undeva”.  
+4. **Liniște → se reaprinde** — ai resetat sunetul, dar Senzorul e tot pe pericol și trimite din nou; pune `alarma_activa` pe 0 doar când Senzorul **nu** mai atinge pericolul (și la steag), și trimite **doar** când e 0. Butonul Liniște nu o schimbă.  
+5. **Sirenă dublă / haotică** — ai trimis `alarma` de multe ori; fiecare `când primesc` pornește încă o dată scriptul.  
 6. **Ai folosit doar `spune` pe același personaj** — azi vrem **două** personaje legate prin mesaj.  
 7. **Nume fișier** — `Prenume_Nume_L8`, nu doar `Ana_L8`.
 
@@ -125,7 +126,7 @@ Salvat: `Prenume_Nume_L8`
 | | Ce trebuie |
 |--|------------|
 | **Minim („am reușit”)** | Testul **buton → erou** (`trimite` / `când primesc`) funcțional |
-| **Complet (ținta orei)** | Minim + **Senzor → Sirenă → Liniște** + anti-spam (`alarma_activa`) + reset la steag |
+| **Complet (ținta orei)** | Minim + **Senzor → Sirenă → Liniște** + anti-repetare (`alarma_activa`) + reset la steag |
 
 Dacă rămâi în urmă: salvează la **Minim**.  
 Cei rapizi: Complet, apoi Bonus.
@@ -147,12 +148,12 @@ Cei rapizi: Complet, apoi Bonus.
 
 - [ ] Atingere pericol → trimite `alarma` (**o dată**, cu `alarma_activa`)  
 - [ ] Sirena primește → sunet + mesaj / costum  
-- [ ] Liniște → oprește alarma + `alarma_activa = 0`  
+- [ ] Liniște → oprește alarma (fără să schimbe `alarma_activa`); ieși din pericol → `alarma_activa` revine la 0  
 - [ ] Steag = totul curat  
 - [ ] Un coleg vede: pericol → alarmă → liniște  
 - [ ] Salvat din nou  
 
-**Gata Complet când:** semnalul e clar între personaje, fără spam și fără reaprindere imediată.
+**Gata Complet când:** semnalul e clar între personaje, fără repetări și fără reaprindere imediată.
 
 ---
 
@@ -165,26 +166,26 @@ Cei rapizi: Complet, apoi Bonus.
 ## Recapitulare rapidă
 1. Trimite / când primesc = același nume  
 2. Fiecare `trimite` poate porni un script `când primesc` **nou**  
-3. Anti-spam: `alarma_activa` (trimite doar dacă e 0)  
-4. Liniște resetează flag-ul — altfel alarma se reaprinde pe pericol  
+3. Anti-repetare: `alarma_activa` (trimite doar dacă e 0)  
+4. `alarma_activa` revine la 0 când ieși din pericol — altfel nu mai sună a doua oară; Liniște nu o resetează, altfel alarma se reaprinde  
 5. Nume: **`Prenume_Nume_L8`**  
 
 ## Schema pe scurt *(pe foaie)*
 
 **Pe Senzor**  
-`forever`: `dacă` pericol **și** `alarma_activa = 0` → `setează alarma_activa la 1` → `trimite alarma`
+`forever`: `dacă` pericol → (`dacă alarma_activa = 0` → `setează la 1` → `trimite alarma`) · `altfel` → `setează alarma_activa la 0`
 
 **Pe Sirenă**  
 când primesc `alarma` → sunet + `spune Atenție!`  
 când primesc `liniste` → `oprește toate sunetele` + costum normal  
 
 **Pe buton Liniște**  
-click → `trimite liniste` → `setează alarma_activa la 0`
+click → `trimite liniste`
 
 **Quiz scurt (cu profesorul):**  
 - Ce e un mesaj (*broadcast*)?  
 - De ce nu e suficient un singur personaj azi?  
-- De ce, după Liniște, fără `alarma_activa`, sirena se poate reaprinde?
+- De ce nu pune butonul Liniște `alarma_activa` pe 0?
 
 ## Temă
 Opțional: al 3-lea personaj care reacționează la `alarma` — `Prenume_Nume_L8`.

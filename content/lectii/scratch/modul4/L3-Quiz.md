@@ -2,7 +2,7 @@
 **Modulul 4 · Antrenament (fișier separat)**  
 **Code Kids Play · Scratch Creator**
 
-> Azi construiești un **quiz pe runde**: scor pe scenă, feedback, trecere R1→R2, final clar.  
+> Azi construiești un **quiz pe runde**: scor pe scenă, reacție, trecere R1→R2, final clar.  
 > **Nu** deschizi L1 — fișier **nou**.  
 > Proiect: **„Quiz pe runde”** · fișier: `Prenume_Nume_M4_L3`
 
@@ -10,7 +10,7 @@
 
 ## Obiectiv
 La finalul orei cineva termină **ambele runde** fără ajutor și vede scorul final.  
-**Minimum:** ≥**6** întrebări · **2 runde** vizibile · `scor` pe scenă · feedback corect **și** greșit · nu poți sări întrebarea · mesaj final „X din N” · steag = restart R1.  
+**Minim:** ≥**6** întrebări · **2 runde** vizibile · `scor` pe scenă · reacție la corect **și** la greșit · nu poți sări întrebarea · mesaj final „X din N” · steag = restart R1.  
 **Ținta orei (Complet):** Minim + **Runda 3** **sau** vieți (3 greșeli = Sfârșitul jocului) **sau** timer pe o întrebare.
 
 ## De ce contează
@@ -62,14 +62,27 @@ Pe foaie, **câteva rânduri** (nu eseu):
 Pentru **fiecare** întrebare:  
 1. Afișezi textul (personaj `spune` / sprite cu costum / fundal cu text)  
 2. Răspuns: taste **1/2/3** **sau** 3 butoane  
-3. `dacă` răspuns corect → `schimbă scorul cu 1` + feedback (sunet / „Corect!”)  
-4. Altfel → feedback greșit (**obligatoriu** — nu doar tăcere)  
+3. `dacă` răspuns corect → `schimbă scorul cu 1` + reacție (sunet / „Corect!”)  
+4. Altfel → reacție la răspuns greșit (**obligatoriu** — nu doar tăcere)  
 5. Abia apoi `trimite` următoarea întrebare  
 
 **Nu poți sări** — fără răspuns, nu treci.
 
+**Exemplu concret — metoda ușoară cu `întreabă`** *(un singur personaj, Prezentator, întrebările vin pe rând)*  
+Blocul <span style="color:#5CB1D6;font-weight:700">întreabă … și așteaptă</span> e în **Detectare**. Răspunsul scris de jucător apare în <span style="color:#5CB1D6;font-weight:700">răspuns</span>.  
+1. Steag → <span style="color:#FF8C1A;font-weight:700">setează</span> `scor` la `0`  
+2. <span style="color:#5CB1D6;font-weight:700">întreabă</span> `Q1: 2 + 3 = ?  (scrie numărul)` și așteaptă  
+3. <span style="color:#FFAB19;font-weight:700">dacă</span> <span style="color:#59C059;font-weight:700">(răspuns) = (5)</span> **atunci:** <span style="color:#FF8C1A;font-weight:700">schimbă</span> `scor` cu `1` → <span style="color:#9966FF;font-weight:700">spune</span> `Corect!` timp de `1` secundă  
+   **altfel:** <span style="color:#9966FF;font-weight:700">spune</span> `Greșit!` timp de `1` secundă  
+4. Copiezi blocurile de la pasul 2–3 sub ele pentru Q2, Q3… și schimbi doar textul și numărul corect  
+5. Pentru întrebări cu variante scrii în text: `Capitala: 1) Paris 2) Roma 3) Madrid` — răspunsul corect e `1`  
+
+Jucătorul **nu poate sări** o întrebare: scriptul așteaptă răspunsul. La final: <span style="color:#9966FF;font-weight:700">spune</span> <span style="color:#59C059;font-weight:700">alătură</span> `Ai ` <span style="color:#59C059;font-weight:700">alătură</span> (scor) ` din 6` timp de `3` secunde.  
+
+**Verifici:** răspunzi corect → scorul crește cu 1; răspunzi greșit → scorul rămâne; steag din nou → scor 0.  
+
 **Încearcă tu — 3 întrebări R1 (20 min)**  
-- [ ] Corect și greșit dau feedback diferit  
+- [ ] Corect și greșit dau reacții diferite  
 - [ ] Scorul crește doar la corect  
 
 ### 4) Runda 2 + final *(Minim)*
@@ -92,7 +105,7 @@ Alege **cel puțin una**:
 ## Greșeli frecvente
 1. **Prea mult pe foaie** — 5 min listă, textul întrebărilor e în Scratch.  
 2. **Scor pe personaj, nu pe Scenă** — pune `scor` pe Scenă.  
-3. **Fără feedback la greșit** — jucătorul nu știe dacă a greșit.  
+3. **Fără reacție la greșit** — jucătorul nu știe dacă a greșit.  
 4. **Poți sări întrebarea** — blochează trecerea până există răspuns.  
 5. **Runda 2 = aceleași întrebări** — trebuie **mai grele** sau diferite.  
 6. **Final fără număr** — Minim cere „X din N”, nu doar „Bravo”.  
@@ -107,7 +120,7 @@ Salvat: `Prenume_Nume_M4_L3`
 
 | | Ce trebuie |
 |--|------------|
-| **Minim** | 6 întrebări · 2 runde · scor · feedback C/G · fără sărituri · final X din N · restart |
+| **Minim** | 6 întrebări · 2 runde · scor · reacție la corect/greșit · fără sărituri · final X din N · restart |
 | **Complet** | Minim + R3 **sau** vieți **sau** timer pe o întrebare |
 
 ### Pasul 1 — Schiță (5 min)
@@ -129,7 +142,7 @@ Salvat: `Prenume_Nume_M4_L3`
 ## Recapitulare rapidă
 1. Schiță scurtă → **Scratch**  
 2. Rundă = nivel de întrebări  
-3. Scor pe Scenă + feedback C/G  
+3. Scor pe Scenă + reacție la corect/greșit  
 4. Fișier: **`Prenume_Nume_M4_L3`**
 
 ## Schema pe scurt *(pe foaie)*

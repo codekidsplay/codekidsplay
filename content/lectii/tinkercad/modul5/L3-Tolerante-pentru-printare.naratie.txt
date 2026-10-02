@@ -1,0 +1,33 @@
+Lecția trei. Testul de potrivire.
+
+Astăzi faci un test de potrivire. Ai o placă cu știfturi și o placă cu găuri de mărimi puțin diferite. Așa afli ce joc trebuie între piese. Creezi un design nou și îl numești Prenume, linie jos, Nume, linie jos, T cinci, linie jos, L trei. Proiectul se numește Testul de potrivire. Imprimanta trei D nu se folosește la oră.
+
+Obiectivul. Minim: placa A, de optzeci pe douăzeci pe cinci, cu trei știfturi cu diametru șase și înălțime opt, la cincisprezece milimetri unul de altul. Placa B, tot de optzeci pe douăzeci pe cinci, cu trei găuri cu diametru șase virgulă doi, șase virgulă patru și șase virgulă șase, perfect în dreptul știfturilor. Copiezi și regulile de print pe foaie. Complet: minim, plus încă două perechi, cu diametru șase virgulă zero și șase virgulă opt, plus o cutiuță de treizeci pe douăzeci pe cincisprezece, cu pereți de unu virgulă șase milimetri.
+
+De ce contează. Plasticul imprimat se lărgește puțin. Un știft de șase virgulă zero într-o gaură de șase virgulă zero nu intră. De aceea gaura se face puțin mai mare. Asta se numește joc. După oră, la printare, afli care gaură se potrivește cel mai bine.
+
+Mai întâi copiezi pe foaie regulile de print. Peretele are cel puțin unu virgulă doi milimetri, iar noi folosim unu virgulă șase. Piesele care se mișcă au joc de zero virgulă patru până la zero virgulă cinci milimetri pe parte. Piesele strânse, de zero virgulă unu până la zero virgulă doi. Unghiul sub o piesă în aer este cel mult de patruzeci și cinci de grade. Fața de jos este plată. Detaliul minim are un milimetru.
+
+Primul pas pe ecran. Design nou, Snap Grid unu virgulă zero milimetri. Zecimalele, ca șase virgulă doi, le tastezi cu punct.
+
+Al doilea pas pe ecran. Tragi un Box de optzeci pe douăzeci pe cinci, placa A. Tragi un Cylinder de șase pe șase pe opt, știftul. Cu tasta L îl aliniezi la placă, pe mijloc față spate și pe marginea din stânga. Îl muți douăzeci și doi de milimetri spre dreapta, deci centrul e la douăzeci și cinci, și îl ridici la cinci milimetri. Apeși Control și D, muți copia cincisprezece milimetri spre dreapta și repeți Control și D. Ai trei știfturi, cu centrele la douăzeci și cinci, patruzeci și cincizeci și cinci. Selectezi tot și apeși Control și G.
+
+Al treilea pas pe ecran. Tragi alt Box de optzeci pe douăzeci pe cinci, placa B, în fața plăcii A, la treizeci de milimetri, aliniată la stânga. Tragi un Box de opt pe opt pe unu, ghidul. Îl aliniezi cu L pe mijloc față spate și pe marginea din stânga. Îl muți douăzeci și unu de milimetri spre dreapta și îl ridici la șase. Cu Control și D faci trei ghiduri, la douăzeci și cinci, patruzeci și cincizeci și cinci.
+
+Al patrulea pas pe ecran. Tragi un Cylinder de șase virgulă doi pe șase virgulă doi pe șapte și îl faci Hole. Selectezi gaura și primul ghid și apeși L, mijloc pe stânga dreapta și pe față spate. Cobori gaura un milimetru. A doua gaură are șase virgulă patru pe șase virgulă patru pe șapte, a treia, șase virgulă șase pe șase virgulă șase pe șapte. Fiecare se centrează pe ghidul ei și se coboară un milimetru. Ștergi cele trei ghiduri. Selectezi placa B și găurile și apeși Control și G.
+
+Al cincilea pas pe ecran. Din Top, fiecare gaură e în dreptul unui știft. Pe foaie notezi jocul pe parte. La șase virgulă doi, zero virgulă unu milimetri. La șase virgulă patru, zero virgulă doi. La șase virgulă șase, zero virgulă trei.
+
+Al șaselea pas pe ecran, pentru Complet. Desfaci placa A cu Control, Shift și G. Faci un știft nou la zece și unul la șaptezeci, cu Control și D, la cincisprezece milimetri de cel vecin. Grupezi din nou cu Control și G. Pe placa B faci ghiduri la zece și la șaptezeci. Găurile au diametru șase virgulă zero și șase virgulă opt. Le centrezi pe ghiduri, le cobori un milimetru, ștergi ghidurile și grupezi cu placa B.
+
+Al șaptelea pas pe ecran. Tragi un Box de treizeci pe douăzeci pe cincisprezece. Apoi un Box de douăzeci și șase virgulă opt pe șaisprezece virgulă opt pe paisprezece, ca Hole. Cu L îl centrezi pe stânga dreapta și pe față spate. Îl ridici la unu virgulă șase milimetri, ca fundul să rămână. Grupezi. Din Top, pereții au unu virgulă șase milimetri.
+
+Greșeli frecvente. Joc zero, deci piesa nu intră. Joc prea mare, deci îmbinarea e slabă. Găurile nu sunt în dreptul știfturilor. Ai uitat să ștergi ghidurile.
+
+Proiectul de azi. Testul de potrivire.
+
+Minim înseamnă: placa A cu trei știfturi, placa B cu trei găuri centrate și regulile pe foaie. Complet înseamnă: minim, plus perechile suplimentare și cutiuța. Dacă rămâi în urmă, salvează la Minim.
+
+Recapitulare. Piesele se potrivesc doar cu joc. Piesele strânse au jocul mic, cele mobile îl au mai mare. Peretele minim este unu virgulă doi milimetri. Ghidul te ajută să centrezi exact.
+
+Succes la testul tău de potrivire.

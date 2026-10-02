@@ -1,0 +1,27 @@
+Lecția opt. Castelul meu.
+
+Astăzi înveți duplicarea cu repetare. Faci o piesă, o muți o dată, apeși din nou Control și D, iar Tinkercad repetă aceeași mutare. Proiectul se numește Castelul meu. Numele fișierului este: Prenume, linie jos, Nume, linie jos, T unu, linie jos, L zero opt. Imprimanta trei D nu o folosim la oră. Azi doar proiectezi.
+
+Obiectivul. La final ai un castel cu zid, creneluri la distanțe egale și un turn. Minim: un zid cu creneluri repetate cu Control și D, plus un turn. Complet: minim, plus patru ziduri sau două turnuri, o poartă făcută cu Hole și Group, un steag și culori.
+
+De ce contează. În loc să tragi douăzeci de piese, faci una, o muți o dată, apoi apeși Control și D, iar Tinkercad repetă aceeași mutare. La modulul patru vei repeta ferestre la fel, într-un oraș. Minim este suficient pentru toată grupa. Complet cere mai mult timp.
+
+Primul pas pe ecran. Create new design. Sus scrii numele Prenume, linie jos, Nume, linie jos, T unu, linie jos, L zero opt. Salvarea este automată. Verifici numele.
+
+Al doilea pas pe ecran. Zidul. Tragi un Box și îl faci o sută patru lungime, zece grosime, douăzeci înălțime. Trebuie să stea pe plan. Dacă plutește, apeși tasta D.
+
+Al treilea pas pe ecran. Crenelurile, cu repetarea. Tragi un Box mic, opt pe zece pe șase. Zece este cât grosimea zidului. Îl pui în capătul de sus al zidului, ridicat cu conul negru la douăzeci. Acesta este primul crenel. Îl selectezi și apeși Control și D. Pe Mac, Command și D. Copia apare peste primul. Muți copia o singură dată, de-a lungul zidului, cu șaisprezece milimetri: opt milimetri crenelul și opt milimetri golul. O tragi pe lungimea zidului cu mouse-ul. Înălțimea rămâne douăzeci, nu o ridici și nu o cobori. Cu Snap Grid de un milimetru, tragerea merge din milimetru în milimetru. Șaisprezece milimetri înseamnă un crenel și un gol de aceeași mărime. Apoi apeși din nou Control și D. Apare automat încă o copie, la aceeași distanță. Repeți Control și D până ajungi la celălalt capăt. În total sunt șapte creneluri. Ultimul se termină chiar la marginea zidului de o sută patru. Atenție: nu muți alte copii între timp. Doar prima mutare, apoi doar Control și D. Dacă golurile nu ies egale cu crenelurile, nu e grav. Important este ca toate să fie la fel. Altfel apeși Control și Z și refaci prima mutare.
+
+Al patrulea pas pe ecran. Turnul. Tragi un Cylinder de douăzeci și șase pe douăzeci și șase pe patruzeci, pe plan, cu centrul pe capătul zidului. Jumătate intră în zid. Primul crenel se ascunde în turn, și este în regulă. Acoperișul este un Cone de treizeci pe treizeci pe cincisprezece, ridicat la patruzeci. Sau poți face creneluri mici pe margine, cu Control și D, ca la zid. Turnul stă pe plan. Dacă plutește, apeși D, dar nu pe con. Conul îl ridici la patruzeci.
+
+Al cincilea pas pe ecran, pentru Complet. Al doilea turn la celălalt capăt, sau zid pe încă o latură, cu Control și D pe zid și rotire dacă trebuie. Apoi poarta, cu Hole. Tragi un Box de douăzeci pe paisprezece pe paisprezece: lățime, grosime, înălțime. Îl pui pe Hole, pe plan, la mijlocul zidului. Trece prin zid, pentru că paisprezece este mai mult decât zece grosime, și iese pe ambele fețe. Nu atinge crenelurile, pentru că paisprezece este mai puțin decât douăzeci. Selectezi zidul și piesa Hole, cu Shift și click. Nu folosești Control și A, dacă ai deja turnuri și creneluri pe plan. Apeși Control și G, pe Mac Command și G. Poarta se taie. Un arc, cu un cilindru culcat deasupra, este Bonus. Steagul: un stâlp, adică un Cylinder de doi pe doi pe doisprezece, înfipt trei milimetri în vârful conului, plus un Box de opt pe unu pe cinci, lipit de capătul de sus al stâlpului. La final, Color.
+
+Greșeli frecvente. Crenelurile sunt la distanțe diferite: ai mutat și a doua copie. După prima mutare, doar Control și D. Copia este peste original: muți copia o dată, apoi Control și D din nou. Distanța este greșită: Control și Z, refaci prima mutare, apoi Control și D. Poarta nu iese: Hole nu trece prin zid, sau nu ai dat Group. Turnul plutește: tasta D. Ai grupat tot castelul: selectezi doar zidul și Hole-ul porții.
+
+Proiectul de azi. Castelul meu.
+
+Minim înseamnă: zid pe plan, creneluri egale făcute cu Control și D repetat, și un turn. Complet înseamnă: minim, plus două turnuri sau patru ziduri, poartă cu Hole și Group, steag și culori. Dacă rămâi în urmă, salvează la Minim. Ești la Minim când crenelurile par făcute cu rigla.
+
+Recapitulare. Control și D, muți copia o dată, apoi Control și D din nou: piese la aceeași distanță. Hole prin zid și Group fac poarta. Dacă greșești, Control și Z și refaci prima mutare.
+
+Succes la castelul tău.

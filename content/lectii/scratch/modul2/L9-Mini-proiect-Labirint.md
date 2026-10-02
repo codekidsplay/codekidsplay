@@ -9,7 +9,7 @@
 
 ## Obiectiv
 La finalul orei ai un labirint jucabil: taste + detectare pereți + ieșire cu mesaj / stop + steag = restart — fără să explici cu vocea regulile.  
-**Minimum:** scheletul rulează — control + **1** perete + **1** ieșire cu mesaj (+ `stop all`).  
+**Minim:** scheletul rulează — control + **1** perete + **1** ieșire cu mesaj (+ `stop all`).  
 **Ținta orei (Complet):** Minim + labirint plin + **extra** (sunet / scor / vieți) din Pasul 3.
 
 ## De ce contează
@@ -22,7 +22,7 @@ L1–L8 = piese. L9 = **jocul tău**. La L10 îl lustruiești și îl prezinți 
 | Minute | Ce facem |
 |--------|----------|
 | 0–10 | Obiectiv + checklist + **Minim vs Complet** |
-| 10–30 | Pas cu pas: checkpoint-uri (**Încearcă tu**) |
+| 10–30 | Pas cu pas: mini-verificări (**Încearcă tu**) |
 | 30–50 | Proiect: **Minim** (schelet jucabil) |
 | 50–100 | Proiect: **Complet** (labirint + extra, arăți unui coleg) |
 | 100–120 | Recap, bonus, salvare / pregătire L10 |
@@ -69,14 +69,14 @@ L1–L8 = piese. L9 = **jocul tău**. La L10 îl lustruiești și îl prezinți 
    <span style="color:#FFAB19;font-weight:700">stop all</span>  
 4. Rulează o dată cap-coadă  
 
-*Victorie — ca L7:* azi ieșirea se atinge **o dată** și jocul se termină → **`stop all` e soluția implicită** (simplă, fără spam).  
-Variabila / flag (ca `alarma_activa` la L8) = doar dacă la Bonus ai **2 ieșiri** sau logică mai fină — **nu** e nevoie azi pe Minim.
+*Victorie — ca L7:* azi ieșirea se atinge **o dată** și jocul se termină → **`stop all` e soluția implicită** (simplă, fără repetări).  
+Variabila-semnal (ca `alarma_activa` la L8) = doar dacă la Bonus ai **2 ieșiri** sau logică mai fină — **nu** e nevoie azi pe Minim.
 
 **Încearcă tu — scheletul rulează curat (3–5 min)**  
-*(Checkpoint Minim — „am scris” ≠ „am verificat că merge”.)*
+*(Verificare Minim — „am scris” ≠ „am verificat că merge”.)*
 
 - [ ] **1** perete te trimite la start  
-- [ ] **1** ieșire → mesaj + `stop all` (fără spam)  
+- [ ] **1** ieșire → mesaj + `stop all` (fără repetări)  
 - [ ] Startul e pe zonă **sigură**  
 - [ ] Salvat: `Prenume_Nume_L9`  
 
@@ -95,9 +95,9 @@ Variabila / flag (ca `alarma_activa` la L8) = doar dacă la Bonus ai **2 ieșiri
 
 ## Greșeli frecvente
 1. **Pipeta greșită** — peretele nu se detectează; re-pipetează pe pixelul de perete.  
-2. **Start pe perete** — te teleportezi și „mor” instant; mută startul.  
+2. **Start pe perete** — te teleportezi și „mor” imediat; mută startul.  
 3. **Viteză prea mare** — treci prin pereți; coboară la 3–4.  
-4. **Victorie spam** — `dacă ieșire` în bucla `forever` **fără** `stop all`; pune `stop all` imediat (ca L7).  
+4. **Victorie care se repetă** — `dacă ieșire` în bucla `forever` **fără** `stop all`; pune `stop all` imediat (ca L7).  
 5. **Reset incomplet** — lipsește `anulează efectele` / `oprește toate sunetele`.  
 6. **Nume fișier** — `Prenume_Nume_L9`, nu doar `Ana_L9`.
 
@@ -140,7 +140,7 @@ Cei rapizi: Complet, apoi Bonus.
 - [ ] Un coleg poate termina labirintul  
 - [ ] Salvat din nou  
 
-**Gata Complet când:** steag → joci → ieșire → polish vizibil, fără explicații.
+**Gata Complet când:** steag → joci → ieșire → finisări vizibile, fără explicații.
 
 ---
 
@@ -153,7 +153,7 @@ Cei rapizi: Complet, apoi Bonus.
 ## Recapitulare rapidă
 1. Control + detectare + `stop all` / restart  
 2. Culoarea peretelui trebuie pipetată bine  
-3. Victorie simplă = `stop all` (flag = Bonus / 2 ieșiri)  
+3. Victorie simplă = `stop all` (variabila-semnal = Bonus / 2 ieșiri)  
 4. L10 = completare + prezentare  
 5. Nume: **`Prenume_Nume_L9`**  
 

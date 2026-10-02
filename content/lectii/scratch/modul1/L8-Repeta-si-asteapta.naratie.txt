@@ -8,7 +8,7 @@ De ce contează. În desene animate și jocuri, aceleași mișcări se tot repet
 
 Primul pas pe ecran. La steag: repetă patru. Înăuntru: mergi patruzeci de pași, întoarce la dreapta cu nouăzeci. Un pătrat, fără patru copii ale acelorași blocuri. Blocurile trebuie în C, nu sub el.
 
-Al doilea pas pe ecran. Înăuntrul lui repetă, după mergi sau întoarce: așteaptă zero virgulă trei. Vezi fiecare latură, nu un flash. Numărul din așteaptă este ritmul.
+Al doilea pas pe ecran. Înăuntrul lui repetă, după mergi sau întoarce: așteaptă zero virgulă trei. Vezi fiecare latură, nu o clipire rapidă. Numărul din așteaptă este ritmul.
 
 Al treilea pas pe ecran. A doua buclă, una după alta, nu una în alta. Sub bucla de pătrat, încă un repetă opt: următorul costum, așteaptă zero virgulă unu cinci. Întâi se termină pătratul, apoi dansul. Regula de azi: două C-uri una sub alta. Nu C în C.
 

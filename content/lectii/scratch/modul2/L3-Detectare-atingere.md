@@ -9,7 +9,7 @@
 
 ## Obiectiv
 La finalul orei poți folosi hexagoanele din <span style="color:#5CB1D6;font-weight:700">Detectare</span> în <span style="color:#FFAB19;font-weight:700">dacă … atunci</span>.  
-**Minimum:** **o** condiție `dacă` pe **lavă** (culoare) + reset la start sigur.  
+**Minim:** **o** condiție `dacă` pe **lavă** (culoare) + reset la start sigur.  
 **Ținta orei (Complet):** Minim + `dacă` pe **margine** + **monedă/stea** (atingere personaj).
 
 ## De ce contează
@@ -23,7 +23,7 @@ Asta e categoria <span style="color:#5CB1D6;font-weight:700">Detectare</span> (�
 | Minute | Ce facem |
 |--------|----------|
 | 0–10 | Recap `dacă` + unde e Detectare |
-| 10–30 | Pas cu pas: checkpoint-uri (**Încearcă tu**) |
+| 10–30 | Pas cu pas: mini-verificări (**Încearcă tu**) |
 | 30–100 | Proiectul „Nu călca pe lavă” (vezi **Minim vs Complet**) |
 | 100–120 | Recap, bonus, salvare |
 
@@ -57,7 +57,7 @@ Din <span style="color:#5CB1D6;font-weight:700">Detectare</span> (le pui **în**
 - [ ] Hexagonul are culoarea **pipetată de pe scenă**  
 - [ ] Mută eroul pe lavă / pe iarba — vezi diferența (da vs nu)  
 
-### 3) Pattern de joc: lavă *(nucleul Minim)*
+### 3) Tipar de joc: lavă *(nucleul Minim)*
 1. Steag → reset:  
    <span style="color:#4C97FF;font-weight:700">du-te la</span> punct **sigur** (nu pe lavă) →  
    <span style="color:#4C97FF;font-weight:700">orientează-te</span> `90` →  
@@ -71,7 +71,7 @@ Din <span style="color:#5CB1D6;font-weight:700">Detectare</span> (le pui **în**
    **atunci:** <span style="color:#4C97FF;font-weight:700">du-te la</span> start →  
    <span style="color:#9966FF;font-weight:700">spune</span> `Ai călcat!` pentru `1` secundă →  
    <span style="color:#CF63CF;font-weight:700">pornește sunetul</span> `…` →  
-   <span style="color:#FFAB19;font-weight:700">așteaptă</span> `0.5` *(evită spam-ul)*
+   <span style="color:#FFAB19;font-weight:700">așteaptă</span> `0.5` *(ca să nu se repete prea des)*
 
 **Încearcă tu — lavă + forever (3–5 min)**  
 - [ ] Startul e pe zonă **sigură**  
@@ -103,7 +103,7 @@ Din <span style="color:#5CB1D6;font-weight:700">Detectare</span> (le pui **în**
 *(Fiecare personaj = propriul `dacă` + propriul `forever`. Nu e nevoie de broadcast.)*
 
 **Încearcă tu — margine + monedă (3–5 min)**  
-- [ ] Lovești marginea → te întorci (fără spam)  
+- [ ] Lovești marginea → te întorci (fără repetări)  
 - [ ] Atingi moneda → eroul spune `Yaay!` **și** moneda se **ascunde**  
 - [ ] Steag din nou → moneda **apare** din nou  
 - [ ] Salvat din nou  
@@ -113,7 +113,7 @@ Din <span style="color:#5CB1D6;font-weight:700">Detectare</span> (le pui **în**
 ## Greșeli frecvente
 1. **Nu detectează lava** — culoarea din hexagon ≠ pixelii de pe scenă; re-pipetează.  
 2. **Detectează tot fundalul** — lava e prea mare / aceeași culoare ca iarba; desenează o bandă clară.  
-3. **Spam „Ai călcat!”** — lipsește `așteaptă` după mesaj, sau startul e tot pe lavă.  
+3. **„Ai călcat!” se repetă** — lipsește `așteaptă` după mesaj, sau startul e tot pe lavă.  
 4. **Script pe personajul greșit** — `dacă atinge culoarea` e pe **erou**; lava e pe **scenă**, nu un personaj.  
 5. **Moneda nu dispare / nu revine** — `ascunde` pe monedă; la steag pe monedă: `arată`.  
 6. **Nume fișier** — `Prenume_Nume_L3`, nu doar `Ana_L3`.

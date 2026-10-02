@@ -9,7 +9,7 @@
 
 ## Obiectiv
 La finalul orei folosești <span style="color:#FFAB19;font-weight:700">repetă</span> + <span style="color:#FFAB19;font-weight:700">așteaptă</span> (capitolul <span style="color:#FFAB19;font-weight:700">Control</span>).  
-**Minimum:** o buclă clară (mișcare **sau** costume) + `așteaptă` + reset la steag.  
+**Minim:** o buclă clară (mișcare **sau** costume) + `așteaptă` + reset la steag.  
 **Ținta orei (Complet):** **2** bucle **una după alta** (ex. pătrat, apoi dans costume) + `spune` `Gata!` o singură dată.
 
 ## De ce contează
@@ -23,7 +23,7 @@ La finalul orei folosești <span style="color:#FFAB19;font-weight:700">repetă</
 | Minute | Ce facem |
 |--------|----------|
 | 0–5 | Obiectiv + unde e Control (`repetă`, `așteaptă`) |
-| 5–30 | Pas cu pas: checkpoint-uri (**Încearcă tu**) |
+| 5–30 | Pas cu pas: mini-verificări (**Încearcă tu**) |
 | 30–100 | Proiectul „Dansul meu” (vezi **Minim vs Complet**) |
 | 100–120 | Recap, bonus, salvare |
 
@@ -48,12 +48,12 @@ La finalul orei folosești <span style="color:#FFAB19;font-weight:700">repetă</
 ### 2) Așteaptă = ritmul
 1. **Înăuntrul** lui `repetă`, după `mergi` sau `întoarce`:  
    <span style="color:#FFAB19;font-weight:700">așteaptă</span> `0.3` secunde
-2. Rulează — vezi fiecare latură, nu un flash
+2. Rulează — vezi fiecare latură, nu o clipire rapidă
 3. Încearcă `0.1` (rapid) și `0.8` (lent): **numărul din așteaptă = ritmul**
 
 **Încearcă tu — ritm (2 min)**  
 - [ ] `așteaptă` e **în** buclă  
-- [ ] Se vede clar ritmul (nu e flash)  
+- [ ] Se vede clar ritmul (nu e prea repede)  
 
 ### 3) A doua buclă — **una după alta**, nu una în alta
 1. Personajul are ≥ **2 costume** (tab Costume — ca la L2)

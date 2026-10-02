@@ -1,0 +1,27 @@
+Lecția trei. Clădiri înalte.
+
+Astăzi exersezi repetarea: un bloc cu zeci de ferestre, făcute dintr-un singur rând copiat în sus. Faci o copie a proiectului din lecția doi, cu Duplicate, și o redenumești: Prenume, linie jos, Nume, linie jos, T patru, linie jos, L zero trei. Proiectul se numește Blocul meu.
+
+Obiectivul. La final ai un bloc înalt, de nouă etaje, pe zona de centru, cu rânduri de ferestre egale. Minim: blocul, o ușă și un rând de patru ferestre, la opt milimetri una de alta, copiat în sus de încă două ori. Sunt trei rânduri, cu câte șase milimetri între ele. Complet: minim, plus opt rânduri, o terasă cu parapet, o antenă și un al doilea bloc, mai scund.
+
+De ce contează. O clădire înaltă are zeci de ferestre identice. Nu le faci una câte una. Faci un rând și îl copiezi în sus cu Control și D, cu aceeași mutare. Un etaj are șase milimetri, adică trei metri în realitate. Un bloc de nouă etaje are cincizeci și patru de milimetri.
+
+Primul pas pe ecran. La Snap Grid, jos în dreapta, pui unu milimetru. Tragi un Box de treizeci pe douăzeci pe cincizeci și patru, deocamdată în afara plăcii. Tragi un al doilea Box, de opt pe patru pe opt, și îl faci Hole: este ușa. Selectezi ușa și blocul și apeși tasta L, pentru Align. Alegi mijlocul pe stânga spre dreapta, punctul de jos și punctul din față al blocului. Muți ușa doi milimetri spre față. Taie doi milimetri în perete.
+
+Al doilea pas pe ecran. Rândul de ferestre. Un Box de patru pe patru pe trei, făcut Hole. Tasta L cu blocul: mijloc pe stânga spre dreapta și punctul din față. O muți doi milimetri spre față, ca jumătate să iasă afară. Pui Snap Grid la doi milimetri și o muți doisprezece milimetri spre stânga, adică șase sărituri. Pui Snap Grid la unu milimetru și o ridici cu conul negru la opt milimetri. Din nou Snap Grid doi milimetri. Apeși Control și D, iar pe Mac Command și D. Muți copia opt milimetri spre dreapta. Apeși Control și D încă de două ori. Ai patru ferestre egale, la opt milimetri una de alta. Le selectezi pe toate patru și apeși Control și G. Este un singur rând, un Group de Hole-uri.
+
+Al treilea pas pe ecran. Rândurile în sus. Rândul, Control și D, și muți copia șase milimetri în sus: un etaj. Apeși Control și D și repeți aceeași mutare pentru al treilea rând. Ai trei rânduri, la câte șase milimetri. Acesta e Minimul.
+
+Al patrulea pas pe ecran. Group. Selectezi blocul, ușa și toate rândurile, cu Shift apăsat, și apeși Control și G. Din Front vezi ușa jos și trei rânduri de ferestre egale. Ridici blocul la patru milimetri și îl muți pe zona de centru. Cu Color, blocul primește o culoare, iar ferestrele rămân găuri.
+
+Al cincilea pas pe ecran, pentru Complet. Desfaci Group-ul cu Control, Shift și G. Selectezi ultimul rând și îl copiezi în sus cu Control și D, cu aceeași mutare de șase milimetri, până ai opt rânduri. Ultimul rând e la cincizeci de milimetri de baza blocului. Apoi selectezi blocul, ușa și toate rândurile și apeși Control și G. Terasa: un Box de treizeci pe douăzeci pe doi și un Hole de douăzeci și șase pe șaisprezece pe trei. Tasta L: mijloc pe ambele axe între ele și cu blocul. Le ridici pe amândouă la cincizeci și opt de milimetri, adică cincizeci și patru cât e blocul, plus patru de la placă. Selectezi doar Box-ul și Hole-ul și apeși Control și G. Ai un parapet de doi milimetri. Antena: un Cylinder de unu virgulă cinci pe unu virgulă cinci pe doisprezece, pe mijlocul terasei, ridicat la cincizeci și opt de milimetri. Al doilea bloc: un Box de treizeci pe douăzeci pe treizeci, cinci etaje, cu ușă și patru rânduri de ferestre, făcut după același tipar. Îl pui lângă primul, tot pe zona de centru.
+
+Greșeli frecvente. Ferestrele nu taie: rândul nu e Hole sau lipsește Control și G. Rândurile nu sunt egale: ai mutat din ochi, deci șterge copiile și repetă Control și D cu șase milimetri. Ferestrele din rând nu sunt egale: prima mutare de opt milimetri, apoi doar Control și D. Fereastra nu taie nimic: nu a fost mutată doi milimetri spre față. Prea multe rânduri: ultimul trebuie să rămână sub cincizeci și patru de milimetri. Parapetul acoperă toată terasa: lipsește Hole-ul interior sau nu e grupat doar cu Box-ul terasei. Scara greșită: un bloc de douăzeci și șapte de metri are cincizeci și patru de milimetri.
+
+Proiectul de azi. Blocul meu.
+
+Minim înseamnă: un bloc cu ușă și trei rânduri de ferestre, pe zona de centru, la patru milimetri. Complet înseamnă: minim, plus opt rânduri, terasă cu parapet, antenă și al doilea bloc. Dacă rămâi în urmă, salvează la Minim.
+
+Recapitulare. Un etaj are șase milimetri. Un rând are patru ferestre copiate cu Control și D. Rândurile urcă cu aceeași mutare de șase milimetri. Cu Control și D nu mai măsori de fiecare dată. Numele fișierului are prenumele, numele, T patru și L zero trei.
+
+Succes la blocul tău.

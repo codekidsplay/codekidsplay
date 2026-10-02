@@ -1,0 +1,29 @@
+Lecția doi. Omul meu de zăpadă.
+
+Astăzi exersezi mutarea, rotirea și scalarea, și așezi piese una peste alta. Proiectul se numește Omul meu de zăpadă. Numele fișierului este: Prenume, linie jos, Nume, linie jos, T unu, linie jos, L zero doi. Imprimanta trei D nu o folosim la oră. Azi doar proiectezi.
+
+Obiectivul. La final ai un om de zăpadă din trei sfere de mărimi diferite, una peste alta, plus un nas din con. Minim: trei sfere, de la cea mare jos la cea mică sus, care se suprapun puțin, baza pe plan, și nasul făcut dintr-un Cone rotit. Complet: minim, plus pălărie, ochi, nasturi și culori.
+
+De ce contează. Mutarea, rotirea și scalarea sunt baza oricărui obiect. Azi le exersezi pe piese rotunde. Fără Shift la scalare, sfera se strâmbă.
+
+Primul pas pe ecran. Apeși Create new design, Design trei D. Sus scrii numele Prenume, linie jos, Nume, linie jos, T unu, linie jos, L zero doi. Tinkercad salvează singur. Verifici doar numele.
+
+Al doilea pas pe ecran. Corpul, sfera de jos. Tragi o Sphere pe plan. Ții Shift și tragi de un pătrățel alb din colț, până vezi patruzeci pe patruzeci pe patruzeci. Este cea mai mare, baza. Trebuie să stea pe plan. Dacă plutește, apeși tasta D.
+
+Al treilea pas pe ecran. Mijlocul. Selectezi sfera și apeși Control și D împreună. Pe Mac, Command și D. Copia apare exact peste original. O tragi în lateral sau în sus, ca s-o vezi. Cu Shift o faci mai mică: treizeci pe treizeci pe treizeci. Apoi, din View Cube, alegi Top și verifici dacă sfera este pe mijlocul celei de jos. Dacă nu, o muți cu mouse-ul. În final o ridici cu conul negru de deasupra piesei până la treizeci și doi. Astfel intră opt milimetri în sfera de jos. Două sfere doar atinse ar avea un singur punct comun.
+
+Al patrulea pas pe ecran. Capul. Selectezi sfera din mijloc, apeși Control și D, tragi copia în lateral și, cu Shift, o faci și mai mică: douăzeci pe douăzeci pe douăzeci. O centrezi din Top, apoi o ridici cu conul negru la cincizeci și patru. Intră opt milimetri în sfera din mijloc. Apoi, din View Cube, alegi Front sau Right și verifici: sferele se suprapun puțin, fără gol între ele.
+
+Al cincilea pas pe ecran. Nasul, pentru Minim. Tragi un Cone și îl faci mic: baza șase pe șase, înălțimea zece, din pătrățelele albe. Îl selectezi. Pe margine apar săgeți curbe. Ele rotesc piesa. Tragi de o săgeată curbă. Rotația merge din douăzeci și doi virgulă cinci grade în douăzeci și doi virgulă cinci grade. Te oprești la nouăzeci de grade. Conul stă culcat, cu vârful spre fața omului, adică spre tine, în Front. Îl muți în fața capului și îl ridici cu conul negru la aproximativ șaizeci și unu. Partea lată a conului intră doi sau trei milimetri în cap. Din Right verifici că vârful iese în față, la înălțimea feței.
+
+Al șaselea pas pe ecran, pentru Complet. Pălăria are două piese. Un Cylinder lat și scund, borul: douăzeci și șase pe douăzeci și șase pe doi, ridicat la șaizeci și opt. Deasupra, un Cylinder mai îngust, cupola: șaisprezece pe șaisprezece pe doisprezece, ridicat la șaptezeci. Vârful capului este la șaptezeci și patru, deci borul intră în cap. Din Front verifici că pălăria intră puțin în sferă, altfel rămâne un gol urât. O centrezi din Top. Ochii: două Sphere de aproximativ trei milimetri, pe jumătate în cap, pe față, deasupra nasului, la aproximativ șaizeci și șapte. Nasturii: două sau trei Sphere de aproximativ patru milimetri, pe fața corpului, pe mijloc, una sub alta, pe jumătate înfundate. La final folosești Color.
+
+Greșeli frecvente. Control și D pare că n-a făcut nimic: copia este exact peste original, muți-o în lateral. Sferele plutesc cu gol între ele: ridică cu conul negru până intră puțin una în alta, la treizeci și doi și la cincizeci și patru. Sfera arată ca un ou strâmb: ai scalat fără Shift. Apeși Control și Z și refaci cu Shift. Mijlocul sau capul nu sunt pe centru: alegi Top și le muți. Nasul este prea sus sau prea jos: verifici din Right sau Front. Pălăria plutește: o cobori până intră puțin în sferă. Baza plutește: apeși D. Toate sferele sunt la fel de mari: trebuie jos mai mare decât mijloc, iar mijloc mai mare decât cap.
+
+Proiectul de azi. Omul meu de zăpadă.
+
+Minim înseamnă: trei sfere care se ating, baza pe plan și nasul din Cone rotit. Complet înseamnă: minim, plus pălărie care intră puțin în cap, ochi, nasturi și culori. Dacă rămâi în urmă, salvează la Minim. Ești la Minim când un coleg spune: e un om de zăpadă, cu nas.
+
+Recapitulare. Control și D face o copie, pe care apoi o muți. Shift scalează proporțional. Săgeata curbă de pe marginea piesei rotește, din douăzeci și doi virgulă cinci grade în douăzeci și doi virgulă cinci grade. Conul negru ridică și coboară piesa.
+
+Succes la omul tău de zăpadă.

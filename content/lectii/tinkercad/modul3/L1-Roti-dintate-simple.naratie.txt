@@ -1,0 +1,35 @@
+Lecția unu. Angrenajul meu.
+
+Astăzi faci două roți cu dinți, care se mușcă una în alta, pe axe, la distanța potrivită. Roțile adevărate au dinți curbați, iar pe ei îi facem în Modulul cinci. Azi dinții sunt simpli, dar ideea e aceeași. Fișier nou: Prenume, linie jos, Nume, linie jos, T trei, linie jos, L unu. Proiectul se numește Angrenajul meu. Imprimanta trei D nu e folosită, facem doar design.
+
+Obiectivul. La final ai o placă cu două pivoturi și două roți dințate pe ele, cu dinții intrați unii între alții. Minim: roată cu opt dinți, făcută dintr-un disc cu diametru patruzeci și dinți de opt milimetri, cu gaură de diametru opt în mijloc. Placă de o sută douăzeci pe șaizeci și patru pe patru milimetri, cu două pivoturi de diametru șase, la cincizeci de milimetri unul de altul. A doua roată e rotită cu douăzeci și doi virgulă cinci grade. Roțile stau pe pivoturi, separate de placă. Complet: minim, plus a treia roată, culori diferite și sensul fiecărei roți.
+
+De ce contează. Roțile dințate transmit mișcarea: dacă învârți una, se învârte și vecina, dar în sens invers. Dinții unei roți intră în golurile celeilalte. De aceea a doua roată se rotește o jumătate de pas.
+
+Primul pas pe ecran. Create new design, cu numele fișierului. Jos în dreapta, Snap Grid pe unu milimetru.
+
+Al doilea pas pe ecran. Din panoul din dreapta, trage un Cylinder de patruzeci pe patruzeci pe șase, discul. Apoi un Box de cincizeci și șase pe șase pe șase, o bară ale cărei capete devin dinți. Selectezi bara și discul, apeși tasta L pentru Align, și alegi mijlocul pe cele două direcții de pe plan, plus punctul de jos. Bara iese opt milimetri în fiecare parte.
+
+Al treilea pas pe ecran. Selectezi bara, tasta Control și D împreună. Rotești copia patruzeci și cinci de grade, adică doi pași de câte douăzeci și doi virgulă cinci pe săgeata curbă. Apeși iar Control și D, care repetă rotirea, apoi încă o dată. Patru bare, opt dinți egal depărtați.
+
+Al patrulea pas pe ecran. Un Cylinder de opt pe opt pe zece, Hole. Control și A, tasta L, mijloc pe cele trei direcții. Control și G, apoi tasta D. În View Cube apasă Top: opt dinți și gaura în centru.
+
+Al cincilea pas pe ecran. Selectezi roata, Control și D, rotești copia douăzeci și doi virgulă cinci grade, un singur pas. Acum are gol acolo unde prima are dinte. Snap Grid pe cinci milimetri, apoi muți roata cincizeci de milimetri spre dreapta, zece sărituri. Din Top, dinții se potrivesc.
+
+Al șaselea pas pe ecran. Snap Grid pe unu milimetru. Un Cylinder de șase pe șase pe șaisprezece, tras peste prima roată și aliniat cu L pe centrul ei. Control și D, copia peste a doua roată, aliniată la fel. Pivotul e mai subțire decât gaura, deci roata se învârte pe el, cu un milimetru joc pe parte.
+
+Al șaptelea pas pe ecran. Un Box de o sută douăzeci pe șaizeci și patru pe patru, placa. Grupezi temporar roțile și pivoturile, Control și G, le aliniezi cu placa pe cele două direcții de pe plan, apoi Control, Shift și G. Selectezi pivoturile și placa, Control și G.
+
+Al optulea pas pe ecran. Selectezi roțile cu Shift și click și le ridici cu conul negru cu cinci milimetri. Din Front vezi un gol mic între placă și roți.
+
+Al nouălea pas pe ecran, pentru Complet. Copiezi prima roată, nu pe cea rotită, la o sută de milimetri de ea. Adaugi un pivot nou, aliniat pe centrul ei. Placa devine de o sută șaptezeci. Centrezi totul pe direcția lungă, cu grup temporar. La Color, câte o culoare pe roată.
+
+Greșeli frecvente. Dinții se ating cap la cap: a doua roată nu e rotită. Roțile se calcă: păstrează cincizeci de milimetri. Roata e prinsă de placă: n-ai ridicat-o. Gaura nu trece: Hole-ul nu e grupat. Ai grupat tot: Control, Shift și G.
+
+Proiectul de azi. Angrenajul meu.
+
+Minim înseamnă: două roți cu opt dinți, a doua rotită, placa cu două pivoturi la cincizeci de milimetri, roțile separate și ridicate cu cinci milimetri. Complet înseamnă: minim, plus a treia roată, culori și sensurile: dacă prima se învârte spre dreapta, a doua se învârte invers.
+
+Recapitulare. Roțile vecine se învârt în sens invers. A doua roată se rotește cu jumătate de pas. Distanța dintre axe e de cincizeci de milimetri. Pivotul subțire în gaura mai mare dă joc.
+
+Succes la angrenajul tău.

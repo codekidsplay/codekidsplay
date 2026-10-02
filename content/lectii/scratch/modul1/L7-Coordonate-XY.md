@@ -9,7 +9,7 @@
 
 ## Obiectiv
 La finalul orei citești **x** și **y** pe scenă și duci personajul într-un loc anume cu <span style="color:#4C97FF;font-weight:700">du-te la</span> / <span style="color:#4C97FF;font-weight:700">glisează</span>.  
-**Minimum:** start + traseu cu ≥2 opriri (numere în blocuri) + `spune` la capăt.  
+**Minim:** start + traseu cu ≥2 opriri (numere în blocuri) + `spune` la capăt.  
 **Ținta orei (Complet):** + **comoară vizibilă** (al 2-lea personaj pe x/y) + sunet + reset curat.
 
 ## De ce contează
@@ -23,7 +23,7 @@ Ca pe o hartă sau în jocuri: știi unde e eroul (stânga/dreapta, sus/jos) ca 
 | Minute | Ce facem |
 |--------|----------|
 | 0–5 | Obiectiv + harta scenei (X / Y / mijloc) |
-| 5–30 | Pas cu pas: checkpoint-uri (**Încearcă tu**) |
+| 5–30 | Pas cu pas: mini-verificări (**Încearcă tu**) |
 | 30–100 | Proiectul „Comoara” (vezi **Minim vs Complet**) |
 | 100–120 | Recap, bonus, salvare |
 
@@ -33,7 +33,7 @@ Ca pe o hartă sau în jocuri: știi unde e eroul (stânga/dreapta, sus/jos) ca 
 
 ### 1) Citești coordonatele (fără blocuri încă)
 1. Selectezi **personajul** și îl **tragi** pe scenă cu mouse-ul
-2. Sus / în panou vezi numerele **x** și **y** schimbându-se
+2. În panoul personajului (sub scenă) vezi numerele **x** și **y** schimbându-se
 3. Ține minte:
    - **X** = stânga (−) sau dreapta (+)
    - **Y** = jos (−) sau sus (+)
@@ -89,7 +89,7 @@ Ca pe o hartă sau în jocuri: știi unde e eroul (stânga/dreapta, sus/jos) ca 
 ---
 
 ## Greșeli frecvente
-1. **A ajuns „în altă parte”** — X confuzat cu Y (sau +/−). Mută → citește din nou → corectează.  
+1. **A ajuns „în altă parte”** — X confundat cu Y (sau +/−). Mută → citește din nou → corectează.  
 2. **A dispărut** — x/y prea mari; rămâi cam **−240…240** pe X, **−180…180** pe Y.  
 3. **La steag nu reîncepe** — lipsește `du-te la` start la început.  
 4. **„Nu știu ce numere”** — trage → citește → scrie (nu ghici).  

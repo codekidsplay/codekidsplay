@@ -16,7 +16,7 @@ Al patrulea pas pe ecran. Glisează în o secundă la un punct citit de pe scen�
 
 Al cincilea pas pe ecran. Chiar sub steag: du-te la start. Apoi glisează la un punct pe drum, așteaptă, glisează la comoară, spune Am găsit-o. Fără reset, la a doua rulare pleacă de unde a rămas.
 
-Greșeli frecvente. Dacă ajunge în altă parte, ai confuzat X cu Y, sau plus cu minus. Mută, citește din nou, corectează. Dacă dispare, x sau y sunt prea mari. Rămâi cam între minus două sute patruzeci și plus două sute patruzeci pe X, și între minus o sută optzeci și plus o sută optzeci pe Y. Dacă la steag nu reîncepe, lipsește du-te la start.
+Greșeli frecvente. Dacă ajunge în altă parte, ai confundat X cu Y, sau plus cu minus. Mută, citește din nou, corectează. Dacă dispare, x sau y sunt prea mari. Rămâi cam între minus două sute patruzeci și plus două sute patruzeci pe X, și între minus o sută optzeci și plus o sută optzeci pe Y. Dacă la steag nu reîncepe, lipsește du-te la start.
 
 Proiectul de azi. Comoara.
 
