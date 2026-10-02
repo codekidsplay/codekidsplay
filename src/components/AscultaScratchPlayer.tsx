@@ -84,7 +84,8 @@ export default function AscultaScratchPlayer({
   }
 
   return (
-    <div className="mb-6 flex flex-wrap items-center gap-2 sm:gap-3">
+    // Rămâne vizibil la scroll; `--player-top` e setat în layout-ul elevului (sub antetul fix).
+    <div className="sticky top-[var(--player-top,0px)] z-30 -mx-2 mb-6 flex flex-wrap items-center gap-2 rounded-xl border border-slate-100 bg-white/90 px-2 py-2 shadow-sm backdrop-blur sm:gap-3">
       {status === 'idle' || status === 'error' ? (
         <button
           type="button"

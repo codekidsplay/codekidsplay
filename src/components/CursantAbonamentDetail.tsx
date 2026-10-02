@@ -8,6 +8,7 @@ import {
   getDetaliiCursantAbonamentAction,
   type DetaliiCursantAbonament,
 } from '@/app/actions/abonamente'
+import { calculeazaSoldCursant, culoareSold } from '@/lib/soldSedinte'
 
 export default function CursantAbonamentDetail({ cursantId }: { cursantId: string }) {
   const [data, setData] = useState<DetaliiCursantAbonament | null>(null)
@@ -43,11 +44,13 @@ export default function CursantAbonamentDetail({ cursantId }: { cursantId: strin
   }
 
   const { cursant, abonamente, sedinte, plati } = data
-  const aboActiv = abonamente.find(a => a.activ)
-  const sedinteConsume = aboActiv
-    ? sedinte.filter(s => s.abonament_id === aboActiv.id && s.prezent).length
-    : 0
-  const sold = aboActiv ? aboActiv.sedinte_incluse - sedinteConsume : 0
+  const { sedintePlate, sedinteConsume, sold } = calculeazaSoldCursant(
+    cursantId,
+    abonamente,
+    sedinte,
+  )
+  const aboActiv = abonamente.find(a => a.activ) ?? null
+  const soldCritic = sold <= 1
 
   return (
     <div>
@@ -65,11 +68,28 @@ export default function CursantAbonamentDetail({ cursantId }: { cursantId: strin
       </div>
 
       <div className="grid grid-cols-3 gap-6 mb-8">
-        <div className={`rounded-2xl p-6 shadow-sm border-2 ${sold <= 1 ? 'border-amber-300 bg-amber-50' : 'border-emerald-200 bg-emerald-50'}`}>
+        <div
+          className={`rounded-2xl p-6 shadow-sm border-2 ${
+            sold < 0
+              ? 'border-red-300 bg-red-50'
+              : soldCritic
+                ? 'border-amber-300 bg-amber-50'
+                : 'border-emerald-200 bg-emerald-50'
+          }`}
+        >
           <p className="text-slate-600 font-medium mb-2">Sold ședințe</p>
-          <p className={`text-5xl font-black ${sold <= 1 ? 'text-amber-500' : 'text-emerald-600'}`}>{sold}</p>
-          <p className="text-slate-500 text-sm mt-1">din {aboActiv?.sedinte_incluse ?? 0} plătite</p>
-          {sold <= 1 && <p className="text-amber-600 text-xs font-semibold mt-2">⚠ Reînnoire necesară</p>}
+          <p className={`text-5xl font-black ${culoareSold(sold)}`}>{sold}</p>
+          <p className="text-slate-500 text-sm mt-1">
+            {sedinteConsume} consumate din {sedintePlate} plătite (total)
+          </p>
+          {sold < 0 && (
+            <p className="text-red-600 text-xs font-semibold mt-2">
+              ⚠ Sold negativ — se corectează la următoarea plată
+            </p>
+          )}
+          {soldCritic && sold >= 0 && (
+            <p className="text-amber-600 text-xs font-semibold mt-2">⚠ Reînnoire necesară</p>
+          )}
         </div>
 
         <div className="bg-white rounded-2xl p-6 shadow-sm border border-slate-100">
@@ -80,7 +100,9 @@ export default function CursantAbonamentDetail({ cursantId }: { cursantId: strin
                 {aboActiv.tip === 'lunar' ? 'Lunar' : `Pachet ${aboActiv.sedinte_incluse}`}
               </p>
               <p className="text-blue-600 font-bold mt-1">{aboActiv.pret} lei</p>
-              <p className="text-slate-400 text-xs mt-1">din {new Date(aboActiv.data_start).toLocaleDateString('ro-RO')}</p>
+              <p className="text-slate-400 text-xs mt-1">
+                din {new Date(aboActiv.data_start).toLocaleDateString('ro-RO')}
+              </p>
             </>
           ) : (
             <p className="text-slate-400">Niciun abonament activ</p>

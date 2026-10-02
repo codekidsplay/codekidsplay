@@ -137,7 +137,7 @@ export type Database = {
         Row: {
           id: string
           cursant_id: string
-          abonament_id: string
+          abonament_id: string | null
           lectie_id: string | null
           data: string
           prezent: boolean
@@ -149,7 +149,7 @@ export type Database = {
         Insert: {
           id?: string
           cursant_id: string
-          abonament_id: string
+          abonament_id: string | null
           lectie_id?: string | null
           data?: string
           prezent?: boolean

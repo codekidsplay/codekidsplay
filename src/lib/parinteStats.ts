@@ -4,7 +4,7 @@ import { cursuri, module, lectii } from '@/lib/mockData'
 import {
   abonamentActiv,
   getStore,
-  sedinteRamase,
+  sedinteRamaseCursant,
 } from '@/lib/mockStore'
 
 type StoreLike = ReturnType<typeof getStore>
@@ -30,6 +30,8 @@ export type RezumatCopil = {
 
 export function rezumatCopil(cursantId: string, store: StoreLike = getStore()): RezumatCopil {
   const ab = abonamentActiv(cursantId, store)
+  const abos = store.abonamente.filter(a => a.cursant_id === cursantId)
+  const incluseTotal = abos.reduce((s, a) => s + a.sedinte_incluse, 0)
   const inscrieri = store.inscrieri.filter(i => i.cursant_id === cursantId && i.activ)
 
   const cursuriInfo = inscrieri
@@ -60,8 +62,8 @@ export function rezumatCopil(cursantId: string, store: StoreLike = getStore()): 
 
   return {
     cursantId,
-    sedinteRamase: ab ? sedinteRamase(ab.id, store) : null,
-    sedinteIncluse: ab?.sedinte_incluse ?? null,
+    sedinteRamase: abos.length ? sedinteRamaseCursant(cursantId, store) : null,
+    sedinteIncluse: abos.length ? incluseTotal : null,
     tipAbonament: ab?.tip ?? null,
     lectiiBifate,
     lectiiTotal,

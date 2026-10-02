@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useMemo, useState } from 'react'
-import { Users, BookOpen, TrendingUp, Award } from 'lucide-react'
+import { Users, BookOpen, TrendingUp, GraduationCap, CalendarCheck } from 'lucide-react'
 import Link from 'next/link'
 import { cursuri } from '@/lib/mockData'
 import { getStore, getCursanti, type Cursant } from '@/lib/mockStore'
@@ -9,6 +9,8 @@ import CursantAvatar from '@/components/CursantAvatar'
 import { filtreazaDupaVizibilitate, getStaffSession } from '@/lib/vizibilitateCursanti'
 import { listCursantiAction } from '@/app/actions/cursanti'
 import { getAuthSessionAction } from '@/app/actions/auth'
+import { listStaffAction } from '@/app/actions/profesori'
+import { sedinteEfectuateLunaCurentaAction } from '@/app/actions/activitate'
 import { isSupabaseConfiguredClient } from '@/lib/supabase/publicFlag'
 
 export default function DashboardHome() {
@@ -18,6 +20,8 @@ export default function DashboardHome() {
   const [remoteInscrieri, setRemoteInscrieri] = useState<
     Array<{ cursant_id: string; curs_id: string; activ: boolean }>
   >([])
+  const [totalProfesori, setTotalProfesori] = useState(0)
+  const [sedinteLuna, setSedinteLuna] = useState(0)
   const [supabaseLoading, setSupabaseLoading] = useState(isSupabaseConfiguredClient())
 
   useEffect(() => {
@@ -31,7 +35,8 @@ export default function DashboardHome() {
 
     void (async () => {
       const auth = await getAuthSessionAction()
-      if (auth?.rol === 'profesor') {
+      const eProfesor = auth?.rol === 'profesor'
+      if (eProfesor) {
         setIsProfesor(true)
         try {
           const raw = localStorage.getItem('ckp-session-v1')
@@ -46,7 +51,11 @@ export default function DashboardHome() {
           /* ignore */
         }
       }
-      const r = await listCursantiAction()
+      const [r, staff, sedinte] = await Promise.all([
+        listCursantiAction(),
+        listStaffAction(),
+        sedinteEfectuateLunaCurentaAction(),
+      ])
       if (r.ok) {
         setRemoteCursanti(
           r.data.map(c => ({
@@ -64,6 +73,10 @@ export default function DashboardHome() {
         setRemoteCursanti([])
         setRemoteInscrieri([])
       }
+      if (staff.ok) {
+        setTotalProfesori(staff.data.filter(p => p.rol === 'profesor').length)
+      }
+      if (sedinte.ok) setSedinteLuna(sedinte.count)
       setSupabaseLoading(false)
     })()
   }, [])
@@ -85,7 +98,6 @@ export default function DashboardHome() {
     const ids = new Set(visible.map(c => c.id))
     const inscSource = isSupabaseConfiguredClient() ? remoteInscrieri : store.inscrieri
     const insc = inscSource.filter(i => ids.has(i.cursant_id))
-    const lectiiParcurse = store.progres.filter(p => p.bifat && ids.has(p.cursant_id)).length
     const cursuriCuInscrieri = new Set(insc.filter(i => i.activ).map(i => i.curs_id)).size
 
     const cards = [
@@ -111,17 +123,28 @@ export default function DashboardHome() {
         bg: 'bg-violet-50',
       },
       {
-        label: 'Lecții parcurse',
-        value: lectiiParcurse,
-        icon: Award,
+        label: 'Ședințe luna asta',
+        value: sedinteLuna,
+        icon: CalendarCheck,
         color: 'text-amber-500',
         bg: 'bg-amber-50',
       },
+      ...(isProfesor
+        ? []
+        : [
+            {
+              label: 'Total profesori',
+              value: totalProfesori,
+              icon: GraduationCap,
+              color: 'text-rose-500',
+              bg: 'bg-rose-50',
+            },
+          ]),
     ]
 
     const recenti = [...visible].reverse().slice(0, 5)
     return { cards, recenti, insc }
-  }, [ready, isProfesor, remoteCursanti, remoteInscrieri])
+  }, [ready, isProfesor, remoteCursanti, remoteInscrieri, totalProfesori, sedinteLuna])
 
   if (!ready || supabaseLoading) {
     return <p className="text-slate-400">Se încarcă…</p>
@@ -138,7 +161,11 @@ export default function DashboardHome() {
         </p>
       </div>
 
-      <div className="grid grid-cols-2 xl:grid-cols-4 gap-4 mb-6">
+      <div
+        className={`grid grid-cols-2 gap-4 mb-6 ${
+          isProfesor ? 'xl:grid-cols-4' : 'lg:grid-cols-3 xl:grid-cols-5'
+        }`}
+      >
         {cards.map(({ label, value, icon: Icon, color, bg }) => (
           <div key={label} className="bg-white rounded-xl p-4 shadow-sm border border-slate-100">
             <div className={`w-10 h-10 ${bg} rounded-lg flex items-center justify-center mb-2.5`}>

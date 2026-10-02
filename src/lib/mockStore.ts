@@ -209,6 +209,17 @@ export function sedinteRamase(abonamentId: string, store = getStore()): number {
   return ab.sedinte_incluse - consumate
 }
 
+/** Sold cumulat: toate pachetele − toate consumurile cursantului. */
+export function sedinteRamaseCursant(cursantId: string, store = getStore()): number {
+  const plate = store.abonamente
+    .filter(a => a.cursant_id === cursantId)
+    .reduce((s, a) => s + a.sedinte_incluse, 0)
+  const consumate = store.sedinte.filter(
+    s => s.cursant_id === cursantId && s.consuma_sedinta
+  ).length
+  return plate - consumate
+}
+
 export function abonamentActiv(cursantId: string, store = getStore()) {
   return store.abonamente.find(a => a.cursant_id === cursantId && a.activ) ?? null
 }
@@ -278,7 +289,7 @@ export async function bifareLectie(cursantId: string, lectieId: string): Promise
       ok: true,
       bifat: false,
       consumNou: false,
-      sedinteRamase: ab ? sedinteRamase(ab.id, store) : null,
+      sedinteRamase: ab ? sedinteRamaseCursant(cursantId, store) : null,
       alertaSold: false,
       emailTrimis: false,
       whatsappMesaj: null,
@@ -330,7 +341,7 @@ export async function bifareLectie(cursantId: string, lectieId: string): Promise
       }
     }
 
-    ramase = sedinteRamase(ab.id, store)
+    ramase = sedinteRamaseCursant(cursantId, store)
     alertaSold = ramase <= 0
 
     if (alertaSold && consumNou) {

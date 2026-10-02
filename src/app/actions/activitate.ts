@@ -49,12 +49,24 @@ function interval(luna: number, an: number) {
 
 type Admin = ReturnType<typeof createAdminClient>
 
-/** Datele unui profesor pentru o lună. `creat_de` pe cursanti poate lipsi dacă migrarea nu e rulată. */
+/**
+ * Datele unui profesor pentru o lună.
+ * Tot ce se numără aici este făcut PERSONAL de profesor (`creat_de`):
+ *  - Încasări + ședințe încărcate: plățile înregistrate de el.
+ *  - Ședințe efectuate: lecțiile bifate de el (la fel ca pe dashboard).
+ *  - Copii înregistrați: cursanții adăugați de el (poate lipsi dacă migrarea nu e rulată).
+ * `asignati` = câți cursanți are legați de el (informativ).
+ */
 async function colecteaza(admin: Admin, profesorId: string, luna: number, an: number) {
   const { start, end } = interval(luna, an)
 
-  const [{ data: links }, plati, sedinte, copii] = await Promise.all([
-    admin.from('profesor_cursanti').select('cursant_id').eq('profesor_id', profesorId),
+  const { data: links } = await admin
+    .from('profesor_cursanti')
+    .select('cursant_id')
+    .eq('profesor_id', profesorId)
+  const asignatiIds = (links ?? []).map(l => l.cursant_id as string)
+
+  const [plati, sedinte, copii] = await Promise.all([
     admin
       .from('plati')
       .select('id, cursant_id, abonament_id, suma, data_plata, metoda, nota')
@@ -82,14 +94,19 @@ async function colecteaza(admin: Admin, profesorId: string, luna: number, an: nu
   const sedinteRows = sedinte.data ?? []
   const copiiRows = copii.error ? [] : (copii.data ?? [])
 
-  const aboIds = platiRows.map(p => p.abonament_id).filter(Boolean) as string[]
+  const aboIds = Array.from(
+    new Set(platiRows.map(p => p.abonament_id).filter(Boolean) as string[]),
+  )
   const { data: abo } = aboIds.length
     ? await admin.from('abonamente').select('id, sedinte_incluse, tip').in('id', aboIds)
     : { data: [] as Array<{ id: string; sedinte_incluse: number; tip: string }> }
   const aboById = new Map((abo ?? []).map(a => [a.id, a]))
 
   const cursantIds = Array.from(
-    new Set([...platiRows.map(p => p.cursant_id), ...sedinteRows.map(s => s.cursant_id)]),
+    new Set([
+      ...platiRows.map(p => p.cursant_id),
+      ...sedinteRows.map(s => s.cursant_id),
+    ]),
   )
   const { data: cursNume } = cursantIds.length
     ? await admin.from('cursanti').select('id, prenume, nume').in('id', cursantIds)
@@ -97,7 +114,7 @@ async function colecteaza(admin: Admin, profesorId: string, luna: number, an: nu
   const numeById = new Map((cursNume ?? []).map(c => [c.id, `${c.prenume} ${c.nume}`]))
 
   return {
-    asignati: (links ?? []).length,
+    asignati: asignatiIds.length,
     platiRows,
     sedinteRows,
     copiiRows,
@@ -105,6 +122,13 @@ async function colecteaza(admin: Admin, profesorId: string, luna: number, an: nu
     numeById,
     migrareLipsa,
   }
+}
+
+function sedinteIncarcate(
+  plati: Array<{ abonament_id: string | null }>,
+  aboById: Map<string, { sedinte_incluse: number }>,
+): number {
+  return plati.reduce((s, x) => s + (aboById.get(x.abonament_id ?? '')?.sedinte_incluse ?? 0), 0)
 }
 
 export async function rezumatProfesoriAction(
@@ -136,10 +160,7 @@ export async function rezumatProfesoriAction(
       copii_inregistrati: c.copiiRows.length,
       incasat: c.platiRows.reduce((s, x) => s + Number(x.suma), 0),
       nr_plati: c.platiRows.length,
-      sedinte_incarcate: c.platiRows.reduce(
-        (s, x) => s + (c.aboById.get(x.abonament_id ?? '')?.sedinte_incluse ?? 0),
-        0,
-      ),
+      sedinte_incarcate: sedinteIncarcate(c.platiRows, c.aboById),
       sedinte_efectuate: c.sedinteRows.filter(s => s.consuma_sedinta).length,
     })
   }
@@ -175,27 +196,24 @@ export async function activitateProfesorAction(
       cursant: `${x.prenume} ${x.nume}`,
       detalii: 'Cursant înregistrat',
     })),
+    ...c.platiRows.map(x => ({
+      tip: 'plata' as const,
+      data: x.data_plata,
+      cursant: c.numeById.get(x.cursant_id) ?? '—',
+      detalii: `Încasare ${x.metoda}${x.nota ? ` · ${x.nota}` : ''}`,
+      suma: Number(x.suma),
+    })),
     ...c.platiRows.flatMap(x => {
       const abo = c.aboById.get(x.abonament_id ?? '')
-      const cursant = c.numeById.get(x.cursant_id) ?? '—'
-      const ev: EvenimentActivitate[] = [
+      if (!abo) return []
+      return [
         {
-          tip: 'plata',
+          tip: 'incarcare' as const,
           data: x.data_plata,
-          cursant,
-          detalii: `Încasare ${x.metoda}${x.nota ? ` · ${x.nota}` : ''}`,
-          suma: Number(x.suma),
+          cursant: c.numeById.get(x.cursant_id) ?? '—',
+          detalii: `${abo.sedinte_incluse} ședințe încărcate (${abo.tip === 'lunar' ? 'lunar' : 'pachet'})`,
         },
       ]
-      if (abo) {
-        ev.push({
-          tip: 'incarcare',
-          data: x.data_plata,
-          cursant,
-          detalii: `${abo.sedinte_incluse} ședințe încărcate (${abo.tip === 'lunar' ? 'lunar' : 'pachet'})`,
-        })
-      }
-      return ev
     }),
     ...c.sedinteRows.map(x => ({
       tip: 'sedinta' as const,
@@ -217,11 +235,57 @@ export async function activitateProfesorAction(
       copii_inregistrati: c.copiiRows.length,
       incasat: c.platiRows.reduce((s, x) => s + Number(x.suma), 0),
       nr_plati: c.platiRows.length,
-      sedinte_incarcate: c.platiRows.reduce(
-        (s, x) => s + (c.aboById.get(x.abonament_id ?? '')?.sedinte_incluse ?? 0),
-        0,
-      ),
+      sedinte_incarcate: sedinteIncarcate(c.platiRows, c.aboById),
       sedinte_efectuate: c.sedinteRows.filter(s => s.consuma_sedinta).length,
     },
   }
+}
+
+/**
+ * Ședințe efectuate în luna curentă:
+ *  - profesor → doar cele făcute (bifate) de el
+ *  - admin → toate cele făcute de toți profesorii
+ */
+export async function sedinteEfectuateLunaCurentaAction(): Promise<
+  { ok: true; count: number } | { ok: false; error: string; count: 0 }
+> {
+  if (!isSupabaseConfigured() || !isSupabaseAdminConfigured()) {
+    return { ok: false, error: 'Supabase nu e configurat.', count: 0 }
+  }
+  const supabase = await createClient()
+  const { data: auth } = await supabase.auth.getUser()
+  if (!auth.user) return { ok: false, error: 'Neautentificat.', count: 0 }
+
+  const admin = createAdminClient()
+  const { data: profile } = await admin
+    .from('profile')
+    .select('rol')
+    .eq('id', auth.user.id)
+    .maybeSingle()
+  if (profile?.rol !== 'profesor' && profile?.rol !== 'admin') {
+    return { ok: false, error: 'Acces interzis.', count: 0 }
+  }
+
+  const now = new Date()
+  const { start, end } = interval(now.getMonth(), now.getFullYear())
+
+  let autoriIds: string[]
+  if (profile.rol === 'profesor') {
+    autoriIds = [auth.user.id]
+  } else {
+    const { data: profs } = await admin.from('profile').select('id').eq('rol', 'profesor')
+    autoriIds = (profs ?? []).map(p => p.id as string)
+  }
+  if (!autoriIds.length) return { ok: true, count: 0 }
+
+  const { count, error } = await admin
+    .from('sedinte')
+    .select('id', { count: 'exact', head: true })
+    .in('creat_de', autoriIds)
+    .eq('consuma_sedinta', true)
+    .gte('data', start)
+    .lt('data', end)
+
+  if (error) return { ok: false, error: error.message, count: 0 }
+  return { ok: true, count: count ?? 0 }
 }

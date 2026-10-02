@@ -6,6 +6,7 @@ import { isSupabaseConfigured } from '@/lib/supabase/env'
 import { defaultModulPentruCurs } from '@/lib/curriculum'
 import { lectii } from '@/lib/mockData'
 import { mesajSedinteEpuizate, trimiteEmailSedinteEpuizate } from '@/lib/notificari'
+import { calculeazaSoldCursant } from '@/lib/soldSedinte'
 
 function todayISO(): string {
   return new Date().toISOString().slice(0, 10)
@@ -98,7 +99,7 @@ export type ProgresCursantData = {
   sedinte: Array<{
     id: string
     cursant_id: string
-    abonament_id: string
+    abonament_id: string | null
     data: string
     prezent: boolean
     consuma_sedinta: boolean
@@ -114,17 +115,15 @@ export async function getProgresCursantAction(
   if (!acces.ok) return acces
   const { client } = acces
 
-  const [{ data: cursant }, { data: inscrieri }, { data: progres }, { data: abonament }, { data: sedinte }] =
+  const [{ data: cursant }, { data: inscrieri }, { data: progres }, { data: abonamente }, { data: sedinte }] =
     await Promise.all([
       client.from('cursanti').select('id, prenume, nume').eq('id', cursantId).maybeSingle(),
       client.from('inscrieri').select('id, cursant_id, curs_id, modul_activ_id, activ').eq('cursant_id', cursantId),
       client.from('progres').select('id, cursant_id, lectie_id, bifat, data_bifat').eq('cursant_id', cursantId),
       client
         .from('abonamente')
-        .select('id, tip, sedinte_incluse')
-        .eq('cursant_id', cursantId)
-        .eq('activ', true)
-        .maybeSingle(),
+        .select('id, tip, sedinte_incluse, activ, cursant_id')
+        .eq('cursant_id', cursantId),
       client
         .from('sedinte')
         .select('id, cursant_id, abonament_id, data, prezent, consuma_sedinta, lectie_id, nota')
@@ -133,17 +132,16 @@ export async function getProgresCursantAction(
     ])
 
   let ab: ProgresCursantData['abonament'] = null
-  if (abonament) {
-    const { count } = await client
-      .from('sedinte')
-      .select('id', { count: 'exact', head: true })
-      .eq('abonament_id', abonament.id)
-      .eq('consuma_sedinta', true)
+  const aboActiv = (abonamente ?? []).find(a => a.activ) ?? null
+  const areConsum = (sedinte ?? []).some(s => s.consuma_sedinta)
+  if ((abonamente ?? []).length > 0 || areConsum) {
+    const sold = calculeazaSoldCursant(cursantId, abonamente ?? [], sedinte ?? [])
+    const oarecare = (abonamente ?? [])[0]
     ab = {
-      id: abonament.id,
-      tip: abonament.tip,
-      sedinte_incluse: abonament.sedinte_incluse,
-      sedinte_ramase: abonament.sedinte_incluse - (count ?? 0),
+      id: aboActiv?.id ?? oarecare?.id ?? '',
+      tip: aboActiv?.tip ?? oarecare?.tip ?? 'lunar',
+      sedinte_incluse: sold.sedintePlate,
+      sedinte_ramase: sold.sold,
     }
   }
 
@@ -265,25 +263,31 @@ export async function bifareLectieAction(cursantId: string, lectieId: string): P
     .eq('activ', true)
     .maybeSingle()
 
-  const sedinteRamaseFn = async (abonamentId: string, sedinteIncluse: number) => {
-    const { count } = await client
-      .from('sedinte')
-      .select('id', { count: 'exact', head: true })
-      .eq('abonament_id', abonamentId)
-      .eq('consuma_sedinta', true)
-    return sedinteIncluse - (count ?? 0)
+  const soldCursantFn = async (): Promise<number | null> => {
+    const [{ data: toateAbo }, { data: toateSedinte }] = await Promise.all([
+      client
+        .from('abonamente')
+        .select('id, cursant_id, sedinte_incluse, activ')
+        .eq('cursant_id', cursantId),
+      client
+        .from('sedinte')
+        .select('cursant_id, abonament_id, consuma_sedinta')
+        .eq('cursant_id', cursantId)
+        .eq('consuma_sedinta', true),
+    ])
+    if (!(toateAbo ?? []).length && !(toateSedinte ?? []).length) return null
+    return calculeazaSoldCursant(cursantId, toateAbo ?? [], toateSedinte ?? []).sold
   }
 
   if (currentlyBifat) {
     if (existing) {
       await client.from('progres').update({ bifat: false, data_bifat: null }).eq('id', existing.id)
     }
-    const ramase = abonament ? await sedinteRamaseFn(abonament.id, abonament.sedinte_incluse) : null
     return {
       ok: true,
       bifat: false,
       consumNou: false,
-      sedinteRamase: ramase,
+      sedinteRamase: await soldCursantFn(),
       alertaSold: false,
       emailTrimis: false,
       whatsappMesaj: null,
@@ -309,30 +313,32 @@ export async function bifareLectieAction(cursantId: string, lectieId: string): P
 
   const dejaConsumat = existing?.consum_sedinta_aplicat === true
 
-  if (abonament) {
+  {
     const azi = todayISO()
 
     if (dejaConsumat) {
       consumNou = false
     } else {
+      // Max 1 consum / cursant / zi (indiferent de abonament)
       const { data: existentAzi } = await client
         .from('sedinte')
         .select('id')
         .eq('cursant_id', cursantId)
-        .eq('abonament_id', abonament.id)
         .eq('data', azi)
         .eq('consuma_sedinta', true)
+        .limit(1)
         .maybeSingle()
 
       if (existentAzi) {
         sedintaId = existentAzi.id
         consumNou = false
       } else {
-        const { data: noua } = await client
+        // Consumul se înregistrează MEREU (chiar fără abonament activ → sold negativ)
+        const { data: noua, error: sedErr } = await client
           .from('sedinte')
           .insert({
             cursant_id: cursantId,
-            abonament_id: abonament.id,
+            abonament_id: abonament?.id ?? null,
             data: azi,
             prezent: true,
             consuma_sedinta: true,
@@ -341,13 +347,18 @@ export async function bifareLectieAction(cursantId: string, lectieId: string): P
           })
           .select('id')
           .single()
-        sedintaId = noua?.id ?? null
+        if (sedErr || !noua) {
+          return empty({
+            error: `Nu am putut scădea ședința: ${sedErr?.message ?? 'eroare necunoscută'}. Lecția nu a fost bifată.`,
+          })
+        }
+        sedintaId = noua.id
         consumNou = true
       }
     }
 
-    ramase = await sedinteRamaseFn(abonament.id, abonament.sedinte_incluse)
-    alertaSold = ramase <= 0
+    ramase = await soldCursantFn()
+    alertaSold = ramase !== null && ramase <= 0
 
     if (alertaSold && consumNou) {
       whatsappMesaj = mesajSedinteEpuizate(cursant.prenume)
@@ -364,12 +375,12 @@ export async function bifareLectieAction(cursantId: string, lectieId: string): P
           cursant_id: cursantId,
           tip: 'sedinte_epuizate',
           email_catre: cursant.email_parinte,
-          sedinte_ramase: ramase,
+          sedinte_ramase: ramase ?? 0,
         })
         await trimiteEmailSedinteEpuizate({
           emailParinte: cursant.email_parinte,
           prenumeCopil: cursant.prenume,
-          sedinteRamase: ramase,
+          sedinteRamase: ramase ?? 0,
         })
         emailTrimis = true
       }

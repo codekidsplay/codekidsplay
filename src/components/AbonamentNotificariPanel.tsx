@@ -3,10 +3,9 @@
 import { useEffect, useState } from 'react'
 import { Copy, Check, Mail, MessageCircle, RotateCcw } from 'lucide-react'
 import {
-  abonamentActiv,
   getStore,
   resetStore,
-  sedinteRamase,
+  sedinteRamaseCursant,
   type BifareResult,
 } from '@/lib/mockStore'
 import { mesajSedinteEpuizate } from '@/lib/notificari'
@@ -47,14 +46,14 @@ export default function AbonamentNotificariPanel({
       return
     }
     const store = getStore()
-    const ab = abonamentActiv(cursantId, store)
-    if (!ab) {
+    const abos = store.abonamente.filter(a => a.cursant_id === cursantId)
+    if (!abos.length) {
       setRamase(null)
       setIncluse(null)
       return
     }
-    setIncluse(ab.sedinte_incluse)
-    setRamase(sedinteRamase(ab.id, store))
+    setIncluse(abos.reduce((s, a) => s + a.sedinte_incluse, 0))
+    setRamase(sedinteRamaseCursant(cursantId, store))
   }
 
   useEffect(() => {

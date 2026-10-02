@@ -18,7 +18,10 @@ function ElevChrome({ children }: { children: React.ReactNode }) {
   }, [])
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-sky-50 via-white to-amber-50">
+    <div
+      className="min-h-screen bg-gradient-to-b from-sky-50 via-white to-amber-50"
+      style={{ '--player-top': '4.25rem' } as React.CSSProperties}
+    >
       <header className="border-b border-sky-100/80 bg-white/70 backdrop-blur-sm sticky top-0 z-40">
         <div className="max-w-4xl mx-auto px-4 py-3 flex items-center justify-between">
           <Link href="/invata" className="flex items-center gap-3">

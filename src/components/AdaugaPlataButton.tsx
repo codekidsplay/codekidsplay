@@ -74,7 +74,10 @@ export default function AdaugaPlataButton({ cursantId, numarCursant, onSaved }: 
               </button>
             </div>
 
-            <p className="text-sm text-slate-400 mb-4">Pentru {numarCursant}</p>
+            <p className="text-sm text-slate-400 mb-4">
+              Pentru {numarCursant}. Ședințele se <strong className="text-slate-600">adăugă</strong> la
+              soldul existent (ex. 2 rămase + 4 plătite = 6).
+            </p>
 
             {error && (
               <p className="text-sm text-amber-700 bg-amber-50 border border-amber-100 rounded-lg px-3 py-2 mb-4">

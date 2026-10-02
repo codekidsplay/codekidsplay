@@ -4,12 +4,13 @@ import { useEffect, useMemo, useState } from 'react'
 import Link from 'next/link'
 import { Plus, Search, X, UserCheck, UserX, Layers, CalendarPlus } from 'lucide-react'
 import { cursuri, module } from '@/lib/mockData'
-import { getStore, getCursanti, abonamentActiv, sedinteRamase, type Cursant } from '@/lib/mockStore'
+import { getStore, getCursanti, sedinteRamaseCursant, type Cursant } from '@/lib/mockStore'
 import CursantAvatar from '@/components/CursantAvatar'
 import { getStaffSession, filtreazaDupaVizibilitate } from '@/lib/vizibilitateCursanti'
 import { listCursantiAction } from '@/app/actions/cursanti'
 import { getAuthSessionAction } from '@/app/actions/auth'
 import { isSupabaseConfiguredClient } from '@/lib/supabase/publicFlag'
+import { culoareSold } from '@/lib/soldSedinte'
 
 export default function CursantiLista() {
   const [ready, setReady] = useState(false)
@@ -171,9 +172,10 @@ export default function CursantiLista() {
       return remoteSolduri[cursantId] ?? null
     }
     if (!store) return null
-    const ab = abonamentActiv(cursantId, store)
-    if (!ab) return null
-    return { incluse: ab.sedinte_incluse, ramase: sedinteRamase(ab.id, store) }
+    const abos = store.abonamente.filter(a => a.cursant_id === cursantId)
+    if (!abos.length) return null
+    const incluse = abos.reduce((s, a) => s + a.sedinte_incluse, 0)
+    return { incluse, ramase: sedinteRamaseCursant(cursantId, store) }
   }
 
   if (!ready || (!store && !isSupabaseConfiguredClient()) || supabaseLoading) {
@@ -449,15 +451,7 @@ export default function CursantiLista() {
                       <td className="px-6 py-4 whitespace-nowrap">
                         {sold ? (
                           <div>
-                            <p
-                              className={`text-sm font-semibold ${
-                                sold.ramase <= 0
-                                  ? 'text-amber-600'
-                                  : sold.ramase <= 1
-                                    ? 'text-amber-600'
-                                    : 'text-emerald-600'
-                              }`}
-                            >
+                            <p className={`text-sm font-semibold ${culoareSold(sold.ramase)}`}>
                               {sold.ramase}
                               <span className="text-slate-400 font-normal"> / {sold.incluse}</span>
                             </p>

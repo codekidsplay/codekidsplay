@@ -7,6 +7,7 @@ import AdaugaPlataButton from '@/components/AdaugaPlataButton'
 import CursantAvatar from '@/components/CursantAvatar'
 import { listAbonamenteAction, type AbonamenteDate } from '@/app/actions/abonamente'
 import { isSupabaseConfiguredClient } from '@/lib/supabase/publicFlag'
+import { calculeazaSoldCursant, culoareSold } from '@/lib/soldSedinte'
 import {
   LUNI_RO,
   aniDisponibili,
@@ -47,18 +48,7 @@ export default function AbonamenteLista() {
   const { cursanti, abonamente, sedinte, plati } = date
 
   const getSoldCursant = useCallback(
-    (cursantId: string) => {
-      const aboCursant = abonamente.filter(a => a.cursant_id === cursantId && a.activ)
-      if (!aboCursant.length) {
-        return { sedintePlate: 0, sedinteConsume: 0, sold: 0, aboActiv: null as (typeof abonamente)[0] | null }
-      }
-      const aboActiv = aboCursant[aboCursant.length - 1]
-      const sedinteConsume = sedinte.filter(
-        s => s.cursant_id === cursantId && s.abonament_id === aboActiv.id && s.prezent,
-      ).length
-      const sold = aboActiv.sedinte_incluse - sedinteConsume
-      return { sedintePlate: aboActiv.sedinte_incluse, sedinteConsume, sold, aboActiv }
-    },
+    (cursantId: string) => calculeazaSoldCursant(cursantId, abonamente, sedinte),
     [abonamente, sedinte],
   )
 
@@ -87,7 +77,7 @@ export default function AbonamenteLista() {
 
   const cursantiActivi = cursanti.filter(c => c.activ)
   const solduriActivi = cursantiActivi.map(c => ({ ...c, ...getSoldCursant(c.id) }))
-  const cuSoldMic = solduriActivi.filter(c => c.aboActiv && c.sold <= 1).length
+  const cuSoldMic = solduriActivi.filter(c => c.sedintePlate > 0 && c.sold <= 1).length
 
   const filtrati = useMemo(() => {
     const query = q.trim().toLowerCase()
@@ -100,17 +90,17 @@ export default function AbonamenteLista() {
         if (!full.includes(query)) return false
       }
 
-      const { sold, aboActiv } = getSoldCursant(c.id)
+      const { sold, aboActiv, sedintePlate } = getSoldCursant(c.id)
 
       if (tip === 'lunar' && aboActiv?.tip !== 'lunar') return false
       if (tip === 'pachet' && aboActiv?.tip !== 'pachet') return false
       if (tip === 'fara' && aboActiv) return false
 
       if (soldFiltru === 'scazut') {
-        if (!aboActiv || sold > 1) return false
+        if (sedintePlate <= 0 || sold > 1) return false
       }
       if (soldFiltru === 'ok') {
-        if (!aboActiv || sold <= 1) return false
+        if (sedintePlate <= 0 || sold <= 1) return false
       }
 
       return true
@@ -354,6 +344,7 @@ export default function AbonamenteLista() {
               ) : (
                 filtrati.map(c => {
                   const { sedintePlate, sedinteConsume, sold, aboActiv } = getSoldCursant(c.id)
+                  const areSedinte = sedintePlate > 0 || sedinteConsume > 0
                   return (
                     <tr key={c.id} className="border-b border-slate-50 hover:bg-slate-50/80">
                       <td className="px-6 py-4">
@@ -375,19 +366,15 @@ export default function AbonamenteLista() {
                         )}
                       </td>
                       <td className="px-6 py-4 text-sm text-slate-600">
-                        {aboActiv ? sedintePlate : '—'}
+                        {areSedinte ? sedintePlate : '—'}
                       </td>
                       <td className="px-6 py-4 text-sm text-slate-600">
-                        {aboActiv ? sedinteConsume : '—'}
+                        {areSedinte ? sedinteConsume : '—'}
                       </td>
                       <td className="px-6 py-4">
-                        {aboActiv ? (
+                        {areSedinte ? (
                           <div className="flex items-center gap-2">
-                            <span
-                              className={`font-bold ${
-                                sold <= 1 ? 'text-amber-600' : 'text-emerald-600'
-                              }`}
-                            >
+                            <span className={`font-bold ${culoareSold(sold)}`}>
                               {sold}
                             </span>
                             <span className="text-slate-400 text-sm">ședințe</span>

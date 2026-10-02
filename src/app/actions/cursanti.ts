@@ -395,25 +395,30 @@ export async function listCursantiAction(): Promise<
         .in('cursant_id', cursantIds),
       client
         .from('abonamente')
-        .select('id, cursant_id, sedinte_incluse')
-        .in('cursant_id', cursantIds)
-        .eq('activ', true),
+        .select('id, cursant_id, sedinte_incluse, activ')
+        .in('cursant_id', cursantIds),
       client
         .from('sedinte')
-        .select('abonament_id')
+        .select('cursant_id, abonament_id, consuma_sedinta')
         .in('cursant_id', cursantIds)
         .eq('consuma_sedinta', true),
     ])
     inscrieri = insc ?? []
 
+    const plate = new Map<string, number>()
+    for (const ab of abonamente ?? []) {
+      plate.set(ab.cursant_id, (plate.get(ab.cursant_id) ?? 0) + ab.sedinte_incluse)
+    }
     const consumate = new Map<string, number>()
     for (const s of sedinte ?? []) {
-      consumate.set(s.abonament_id, (consumate.get(s.abonament_id) ?? 0) + 1)
+      consumate.set(s.cursant_id, (consumate.get(s.cursant_id) ?? 0) + 1)
     }
-    for (const ab of abonamente ?? []) {
-      solduri[ab.cursant_id] = {
-        incluse: ab.sedinte_incluse,
-        ramase: ab.sedinte_incluse - (consumate.get(ab.id) ?? 0),
+    for (const cursantId of cursantIds) {
+      const incluse = plate.get(cursantId) ?? 0
+      if (incluse === 0 && !(consumate.get(cursantId) ?? 0)) continue
+      solduri[cursantId] = {
+        incluse,
+        ramase: incluse - (consumate.get(cursantId) ?? 0),
       }
     }
   }

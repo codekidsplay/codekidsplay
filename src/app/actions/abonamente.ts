@@ -52,7 +52,13 @@ export type AbonamenteDate = {
     data_start: string
     activ: boolean
   }>
-  sedinte: Array<{ id: string; cursant_id: string; abonament_id: string; prezent: boolean }>
+  sedinte: Array<{
+    id: string
+    cursant_id: string
+    abonament_id: string | null
+    prezent: boolean
+    consuma_sedinta: boolean
+  }>
   plati: Array<{
     id: string
     cursant_id: string
@@ -90,7 +96,10 @@ export async function listAbonamenteAction(): Promise<
         admin.from('abonamente').select('id, cursant_id, tip, sedinte_incluse, pret, data_start, activ'),
         'cursant_id',
       ),
-      filtru(admin.from('sedinte').select('id, cursant_id, abonament_id, prezent'), 'cursant_id'),
+      filtru(
+        admin.from('sedinte').select('id, cursant_id, abonament_id, prezent, consuma_sedinta'),
+        'cursant_id',
+      ),
       filtru(
         admin.from('plati').select('id, cursant_id, abonament_id, suma, data_plata, metoda, nota'),
         'cursant_id',
@@ -114,9 +123,10 @@ export type DetaliiCursantAbonament = {
   sedinte: Array<{
     id: string
     cursant_id: string
-    abonament_id: string
+    abonament_id: string | null
     data: string
     prezent: boolean
+    consuma_sedinta: boolean
     nota: string | null
   }>
   plati: AbonamenteDate['plati']
@@ -141,7 +151,7 @@ export async function getDetaliiCursantAbonamentAction(
         .eq('cursant_id', cursantId),
       admin
         .from('sedinte')
-        .select('id, cursant_id, abonament_id, data, prezent, nota')
+        .select('id, cursant_id, abonament_id, data, prezent, consuma_sedinta, nota')
         .eq('cursant_id', cursantId)
         .order('data', { ascending: false }),
       admin
@@ -172,7 +182,12 @@ export type InregistreazaPlataInput = {
   sedinte_incluse: number
 }
 
-/** Înregistrează o plată; dezactivează abonamentul curent și pornește unul nou (reînnoire). */
+/**
+ * Înregistrează o plată și un pachet nou de ședințe.
+ * Ședințele se ADAUGĂ la soldul cursantului (nu înlocuiesc restul vechi):
+ *   sold nou = sold vechi + ședințe plătite  (ex. 2+4=6, sau −2+4=2).
+ * Abonamentul vechi e dezactivat doar ca „pachet curent”; consumurile rămân în istoric.
+ */
 export async function inregistreazaPlataAction(
   input: InregistreazaPlataInput,
 ): Promise<{ ok: true } | { ok: false; error: string }> {
