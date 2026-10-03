@@ -88,7 +88,7 @@ export const module = [
   // Robotică WeDo 2.0
   { id: 'm12', curs_id: 'c6', nume: 'Modul 1 — Construcție și senzori (WeDo 2.0)', ordine: 1, badge: 'Robot Starter' },
   { id: 'm13', curs_id: 'c6', nume: 'Modul 2 — Proiecte avansate (WeDo 2.0)', ordine: 2, badge: 'Robot Inventor' },
-  // Scratch — 6 module × 10 lecții (8–10 ani)
+  // Scratch — 6 module × 10 lecții (8–10 ani; M5 și M6 = 10+)
   {
     id: 'm16',
     curs_id: 'c7',
@@ -128,7 +128,7 @@ export const module = [
   {
     id: 'm28',
     curs_id: 'c7',
-    nume: 'Modul 5 — Mecanici de joc',
+    nume: 'Modul 5 — Mecanici de joc · 10+ ani',
     ordine: 5,
     badge: 'Maestru de jocuri',
     nivel: 'Master',
@@ -137,7 +137,7 @@ export const module = [
   {
     id: 'm20',
     curs_id: 'c7',
-    nume: 'Modul 6 — Lume de cuburi',
+    nume: 'Modul 6 — Lume de cuburi · 10+ ani',
     ordine: 6,
     badge: 'Cube Crafter',
     nivel: 'Crafter',
@@ -188,7 +188,7 @@ export const module = [
   {
     id: 'm33',
     curs_id: 'c9',
-    nume: 'Modul 5 — Avansat (Design Pro)',
+    nume: 'Modul 5 — Design Pro · 10+ ani',
     ordine: 5,
     badge: 'Design Pro',
     descriere: '10 lecții tehnice: toleranțe, Codeblocks, Circuits · recomandat 10+.',
