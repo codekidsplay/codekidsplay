@@ -35,6 +35,7 @@ export default function AdaugaCursantForm() {
   const [isAdmin, setIsAdmin] = useState(false)
   const [error, setError] = useState<string | null>(null)
   const [saving, setSaving] = useState(false)
+  const [termeniAcceptati, setTermeniAcceptati] = useState(false)
   const trimiteWa = useRef(false)
   const [salvat, setSalvat] = useState<{ id: string; waUrl: string | null } | null>(null)
 
@@ -114,6 +115,11 @@ export default function AdaugaCursantForm() {
       return
     }
 
+    if (!termeniAcceptati) {
+      setError('Confirmă că părintele a citit și acceptă Termenii și Condițiile.')
+      return
+    }
+
     setSaving(true)
     try {
       if (isSupabaseConfiguredClient()) {
@@ -128,6 +134,7 @@ export default function AdaugaCursantForm() {
           parola_parinte: parolaParinte.trim(),
           curs_id: cursId || null,
           profesor_id: profesorId || null,
+          termeni_acceptati: termeniAcceptati,
         })
         if (!r.ok) {
           setError(r.error)
@@ -400,6 +407,28 @@ export default function AdaugaCursantForm() {
             </p>
           </label>
         ) : null}
+
+        <label className="flex items-start gap-3 rounded-xl border border-slate-200 bg-slate-50/80 p-4 cursor-pointer">
+          <input
+            type="checkbox"
+            checked={termeniAcceptati}
+            onChange={e => setTermeniAcceptati(e.target.checked)}
+            className="mt-1 h-4 w-4 rounded border-slate-300 accent-blue-600"
+            required
+          />
+          <span className="text-sm text-slate-700">
+            Părintele a citit și acceptă{' '}
+            <Link
+              href="/termeni"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-medium text-blue-600 underline underline-offset-2"
+            >
+              Termenii și Condițiile
+            </Link>
+            , inclusiv recomandarea privind vârsta modulelor și interdicția de copiere și distribuire a lecțiilor. *
+          </span>
+        </label>
 
         {error ? (
           <p className="text-sm text-red-600 bg-red-50 border border-red-100 rounded-xl px-4 py-3">

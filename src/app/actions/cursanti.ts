@@ -14,6 +14,7 @@ import {
   genereazaPin,
   genereazaUsername,
 } from '@/lib/authHelpers'
+import { TERMENI_VERSIUNE } from '@/lib/termeni'
 
 export type AdaugaCursantInput = {
   prenume: string
@@ -27,6 +28,8 @@ export type AdaugaCursantInput = {
   curs_id?: string | null
   /** UUID profesor — admin alege; dacă e gol și caller e profesor, se auto-asignează */
   profesor_id?: string | null
+  /** Obligatoriu: personalul confirmă că părintele a citit și acceptat Termenii. */
+  termeni_acceptati: boolean
 }
 
 export type AdaugaCursantResult =
@@ -76,6 +79,13 @@ export async function adaugaCursantAction(
   const rolStaff = rolRow?.rol
   if (rolStaff !== 'admin' && rolStaff !== 'profesor') {
     return { ok: false, error: 'Acces interzis.' }
+  }
+
+  if (input.termeni_acceptati !== true) {
+    return {
+      ok: false,
+      error: 'Părintele trebuie să accepte Termenii și Condițiile înainte de înscriere.',
+    }
   }
 
   const prenume = input.prenume.trim()
@@ -129,12 +139,24 @@ export async function adaugaCursantAction(
     username,
     activ: true,
   }
+  const dovadaTermeni = {
+    termeni_acceptati_la: new Date().toISOString(),
+    termeni_versiune: TERMENI_VERSIUNE,
+    termeni_confirmat_de: authUser.user.id,
+  }
   let { data: cursant, error: cursantErr } = await admin
     .from('cursanti')
-    .insert({ ...randCursant, creat_de: authUser.user.id })
+    .insert({ ...randCursant, creat_de: authUser.user.id, ...dovadaTermeni })
     .select('id')
     .single()
-  // Migrarea `creat_de` încă nerulată: salvăm fără autor
+  // Migrare nerulată (coloane lipsă): salvăm fără ele, ca înscrierea să nu pice
+  if (cursantErr && /termeni_/i.test(cursantErr.message)) {
+    ;({ data: cursant, error: cursantErr } = await admin
+      .from('cursanti')
+      .insert({ ...randCursant, creat_de: authUser.user.id })
+      .select('id')
+      .single())
+  }
   if (cursantErr && /creat_de/i.test(cursantErr.message)) {
     ;({ data: cursant, error: cursantErr } = await admin
       .from('cursanti')

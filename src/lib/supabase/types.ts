@@ -12,6 +12,9 @@ export type CursantRow = {
   activ: boolean
   created_at: string
   creat_de: string | null
+  termeni_acceptati_la?: string | null
+  termeni_versiune?: string | null
+  termeni_confirmat_de?: string | null
 }
 
 export type ProfileRow = {
@@ -49,6 +52,9 @@ export type Database = {
           activ?: boolean
           created_at?: string
           creat_de?: string | null
+          termeni_acceptati_la?: string | null
+          termeni_versiune?: string | null
+          termeni_confirmat_de?: string | null
         }
         Update: Partial<Database['public']['Tables']['cursanti']['Insert']>
         Relationships: []
