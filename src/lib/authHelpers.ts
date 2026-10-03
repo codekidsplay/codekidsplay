@@ -16,20 +16,30 @@ export function genereazaUsername(prenume: string, nume: string): string {
   return `${p}.${n.charAt(0) || 'x'}`
 }
 
+/** Număr aleator criptografic în [0, max). */
+function aleator(max: number): number {
+  const buf = new Uint32Array(1)
+  const limita = Math.floor(0x100000000 / max) * max // evită bias de modulo
+  do {
+    crypto.getRandomValues(buf)
+  } while (buf[0] >= limita)
+  return buf[0] % max
+}
+
 export function genereazaPin(len = 4): string {
   let s = ''
-  for (let i = 0; i < len; i++) s += Math.floor(Math.random() * 10).toString()
+  for (let i = 0; i < len; i++) s += aleator(10).toString()
   return s
 }
 
 export function genereazaParola(len = 8): string {
   const chars = 'abcdefghijkmnpqrstuvwxyz23456789'
   let s = ''
-  for (let i = 0; i < len; i++) s += chars[Math.floor(Math.random() * chars.length)]
+  for (let i = 0; i < len; i++) s += chars[aleator(chars.length)]
   return s
 }
 
-const SITE_LOGIN_URL = 'https://codekidsplay.vercel.app/login'
+const SITE_LOGIN_URL = 'https://codekidsplay.ro/login'
 
 export function mesajWhatsAppLogin(opts: {
   prenume: string

@@ -14,7 +14,7 @@ const body = Outfit({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://codekidsplay.vercel.app'),
+  metadataBase: new URL('https://codekidsplay.ro'),
   applicationName: 'Code Kids Play',
   title: {
     default: 'Code Kids Play Focșani — cursuri de programare pentru copii',
