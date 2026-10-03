@@ -20,6 +20,8 @@ Detalii abonamente Code Kids Play Focsani:
 
 ✅ 19 sedinte - 38 ore - 1200 lei / 31,5 lei ora de programare
 
+🚀 Autodidact (acasa, pe platforma) - 1 modul - 10 lectii - 20 ore de programare disponibile 30 de zile - 200 lei / 10 lei ora de programare
+
 🎁 Bonus: + 1 sedinta gratuita la recomandare iar acel copil se inscrie la curs.
 🎁 Bonus: + 1 sedinta cadou la ziua de nastere.
 🎁 Bonus: un cadou surpriză la terminarea anumitor module.
