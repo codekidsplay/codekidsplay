@@ -8,6 +8,7 @@ import SedinteRamaseElev from '@/components/SedinteRamaseElev'
 import ModulNivelBadge from '@/components/ModulNivelBadge'
 import { useElevCursantId } from '@/hooks/useElevCursantId'
 import { useProgresCursant } from '@/hooks/useProgresCursant'
+import { esteActiv, zileRamase } from '@/lib/autodidact'
 
 export default function InvataCursPage() {
   const params = useParams<{ cursId: string }>()
@@ -20,6 +21,10 @@ export default function InvataCursPage() {
   if (!cursantId || loading) return <p className="text-slate-400">Se încarcă…</p>
   if (!curs) notFound()
 
+  const azi = new Date().toISOString().slice(0, 10)
+  const autodidactActiv = (data?.autodidact ?? []).filter(
+    a => a.curs_id === cursId && esteActiv(a, azi),
+  )
   const unlocked = new Set((data?.progres ?? []).filter(p => p.bifat).map(p => p.lectie_id))
   const insc = (data?.inscrieri ?? []).find(i => i.curs_id === cursId && i.activ)
   const modulActivId = insc?.modul_activ_id ?? null
@@ -106,6 +111,17 @@ export default function InvataCursPage() {
           <SedinteRamaseElev cursantId={cursantId} />
         </div>
       </div>
+
+      {autodidactActiv.map(a => (
+        <p
+          key={a.id}
+          className="mt-4 rounded-xl border border-fuchsia-100 bg-fuchsia-50 px-3.5 py-2 text-sm text-fuchsia-900"
+        >
+          🚀 <strong>Autodidact:</strong> {module.find(m => m.id === a.modul_id)?.nume} — toate lecțiile sunt
+          deschise încă {zileRamase(a, azi)} {zileRamase(a, azi) === 1 ? 'zi' : 'zile'} (până pe{' '}
+          {new Date(`${a.data_sfarsit}T12:00:00`).toLocaleDateString('ro-RO')}).
+        </p>
+      ))}
 
       {!modulActiv ? (
         <p className="mt-8 text-slate-400">Profesorul nu ți-a asociat încă un modul.</p>

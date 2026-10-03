@@ -187,6 +187,34 @@ export type Database = {
         Update: Partial<Database['public']['Tables']['plati']['Insert']>
         Relationships: []
       }
+      acces_autodidact: {
+        Row: {
+          id: string
+          cursant_id: string
+          modul_id: string
+          curs_id: string
+          pret: number
+          data_start: string
+          data_sfarsit: string
+          plata_id: string | null
+          creat_de: string | null
+          created_at: string
+        }
+        Insert: {
+          id?: string
+          cursant_id: string
+          modul_id: string
+          curs_id: string
+          pret: number
+          data_start: string
+          data_sfarsit: string
+          plata_id?: string | null
+          creat_de?: string | null
+          created_at?: string
+        }
+        Update: Partial<Database['public']['Tables']['acces_autodidact']['Insert']>
+        Relationships: []
+      }
       progres: {
         Row: {
           id: string

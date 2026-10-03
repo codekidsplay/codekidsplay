@@ -3,6 +3,8 @@
 import { createAdminClient } from '@/lib/supabase/admin'
 import { createClient } from '@/lib/supabase/server'
 import { isSupabaseAdminConfigured, isSupabaseConfigured } from '@/lib/supabase/env'
+import { module as moduleCurriculum } from '@/lib/mockData'
+import { dataSfarsitAcces, esteActiv, pretAutodidact } from '@/lib/autodidact'
 
 /**
  * Admin: acces la toți cursanții.
@@ -231,4 +233,149 @@ export async function inregistreazaPlataAction(
 
   if (plataErr) return { ok: false, error: plataErr.message }
   return { ok: true }
+}
+
+// ─── Abonament Autodidact (1 modul, 30 de zile, fără ședințe) ─────────────────
+
+export type AutodidactAcces = {
+  id: string
+  modul_id: string
+  curs_id: string
+  pret: number
+  data_start: string
+  data_sfarsit: string
+}
+
+const DATA_ISO = /^\d{4}-\d{2}-\d{2}$/
+
+async function accesuriAutodidact(
+  admin: ReturnType<typeof createAdminClient>,
+  cursantId: string,
+): Promise<AutodidactAcces[]> {
+  const { data, error } = await admin
+    .from('acces_autodidact')
+    .select('id, modul_id, curs_id, pret, data_start, data_sfarsit')
+    .eq('cursant_id', cursantId)
+    .order('data_sfarsit', { ascending: false })
+  if (error) return [] // tabel inexistent (migrare nerulată) → fără accesuri
+  return (data ?? []).map(r => ({ ...r, pret: Number(r.pret) }))
+}
+
+export type AutodidactCursant = {
+  accesuri: AutodidactAcces[]
+  /** Prețul propus pentru următorul modul, azi. */
+  pretUrmator: { pret: number; motiv: string }
+}
+
+export async function listAutodidactCursantAction(
+  cursantId: string,
+): Promise<{ ok: true; data: AutodidactCursant } | { ok: false; error: string }> {
+  if (!isSupabaseConfigured()) return { ok: false, error: 'Supabase nu e configurat.' }
+  if (!/^[0-9a-f-]{36}$/i.test(cursantId)) return { ok: false, error: 'ID cursant invalid.' }
+  const acces = await verificaAcces()
+  if (!acces.ok) return acces
+  if (!poateCursant(acces, cursantId)) return { ok: false, error: 'Nu ai acces la acest cursant.' }
+
+  const accesuri = await accesuriAutodidact(acces.admin, cursantId)
+  const azi = new Date().toISOString().slice(0, 10)
+  const { pret, motiv } = pretAutodidact(accesuri, azi)
+  return { ok: true, data: { accesuri, pretUrmator: { pret, motiv } } }
+}
+
+/** Prețul propus pentru o dată de plată (formularul îl recalculează când se schimbă data). */
+export async function pretAutodidactAction(
+  cursantId: string,
+  dataPlata: string,
+): Promise<{ ok: true; pret: number; motiv: string } | { ok: false; error: string }> {
+  if (!isSupabaseConfigured()) return { ok: false, error: 'Supabase nu e configurat.' }
+  if (!/^[0-9a-f-]{36}$/i.test(cursantId)) return { ok: false, error: 'ID cursant invalid.' }
+  if (!DATA_ISO.test(dataPlata)) return { ok: false, error: 'Dată invalidă.' }
+  const acces = await verificaAcces()
+  if (!acces.ok) return acces
+  if (!poateCursant(acces, cursantId)) return { ok: false, error: 'Nu ai acces la acest cursant.' }
+
+  const accesuri = await accesuriAutodidact(acces.admin, cursantId)
+  const { pret, motiv } = pretAutodidact(accesuri, dataPlata)
+  return { ok: true, pret, motiv }
+}
+
+export type InregistreazaAutodidactInput = {
+  cursant_id: string
+  modul_id: string
+  /** Suma încasată; implicit prețul calculat (200 / 150 / 100). */
+  suma?: number
+  data_plata: string
+  metoda: 'cash' | 'transfer' | 'card'
+  nota?: string | null
+}
+
+/**
+ * Înregistrează plata și deschide TOATE lecțiile modulului pentru 30 de zile.
+ * Nu modifică soldul de ședințe.
+ */
+export async function inregistreazaAutodidactAction(
+  input: InregistreazaAutodidactInput,
+): Promise<{ ok: true; pret: number; data_sfarsit: string } | { ok: false; error: string }> {
+  const acces = await verificaAcces()
+  if (!acces.ok) return acces
+  const { admin } = acces
+
+  if (!/^[0-9a-f-]{36}$/i.test(input.cursant_id)) return { ok: false, error: 'Cursant invalid.' }
+  if (!poateCursant(acces, input.cursant_id)) return { ok: false, error: 'Nu ai acces la acest cursant.' }
+  if (!DATA_ISO.test(input.data_plata)) return { ok: false, error: 'Dată invalidă.' }
+  if (!['cash', 'transfer', 'card'].includes(input.metoda)) return { ok: false, error: 'Metodă invalidă.' }
+
+  const modul = moduleCurriculum.find(m => m.id === input.modul_id)
+  if (!modul) return { ok: false, error: 'Modul necunoscut.' }
+
+  const accesuri = await accesuriAutodidact(admin, input.cursant_id)
+  const dataStart = input.data_plata
+
+  if (accesuri.some(a => a.modul_id === modul.id && esteActiv(a, dataStart))) {
+    return { ok: false, error: 'Cursantul are deja acces activ la acest modul.' }
+  }
+
+  const calculat = pretAutodidact(accesuri, dataStart).pret
+  const suma = input.suma ?? calculat
+  if (!(suma > 0)) return { ok: false, error: 'Sumă invalidă.' }
+
+  const dataSfarsit = dataSfarsitAcces(dataStart)
+  const nota = [`Autodidact · ${modul.nume}`, input.nota?.trim()].filter(Boolean).join(' · ')
+
+  const { data: plata, error: plataErr } = await admin
+    .from('plati')
+    .insert({
+      cursant_id: input.cursant_id,
+      abonament_id: null,
+      suma,
+      data_plata: dataStart,
+      metoda: input.metoda,
+      nota,
+      creat_de: acces.userId,
+    })
+    .select('id')
+    .single()
+  if (plataErr || !plata) return { ok: false, error: plataErr?.message ?? 'Nu am putut salva plata.' }
+
+  const { error: accesErr } = await admin.from('acces_autodidact').insert({
+    cursant_id: input.cursant_id,
+    modul_id: modul.id,
+    curs_id: modul.curs_id,
+    pret: suma,
+    data_start: dataStart,
+    data_sfarsit: dataSfarsit,
+    plata_id: plata.id,
+    creat_de: acces.userId,
+  })
+  if (accesErr) {
+    await admin.from('plati').delete().eq('id', plata.id) // nu lăsăm plată fără acces
+    return {
+      ok: false,
+      error: /acces_autodidact/.test(accesErr.message)
+        ? 'Tabelul acces_autodidact lipsește — rulează migrarea SQL în Supabase.'
+        : accesErr.message,
+    }
+  }
+
+  return { ok: true, pret: suma, data_sfarsit: dataSfarsit }
 }

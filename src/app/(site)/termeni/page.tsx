@@ -131,6 +131,18 @@ export default function TermeniPage() {
                   <strong>Abonament 19 ședințe (38 ore):</strong> 1.200 lei <span className="text-[var(--ckp-muted)]">(echivalent ~31,5 lei / ora de programare)</span>
                 </li>
               </ul>
+              <div className="pt-2 border-t border-[var(--ckp-ink)]/10 space-y-1.5">
+                <p className="font-semibold text-[var(--ckp-ink)]">Abonament Autodidact (învățare pe platformă, fără ședințe):</p>
+                <p>
+                  <strong>1 modul · 10 lecții · 20 de ore de programare disponibile 30 de zile:</strong> 200 lei{' '}
+                  <span className="text-[var(--ckp-muted)]">(echivalent 10 lei / ora de programare)</span>. Toate lecțiile modulului se
+                  deschid din prima zi, iar accesul se închide automat după 30 de zile. La final, cursantul își prezintă proiectul la club.
+                </p>
+                <p className="text-xs text-[var(--ckp-ink-soft)]">
+                  Modulul următor costă 150 lei, iar al treilea și următoarele 100 lei, dacă sunt achiziționate în cel mult 5 zile de la
+                  expirarea modulului precedent.
+                </p>
+              </div>
               <div className="pt-2 border-t border-[var(--ckp-ink)]/10 text-xs text-[var(--ckp-ink-soft)] space-y-1">
                 <p>🎁 <strong>Bonus Recomandare:</strong> +1 ședință gratuită (2 ore) pentru fiecare prieten recomandat care se înscrie la cursuri.</p>
                 <p>🎁 <strong>Bonus ziua de naștere:</strong> +1 ședință cadou.</p>

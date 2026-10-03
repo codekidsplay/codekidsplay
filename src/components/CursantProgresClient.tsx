@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import Link from 'next/link'
 import { ArrowLeft, Edit, GraduationCap } from 'lucide-react'
+import AutodidactPanel from '@/components/AutodidactPanel'
 import { getProfesoriCursantAction } from '@/app/actions/cursanti'
 import { listStaffAction } from '@/app/actions/profesori'
 import { cursuri, module, lectii } from '@/lib/mockData'
@@ -225,6 +226,8 @@ export default function CursantProgresClient({ cursant }: { cursant: Cursant }) 
           />
         </div>
       </div>
+
+      {useSupabase && <AutodidactPanel cursantId={cursant.id} />}
 
       <InscrieriCursuriPanel
         cursantId={cursant.id}

@@ -2,7 +2,13 @@
 
 import { useState } from 'react'
 import { Plus, X } from 'lucide-react'
-import { inregistreazaPlataAction } from '@/app/actions/abonamente'
+import {
+  inregistreazaPlataAction,
+  inregistreazaAutodidactAction,
+  pretAutodidactAction,
+} from '@/app/actions/abonamente'
+import { cursuri, module as moduleCurriculum } from '@/lib/mockData'
+import { ZILE_ACCES } from '@/lib/autodidact'
 
 interface Props {
   cursantId: string
@@ -15,6 +21,9 @@ export default function AdaugaPlataButton({ cursantId, numarCursant, onSaved }: 
   const [open, setOpen] = useState(false)
   const [saving, setSaving] = useState(false)
   const [error, setError] = useState<string | null>(null)
+  const [mod, setMod] = useState<'sedinte' | 'autodidact'>('sedinte')
+  const [modulId, setModulId] = useState('')
+  const [pretMotiv, setPretMotiv] = useState<string | null>(null)
   const [form, setForm] = useState({
     suma: '',
     data_plata: new Date().toISOString().split('T')[0],
@@ -24,7 +33,56 @@ export default function AdaugaPlataButton({ cursantId, numarCursant, onSaved }: 
     nota: '',
   })
 
+  /** Propune prețul autodidact (200 / 150 / 100) în funcție de istoricul cursantului. */
+  const propunePret = async (dataPlata: string) => {
+    const r = await pretAutodidactAction(cursantId, dataPlata)
+    if (r.ok) {
+      setForm(f => ({ ...f, suma: String(r.pret) }))
+      setPretMotiv(r.motiv)
+    }
+  }
+
+  const alegeMod = (m: 'sedinte' | 'autodidact') => {
+    setMod(m)
+    setError(null)
+    if (m === 'autodidact') void propunePret(form.data_plata)
+    else {
+      setPretMotiv(null)
+      setForm(f => ({ ...f, suma: '' }))
+    }
+  }
+
   const handleSave = async () => {
+    if (mod === 'autodidact') {
+      if (!modulId) {
+        setError('Alege modulul pentru abonamentul autodidact')
+        return
+      }
+      if (!form.suma || isNaN(Number(form.suma)) || Number(form.suma) <= 0) {
+        setError('Introduceți o sumă validă')
+        return
+      }
+      setSaving(true)
+      setError(null)
+      const r = await inregistreazaAutodidactAction({
+        cursant_id: cursantId,
+        modul_id: modulId,
+        suma: Number(form.suma),
+        data_plata: form.data_plata,
+        metoda: form.metoda,
+        nota: form.nota,
+      })
+      setSaving(false)
+      if (!r.ok) {
+        setError(r.error)
+        return
+      }
+      setOpen(false)
+      setModulId('')
+      setForm({ ...form, suma: '', nota: '' })
+      onSaved?.()
+      return
+    }
     if (!form.suma || isNaN(Number(form.suma)) || Number(form.suma) <= 0) {
       setError('Introduceți o sumă validă')
       return
@@ -74,10 +132,33 @@ export default function AdaugaPlataButton({ cursantId, numarCursant, onSaved }: 
               </button>
             </div>
 
-            <p className="text-sm text-slate-400 mb-4">
-              Pentru {numarCursant}. Ședințele se <strong className="text-slate-600">adăugă</strong> la
-              soldul existent (ex. 2 rămase + 4 plătite = 6).
-            </p>
+            <div className="flex gap-2 mb-4">
+              {([
+                ['sedinte', 'Ședințe'],
+                ['autodidact', 'Autodidact'],
+              ] as const).map(([k, label]) => (
+                <button
+                  key={k}
+                  type="button"
+                  onClick={() => alegeMod(k)}
+                  className={`flex-1 py-2 rounded-xl border-2 font-semibold text-sm transition-all ${mod === k ? 'border-emerald-500 bg-emerald-50 text-emerald-700' : 'border-slate-200 text-slate-500'}`}
+                >
+                  {label}
+                </button>
+              ))}
+            </div>
+
+            {mod === 'sedinte' ? (
+              <p className="text-sm text-slate-400 mb-4">
+                Pentru {numarCursant}. Ședințele se <strong className="text-slate-600">adăugă</strong> la
+                soldul existent (ex. 2 rămase + 4 plătite = 6).
+              </p>
+            ) : (
+              <p className="text-sm text-slate-400 mb-4">
+                Pentru {numarCursant}. Se deschid <strong className="text-slate-600">toate lecțiile</strong>{' '}
+                modulului pentru {ZILE_ACCES} de zile. Nu se scad ședințe.
+              </p>
+            )}
 
             {error && (
               <p className="text-sm text-amber-700 bg-amber-50 border border-amber-100 rounded-lg px-3 py-2 mb-4">
@@ -97,6 +178,8 @@ export default function AdaugaPlataButton({ cursantId, numarCursant, onSaved }: 
                 />
               </div>
 
+              {mod === 'sedinte' && (
+              <>
               <div>
                 <label className="block text-sm font-medium text-slate-700 mb-2">Tip abonament</label>
                 <div className="flex gap-3">
@@ -141,6 +224,37 @@ export default function AdaugaPlataButton({ cursantId, numarCursant, onSaved }: 
                   </div>
                 </div>
               )}
+              </>
+              )}
+
+              {mod === 'autodidact' && (
+                <div>
+                  <label className="block text-sm font-medium text-slate-700 mb-1.5">Modul *</label>
+                  <select
+                    value={modulId}
+                    onChange={e => setModulId(e.target.value)}
+                    className="w-full border border-slate-200 rounded-xl px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 bg-white"
+                  >
+                    <option value="">Alege modulul…</option>
+                    {cursuri
+                      .filter(c => moduleCurriculum.some(m => m.curs_id === c.id))
+                      .map(c => (
+                        <optgroup key={c.id} label={c.nume}>
+                          {moduleCurriculum
+                            .filter(m => m.curs_id === c.id)
+                            .sort((a, b) => a.ordine - b.ordine)
+                            .map(m => (
+                              <option key={m.id} value={m.id}>
+                                {m.nume}
+                              </option>
+                            ))}
+                        </optgroup>
+                      ))}
+                  </select>
+                  {pretMotiv && <p className="text-xs text-emerald-700 mt-1.5">{pretMotiv}</p>}
+                </div>
+              )}
+
 
               <div>
                 <label className="block text-sm font-medium text-slate-700 mb-2">Metodă de plată</label>
@@ -163,7 +277,10 @@ export default function AdaugaPlataButton({ cursantId, numarCursant, onSaved }: 
                 <input
                   type="date"
                   value={form.data_plata}
-                  onChange={e => setForm({ ...form, data_plata: e.target.value })}
+                  onChange={e => {
+                    setForm({ ...form, data_plata: e.target.value })
+                    if (mod === 'autodidact' && e.target.value) void propunePret(e.target.value)
+                  }}
                   className="w-full border border-slate-200 rounded-xl px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-emerald-500"
                 />
               </div>

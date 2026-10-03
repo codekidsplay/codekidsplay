@@ -107,6 +107,14 @@ export type ProgresCursantData = {
     lectie_id: string | null
     nota: string | null
   }>
+  /** Accesuri „Autodidact” (modul întreg, 30 de zile). Valabilitatea o decide clientul/UI pe dată. */
+  autodidact: Array<{
+    id: string
+    modul_id: string
+    curs_id: string
+    data_start: string
+    data_sfarsit: string
+  }>
 }
 
 export async function getProgresCursantAction(
@@ -132,6 +140,13 @@ export async function getProgresCursantAction(
         .order('data', { ascending: false }),
     ])
 
+  // Tabel lipsă (migrare nerulată) → fără accesuri autodidact
+  const { data: autodidactRows } = await client
+    .from('acces_autodidact')
+    .select('id, modul_id, curs_id, data_start, data_sfarsit')
+    .eq('cursant_id', cursantId)
+    .order('data_sfarsit', { ascending: false })
+
   let ab: ProgresCursantData['abonament'] = null
   const aboActiv = (abonamente ?? []).find(a => a.activ) ?? null
   const areConsum = (sedinte ?? []).some(s => s.consuma_sedinta)
@@ -154,6 +169,7 @@ export async function getProgresCursantAction(
       progres: progres ?? [],
       abonament: ab,
       sedinte: sedinte ?? [],
+      autodidact: autodidactRows ?? [],
     },
   }
 }
