@@ -19,7 +19,7 @@ export default function TermeniPage() {
           Termeni și condiții
         </h1>
         <p className="text-[var(--ckp-muted)] text-sm mb-10">
-          Code Kids Play Focșani · Ultima actualizare: septembrie 2026
+          Code Kids Play Focșani · Ultima actualizare: octombrie 2026
         </p>
 
         <div className="space-y-8 text-[var(--ckp-ink-soft)] text-base leading-relaxed">
@@ -96,6 +96,13 @@ export default function TermeniPage() {
               <li><strong>Micii Programatori (12+ ani):</strong> C++, Arduino, Unity (C#), Roblox Studio (Lua).</li>
             </ul>
             <p className="mt-2">
+              <strong>Vârsta recomandată:</strong> fiecare curs și modul este conceput pentru o anumită categorie de vârstă
+              și un anumit nivel de pregătire. Recomandăm respectarea vârstei și a modulelor recomandate, în ordinea din
+              programă, pentru ca cel mic să înțeleagă lecțiile și să progreseze firesc. Această recomandare se aplică atât
+              grupelor din atelier, cât și abonamentului Autodidact. Echipa Code Kids Play vă poate îndruma către modulul
+              potrivit la înscriere.
+            </p>
+            <p className="mt-2">
               Numărul optim pentru desfășurarea unei grupe este de minimum 6 cursanți. În cazul în care o grupă nu întrunește
               acest număr, ne rezervăm dreptul de a propune reprogramarea orarului sau comasarea cu o grupă compatibilă,
               cu acordul prealabil al părinților.
@@ -136,7 +143,8 @@ export default function TermeniPage() {
                 <p>
                   <strong>1 modul · 10 lecții · 20 de ore de programare disponibile 30 de zile:</strong> 200 lei{' '}
                   <span className="text-[var(--ckp-muted)]">(echivalent 10 lei / ora de programare)</span>. Toate lecțiile modulului se
-                  deschid din prima zi, iar accesul se închide automat după 30 de zile. La final, cursantul își prezintă proiectul la club.
+                  deschid din prima zi, iar accesul se închide automat după 30 de zile. Accesul este personal, iar lecțiile nu pot fi
+                  copiate sau distribuite (vezi secțiunea 11). Recomandăm alegerea modulului potrivit vârstei cursantului (secțiunea 4). La final, cursantul își prezintă proiectul la club.
                 </p>
                 <p className="text-xs text-[var(--ckp-ink-soft)]">
                   Modulul următor costă 150 lei, iar al treilea și următoarele 100 lei, dacă sunt achiziționate în cel mult 5 zile de la
@@ -274,6 +282,18 @@ export default function TermeniPage() {
               <strong>Materialele atelierului:</strong> Structura cursurilor, suporturile didactice, aplicațiile demonstrative
               și conținutul platformei sunt proprietatea Code Kids Play și sunt destinate exclusiv învățării individuale,
               fiind interzisă reproducerea sau comercializarea lor fără acord scris.
+            </p>
+            <p className="mt-2">
+              <strong>Interdicția de copiere și distribuire:</strong> Lecțiile, textele, înregistrările audio, imaginile,
+              exercițiile și celelalte materiale Code Kids Play (inclusiv cele din abonamentul Autodidact) nu pot fi copiate,
+              descărcate în vederea redistribuirii, fotografiate sau capturate, înregistrate, traduse, modificate, publicate
+              online (site-uri, rețele sociale, grupuri, platforme de partajare) ori transmise unor terțe persoane, gratuit
+              sau contra cost. Contul și accesul la platformă sunt personale și nu pot fi cedate sau împărțite cu alți copii.
+            </p>
+            <p className="mt-2">
+              Încălcarea acestor reguli poate duce la suspendarea sau închiderea accesului, fără returnarea sumelor achitate,
+              și la tragerea la răspundere conform legii, inclusiv Legea nr. 8/1996 privind dreptul de autor și drepturile
+              conexe.
             </p>
             <p className="mt-2">
               <strong>Materiale foto/video:</strong> În cadrul atelierelor se pot realiza ocazional fotografii sau scurte
