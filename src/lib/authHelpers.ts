@@ -40,6 +40,7 @@ export function genereazaParola(len = 8): string {
 }
 
 const SITE_LOGIN_URL = 'https://codekidsplay.ro/login'
+const SITE_TERMENI_URL = 'https://codekidsplay.ro/termeni'
 
 export function mesajWhatsAppLogin(opts: {
   prenume: string
@@ -61,6 +62,7 @@ export function mesajWhatsAppLogin(opts: {
     `PIN: ${opts.pin}`,
     ``,
     `🔗 Intrați aici: ${SITE_LOGIN_URL}`,
+    `📄 Termeni și condiții: ${SITE_TERMENI_URL}`,
     ``,
     `Mulțumim și mult succes! 🚀`,
     `Echipa Code Kids Play`,
