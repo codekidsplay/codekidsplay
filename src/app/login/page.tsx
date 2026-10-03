@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 import {
@@ -28,6 +28,11 @@ function persistSession(session: Session) {
 export default function LoginForm() {
   const router = useRouter()
   const [tab, setTab] = useState<Tab>('adult')
+
+  // /login?tip=elev deschide direct fila Elev (link din pagina părintelui)
+  useEffect(() => {
+    if (new URLSearchParams(window.location.search).get('tip') === 'elev') setTab('elev')
+  }, [])
   const [error, setError] = useState('')
   const [loading, setLoading] = useState(false)
 

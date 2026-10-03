@@ -11,7 +11,7 @@ import { listCopiiParinteAction, type CopilParinte } from '@/app/actions/cursant
 import { getProgresCursantAction, type ProgresCursantData } from '@/app/actions/progres'
 import { rezumatDinProgres } from '@/lib/progresLive'
 import { isSupabaseConfiguredClient } from '@/lib/supabase/publicFlag'
-import { ArrowRight, Users } from 'lucide-react'
+import { ArrowRight, Gamepad2, Users } from 'lucide-react'
 
 type CopilCard = CopilParinte & { progres?: ProgresCursantData }
 
@@ -154,13 +154,24 @@ function ParinteHome() {
           )}
         </div>
 
-        <p className="mt-8 text-sm text-slate-400">
-          Elevul se loghează separat cu username + PIN pe{' '}
-          <Link href="/login" className="text-sky-600 underline">
-            Login → Elev
+        <div className="mt-8 flex flex-col gap-4 rounded-2xl border-2 border-sky-200 bg-sky-50 p-5 sm:flex-row sm:items-center">
+          <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl bg-sky-500 text-white">
+            <Gamepad2 size={24} />
+          </div>
+          <div className="min-w-0 flex-1">
+            <p className="font-bold text-sky-950">Contul copilului</p>
+            <p className="mt-0.5 text-sm text-sky-900">
+              Copilul se loghează <strong>separat</strong>, cu <strong>username + PIN</strong>, la
+              secțiunea <strong>Login → Elev</strong>. Datele le-ai primit pe WhatsApp la înscriere.
+            </p>
+          </div>
+          <Link
+            href="/login?tip=elev"
+            className="inline-flex flex-shrink-0 items-center justify-center gap-2 rounded-xl bg-sky-600 px-5 py-3 font-semibold text-white transition-colors hover:bg-sky-700"
+          >
+            Login elev <ArrowRight size={18} />
           </Link>
-          .
-        </p>
+        </div>
       </main>
     </div>
   )
