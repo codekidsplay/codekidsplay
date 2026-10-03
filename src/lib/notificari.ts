@@ -12,16 +12,19 @@ export function mesajSedinteEpuizate(prenumeCopil: string): string {
 Pentru ${prenumeCopil} a fost ultima sedinta, va asteptam in continuare cu urmatoarea oferta:
 
 Detalii abonamente Code Kids Play Focsani:
-✅ 4 sedinte - 8 ore - 350 lei / 43.75 lei ora de programare
+✅ 4 sedinte - 8 ore - 300 lei / 37,5 lei ora de programare
 
-✅ 8 sedinte - 16 ore - 700 lei + 1 sedinta bonus (2 ore) / 38.8 lei ora de programare
+✅ 9 sedinte - 18 ore - 600 lei / 33.3 lei ora de programare
 
-✅ 12 sedinte - 24 ore - 1050 lei + 2 sedinte bonus (4 ore) / 37.5 lei ora de programare
+✅ 14 sedinte - 28 ore - 900 lei / 32.1 lei ora de programare
 
+✅ 19 sedinte - 38 ore - 1200 lei / 31.5 lei ora de programare
 
-🎁 Bonus: + 1 sedinta gratuita la recomandare iar acel copil se inscrie.
-🎁 Bonus: + 1 sedinta cadou la ziua de nastere
+🎁 Bonus: + 1 sedinta gratuita la recomandare iar acel copil se inscrie la curs.
+🎁 Bonus: + 1 sedinta cadou la ziua de nastere.
 🎁 Bonus: un cadou surpriză la terminarea anumitor module.
+
+Sedinta dureaza 2 ore.
 
 ${textPrezentaObligatorie()}
 

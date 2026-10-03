@@ -119,17 +119,22 @@ export default function TermeniPage() {
               <p className="font-semibold text-[var(--ckp-ink)]">Pachetele de abonament disponibile:</p>
               <ul className="space-y-1.5 list-disc pl-5">
                 <li>
-                  <strong>Abonament 4 ședințe (8 ore):</strong> 350 lei <span className="text-[var(--ckp-muted)]">(echivalent ~43,75 lei / ora de programare)</span>
+                  <strong>Abonament 4 ședințe (8 ore):</strong> 300 lei <span className="text-[var(--ckp-muted)]">(echivalent ~37,5 lei / ora de programare)</span>
                 </li>
                 <li>
-                  <strong>Abonament 8 ședințe (16 ore):</strong> 700 lei + <strong>1 ședință BONUS inclusă (2 ore gratuite)</strong> <span className="text-[var(--ckp-muted)]">(echivalent ~38,8 lei / ora de programare)</span>
+                  <strong>Abonament 9 ședințe (18 ore):</strong> 600 lei <span className="text-[var(--ckp-muted)]">(echivalent ~33,3 lei / ora de programare)</span>
                 </li>
                 <li>
-                  <strong>Abonament 12 ședințe (24 ore):</strong> 1.050 lei + <strong>2 ședințe BONUS incluse (4 ore gratuite)</strong> <span className="text-[var(--ckp-muted)]">(echivalent ~37,5 lei / ora de programare)</span>
+                  <strong>Abonament 14 ședințe (28 ore):</strong> 900 lei <span className="text-[var(--ckp-muted)]">(echivalent ~32,1 lei / ora de programare)</span>
+                </li>
+                <li>
+                  <strong>Abonament 19 ședințe (38 ore):</strong> 1.200 lei <span className="text-[var(--ckp-muted)]">(echivalent ~31,5 lei / ora de programare)</span>
                 </li>
               </ul>
               <div className="pt-2 border-t border-[var(--ckp-ink)]/10 text-xs text-[var(--ckp-ink-soft)] space-y-1">
                 <p>🎁 <strong>Bonus Recomandare:</strong> +1 ședință gratuită (2 ore) pentru fiecare prieten recomandat care se înscrie la cursuri.</p>
+                <p>🎁 <strong>Bonus ziua de naștere:</strong> +1 ședință cadou.</p>
+                <p>🎁 <strong>Cadou surpriză</strong> la terminarea anumitor module.</p>
               </div>
             </div>
             <p className="mt-3">

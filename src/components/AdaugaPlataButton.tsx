@@ -121,7 +121,7 @@ export default function AdaugaPlataButton({ cursantId, numarCursant, onSaved }: 
                 <div>
                   <label className="block text-sm font-medium text-slate-700 mb-1.5">Număr ședințe incluse</label>
                   <div className="flex gap-2">
-                    {['8', '10', '12'].map(n => (
+                    {['9', '14', '19'].map(n => (
                       <button
                         key={n}
                         type="button"
@@ -133,7 +133,7 @@ export default function AdaugaPlataButton({ cursantId, numarCursant, onSaved }: 
                     ))}
                     <input
                       type="number"
-                      value={!['8', '10', '12'].includes(form.sedinte_incluse) ? form.sedinte_incluse : ''}
+                      value={!['9', '14', '19'].includes(form.sedinte_incluse) ? form.sedinte_incluse : ''}
                       onChange={e => setForm({ ...form, sedinte_incluse: e.target.value })}
                       placeholder="alt nr"
                       className="flex-1 border border-slate-200 rounded-xl px-3 py-2 text-sm text-center focus:outline-none focus:ring-2 focus:ring-violet-500"
