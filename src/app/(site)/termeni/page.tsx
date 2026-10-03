@@ -270,6 +270,11 @@ export default function TermeniPage() {
               pleacă singur și, după caz, ora. Prin acest mesaj, părintele își asumă responsabilitatea deplasării copilului.
             </p>
             <p className="mt-2">
+              Pentru copiii care vin sau pleacă singuri în mod regulat, părintele poate trimite un singur mesaj scris
+              valabil pe perioada indicată în mesaj (de exemplu, întregul semestru sau anul școlar), cu precizarea zilelor și
+              a orelor. Părintele poate retrage oricând această permisiune printr-un nou mesaj scris către profesor.
+            </p>
+            <p className="mt-2">
               Fără un astfel de mesaj, copilul este predat exclusiv părintelui sau unei persoane majore desemnate de acesta.
             </p>
           </section>
