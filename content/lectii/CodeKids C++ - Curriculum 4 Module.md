@@ -1,7 +1,7 @@
 # CodeKids C++ — Curriculum 4 Module
-**Vârsta țintă:** 10–13 ani  
-**Format:** 4 module × 10 lecții × ~2 ore  
-**Total:** 40 lecții (~80 ore)
+**Vârsta țintă:** 12+ ani  
+**Format:** 5 module × 10 lecții × ~2 ore  
+**Total:** 50 lecții (~100 ore)
 
 > Principiu: o idee nouă pe lecție, multe exemple, exerciții practice, probleme tip pbinfo (unde e cazul), proiect mic la final de modul.
 
@@ -12,9 +12,10 @@
 | Modul | Titlu | Focus | Rezultat |
 |-------|--------|--------|----------|
 | **1** | Bazele C++ | Consolă, variabile, condiții | Programe scurte cu `cin`/`cout` și `if` |
-| **2** | Bucle și vectori | Repetiție + date multiple | Probleme cu numărări, sume, array 1D |
+| **2** | Bucle și vectori | Repetiție + date multiple | Probleme cu numărări, sume, array 1D (vectori „clasici”) |
 | **3** | Funcții, string, algoritmi | Modularizare + text | Cod organizat, probleme mai complexe |
-| **4** | Proiecte și autonomie | Fișiere, structuri, proiecte | Mini-aplicații complete la consolă |
+| **4** | Proiecte și autonomie | Fișiere, `std::vector`, structuri, proiecte | Mini-aplicații complete la consolă |
+| **5** | Proiect RPG în consolă | Un singur joc, construit pe 10 lecții | Joc de aventură cu hartă, inventar, luptă și salvare |
 
 ---
 
@@ -69,9 +70,9 @@
 | L25 | String — căutare și litere | Parcurgere caracter cu caracter | Numără vocale |
 | L26 | Algoritmi pe cifre | Extragere cifre, sumă cifre, oglindit | Probleme tip olimpiadă ușoară |
 | L27 | Divizibilitate + numere prime (intro) | `%`, divizori | Este prim? |
-| L28 | Probleme combinate | `if` + bucle + funcții | Set pbinfo / antrenament |
+| L28 | Numere aleatoare (`rand`) + probleme combinate | `rand()`, `srand(time(0))`, `%` pentru un interval, zar, monedă | Zar virtual + set pbinfo / antrenament |
 | L29 | Debugging + stil de cod | Erori tipice, indentare, nume clare | Repară 5 programe greșite |
-| L30 | Recapitulare Modul 3 | Mix | **Mini-proiect:** Generator parole / cifruri litere |
+| L30 | Recapitulare Modul 3 | Mix | **Mini-proiect:** Generator parole (cu `rand`) / cifruri litere |
 
 ---
 
@@ -80,10 +81,10 @@
 
 | # | Titlu | Conținut | Proiect / exercițiu cheie |
 |---|--------|----------|---------------------------|
-| L31 | Fișiere text — citire | `ifstream`, citire linie/valori | Citește date din fișier |
-| L32 | Fișiere text — scriere | `ofstream`, salvare rezultate | Scrie raport note |
+| L31 | Fișiere text — citire și scriere | `ifstream`, `ofstream`, citire valori/linii, salvare rezultate | Citește note din fișier și scrie un raport |
+| L32 | `vector` din STL | `#include <vector>`, `push_back`, `size()`, `[ ]`, parcurgere, `pop_back`, `clear` | Listă de note care crește fără limită |
 | L33 | Structuri (`struct`) | Date grupate | Elev: nume + notă |
-| L34 | Vector de structuri | Listă de obiecte | Catalog cu nume+note |
+| L34 | `vector` de structuri | Listă de obiecte, adăugare, căutare, ștergere | Catalog cu nume + note |
 | L35 | Meniuri + stare program | Loop principal, opțiuni | Schelet aplicație |
 | L36 | Proiect A — Joc pe consolă | Logică joc, scor, reguli | Ghici numărul / X și 0 simplu |
 | L37 | Proiect B — Magazin / inventar | CRUD simplu pe listă | Adaugă / listează / caută produs |
@@ -93,7 +94,32 @@
 
 ---
 
-## Ritmul recomandat (10–13 ani)
+# MODULUL 5 — Proiect RPG în consolă
+**Obiectiv:** să construiască, lecție cu lecție, un joc de aventură complet, folosind tot ce a învățat.  
+**Format:** un singur proiect pe 10 lecții; la finalul fiecărei lecții jocul **rulează** într-o versiune nouă.  
+**Pre-cerință:** Modulele 1–4 (în special funcții, `vector`, `struct`, fișiere, `rand`). Badge: **RPG Creator**.
+
+| # | Titlu | Conținut | Ce are jocul la final de lecție |
+|---|--------|----------|----------------------------------|
+| L41 | Ideea jocului + harta | Povestea, camere, meniu principal, planul proiectului | Meniu + harta desenată în consolă |
+| L42 | Jucătorul (`struct`) | Nume, viață, scor, afișare stare | Jucător creat și afișat |
+| L43 | Mișcarea între camere | `switch`, bucla principală, hartă cu camere | Te plimbi prin 5–6 camere |
+| L44 | Obiecte și inventar | `vector`, adăugare/ștergere, afișare | Găsești și folosești obiecte |
+| L45 | Monștri și luptă | `rand()`, funcții, tururi, viață | Luptă cu un monstru |
+| L46 | Magazin și monede | Cumpărare/vânzare, validări | Magazin cu 4–5 produse |
+| L47 | Misiuni și condiții de câștig | Stări, `bool`, mesaje finale | Poți câștiga sau pierde jocul |
+| L48 | Salvare și încărcare | `ifstream`, `ofstream` | Continuă jocul de unde l-ai lăsat |
+| L49 | Curățare cod + depanare | Funcții clare, comentarii, testare, bug-uri | Cod ordonat, fără erori |
+| L50 | Prezentare + finalul jocului | Demo, feedback colegilor, îmbunătățiri | **Jocul final prezentat** |
+
+**Reguli ale proiectului**
+- Fiecare lecție se încheie cu o versiune funcțională salvată (`Joc_L41.cpp`, `Joc_L42.cpp`…).
+- Elevul alege tema (fantasy, spațiu, pirați, școală etc.) și personalizează povestea și numele.
+- Fără grafică: totul se desfășoară în consolă, ca să meargă pe orice calculator.
+
+---
+
+## Ritmul recomandat (12+ ani)
 
 | Aspect | Recomandare |
 |--------|-------------|
@@ -106,8 +132,8 @@
 | Pauză mentală | 1 joc/desen ASCII sau challenge scurt / lecție |
 
 ### Pași pe vârste
-- **10–11 ani:** ritm mai lent, mai multe desene/jocuri, mai puține pbinfo grele  
-- **12–13 ani:** mai multe probleme competitive ușoare în Modulele 2–3  
+- **12–13 ani:** ritm normal, mai multe desene/jocuri în Modulul 1 și probleme competitive ușoare în Modulele 2–3  
+- **14+ ani:** mai multe probleme tip pbinfo, proiecte mai ambițioase în Modulul 4  
 
 ---
 
@@ -119,20 +145,22 @@
 | 2 | Catalog note (vector + bucle) |
 | 3 | Set 5 probleme + mini-proiect string/funcții |
 | 4 | Proiect final prezentat (10–15 min) |
+| 5 | Joc RPG funcțional + demo (10–15 min) |
 
 **Diploma / badge sugerat:**
 - Modul 1 → *Junior Coder*
 - Modul 2 → *Loop Master*
 - Modul 3 → *Problem Solver*
 - Modul 4 → *CodeKids Graduate*
+- Modul 5 → *RPG Creator*
 
 ---
 
-## Ce NU bagăm (încă) la 10–13 ani
+## Ce NU bagăm (încă) la 12+ ani
 
 - Pointeri avansați  
 - OOP greu (clase/moștenire detaliată)  
-- STL complex (`map`, `set` etc.) — eventual doar menționat  
+- STL complex (`map`, `set`, algoritmi) — eventual doar menționat; **`vector` se învață** în Modulul 4  
 - Template-uri, smart pointers, multithreading  
 
 > Focus: **logică + practică + încredere**, nu sintaxă avansată.

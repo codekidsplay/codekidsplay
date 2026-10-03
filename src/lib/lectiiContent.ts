@@ -4,6 +4,7 @@ import path from 'path'
 /** Mapare modul (mockData) → folder relativ în content/lectii */
 const MODUL_FOLDER: Record<string, string> = {
   m1: 'cpp/modul1',
+  m2: 'cpp/modul2',
   m12: 'robotica-lego/modul1',
   m13: 'robotica-lego/modul2',
   m16: 'scratch/modul1',

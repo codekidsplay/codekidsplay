@@ -67,11 +67,12 @@ export const cursBlurbLanding: Record<string, string> = {
 }
 
 export const module = [
-  // C++ — curriculum 4 module × 10 lecții (10–13 ani)
+  // C++ — curriculum 5 module × 10 lecții (12+ ani; M5 = proiect RPG)
   { id: 'm1', curs_id: 'c1', nume: 'Modul 1 — Bazele C++', ordine: 1, badge: 'Junior Coder' },
   { id: 'm2', curs_id: 'c1', nume: 'Modul 2 — Bucle și vectori', ordine: 2, badge: 'Loop Master' },
   { id: 'm14', curs_id: 'c1', nume: 'Modul 3 — Funcții, string, algoritmi', ordine: 3, badge: 'Problem Solver' },
   { id: 'm15', curs_id: 'c1', nume: 'Modul 4 — Proiecte și autonomie', ordine: 4, badge: 'CodeKids Graduate' },
+  { id: 'm34', curs_id: 'c1', nume: 'Modul 5 — Proiect RPG în consolă', ordine: 5, badge: 'RPG Creator' },
   // Arduino
   { id: 'm3', curs_id: 'c2', nume: 'Arduino Modul 1 - Introducere în electronică', ordine: 1 },
   { id: 'm4', curs_id: 'c2', nume: 'Arduino Modul 2 - Proiecte Arduino', ordine: 2 },
@@ -234,14 +235,14 @@ export const lectii = [
     'String — căutare și litere',
     'Algoritmi pe cifre',
     'Divizibilitate + numere prime',
-    'Probleme combinate',
+    'Numere aleatoare (rand) + probleme combinate',
     'Debugging + stil de cod',
     'Recapitulare Modul 3 — mini-proiect',
   ]),
   // C++ Modul 4 — Proiecte
   ...genLectii('m15', [
-    'Fișiere text — citire',
-    'Fișiere text — scriere',
+    'Fișiere text — citire și scriere',
+    'Vector din STL (std::vector)',
     'Structuri (struct)',
     'Vector de structuri',
     'Meniuri + stare program',
@@ -250,6 +251,19 @@ export const lectii = [
     'Proiect C — Quiz educațional',
     'Optimizare + prezentare',
     'Showcase final',
+  ]),
+  // C++ Modul 5 — Proiect RPG în consolă (un singur proiect, 10 lecții)
+  ...genLectii('m34', [
+    'Ideea jocului + harta',
+    'Jucătorul (struct): nume, viață, scor',
+    'Mișcarea între camere',
+    'Obiecte și inventar (vector)',
+    'Monștri și luptă (rand)',
+    'Magazin și monede',
+    'Misiuni și condiții de câștig',
+    'Salvare și încărcare (fișiere)',
+    'Curățare cod + depanare',
+    'Prezentare + finalul jocului',
   ]),
   ...genLectii('m3', ['Ce este Arduino?', 'Primul program - LED Blink', 'Intrări digitale - buton', 'Semnale analogice', 'Senzor de temperatură', 'Display LCD', 'Motor servo', 'Senzor ultrasonic', 'Comunicare serială', 'Proiect final modul 1']),
   ...genLectii('m4', ['Proiect stație meteo', 'Proiect alarmă', 'Proiect mână robotică', 'Proiect joc reflexe', 'Proiect semafor inteligent', 'Proiect cântărire digitală', 'Comunicare Bluetooth', 'Proiect muzicuță', 'Proiect animație LED', 'Proiect final modul 2']),
