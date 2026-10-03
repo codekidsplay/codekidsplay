@@ -5,7 +5,8 @@ import { createClient } from '@/lib/supabase/server'
 import { isSupabaseConfigured } from '@/lib/supabase/env'
 import { defaultModulPentruCurs } from '@/lib/curriculum'
 import { lectii } from '@/lib/mockData'
-import { mesajSedinteEpuizate, trimiteEmailSedinteEpuizate } from '@/lib/notificari'
+import { mesajSedinteEpuizate } from '@/lib/notificari'
+import { trimiteEmailSedinteEpuizateReal } from '@/lib/emailResend'
 import { calculeazaSoldCursant } from '@/lib/soldSedinte'
 
 function todayISO(): string {
@@ -387,18 +388,22 @@ export async function bifareLectieAction(cursantId: string, lectieId: string): P
         .gte('trimis_la', startZi)
         .maybeSingle()
       if (!dejaAzi) {
-        await client.from('notificari_email').insert({
-          cursant_id: cursantId,
-          tip: 'sedinte_epuizate',
-          email_catre: cursant.email_parinte,
-          sedinte_ramase: ramase ?? 0,
-        })
-        await trimiteEmailSedinteEpuizate({
+        const rez = await trimiteEmailSedinteEpuizateReal({
           emailParinte: cursant.email_parinte,
           prenumeCopil: cursant.prenume,
-          sedinteRamase: ramase ?? 0,
         })
-        emailTrimis = true
+        if (rez.ok) {
+          // Înregistrăm doar emailurile trimise efectiv (altfel se reîncearcă la următoarea bifare)
+          await client.from('notificari_email').insert({
+            cursant_id: cursantId,
+            tip: 'sedinte_epuizate',
+            email_catre: cursant.email_parinte,
+            sedinte_ramase: ramase ?? 0,
+          })
+          emailTrimis = true
+        } else {
+          console.warn('[email] ședințe epuizate netrimis:', rez.error)
+        }
       }
     } else if (alertaSold) {
       whatsappMesaj = mesajSedinteEpuizate(cursant.prenume)
