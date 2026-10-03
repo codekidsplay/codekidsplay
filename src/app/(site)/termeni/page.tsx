@@ -265,8 +265,12 @@ export default function TermeniPage() {
               preluarea acestora de la sediul atelierului imediat la finalizarea orei.
             </p>
             <p className="mt-2">
-              În cazul în care părintele dorește ca minorul să vină sau să plece neînsoțit de la atelier, va completa
-              un acord scris prealabil în care își asumă responsabilitatea deplasării copilului.
+              În cazul în care părintele dorește ca minorul să vină sau să plece neînsoțit de la atelier, va anunța
+              profesorul înainte, printr-un mesaj scris (WhatsApp, SMS sau email), precizând dacă minorul vine și/sau
+              pleacă singur și, după caz, ora. Prin acest mesaj, părintele își asumă responsabilitatea deplasării copilului.
+            </p>
+            <p className="mt-2">
+              Fără un astfel de mesaj, copilul este predat exclusiv părintelui sau unei persoane majore desemnate de acesta.
             </p>
           </section>
 
