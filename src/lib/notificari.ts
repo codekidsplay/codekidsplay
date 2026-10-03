@@ -24,7 +24,7 @@ Detalii abonamente Code Kids Play Focsani:
 🎁 Bonus: + 1 sedinta cadou la ziua de nastere.
 🎁 Bonus: un cadou surpriză la terminarea anumitor module.
 
-Sedinta dureaza 2 ore.
+⏱️ Sedinta dureaza 2 ore.
 
 ${textPrezentaObligatorie()}
 
