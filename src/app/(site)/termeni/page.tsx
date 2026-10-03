@@ -135,7 +135,7 @@ export default function TermeniPage() {
                   <strong>Abonament 14 ședințe (28 ore):</strong> 900 lei <span className="text-[var(--ckp-muted)]">(echivalent ~32,1 lei / ora de programare)</span>
                 </li>
                 <li>
-                  <strong>Abonament 19 ședințe (38 ore):</strong> 1.200 lei <span className="text-[var(--ckp-muted)]">(echivalent ~31,5 lei / ora de programare)</span>
+                  <strong>Abonament 19 ședințe (38 ore):</strong> 1200 lei <span className="text-[var(--ckp-muted)]">(echivalent ~31,5 lei / ora de programare)</span>
                 </li>
               </ul>
               <div className="pt-2 border-t border-[var(--ckp-ink)]/10 space-y-1.5">
