@@ -1,55 +1,55 @@
-/** Template + canale notificare părinte — Code Kids Play Focsani */
+/** Template + canale notificare părinte — Code Kids Play Focșani */
 
 /** Folosit în email + WhatsApp (înscriere, oferte, ședințe epuizate) */
 export function textPrezentaObligatorie(): string {
   return `Prezența la curs este obligatorie pe durata anului școlar.
-În caz de absență, cursantul recuperează lecția pe platforma Code Kids Play Focsani.`
+În caz de absență, cursantul recuperează lecția pe platforma Code Kids Play Focșani.`
 }
 
 export function mesajSedinteEpuizate(prenumeCopil: string): string {
-  return `Buna ziua!
+  return `Bună ziua!
 
-Pentru ${prenumeCopil} a fost ultima sedinta, va asteptam in continuare cu urmatoarea oferta:
+Pentru ${prenumeCopil} a fost ultima ședință. Vă așteptăm în continuare cu următoarea ofertă:
 
-Detalii abonamente Code Kids Play Focsani:
-✅ 4 sedinte - 8 ore - 300 lei / 37,5 lei ora de programare
+Detalii abonamente Code Kids Play Focșani:
+✅ 4 ședințe - 8 ore - 300 de lei / 37,5 lei ora de programare
 
-✅ 9 sedinte - 18 ore - 600 lei / 33,3 lei ora de programare
+✅ 9 ședințe - 18 ore - 600 de lei / 33,3 lei ora de programare
 
-✅ 14 sedinte - 28 ore - 900 lei / 32,1 lei ora de programare
+✅ 14 ședințe - 28 de ore - 900 de lei / 32,1 lei ora de programare
 
-✅ 19 sedinte - 38 ore - 1200 lei / 31,5 lei ora de programare
+✅ 19 ședințe - 38 de ore - 1200 de lei / 31,5 lei ora de programare
 
-🚀 Autodidact (acasa, pe platforma) - 1 modul - 10 lectii - 20 ore de programare disponibile 30 de zile - 200 lei / 10 lei ora de programare
+🚀 Autodidact (acasă, pe platformă) - 1 modul - 10 lecții - 20 de ore de programare disponibile 30 de zile - 200 de lei / 10 lei ora de programare
 
-🎁 Bonus: + 1 sedinta gratuita la recomandare iar acel copil se inscrie la curs.
-🎁 Bonus: + 1 sedinta cadou la ziua de nastere.
+🎁 Bonus: +1 ședință gratuită la recomandare, când copilul recomandat se înscrie la curs.
+🎁 Bonus: +1 ședință cadou de ziua de naștere.
 🎁 Bonus: un cadou surpriză la terminarea anumitor module.
 
-⏱️ Sedinta dureaza 2 ore.
+⏱️ Ședința durează 2 ore.
 
 ${textPrezentaObligatorie()}
 
-Multumim!
-Code Kids Play Focsani`
+Mulțumim!
+Code Kids Play Focșani`
 }
 
 /** Mesaj scurt politică / înscriere — email + WhatsApp */
 export function mesajPoliticaPrezenta(): string {
-  return `Buna ziua!
+  return `Bună ziua!
 
 ${textPrezentaObligatorie()}
 
-Multumim!
-Code Kids Play Focsani`
+Mulțumim!
+Code Kids Play Focșani`
 }
 
 export function subiectEmailSedinteEpuizate(prenumeCopil: string): string {
-  return `Code Kids Play Focsani — ședințe epuizate pentru ${prenumeCopil}`
+  return `Code Kids Play Focșani — ședințe epuizate pentru ${prenumeCopil}`
 }
 
 export function subiectEmailPoliticaPrezenta(): string {
-  return `Code Kids Play Focsani — prezența la curs`
+  return `Code Kids Play Focșani — prezența la curs`
 }
 
 /** Stub: în producție → Resend / Supabase Edge Function */
