@@ -28,11 +28,13 @@ Programele reale repetă lucruri tot timpul: desenează 60 de cadre pe secundă,
 | 90–115 | Proiecte (**Exemplele 13–16**) |
 | 115–120 | Recap și temă |
 
+> **Pentru ritm lent sau începători:** în clasă faceți mai întâi cele **8 exemple marcate [Esențial]** (inclusiv proiectul sau exemplul final, acolo unde e cazul). Ele acoperă tot ce trebuie să rămână după lecție. Restul exemplelor sunt pentru cine merge repede sau pentru acasă.
+
 ---
 
 ## 1. De ce avem nevoie de bucle
 
-### Exemplul 1 — Fără buclă și cu buclă
+### Exemplul 1 — Fără buclă și cu buclă **[Esențial]**
 
 Vrei să afișezi de 5 ori mesajul „Salut!”. Fără buclă:
 
@@ -91,7 +93,7 @@ Ordinea în care se execută lucrurile:
 
 Variabila `i` se numește **contor**. O repetare a corpului buclei se numește **iterație**.
 
-### Exemplul 2 — Numerele de la 1 la 10
+### Exemplul 2 — Numerele de la 1 la 10 **[Esențial]**
 
 ```cpp
 #include <iostream>
@@ -113,7 +115,7 @@ int main() {
 
 Poți folosi contorul în interior: aici îl afișăm, urmat de un spațiu. După buclă, `cout << endl;` trece pe rândul următor.
 
-### Exemplul 3 — Ce se întâmplă la fiecare iterație
+### Exemplul 3 — Ce se întâmplă la fiecare iterație **[Esențial]**
 
 ```cpp
 #include <iostream>
@@ -139,7 +141,7 @@ Bucla s-a terminat.
 
 Când `i` devine 5, condiția `i <= 4` este falsă și bucla se oprește. Ultima valoare afișată este 4. Mesajul de după buclă apare o singură dată.
 
-### Exemplul 4 — Numărul de repetări îl alege utilizatorul
+### Exemplul 4 — Numărul de repetări îl alege utilizatorul **[Esențial]**
 
 ```cpp
 #include <iostream>
@@ -209,7 +211,7 @@ A doua formă (`i = 0; i < n`) este foarte răspândită în C++, pentru că vec
 
 ## 3. Variații ale lui `for`
 
-### Exemplul 6 — Numărătoare inversă
+### Exemplul 6 — Numărătoare inversă **[Esențial]**
 
 ```cpp
 #include <iostream>
@@ -232,7 +234,7 @@ Start!
 
 Pentru a număra **descrescător**: pornești de la valoarea mare, condiția folosește `>=` (sau `>`), iar pasul este `i--`.
 
-### Exemplul 7 — Pas diferit de 1
+### Exemplul 7 — Pas diferit de 1 **[Esențial]**
 
 ```cpp
 #include <iostream>
@@ -267,7 +269,7 @@ Numere impare pana la 15: 1 3 5 7 9 11 13 15
 
 `i += 2` înseamnă `i = i + 2` (ai învățat scurtătura în Modulul 1, lecția 3). Pasul poate fi orice număr.
 
-### Exemplul 8 — Între două numere citite
+### Exemplul 8 — Între două numere citite **[Esențial]**
 
 ```cpp
 #include <iostream>
@@ -553,7 +555,7 @@ De la cat numaram? 5
 DECOLARE!
 ```
 
-### Exemplul 16 — Raportul unui an de economii
+### Exemplul 16 — Raportul unui an de economii **[Esențial]**
 
 ```cpp
 /*

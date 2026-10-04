@@ -30,6 +30,8 @@ Aproape fiecare problemă de informatică începe cu „citește mai multe numer
 | 105–118 | Proiecte (**Exemplele 13–16**) |
 | 118–120 | Recap și temă |
 
+> **Pentru ritm lent sau începători:** în clasă faceți mai întâi cele **8 exemple marcate [Esențial]** (inclusiv proiectul sau exemplul final, acolo unde e cazul). Ele acoperă tot ce trebuie să rămână după lecție. Restul exemplelor sunt pentru cine merge repede sau pentru acasă.
+
 ---
 
 ## 1. Acumulatorul: tehnica sumei
@@ -45,7 +47,7 @@ for (...) {
 
 Ca la o pușculiță: începi goală și bagi bani, iar la sfârșit numeri tot ce s-a strâns.
 
-### Exemplul 1 — Suma numerelor de la 1 la n
+### Exemplul 1 — Suma numerelor de la 1 la n **[Esențial]**
 
 ```cpp
 #include <iostream>
@@ -83,7 +85,7 @@ Pașii pentru `n = 4` (urmărește-i pe foaie):
 
 **Foarte important:** `int suma = 0;` se scrie **înaintea** buclei. Dacă l-ai pune în interior, variabila s-ar reseta la `0` la fiecare iterație și ai pierde totalul.
 
-### Exemplul 2 — Suma doar a numerelor pare
+### Exemplul 2 — Suma doar a numerelor pare **[Esențial]**
 
 ```cpp
 #include <iostream>
@@ -154,7 +156,7 @@ Verificare: 3 + 5 + 6 + 9 + 10 + 12 + 15 + 18 + 20 = 98. Un `if` în interiorul 
 
 Pentru **produs**, acumulatorul pornește de la `1`, nu de la `0`. (Dacă ai porni de la 0, orice înmulțire ar da 0.)
 
-### Exemplul 4 — Factorialul
+### Exemplul 4 — Factorialul **[Esențial]**
 
 Factorialul unui număr `n`, scris `n!`, este produsul `1 · 2 · 3 · … · n`. De exemplu, `5! = 1 · 2 · 3 · 4 · 5 = 120`.
 
@@ -185,7 +187,9 @@ n = 5
 
 Merge bine pentru numere mici, dar factorialul crește foarte repede: `10! = 3628800`, `12! = 479001600`.
 
-### Exemplul 5 — Când `int` nu mai ajunge
+> **Notă:** exemplul de mai jos este mai greu și **nu este necesar pentru proiectul lecției**. Dacă te simți nesigur, citește-l doar ca să vezi ce se poate face, apoi treci mai departe.
+
+### Exemplul 5 — Când `int` nu mai ajunge *(Provocare, opțional)*
 
 Un `int` poate păstra numere până la aproximativ **2 miliarde** (mai exact `2147483647`). Dacă un rezultat depășește această valoare, programul nu dă eroare, dar **rezultatul este greșit**. Pentru numere mai mari folosim tipul **`long long`**, care ajunge până la aproximativ 9 trilioane (`9 · 10^18`).
 
@@ -228,7 +232,7 @@ n = 20
 
 Până acum, `i` era numărul adunat. Acum bucla are alt rol: de `n` ori, **citim un număr** de la tastatură și îl adăugăm. Contorul `i` doar numără repetările.
 
-### Exemplul 6 — Suma a n numere citite
+### Exemplul 6 — Suma a n numere citite **[Esențial]**
 
 ```cpp
 #include <iostream>
@@ -263,7 +267,7 @@ Suma = 13
 
 Variabila `x` este declarată în interiorul buclei și primește o valoare nouă la fiecare iterație. Mesajul „Numarul 1”, „Numarul 2” folosește contorul `i` ca să arate care număr se cere.
 
-### Exemplul 7 — Media celor `n` note
+### Exemplul 7 — Media celor `n` note **[Esențial]**
 
 ```cpp
 #include <iostream>
@@ -362,7 +366,7 @@ for (...) {
 }
 ```
 
-### Exemplul 9 — Câte numere pare și câte impare?
+### Exemplul 9 — Câte numere pare și câte impare? **[Esențial]**
 
 ```cpp
 #include <iostream>
@@ -452,7 +456,7 @@ Un singur număr poate crește mai mulți contori: o notă de `10` crește și `
 
 Ca să afli cel mai mare număr dintr-un șir, ții minte „cel mai mare până acum” și îl înlocuiești când găsești unul mai mare. Primul număr citit este, la început, atât minim, cât și maxim.
 
-### Exemplul 11 — Cel mai mare și cel mai mic număr
+### Exemplul 11 — Cel mai mare și cel mai mic număr **[Esențial]**
 
 ```cpp
 #include <iostream>
@@ -544,7 +548,7 @@ Când găsești un maxim nou, notezi și **unde** l-ai găsit: aici contorul `i`
 
 ## 6. Proiecte mici
 
-### Exemplul 13 — Suma pătratelor și verificarea cu formula
+### Exemplul 13 — Suma pătratelor și verificarea cu formula *(Provocare, opțional)*
 
 ```cpp
 #include <iostream>
@@ -651,7 +655,7 @@ Ziua 10: pui 512 lei, ai in total 1023 lei
 
 În prima zi pui 1 leu, a doua zi 2 lei, apoi 4, 8… După 10 zile ai peste o mie de lei. Încearcă `30` de zile, ca să vezi cât de repede cresc numerele care se dublează (și de ce are sens `long long`).
 
-### Exemplul 16 — Statistici de clasă (mini-proiect)
+### Exemplul 16 — Statistici de clasă (mini-proiect) **[Esențial]**
 
 ```cpp
 /*

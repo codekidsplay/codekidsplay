@@ -30,6 +30,8 @@ La `while`, condiția se verifică **înaintea** corpului, deci uneori corpul nu
 | 105–118 | Proiecte (**Exemplele 13–16**) |
 | 118–120 | Recap și temă |
 
+> **Pentru ritm lent sau începători:** în clasă faceți mai întâi cele **8 exemple marcate [Esențial]** (inclusiv proiectul sau exemplul final, acolo unde e cazul). Ele acoperă tot ce trebuie să rămână după lecție. Restul exemplelor sunt pentru cine merge repede sau pentru acasă.
+
 ---
 
 ## 1. Structura `do-while`
@@ -46,7 +48,7 @@ Observă două lucruri:
 
 Dacă condiția este adevărată, bucla se repetă; dacă este falsă, se termină.
 
-### Exemplul 1 — Corpul rulează cel puțin o dată
+### Exemplul 1 — Corpul rulează cel puțin o dată **[Esențial]**
 
 ```cpp
 #include <iostream>
@@ -73,7 +75,7 @@ Gata.
 
 Condiția `i < 5` este falsă încă de la început (`10 < 5`), dar corpul a rulat **o dată** oricum, pentru că verificarea vine după.
 
-### Exemplul 2 — `while` și `do-while`, față în față
+### Exemplul 2 — `while` și `do-while`, față în față **[Esențial]**
 
 ```cpp
 #include <iostream>
@@ -145,7 +147,7 @@ Pentru numărări obișnuite `for` este mai clar. Folosești `do-while` când **
 
 Cu `while` trebuia să citești **înainte** de buclă și apoi **din nou** în buclă (Lecția 3, Exemplul 5). Cu `do-while`, citirea apare o singură dată.
 
-### Exemplul 4 — Nota între 1 și 10, fără cod repetat
+### Exemplul 4 — Nota între 1 și 10, fără cod repetat **[Esențial]**
 
 ```cpp
 #include <iostream>
@@ -179,7 +181,7 @@ Nota 7 a fost acceptata.
 
 Mesajul „Introdu o nota” apare o singură dată în cod, în interiorul buclei. Ai evitat repetarea liniilor de citire.
 
-### Exemplul 5 — PIN cu limită de încercări
+### Exemplul 5 — PIN cu limită de încercări **[Esențial]**
 
 ```cpp
 #include <iostream>
@@ -241,7 +243,7 @@ Bucla se repetă cât timp PIN-ul este greșit **și** nu s-au consumat cele 3 �
 
 Un meniu trebuie afișat cel puțin o dată, deci `do-while` este alegerea naturală.
 
-### Exemplul 6 — Meniu simplu, repetat până la `0`
+### Exemplul 6 — Meniu simplu, repetat până la `0` **[Esențial]**
 
 ```cpp
 #include <iostream>
@@ -311,7 +313,7 @@ La revedere!
 
 Tiparul „meniu cu `do-while` + `switch`” este baza oricărei aplicații cu meniu. Cât timp opțiunea nu este `0`, meniul revine pe ecran.
 
-### Exemplul 7 — „Mai vrei o dată?”
+### Exemplul 7 — „Mai vrei o dată?” **[Esențial]**
 
 ```cpp
 #include <iostream>
@@ -348,7 +350,7 @@ Pe curand!
 
 Tiparul este foarte folosit în programele care repetă o acțiune la cererea utilizatorului. Condiția acceptă și `d`, și `D`.
 
-### Exemplul 8 — Adaug produse în coș
+### Exemplul 8 — Adaug produse în coș **[Esențial]**
 
 ```cpp
 #include <iostream>
@@ -473,7 +475,9 @@ Suma cifrelor: 24
 Cifra maxima: 8
 ```
 
-### Exemplul 11 — Un număr în baza 2, inclusiv pentru 0
+> **Notă:** exemplul de mai jos este mai greu și **nu este necesar pentru proiectul lecției**. Dacă te simți nesigur, citește-l doar ca să vezi ce se poate face, apoi treci mai departe.
+
+### Exemplul 11 — Un număr în baza 2, inclusiv pentru 0 *(Provocare, opțional)*
 
 ```cpp
 #include <iostream>
@@ -524,7 +528,7 @@ Compară cu varianta din lecția anterioară: acolo aveai un `if` special pentru
 
 Cele trei bucle pot rezolva aceleași probleme, dar una e mereu mai clară. Dacă eziți, întreabă-te: „Știu de câte ori? Trebuie să se execute măcar o dată?”.
 
-### Exemplul 12 — Aceeași problemă în trei feluri
+### Exemplul 12 — Aceeași problemă în trei feluri *(Provocare, opțional)*
 
 Afișăm numerele de la 1 la 5 cu fiecare buclă:
 
@@ -671,7 +675,7 @@ Spor la invatat!
 
 O buclă `for` poate sta în interiorul unei bucle `do-while`. Despre bucle în bucle vorbim pe larg în lecția următoare.
 
-### Exemplul 15 — Bancomat (mini-proiect)
+### Exemplul 15 — Bancomat (mini-proiect) **[Esențial]**
 
 ```cpp
 /*

@@ -29,6 +29,8 @@ Imaginează-ți că vrei să păstrezi notele a 30 de elevi. Să creezi 30 de va
 | 100–118 | Proiecte (**Exemplele 15–17**) |
 | 118–120 | Recap și temă |
 
+> **Pentru ritm lent sau începători:** în clasă faceți mai întâi cele **8 exemple marcate [Esențial]** (inclusiv proiectul sau exemplul final, acolo unde e cazul). Ele acoperă tot ce trebuie să rămână după lecție. Restul exemplelor sunt pentru cine merge repede sau pentru acasă.
+
 ---
 
 ## 1. Ce este un vector
@@ -77,7 +79,7 @@ Suma: 26
 
 Pentru 3 note merge. Pentru 30 ar trebui 30 de variabile și 30 de adunări scrise de mână. De aceea avem vectori.
 
-### Exemplul 2 — Primul vector
+### Exemplul 2 — Primul vector **[Esențial]**
 
 ```cpp
 #include <iostream>
@@ -106,7 +108,7 @@ A treia nota: 10
 
 Atribuim valori fiecărui sertar în parte și le citim la fel. Observă: prima notă este `nota[0]`, nu `nota[1]`.
 
-### Exemplul 3 — Valori date de la început
+### Exemplul 3 — Valori date de la început **[Esențial]**
 
 Dacă știi valorile dinainte, le scrii între acolade, la declarare:
 
@@ -172,7 +174,7 @@ Ultimul element se află la `v[N - 1]`. Dacă schimbi `N`, tot programul se adap
 
 ## 2. Citire și afișare
 
-### Exemplul 5 — Citim 5 numere și le afișăm
+### Exemplul 5 — Citim 5 numere și le afișăm **[Esențial]**
 
 ```cpp
 #include <iostream>
@@ -208,7 +210,7 @@ Ai introdus: 4 8 15 16 23
 
 Primul `for` **citește** în vector, al doilea `for` îl **afișează**. Folosim doi `for` separați: nu poți afișa ceva ce nu a fost încă citit complet.
 
-### Exemplul 6 — Afișare în ordine inversă
+### Exemplul 6 — Afișare în ordine inversă **[Esențial]**
 
 ```cpp
 #include <iostream>
@@ -232,7 +234,7 @@ int main() {
 
 Bucla numără invers, de la ultimul indice (`5`) până la `0`. Întotdeauna ultimul indice este `dimensiunea - 1`.
 
-### Exemplul 7 — Afișare numerotată („Elevul 1, 2…”)
+### Exemplul 7 — Afișare numerotată („Elevul 1, 2…”) **[Esențial]**
 
 ```cpp
 #include <iostream>
@@ -299,7 +301,7 @@ Cu pasul `i += 2` sari din două în două poziții. Începi de la `0` pentru po
 
 ## 3. Modificarea elementelor și alte tipuri
 
-### Exemplul 9 — Modificăm valorile din vector
+### Exemplul 9 — Modificăm valorile din vector **[Esențial]**
 
 ```cpp
 #include <iostream>
@@ -497,7 +499,7 @@ Numerele in ordine inversa: 40 30 20 10
 
 Vectorul are 100 de locuri, dar folosim doar primele `n`. Verificăm `n` înainte de a citi, ca să nu depășim capacitatea.
 
-### Exemplul 14 — Nu ieși din vector!
+### Exemplul 14 — Nu ieși din vector! **[Esențial]**
 
 Cu un vector de 5 elemente, indicii valizi sunt `0–4`. Dacă folosești `v[5]` sau `v[-1]`, ajungi în memorie care **nu îți aparține**. C++ nu te oprește: programul poate afișa valori ciudate, se poate bloca sau poate părea că merge (ceea ce e și mai periculos).
 
@@ -577,7 +579,9 @@ Ziua 4 este Joi.
 
 Utilizatorul numără de la 1, vectorul de la 0, deci folosim `zile[nr - 1]`. Un vector este foarte potrivit ca „tabel de căutare”: numărul ales îți dă direct răspunsul, fără `switch` cu șapte cazuri.
 
-### Exemplul 16 — Inversăm vectorul pe loc
+> **Notă:** exemplul de mai jos este mai greu și **nu este necesar pentru proiectul lecției**. Dacă te simți nesigur, citește-l doar ca să vezi ce se poate face, apoi treci mai departe.
+
+### Exemplul 16 — Inversăm vectorul pe loc *(Provocare, opțional)*
 
 Interschimbăm primul element cu ultimul, al doilea cu penultimul etc. Pentru a schimba două valori avem nevoie de o variabilă ajutătoare.
 
@@ -610,7 +614,7 @@ int main() {
 
 Bucla merge doar până la jumătate (`N / 2`); dacă ar merge până la capăt, ar „inversa” vectorul de două ori și l-ar readuce la forma inițială. Variabila `aux` păstrează temporar o valoare, ca să nu o pierzi când o suprascrii.
 
-### Exemplul 17 — „Notele mele” (mini-proiect)
+### Exemplul 17 — „Notele mele” (mini-proiect) **[Esențial]**
 
 ```cpp
 /*

@@ -29,13 +29,15 @@ Un vector în sine nu spune prea multe. Valoarea apare când îl „interoghezi�
 | 100–118 | Proiecte (**Exemplele 14–16**) |
 | 118–120 | Recap și temă |
 
+> **Pentru ritm lent sau începători:** în clasă faceți mai întâi cele **8 exemple marcate [Esențial]** (inclusiv proiectul sau exemplul final, acolo unde e cazul). Ele acoperă tot ce trebuie să rămână după lecție. Restul exemplelor sunt pentru cine merge repede sau pentru acasă.
+
 ---
 
 ## 1. Suma și media
 
 Șablonul este cel din Lecția 2 (acumulatorul), dar acum valorile vin dintr-un vector: pornești cu `suma = 0` și adaugi fiecare `v[i]`.
 
-### Exemplul 1 — Suma elementelor
+### Exemplul 1 — Suma elementelor **[Esențial]**
 
 ```cpp
 #include <iostream>
@@ -61,7 +63,7 @@ Suma este 108
 
 Aici nu citim, nu afișăm elementele: doar le adunăm. `suma` pornește de la `0` (elementul neutru la adunare), altfel ai porni cu o valoare necunoscută.
 
-### Exemplul 2 — Media aritmetică
+### Exemplul 2 — Media aritmetică **[Esențial]**
 
 ```cpp
 #include <iostream>
@@ -90,7 +92,7 @@ Media: 8
 
 `(double)suma / 5` transformă suma în număr zecimal înainte de împărțire (Modulul 1, lecția 4). Fără asta, `40 / 5` ar rămâne întreg, iar la alte date ai pierde zecimalele.
 
-### Exemplul 3 — Media cu zecimale
+### Exemplul 3 — Media cu zecimale **[Esențial]**
 
 ```cpp
 #include <iostream>
@@ -131,7 +133,7 @@ Media: 9.00
 
 Ideea: presupui că **primul element** este cel mai mare (sau cel mai mic), apoi parcurgi restul și actualizezi când găsești unul mai bun.
 
-### Exemplul 4 — Elementul maxim
+### Exemplul 4 — Elementul maxim **[Esențial]**
 
 ```cpp
 #include <iostream>
@@ -159,7 +161,7 @@ Maximul este 45
 
 Pornim cu `maxim = v[0]` și parcurgem de la `i = 1` (primul element e deja luat în calcul). Să NU pornești cu `maxim = 0`: dacă toate numerele ar fi negative, rezultatul ar fi greșit.
 
-### Exemplul 5 — Minimul și maximul împreună
+### Exemplul 5 — Minimul și maximul împreună **[Esențial]**
 
 ```cpp
 #include <iostream>
@@ -238,7 +240,7 @@ Dacă maximul apare de mai multe ori (aici `10` pe pozițiile 3 și 5), se păst
 
 Șablonul este cel din Lecția 2 (contor): `if (condiție) contor++;`, dar aplicat pe fiecare element.
 
-### Exemplul 7 — Câte numere sunt pare
+### Exemplul 7 — Câte numere sunt pare **[Esențial]**
 
 ```cpp
 #include <iostream>
@@ -333,7 +335,7 @@ Suma numerelor mai mari ca 10: 58
 
 Același acumulator, dar cu un `if` în fața lui: adaugi doar ce respectă regula.
 
-### Exemplul 10 — Câte elemente sunt peste medie
+### Exemplul 10 — Câte elemente sunt peste medie **[Esențial]**
 
 Doi pași: întâi calculezi media, apoi o folosești pentru a număra. Sunt două parcurgeri.
 
@@ -470,7 +472,9 @@ Cel mai mare: 90
 Amplitudinea (max - min): 82
 ```
 
-### Exemplul 13 — Concurs: media fără cea mai mică și cea mai mare notă
+> **Notă:** exemplul de mai jos este mai greu și **nu este necesar pentru proiectul lecției**. Dacă te simți nesigur, citește-l doar ca să vezi ce se poate face, apoi treci mai departe.
+
+### Exemplul 13 — Concurs: media fără cea mai mică și cea mai mare notă *(Provocare, opțional)*
 
 La multe concursuri se elimină nota cea mai mare și nota cea mai mică dată de juriu.
 
@@ -513,7 +517,7 @@ Scăzând din sumă minimul și maximul, și împărțind la `N - 2`, obții med
 
 ## 5. Proiecte
 
-### Exemplul 14 — Histograma notelor
+### Exemplul 14 — Histograma notelor *(Provocare, opțional)*
 
 Pentru fiecare notă de la 1 la 10 numărăm câți elevi au luat-o și desenăm bare din `*`. Vectorul `frecventa` are 11 locuri, ca să folosim direct nota ca indice (indicele `0` rămâne nefolosit).
 
@@ -598,7 +602,7 @@ Toti elevii cu aceasta nota:
 
 Vectorii `nume` și `nota` sunt „paraleli”: elementul `i` din ambii aparține aceluiași elev. Găsești poziția în unul și o folosești în celălalt. A doua parcurgere afișează toți elevii cu nota maximă, nu doar primul.
 
-### Exemplul 16 — „Statistica clasei” (mini-proiect)
+### Exemplul 16 — „Statistica clasei” (mini-proiect) **[Esențial]**
 
 ```cpp
 /*

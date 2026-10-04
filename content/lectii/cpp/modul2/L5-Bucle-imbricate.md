@@ -29,6 +29,8 @@ Multe lucruri din lumea reală au **rânduri și coloane**: o tablă de șah, un
 | 100–118 | Proiecte (**Exemplele 15–16**) |
 | 118–120 | Recap și temă |
 
+> **Pentru ritm lent sau începători:** în clasă faceți mai întâi cele **8 exemple marcate [Esențial]** (inclusiv proiectul sau exemplul final, acolo unde e cazul). Ele acoperă tot ce trebuie să rămână după lecție. Restul exemplelor sunt pentru cine merge repede sau pentru acasă.
+
 ---
 
 ## 1. Cum funcționează o buclă imbricată
@@ -73,7 +75,7 @@ i=3 j=2
 
 Vezi cum `j` parcurge 1 și 2 pentru fiecare `i`. În total corpul interior se execută `3 × 2 = 6` ori.
 
-### Exemplul 2 — Un rând de steluțe
+### Exemplul 2 — Un rând de steluțe **[Esențial]**
 
 Înainte de două bucle, o buclă simplă care desenează un rând:
 
@@ -97,7 +99,7 @@ int main() {
 
 `cout << "*"` fără `endl` lasă cursorul pe același rând, deci steluțele se așază una lângă alta. `endl` de după buclă mută cursorul pe rândul următor.
 
-### Exemplul 3 — Dreptunghi de 3 rânduri și 5 coloane
+### Exemplul 3 — Dreptunghi de 3 rânduri și 5 coloane **[Esențial]**
 
 Repetăm de 3 ori rândul din exemplul anterior:
 
@@ -134,7 +136,7 @@ Observă unde este `endl`: **după** bucla interioară, dar **în** bucla exteri
 
 ## 2. Dreptunghiuri și triunghiuri
 
-### Exemplul 4 — Pătrat cu latura citită
+### Exemplul 4 — Pătrat cu latura citită **[Esențial]**
 
 ```cpp
 #include <iostream>
@@ -166,7 +168,7 @@ Latura: 4
 
 Spațiul din `"# "` face figura mai pătrată pe ecran, pentru că literele sunt mai înalte decât late.
 
-### Exemplul 5 — Triunghi dreptunghic
+### Exemplul 5 — Triunghi dreptunghic **[Esențial]**
 
 Cheia: bucla interioară depinde de `i`. Pe rândul 1 desenăm 1 steluță, pe rândul 2 desenăm 2 etc.
 
@@ -196,7 +198,7 @@ int main() {
 
 Condiția `j <= i` este tot secretul: numărul de coloane crește odată cu numărul rândului.
 
-### Exemplul 6 — Triunghi întors
+### Exemplul 6 — Triunghi întors **[Esențial]**
 
 Pe primul rând 5 steluțe, pe ultimul una singură:
 
@@ -291,7 +293,7 @@ Diferența față de exemplul anterior este doar `cout << i` în loc de `cout <<
 
 ## 3. Piramida și tabelele
 
-### Exemplul 9 — Piramida centrată
+### Exemplul 9 — Piramida centrată **[Esențial]**
 
 Pe fiecare rând avem întâi **spații**, apoi **steluțe**. Numărul de spații scade, numărul de steluțe crește (1, 3, 5, 7…).
 
@@ -326,7 +328,7 @@ int main() {
 
 Pe rândul `i` ai `n - i` spații și `2 * i - 1` steluțe. Verifică pe rândul 3: `5 - 3 = 2` spații și `2 × 3 - 1 = 5` steluțe. Cele două bucle interioare sunt **una după alta**, nu una în alta, ambele în bucla exterioară.
 
-### Exemplul 10 — Tabla înmulțirii (tabel complet)
+### Exemplul 10 — Tabla înmulțirii (tabel complet) **[Esențial]**
 
 ```cpp
 #include <iostream>
@@ -408,7 +410,9 @@ Prima buclă (singură) desenează antetul. A doua, imbricată, desenează rând
 
 ## 4. Tabla de șah, `break` și numere prime
 
-### Exemplul 12 — Tabla de șah
+> **Notă:** exemplul de mai jos este mai greu și **nu este necesar pentru proiectul lecției**. Dacă te simți nesigur, citește-l doar ca să vezi ce se poate face, apoi treci mai departe.
+
+### Exemplul 12 — Tabla de șah *(Provocare, opțional)*
 
 Alternăm `#` și `.` în funcție de suma `i + j`: pară înseamnă `#`, impară înseamnă `.`.
 
@@ -480,7 +484,7 @@ int main() {
 *********
 ```
 
-### Exemplul 14 — Numerele prime până la 30 (cu `break`)
+### Exemplul 14 — Numerele prime până la 30 (cu `break`) *(Provocare, opțional)*
 
 Un număr este **prim** dacă se împarte exact doar la 1 și la el însuși. Pentru fiecare număr `n`, căutăm un divizor `d`. Dacă găsim unul, `break` oprește **doar bucla interioară**.
 
@@ -527,7 +531,7 @@ Pe fiecare număr `n` pornim presupunând că este prim (`prim = true`). Dacă g
 
 ## 5. Proiecte
 
-### Exemplul 15 — Calendarul unei luni
+### Exemplul 15 — Calendarul unei luni *(Provocare, opțional)*
 
 Afișăm 30 de zile, câte 7 pe rând (o săptămână). Folosim un contor de zile și o buclă interioară pe zilele săptămânii.
 
@@ -567,7 +571,7 @@ Lu Ma Mi Jo Vi Sa Du
 
 Bucla `while` parcurge săptămânile, iar bucla `for` parcurge zilele dintr-o săptămână. Condiția `s <= 7 && zi <= zile` oprește rândul și când se termină luna, nu doar când se termină săptămâna. Aici am amestecat două tipuri de buclă, ceea ce este perfect normal.
 
-### Exemplul 16 — Desenatorul de figuri (mini-proiect)
+### Exemplul 16 — Desenatorul de figuri (mini-proiect) **[Esențial]**
 
 ```cpp
 /*
@@ -695,7 +699,7 @@ Afișează un tabel cu numerele de la 1 la 10, fiecare cu pătratul și cubul lu
 ### Exercițiul D — Scara
 Citește un număr `n` și desenează o scară din `n` trepte, sub forma unui triunghi dreptunghic din caracterul `#`, aliniat la **dreapta** (spații la început, apoi `#`).
 
-### Exercițiul E — Numere perfecte
+### Exercițiul E — Numere perfecte *(Provocare, opțional)*
 Un număr este **perfect** dacă este egal cu suma divizorilor lui mai mici decât el (de exemplu 6 = 1 + 2 + 3). Afișează toate numerele perfecte până la 500.
 
 **Gata când:**

@@ -29,13 +29,15 @@ Agenda din telefon, căutarea unui produs într-un magazin online, verificarea u
 | 100–118 | Proiecte (**Exemplele 14–16**) |
 | 118–120 | Recap și temă |
 
+> **Pentru ritm lent sau începători:** în clasă faceți mai întâi cele **7 exemple marcate [Esențial]** (inclusiv proiectul sau exemplul final, acolo unde e cazul). Ele acoperă tot ce trebuie să rămână după lecție. Restul exemplelor sunt pentru cine merge repede sau pentru acasă.
+
 ---
 
 ## 1. Există valoarea? Pe ce poziție?
 
 Ideea: parcurgi vectorul și compari fiecare element cu valoarea căutată. Poți folosi o variabilă „steag” (`bool`), pe care o schimbi când găsești valoarea (Modulul 1, lecția 5).
 
-### Exemplul 1 — Există valoarea în vector?
+### Exemplul 1 — Există valoarea în vector? **[Esențial]**
 
 ```cpp
 #include <iostream>
@@ -68,7 +70,7 @@ int main() {
 
 Pornim cu `gasit = false` („presupunem că nu e”). Dacă găsim valoarea, schimbăm în `true`. **Nu** punem `else gasit = false` în buclă; ar șterge un rezultat deja găsit.
 
-### Exemplul 2 — Prima poziție (cu `break`)
+### Exemplul 2 — Prima poziție (cu `break`) **[Esențial]**
 
 ```cpp
 #include <iostream>
@@ -102,7 +104,7 @@ int main() {
 
 Folosim `poz = -1` pentru „negăsit”. De ce `-1`? Pentru că niciun indice valid nu este negativ, deci `-1` nu poate fi confundat cu o poziție reală. `break` oprește căutarea imediat ce găsim prima apariție.
 
-### Exemplul 3 — Căutare cu valoarea citită
+### Exemplul 3 — Căutare cu valoarea citită **[Esențial]**
 
 ```cpp
 #include <iostream>
@@ -187,7 +189,7 @@ Ordinea condițiilor contează: `i < 6` trebuie verificat **primul**. Altfel, da
 
 ## 2. Numărare, toate pozițiile, ultima apariție
 
-### Exemplul 5 — De câte ori apare o valoare
+### Exemplul 5 — De câte ori apare o valoare **[Esențial]**
 
 ```cpp
 #include <iostream>
@@ -214,7 +216,7 @@ int main() {
 Nota 9 apare de 5 ori.
 ```
 
-### Exemplul 6 — Toate pozițiile
+### Exemplul 6 — Toate pozițiile **[Esențial]**
 
 ```cpp
 #include <iostream>
@@ -407,7 +409,9 @@ int main() {
 Exista cel putin un numar nepozitiv.
 ```
 
-### Exemplul 11 — Există duplicate?
+> **Notă:** exemplul de mai jos este mai greu și **nu este necesar pentru proiectul lecției**. Dacă te simți nesigur, citește-l doar ca să vezi ce se poate face, apoi treci mai departe.
+
+### Exemplul 11 — Există duplicate? *(Provocare, opțional)*
 
 Comparăm fiecare element cu cele de după el, ceea ce înseamnă o buclă imbricată (Lecția 5).
 
@@ -457,7 +461,7 @@ Bucla interioară pornește de la `i + 1`, ca să nu compare un element cu el î
 
 Un vector are dimensiune fixă, dar cu o variabilă `n` (numărul de elemente folosite) poți „șterge” sau „insera”, prin mutarea elementelor.
 
-### Exemplul 12 — Ștergem un element
+### Exemplul 12 — Ștergem un element **[Esențial]**
 
 Ștergem elementul de pe poziția `p`: mutăm toate elementele de după el cu **o poziție la stânga**, apoi micșorăm `n`.
 
@@ -538,7 +542,7 @@ Ordinea contează: la ștergere mutăm de la **început** spre sfârșit, la ins
 
 ## 5. Proiecte
 
-### Exemplul 14 — Cel mai apropiat număr de o valoare
+### Exemplul 14 — Cel mai apropiat număr de o valoare *(Provocare, opțional)*
 
 Căutăm elementul cu **diferența** cea mai mică față de o țintă. Diferența trebuie luată fără semn, așa că folosim o mică verificare.
 
@@ -617,7 +621,7 @@ Pe cine suni? Bunica
 Bunica: 0723333333
 ```
 
-### Exemplul 16 — „Agenda telefonică” (mini-proiect)
+### Exemplul 16 — „Agenda telefonică” (mini-proiect) **[Esențial]**
 
 ```cpp
 /*
@@ -805,13 +809,13 @@ Scrie programul din Exemplul 16. Adaugă o opțiune nouă: „5. Câte contacte 
 ### Exercițiul B — Inventar
 Doi vectori paraleli: produse și cantități. Meniu: afișează stocul, caută un produs, vinde o cantitate (se scade din stoc, doar dacă există destulă) și un raport cu produsele epuizate.
 
-### Exercițiul C — Numere unice
+### Exercițiul C — Numere unice *(Provocare, opțional)*
 Citește `n` numere (maxim 30) și afișează doar valorile care apar o singură dată.
 
 ### Exercițiul D — Eliminarea unei valori
 Șterge **toate** aparițiile unei valori dintr-un vector (nu doar prima). Atenție la poziția în care continui verificarea după o ștergere.
 
-### Exercițiul E — Inserare în ordine
+### Exercițiul E — Inserare în ordine *(Provocare, opțional)*
 Dat fiind un vector deja în ordine crescătoare, inserează o valoare nouă pe poziția corectă, astfel încât vectorul să rămână în ordine.
 
 **Gata când:**

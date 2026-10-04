@@ -29,6 +29,8 @@ Clasamente, liste alfabetice, „cele mai ieftine produse”, „cei mai buni ju
 | 100–118 | Proiecte (**Exemplele 14–16**) |
 | 118–120 | Recap și temă |
 
+> **Pentru ritm lent sau începători:** în clasă faceți mai întâi cele **8 exemple marcate [Esențial]** (inclusiv proiectul sau exemplul final, acolo unde e cazul). Ele acoperă tot ce trebuie să rămână după lecție. Restul exemplelor sunt pentru cine merge repede sau pentru acasă.
+
 ---
 
 ## 1. Interschimbarea a două valori
@@ -43,7 +45,7 @@ b = aux;     // torni sucul în al doilea pahar
 
 Dacă ai scrie direct `a = b; b = a;`, ai pierde valoarea inițială a lui `a`.
 
-### Exemplul 1 — Swap cu variabilă ajutătoare
+### Exemplul 1 — Swap cu variabilă ajutătoare **[Esențial]**
 
 ```cpp
 #include <iostream>
@@ -70,7 +72,7 @@ Inainte: a = 5, b = 9
 Dupa:    a = 9, b = 5
 ```
 
-### Exemplul 2 — Swap între două elemente ale vectorului
+### Exemplul 2 — Swap între două elemente ale vectorului **[Esențial]**
 
 ```cpp
 #include <iostream>
@@ -162,7 +164,7 @@ Pas 3: (8,1) → schimb:  3  5  1  8     ← 8, cel mai mare, a ajuns la capăt
 
 Repeți parcurgerea până când totul e în ordine.
 
-### Exemplul 4 — O singură trecere
+### Exemplul 4 — O singură trecere **[Esențial]**
 
 ```cpp
 #include <iostream>
@@ -195,7 +197,7 @@ int main() {
 
 După o singură trecere, cel mai mare element, `8`, a ajuns la sfârșit. Restul nu sunt încă în ordine. Mai trebuie treceri.
 
-### Exemplul 5 — Sortare completă (crescător)
+### Exemplul 5 — Sortare completă (crescător) **[Esențial]**
 
 Repetăm trecerea de `n - 1` ori, cu o buclă exterioară.
 
@@ -233,7 +235,7 @@ Sortat crescator: 1 4 8 15 17 29 42
 
 Bucla interioară merge până la `n - 1 - pas`: după fiecare trecere, ultimele `pas` elemente sunt deja la locul lor și nu trebuie verificate din nou.
 
-### Exemplul 6 — Sortare descrescătoare
+### Exemplul 6 — Sortare descrescătoare **[Esențial]**
 
 Singura schimbare: comparația. În loc de `>`, folosim `<`.
 
@@ -331,7 +333,7 @@ pas 1: cel mai mic din {3, 8, 5} e 3 (poz 1) → deja la loc      →  1  3  8  
 pas 2: cel mai mic din {8, 5} e 5 (poz 3) → swap cu v[2]        →  1  3  5  8
 ```
 
-### Exemplul 8 — Selection Sort
+### Exemplul 8 — Selection Sort **[Esențial]**
 
 ```cpp
 #include <iostream>
@@ -369,7 +371,7 @@ Sortat crescator: 1 4 8 15 17 29 42
 
 Bucla interioară caută poziția minimului în zona de la `i` până la capăt. Apoi o singură interschimbare mută minimul pe locul `i`. Față de metoda bulelor, aici faci mult mai puține interschimbări.
 
-### Exemplul 9 — Podium: primele 3 valori
+### Exemplul 9 — Podium: primele 3 valori **[Esențial]**
 
 După sortare descrescătoare, primele elemente sunt cele mai mari.
 
@@ -504,7 +506,9 @@ int main() {
 
 Decizia se ia pe `nota`, dar **ambele** vectori sunt interschimbate. Dacă uiți unul, numele și notele se „desincronizează”.
 
-### Exemplul 12 — Mediana
+> **Notă:** exemplul de mai jos este mai greu și **nu este necesar pentru proiectul lecției**. Dacă te simți nesigur, citește-l doar ca să vezi ce se poate face, apoi treci mai departe.
+
+### Exemplul 12 — Mediana *(Provocare, opțional)*
 
 **Mediana** este valoarea din mijloc a unui șir ordonat. Dacă numărul de elemente este impar, este elementul de la mijloc; dacă e par, media celor două din mijloc.
 
@@ -640,7 +644,7 @@ Sortat: -3 8 17 25 40
 
 După sortare, minimul și maximul sunt chiar la capete: `v[0]` și `v[n - 1]`. Este o altă cale de a le găsi.
 
-### Exemplul 15 — Valorile distincte dintr-un vector sortat
+### Exemplul 15 — Valorile distincte dintr-un vector sortat *(Provocare, opțional)*
 
 Într-un vector sortat, valorile egale sunt una lângă alta. Deci duplicatele se găsesc comparând vecinii.
 
@@ -680,7 +684,7 @@ Numar de valori distincte: 6
 
 Aceasta este una dintre marile utilități ale sortării: o problemă grea (duplicatele) devine ușoară.
 
-### Exemplul 16 — „Clasamentul clasei” (mini-proiect)
+### Exemplul 16 — „Clasamentul clasei” (mini-proiect) **[Esențial]**
 
 ```cpp
 /*
@@ -789,7 +793,7 @@ Citește numele și prețul a `n` produse. Sortează-le crescător după preț �
 ### Exercițiul D — Sortare alfabetică a prietenilor
 Citește 6 nume și afișează-le în ordine alfabetică, apoi în ordine inversă.
 
-### Exercițiul E — Mediana unei serii
+### Exercițiul E — Mediana unei serii *(Provocare, opțional)*
 Citește `n` numere, sortează vectorul și afișează mediana (cu atenție la cazul `n` par).
 
 **Gata când:**

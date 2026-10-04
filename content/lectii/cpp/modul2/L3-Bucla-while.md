@@ -29,6 +29,8 @@ La finalul orei scrii bucle `while`, alegi între `for` și `while`, citești da
 | 100–118 | Probleme și proiecte (**Exemplele 12–16**) |
 | 118–120 | Recap și temă |
 
+> **Pentru ritm lent sau începători:** în clasă faceți mai întâi cele **8 exemple marcate [Esențial]** (inclusiv proiectul sau exemplul final, acolo unde e cazul). Ele acoperă tot ce trebuie să rămână după lecție. Restul exemplelor sunt pentru cine merge repede sau pentru acasă.
+
 ---
 
 ## 1. Structura lui `while`
@@ -46,7 +48,7 @@ Cum funcționează:
 
 Spre deosebire de `for`, aici **tu** ai grijă ca ceva din corp să schimbe condiția. Altfel bucla nu se mai oprește niciodată.
 
-### Exemplul 1 — `while` care numără
+### Exemplul 1 — `while` care numără **[Esențial]**
 
 ```cpp
 #include <iostream>
@@ -111,7 +113,7 @@ Nu am scris nicăieri „repetă de 4 ori”. Bucla se oprește singură când `
 
 ## 2. Citire până la o valoare de oprire și validare
 
-### Exemplul 3 — Citim numere până la 0
+### Exemplul 3 — Citim numere până la 0 **[Esențial]**
 
 ```cpp
 #include <iostream>
@@ -150,7 +152,7 @@ Tiparul este foarte des folosit:
 
 Numărul `0` este doar semnalul de oprire: nu intră în sumă.
 
-### Exemplul 4 — Câte numere și ce medie?
+### Exemplul 4 — Câte numere și ce medie? **[Esențial]**
 
 ```cpp
 #include <iostream>
@@ -195,7 +197,7 @@ Nu ai introdus nicio nota.
 
 La `for` știai de la început câte numere sunt. Aici le numeri tu, cu `cate++`. Verificăm și cazul `cate == 0`, ca să nu împărțim la zero.
 
-### Exemplul 5 — Validarea datelor: repetă până e corect
+### Exemplul 5 — Validarea datelor: repetă până e corect **[Esențial]**
 
 ```cpp
 #include <iostream>
@@ -242,7 +244,7 @@ Cu `% 10` și `/ 10` (Modulul 1, lecția 4) poți „mânca” un număr cifră 
 
 Repeți cât timp mai există cifre, adică cât timp `n > 0`.
 
-### Exemplul 6 — Suma cifrelor
+### Exemplul 6 — Suma cifrelor **[Esențial]**
 
 ```cpp
 #include <iostream>
@@ -358,7 +360,7 @@ Tehnica: pentru fiecare cifră luată de la coadă, „mutăm” ce avem deja î
 - `break;` **oprește imediat** bucla.
 - `continue;` **sare** peste restul iterației curente și trece la următoarea.
 
-### Exemplul 9 — Buclă „infinită” oprită cu `break`
+### Exemplul 9 — Buclă „infinită” oprită cu `break` **[Esențial]**
 
 ```cpp
 #include <iostream>
@@ -464,7 +466,9 @@ Nu știi câte numere trebuie verificate, deci `while` este alegerea potrivită;
 
 ## 5. Probleme și proiecte
 
-### Exemplul 12 — Cel mai mare divizor comun (algoritmul lui Euclid)
+> **Notă:** exemplul de mai jos este mai greu și **nu este necesar pentru proiectul lecției**. Dacă te simți nesigur, citește-l doar ca să vezi ce se poate face, apoi treci mai departe.
+
+### Exemplul 12 — Cel mai mare divizor comun (algoritmul lui Euclid) *(Provocare, opțional)*
 
 ```cpp
 #include <iostream>
@@ -495,7 +499,7 @@ Cmmdc(48, 18) = 6
 
 Euclid, matematician grec, a descoperit acum peste 2000 de ani că `cmmdc(a, b)` este același cu `cmmdc(b, a % b)`. Repeți până când restul devine `0`. Pașii pentru `48` și `18`: `(48, 18) → (18, 12) → (12, 6) → (6, 0)`, deci răspunsul este `6`.
 
-### Exemplul 13 — Un număr în binar
+### Exemplul 13 — Un număr în binar *(Provocare, opțional)*
 
 ```cpp
 #include <iostream>
@@ -532,7 +536,7 @@ Numarul (zecimal): 13
 
 Cum convertești în binar: împarți la 2 și notezi resturile, de la ultimul spre primul. Pentru `13`: resturile sunt `1, 0, 1, 1`, iar în ordine inversă dau `1101`. Linia `binar = (char)('0' + copie % 2) + binar;` adaugă cifra nouă **în fața** textului existent, deci ordinea se răstoarnă singură.
 
-### Exemplul 14 — Conjectura 3n + 1 (Collatz)
+### Exemplul 14 — Conjectura 3n + 1 (Collatz) *(Provocare, opțional)*
 
 ```cpp
 #include <iostream>
@@ -568,7 +572,7 @@ Am ajuns la 1 in 8 pasi.
 
 Regula: dacă numărul e par, îl împarți la 2; dacă e impar, îl înmulțești cu 3 și adaugi 1. Se crede că, indiferent de numărul de pornire, ajungi mereu la 1, dar **nimeni nu a demonstrat asta** pentru toate numerele. Matematicienii încearcă de peste 80 de ani. Bucla `while` este potrivită, pentru că nu știi dinainte câți pași vor fi.
 
-### Exemplul 15 — Ghicește numărul (cu mai multe încercări)
+### Exemplul 15 — Ghicește numărul (cu mai multe încercări) **[Esențial]**
 
 ```cpp
 #include <iostream>
@@ -614,7 +618,7 @@ Bravo! Ai ghicit din 3 incercari.
 
 Jocul din Modulul 1 permitea o singură încercare. Acum poți continua până ghicești, iar contorul `incercari` îți spune în câți pași ai reușit.
 
-### Exemplul 16 — Calculatorul care nu se oprește singur (mini-proiect)
+### Exemplul 16 — Calculatorul care nu se oprește singur (mini-proiect) **[Esențial]**
 
 ```cpp
 /*

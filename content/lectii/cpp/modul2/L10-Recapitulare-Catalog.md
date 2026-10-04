@@ -24,6 +24,8 @@ La finalul orei îți amintești și folosești toate buclele, vectorii, căutar
 | 60–110 | Proiect: Catalogul de note (**Exemplele 13–14**) |
 | 110–120 | Predare, recap, ce urmează în Modulul 3 |
 
+> **Pentru ritm lent sau începători:** în clasă faceți mai întâi cele **7 exemple marcate [Esențial]** (inclusiv proiectul sau exemplul final, acolo unde e cazul). Ele acoperă tot ce trebuie să rămână după lecție. Restul exemplelor sunt pentru cine merge repede sau pentru acasă.
+
 ---
 
 ## 1. Recapitulare rapidă
@@ -42,7 +44,7 @@ La finalul orei îți amintești și folosești toate buclele, vectorii, căutar
 | 8 | Căutare | `bool gasit`, `int poz = -1`, ștergere și inserare |
 | 9 | Sortare | Swap, Bubble Sort, Selection Sort |
 
-### Exemplul 1 — `for`: suma pătratelor
+### Exemplul 1 — `for`: suma pătratelor **[Esențial]**
 
 ```cpp
 #include <iostream>
@@ -63,7 +65,7 @@ int main() {
 1^2 + 2^2 + ... + 5^2 = 55
 ```
 
-### Exemplul 2 — `while`: suma cifrelor
+### Exemplul 2 — `while`: suma cifrelor **[Esențial]**
 
 ```cpp
 #include <iostream>
@@ -88,7 +90,7 @@ int main() {
 Suma cifrelor: 19
 ```
 
-### Exemplul 3 — `do-while`: validare
+### Exemplul 3 — `do-while`: validare **[Esențial]**
 
 ```cpp
 #include <iostream>
@@ -140,7 +142,7 @@ int main() {
 4321
 ```
 
-### Exemplul 5 — Vector: citire și afișare inversă
+### Exemplul 5 — Vector: citire și afișare inversă **[Esențial]**
 
 ```cpp
 #include <iostream>
@@ -173,7 +175,7 @@ v[3] = 12
 Invers: 12 9 6 3 
 ```
 
-### Exemplul 6 — Statistici: media, minimul, maximul
+### Exemplul 6 — Statistici: media, minimul, maximul **[Esențial]**
 
 ```cpp
 #include <iostream>
@@ -203,7 +205,7 @@ Media: 8.33333
 Minim: 6, maxim: 10
 ```
 
-### Exemplul 7 — Numărare cu condiție
+### Exemplul 7 — Numărare cu condiție **[Esențial]**
 
 ```cpp
 #include <iostream>
@@ -355,7 +357,9 @@ Media: 8
 
 **Greșeala:** `suma / 4` este o împărțire între numere întregi (`35 / 4 = 8`), iar abia apoi rezultatul ajunge în `double`. **Reparație:** `double medie = (double)suma / 4;`.
 
-### Exemplul 12 — Bucla „care nu face nimic”
+> **Notă:** exemplul de mai jos este mai greu și **nu este necesar pentru proiectul lecției**. Dacă te simți nesigur, citește-l doar ca să vezi ce se poate face, apoi treci mai departe.
+
+### Exemplul 12 — Bucla „care nu face nimic” *(Provocare, opțional)*
 
 ```cpp
 #include <iostream>
@@ -435,7 +439,7 @@ for (int i = 1; i <= 3; i++)
 
 Programul reunește tot ce ai învățat în modul: meniu cu `do-while` + `switch`, vectori paraleli, validare, statistici, căutare, sortare și ștergere.
 
-### Exemplul 13 — Varianta de bază (adaugă, afișează, statistici)
+### Exemplul 13 — Varianta de bază (adaugă, afișează, statistici) **[Esențial]**
 
 Începe cu varianta scurtă, apoi o extinzi în Exemplul 14.
 
@@ -873,6 +877,13 @@ Programul are ~150 de linii și este organizat în cazuri clare. Este o aplicaț
 
 ### Exercițiul A — „Catalogul de note” (obligatoriu)
 Scrie varianta completă (Exemplul 14) cu elevii tăi preferați. **Nu copia**: scrie fiecare opțiune pe rând și testeaz-o înainte de a trece la următoarea.
+
+**Pe niveluri (alege-l pe al tău):**
+- **De bază:** varianta de bază din Exemplul 13 (adaugă, afișează, statistici).
+- **Complet:** varianta completă din Exemplul 14.
+- **Provocare:** + una dintre extinderile din Exercițiul B.
+
+Un catalog mic, care merge fără greșeli, este un succes.
 
 ### Exercițiul B — Extinde catalogul (la alegere, minim una)
 - Adaugă opțiunea „Corectează nota unui elev” (căutare + citirea unei note noi, cu validare).  
