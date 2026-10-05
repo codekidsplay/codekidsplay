@@ -7,6 +7,7 @@ const MODUL_FOLDER: Record<string, string> = {
   m2: 'cpp/modul2',
   m14: 'cpp/modul3',
   m15: 'cpp/modul4',
+  m34: 'cpp/modul5',
   m12: 'robotica-lego/modul1',
   m13: 'robotica-lego/modul2',
   m16: 'scratch/modul1',
