@@ -74,6 +74,7 @@ export default function CursantiLista() {
             telefon_parinte: c.telefon_parinte,
             data_inscriere: c.data_inscriere,
             activ: c.activ,
+            poate_pleca_singur: c.poate_pleca_singur === true,
           })),
         )
         setRemoteInscrieri(r.inscrieri)
@@ -389,9 +390,20 @@ export default function CursantiLista() {
                       <td className="px-6 py-4">
                         <div className="flex items-center gap-3">
                           <CursantAvatar id={c.id} nume={c.nume} prenume={c.prenume} />
-                          <p className="font-semibold text-slate-900">
-                            {c.prenume} {c.nume}
-                          </p>
+                          <div>
+                            <p className="font-semibold text-slate-900">
+                              {c.prenume} {c.nume}
+                            </p>
+                            {c.poate_pleca_singur ? (
+                              <span className="inline-block mt-0.5 text-[11px] font-medium text-emerald-700 bg-emerald-50 border border-emerald-100 rounded-full px-2 py-0.5">
+                                Poate pleca singur
+                              </span>
+                            ) : (
+                              <span className="inline-block mt-0.5 text-[11px] font-medium text-amber-700 bg-amber-50 border border-amber-100 rounded-full px-2 py-0.5">
+                                Preluat de un adult
+                              </span>
+                            )}
+                          </div>
                         </div>
                       </td>
                       <td className="px-6 py-4">

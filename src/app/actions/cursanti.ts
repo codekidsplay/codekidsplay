@@ -30,6 +30,8 @@ export type AdaugaCursantInput = {
   profesor_id?: string | null
   /** Obligatoriu: personalul confirmă că părintele a citit și acceptat Termenii. */
   termeni_acceptati: boolean
+  /** Poate pleca singur după curs (implicit nu: îl ia un adult). */
+  poate_pleca_singur?: boolean
 }
 
 export type AdaugaCursantResult =
@@ -167,6 +169,11 @@ export async function adaugaCursantAction(
 
   if (cursantErr || !cursant) {
     return { ok: false, error: cursantErr?.message ?? 'Nu am putut crea fișa cursantului.' }
+  }
+
+  // Poate pleca singur — update separat, tolerant la migrare nerulată
+  if (input.poate_pleca_singur) {
+    await admin.from('cursanti').update({ poate_pleca_singur: true }).eq('id', cursant.id)
   }
 
   // Cont elev (email intern + PIN ca parolă derivată)
@@ -331,6 +338,7 @@ export async function listCursantiAction(): Promise<
         data_nastere: string | null
         data_inscriere: string
         activ: boolean
+        poate_pleca_singur?: boolean
         username?: string
         created_at?: string
       }>
@@ -367,18 +375,18 @@ export async function listCursantiAction(): Promise<
     return { ok: false as const, error: 'Acces interzis', data: [], inscrieri: [], solduri: {} }
   }
 
-  let cursantRows:
-    | Array<{
-        id: string
-        nume: string
-        prenume: string
-        email_parinte: string
-        telefon_parinte: string | null
-        data_nastere: string | null
-        data_inscriere: string
-        activ: boolean
-      }>
-    | null = null
+  type CursantListRow = {
+    id: string
+    nume: string
+    prenume: string
+    email_parinte: string
+    telefon_parinte: string | null
+    data_nastere: string | null
+    data_inscriere: string
+    activ: boolean
+    poate_pleca_singur?: boolean
+  }
+  let cursantRows: CursantListRow[] | null = null
 
   if (profile.rol === 'profesor') {
     const { data: links } = await client
@@ -387,23 +395,38 @@ export async function listCursantiAction(): Promise<
       .eq('profesor_id', auth.user.id)
     const ids = (links ?? []).map(l => l.cursant_id)
     if (ids.length === 0) return { ok: true as const, data: [], inscrieri: [], solduri: {} }
-    const { data, error } = await client
+    const COL = 'id, nume, prenume, email_parinte, telefon_parinte, data_nastere, data_inscriere, activ'
+    let res = await client
       .from('cursanti')
-      .select('id, nume, prenume, email_parinte, telefon_parinte, data_nastere, data_inscriere, activ')
+      .select(COL + ', poate_pleca_singur')
       .in('id', ids)
       .order('created_at', { ascending: false })
-    if (error) return { ok: false as const, error: error.message, data: [], inscrieri: [], solduri: {} }
-    cursantRows = data ?? []
+    if (res.error && /poate_pleca_singur/i.test(res.error.message)) {
+      res = (await client
+        .from('cursanti')
+        .select(COL)
+        .in('id', ids)
+        .order('created_at', { ascending: false })) as unknown as typeof res
+    }
+    if (res.error) return { ok: false as const, error: res.error.message, data: [], inscrieri: [], solduri: {} }
+    cursantRows = (res.data ?? []) as unknown as CursantListRow[]
   } else {
-    const { data, error } = await client
+    const COL = 'id, nume, prenume, email_parinte, telefon_parinte, data_nastere, data_inscriere, activ'
+    let res = await client
       .from('cursanti')
-      .select('id, nume, prenume, email_parinte, telefon_parinte, data_nastere, data_inscriere, activ')
+      .select(COL + ', poate_pleca_singur')
       .order('created_at', { ascending: false })
-    if (error) return { ok: false as const, error: error.message, data: [], inscrieri: [], solduri: {} }
-    cursantRows = data ?? []
+    if (res.error && /poate_pleca_singur/i.test(res.error.message)) {
+      res = (await client
+        .from('cursanti')
+        .select(COL)
+        .order('created_at', { ascending: false })) as unknown as typeof res
+    }
+    if (res.error) return { ok: false as const, error: res.error.message, data: [], inscrieri: [], solduri: {} }
+    cursantRows = (res.data ?? []) as unknown as CursantListRow[]
   }
 
-  const cursantIds = cursantRows.map(c => c.id)
+  const cursantIds = (cursantRows ?? []).map(c => c.id)
   let inscrieri: Array<{
     id: string
     cursant_id: string
@@ -449,7 +472,7 @@ export async function listCursantiAction(): Promise<
     }
   }
 
-  return { ok: true as const, data: cursantRows, inscrieri, solduri }
+  return { ok: true as const, data: cursantRows ?? [], inscrieri, solduri }
 }
 
 export async function getCursantAction(cursantId: string): Promise<
@@ -464,6 +487,7 @@ export async function getCursantAction(cursantId: string): Promise<
         data_nastere: string | null
         data_inscriere: string
         activ: boolean
+        poate_pleca_singur: boolean
       }
     }
   | { ok: false; error: string; denied?: boolean }
@@ -502,15 +526,22 @@ export async function getCursantAction(cursantId: string): Promise<
     if (!link) return { ok: false, error: 'Nu ai acces la acest cursant.', denied: true }
   }
 
-  const { data, error } = await client
+  const COL = 'id, nume, prenume, email_parinte, telefon_parinte, data_nastere, data_inscriere, activ'
+  let res = await client
     .from('cursanti')
-    .select('id, nume, prenume, email_parinte, telefon_parinte, data_nastere, data_inscriere, activ')
+    .select(COL + ', poate_pleca_singur')
     .eq('id', cursantId)
     .maybeSingle()
-
-  if (error) return { ok: false, error: error.message }
-  if (!data) return { ok: false, error: 'Cursantul nu a fost găsit.' }
-  return { ok: true, data }
+  if (res.error && /poate_pleca_singur/i.test(res.error.message)) {
+    res = (await client.from('cursanti').select(COL).eq('id', cursantId).maybeSingle()) as unknown as typeof res
+  }
+  if (res.error) return { ok: false, error: res.error.message }
+  if (!res.data) return { ok: false, error: 'Cursantul nu a fost găsit.' }
+  const row = res.data as unknown as Record<string, unknown>
+  return {
+    ok: true,
+    data: { ...(row as object), poate_pleca_singur: row.poate_pleca_singur === true } as never,
+  }
 }
 
 export async function updateCursantAction(
@@ -522,6 +553,7 @@ export async function updateCursantAction(
     telefon_parinte?: string | null
     data_nastere: string
     activ: boolean
+    poate_pleca_singur?: boolean
   },
 ): Promise<{ ok: true } | { ok: false; error: string }> {
   if (!isSupabaseAdminConfigured()) {
@@ -583,6 +615,17 @@ export async function updateCursantAction(
     .eq('id', cursantId)
 
   if (error) return { ok: false, error: error.message }
+
+  if (typeof input.poate_pleca_singur === 'boolean') {
+    const { error: e2 } = await admin
+      .from('cursanti')
+      .update({ poate_pleca_singur: input.poate_pleca_singur })
+      .eq('id', cursantId)
+    if (e2 && !/poate_pleca_singur/i.test(e2.message)) return { ok: false, error: e2.message }
+    if (e2) {
+      return { ok: false, error: 'Datele au fost salvate, dar câmpul „poate pleca singur” cere rularea migrării în Supabase.' }
+    }
+  }
   return { ok: true }
 }
 

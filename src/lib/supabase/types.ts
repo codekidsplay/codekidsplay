@@ -15,6 +15,7 @@ export type CursantRow = {
   termeni_acceptati_la?: string | null
   termeni_versiune?: string | null
   termeni_confirmat_de?: string | null
+  poate_pleca_singur?: boolean
 }
 
 export type ProfileRow = {
@@ -23,6 +24,8 @@ export type ProfileRow = {
   cursant_id: string | null
   nume_afisat: string | null
   created_at: string
+  termeni_acceptati_la?: string | null
+  termeni_versiune?: string | null
 }
 
 export type InscriereRow = {
@@ -55,6 +58,7 @@ export type Database = {
           termeni_acceptati_la?: string | null
           termeni_versiune?: string | null
           termeni_confirmat_de?: string | null
+          poate_pleca_singur?: boolean
         }
         Update: Partial<Database['public']['Tables']['cursanti']['Insert']>
         Relationships: []
@@ -67,6 +71,8 @@ export type Database = {
           cursant_id?: string | null
           nume_afisat?: string | null
           created_at?: string
+          termeni_acceptati_la?: string | null
+          termeni_versiune?: string | null
         }
         Update: Partial<Omit<Database['public']['Tables']['profile']['Insert'], 'id'>>
         Relationships: []

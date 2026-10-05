@@ -18,6 +18,7 @@ export type Cursant = {
   data_nastere?: string | null
   data_inscriere: string
   activ: boolean
+  poate_pleca_singur?: boolean
 }
 
 export type Sedinta = {
