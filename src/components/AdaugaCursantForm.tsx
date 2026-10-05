@@ -36,7 +36,6 @@ export default function AdaugaCursantForm() {
   const [error, setError] = useState<string | null>(null)
   const [saving, setSaving] = useState(false)
   const [termeniAcceptati, setTermeniAcceptati] = useState(false)
-  const [poatePleca, setPoatePleca] = useState(false)
   const trimiteWa = useRef(false)
   const [salvat, setSalvat] = useState<{ id: string; waUrl: string | null } | null>(null)
 
@@ -136,7 +135,6 @@ export default function AdaugaCursantForm() {
           curs_id: cursId || null,
           profesor_id: profesorId || null,
           termeni_acceptati: termeniAcceptati,
-          poate_pleca_singur: poatePleca,
         })
         if (!r.ok) {
           setError(r.error)
@@ -409,21 +407,6 @@ export default function AdaugaCursantForm() {
             </p>
           </label>
         ) : null}
-
-        <label className="flex items-start gap-3 cursor-pointer">
-          <input
-            type="checkbox"
-            checked={poatePleca}
-            onChange={e => setPoatePleca(e.target.checked)}
-            className="mt-1 h-4 w-4 rounded border-slate-300 accent-blue-600"
-          />
-          <span className="text-sm text-slate-700">
-            <span className="font-medium">Poate pleca singur după curs</span>
-            <span className="block text-xs text-slate-400">
-              Dacă nu e bifat, copilul este predat doar unui adult.
-            </span>
-          </span>
-        </label>
 
         <label className="flex items-start gap-3 rounded-xl border border-slate-200 bg-slate-50/80 p-4 cursor-pointer">
           <input

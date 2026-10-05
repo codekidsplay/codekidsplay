@@ -15,7 +15,6 @@ export type CursantRow = {
   termeni_acceptati_la?: string | null
   termeni_versiune?: string | null
   termeni_confirmat_de?: string | null
-  poate_pleca_singur?: boolean
 }
 
 export type ProfileRow = {
@@ -58,8 +57,7 @@ export type Database = {
           termeni_acceptati_la?: string | null
           termeni_versiune?: string | null
           termeni_confirmat_de?: string | null
-          poate_pleca_singur?: boolean
-        }
+                }
         Update: Partial<Database['public']['Tables']['cursanti']['Insert']>
         Relationships: []
       }

@@ -32,7 +32,6 @@ export default function EditeazaCursantForm({ cursantId }: { cursantId: string }
     telefon_parinte: '',
     data_nastere: '',
     activ: true,
-    poate_pleca_singur: false,
   })
 
   useEffect(() => {
@@ -55,7 +54,6 @@ export default function EditeazaCursantForm({ cursantId }: { cursantId: string }
           telefon_parinte: r.data.telefon_parinte ?? '',
           data_nastere: r.data.data_nastere ?? '',
           activ: r.data.activ,
-          poate_pleca_singur: r.data.poate_pleca_singur,
         })
         setLoading(false)
         return
@@ -74,7 +72,6 @@ export default function EditeazaCursantForm({ cursantId }: { cursantId: string }
         telefon_parinte: c.telefon_parinte ?? '',
         data_nastere: c.data_nastere ?? '',
         activ: c.activ,
-        poate_pleca_singur: c.poate_pleca_singur === true,
       })
       setLoading(false)
     }
@@ -99,7 +96,6 @@ export default function EditeazaCursantForm({ cursantId }: { cursantId: string }
         telefon_parinte: form.telefon_parinte || null,
         data_nastere: form.data_nastere,
         activ: form.activ,
-        poate_pleca_singur: form.poate_pleca_singur,
       })
       setSaving(false)
       if (!r.ok) {
@@ -214,21 +210,6 @@ export default function EditeazaCursantForm({ cursantId }: { cursantId: string }
               className="w-full rounded-xl border border-slate-200 px-4 py-2.5 outline-none focus:border-blue-500"
               placeholder="07xx xxx xxx"
             />
-          </label>
-
-          <label className="flex items-start gap-3 cursor-pointer">
-            <input
-              type="checkbox"
-              checked={form.poate_pleca_singur}
-              onChange={e => setForm({ ...form, poate_pleca_singur: e.target.checked })}
-              className="mt-1 rounded border-slate-300"
-            />
-            <span className="text-sm text-slate-700">
-              <span className="font-medium">Poate pleca singur după curs</span>
-              <span className="block text-xs text-slate-400">
-                Dacă nu e bifat, copilul este predat doar unui adult.
-              </span>
-            </span>
           </label>
 
           <label className="flex items-center gap-3 cursor-pointer">
