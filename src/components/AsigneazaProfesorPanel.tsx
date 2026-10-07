@@ -101,7 +101,7 @@ export default function AsigneazaProfesorPanel({ cursantId }: { cursantId: strin
         tip: 'profesor',
         email: 'profesor@codemakerclub.ro',
         parola: 'profesor123',
-        nume: 'Profesor',
+        nume: 'Profesor Code Maker Club',
         cursant_ids: [],
       }
       creds.email.push(mockProf)

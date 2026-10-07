@@ -65,7 +65,7 @@ function seedCreds(): CredsStore {
         tip: 'profesor',
         email: 'profesor@codemakerclub.ro',
         parola: 'profesor123',
-        nume: 'Profesor',
+        nume: 'Profesor Code Maker Club',
         cursant_ids: [],
       },
     ],
