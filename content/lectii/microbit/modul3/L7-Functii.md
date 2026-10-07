@@ -1,6 +1,6 @@
 # LECȚIA 7 — Funcții (def)
 **Modulul 3 · micro:bit (Python) · Cam 2 ore**  
-**Code Kids Play**
+**Code Maker Club**
 
 > La final: cod organizat pe funcții (ex. `ars_ecran()`, `actualizeaza_scor()`).
 

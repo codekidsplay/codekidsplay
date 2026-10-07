@@ -1,6 +1,6 @@
 # Lecția 7 — Crafting simplu (2→1)
 **Modulul 6 · Lume de cuburi · Block 3 · Fir L1→L10**  
-**Code Kids Play · Cube Crafter**
+**Code Maker Club · Cube Crafter**
 
 > Continui același proiect.  
 > Azi: **rețetă 2→1** — consumi resurse, primești un item craftat (târnăcop / ușă / sabie…).

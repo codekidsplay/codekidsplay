@@ -1,6 +1,6 @@
 # LECȚIA 6 — Proiect: Stație de măsurători
 **Modulul 2 · micro:bit (blocuri) · Cam 2 ore**  
-**Code Kids Play**
+**Code Maker Club**
 
 > La final: afișezi pe rând lumină, temperatură, (opțional) pași — ca o mini-stație.
 

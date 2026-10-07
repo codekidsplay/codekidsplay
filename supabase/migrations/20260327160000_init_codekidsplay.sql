@@ -1,4 +1,4 @@
--- Code Kids Play — schema operațională (Auth + RLS)
+-- Code Maker Club — schema operațională (Auth + RLS)
 -- Curriculum (cursuri/module/lecții) rămâne în cod; aici: conturi, înscrieri, progres, abonamente.
 
 -- ---------------------------------------------------------------------------

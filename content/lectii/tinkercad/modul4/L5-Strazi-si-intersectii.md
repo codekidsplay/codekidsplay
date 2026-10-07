@@ -1,6 +1,6 @@
 # Lecția 5 — Străzi și intersecții
 **Modulul 4 · Orașul nostru**  
-**Code Kids Play · City Builder**  
+**Code Maker Club · City Builder**  
 **Vârstă:** ~8–10 ani
 
 > Azi legi cartierul cu **străzi**: o intersecție cu treceri de pietoni, trotuare și un sens giratoriu.  

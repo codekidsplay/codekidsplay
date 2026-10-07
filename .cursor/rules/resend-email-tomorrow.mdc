@@ -5,7 +5,7 @@ alwaysApply: true
 
 # TODO mâine (28 Sep 2026): email Resend la ședințe epuizate
 
-Când utilizatorul lucrează din nou la Code Kids Play pe/după **28 septembrie 2026**, amintește-i (o dată, concis) de acest task și oferă să-l implementezi.
+Când utilizatorul lucrează din nou la Code Maker Club pe/după **28 septembrie 2026**, amintește-i (o dată, concis) de acest task și oferă să-l implementezi.
 
 ## Ce de făcut
 - Înlocuiește stub-ul `trimiteEmailSedinteEpuizate` din `src/lib/notificari.ts` cu trimitere reală via **Resend** (plan Free: 3k/lună, 100/zi).

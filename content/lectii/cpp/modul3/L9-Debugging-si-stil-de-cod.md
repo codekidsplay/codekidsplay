@@ -1,6 +1,6 @@
 # LECȚIA 9 — Debugging și stil de cod
 **Modulul 3 · Funcții, string, algoritmi · 2 ore**  
-**Code Kids Play · Problem Solver**
+**Code Maker Club · Problem Solver**
 
 > Orice programator greșește, zilnic. Diferența dintre un începător și un profesionist este că profesionistul **știe cum să găsească și să repare greșelile**. Azi înveți să citești mesajele compilatorului, să urmărești un program pas cu pas și să scrii cod curat, ca să faci mai puține greșeli.  
 > Proiect: **„Repară 5 programe”** · fișier: `Prenume_Nume_M3L9.cpp` (ex. `Ana_Pop_M3L9.cpp`)

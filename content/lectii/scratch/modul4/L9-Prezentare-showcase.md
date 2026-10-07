@@ -1,6 +1,6 @@
 # Lecția 9 — Prezentare + insignă Scratch Creator
 **Modulul 4 · Închidere Scratch**  
-**Code Kids Play · Scratch Creator**
+**Code Maker Club · Scratch Creator**
 
 > Adaugi **o** îmbunătățire pe proiectul favorit, îl **prezinți**, apoi primești **insignă Scratch Creator**.  
 > Colecția de proiecte (copii + reacție) vine la **L10** — tot în Scratch.  

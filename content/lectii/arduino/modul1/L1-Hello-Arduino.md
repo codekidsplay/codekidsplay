@@ -1,6 +1,6 @@
 # Lecția 1 — Hello, Arduino!
 **Modulul 1 · Primele circuite**  
-**Code Kids Play · Circuit Starter**
+**Code Maker Club · Circuit Starter**
 
 > Azi pornești simulatorul **Tinkercad Circuits**, cunoști placa **Arduino Uno** și faci primul LED să **clipească**.  
 > Proiect: **„LED-ul care clipește”** · `Prenume_Nume_A1_L01` (ex. `Ana_Pop_A1_L01`)

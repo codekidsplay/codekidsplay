@@ -1,6 +1,6 @@
 # LECȚIA 8 — Porți un proiect din M1/M2 în Python
 **Modulul 3 · micro:bit (Python) · Cam 2 ore**  
-**Code Kids Play**
+**Code Maker Club**
 
 > La final: un proiect pe care l-ai avut pe blocuri rulează **în Python**.
 

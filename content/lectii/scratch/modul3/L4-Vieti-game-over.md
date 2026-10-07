@@ -1,6 +1,6 @@
 # Lecția 4 — Vieți și Game Over: „3 vieți”
 **Modulul 3 · Jocuri**  
-**Code Kids Play · Game Builder**
+**Code Maker Club · Game Builder**
 
 > Azi jocul tău are **3 vieți**: la fiecare pericol pierzi una, iar la 0 apare „Game Over”.  
 > **Deschide** proiectul din L3 → **Fișier → Salvează ca** → `Prenume_Nume_M3_L4` (ex. `Ana_Pop_M3_L4`)  

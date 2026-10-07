@@ -1,6 +1,6 @@
 # Lecția 2 — Suport pentru căști
 **Modulul 2 · Obiecte utile**  
-**Code Kids Play · Object Maker**  
+**Code Maker Club · Object Maker**  
 **Vârstă:** ~8–10 ani
 
 > Azi faci un obiect care trebuie să **stea în picioare**: baza decide totul.  

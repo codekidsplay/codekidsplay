@@ -1,6 +1,6 @@
 # Lecția 3 — Casă inteligentă II: securitate și acces
 **Modulul 4 · Proiecte complete**  
-**Code Kids Play · Arduino Creator**
+**Code Maker Club · Arduino Creator**
 
 > Azi adaugi casei **securitate**: o alarmă cu PIR și o ușă cu servo. Continui circuitul din lecția anterioară.  
 > Proiect: **„Casa mea II”** · `Prenume_Nume_A4_L03`

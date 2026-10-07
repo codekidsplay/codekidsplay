@@ -1,6 +1,6 @@
 # Robotică LEGO — Modul 1 (WeDo 2.0)
 
-**Code Kids Play** · ~2 ore / lecție · Badge: **Robot Starter**  
+**Code Maker Club** · ~2 ore / lecție · Badge: **Robot Starter**  
 **Hardware:** LEGO Education **WeDo 2.0** (atelier: **4 cutii** → echipe de 2)  
 **App:** WeDo 2.0 (verifică disponibilitatea pe dispozitivele atelierului)
 

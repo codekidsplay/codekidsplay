@@ -1,6 +1,6 @@
 # LECȚIA 3 — Mișcarea între camere
 **Modulul 5 · Proiect RPG în consolă · 2 ore**  
-**Code Kids Play · RPG Creator**
+**Code Maker Club · RPG Creator**
 
 > Eroul nostru stă acum într-un loc și se uită la meniu. Azi îl punem în mișcare: tastezi `nord`, `sud`, `est` sau `vest`, iar jocul îți descrie camera în care ai ajuns. Pentru asta avem nevoie de trei lucruri: **camerele** (nume și descrieri în tablouri), **drumurile dintre ele** (un tablou cu două dimensiuni) și o **buclă principală** care citește comenzi până când jucătorul iese.  
 > Proiect: **„Joc_L43.cpp”** · te plimbi prin cele șase camere ale castelului.

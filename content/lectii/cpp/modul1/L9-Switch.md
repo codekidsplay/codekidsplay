@@ -1,6 +1,6 @@
 # LECȚIA 9 — `switch`
 **Modulul 1 · Bazele C++ · 2 ore**  
-**Code Kids Play · Junior Coder**
+**Code Maker Club · Junior Coder**
 
 > Azi înveți instrucțiunea potrivită pentru **meniuri**: alegi o opțiune numerotată, iar programul execută exact acțiunea ei.  
 > Proiect: **„Meniul cafenelei”** · fișier: `Prenume_Nume_L9.cpp` (ex. `Ana_Pop_L9.cpp`)

@@ -1,6 +1,6 @@
 # Scratch Modul 2 — Lista lecțiilor
 
-**Code Kids Play** · Logică · Badge: **Logic Explorer**  
+**Code Maker Club** · Logică · Badge: **Logic Explorer**  
 **Proiecte:** 9 proiecte noi + L10 finisări pe labirint.  
 **Limbaj:** clar, **8–10 ani** · ritm dens (warm-up → proiect)  
 **Cei rapizi:** **Bonus / Provocare** pe fiecare lecție.  

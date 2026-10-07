@@ -1,6 +1,6 @@
 # Lecția 6 — Barca cu pânze
 **Modulul 1 · Bazele Tinkercad**  
-**Code Kids Play · Shape Starter**  
+**Code Maker Club · Shape Starter**  
 **Vârstă:** ~8–10 ani
 
 > Azi împarți un obiect real în **forme simple**: semisferă, pană, cilindru → o barcă.  

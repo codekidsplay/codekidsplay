@@ -1,6 +1,6 @@
 # LECȚIA 6 — Algoritmi pe cifre
 **Modulul 3 · Funcții, string, algoritmi · 2 ore**  
-**Code Kids Play · Problem Solver**
+**Code Maker Club · Problem Solver**
 
 > Azi „desfaci” numerele cifră cu cifră: le aduni, le numeri, le răstorni, le verifici și le transformi în binar. Sunt probleme clasice de olimpiadă, iar soluțiile se bazează pe două operații pe care le cunoști deja: `%` și `/`.  
 > Proiect: **„Laboratorul de cifre”** · fișier: `Prenume_Nume_M3L6.cpp` (ex. `Ana_Pop_M3L6.cpp`)

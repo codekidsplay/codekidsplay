@@ -1,6 +1,6 @@
 # Lecția 8 — Felicitare pe scene
 **Modulul 4 · Antrenament (fișier separat)**  
-**Code Kids Play · Scratch Creator**
+**Code Maker Club · Scratch Creator**
 
 > Azi faci o **felicitare interactivă**: 2–3 scene, mesaj personalizat, click/taste, animație, sunet.  
 > **Nu** e proiectul L1 — fișier **nou**.  

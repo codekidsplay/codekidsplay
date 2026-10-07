@@ -1,6 +1,6 @@
 # LECȚIA 10 — Recapitulare Modul 2 și proiectul „Catalogul de note”
 **Modulul 2 · Bucle și vectori · 2 ore**  
-**Code Kids Play · Loop Master**
+**Code Maker Club · Loop Master**
 
 > Azi încheiem Modulul 2. Recapitulăm tot ce am învățat (bucle și vectori), găsim și reparăm greșeli într-un cod „stricat”, rezolvăm un test scurt și construim **Catalogul de note**: un program cu meniu care adaugă, afișează, caută, sortează și șterge elevi.  
 > Proiect: **„Catalogul de note”** · fișier: `Prenume_Nume_M2L10.cpp` (ex. `Ana_Pop_M2L10.cpp`)

@@ -1,6 +1,6 @@
 # Lecția 8 — Checkpoint vizual (fără script)
 **Modulul 1 · Place Builder**  
-**Code Kids Play · Roblox Studio**
+**Code Maker Club · Roblox Studio**
 
 > Azi marchezi pe traseu un **checkpoint vizual**: un punct intermediar clar (culoare + formă + nume).  
 > Place: același `Prenume_Nume_M1`

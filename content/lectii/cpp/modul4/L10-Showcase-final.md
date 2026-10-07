@@ -1,6 +1,6 @@
 # LECȚIA 10 — Showcase final
 **Modulul 4 · Proiecte și autonomie · 2 ore**  
-**Code Kids Play · CodeKids Graduate**
+**Code Maker Club · CodeKids Graduate**
 
 > Ai ajuns la ultima lecție din Modulul 4. Azi facem trei lucruri: **recapitulăm** tot ce ai învățat (un test scurt și 14 exemple-fișă, câte unul pentru fiecare temă), **îți finalizezi proiectul final** și **îl prezinți** colegilor. La final primești diploma **CodeKids Graduate**.  
 > Proiect: **„Proiectul final”** · fișier: `Prenume_Nume_M4L10.cpp` (ex. `Ana_Pop_M4L10.cpp`)

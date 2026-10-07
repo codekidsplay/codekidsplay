@@ -1,6 +1,6 @@
 # Lecția 6 — Magazin cu monede
 **Modulul 5 · Reguli de joc · Block 2**  
-**Code Kids Play · Maestru de jocuri**
+**Code Maker Club · Maestru de jocuri**
 
 > Azi: **monede** + magazin — cumperi upgrade doar dacă `monede ≥ preț`.  
 > Fișier **nou**: `Prenume_Nume_M5_L6` · proiect: **„Magazinul jocului”**  

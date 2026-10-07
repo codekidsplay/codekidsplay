@@ -1,6 +1,6 @@
 # LECȚIA 6 — Proiect A: joc pe consolă
 **Modulul 4 · Proiecte și autonomie · 2 ore**  
-**Code Kids Play · CodeKids Graduate**
+**Code Maker Club · CodeKids Graduate**
 
 > Azi nu mai învățăm instrucțiuni noi. Folosim tot ce știi (funcții, `vector`, `struct`, citire sigură, fișiere, numere aleatoare) ca să construim **două jocuri complete**: „Ghici numărul”, cu niveluri, scor și clasament salvat în fișier, și „X și 0”, cu doi jucători sau contra calculatorului. Vei vedea cum se împarte un joc în părți mici, cum se testează fiecare parte și cum se leagă totul.  
 > Proiect: **„Ghici numărul”** sau **„X și 0”** (alegi tu) · fișier: `Prenume_Nume_M4L6.cpp` (ex. `Ana_Pop_M4L6.cpp`)

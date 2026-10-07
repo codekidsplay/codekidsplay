@@ -1,6 +1,6 @@
 # Lecția 6 — Alarma anti-intruși
 **Modulul 2 · Senzori**  
-**Code Kids Play · Sensor Scout**
+**Code Maker Club · Sensor Scout**
 
 > Azi construiești o **alarmă** cu senzor de mișcare **PIR**, un buton de armare și o sirenă.  
 > Proiect: **„Santinela”** · `Prenume_Nume_A2_L06`

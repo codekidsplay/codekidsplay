@@ -1,6 +1,6 @@
 # LECȚIA 5 — String: căutare și litere
 **Modulul 3 · Funcții, string, algoritmi · 2 ore**  
-**Code Kids Play · Problem Solver**
+**Code Maker Club · Problem Solver**
 
 > Azi „deschizi” un text și te uiți în el literă cu literă: numeri vocale, transformi literele mici în mari, cauți un cuvânt, înlocuiești caractere și afli ce literă apare cel mai des. Așa lucrează un editor de text când apeși Ctrl+F.  
 > Proiect: **„Statistica textului”** · fișier: `Prenume_Nume_M3L5.cpp` (ex. `Ana_Pop_M3L5.cpp`)

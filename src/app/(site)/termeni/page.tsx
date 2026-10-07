@@ -19,7 +19,7 @@ export default function TermeniPage() {
           Termeni și condiții
         </h1>
         <p className="text-[var(--ckp-muted)] text-sm mb-10">
-          Code Kids Play Focșani · Ultima actualizare: octombrie 2026
+          Code Maker Club Focșani · Ultima actualizare: octombrie 2026
         </p>
 
         <div className="space-y-8 text-[var(--ckp-ink-soft)] text-base leading-relaxed">
@@ -29,7 +29,7 @@ export default function TermeniPage() {
             </h2>
             <p>
               Prezentul document stabilește termenii și condițiile de participare la cursurile și atelierele
-              educative de programare, robotică și tehnologie organizate sub marca <strong>Code Kids Play</strong> în Focșani,
+              educative de programare, robotică și tehnologie organizate sub marca <strong>Code Maker Club</strong> în Focșani,
               precum și regulile de utilizare a platformei digitale dedicate elevilor și părinților.
             </p>
             <p className="mt-2">
@@ -51,10 +51,10 @@ export default function TermeniPage() {
               2. Definiții
             </h2>
             <ul className="list-disc pl-5 space-y-1">
-              <li><strong>Prestator / Atelier:</strong> Code Kids Play Focșani.</li>
+              <li><strong>Prestator / Atelier:</strong> Code Maker Club Focșani.</li>
               <li><strong>Beneficiar / Cursant:</strong> copilul sau adolescentul participant la cursuri.</li>
               <li><strong>Reprezentant legal / Client:</strong> părintele sau tutorele legal al cursantului, persoana adultă care efectuează înscrierea și achită contravaloarea serviciilor.</li>
-              <li><strong>Platformă:</strong> aplicația web Code Kids Play dedicată evidenței progresului, temelor practice, materialelor de curs și comunicării cu părinții.</li>
+              <li><strong>Platformă:</strong> aplicația web Code Maker Club dedicată evidenței progresului, temelor practice, materialelor de curs și comunicării cu părinții.</li>
             </ul>
           </section>
 
@@ -99,7 +99,7 @@ export default function TermeniPage() {
               <strong>Vârsta recomandată:</strong> fiecare curs și modul este conceput pentru o anumită categorie de vârstă
               și un anumit nivel de pregătire. Recomandăm respectarea vârstei și a modulelor recomandate, în ordinea din
               programă, pentru ca cel mic să înțeleagă lecțiile și să progreseze firesc. Această recomandare se aplică atât
-              grupelor din atelier, cât și abonamentului Autodidact. Echipa Code Kids Play vă poate îndruma către modulul
+              grupelor din atelier, cât și abonamentului Autodidact. Echipa Code Maker Club vă poate îndruma către modulul
               potrivit la înscriere.
             </p>
             <p className="mt-2">
@@ -118,7 +118,7 @@ export default function TermeniPage() {
               5. Abonamente, tarife și pachete de ședințe
             </h2>
             <p>
-              Participarea la atelierele Code Kids Play se realizează în baza abonamentelor structurate pe număr de ședințe
+              Participarea la atelierele Code Maker Club se realizează în baza abonamentelor structurate pe număr de ședințe
               (fiecare ședință de atelier are o durată de <strong>2 ore de lucru intensiv / practic</strong>). Rezervarea fermă
               a locului în grupă este garantată prin achitarea pachetului ales.
             </p>
@@ -242,7 +242,7 @@ export default function TermeniPage() {
               9. Siguranța în atelier și utilizarea responsabilă a echipamentelor
             </h2>
             <p>
-              Code Kids Play pune la dispoziția fiecărui copil calculatoare performante, kituri modulare de robotică
+              Code Maker Club pune la dispoziția fiecărui copil calculatoare performante, kituri modulare de robotică
               (LEGO WeDo 2.0), plăci de dezvoltare (BBC micro:bit, Arduino), senzori și componente conexe.
             </p>
             <p className="mt-2">
@@ -289,12 +289,12 @@ export default function TermeniPage() {
             </p>
             <p className="mt-2">
               <strong>Materialele atelierului:</strong> Structura cursurilor, suporturile didactice, aplicațiile demonstrative
-              și conținutul platformei sunt proprietatea Code Kids Play și sunt destinate exclusiv învățării individuale,
+              și conținutul platformei sunt proprietatea Code Maker Club și sunt destinate exclusiv învățării individuale,
               fiind interzisă reproducerea sau comercializarea lor fără acord scris.
             </p>
             <p className="mt-2">
               <strong>Interdicția de copiere și distribuire:</strong> Lecțiile, textele, înregistrările audio, imaginile,
-              exercițiile și celelalte materiale Code Kids Play (inclusiv cele din abonamentul Autodidact) nu pot fi copiate,
+              exercițiile și celelalte materiale Code Maker Club (inclusiv cele din abonamentul Autodidact) nu pot fi copiate,
               descărcate în vederea redistribuirii, fotografiate sau capturate, înregistrate, traduse, modificate, publicate
               online (site-uri, rețele sociale, grupuri, platforme de partajare) ori transmise unor terțe persoane, gratuit
               sau contra cost. Contul și accesul la platformă sunt personale și nu pot fi cedate sau împărțite cu alți copii.
@@ -317,7 +317,7 @@ export default function TermeniPage() {
               12. Protecția datelor cu caracter personal (GDPR)
             </h2>
             <p>
-              Code Kids Play respectă cu strictețe confidențialitatea datelor dumneavoastră și ale copilului, în conformitate
+              Code Maker Club respectă cu strictețe confidențialitatea datelor dumneavoastră și ale copilului, în conformitate
               cu Regulamentul General privind Protecția Datelor (RGPD - Regulamentul UE 2016/679).
             </p>
             <p className="mt-2">

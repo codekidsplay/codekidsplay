@@ -1,6 +1,6 @@
 # LECȚIA 3 — Bucla `while`
 **Modulul 2 · Bucle și vectori · 2 ore**  
-**Code Kids Play · Loop Master**
+**Code Maker Club · Loop Master**
 
 > Azi înveți să repeți o acțiune **cât timp** o condiție este adevărată, chiar dacă nu știi dinainte de câte ori: citești numere până se introduce 0, ghicești un număr, prelucrezi cifrele unui număr.  
 > Proiect: **„Calculator care nu se oprește singur”** · fișier: `Prenume_Nume_M2L3.cpp` (ex. `Ana_Pop_M2L3.cpp`)

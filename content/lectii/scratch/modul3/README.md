@@ -1,6 +1,6 @@
 # Scratch Modul 3 — Lista lecțiilor
 
-**Code Kids Play** · Jocuri · Badge: **Game Builder**  
+**Code Maker Club** · Jocuri · Badge: **Game Builder**  
 **Proiecte:** 9 proiecte noi + L10 finisări · proiect final L9: „Prinde obiectele”.  
 **Limbaj:** clar, **8–10 ani** · ritm dens (warm-up → proiect gata în oră)  
 **Cei rapizi:** **Bonus / Provocare** pe fiecare lecție.  

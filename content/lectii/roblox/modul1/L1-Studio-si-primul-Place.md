@@ -1,6 +1,6 @@
 # Lecția 1 — Studio + primul Place
 **Modulul 1 · Place Builder**  
-**Code Kids Play · Roblox Studio**
+**Code Maker Club · Roblox Studio**
 
 > Azi deschizi **Roblox Studio**, înveți **5 comenzi esențiale** pe ecran, și lași ceva pe lume pe care îl poți **testa cu Play**.  
 > Place (fișierul tău): `Prenume_Nume_M1` (ex. `Ana_Pop_M1`)  

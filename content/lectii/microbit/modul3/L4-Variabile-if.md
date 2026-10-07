@@ -1,6 +1,6 @@
 # LECȚIA 4 — Variabile, if, operatori
 **Modulul 3 · micro:bit (Python) · Cam 2 ore**  
-**Code Kids Play**
+**Code Maker Club**
 
 > La final: scor + condiții în Python, pe placă.
 

@@ -1,6 +1,6 @@
 # LECȚIA 8 — Căutarea în vector
 **Modulul 2 · Bucle și vectori · 2 ore**  
-**Code Kids Play · Loop Master**
+**Code Maker Club · Loop Master**
 
 > Azi înveți să „cauți” într-un vector, ca atunci când apeși Ctrl+F într-o listă: **există** valoarea? **unde** se află? **de câte ori** apare? Mai înveți să **ștergi** și să **inserezi** elemente.  
 > Proiect: **„Agenda telefonică”** · fișier: `Prenume_Nume_M2L8.cpp` (ex. `Ana_Pop_M2L8.cpp`)

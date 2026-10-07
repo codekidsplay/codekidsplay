@@ -1,6 +1,6 @@
 # Lecția 4 — Servo-ul care salută
 **Modulul 3 · Afișaj și mișcare**  
-**Code Kids Play · Display Maker**
+**Code Maker Club · Display Maker**
 
 > Azi dai **mișcare** proiectelor: un **servomotor** care poate merge exact la unghiul pe care îl alegi.  
 > Proiect: **„Robotul care salută”** · `Prenume_Nume_A3_L04`

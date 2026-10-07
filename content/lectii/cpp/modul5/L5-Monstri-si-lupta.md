@@ -1,6 +1,6 @@
 # LECȚIA 5 — Monștri și luptă
 **Modulul 5 · Proiect RPG în consolă · 2 ore**  
-**Code Kids Play · RPG Creator**
+**Code Maker Club · RPG Creator**
 
 > În pivnița castelului locuiește un **goblin**. Azi îl aducem în joc și ne luptăm cu el, **pe ture**: întâi lovești tu, apoi lovește el. Cât de tare lovește fiecare depinde de un **zar** virtual, adică de numere aleatoare cu `rand()`. Eroul poate ataca, bea o poțiune sau fugi. Dacă înfrânge monstrul, primește monede și puncte.  
 > Proiect: **„Joc_L45.cpp”** · pivnița devine un loc periculos.

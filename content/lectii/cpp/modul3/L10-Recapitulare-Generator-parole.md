@@ -1,6 +1,6 @@
 # LECȚIA 10 — Recapitulare Modul 3 și proiectul „Seiful secret”
 **Modulul 3 · Funcții, string, algoritmi · 2 ore**  
-**Code Kids Play · Problem Solver**
+**Code Maker Club · Problem Solver**
 
 > Azi încheiem Modulul 3. Recapitulăm funcțiile, textele, algoritmii pe numere și numerele aleatoare, apoi le folosim la un proiect: un **generator de parole**, un **verificator de parole** și un **cifru** pentru mesaje secrete, toate într-un singur program cu meniu.  
 > Proiect: **„Seiful secret”** · fișier: `Prenume_Nume_M3L10.cpp` (ex. `Ana_Pop_M3L10.cpp`)
@@ -65,7 +65,7 @@ void chenar(string text, char c) {
 }
 
 int main() {
-    chenar("Code Kids Play", '*');
+    chenar("Code Maker Club", '*');
     chenar("Modul 3", '#');
     return 0;
 }
@@ -74,7 +74,7 @@ int main() {
 **Ieșire:**
 ```
 ******************
-* Code Kids Play *
+* Code Maker Club *
 ******************
 ###########
 # Modul 3 #
@@ -715,7 +715,7 @@ int main() {
     assert(cripteaza("abc", 1) == "bcd");
     assert(cripteaza("xyz", 3) == "abc");
     assert(decripteaza(cripteaza("Salut, lume!", 7), 7) == "Salut, lume!");
-    assert(decripteaza(cripteaza("Code Kids Play", 25), 25) == "Code Kids Play");
+    assert(decripteaza(cripteaza("Code Maker Club", 25), 25) == "Code Maker Club");
 
     cout << "Cifrul trece toate testele!" << endl;
     return 0;

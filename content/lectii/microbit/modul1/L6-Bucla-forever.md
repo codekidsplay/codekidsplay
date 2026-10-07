@@ -1,6 +1,6 @@
 # LECȚIA 6 — Bucle: forever + pause
 **Modulul 1 · micro:bit (blocuri) · Cam 2 ore**  
-**Code Kids Play**
+**Code Maker Club**
 
 > La final: ceva rulează mereu (animație / verificare), fără să apeși de 100 ori.
 

@@ -1,6 +1,6 @@
 # LECȚIA 8 — Salvare și încărcare (fișiere)
 **Modulul 5 · Proiect RPG în consolă · 2 ore**  
-**Code Kids Play · RPG Creator**
+**Code Maker Club · RPG Creator**
 
 > Eroul tău a luptat, a strâns obiecte și a adunat monede, dar când închizi programul, totul dispare. Azi învățăm să scriem datele jocului într-un **fișier** și să le citim înapoi. Așa apare în meniu opțiunea **„Continuă jocul”**, la fel ca în jocurile adevărate.  
 > Proiect: **„Joc_L48.cpp”** · comanda `salveaza` și opțiunea „Continuă jocul”.

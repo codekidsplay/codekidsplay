@@ -1,9 +1,9 @@
-/** Template + canale notificare părinte — Code Kids Play Focșani */
+/** Template + canale notificare părinte — Code Maker Club Focșani */
 
 /** Folosit în email + WhatsApp (înscriere, oferte, ședințe epuizate) */
 export function textPrezentaObligatorie(): string {
   return `Prezența la curs este obligatorie pe durata anului școlar.
-În caz de absență, cursantul recuperează lecția pe platforma Code Kids Play Focșani.`
+În caz de absență, cursantul recuperează lecția pe platforma Code Maker Club Focșani.`
 }
 
 export function mesajSedinteEpuizate(prenumeCopil: string): string {
@@ -11,7 +11,7 @@ export function mesajSedinteEpuizate(prenumeCopil: string): string {
 
 Pentru ${prenumeCopil} a fost ultima ședință. Vă așteptăm în continuare cu următoarea ofertă:
 
-Detalii abonamente Code Kids Play Focșani:
+Detalii abonamente Code Maker Club Focșani:
 ✅ 4 ședințe - 8 ore - 300 de lei / 37,5 lei ora de programare
 
 ✅ 9 ședințe - 18 ore - 600 de lei / 33,3 lei ora de programare
@@ -31,7 +31,7 @@ Detalii abonamente Code Kids Play Focșani:
 ${textPrezentaObligatorie()}
 
 Mulțumim!
-Code Kids Play Focșani`
+Code Maker Club Focșani`
 }
 
 /** Mesaj scurt politică / înscriere — email + WhatsApp */
@@ -41,15 +41,15 @@ export function mesajPoliticaPrezenta(): string {
 ${textPrezentaObligatorie()}
 
 Mulțumim!
-Code Kids Play Focșani`
+Code Maker Club Focșani`
 }
 
 export function subiectEmailSedinteEpuizate(prenumeCopil: string): string {
-  return `Code Kids Play Focșani — ședințe epuizate pentru ${prenumeCopil}`
+  return `Code Maker Club Focșani — ședințe epuizate pentru ${prenumeCopil}`
 }
 
 export function subiectEmailPoliticaPrezenta(): string {
-  return `Code Kids Play Focșani — prezența la curs`
+  return `Code Maker Club Focșani — prezența la curs`
 }
 
 /** Stub: în producție → Resend / Supabase Edge Function */

@@ -1,6 +1,6 @@
 # LECȚIA 6 — Doi senzori, un robot (logică grea)
 **Modulul 2 · Robotică LEGO WeDo 2.0 · Cam 2 ore**  
-**Code Kids Play**
+**Code Maker Club**
 
 > La final logica folosește **tilt + motion** împreună într-un scenariu clar.
 

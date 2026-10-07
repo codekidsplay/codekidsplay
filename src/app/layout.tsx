@@ -15,10 +15,10 @@ const body = Outfit({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://codekidsplay.ro'),
-  applicationName: 'Code Kids Play',
+  applicationName: 'Code Maker Club',
   title: {
-    default: 'Code Kids Play Focșani — cursuri de programare pentru copii',
-    template: '%s · Code Kids Play',
+    default: 'Code Maker Club Focșani — cursuri de programare pentru copii',
+    template: '%s · Code Maker Club',
   },
   description:
     'Atelier de coding în Focșani: Scratch, Python, C++, HTML/CSS/JS, Arduino și robotică. Copiii învață prin proiecte, acasă și în clasă.',
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   },
   appleWebApp: {
     capable: true,
-    title: 'Code Kids Play',
+    title: 'Code Maker Club',
     statusBarStyle: 'black-translucent',
   },
   formatDetection: {
@@ -41,10 +41,10 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'ro_RO',
-    siteName: 'Code Kids Play',
-    title: 'Code Kids Play Focșani',
+    siteName: 'Code Maker Club',
+    title: 'Code Maker Club Focșani',
     description: 'Cursuri de programare pentru copii — Focșani',
-    images: [{ url: '/logo-icon.png', width: 618, height: 618, alt: 'Code Kids Play' }],
+    images: [{ url: '/logo-icon.png', width: 618, height: 618, alt: 'Code Maker Club' }],
   },
 }
 

@@ -1,6 +1,6 @@
 # Lecția 9 — Clemă pentru cabluri
 **Modulul 2 · Obiecte utile**  
-**Code Kids Play · Object Maker**  
+**Code Maker Club · Object Maker**  
 **Vârstă:** ~8–10 ani
 
 > Azi pornești de la un **obiect real**: măsori un cablu și faci o clemă exact pe mărimea lui.  

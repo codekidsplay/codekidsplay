@@ -1,6 +1,6 @@
 # Lecția 4 — Trecere de pietoni
 **Modulul 1 · Primele circuite**  
-**Code Kids Play · Circuit Starter**
+**Code Maker Club · Circuit Starter**
 
 > Azi construiești un **semafor** pentru mașini cu **buton de traversare** pentru pietoni.  
 > Proiect: **„Trecerea mea”** · `Prenume_Nume_A1_L04`

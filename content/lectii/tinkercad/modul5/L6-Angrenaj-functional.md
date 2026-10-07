@@ -1,6 +1,6 @@
 # Lecția 6 — Angrenaj funcțional
 **Modulul 5 · Avansat și proiectare tehnică**  
-**Code Kids Play · Design Pro**  
+**Code Maker Club · Design Pro**  
 **Public:** recomandat **10+**
 
 > Azi folosești **generatorul de roți dințate** din Tinkercad, așezi două roți pe axe la distanța potrivită și calculezi **raportul de transmisie**.  

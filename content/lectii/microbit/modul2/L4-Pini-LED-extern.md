@@ -1,6 +1,6 @@
 # LECȚIA 4 — Pini: LED extern (sau buzzer)
 **Modulul 2 · micro:bit (blocuri) · Cam 2 ore**  
-**Code Kids Play**
+**Code Maker Club**
 
 > La final: un LED (sau buzzer) pe breadboard/crocodil se aprinde din cod.
 

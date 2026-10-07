@@ -1,6 +1,6 @@
 # LECȚIA 5 — Meniuri și starea programului: scheletul unei aplicații
 **Modulul 4 · Proiecte și autonomie · 2 ore**  
-**Code Kids Play · CodeKids Graduate**
+**Code Maker Club · CodeKids Graduate**
 
 > Până acum, meniurile tale funcționau doar dacă utilizatorul tasta ce trebuie. Dar un utilizator real scrie litere în loc de numere, apasă Enter fără să scrie nimic, alege opțiuni care nu există. Azi construim partea „solidă” a unei aplicații: **citire sigură** a datelor, **meniuri** curate, **starea programului** ținută într-un singur loc și un **schelet** pe care îl poți refolosi în toate proiectele.  
 > Proiect: **„Lista de sarcini”** · fișier: `Prenume_Nume_M4L5.cpp` (ex. `Ana_Pop_M4L5.cpp`)

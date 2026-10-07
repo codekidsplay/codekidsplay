@@ -1,6 +1,6 @@
 # Lecția 9 — Mini-proiect: Labirint
 **Modulul 2 · Logică**  
-**Code Kids Play · Logic Explorer**
+**Code Maker Club · Logic Explorer**
 
 > Azi pui împreună logica din M2: un **labirint** pe care îl controlezi, cu pereți, ieșire și restart curat.  
 > Proiect: **„Labirintul meu”** · fișier: `Prenume_Nume_L9` (ex. `Ana_Pop_L9`)

@@ -1,4 +1,4 @@
-# Robotică LEGO — Code Kids Play (WeDo 2.0)
+# Robotică LEGO — Code Maker Club (WeDo 2.0)
 
 **Hardware atelier:** 4× LEGO Education **WeDo 2.0**  
 **Format:** 2 module × 10 lecții × ~2 ore · echipe de 2 elevi / cutie

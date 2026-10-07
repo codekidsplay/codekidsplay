@@ -1,6 +1,6 @@
 # Lecția 2 — Dacă… altfel
 **Modulul 2 · Logică**  
-**Code Kids Play · Logic Explorer**
+**Code Maker Club · Logic Explorer**
 
 > Azi ai **două drumuri**: una dacă e „da”, alta dacă e „nu”.  
 > Proiect: **„Zi sau noapte”** · fișier: `Prenume_Nume_L2` (ex. `Ana_Pop_L2`)

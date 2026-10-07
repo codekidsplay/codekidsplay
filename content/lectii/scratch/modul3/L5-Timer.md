@@ -1,6 +1,6 @@
 # Lecția 5 — Timer: „Ai 20 de secunde”
 **Modulul 3 · Jocuri**  
-**Code Kids Play · Game Builder**
+**Code Maker Club · Game Builder**
 
 > Azi jocul tău are un **cronometru**: trebuie să prinzi 5 stele înainte să treacă 20 de secunde.  
 > **Deschide** proiectul din L4 → **Fișier → Salvează ca** → `Prenume_Nume_M3_L5` (ex. `Ana_Pop_M3_L5`)  

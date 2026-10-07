@@ -1,6 +1,6 @@
 # LECȚIA 8 — Numere aleatoare cu `rand()`
 **Modulul 3 · Funcții, string, algoritmi · 2 ore**  
-**Code Kids Play · Problem Solver**
+**Code Maker Club · Problem Solver**
 
 > Azi faci programele **imprevizibile**: un zar virtual, o monedă care se învârte, un număr secret de ghicit, o parolă generată la întâmplare. Fără numere aleatoare nu există jocuri interesante.  
 > Proiect: **„Duelul de zaruri”** · fișier: `Prenume_Nume_M3L8.cpp` (ex. `Ana_Pop_M3L8.cpp`)

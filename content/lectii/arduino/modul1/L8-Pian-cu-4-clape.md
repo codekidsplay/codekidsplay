@@ -1,6 +1,6 @@
 # Lecția 8 — Pian cu 4 clape
 **Modulul 1 · Primele circuite**  
-**Code Kids Play · Circuit Starter**
+**Code Maker Club · Circuit Starter**
 
 > Azi faci un **pian mic**: 4 butoane, fiecare cu altă notă, și înveți **tablouri** (`array`) ca să cânți melodii.  
 > Proiect: **„Pianul meu”** · `Prenume_Nume_A1_L08`

@@ -1,6 +1,6 @@
 # Lecția 9 — Proiect final: construcția
 **Modulul 4 · Proiecte complete**  
-**Code Kids Play · Arduino Creator**
+**Code Maker Club · Arduino Creator**
 
 > Azi îți construiești **proiectul final**, cel pe care l-ai planificat în Lecția 1. Nu mai e o lecție cu pași: ești **inventator**, iar eu sunt doar ghidul.  
 > Proiect: **proiectul tău** · `Prenume_Nume_A4_L09`

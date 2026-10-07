@@ -1,6 +1,6 @@
 # LECȚIA 8 — Operatori logici: `&&`, `||`, `!`
 **Modulul 1 · Bazele C++ · 2 ore**  
-**Code Kids Play · Junior Coder**
+**Code Maker Club · Junior Coder**
 
 > Azi înveți să combini mai multe condiții într-una singură: „și”, „sau”, „nu”. Așa verifici intervale, reguli de acces și parole.  
 > Proiect: **„Poarta jocului”** · fișier: `Prenume_Nume_L8.cpp` (ex. `Ana_Pop_L8.cpp`)

@@ -51,7 +51,7 @@ export function mesajWhatsAppLogin(opts: {
 }): string {
   return [
     `Bună ziua! 👋`,
-    `Iată conturile Code Kids Play pentru ${opts.prenume}:`,
+    `Iată conturile Code Maker Club pentru ${opts.prenume}:`,
     ``,
     `👨‍👩‍👧 *Cont părinte*`,
     `Email: ${opts.email_parinte}`,
@@ -65,7 +65,7 @@ export function mesajWhatsAppLogin(opts: {
     `📄 Termeni și condiții: ${SITE_TERMENI_URL}`,
     ``,
     `Mulțumim și mult succes! 🚀`,
-    `Echipa Code Kids Play`,
+    `Echipa Code Maker Club`,
   ].join('\n')
 }
 

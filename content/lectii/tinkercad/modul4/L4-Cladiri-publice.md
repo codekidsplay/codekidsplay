@@ -1,6 +1,6 @@
 # Lecția 4 — Clădiri publice
 **Modulul 4 · Orașul nostru**  
-**Code Kids Play · City Builder**  
+**Code Maker Club · City Builder**  
 **Vârstă:** ~8–10 ani
 
 > Azi construiești **școala orașului**: clădire mai lată, cu trepte, ușă, ferestre și steag.  

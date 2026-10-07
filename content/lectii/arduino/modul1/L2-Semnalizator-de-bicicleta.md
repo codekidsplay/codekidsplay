@@ -1,6 +1,6 @@
 # Lecția 2 — Semnalizator de bicicletă
 **Modulul 1 · Primele circuite**  
-**Code Kids Play · Circuit Starter**
+**Code Maker Club · Circuit Starter**
 
 > Azi folosești **două LED-uri**, **variabile** și **bucla `for`** ca să faci un semnalizator care arată direcția.  
 > Proiect: **„Bicicleta mea”** · `Prenume_Nume_A1_L02`

@@ -1,6 +1,6 @@
 # LECȚIA 7 — Divizibilitate și numere prime
 **Modulul 3 · Funcții, string, algoritmi · 2 ore**  
-**Code Kids Play · Problem Solver**
+**Code Maker Club · Problem Solver**
 
 > Azi explorăm „personalitatea” numerelor: cu ce se împart exact, care sunt numerele **prime** (cele care nu se împart decât la 1 și la ele însele) și cum aflăm cel mai mare divizor comun. Sunt teme clasice de olimpiadă și baza criptografiei moderne.  
 > Proiect: **„Laboratorul de numere”** · fișier: `Prenume_Nume_M3L7.cpp` (ex. `Ana_Pop_M3L7.cpp`)

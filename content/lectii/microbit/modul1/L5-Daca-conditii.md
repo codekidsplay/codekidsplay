@@ -1,6 +1,6 @@
 # LECȚIA 5 — Dacă… atunci (condiții)
 **Modulul 1 · micro:bit (blocuri) · Cam 2 ore**  
-**Code Kids Play**
+**Code Maker Club**
 
 > La final: programul alege drumuri (if / else) după buton sau valoare.
 

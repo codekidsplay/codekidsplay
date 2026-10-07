@@ -25,7 +25,7 @@ function prefersReducedMotion() {
   )
 }
 
-/** Ochi Code Kids Play — idle bounce + click flip/scor (la 888 → reset 0). */
+/** Ochi Code Maker Club — idle bounce + click flip/scor (la 888 → reset 0). */
 export default function OchiPlay({ className = '' }: { className?: string }) {
   const [score, setScore] = useState(0)
   const [ready, setReady] = useState(false)
@@ -132,8 +132,8 @@ export default function OchiPlay({ className = '' }: { className?: string }) {
       className={`group relative inline-flex cursor-pointer items-center gap-2 rounded-full p-1 -m-1 outline-none focus-visible:ring-2 focus-visible:ring-[var(--ckp-purple)]/40 [perspective:480px] ${className}`}
       aria-label={
         ready
-          ? `Ochi Code Kids Play — scor ${score}. Apasă ca să întoarcă ochii.`
-          : 'Ochi Code Kids Play'
+          ? `Ochi Code Maker Club — scor ${score}. Apasă ca să întoarcă ochii.`
+          : 'Ochi Code Maker Club'
       }
       title="Psst… apasă pe ochi"
     >

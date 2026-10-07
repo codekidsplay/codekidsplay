@@ -1,6 +1,6 @@
 # Lecția 8 — Transport în oraș
 **Modulul 4 · Orașul nostru**  
-**Code Kids Play · City Builder**  
+**Code Maker Club · City Builder**  
 **Vârstă:** ~8–10 ani
 
 > Azi faci o **mașină**, un **autobuz** și o **stație**, la aceeași scară ca restul orașului.  

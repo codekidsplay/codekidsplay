@@ -1,6 +1,6 @@
 # Lecția 7 — Ventilatorul meu
 **Modulul 3 · Afișaj și mișcare**  
-**Code Kids Play · Display Maker**
+**Code Maker Club · Display Maker**
 
 > Azi comanzi un **motor de curent continuu** (DC) cu ajutorul unui **tranzistor** și faci un ventilator cu viteză reglabilă și pornire automată la căldură.  
 > Proiect: **„Ventilatorul meu”** · `Prenume_Nume_A3_L07`

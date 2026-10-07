@@ -1,6 +1,6 @@
 # Lecția 4 — Butonul magic (evenimente)
 **Modulul 1 · Primii pași**  
-**Code Kids Play · Scratch Starter**
+**Code Maker Club · Scratch Starter**
 
 > Azi înveți că blocurile pornesc când se întâmplă ceva — steag, click sau tastă.  
 > Proiect: **„Butonul magic”** · fișier: `Prenume_Nume_L4` (ex. `Ana_Pop_L4`)

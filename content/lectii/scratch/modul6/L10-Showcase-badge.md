@@ -1,6 +1,6 @@
 # Lecția 10 — Finisări, prezentare + insignă Cube Crafter
 **Modulul 6 · Lume de cuburi · Block 3 · Fir L1→L10**  
-**Code Kids Play · Cube Crafter**
+**Code Maker Club · Cube Crafter**
 
 > Ultima oră pe `Prenume_Nume_M6_LumeCuburi`: finisări **A–F**, test pe steag, prezentare **1–2 min**, **insignă Cube Crafter**.
 

@@ -1,6 +1,6 @@
 # LECȚIA 6 — Operatori de comparare și instrucțiunea `if`
 **Modulul 1 · Bazele C++ · 2 ore**  
-**Code Kids Play · Junior Coder**
+**Code Maker Club · Junior Coder**
 
 > Azi programul tău învață să **ia decizii**: face anumite lucruri doar dacă o condiție este adevărată, exact ca blocul „dacă” din Scratch.  
 > Proiect: **„Ești admis?”** · fișier: `Prenume_Nume_L6.cpp` (ex. `Ana_Pop_L6.cpp`)

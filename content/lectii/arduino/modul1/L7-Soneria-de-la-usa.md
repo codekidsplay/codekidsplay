@@ -1,6 +1,6 @@
 # Lecția 7 — Soneria de la ușă
 **Modulul 1 · Primele circuite**  
-**Code Kids Play · Circuit Starter**
+**Code Maker Club · Circuit Starter**
 
 > Azi faci Arduino să **sune**: conectezi un **buzzer (piezo)** și programezi o **sonerie** cu butonul de la ușă.  
 > Proiect: **„Soneria mea”** · `Prenume_Nume_A1_L07`

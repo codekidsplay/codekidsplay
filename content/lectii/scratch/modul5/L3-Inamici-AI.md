@@ -1,6 +1,6 @@
 # Lecția 3 — Inamici: patrulare și detecție
 **Modulul 5 · Reguli de joc · Block 1**  
-**Code Kids Play · Maestru de jocuri**
+**Code Maker Club · Maestru de jocuri**
 
 > Azi: inamic care **patrulează** între două limite (sau se întoarce pe perete/culoare) + lovitură la atingere.  
 > Fișier **nou**: `Prenume_Nume_M5_L3` · proiect: **„Evită patrula”**  

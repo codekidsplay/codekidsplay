@@ -1,6 +1,6 @@
 # LECȚIA 9 — Proiect: joc mic pe LED
 **Modulul 1 · micro:bit (blocuri) · Cam 2 ore**  
-**Code Kids Play**
+**Code Maker Club**
 
 > La final: un joc scurt jucabil (ex. prinde punctul / reacție / ghicește).
 

@@ -1,6 +1,6 @@
 # LECȚIA 2 — `for`: sumă, produs, numărare
 **Modulul 2 · Bucle și vectori · 2 ore**  
-**Code Kids Play · Loop Master**
+**Code Maker Club · Loop Master**
 
 > Azi bucla `for` începe să **țină minte**: aduni numere, le înmulțești, le numeri și afli cel mai mic și cel mai mare.  
 > Proiect: **„Statistici de clasă”** · fișier: `Prenume_Nume_M2L2.cpp` (ex. `Ana_Pop_M2L2.cpp`)

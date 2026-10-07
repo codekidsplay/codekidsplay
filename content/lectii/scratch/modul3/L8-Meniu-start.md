@@ -1,6 +1,6 @@
 # Lecția 8 — Meniu Start
 **Modulul 3 · Jocuri**  
-**Code Kids Play · Game Builder**
+**Code Maker Club · Game Builder**
 
 > Azi jocul tău are un **meniu**: nu începe la întâmplare, ci abia după ce apeși butonul Start.  
 > **Deschide** proiectul din L7 → **Fișier → Salvează ca** → `Prenume_Nume_M3_L8` (ex. `Ana_Pop_M3_L8`)  

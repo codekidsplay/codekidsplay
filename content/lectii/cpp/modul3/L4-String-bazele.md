@@ -1,6 +1,6 @@
 # LECȚIA 4 — String: bazele
 **Modulul 3 · Funcții, string, algoritmi · 2 ore**  
-**Code Kids Play · Problem Solver**
+**Code Maker Club · Problem Solver**
 
 > Până acum ai lucrat mai ales cu numere. Azi intri în lumea **textului**: un `string` este un șir de litere pe care îl poți măsura, îl poți parcurge literă cu literă, îl poți lipi cu altul și îl poți răsturna.  
 > Proiect: **„Analizorul de nume”** · fișier: `Prenume_Nume_M3L4.cpp` (ex. `Ana_Pop_M3L4.cpp`)

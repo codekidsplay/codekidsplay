@@ -1,6 +1,6 @@
 # Lecția 9 — Mini-proiect: Prinde obiectele
 **Modulul 3 · Jocuri**  
-**Code Kids Play · Game Builder**
+**Code Maker Club · Game Builder**
 
 > Azi pui împreună tot ce ai învățat în M3: un joc **întreg**, cu meniu, obiecte care cad, scor și un final clar.  
 > **Deschide** proiectul din L8 *(sau cel mai recent care merge)* → **Fișier → Salvează ca** → `Prenume_Nume_M3_L9`  

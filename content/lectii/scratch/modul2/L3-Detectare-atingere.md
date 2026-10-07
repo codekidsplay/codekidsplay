@@ -1,6 +1,6 @@
 # Lecția 3 — Detectare: atingere
 **Modulul 2 · Logică**  
-**Code Kids Play · Logic Explorer**
+**Code Maker Club · Logic Explorer**
 
 > Azi Scratch **simte** dacă atingi o culoare, un personaj sau marginea.  
 > Proiect: **„Nu călca pe lavă”** · fișier: `Prenume_Nume_L3` (ex. `Ana_Pop_L3`)

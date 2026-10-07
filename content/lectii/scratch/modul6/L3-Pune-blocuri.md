@@ -1,6 +1,6 @@
 # Lecția 3 — Pune blocuri (construcție)
 **Modulul 6 · Lume de cuburi · Block 1 · Fir L1→L10**  
-**Code Kids Play · Cube Crafter**
+**Code Maker Club · Cube Crafter**
 
 > Continui același proiect.  
 > Azi: dacă ai resursă **> 0**, **pui** un bloc pe grilă (snap 32) lângă erou.

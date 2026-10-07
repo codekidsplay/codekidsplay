@@ -1,6 +1,6 @@
 # Lecția 2 — Poveste interactivă cu alegeri
 **Modulul 4 · Antrenament (fișier separat)**  
-**Code Kids Play · Scratch Creator**
+**Code Maker Club · Scratch Creator**
 
 > Azi antrenezi **povestea cu alegeri**: scene, dialog, `trimite` / `când primesc`, finaluri diferite.  
 > **Nu** deschizi proiectul L1 — fișier **nou**.  

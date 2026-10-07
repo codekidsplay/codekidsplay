@@ -1,6 +1,6 @@
 # LECȚIA 4 — `cin` și operații aritmetice
 **Modulul 1 · Bazele C++ · 2 ore**  
-**Code Kids Play · Junior Coder**
+**Code Maker Club · Junior Coder**
 
 > Azi programul tău **ascultă**: citește numere de la tastatură, calculează cu ele (inclusiv împărțire și rest) și afișează rezultatul.  
 > Proiect: **„Calculatorul meu”** · fișier: `Prenume_Nume_L4.cpp` (ex. `Ana_Pop_L4.cpp`)

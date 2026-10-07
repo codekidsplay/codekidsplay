@@ -1,6 +1,6 @@
 # Lecția 6 — Proiectul tău — versiunea finală
 **Modulul 4 · Fir Creator: L1 → L6 → L7**  
-**Code Kids Play · Scratch Creator**
+**Code Maker Club · Scratch Creator**
 
 > Azi baza jocului de la L1 devine **produs**: început → mijloc greu → final clar → restart.  
 > **Același proiect** ca L1. Salvezi ca `Prenume_Nume_M4_L6` (copie din L1 dacă vrei istoric).  

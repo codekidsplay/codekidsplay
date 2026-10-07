@@ -1,6 +1,6 @@
 # LECȚIA 5 — Bucle imbricate (o buclă în altă buclă)
 **Modulul 2 · Bucle și vectori · 2 ore**  
-**Code Kids Play · Loop Master**
+**Code Maker Club · Loop Master**
 
 > Azi pui o buclă **în interiorul altei bucle**. Așa desenezi triunghiuri, piramide și table de șah din caractere și construiești tabele întregi, linie cu linie.  
 > Proiect: **„Desenatorul de figuri”** · fișier: `Prenume_Nume_M2L5.cpp` (ex. `Ana_Pop_M2L5.cpp`)

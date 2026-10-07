@@ -1,6 +1,6 @@
 # Scratch Modul 1 — Lista lecțiilor
 
-**Code Kids Play** · Primii pași · Badge: **Scratch Starter**  
+**Code Maker Club** · Primii pași · Badge: **Scratch Starter**  
 **Proiecte:** 9 proiecte noi + L10 prezentare · fiecare oră se închide cu ceva jucabil / vizibil.  
 **Limbaj:** clar, **8–10 ani** · ritm dens (warm-up scurt → proiect greu)  
 **Cei rapizi:** **Bonus / Provocare** pe fiecare lecție.  

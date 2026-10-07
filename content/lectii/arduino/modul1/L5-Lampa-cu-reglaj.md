@@ -1,6 +1,6 @@
 # Lecția 5 — Lampa cu reglaj
 **Modulul 1 · Primele circuite**  
-**Code Kids Play · Circuit Starter**
+**Code Maker Club · Circuit Starter**
 
 > Azi citești un **potențiometru** (un buton rotativ) și reglezi **luminozitatea** unui LED cu **PWM**.  
 > Proiect: **„Lampa mea”** · `Prenume_Nume_A1_L05`

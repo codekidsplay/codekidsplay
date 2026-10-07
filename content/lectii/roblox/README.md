@@ -1,4 +1,4 @@
-# Roblox Studio — Curriculum Code Kids Play
+# Roblox Studio — Curriculum Code Maker Club
 
 **Curs:** Roblox Studio (`c12`)  
 **Public:** **12+ ani** (bandă site: Micii Programatori)  

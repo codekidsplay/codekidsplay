@@ -1,6 +1,6 @@
 # LECȚIA 7 — Provocare pe echipe (pistă / misiune)
 **Modulul 2 · Robotică LEGO WeDo 2.0 · Cam 2 ore**  
-**Code Kids Play**
+**Code Maker Club**
 
 > La final echipa îndeplinește o **misiune pe timp** pe pista atelierului.
 

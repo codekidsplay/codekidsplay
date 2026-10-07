@@ -1,6 +1,6 @@
 # LECȚIA 3 — Butoanele A și B
 **Modulul 1 · micro:bit (blocuri) · Cam 2 ore**  
-**Code Kids Play**
+**Code Maker Club**
 
 > La final: A și B fac lucruri diferite; A+B e al treilea eveniment.
 

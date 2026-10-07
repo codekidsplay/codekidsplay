@@ -1,6 +1,6 @@
 # LECȚIA 2 — Proiect: Braț / ridicător
 **Modulul 2 · Robotică LEGO WeDo 2.0 · Cam 2 ore**  
-**Code Kids Play**
+**Code Maker Club**
 
 > La final ai un braț sau ridicător care urcă/coboară un obiect ușor.
 

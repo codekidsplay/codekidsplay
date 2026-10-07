@@ -1,6 +1,6 @@
 # Lecția 2 — Derulare / hărți extinse
 **Modulul 5 · Reguli de joc · Block 1**  
-**Code Kids Play · Maestru de jocuri**
+**Code Maker Club · Maestru de jocuri**
 
 > Azi: lume **mai lată decât ecranul**. Folosim **`camera_x`** (sau `derulare_x`): lumea se mișcă **opus** eroului — iluzia de cameră.  
 > Fișier **nou**: `Prenume_Nume_M5_L2` · proiect: **„Exploratorul pe hartă”**

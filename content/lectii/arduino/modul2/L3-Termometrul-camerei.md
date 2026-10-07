@@ -1,6 +1,6 @@
 # Lecția 3 — Termometrul camerei
 **Modulul 2 · Senzori**  
-**Code Kids Play · Sensor Scout**
+**Code Maker Club · Sensor Scout**
 
 > Azi citești **temperatura** cu senzorul **TMP36** și o transformi în **grade Celsius**.  
 > Proiect: **„Termometrul meu”** · `Prenume_Nume_A2_L03`

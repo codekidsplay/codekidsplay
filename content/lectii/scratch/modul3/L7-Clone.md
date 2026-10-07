@@ -1,6 +1,6 @@
 # Lecția 7 — Clone
 **Modulul 3 · Jocuri**  
-**Code Kids Play · Game Builder**
+**Code Maker Club · Game Builder**
 
 > Azi un singur personaj se **multiplică** singur: monedele cad din cer fără să le desenezi pe fiecare.  
 > **Deschide** proiectul din L6 *(sau L5, dacă n-ai nivele)* → **Fișier → Salvează ca** → `Prenume_Nume_M3_L7` (ex. `Ana_Pop_M3_L7`)  

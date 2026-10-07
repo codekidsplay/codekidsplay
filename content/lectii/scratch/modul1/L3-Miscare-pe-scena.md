@@ -1,6 +1,6 @@
 # Lecția 3 — Plimbarea mea (mișcare pe scenă)
 **Modulul 1 · Primii pași**  
-**Code Kids Play · Scratch Starter**
+**Code Maker Club · Scratch Starter**
 
 > Azi faci personajul să **meargă**, să **se întoarcă** și (la Complet) să **gliseze** pe scenă.  
 > Proiect: **„Plimbarea mea”** · fișier: `Prenume_Nume_L3` (ex. `Ana_Pop_L3`)

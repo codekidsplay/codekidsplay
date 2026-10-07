@@ -1,6 +1,6 @@
 # LECȚIA 1 — Bucla `for`
 **Modulul 2 · Bucle și vectori · 2 ore**  
-**Code Kids Play · Loop Master**
+**Code Maker Club · Loop Master**
 
 > Azi înveți să-i spui calculatorului „repetă de câte ori vreau eu”, fără să scrii aceeași linie de 100 de ori.  
 > Proiect: **„Tabla înmulțirii”** · fișier: `Prenume_Nume_M2L1.cpp` (ex. `Ana_Pop_M2L1.cpp`)

@@ -1,6 +1,6 @@
 # Lecția 4 — Piese care se îmbină
 **Modulul 5 · Avansat și proiectare tehnică**  
-**Code Kids Play · Design Pro**  
+**Code Maker Club · Design Pro**  
 **Public:** recomandat **10+**
 
 > Azi faci o **îmbinare cu cheie** (ca la agățătoarele de perete): un bolț cu cap trece printr-o gaură mare și apoi **alunecă** într-o fantă îngustă, unde se **blochează**.  

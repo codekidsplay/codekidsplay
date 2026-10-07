@@ -1,6 +1,6 @@
 # Lecția 2 — Atingeri și reacții: „Yaay!” sau „Au!”
 **Modulul 3 · Jocuri**  
-**Code Kids Play · Game Builder**
+**Code Maker Club · Game Builder**
 
 > Azi jocul tău **reacționează** când eroul atinge ceva: țintă → bravo, obstacol → „Au!”.  
 > **Deschide** proiectul din L1 (`Prenume_Nume_M3_L1`) → **Fișier → Salvează ca** → `Prenume_Nume_M3_L2` (ex. `Ana_Pop_M3_L2`)  

@@ -1,6 +1,6 @@
 # Lecția 9 — Panglica de lumini
 **Modulul 3 · Afișaj și mișcare**  
-**Code Kids Play · Display Maker**
+**Code Maker Club · Display Maker**
 
 > Azi lucrezi cu **LED-uri NeoPixel**: LED-uri RGB pe care le comanzi **individual** cu un singur fir.  
 > Proiect: **„Panglica magică”** · `Prenume_Nume_A3_L09`

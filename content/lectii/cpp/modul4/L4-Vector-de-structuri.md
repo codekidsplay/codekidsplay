@@ -1,6 +1,6 @@
 # LECȚIA 4 — `vector` de structuri: catalogul
 **Modulul 4 · Proiecte și autonomie · 2 ore**  
-**Code Kids Play · CodeKids Graduate**
+**Code Maker Club · CodeKids Graduate**
 
 > Azi combinăm cele două lecții anterioare: un `vector` în care fiecare element este o **structură**. Primești o listă de obiecte care crește singură, în care poți adăuga, căuta, modifica, șterge și sorta. Este tiparul pe care se construiesc aproape toate aplicațiile cu liste: agende, cataloage, magazine, inventare.  
 > Proiect: **„Catalogul clasei”** · fișier: `Prenume_Nume_M4L4.cpp` (ex. `Ana_Pop_M4L4.cpp`)

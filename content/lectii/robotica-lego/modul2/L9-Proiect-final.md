@@ -1,6 +1,6 @@
 # LECȚIA 9 — Proiect final WeDo (gata de prezentat)
 **Modulul 2 · Robotică LEGO WeDo 2.0 · Cam 2 ore**  
-**Code Kids Play**
+**Code Maker Club**
 
 > La final proiectul final **rulează de la cap la coadă** cu misiune clară.
 

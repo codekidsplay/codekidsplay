@@ -1,6 +1,6 @@
 # Robotică LEGO WeDo 2.0 — Curriculum 2 Module × 10 lecții
 
-**Code Kids Play Focșani** · ~2 ore / lecție · **4 cutii WeDo 2.0** (echipe de 2)  
+**Code Maker Club Focșani** · ~2 ore / lecție · **4 cutii WeDo 2.0** (echipe de 2)  
 **App:** LEGO Education WeDo 2.0  
 **Texte:** `lectii/robotica-lego/modul1/` · `modul2/`  
 **Nu e curriculum oficial LEGO** — plan propriu CKP pe hardware WeDo.

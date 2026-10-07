@@ -1,6 +1,6 @@
 # Lecția 2 — Lumea mea (2 scene și costume)
 **Modulul 1 · Primii pași**  
-**Code Kids Play · Scratch Starter**
+**Code Maker Club · Scratch Starter**
 
 > Azi îți faci **lumea**: 2 locuri (fundaluri) și un personaj care își schimbă look-ul.  
 > Proiect: **„Lumea mea”** · fișier: `Prenume_Nume_L2` (ex. `Ana_Pop_L2`)

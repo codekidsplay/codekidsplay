@@ -1,4 +1,4 @@
-# Template lecție Scratch (Code Kids Play)
+# Template lecție Scratch (Code Maker Club)
 
 **Public:** 8–10 ani · **Durata orei:** ~2 ore în clasă  
 **Scop:** același schelet pe toate lecțiile M1–M5 — copilul știe la ce să se aștepte, tu scrii mai rapid.
@@ -37,7 +37,7 @@
 ```markdown
 # Lecția N — [Titlu concret: ce face copilul]
 **Modulul X · [Nume modul]**  
-**Code Kids Play · [Badge modul]**
+**Code Maker Club · [Badge modul]**
 
 > [1–2 fraze: ce facem azi + numele proiectului / fișierului]
 

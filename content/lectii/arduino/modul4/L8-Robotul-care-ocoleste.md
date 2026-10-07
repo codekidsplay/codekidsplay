@@ -1,6 +1,6 @@
 # Lecția 8 — Robotul care ocolește
 **Modulul 4 · Proiecte complete**  
-**Code Kids Play · Arduino Creator**
+**Code Maker Club · Arduino Creator**
 
 > Azi construiești „creierul” unui **robot** cu două motoare și un senzor de distanță, care merge singur și **ocolește obstacolele**.  
 > Proiect: **„Robotul meu”** · `Prenume_Nume_A4_L08`

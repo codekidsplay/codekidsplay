@@ -1,6 +1,6 @@
 # C++ Modul 1 — Bazele C++
 
-**Code Kids Play** · ~2 ore / lecție · Badge: **Junior Coder**  
+**Code Maker Club** · ~2 ore / lecție · Badge: **Junior Coder**  
 **Vârstă:** 12+ ani · IDE: Code::Blocks / VS Code + g++
 
 | # | Fișier | Focus |

@@ -1,6 +1,6 @@
 # LECȚIA 2 — Radio: două micro:bit vorbesc
 **Modulul 2 · micro:bit (blocuri) · Cam 2 ore**  
-**Code Kids Play**
+**Code Maker Club**
 
 > La final: placa A trimite, placa B primește (sau invers) — același grup radio.
 

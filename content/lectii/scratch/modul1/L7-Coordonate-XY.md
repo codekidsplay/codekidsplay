@@ -1,6 +1,6 @@
 # Lecția 7 — Comoara (coordonate X și Y)
 **Modulul 1 · Primii pași**  
-**Code Kids Play · Scratch Starter**
+**Code Maker Club · Scratch Starter**
 
 > Azi scena e o **hartă**: înveți unde e personajul cu **X** și **Y**, apoi îl duci la comoară.  
 > Proiect: **„Comoara”** · fișier: `Prenume_Nume_L7` (ex. `Ana_Pop_L7`)

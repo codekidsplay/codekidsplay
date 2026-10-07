@@ -1,6 +1,6 @@
 # LECȚIA 1 — Ce este micro:bit? MakeCode
 **Modulul 1 · micro:bit (blocuri) · Cam 2 ore**  
-**Code Kids Play · micro:bit Starter**
+**Code Maker Club · micro:bit Starter**
 
 > La final: placă conectată, program pe LED — un zâmbet sau literă.
 

@@ -1,6 +1,6 @@
 # LECȚIA 7 — Proiect dublu: emițător + receptor
 **Modulul 2 · micro:bit (blocuri) · Cam 2 ore**  
-**Code Kids Play**
+**Code Maker Club**
 
 > La final: un sistem pe 2 plăci cu roluri diferite (telecomandă + robot-afiș / alarmă + sirenă).
 

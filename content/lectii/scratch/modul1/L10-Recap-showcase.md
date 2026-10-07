@@ -1,6 +1,6 @@
 # Lecția 10 — Completare + prezentare (recap Modul 1)
 **Modulul 1 · Primii pași**  
-**Code Kids Play · Scratch Starter**
+**Code Maker Club · Scratch Starter**
 
 > Azi **termini** „Personajul meu” (completare pe L9), apoi **arăți** clipul clasei și primești insigna.  
 > Fișier: `Prenume_Nume_L9` *(sau `Prenume_Nume_L10` = copie, ca să nu strici versiunea veche)*  

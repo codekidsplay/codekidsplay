@@ -1,6 +1,6 @@
 # LECȚIA 6 — Proiect: Vehiculul meu
 **Modulul 1 · Robotică LEGO WeDo 2.0 · Cam 2 ore**  
-**Code Kids Play**
+**Code Maker Club**
 
 > La final ai un **vehicul** care merge și se oprește / evită (cu senzor).
 

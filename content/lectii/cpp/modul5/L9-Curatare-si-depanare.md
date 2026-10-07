@@ -1,6 +1,6 @@
 # LECȚIA 9 — Curățare cod și depanare
 **Modulul 5 · Proiect RPG în consolă · 2 ore**  
-**Code Kids Play · RPG Creator**
+**Code Maker Club · RPG Creator**
 
 > Jocul tău a crescut: are sute de linii, zeci de funcții și destule locuri în care se poate ascunde o greșeală. Azi nu adăugăm o regulă nouă de joc, ci învățăm cum arată **un cod îngrijit**, cum **găsim o greșeală** pas cu pas și cum **verificăm automat** că funcțiile merg bine, cu un meniu de **teste interne**.  
 > Proiect: **„Joc_L49.cpp”** · meniul „9. Teste interne”.

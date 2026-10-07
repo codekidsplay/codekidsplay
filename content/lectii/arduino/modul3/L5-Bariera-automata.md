@@ -1,6 +1,6 @@
 # Lecția 5 — Bariera automată
 **Modulul 3 · Afișaj și mișcare**  
-**Code Kids Play · Display Maker**
+**Code Maker Club · Display Maker**
 
 > Azi combini **senzorul de distanță** cu **servo-ul** și construiești o barieră de parcare care se ridică singură.  
 > Proiect: **„Bariera mea”** · `Prenume_Nume_A3_L05`

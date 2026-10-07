@@ -1,6 +1,6 @@
 # Lecția 4 — Jocul de reflexe
 **Modulul 4 · Proiecte complete**  
-**Code Kids Play · Arduino Creator**
+**Code Maker Club · Arduino Creator**
 
 > Azi construiești un **joc**: un LED se aprinde la un moment imprevizibil, iar tu trebuie să apeși cât mai repede. Arduino îți măsoară reflexele în **milisecunde**.  
 > Proiect: **„Reflexe de campion”** · `Prenume_Nume_A4_L04`

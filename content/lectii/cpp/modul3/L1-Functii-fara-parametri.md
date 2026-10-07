@@ -1,6 +1,6 @@
 # LECȚIA 1 — Funcții fără parametri
 **Modulul 3 · Funcții, string, algoritmi · 2 ore**  
-**Code Kids Play · Problem Solver**
+**Code Maker Club · Problem Solver**
 
 > Azi înveți să-ți împarți programul în **bucăți mici, cu nume**, numite funcții. În loc să scrii același cod de zece ori, îl scrii o singură dată și îl **chemi** de câte ori ai nevoie.  
 > Proiect: **„Cartea de vizită”** · fișier: `Prenume_Nume_M3L1.cpp` (ex. `Ana_Pop_M3L1.cpp`)
@@ -102,7 +102,7 @@ Pentru a o folosi, scrii numele ei urmat de paranteze și `;` : `numeFunctie();`
 using namespace std;
 
 void saluta() {
-    cout << "Salut! Bine ai venit la Code Kids Play!" << endl;
+    cout << "Salut! Bine ai venit la Code Maker Club!" << endl;
 }
 
 int main() {
@@ -113,7 +113,7 @@ int main() {
 
 **Ieșire:**
 ```
-Salut! Bine ai venit la Code Kids Play!
+Salut! Bine ai venit la Code Maker Club!
 ```
 
 Ordinea de execuție: programul pornește din `main`, ajunge la `saluta();`, **sare** în funcție, execută instrucțiunile ei, apoi se **întoarce** în `main`, la linia următoare.
@@ -374,7 +374,7 @@ void linie() {
 
 void titlu() {
     linie();
-    cout << "   CODE KIDS PLAY" << endl;
+    cout << "   CODE MAKER CLUB" << endl;
     linie();
 }
 
@@ -389,7 +389,7 @@ int main() {
 **Ieșire:**
 ```
 ====================
-   CODE KIDS PLAY
+   CODE MAKER CLUB
 ====================
 Bine ai venit!
 ====================

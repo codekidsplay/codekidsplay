@@ -1,6 +1,6 @@
 # Lecția 7 — Depanare, finisări și publicare
 **Modulul 4 · Fir Creator: L1 → L6 → L7**  
-**Code Kids Play · Scratch Creator**
+**Code Maker Club · Scratch Creator**
 
 > Abilitate dedicată: **reparare** (repeți greșeala → cauți unde e → schimbi o chestie → verifici).  
 > Apoi **finisări Creator** și **publicare**. Nu începi un joc nou — **închizi** ce ai.  

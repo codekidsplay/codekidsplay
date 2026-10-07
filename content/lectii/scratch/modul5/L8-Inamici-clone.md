@@ -1,6 +1,6 @@
 # Lecția 8 — Proiect mare: inamici, clone, atingeri
 **Modulul 5 · Reguli de joc · Block 3 · Fir L7→L10**  
-**Code Kids Play · Maestru de jocuri**
+**Code Maker Club · Maestru de jocuri**
 
 > Continui `Prenume_Nume_M5_Proiect`.  
 > Azi: **dificultate** — inamici / clone / colectabile pe traseul tău (platforme ± derulare).

@@ -1,4 +1,4 @@
-# Tinkercad 3D — Curriculum Code Kids Play
+# Tinkercad 3D — Curriculum Code Maker Club
 
 **5 module × 10 lecții = 50 lecții**  
 **Vârstă orientativă:** 8–10 (M1–M4) · M5 Design Pro = **10+** / Complet opțional sub 12  

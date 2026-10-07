@@ -1,6 +1,6 @@
 # Lecția 8 — Castelul cu creneluri
 **Modulul 1 · Bazele Tinkercad**  
-**Code Kids Play · Shape Starter**  
+**Code Maker Club · Shape Starter**  
 **Vârstă:** ~8–10 ani
 
 > Azi înveți **duplicarea cu repetare**: faci o piesă, o muți o dată, apeși **Ctrl+D** din nou — și Tinkercad repetă aceeași mutare.  

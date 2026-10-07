@@ -1,6 +1,6 @@
 # LECȚIA 3 — Funcții care returnează valori
 **Modulul 3 · Funcții, string, algoritmi · 2 ore**  
-**Code Kids Play · Problem Solver**
+**Code Maker Club · Problem Solver**
 
 > Până acum funcțiile tale **afișau** ceva. Azi înveți funcții care **calculează un răspuns și îl trimit înapoi**, cu `return`, ca să-l poți folosi mai departe: într-o variabilă, într-o condiție sau în alt calcul.  
 > Proiect: **„Calculatorul cu funcții”** · fișier: `Prenume_Nume_M3L3.cpp` (ex. `Ana_Pop_M3L3.cpp`)

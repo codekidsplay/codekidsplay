@@ -1,6 +1,6 @@
 # Lecția 2 — Casă inteligentă I: lumini și climat
 **Modulul 4 · Proiecte complete**  
-**Code Kids Play · Arduino Creator**
+**Code Maker Club · Arduino Creator**
 
 > Azi construiești prima parte a unei **case inteligente**: lumina se aprinde singură, ventilatorul pornește la căldură, iar LCD-ul arată starea casei.  
 > Proiect: **„Casa mea I”** · `Prenume_Nume_A4_L02`

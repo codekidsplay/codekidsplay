@@ -1,6 +1,6 @@
 # LECȚIA 2 — Display în Python
 **Modulul 3 · micro:bit (Python) · Cam 2 ore**  
-**Code Kids Play**
+**Code Maker Club**
 
 > La final: scroll string, show number, imagini, clear — tot din Python.
 

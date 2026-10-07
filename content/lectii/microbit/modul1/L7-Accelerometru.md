@@ -1,6 +1,6 @@
 # LECȚIA 7 — Accelerometru (agită / înclină)
 **Modulul 1 · micro:bit (blocuri) · Cam 2 ore**  
-**Code Kids Play**
+**Code Maker Club**
 
 > La final: shake / tilt schimbă ceva pe LED.
 

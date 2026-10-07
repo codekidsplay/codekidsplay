@@ -1,6 +1,6 @@
 # LECȚIA 2 — Matricea LED 5×5
 **Modulul 1 · micro:bit (blocuri) · Cam 2 ore**  
-**Code Kids Play**
+**Code Maker Club**
 
 > La final: desenezi pe LED (plot), ștergi, animații scurte.
 

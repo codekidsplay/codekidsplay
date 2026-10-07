@@ -1,6 +1,6 @@
 # Lecția 6 — Soundtrack-ul meu (sunet)
 **Modulul 1 · Primii pași**  
-**Code Kids Play · Scratch Starter**
+**Code Maker Club · Scratch Starter**
 
 > Azi adaugi sunete și le pornești la **steag** sau la **click** — fără să se calce toate odată.  
 > Proiect: **„Soundtrack-ul meu”** · fișier: `Prenume_Nume_L6` (ex. `Ana_Pop_L6`)

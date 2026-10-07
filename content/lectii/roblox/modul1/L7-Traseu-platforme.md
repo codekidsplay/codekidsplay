@@ -1,6 +1,6 @@
 # Lecția 7 — Traseu Obby: platforme
 **Modulul 1 · Place Builder**  
-**Code Kids Play · Roblox Studio**
+**Code Maker Club · Roblox Studio**
 
 > Azi umpli **mijlocul** între Start și Finish: un traseu de **platforme** pe care îl poți parcurge în Play.  
 > Place: același `Prenume_Nume_M1`

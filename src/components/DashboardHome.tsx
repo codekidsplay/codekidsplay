@@ -157,7 +157,7 @@ export default function DashboardHome() {
         <p className="text-slate-500 mt-1">
           {isProfesor
             ? 'Statistici pentru cursanții tăi'
-            : 'Bun venit în platforma Code Kids Play'}
+            : 'Bun venit în platforma Code Maker Club'}
         </p>
       </div>
 

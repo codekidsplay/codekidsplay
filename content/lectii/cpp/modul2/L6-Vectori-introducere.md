@@ -1,6 +1,6 @@
 # LECȚIA 6 — Vectori: mai multe valori sub un singur nume
 **Modulul 2 · Bucle și vectori · 2 ore**  
-**Code Kids Play · Loop Master**
+**Code Maker Club · Loop Master**
 
 > Azi înveți să păstrezi **mai multe valori de același tip** într-o singură „cutie cu sertare”: un vector (în limbajul C++ clasic, un *array*). Îl citești, îl afișezi și îl modifici cu ajutorul buclelor `for`.  
 > Proiect: **„Notele mele”** · fișier: `Prenume_Nume_M2L6.cpp` (ex. `Ana_Pop_M2L6.cpp`)

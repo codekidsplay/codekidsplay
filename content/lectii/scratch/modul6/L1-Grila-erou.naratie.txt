@@ -1,6 +1,6 @@
 Lecția unu. Punte din M cinci și eroul pe grilă.
 
-Astăzi faci prima parte din Cube Crafter, o lume de cuburi în două dimensiuni. Nu este Minecraft oficial, este proiect Code Kids Play. Începi un proiect nou și îl salvezi ca Prenume, linie jos, Nume, linie jos, M șase, linie jos, Lume Cuburi. Folosești același fișier până la lecția zece.
+Astăzi faci prima parte din Cube Crafter, o lume de cuburi în două dimensiuni. Nu este Minecraft oficial, este proiect Code Maker Club. Începi un proiect nou și îl salvezi ca Prenume, linie jos, Nume, linie jos, M șase, linie jos, Lume Cuburi. Folosești același fișier până la lecția zece.
 
 Obiectivul. La final, eroul stă pe o lume făcută din pătrățele egale, iar steagul verde pornește mereu curat. Minim: bifezi recapitularea din M cinci, eroul merge pe patru direcții cu pași de treizeci și doi, fixi, pe scenă sunt cel puțin douăsprezece blocuri, iar steagul pune totul la start. Complet: minim, plus grilă vizibilă sau aliniere perfectă pe celule, și vederea aleasă, de sus sau din lateral, scrisă pe foaie.
 

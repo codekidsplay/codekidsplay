@@ -1,6 +1,6 @@
 # Lecția 5 — Labirint pe 2 nivele
 **Modulul 4 · Antrenament (fișier separat)**  
-**Code Kids Play · Scratch Creator**
+**Code Maker Club · Scratch Creator**
 
 > Azi construiești un **labirint cu Level 1 + Level 2**, presiune (vieți **sau** timer), restart curat.  
 > Fișier **nou** (poate inspira L1, dar **nu** e același proiect).  

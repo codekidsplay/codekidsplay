@@ -1,6 +1,6 @@
 # Lecția 2 — Explorer, Properties, Workspace
 **Modulul 1 · Place Builder**  
-**Code Kids Play · Roblox Studio**
+**Code Maker Club · Roblox Studio**
 
 > Azi înveți **lista obiectelor** (Explorer) și **setările** fiecăruia (Properties).  
 > Place: același `Prenume_Nume_M1` (ex. `Ana_Pop_M1`)

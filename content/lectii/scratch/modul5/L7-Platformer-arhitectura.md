@@ -1,6 +1,6 @@
 # Lecția 7 — Proiect mare: cum îl organizezi
 **Modulul 5 · Reguli de joc · Block 3 · Fir L7→L10**  
-**Code Kids Play · Maestru de jocuri**
+**Code Maker Club · Maestru de jocuri**
 
 > Azi începe **proiectul mare** (platformer / aventură scurtă): schiță + schelet Minim.  
 > Fișier: `Prenume_Nume_M5_Proiect` (același până la L10)  

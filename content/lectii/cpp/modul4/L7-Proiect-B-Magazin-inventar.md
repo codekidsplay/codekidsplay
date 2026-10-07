@@ -1,6 +1,6 @@
 # LECȚIA 7 — Proiect B: magazin / inventar
 **Modulul 4 · Proiecte și autonomie · 2 ore**  
-**Code Kids Play · CodeKids Graduate**
+**Code Maker Club · CodeKids Graduate**
 
 > Azi construim aplicația pe care o folosește aproape orice firmă, într-o variantă mică: un **inventar de magazin**. Ține produse (nume, preț, stoc), le adaugă, le caută, le modifică, le vinde cu un bon, le șterge, calculează rapoarte și salvează totul într-un fișier. Sunt toate piesele unui „CRUD” complet, la care adăugăm câteva idei noi: **identificatori unici**, **nume cu spații** în fișier și **căutare după o parte din nume**.  
 > Proiect: **„Magazinul meu”** · fișier: `Prenume_Nume_M4L7.cpp` (ex. `Ana_Pop_M4L7.cpp`)

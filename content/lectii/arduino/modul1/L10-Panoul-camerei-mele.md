@@ -1,6 +1,6 @@
 # Lecția 10 — Panoul camerei mele
 **Modulul 1 · Primele circuite**  
-**Code Kids Play · Circuit Starter**
+**Code Maker Club · Circuit Starter**
 
 > Azi îți faci un **panou de control** pentru camera ta: lampă RGB cu **moduri**, reglaj cu potențiometru și **sunet** la schimbarea modului.  
 > Proiect: **„Panoul meu”** · `Prenume_Nume_A1_L10`

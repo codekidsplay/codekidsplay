@@ -79,7 +79,10 @@ export const module = [
   { id: 'm35', curs_id: 'c2', nume: 'Modul 3 — Afișaj și mișcare', ordine: 3, badge: 'Display Maker' },
   { id: 'm36', curs_id: 'c2', nume: 'Modul 4 — Proiecte complete', ordine: 4, badge: 'Arduino Creator' },
   // Blender
-  { id: 'm5', curs_id: 'c3', nume: 'Blender Modul 1 - Modelare 3D', ordine: 1 },
+  { id: 'm5', curs_id: 'c3', nume: 'Modul 1 — Primii pași în Blender', ordine: 1, badge: 'Blender Starter' },
+  { id: 'm37', curs_id: 'c3', nume: 'Modul 2 — Modelare în Edit Mode', ordine: 2, badge: 'Mesh Modeler' },
+  { id: 'm38', curs_id: 'c3', nume: 'Modul 3 — Modificatori și materiale', ordine: 3, badge: 'Modifier Maker' },
+  { id: 'm39', curs_id: 'c3', nume: 'Modul 4 — Proiecte 3D complete', ordine: 4, badge: 'Blender Creator' },
   // Python
   { id: 'm6', curs_id: 'c4', nume: 'Python Modul 1 - Introducere în Python', ordine: 1 },
   { id: 'm7', curs_id: 'c4', nume: 'Python Modul 2 - Python Avansat', ordine: 2 },
@@ -319,7 +322,58 @@ export const lectii = [
     'Proiect final: construcția',
     'Expoziția + verificare finală',
   ]),
-  ...genLectii('m5', ['Interfața Blender', 'Navigare în 3D viewport', 'Modelare de bază - cuburi și sfere', 'Editare mesh', 'Modificatori', 'Materiale și culori', 'Iluminare și umbre', 'Animații simple', 'Randare', 'Proiect final - obiect 3D']),
+  // Blender Modul 1 — Primii pași
+  ...genLectii('m5', [
+    'Interfața Blender și primul cub',
+    'Navigare în 3D',
+    'Mutăm, rotim, scalăm',
+    'Forme de bază',
+    'Omulețul de zăpadă',
+    'Căsuța din cuburi',
+    'Culori și materiale',
+    'Lumini și cameră',
+    'Prima randare',
+    'Proiect: mini-diorama',
+  ]),
+  // Blender Modul 2 — Edit Mode
+  ...genLectii('m37', [
+    'Vârfuri, muchii, fețe',
+    'Selectare isteață',
+    'Extrude: turnul de castel',
+    'Inset și Bevel: robotul cutie',
+    'Loop Cut: cana de ceai',
+    'Editare proporțională: dealuri și nori',
+    'Simetria: fluturele',
+    'Stil low-poly',
+    'Racheta low-poly I',
+    'Racheta low-poly II',
+  ]),
+  // Blender Modul 3 — Modificatori și materiale
+  ...genLectii('m38', [
+    'Subdivision: fructe rotunde',
+    'Solidify: coșul și fereastra',
+    'Array: gardul și scara',
+    'Bevel: cufărul cu comori',
+    'Boolean: brânza cu găuri',
+    'Curbe: țeava și șarpele',
+    'Materiale: galeria de materiale',
+    'Texturi simple: pământ și iarbă',
+    'Studio foto: lumini și fundal',
+    'Proiect: camera mea 3D',
+  ]),
+  // Blender Modul 4 — Proiecte complete
+  ...genLectii('m39', [
+    'De la idee la schiță',
+    'Personajul I: corpul',
+    'Personajul II: față și membre',
+    'Personajul III: culori și poziție',
+    'Insula plutitoare I: terenul',
+    'Insula plutitoare II: detalii',
+    'Lumini și atmosferă',
+    'Scenă ordonată și export',
+    'Proiect final: construcția',
+    'Expoziția + verificare finală',
+  ]),
   ...genLectii('m6', ['Ce este Python?', 'Instalare și primul program', 'Variabile și tipuri', 'Operatori și expresii', 'Input de la utilizator', 'Condiții if/elif/else', 'Bucle for și while', 'Liste și tupluri', 'Dicționare', 'Funcții']),
   ...genLectii('m7', ['Module și librării', 'Programare orientată pe obiecte', 'Fișiere I/O', 'Excepții și erori', 'List comprehensions', 'Lambda și map/filter', 'Biblioteca random', 'Biblioteca math', 'Introducere în turtle graphics', 'Proiect final modul 2']),
   ...genLectii('m8', ['Introducere în Pygame', 'Fereastra de joc', 'Forme și culori', 'Imagini și sprite-uri', 'Evenimente - tastatură și mouse', 'Mișcare și animație', 'Coliziuni', 'Sunet în jocuri', 'Scor și interfață', 'Proiect joc complet']),
@@ -611,7 +665,7 @@ export const abonamente: Array<{
   cursant_id: string
   tip: TipAbonament
   sedinte_incluse: number   // total de predat (inclus bonus pachet)
-  pret: number              // lei — Code Kids Play Focsani
+  pret: number              // lei — Code Maker Club Focsani
   data_start: string
   data_sfarsit: string | null  // null = activ continuu (lunar)
   activ: boolean

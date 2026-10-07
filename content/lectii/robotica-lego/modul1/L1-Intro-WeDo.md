@@ -1,6 +1,6 @@
 # LECȚIA 1 — Ce este WeDo 2.0?
 **Modulul 1 · Robotică LEGO WeDo 2.0 · Cam 2 ore**  
-**Code Kids Play · Robot Starter**
+**Code Maker Club · Robot Starter**
 
 > La final știi piesele din cutie, pornești hub-ul și ai un motor care se învârte 2 secunde.
 

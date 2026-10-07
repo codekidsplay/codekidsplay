@@ -1,6 +1,6 @@
 # Lecția 2 — Panou de informații
 **Modulul 3 · Afișaj și mișcare**  
-**Code Kids Play · Display Maker**
+**Code Maker Club · Display Maker**
 
 > Azi transformi LCD-ul într-un **panou** care schimbă pagini la apăsarea unui buton: temperatura, lumina și un mesaj.  
 > Proiect: **„Panoul meu”** · `Prenume_Nume_A3_L02`

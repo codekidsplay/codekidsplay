@@ -1,6 +1,6 @@
 # LECȚIA 10 — Showcase + badge micro:bit Maker
 **Modulul 2 · micro:bit (blocuri) · Cam 2 ore**  
-**Badge: micro:bit Maker · Code Kids Play**
+**Badge: micro:bit Maker · Code Maker Club**
 
 > La final: showcase + badge; știi că M3 = Python pe aceeași placă.
 

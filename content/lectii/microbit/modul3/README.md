@@ -1,6 +1,6 @@
 # micro:bit Modul 3 — Python (text)
 
-**Code Kids Play** · ~2 ore / lecție · Badge: **micro:bit Coder**  
+**Code Maker Club** · ~2 ore / lecție · Badge: **micro:bit Coder**  
 **Prerequisit:** Modul 1–2 (blocuri)  
 **Editor:** MakeCode Python sau [python.microbit.org](https://python.microbit.org)
 

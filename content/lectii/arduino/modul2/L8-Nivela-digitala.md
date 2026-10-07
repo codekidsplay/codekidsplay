@@ -1,6 +1,6 @@
 # Lecția 8 — Nivela digitală
 **Modulul 2 · Senzori**  
-**Code Kids Play · Sensor Scout**
+**Code Maker Club · Sensor Scout**
 
 > Azi folosești **senzori de înclinare** (tilt) ca să construiești o nivelă: LED-urile îți arată încotro e înclinat obiectul.  
 > Proiect: **„Nivela mea”** · `Prenume_Nume_A2_L08`

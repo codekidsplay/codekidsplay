@@ -1,6 +1,6 @@
 # LECȚIA 8 — Lumină și temperatură
 **Modulul 1 · micro:bit (blocuri) · Cam 2 ore**  
-**Code Kids Play**
+**Code Maker Club**
 
 > La final: placa reacționează la lumină și/sau temperatură.
 

@@ -1,6 +1,6 @@
 # LECȚIA 1 — De la blocuri la Python
 **Modulul 3 · micro:bit (Python) · Cam 2 ore**  
-**Code Kids Play · micro:bit Coder**
+**Code Maker Club · micro:bit Coder**
 
 > La final: vezi același program în blocuri și în Python; rulezi un `display.show` din text.
 

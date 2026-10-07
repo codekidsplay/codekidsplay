@@ -1,6 +1,6 @@
 # LECȚIA 1 — Introducere în C++ și primul program
 **Modulul 1 · Bazele C++ · 2 ore**  
-**Code Kids Play · Junior Coder**
+**Code Maker Club · Junior Coder**
 
 > Azi scrii primul tău program în C++, îl rulezi și faci calculatorul să **afișeze** ce vrei tu: text, tabele și desene.  
 > Proiect: **„Cartea mea de vizită”** + un desen din caractere · fișier: `Prenume_Nume_L1.cpp` (ex. `Ana_Pop_L1.cpp`)

@@ -1,6 +1,6 @@
 # Lecția 1 — Căsuța din forme simple
 **Modulul 1 · Bazele Tinkercad**  
-**Code Kids Play · Shape Starter**
+**Code Maker Club · Shape Starter**
 
 > Azi cunoști **interfața** Tinkercad și construiești prima ta casă din forme:  
 > un **cub** (corpul) + o **piramidă** (acoperișul).  

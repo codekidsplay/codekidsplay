@@ -1,6 +1,6 @@
 # Lecția 4 — Taste și mouse
 **Modulul 2 · Logică**  
-**Code Kids Play · Logic Explorer**
+**Code Maker Club · Logic Explorer**
 
 > Azi **tu** controlezi eroul: săgeți / WASD și mouse.  
 > Proiect: **„Pilot în labirint”** · fișier: `Prenume_Nume_L4` (ex. `Ana_Pop_L4`)

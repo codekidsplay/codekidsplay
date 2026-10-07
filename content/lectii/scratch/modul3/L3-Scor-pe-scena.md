@@ -1,6 +1,6 @@
 # Lecția 3 — Scor pe scenă: „Prinde 5 stele”
 **Modulul 3 · Jocuri**  
-**Code Kids Play · Game Builder**
+**Code Maker Club · Game Builder**
 
 > Azi jocul tău **ține minte** câte stele ai prins, cu o variabilă `scor` afișată pe ecran.  
 > **Deschide** proiectul din L2 → **Fișier → Salvează ca** → `Prenume_Nume_M3_L3` (ex. `Ana_Pop_M3_L3`)  

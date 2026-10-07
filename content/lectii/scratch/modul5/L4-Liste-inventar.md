@@ -1,6 +1,6 @@
 # Lecția 4 — Liste și inventar
 **Modulul 5 · Reguli de joc · Block 2**  
-**Code Kids Play · Maestru de jocuri**
+**Code Maker Club · Maestru de jocuri**
 
 > Azi: prima **listă** Scratch pe bune — `adaugă`, `șterge`, `conține?` — inventar vizibil.  
 > Fișier **nou**: `Prenume_Nume_M5_L4` · proiect: **„Inventarul meu”**  

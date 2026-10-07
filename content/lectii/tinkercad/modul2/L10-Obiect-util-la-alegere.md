@@ -1,6 +1,6 @@
 # Lecția 10 — Obiect util la alegere (mini-proiect)
 **Modulul 2 · Obiecte utile**  
-**Code Kids Play · Object Maker**  
+**Code Maker Club · Object Maker**  
 **Vârstă:** ~8–10 ani
 
 > Azi alegi **tu** un obiect util și folosești tot ce ai învățat în Modulul 2: mărimi cu numere, Hole, Align, copii egale, piese care se potrivesc.  

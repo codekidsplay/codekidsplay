@@ -1,6 +1,6 @@
 # LECȚIA 8 — Debug + optimizare
 **Modulul 2 · micro:bit (blocuri) · Cam 2 ore**  
-**Code Kids Play**
+**Code Maker Club**
 
 > La final: ≥2 bug-uri reparate; proiectul e mai stabil.
 

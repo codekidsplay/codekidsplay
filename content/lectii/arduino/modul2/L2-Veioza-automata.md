@@ -1,6 +1,6 @@
 # Lecția 2 — Veioza automată
 **Modulul 2 · Senzori**  
-**Code Kids Play · Sensor Scout**
+**Code Maker Club · Sensor Scout**
 
 > Azi folosești un **fotorezistor** (senzor de lumină) ca să aprinzi singur un LED când se face întuneric.  
 > Proiect: **„Veioza mea”** · `Prenume_Nume_A2_L02`

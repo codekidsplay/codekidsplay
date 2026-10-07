@@ -1,6 +1,6 @@
 # LECȚIA 6 — Magazin și monede
 **Modulul 5 · Proiect RPG în consolă · 2 ore**  
-**Code Kids Play · RPG Creator**
+**Code Maker Club · RPG Creator**
 
 > Eroul tău a câștigat monede în luptă. E timpul să le cheltuiască! În **Sala Mare** își are tejgheaua **negustorul Pip**: vinde poțiuni, elixiruri, un scut și o amuletă, iar cumpără înapoi (la jumătate de preț) ce nu mai folosești. Azi scriem magazinul: o listă de produse, cumpărarea cu verificarea monedelor, vânzarea și obiectele care te ajută singure în luptă.  
 > Proiect: **„Joc_L46.cpp”** · negustorul Pip își deschide magazinul.

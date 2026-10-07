@@ -1,6 +1,6 @@
 # Lecția 8 — Seiful cu cod
 **Modulul 3 · Afișaj și mișcare**  
-**Code Kids Play · Display Maker**
+**Code Maker Club · Display Maker**
 
 > Azi construiești un **seif**: tastezi codul pe o **tastatură 4×4**, iar LCD-ul, servo-ul și LED-urile îți spun dacă s-a deschis.  
 > Proiect: **„Seiful meu”** · `Prenume_Nume_A3_L08`

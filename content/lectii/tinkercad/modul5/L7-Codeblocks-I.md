@@ -1,6 +1,6 @@
 # Lecția 7 — Codeblocks I
 **Modulul 5 · Avansat și proiectare tehnică**  
-**Code Kids Play · Design Pro**  
+**Code Maker Club · Design Pro**  
 **Public:** recomandat **10+** · lecție **opțională** pentru cei sub 12 ani *(au varianta fără cod)*
 
 > Azi construiești forme cu **blocuri de cod** în loc de mouse: o **buclă** repetă o comandă, iar un număr schimbat schimbă tot obiectul.  

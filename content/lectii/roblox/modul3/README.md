@@ -1,6 +1,6 @@
 # Roblox Modul 3 — Game Logic (Obby cu scor)
 
-**Code Kids Play** · Roblox Studio · Badge: **Game Logic**  
+**Code Maker Club** · Roblox Studio · Badge: **Game Logic**  
 **Public:** **12+ ani** · jocul propriu-zis pe **același Obby**  
 **Place:** `Prenume_Nume_M3` (copie din M2)  
 **Plasă de siguranță:** dacă Obby-ul din M1/M2 nu mai e jucabil — pornești de la **Place-ul de bază al profesorului** (aceleași obiective L1–L10 pe acel fișier).

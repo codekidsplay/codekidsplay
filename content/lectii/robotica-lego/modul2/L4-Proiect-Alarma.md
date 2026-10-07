@@ -1,6 +1,6 @@
 # LECȚIA 4 — Proiect: Alarmă / paznic
 **Modulul 2 · Robotică LEGO WeDo 2.0 · Cam 2 ore**  
-**Code Kids Play**
+**Code Maker Club**
 
 > La final ai un sistem care „păzește”: detectează și alertează (sunet/mișcare).
 

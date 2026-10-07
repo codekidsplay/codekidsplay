@@ -1,6 +1,6 @@
 # LECȚIA 9 — Proiect combinat (motor + 2 senzori)
 **Modulul 1 · Robotică LEGO WeDo 2.0 · Cam 2 ore**  
-**Code Kids Play**
+**Code Maker Club**
 
 > La final ai un proiect care folosește **motorul + ambele tipuri de senzori**.
 

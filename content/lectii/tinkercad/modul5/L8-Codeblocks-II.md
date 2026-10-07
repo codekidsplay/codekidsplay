@@ -1,6 +1,6 @@
 # Lecția 8 — Codeblocks II
 **Modulul 5 · Avansat și proiectare tehnică**  
-**Code Kids Play · Design Pro**  
+**Code Maker Club · Design Pro**  
 **Public:** recomandat **10+** · lecție **opțională** pentru cei sub 12 ani *(au varianta fără cod)*
 
 > Azi construiești un **turn parametric**: schimbi un număr (`etaje`) și obții un turn mai mic sau mai mare — aceeași idee, mai multe obiecte.  

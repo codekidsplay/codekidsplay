@@ -1,6 +1,6 @@
 # Lecția 1 — Pornești proiectul tău (baza jocului)
 **Modulul 4 · Proiecte & autonomie**  
-**Code Kids Play · Scratch Creator**
+**Code Maker Club · Scratch Creator**
 
 > Modulul 4 e **Creator**: proiecte pe care le arăți. Azi construiești **baza jocului** — baza pe care o termini la L6 și o îmbunătățești la L7.  
 > Proiect: **„Baza jocului meu”** · fișier: `Prenume_Nume_M4_L1` (ex. `Ana_Pop_M4_L1`)  

@@ -1,6 +1,6 @@
 # Lecția 1 — Dacă… atunci
 **Modulul 2 · Logică**  
-**Code Kids Play · Logic Explorer**
+**Code Maker Club · Logic Explorer**
 
 > Azi personajul **decide** singur: dacă se întâmplă ceva, atunci face ceva.  
 > Proiect: **„Atenție la margine”** · fișier: `Prenume_Nume_L1` (ex. `Ana_Pop_L1`)

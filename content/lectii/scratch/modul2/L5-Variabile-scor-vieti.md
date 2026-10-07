@@ -1,6 +1,6 @@
 # Lecția 5 — Variabile: scor și vieți
 **Modulul 2 · Logică**  
-**Code Kids Play · Logic Explorer**
+**Code Maker Club · Logic Explorer**
 
 > Azi ții un **număr pe ecran** (scor, vieți) și îl schimbi când se întâmplă ceva.  
 > Proiect: **„Prinde 5 stele”** · fișier: `Prenume_Nume_L5` (ex. `Ana_Pop_L5`)

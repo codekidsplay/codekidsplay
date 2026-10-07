@@ -1,6 +1,6 @@
 # Lecția 10 — Produs complet
 **Modulul 5 · Avansat și proiectare tehnică**  
-**Code Kids Play · Design Pro**  
+**Code Maker Club · Design Pro**  
 **Public:** recomandat **10+**
 
 > Proiectul final: pornești de la o **problemă reală**, schițezi, construiești un produs din **mai multe piese** cu tot ce ai învățat și îl **prezinți**.  

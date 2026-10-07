@@ -1,6 +1,6 @@
 # Robotică LEGO — Modul 2 (WeDo 2.0)
 
-**Code Kids Play** · ~2 ore / lecție · Badge: **Robot Inventor**  
+**Code Maker Club** · ~2 ore / lecție · Badge: **Robot Inventor**  
 **Prerequisit:** Modul 1 WeDo · **4 cutii** în atelier
 
 | # | Fișier | Focus |

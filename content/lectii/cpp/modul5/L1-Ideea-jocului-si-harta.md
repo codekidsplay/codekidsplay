@@ -1,6 +1,6 @@
 # LECȚIA 1 — Ideea jocului și harta
 **Modulul 5 · Proiect RPG în consolă · 2 ore**  
-**Code Kids Play · RPG Creator**
+**Code Maker Club · RPG Creator**
 
 > Începem cea mai frumoasă parte a cursului: **ne facem propriul joc**. Un RPG (*role-playing game*, „joc de aventură în care joci un rol”) are un erou, camere de explorat, obiecte de găsit, monștri de învins și o comoară de câștigat. În următoarele 10 lecții construim, pas cu pas, jocul **„Castelul Uitat”**, în consolă, fără grafică. Azi punem bazele: povestea, meniul principal și **harta castelului desenată din text**.  
 > Proiect: **„Joc_L41.cpp”** · la sfârșitul fiecărei lecții jocul **rulează** într-o versiune nouă.

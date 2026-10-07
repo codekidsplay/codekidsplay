@@ -1,6 +1,6 @@
 # LECȚIA 10 — Prezentare și finalul jocului
 **Modulul 5 · Proiect RPG în consolă · 2 ore**  
-**Code Kids Play · RPG Creator**
+**Code Maker Club · RPG Creator**
 
 > Ai ajuns la ultima oră! Ai construit, lecție cu lecție, un joc adevărat: cu hartă, erou, rucsac, monștri, magazin, misiuni și salvare. Azi punem ultimele retușuri (rang pe ecranul final, ecranul „Despre joc”), ți-l faci **al tău** (altă temă, altă cameră, alt monstru), rezolvi un mic test și îl **prezinți** colegilor.  
 > Proiect: **„Joc_L50.cpp”** · jocul tău final.
@@ -89,7 +89,7 @@ using namespace std;
 const string NUME_JOC = "CASTELUL UITAT";
 
 void afiseazaDespre() {
-    cout << "\n" << NUME_JOC << " - un joc creat de elevii Code Kids Play.\n";
+    cout << "\n" << NUME_JOC << " - un joc creat de elevii Code Maker Club.\n";
     cout << "Scris in C++, in consola, cu structuri, vectori si fisiere.\n";
     cout << "Autor: Ana Popescu\n";
 }
@@ -103,7 +103,7 @@ int main() {
 **Ieșire:**
 ```
 
-CASTELUL UITAT - un joc creat de elevii Code Kids Play.
+CASTELUL UITAT - un joc creat de elevii Code Maker Club.
 Scris in C++, in consola, cu structuri, vectori si fisiere.
 Autor: Ana Popescu
 ```
@@ -535,7 +535,7 @@ Iată ce s-a **schimbat** față de lecția trecută (`+` = linii de adăugat, `
      joaca(g);
  }
 +void afiseazaDespre() {
-+    cout << "\n" << NUME_JOC << " - un joc creat de elevii Code Kids Play.\n";
++    cout << "\n" << NUME_JOC << " - un joc creat de elevii Code Maker Club.\n";
 +    cout << "Scris in C++, in consola, cu structuri, vectori si fisiere.\n";
 +    cout << "Autor: Prenume Nume\n";
 +}
@@ -1240,7 +1240,7 @@ void continuaJoc() {
     joaca(g);
 }
 void afiseazaDespre() {
-    cout << "\n" << NUME_JOC << " - un joc creat de elevii Code Kids Play.\n";
+    cout << "\n" << NUME_JOC << " - un joc creat de elevii Code Maker Club.\n";
     cout << "Scris in C++, in consola, cu structuri, vectori si fisiere.\n";
     cout << "Autor: Prenume Nume\n";
 }
@@ -1407,7 +1407,7 @@ Scor final: 160  (Erou al castelului)
   0. Iesire
 Alege: 5
 
-CASTELUL UITAT - un joc creat de elevii Code Kids Play.
+CASTELUL UITAT - un joc creat de elevii Code Maker Club.
 Scris in C++, in consola, cu structuri, vectori si fisiere.
 Autor: Prenume Nume
 
@@ -1535,7 +1535,7 @@ Adaugă statistici pe ecranul final (Exemplul 9) sau un clasament de scoruri (Ex
 
 ## Felicitări!
 
-Ai terminat cursul de C++ **Code Kids Play**: de la primul `cout` la un joc complet, scris de tine. Ai absolvit toate cele 5 module și ai primit titlul **RPG Creator**. Ce poți face mai departe:
+Ai terminat cursul de C++ **Code Maker Club**: de la primul `cout` la un joc complet, scris de tine. Ai absolvit toate cele 5 module și ai primit titlul **RPG Creator**. Ce poți face mai departe:
 - să-ți extinzi jocul (mai multe camere, mai mulți monștri, mai multe misiuni);
 - să încerci un joc nou, cu altă poveste;
 - să înveți mai departe: clase, pointeri, grafică (SFML), jocuri 2D;

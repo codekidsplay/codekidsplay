@@ -1,6 +1,6 @@
 # Lecția 10 — Casa care ne protejează
 **Modulul 2 · Senzori**  
-**Code Kids Play · Sensor Scout**
+**Code Maker Club · Sensor Scout**
 
 > Proiectul modulului: combini **lumină, mișcare și temperatură** într-o casă care se apără singură.  
 > Proiect: **„Casa protejată”** · `Prenume_Nume_A2_L10`

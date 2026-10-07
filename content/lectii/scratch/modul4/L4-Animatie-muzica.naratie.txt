@@ -1,6 +1,6 @@
 Lecția patru. Clip pe acte.
 
-Astăzi faci un clip pe două acte, cam treizeci până la șaizeci de secunde: sincron sunet și mișcare, plus o acțiune care contează. Completarea, după nucleu: extensii Muzică sau Stilou. Sunt singurele extensii din tot curriculumul Scratch la Code Kids Play. Fișier nou: Prenume, linie jos, Nume, linie jos, M patru, linie jos, L patru. Proiectul se numește Clip pe acte.
+Astăzi faci un clip pe două acte, cam treizeci până la șaizeci de secunde: sincron sunet și mișcare, plus o acțiune care contează. Completarea, după nucleu: extensii Muzică sau Stilou. Sunt singurele extensii din tot curriculumul Scratch la Code Maker Club. Fișier nou: Prenume, linie jos, Nume, linie jos, M patru, linie jos, L patru. Proiectul se numește Clip pe acte.
 
 Obiectivul. Stai pe scaun: clipul rulează, durează treizeci până la șaizeci de secunde, acțiunea jucătorului e clară fără explicații. Minim: două personaje animate, două acte, sunet din tab Sunete, o acțiune obligatorie, stop sau mesaj final, steag egal Act unu, sincron fără blocaj. Complet: minim, plus Muzică sau Stilou pe bune, sau un a doua acțiune care schimbă finalul.
 

@@ -1,6 +1,6 @@
 # Lecția 6 — Creatură / pericol + HP
 **Modulul 6 · Lume de cuburi · Block 2 · Fir L1→L10**  
-**Code Kids Play · Cube Crafter**
+**Code Maker Club · Cube Crafter**
 
 > Continui același proiect.  
 > Azi: **creatură / pericol** (clone sau mob) + **HP** pe erou — trebuie să supraviețuiești.

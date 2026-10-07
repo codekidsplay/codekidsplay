@@ -1,6 +1,6 @@
 # LECȚIA 2 — Funcții cu parametri
 **Modulul 3 · Funcții, string, algoritmi · 2 ore**  
-**Code Kids Play · Problem Solver**
+**Code Maker Club · Problem Solver**
 
 > Azi înveți să **trimiți informații** unei funcții. O funcție `linie()` desenează mereu aceeași linie; o funcție `linie(n)` desenează o linie de **orice lungime** i-o ceri. Parametrii fac funcțiile flexibile.  
 > Proiect: **„Desenatorul parametric”** · fișier: `Prenume_Nume_M3L2.cpp` (ex. `Ana_Pop_M3L2.cpp`)

@@ -1,6 +1,6 @@
 # micro:bit — Curriculum 3 Module × 10 lecții
 
-**Code Kids Play Focșani** · ~2 ore / lecție  
+**Code Maker Club Focșani** · ~2 ore / lecție  
 **Hardware:** BBC micro:bit (V1/V2)  
 **Texte:** `lectii/microbit/modul1/` · `modul2/` · `modul3/`
 

@@ -1,6 +1,6 @@
 # Lecția 9 — Mini-proiect: Lumea Obby
 **Modulul 1 · Place Builder**  
-**Code Kids Play · Roblox Studio**
+**Code Maker Club · Roblox Studio**
 
 > Azi pui împreună tot Modulul 1: un **Obby** al tău, jucabil Start→Finish, gata de arătat.  
 > Place: `Prenume_Nume_M1` (ex. `Ana_Pop_M1`)

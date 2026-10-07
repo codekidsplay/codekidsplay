@@ -1,6 +1,6 @@
 # Lecția 2 — Omul de zăpadă
 **Modulul 1 · Bazele Tinkercad**  
-**Code Kids Play · Shape Starter**
+**Code Maker Club · Shape Starter**
 
 > Azi exersezi **mutarea**, **rotirea** și **scalarea** — și așezi piese una peste alta.  
 > Proiect: **„Omul meu de zăpadă”** · `Prenume_Nume_T1_L02`

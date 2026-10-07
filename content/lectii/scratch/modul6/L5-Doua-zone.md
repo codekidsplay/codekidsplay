@@ -1,6 +1,6 @@
 # Lecția 5 — Două zone (biomi)
 **Modulul 6 · Lume de cuburi · Block 2 · Fir L1→L10**  
-**Code Kids Play · Cube Crafter**
+**Code Maker Club · Cube Crafter**
 
 > Continui același proiect.  
 > Azi: **2 zone** distincte (ex. Pădure → Deșert pe X, sau Suprafață → Peșteră pe Y) cu **resurse diferite**.

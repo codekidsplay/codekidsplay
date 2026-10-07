@@ -1,6 +1,6 @@
 # LECȚIA 10 — Showcase + badge micro:bit Starter
 **Modulul 1 · micro:bit (blocuri) · Cam 2 ore**  
-**Badge: micro:bit Starter · Code Kids Play**
+**Badge: micro:bit Starter · Code Maker Club**
 
 > La final: prezinți jocul/proiectul și primești badge-ul.
 

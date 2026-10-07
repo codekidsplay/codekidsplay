@@ -1,6 +1,6 @@
 # Lecția 9 — Proiect mare: joc complet
 **Modulul 5 · Reguli de joc · Block 3 · Fir L7→L10**  
-**Code Kids Play · Maestru de jocuri**
+**Code Maker Club · Maestru de jocuri**
 
 > Azi închizi produsul: **meniu Start** · reset · **Win / Sfârșitul jocului** · (opțional) nivel 2.  
 > Același fișier: `Prenume_Nume_M5_Proiect`

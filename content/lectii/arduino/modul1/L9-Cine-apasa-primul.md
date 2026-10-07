@@ -1,6 +1,6 @@
 # Lecția 9 — Cine apasă primul?
 **Modulul 1 · Primele circuite**  
-**Code Kids Play · Circuit Starter**
+**Code Maker Club · Circuit Starter**
 
 > Azi faci un **joc de reflexe pentru doi jucători**: un semnal verde apare după o pauză **aleatorie**, iar cine apasă primul câștigă.  
 > Proiect: **„Duelul de reflexe”** · `Prenume_Nume_A1_L09`

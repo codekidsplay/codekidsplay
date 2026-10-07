@@ -1,6 +1,6 @@
 # Lecția 3 — Fluturele simetric
 **Modulul 1 · Bazele Tinkercad**  
-**Code Kids Play · Shape Starter**
+**Code Maker Club · Shape Starter**
 
 > Azi folosești **oglindire** (**M**) și **aliniere** (**L**) ca să obții simetrie.  
 > Proiect: **„Fluturele meu”** · `Prenume_Nume_T1_L03`

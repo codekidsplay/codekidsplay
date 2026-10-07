@@ -58,7 +58,7 @@ function seedCreds(): CredsStore {
         tip: 'admin',
         email: 'admin@codekidsplay.ro',
         parola: 'admin123',
-        nume: 'Admin Code Kids Play',
+        nume: 'Admin Code Maker Club',
         cursant_ids: [],
       },
       {

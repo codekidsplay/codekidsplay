@@ -1,6 +1,6 @@
 # LECȚIA 10 — Showcase + badge Robot Inventor
 **Modulul 2 · Robotică LEGO WeDo 2.0 · Cam 2 ore**  
-**Badge: Robot Inventor · Code Kids Play**
+**Badge: Robot Inventor · Code Maker Club**
 
 > La final: showcase de clasă, badge **Robot Inventor**, cutiile WeDo strânse corect.
 

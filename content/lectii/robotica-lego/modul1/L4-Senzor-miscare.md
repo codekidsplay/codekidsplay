@@ -1,6 +1,6 @@
 # LECȚIA 4 — Senzor de mișcare (distanță)
 **Modulul 1 · Robotică LEGO WeDo 2.0 · Cam 2 ore**  
-**Code Kids Play**
+**Code Maker Club**
 
 > La final robotul detectează ceva **aproape** (mână / perete) și reacționează.
 

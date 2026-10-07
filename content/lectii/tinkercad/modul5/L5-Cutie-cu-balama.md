@@ -1,6 +1,6 @@
 # Lecția 5 — Cutie cu balama
 **Modulul 5 · Avansat și proiectare tehnică**  
-**Code Kids Play · Design Pro**  
+**Code Maker Club · Design Pro**  
 **Public:** recomandat **10+**
 
 > Azi faci o **cutie cu capac și balama** care s-ar putea imprima dintr-o singură bucată (**print-in-place**): capacul se învârte pe un știft, fără să fie lipit de el.  

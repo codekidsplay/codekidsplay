@@ -1,6 +1,6 @@
 # LECȚIA 5 — Senzori în Python
 **Modulul 3 · micro:bit (Python) · Cam 2 ore**  
-**Code Kids Play**
+**Code Maker Club**
 
 > La final: citești accelerometru / lumină / temperatură din Python.
 

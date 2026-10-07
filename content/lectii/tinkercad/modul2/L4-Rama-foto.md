@@ -1,6 +1,6 @@
 # Lecția 4 — Rama foto
 **Modulul 2 · Obiecte utile**  
-**Code Kids Play · Object Maker**  
+**Code Maker Club · Object Maker**  
 **Vârstă:** ~8–10 ani
 
 > Azi faci o ramă cu **fereastră exactă** și, dacă apuci, un loc unde se strecoară poza.  

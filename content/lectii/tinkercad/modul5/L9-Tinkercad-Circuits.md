@@ -1,6 +1,6 @@
 # Lecția 9 — Tinkercad Circuits
 **Modulul 5 · Avansat și proiectare tehnică**  
-**Code Kids Play · Design Pro**  
+**Code Maker Club · Design Pro**  
 **Public:** recomandat **10+** · lecție **opțională** pentru cei sub 12 ani *(au varianta cu carcasă)*
 
 > Azi aprinzi un **LED într-un circuit simulat** și îi faci o **carcasă 3D** cu loc pentru LED și pentru baterie.  

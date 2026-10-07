@@ -1,6 +1,6 @@
 # LECȚIA 1 — Fișiere text: citire și scriere
 **Modulul 4 · Proiecte și autonomie · 2 ore**  
-**Code Kids Play · CodeKids Graduate**
+**Code Maker Club · CodeKids Graduate**
 
 > Până acum, tot ce făcea programul tău dispărea în clipa în care îl închideai. Azi învățăm să **salvăm date într-un fișier** și să le **citim înapoi** data viitoare. Așa funcționează jocurile care își țin scorul, aplicațiile care își țin lista de contacte și, în general, orice program care „își amintește” ceva.  
 > Proiect: **„Raportul de note”** · fișier: `Prenume_Nume_M4L1.cpp` (ex. `Ana_Pop_M4L1.cpp`)

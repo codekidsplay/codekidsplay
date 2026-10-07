@@ -4,8 +4,8 @@ import BrandLogo from '@/components/BrandLogo'
 import ContactForm from '@/components/ContactForm'
 
 export const metadata: Metadata = {
-  title: 'Contact — Code Kids Play Focșani',
-  description: 'Scrie-ne, sună-ne sau vino direct la atelierul Code Kids Play din Focșani, Clădirea RIX.',
+  title: 'Contact — Code Maker Club Focșani',
+  description: 'Scrie-ne, sună-ne sau vino direct la atelierul Code Maker Club din Focșani, Clădirea RIX.',
 }
 
 const MAP_LAT = '45.699011'
@@ -144,7 +144,7 @@ export default function ContactPage() {
               </div>
               <div className="rounded-2xl overflow-hidden border border-[var(--ckp-ink)]/10 bg-white h-[260px] sm:h-[280px] w-full shadow-sm">
                 <iframe
-                  title="Harta Code Kids Play Focșani — Clădirea RIX"
+                  title="Harta Code Maker Club Focșani — Clădirea RIX"
                   src={MAP_EMBED}
                   className="w-full h-full border-0"
                   loading="lazy"
@@ -241,7 +241,7 @@ export default function ContactPage() {
           </a>
         </nav>
         <span className="text-center sm:text-right">
-          Code Kids Play Focșani · © {new Date().getFullYear()}
+          Code Maker Club Focșani · © {new Date().getFullYear()}
         </span>
       </footer>
     </div>

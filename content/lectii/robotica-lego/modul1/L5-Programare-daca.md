@@ -1,6 +1,6 @@
 # LECȚIA 5 — Programe cu „dacă” (logică WeDo)
 **Modulul 1 · Robotică LEGO WeDo 2.0 · Cam 2 ore**  
-**Code Kids Play**
+**Code Maker Club**
 
 > La final ai un program clar: **condiție → acțiune**, cu buclă / repetare unde e nevoie.
 

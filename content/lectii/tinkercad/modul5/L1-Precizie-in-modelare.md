@@ -1,6 +1,6 @@
 # Lecția 1 — Precizie în modelare
 **Modulul 5 · Avansat și proiectare tehnică**  
-**Code Kids Play · Design Pro**  
+**Code Maker Club · Design Pro**  
 **Public:** recomandat **10+**
 
 > Azi lucrezi ca un inginer: fiecare piesă are **cote** (mărimi) pe care le poți spune cu voce tare, fără „aproximativ”.  

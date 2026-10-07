@@ -1,6 +1,6 @@
 # Lecția 5 — Blocuri proprii (My Blocks)
 **Modulul 5 · Reguli de joc · Block 2**  
-**Code Kids Play · Maestru de jocuri**
+**Code Maker Club · Maestru de jocuri**
 
 > Azi: îți faci **propriile blocuri** ca să nu copiezi același cod de 5 ori.  
 > Fișier **nou**: `Prenume_Nume_M5_L5` · proiect: **„Cod curat pe blocuri”**  

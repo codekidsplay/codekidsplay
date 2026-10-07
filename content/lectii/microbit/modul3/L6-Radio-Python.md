@@ -1,6 +1,6 @@
 # LECȚIA 6 — Radio în Python
 **Modulul 3 · micro:bit (Python) · Cam 2 ore**  
-**Code Kids Play**
+**Code Maker Club**
 
 > La final: send/receive pe radio din Python, pe 2 plăci.
 

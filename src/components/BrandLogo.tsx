@@ -16,13 +16,13 @@ interface Props {
   href?: string | null
   className?: string
   priority?: boolean
-  /** Implicit cerc — brand mark Code Kids Play */
+  /** Implicit cerc — brand mark Code Maker Club */
   shape?: 'rounded' | 'circle'
   /** Implicit mov din logo; `null` = fără inel */
   ring?: string | null
 }
 
-/** Logo full Code Kids Play — cerc + inel mov peste tot */
+/** Logo full Code Maker Club — cerc + inel mov peste tot */
 export default function BrandLogo({
   size = 'md',
   href = '/',
@@ -39,7 +39,7 @@ export default function BrandLogo({
   const img = (
     <Image
       src="/logo-full.jpg"
-      alt="Code Kids Play"
+      alt="Code Maker Club"
       width={w}
       height={w}
       priority={priority}
@@ -59,7 +59,7 @@ export default function BrandLogo({
     <Link
       href={href}
       className="inline-block flex-shrink-0 leading-none"
-      aria-label="Code Kids Play — acasă"
+      aria-label="Code Maker Club — acasă"
     >
       {img}
     </Link>

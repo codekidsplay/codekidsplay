@@ -1,6 +1,6 @@
 # Lecția 4 — Clip pe acte (+ Muzică / Stilou)
 **Modulul 4 · Antrenament (fișier separat)**  
-**Code Kids Play · Scratch Creator**
+**Code Maker Club · Scratch Creator**
 
 > Azi faci un **clip pe 2 acte** (~30–60 s): sincron sunet + mișcare + **acțiune** care contează.  
 > **Completare (după nucleu):** extensii **Muzică** și/sau **Stilou** — singurele extensii din tot curriculumul CKP Scratch.  

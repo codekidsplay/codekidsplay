@@ -1,6 +1,6 @@
 # LECȚIA 3 — Structuri (`struct`): date grupate
 **Modulul 4 · Proiecte și autonomie · 2 ore**  
-**Code Kids Play · CodeKids Graduate**
+**Code Maker Club · CodeKids Graduate**
 
 > Un elev nu este doar un nume, sau doar o notă. Este un nume, **și** o vârstă, **și** o notă. Un obiect dintr-un joc are viață, putere și poziție. Până acum țineai astfel de date în variabile separate. Azi învățăm să le grupăm într-o singură „cutie” cu `struct`, ca să le putem trata ca pe un tot.  
 > Proiect: **„Fișa elevului”** · fișier: `Prenume_Nume_M4L3.cpp` (ex. `Ana_Pop_M4L3.cpp`)

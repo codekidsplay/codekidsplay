@@ -1,6 +1,6 @@
 # Lecția 5 — Cronometru de joc
 **Modulul 4 · Proiecte complete**  
-**Code Kids Play · Arduino Creator**
+**Code Maker Club · Arduino Creator**
 
 > Azi construiești un **cronometru** cu LCD, pornire, oprire, tur și un mod „numărătoare inversă” pentru jocuri de societate. Totul cu `millis()`.  
 > Proiect: **„Cronometrul meu”** · `Prenume_Nume_A4_L05`

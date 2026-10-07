@@ -1,6 +1,6 @@
 # LECȚIA 8 — Debugging + optimizare
 **Modulul 2 · Robotică LEGO WeDo 2.0 · Cam 2 ore**  
-**Code Kids Play**
+**Code Maker Club**
 
 > La final ai reparat **≥2 probleme** și robotul e mai stabil / mai clar.
 

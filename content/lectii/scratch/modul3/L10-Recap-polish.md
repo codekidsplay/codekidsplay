@@ -1,6 +1,6 @@
 # Lecția 10 — Finisări, prezentare și insignă
 **Modulul 3 · Jocuri**  
-**Code Kids Play · Game Builder**
+**Code Maker Club · Game Builder**
 
 > Azi **termini** jocul din L9, îl **îmbunătățești**, îl **arăți** clasei și primești insigna **Game Builder**.  
 > Fișier: `Prenume_Nume_M3_L9` *(sau `Prenume_Nume_M3_L10` = copie, ca să nu strici versiunea veche)*  
@@ -109,7 +109,7 @@ Clasa: aplauze + 1 compliment.
 | ★ L10 | Finisări, prezentare & **insignă Game Builder** |
 
 ### 6) Ce urmează (Modulul 4) — 2–3 minute
-M3 = jocuri. M4 = pasul următor pe modulele Code Kids Play.
+M3 = jocuri. M4 = pasul următor pe modulele Code Maker Club.
 
 ### 7) Insigna (convenție CKP)
 1. **Minim** (1 upgrade + restart curat) + **prezentat** + **salvat** → **insignă**  

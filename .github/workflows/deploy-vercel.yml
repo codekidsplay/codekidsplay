@@ -1,7 +1,7 @@
 name: Deploy Vercel Production
 
 # Contavo ține legătura Git nativă pe Vercel.
-# Code Kids Play se deploy-uiește aici, cu token (fără Git Connect).
+# Code Maker Club se deploy-uiește aici, cu token (fără Git Connect).
 
 on:
   push:

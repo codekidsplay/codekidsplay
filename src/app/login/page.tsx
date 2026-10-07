@@ -177,7 +177,7 @@ export default function LoginForm() {
               className="text-sm font-medium tracking-tight text-[var(--ckp-ink)]"
               style={{ fontFamily: 'var(--font-display)' }}
             >
-              Code Kids Play
+              Code Maker Club
             </p>
             <p className="text-[var(--ckp-muted)] text-sm -mt-1">Autentificare</p>
           </Link>

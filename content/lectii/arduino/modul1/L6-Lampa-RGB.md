@@ -1,6 +1,6 @@
 # Lecția 6 — Lampa RGB a camerei
 **Modulul 1 · Primele circuite**  
-**Code Kids Play · Circuit Starter**
+**Code Maker Club · Circuit Starter**
 
 > Azi amesteci **lumină roșie, verde și albastră** ca să obții orice culoare cu un **LED RGB**.  
 > Proiect: **„Lampa mea colorată”** · `Prenume_Nume_A1_L06`

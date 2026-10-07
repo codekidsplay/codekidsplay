@@ -14,7 +14,7 @@ export default function ParinteHeader({ email }: { email: string }) {
         <div className="flex items-center gap-3">
           <BrandLogo size="sm" href="/parinte" />
           <div>
-            <p className="font-bold text-slate-900">Code Kids Play</p>
+            <p className="font-bold text-slate-900">Code Maker Club</p>
             <p className="text-xs text-slate-500">Cont părinte · {email}</p>
           </div>
         </div>

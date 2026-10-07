@@ -1,6 +1,6 @@
 # LECȚIA 7 — `if-else` și `else if`
 **Modulul 1 · Bazele C++ · 2 ore**  
-**Code Kids Play · Junior Coder**
+**Code Maker Club · Junior Coder**
 
 > Azi înveți să alegi **exact un drum** din două sau mai multe: dacă ceva e adevărat faci un lucru, altfel faci altul.  
 > Proiect: **„Calificativul tău”** · fișier: `Prenume_Nume_L7.cpp` (ex. `Ana_Pop_L7.cpp`)

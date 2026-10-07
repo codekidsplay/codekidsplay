@@ -1,6 +1,6 @@
 # Lecția 5 — Cameră + Playtest
 **Modulul 1 · Place Builder**  
-**Code Kids Play · Roblox Studio**
+**Code Maker Club · Roblox Studio**
 
 > Azi controlezi **camera** în editare și faci **Playtest** serios: te plimbi, cauți bug-uri de traseu, te întorci la editare.  
 > Place: același `Prenume_Nume_M1`

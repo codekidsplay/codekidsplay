@@ -1,6 +1,6 @@
 # Lecția 6 — Nivele
 **Modulul 3 · Jocuri**  
-**Code Kids Play · Game Builder**
+**Code Maker Club · Game Builder**
 
 > Azi jocul tău are **2 nivele**: termini nivelul 1 → fundal nou, scor resetat, stelele **reapar**, nivelul 2 e mai greu.  
 > **Deschide** proiectul din L5 → **Fișier → Salvează ca** → `Prenume_Nume_M3_L6` (ex. `Ana_Pop_M3_L6`)  

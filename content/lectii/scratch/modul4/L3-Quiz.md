@@ -1,6 +1,6 @@
 # Lecția 3 — Quiz pe runde
 **Modulul 4 · Antrenament (fișier separat)**  
-**Code Kids Play · Scratch Creator**
+**Code Maker Club · Scratch Creator**
 
 > Azi construiești un **quiz pe runde**: scor pe scenă, reacție, trecere R1→R2, final clar.  
 > **Nu** deschizi L1 — fișier **nou**.  

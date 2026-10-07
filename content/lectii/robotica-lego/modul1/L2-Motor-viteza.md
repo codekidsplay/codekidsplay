@@ -1,6 +1,6 @@
 # LECȚIA 2 — Motor: viteză, timp, direcție
 **Modulul 1 · Robotică LEGO WeDo 2.0 · Cam 2 ore**  
-**Code Kids Play**
+**Code Maker Club**
 
 > La final controlezi motorul: înainte/înapoi, viteză, durată — pe un mini-vehicul sau suport.
 

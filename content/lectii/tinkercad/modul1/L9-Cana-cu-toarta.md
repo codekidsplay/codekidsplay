@@ -1,6 +1,6 @@
 # Lecția 9 — Cana cu toartă
 **Modulul 1 · Bazele Tinkercad**  
-**Code Kids Play · Shape Starter**  
+**Code Maker Club · Shape Starter**  
 **Vârstă:** ~8–10 ani
 
 > Azi faci un obiect **gol pe dinăuntru**: cană cu perete, fund și toartă.  

@@ -1,4 +1,4 @@
-# micro:bit — Code Kids Play
+# micro:bit — Code Maker Club
 
 **3 module × 10 lecții × ~2 ore**
 

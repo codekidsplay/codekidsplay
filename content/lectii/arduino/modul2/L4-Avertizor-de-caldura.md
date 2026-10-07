@@ -1,6 +1,6 @@
 # Lecția 4 — Avertizor de căldură
 **Modulul 2 · Senzori**  
-**Code Kids Play · Sensor Scout**
+**Code Maker Club · Sensor Scout**
 
 > Azi legi temperatura de **lumini și sunet**: verde = OK, galben = cald, roșu = pericol (și buzzer).  
 > Proiect: **„Avertizor de căldură”** · `Prenume_Nume_A2_L04`

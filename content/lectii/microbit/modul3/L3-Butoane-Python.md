@@ -1,6 +1,6 @@
 # LECȚIA 3 — Butoane în Python
 **Modulul 3 · micro:bit (Python) · Cam 2 ore**  
-**Code Kids Play**
+**Code Maker Club**
 
 > La final: citești `button_a.was_pressed()` / `is_pressed()` într-un loop.
 

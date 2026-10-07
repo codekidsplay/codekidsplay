@@ -1,6 +1,6 @@
 # Lecția 8 — Misiune / obiectiv de victorie
 **Modulul 6 · Lume de cuburi · Block 3 · Fir L1→L10**  
-**Code Kids Play · Cube Crafter**
+**Code Maker Club · Cube Crafter**
 
 > Continui același proiect.  
 > Azi: **condiție clară de victorie** — jocul are scop, nu doar sandbox.

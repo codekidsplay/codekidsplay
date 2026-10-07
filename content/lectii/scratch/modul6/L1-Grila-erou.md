@@ -1,6 +1,6 @@
 # Lecția 1 — Punte M5 + mișcare pe grilă
 **Modulul 6 · Lume de cuburi · Block 1 · Fir L1→L10**  
-**Code Kids Play · Cube Crafter**
+**Code Maker Club · Cube Crafter**
 
 > Nu e Minecraft oficial — proiect **CKP**.  
 > Azi: **punte din M5** + eroul se mișcă **pătrat cu pătrat** (ex. 32×32), nu fluid ca în platformer.  

@@ -1,6 +1,6 @@
 # Lecția 1 — Ecranul LCD
 **Modulul 3 · Afișaj și mișcare**  
-**Code Kids Play · Display Maker**
+**Code Maker Club · Display Maker**
 
 > Azi Arduino începe să **scrie** pe un ecran LCD 16×2, nu doar în Serial Monitor.  
 > Proiect: **„Cartea mea de vizită”** · `Prenume_Nume_A3_L01`

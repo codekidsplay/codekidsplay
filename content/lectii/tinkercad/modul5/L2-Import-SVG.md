@@ -1,6 +1,6 @@
 # Lecția 2 — Import SVG
 **Modulul 5 · Avansat și proiectare tehnică**  
-**Code Kids Play · Design Pro**  
+**Code Maker Club · Design Pro**  
 **Public:** recomandat **10+**
 
 > Azi transformi un **desen 2D** (fișier SVG) într-un obiect 3D: un **breloc cu simbolul tău**.  

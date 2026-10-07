@@ -1,6 +1,6 @@
 # LECȚIA 9 — Proiect final Coder (Python)
 **Modulul 3 · micro:bit (Python) · Cam 2 ore**  
-**Code Kids Play**
+**Code Maker Club**
 
 > La final: proiect Python show-ready (ideal radio sau senzori + meniu).
 

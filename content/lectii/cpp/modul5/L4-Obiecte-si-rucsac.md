@@ -1,6 +1,6 @@
 # LECȚIA 4 — Obiecte și rucsac
 **Modulul 5 · Proiect RPG în consolă · 2 ore**  
-**Code Kids Play · RPG Creator**
+**Code Maker Club · RPG Creator**
 
 > Un castel fără comori nu e un castel. Azi punem **obiecte** prin camere: o sabie în armurărie, o poțiune în bucătărie, o cheie în pivniță. Eroul învață să le ia de pe jos (`ia`), să vadă ce are în **rucsac** (`inventar`) și să folosească o poțiune (`foloseste`). Rucsacul este un `vector` de texte, exact ca la lista de note din Modulul 4.  
 > Proiect: **„Joc_L44.cpp”** · găsești obiecte și le folosești.

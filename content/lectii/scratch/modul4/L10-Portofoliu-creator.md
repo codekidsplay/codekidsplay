@@ -1,6 +1,6 @@
 # Lecția 10 — Colecție de proiecte Creator
 **Modulul 4 · Închidere modul (doar Scratch)**  
-**Code Kids Play · Scratch Creator**
+**Code Maker Club · Scratch Creator**
 
 > Insigna a fost la **L9**. Azi nu faci proiect nou din zero: **strângi ce ai făcut**, îmbunătățești favoritul, dai părere unui coleg și te uiți scurt spre **Modulul 5**.  
 > Lucrezi în **Scratch** · salvezi copia favorită ca `Prenume_Nume_M4_L10`

@@ -1,6 +1,6 @@
 # Lecția 5 — Parcare cu senzor
 **Modulul 2 · Senzori**  
-**Code Kids Play · Sensor Scout**
+**Code Maker Club · Sensor Scout**
 
 > Azi măsori **distanța** cu senzorul cu ultrasunete **HC-SR04**, exact ca la mașinile moderne: cu cât te apropii, cu atât bipurile sunt mai dese.  
 > Proiect: **„Parcare inteligentă”** · `Prenume_Nume_A2_L05`

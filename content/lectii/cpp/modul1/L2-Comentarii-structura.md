@@ -1,6 +1,6 @@
 # LECȚIA 2 — Comentarii și structura programului
 **Modulul 1 · Bazele C++ · 2 ore**  
-**Code Kids Play · Junior Coder**
+**Code Maker Club · Junior Coder**
 
 > Azi înveți să scrii un program **ordonat**: cu structură clară, indentare corectă și comentarii care explică ce face codul.  
 > Proiect: **„Programul meu comentat”** · fișier: `Prenume_Nume_L2.cpp` (ex. `Ana_Pop_L2.cpp`)
@@ -152,7 +152,7 @@ int main() {
     /* Acest program afiseaza
        un mesaj de bun venit.
        Il folosesc la lectia 2. */
-    cout << "Bun venit la Code Kids Play!" << endl;
+    cout << "Bun venit la Code Maker Club!" << endl;
     return 0;
 }
 ```

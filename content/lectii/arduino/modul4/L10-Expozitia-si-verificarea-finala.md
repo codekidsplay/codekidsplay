@@ -1,6 +1,6 @@
 # Lecția 10 — Expoziția + verificare finală
 **Modulul 4 · Proiecte complete**  
-**Code Kids Play · Arduino Creator**
+**Code Maker Club · Arduino Creator**
 
 > Ultima oră din cursul de Arduino! Îți **prezinți proiectul**, vezi proiectele colegilor și faci **verificarea finală** a tot ce ai învățat.  
 > Proiect: **„Expoziția Arduino”** · `Prenume_Nume_A4_L10`

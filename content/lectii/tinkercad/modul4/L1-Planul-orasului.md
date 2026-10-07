@@ -1,6 +1,6 @@
 # Lecția 1 — Planul orașului
 **Modulul 4 · Orașul nostru**  
-**Code Kids Play · City Builder**  
+**Code Maker Club · City Builder**  
 **Vârstă:** ~8–10 ani
 
 > Azi stabilim **scara** și **placa** pe care construiești tot modulul: un cartier mic al orașului nostru.  

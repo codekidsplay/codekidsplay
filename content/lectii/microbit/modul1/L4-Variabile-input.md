@@ -1,6 +1,6 @@
 # LECȚIA 4 — Variabile + input
 **Modulul 1 · micro:bit (blocuri) · Cam 2 ore**  
-**Code Kids Play**
+**Code Maker Club**
 
 > La final: o variabilă pe LED (scor / număr) se schimbă la butoane.
 

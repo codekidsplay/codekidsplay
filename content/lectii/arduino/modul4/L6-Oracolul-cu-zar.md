@@ -1,6 +1,6 @@
 # Lecția 6 — Oracolul cu zar
 **Modulul 4 · Proiecte complete**  
-**Code Kids Play · Arduino Creator**
+**Code Maker Club · Arduino Creator**
 
 > Azi construiești un **zar electronic** cu 7 LED-uri și un **oracol** care îți dă „răspunsuri” pe LCD.  
 > Proiect: **„Oracolul”** · `Prenume_Nume_A4_L06`

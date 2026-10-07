@@ -1,6 +1,6 @@
 # Lecția 6 — Radar de mână
 **Modulul 3 · Afișaj și mișcare**  
-**Code Kids Play · Display Maker**
+**Code Maker Club · Display Maker**
 
 > Azi pui un senzor de distanță **pe un servo** și construiești un radar care „scanează” camera.  
 > Proiect: **„Radarul meu”** · `Prenume_Nume_A3_L06`

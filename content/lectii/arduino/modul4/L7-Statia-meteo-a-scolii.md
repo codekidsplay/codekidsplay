@@ -1,6 +1,6 @@
 # Lecția 7 — Stația meteo a școlii
 **Modulul 4 · Proiecte complete**  
-**Code Kids Play · Arduino Creator**
+**Code Maker Club · Arduino Creator**
 
 > Azi construiești o **stație meteo** completă, care **înregistrează** valorile și le arată pe LCD ca pe un tablou de bord.  
 > Proiect: **„Meteo de școală”** · `Prenume_Nume_A4_L07`

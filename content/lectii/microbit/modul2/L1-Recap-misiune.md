@@ -1,6 +1,6 @@
 # LECȚIA 1 — Recap M1 + misiunea Modulului 2
 **Modulul 2 · micro:bit (blocuri) · Cam 2 ore**  
-**Code Kids Play · micro:bit Maker**
+**Code Maker Club · micro:bit Maker**
 
 > La final: știi ce e greu în M2 și ai un prototip pe placă.
 

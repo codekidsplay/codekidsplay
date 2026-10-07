@@ -1,6 +1,6 @@
 # LECȚIA 7 — Proiect: Ventilator / elice
 **Modulul 1 · Robotică LEGO WeDo 2.0 · Cam 2 ore**  
-**Code Kids Play**
+**Code Maker Club**
 
 > La final ai un mecanism care **se învârte** controlat (viteză + start/stop).
 

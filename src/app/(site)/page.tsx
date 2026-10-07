@@ -13,7 +13,7 @@ export default function LandingPage() {
       <section className="relative min-h-[92svh] sm:min-h-[100svh] overflow-hidden">
         <Image
           src="/hero-codekids.jpg"
-          alt="Copii la atelierele Code Kids Play"
+          alt="Copii la atelierele Code Maker Club"
           fill
           priority
           className="object-cover object-center ckp-ken"
@@ -48,7 +48,7 @@ export default function LandingPage() {
               className="ckp-fade-up text-white text-2xl sm:text-3xl lg:text-4xl font-semibold tracking-tight mb-3"
               style={{ fontFamily: 'var(--font-display)' }}
             >
-              Code Kids Play
+              Code Maker Club
             </p>
             <h1
               className="ckp-fade-up-delay text-white/95 text-xl sm:text-2xl lg:text-3xl font-medium tracking-tight leading-snug max-w-xl mb-3"
@@ -323,7 +323,7 @@ export default function LandingPage() {
           </a>
         </nav>
         <span className="text-center sm:text-right">
-          Code Kids Play Focșani · © {new Date().getFullYear()}
+          Code Maker Club Focșani · © {new Date().getFullYear()}
         </span>
       </footer>
     </div>

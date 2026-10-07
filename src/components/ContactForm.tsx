@@ -14,7 +14,7 @@ export default function ContactForm() {
     const subject = encodeURIComponent(`Mesaj de pe site — ${nume.trim() || 'Contact'}`)
     const body = encodeURIComponent(
       [
-        'Salut, Code Kids Play!',
+        'Salut, Code Maker Club!',
         '',
         'Am un mesaj pentru tine:',
         '',

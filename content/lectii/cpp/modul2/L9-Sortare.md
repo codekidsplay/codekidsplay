@@ -1,6 +1,6 @@
 # LECȚIA 9 — Sortarea vectorilor
 **Modulul 2 · Bucle și vectori · 2 ore**  
-**Code Kids Play · Loop Master**
+**Code Maker Club · Loop Master**
 
 > Azi pui valorile **în ordine**: crescătoare sau descrescătoare. Înveți să interschimbi două valori, scrii două metode de sortare făcute de tine și vezi la final și comanda gata făcută din C++.  
 > Proiect: **„Clasamentul clasei”** · fișier: `Prenume_Nume_M2L9.cpp` (ex. `Ana_Pop_M2L9.cpp`)

@@ -1,6 +1,6 @@
 # Lecția 6 — Râul și podul
 **Modulul 4 · Orașul nostru**  
-**Code Kids Play · City Builder**  
+**Code Maker Club · City Builder**  
 **Vârstă:** ~8–10 ani
 
 > Azi tai un **râu** prin parc cu un **Hole** și îl treci cu un **pod**.  

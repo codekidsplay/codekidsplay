@@ -1,6 +1,6 @@
 # Lecția 1 — Design de joc: erou, obstacol, țintă
 **Modulul 3 · Jocuri**  
-**Code Kids Play · Game Builder**
+**Code Maker Club · Game Builder**
 
 > Azi **proiectezi** un joc pe hârtie, apoi îl construiești pe scenă: erou care se mișcă, un obstacol și o țintă.  
 > **Proiect nou** (nu continui labirintul din Modul 2).  

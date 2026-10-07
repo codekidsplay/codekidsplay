@@ -99,7 +99,7 @@ export function descarcaPdfIncasari(opts: {
 <html lang="ro">
 <head>
   <meta charset="utf-8" />
-  <title>Încasări ${perioada} — Code Kids Play</title>
+  <title>Încasări ${perioada} — Code Maker Club</title>
   <style>
     body { font-family: system-ui, sans-serif; color: #0f172a; padding: 32px; }
     h1 { font-size: 20px; margin: 0 0 4px; }
@@ -113,7 +113,7 @@ export function descarcaPdfIncasari(opts: {
   </style>
 </head>
 <body>
-  <h1>Code Kids Play — Încasări</h1>
+  <h1>Code Maker Club — Încasări</h1>
   <p class="sub">${perioada}</p>
   <div class="sum">
     <div>Total<br/><strong>${total} lei</strong></div>
@@ -195,7 +195,7 @@ export function descarcaPdfActivitateProfesor(opts: {
 <html lang="ro">
 <head>
   <meta charset="utf-8" />
-  <title>Activitate ${esc(p.nume)} ${perioada} — Code Kids Play</title>
+  <title>Activitate ${esc(p.nume)} ${perioada} — Code Maker Club</title>
   <style>
     body { font-family: system-ui, sans-serif; color: #0f172a; padding: 32px; }
     h1 { font-size: 20px; margin: 0 0 4px; }
@@ -210,7 +210,7 @@ export function descarcaPdfActivitateProfesor(opts: {
   </style>
 </head>
 <body>
-  <h1>Code Kids Play — Activitate profesor</h1>
+  <h1>Code Maker Club — Activitate profesor</h1>
   <p class="sub">${esc(p.nume)}${p.email ? ` · ${esc(p.email)}` : ''} · ${perioada}</p>
   <div class="sum">
     <div>Copii înregistrați<br/><strong>${p.copii_inregistrati}</strong><br/><small>${p.copii_asignati} asignați în total</small></div>

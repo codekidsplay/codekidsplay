@@ -1,6 +1,6 @@
 # Lecția 5 — Ștampila cu text
 **Modulul 1 · Bazele Tinkercad**  
-**Code Kids Play · Shape Starter**  
+**Code Maker Club · Shape Starter**  
 **Vârstă:** ~8–10 ani
 
 > Azi folosești piesa **Text** și o **oglindești** ca pe o ștampilă.  

@@ -1,6 +1,6 @@
 # Scratch Modul 5 — Reguli de joc
 
-**Code Kids Play** · **8–10 ani** · Badge / **insignă:** **Maestru de jocuri**  
+**Code Maker Club** · **8–10 ani** · Badge / **insignă:** **Maestru de jocuri**  
 **Proiecte:** 6 antrenamente (L1–L6) + 1 proiect mare (L7→L10).  
 **Stil:** schelet M1–M4 (Obiectiv, Minim/Complet, Pas cu pas, Schema pe scurt) · **ștachetă avansată** pe tot modulul.  
 **Culori blocuri:** [`_culori-scratch.md`](../_culori-scratch.md)

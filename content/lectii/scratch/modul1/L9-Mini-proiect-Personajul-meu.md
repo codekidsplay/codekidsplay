@@ -1,6 +1,6 @@
 # Lecția 9 — Personajul meu (mini-proiect)
 **Modulul 1 · Primii pași**  
-**Code Kids Play · Scratch Starter**
+**Code Maker Club · Scratch Starter**
 
 > Azi pui împreună ce ai învățat: o animație scurtă **despre personajul tău**, gata de arătat.  
 > Proiect: **„Personajul meu”** · fișier: `Prenume_Nume_L9` (ex. `Ana_Pop_L9`)

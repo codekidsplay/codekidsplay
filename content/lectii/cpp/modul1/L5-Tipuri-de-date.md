@@ -1,6 +1,6 @@
 # LECȚIA 5 — Tipuri de date: `double`, `char`, `bool`, `string`
 **Modulul 1 · Bazele C++ · 2 ore**  
-**Code Kids Play · Junior Coder**
+**Code Maker Club · Junior Coder**
 
 > Azi afli că nu tot ce păstrezi în memorie este un număr întreg: există numere cu zecimale, litere, valori de adevăr și texte întregi.  
 > Proiect: **„Cartea mea de identitate”** · fișier: `Prenume_Nume_L5.cpp` (ex. `Ana_Pop_L5.cpp`)

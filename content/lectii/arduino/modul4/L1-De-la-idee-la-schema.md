@@ -1,6 +1,6 @@
 # Lecția 1 — De la idee la schemă
 **Modulul 4 · Proiecte complete**  
-**Code Kids Play · Arduino Creator**
+**Code Maker Club · Arduino Creator**
 
 > Ultimul modul: nu mai copiezi proiecte, le **gândești** tu. Azi înveți cum arată un proiect bine pregătit, **înainte** să pui prima piesă.  
 > Proiect: **„Planul meu de inventator”** · `Prenume_Nume_A4_L01`

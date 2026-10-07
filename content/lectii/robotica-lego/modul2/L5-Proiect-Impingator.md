@@ -1,6 +1,6 @@
 # LECȚIA 5 — Proiect: Împingător / sortare simplă
 **Modulul 2 · Robotică LEGO WeDo 2.0 · Cam 2 ore**  
-**Code Kids Play**
+**Code Maker Club**
 
 > La final un mecanism **împinge** piese în 1–2 direcții (sortare ultra-simplă).
 

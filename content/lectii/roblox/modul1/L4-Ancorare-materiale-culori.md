@@ -1,6 +1,6 @@
 # Lecția 4 — Ancorare, materiale, culori
 **Modulul 1 · Place Builder**  
-**Code Kids Play · Roblox Studio**
+**Code Maker Club · Roblox Studio**
 
 > Azi Parts-urile tale **stau pe loc** la Play și arată diferit: **material** + **culoare**.  
 > Place: același `Prenume_Nume_M1`

@@ -1,6 +1,6 @@
 # LECȚIA 10 — Showcase + badge micro:bit Coder
 **Modulul 3 · micro:bit (Python) · Cam 2 ore**  
-**Badge: micro:bit Coder · Code Kids Play**
+**Badge: micro:bit Coder · Code Maker Club**
 
 > La final: showcase Python + badge; punte spre cursul Python CKP / Arduino.
 

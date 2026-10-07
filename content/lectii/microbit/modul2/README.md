@@ -1,6 +1,6 @@
 # micro:bit Modul 2 — MakeCode (blocuri, proiecte)
 
-**Code Kids Play** · ~2 ore / lecție · Badge: **micro:bit Maker**  
+**Code Maker Club** · ~2 ore / lecție · Badge: **micro:bit Maker**  
 **Prerequisit:** Modul 1
 
 | # | Fișier | Focus |

@@ -1,6 +1,6 @@
 # Lecția 3 — Toleranțe pentru print
 **Modulul 5 · Avansat și proiectare tehnică**  
-**Code Kids Play · Design Pro**  
+**Code Maker Club · Design Pro**  
 **Public:** recomandat **10+**
 
 > Azi faci un **test de potrivire**: o placă cu știfturi și o placă cu găuri de mărimi puțin diferite, ca să afli ce **joc** trebuie între piese.  

@@ -1,6 +1,6 @@
 # LECȚIA 4 — `do-while` și alegerea buclei
 **Modulul 2 · Bucle și vectori · 2 ore**  
-**Code Kids Play · Loop Master**
+**Code Maker Club · Loop Master**
 
 > Azi înveți bucla care **rulează cel puțin o dată**, perfectă pentru meniuri care se repetă și pentru validarea datelor, și înveți să alegi cea mai potrivită buclă pentru fiecare problemă.  
 > Proiect: **„Bancomat”** · fișier: `Prenume_Nume_M2L4.cpp` (ex. `Ana_Pop_M2L4.cpp`)

@@ -1,6 +1,6 @@
 # Lecția 8 — Dansul meu (repetă și așteaptă)
 **Modulul 1 · Primii pași**  
-**Code Kids Play · Scratch Starter**
+**Code Maker Club · Scratch Starter**
 
 > Azi faci același lucru de mai multe ori **fără** să copiezi blocurile iar și iar — cu ritm.  
 > Proiect: **„Dansul meu”** · fișier: `Prenume_Nume_L8` (ex. `Ana_Pop_L8`)

@@ -1,6 +1,6 @@
 # Lecția 10 — Telecomanda magică
 **Modulul 3 · Afișaj și mișcare**  
-**Code Kids Play · Display Maker**
+**Code Maker Club · Display Maker**
 
 > Proiectul modulului: controlezi LED-uri de la distanță cu o **telecomandă cu infraroșu**, ca la televizor.  
 > Proiect: **„Telecomanda mea”** · `Prenume_Nume_A3_L10`

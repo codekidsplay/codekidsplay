@@ -1,6 +1,6 @@
 # Lecția 9 — Mini stație meteo
 **Modulul 2 · Senzori**  
-**Code Kids Play · Sensor Scout**
+**Code Maker Club · Sensor Scout**
 
 > Azi combini **doi senzori** (temperatură și lumină) într-o mică stație meteo cu raport în Serial Monitor.  
 > Proiect: **„Stația mea meteo”** · `Prenume_Nume_A2_L09`

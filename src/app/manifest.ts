@@ -2,8 +2,8 @@ import type { MetadataRoute } from 'next'
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: 'Code Kids Play',
-    short_name: 'CodeKidsPlay',
+    name: 'Code Maker Club',
+    short_name: 'CodeMakerClub',
     description: 'Cursuri de programare pentru copii — Focșani',
     start_url: '/',
     display: 'standalone',

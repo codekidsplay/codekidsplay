@@ -1,6 +1,6 @@
 # LECȚIA 8 — Proiect: Creatura care reacționează
 **Modulul 1 · Robotică LEGO WeDo 2.0 · Cam 2 ore**  
-**Code Kids Play**
+**Code Maker Club**
 
 > La final ai o **creatură** LEGO care reacționează la înclinare sau apropiere.
 

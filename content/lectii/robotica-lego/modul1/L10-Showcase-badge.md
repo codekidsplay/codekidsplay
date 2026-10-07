@@ -1,6 +1,6 @@
 # LECȚIA 10 — Showcase + badge Robot Starter
 **Modulul 1 · Robotică LEGO WeDo 2.0 · Cam 2 ore**  
-**Badge: Robot Starter · Code Kids Play**
+**Badge: Robot Starter · Code Maker Club**
 
 > La final prezinți cel mai bun model WeDo din modul și primești badge-ul.
 

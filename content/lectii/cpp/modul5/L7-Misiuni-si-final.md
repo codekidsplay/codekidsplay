@@ -1,6 +1,6 @@
 # LECȚIA 7 — Misiuni și condiții de câștig
 **Modulul 5 · Proiect RPG în consolă · 2 ore**  
-**Code Kids Play · RPG Creator**
+**Code Maker Club · RPG Creator**
 
 > Până acum eroul tău se plimbă, ia obiecte, se luptă și cumpără, dar jocul nu se termină niciodată. Azi îi dăm **un scop**: să învingă goblinul, să găsească cheia și să deschidă cufărul din turn. Adăugăm o listă de **misiuni** cu bife, **condițiile de câștig și de pierdere** și un ecran final cu scorul. Pentru asta folosim variabile `bool`, care țin minte ce s-a întâmplat în joc.  
 > Proiect: **„Joc_L47.cpp”** · poți câștiga sau pierde jocul.

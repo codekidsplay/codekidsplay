@@ -1,6 +1,6 @@
 # LECȚIA 7 — Calcule cu vectori: sumă, medie, minim, maxim
 **Modulul 2 · Bucle și vectori · 2 ore**  
-**Code Kids Play · Loop Master**
+**Code Maker Club · Loop Master**
 
 > Azi parcurgi un vector și afli lucruri despre el: **suma**, **media**, **cel mai mic** și **cel mai mare** element, câte elemente respectă o regulă și **unde** se află. Exact ce face un catalog sau o aplicație de statistici.  
 > Proiect: **„Statistica clasei”** · fișier: `Prenume_Nume_M2L7.cpp` (ex. `Ana_Pop_M2L7.cpp`)

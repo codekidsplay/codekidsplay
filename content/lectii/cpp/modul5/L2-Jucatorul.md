@@ -1,6 +1,6 @@
 # LECȚIA 2 — Jucătorul
 **Modulul 5 · Proiect RPG în consolă · 2 ore**  
-**Code Kids Play · RPG Creator**
+**Code Maker Club · RPG Creator**
 
 > Un joc fără erou nu este joc. Azi îl creăm pe **eroul tău**: are un nume, viață, putere de atac, monede și scor. Toate aceste date aparțin aceluiași personaj, deci le punem împreună într-o **structură** (`struct`), exact ca la fișa elevului din Modulul 4. Desenăm și o **bară de viață** din caractere, ca în jocurile adevărate, și scriem funcții care îl rănesc sau îl vindecă.  
 > Proiect: **„Joc_L42.cpp”** · jocul din lecția trecută, cu eroul adăugat.

@@ -19,7 +19,7 @@ export default function ConfidentialitatePage() {
           Notă de informare privind protecția datelor (GDPR)
         </h1>
         <p className="text-[var(--ckp-muted)] text-sm mb-10">
-          Code Kids Play Focșani · Conform Regulamentului (UE) 2016/679 · Ultima actualizare: septembrie 2026
+          Code Maker Club Focșani · Conform Regulamentului (UE) 2016/679 · Ultima actualizare: septembrie 2026
         </p>
 
         <div className="space-y-8 text-[var(--ckp-ink-soft)] text-base leading-relaxed">
@@ -28,7 +28,7 @@ export default function ConfidentialitatePage() {
               1. Cine suntem și calitatea de operator
             </h2>
             <p>
-              Prezenta notă de informare explică modul în care <strong>Code Kids Play Focșani</strong> („noi”, „operatorul”),
+              Prezenta notă de informare explică modul în care <strong>Code Maker Club Focșani</strong> („noi”, „operatorul”),
               prelucrează datele cu caracter personal ale cursanților (copii și adolescenți) și ale reprezentanților lor legali
               (părinți sau tutori), cu respectarea Regulamentului General privind Protecția Datelor (RGPD / GDPR - Regulamentul UE 2016/679)
               și a legislației naționale aplicabile.
@@ -62,7 +62,7 @@ export default function ConfidentialitatePage() {
                   facturării și evidenței abonamentului, eventuale mențiuni de sănătate sau cerințe speciale comunicate de părinte pentru siguranța la atelier.
                 </p>
                 <p className="text-sm mt-1">
-                  <strong>Temei legal:</strong> Încheierea și executarea contractului / înscrierii la cursurile Code Kids Play (art. 6 alin. 1 lit. b din RGPD).
+                  <strong>Temei legal:</strong> Încheierea și executarea contractului / înscrierii la cursurile Code Maker Club (art. 6 alin. 1 lit. b din RGPD).
                 </p>
               </div>
 
@@ -217,7 +217,7 @@ export default function ConfidentialitatePage() {
             <p>
               Furnizarea datelor este voluntară. Totuși, refuzul de a furniza datele de identificare de bază (nume părinte,
               nume copil, telefon, email, vârstă elev) face imposibilă înscrierea și organizarea participării copilului
-              la grupele de curs ale atelierului Code Kids Play.
+              la grupele de curs ale atelierului Code Maker Club.
             </p>
           </section>
 
@@ -230,7 +230,7 @@ export default function ConfidentialitatePage() {
               suntem mereu disponibili:
             </p>
             <p className="mt-2">
-              <strong>Code Kids Play Focșani</strong><br />
+              <strong>Code Maker Club Focșani</strong><br />
               Str. Republicii 16 bis, etaj 1, Clădirea RIX, Focșani<br />
               Email:{' '}
               <a href="mailto:codekidsplay@gmail.com" className="text-[var(--ckp-blue)] hover:underline">

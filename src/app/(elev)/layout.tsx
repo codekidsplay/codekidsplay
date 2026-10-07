@@ -27,7 +27,7 @@ function ElevChrome({ children }: { children: React.ReactNode }) {
           <Link href="/invata" className="flex items-center gap-3">
             <BrandLogo size="sm" href={null} />
             <div>
-              <p className="font-bold text-slate-900 leading-tight">Code Kids Play</p>
+              <p className="font-bold text-slate-900 leading-tight">Code Maker Club</p>
               <p className="text-xs text-slate-500">
                 {prenume ? `Salut, ${prenume}` : 'Spațiul meu de învățare'}
               </p>

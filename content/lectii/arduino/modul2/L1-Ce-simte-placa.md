@@ -1,6 +1,6 @@
 # Lecția 1 — Ce simte placa?
 **Modulul 2 · Senzori**  
-**Code Kids Play · Sensor Scout**
+**Code Maker Club · Sensor Scout**
 
 > Azi înveți să **asculți** ce „simte” Arduino: citești valori cu `analogRead` și `digitalRead` și le afișezi în **Serial Monitor**.  
 > Proiect: **„Jurnalul plăcii”** · `Prenume_Nume_A2_L01`

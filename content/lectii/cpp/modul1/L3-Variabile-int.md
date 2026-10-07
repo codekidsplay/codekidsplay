@@ -1,6 +1,6 @@
 # LECȚIA 3 — Variabile `int`
 **Modulul 1 · Bazele C++ · 2 ore**  
-**Code Kids Play · Junior Coder**
+**Code Maker Club · Junior Coder**
 
 > Azi înveți să păstrezi numere în memoria calculatorului, să le dai un nume, să le schimbi și să calculezi cu ele.  
 > Proiect: **„Fișa jucătorului”** · fișier: `Prenume_Nume_L3.cpp` (ex. `Ana_Pop_L3.cpp`)

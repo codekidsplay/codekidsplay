@@ -1,6 +1,6 @@
 # Lecția 10 — Insula în miniatură (mini-proiect)
 **Modulul 1 · Bazele Tinkercad**  
-**Code Kids Play · Shape Starter**  
+**Code Maker Club · Shape Starter**  
 **Vârstă:** ~8–10 ani
 
 > Azi combini tot ce ai învățat în Modulul 1 într-o scenă a ta.  

@@ -1,6 +1,6 @@
 # Lecția 3 — Parts: forme, mutare, scalare
 **Modulul 1 · Place Builder**  
-**Code Kids Play · Roblox Studio**
+**Code Maker Club · Roblox Studio**
 
 > Azi controlezi **Parts**-urile: alegi **forma**, le **muți**, le **mărești** și le **rotești** ca să construiești trepte și platforme.  
 > Place: același `Prenume_Nume_M1`

@@ -1,6 +1,6 @@
 # Lecția 4 — Inventar (resurse pe scenă)
 **Modulul 6 · Lume de cuburi · Block 2 · Fir L1→L10**  
-**Code Kids Play · Cube Crafter**
+**Code Maker Club · Cube Crafter**
 
 > Continui același proiect.  
 > Azi: inventarul e **clar pe ecran** — câte resurse ai, ce tip e activ.  

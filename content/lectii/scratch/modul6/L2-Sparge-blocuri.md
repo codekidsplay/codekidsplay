@@ -1,6 +1,6 @@
 # Lecția 2 — Sparge blocuri (minat)
 **Modulul 6 · Lume de cuburi · Block 1 · Fir L1→L10**  
-**Code Kids Play · Cube Crafter**
+**Code Maker Club · Cube Crafter**
 
 > Continui `Prenume_Nume_M6_LumeCuburi`.  
 > Azi: **spargi** blocuri aproape de erou → dispar / devin aer + **resursă** în variabilă.

@@ -1,6 +1,6 @@
 # Lecția 9 — Meniu Start + instrucțiuni
 **Modulul 6 · Lume de cuburi · Block 3 · Fir L1→L10**  
-**Code Kids Play · Cube Crafter**
+**Code Maker Club · Cube Crafter**
 
 > Continui **același** fișier (nu proiect nou).  
 > Azi: ecran **Start**, reset curat, ghid de taste — ca un joc gata de prezentat.

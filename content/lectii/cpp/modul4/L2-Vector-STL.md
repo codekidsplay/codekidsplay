@@ -1,6 +1,6 @@
 # LECȚIA 2 — `vector` din STL: lista care crește singură
 **Modulul 4 · Proiecte și autonomie · 2 ore**  
-**Code Kids Play · CodeKids Graduate**
+**Code Maker Club · CodeKids Graduate**
 
 > În Modulul 2 ai lucrat cu vectori de felul `int v[10]`: trebuie să alegi dinainte dimensiunea, iar dacă primești mai multe date, nu mai ai loc. Azi cunoști varianta modernă din biblioteca standard C++ (STL): `vector`. Este o listă care **crește singură** când adaugi elemente, își cunoaște lungimea și se poate da ușor funcțiilor.  
 > Proiect: **„Lista de note”** · fișier: `Prenume_Nume_M4L2.cpp` (ex. `Ana_Pop_M4L2.cpp`)

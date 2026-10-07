@@ -1,6 +1,6 @@
 # Lecția 1 — Gravitație și săritură
 **Modulul 5 · Reguli de joc · Block 1**  
-**Code Kids Play · Maestru de jocuri**
+**Code Maker Club · Maestru de jocuri**
 
 > Azi: modelul clasic cu **`viteza_y`** — cazi, sari, aterizezi pe platforme **fără** săritură infinită și **fără** să treci prin podea.  
 > Fișier **nou**: `Prenume_Nume_M5_L1` · proiect: **„Sărituri pe platforme”**

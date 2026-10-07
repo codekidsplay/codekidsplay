@@ -1,6 +1,6 @@
 # LECȚIA 10 — Recapitulare și mini-proiect: Modulul 1
 **Modulul 1 · Bazele C++ · 2 ore**  
-**Code Kids Play · Junior Coder**
+**Code Maker Club · Junior Coder**
 
 > Azi aduni tot ce ai învățat în Modulul 1 într-un singur program: un **quiz** sau un **calculator cu meniu**. La final primești insigna **Junior Coder**.  
 > Proiect: **mini-proiectul tău** · fișier: `Prenume_Nume_M1_Proiect.cpp` (ex. `Ana_Pop_M1_Proiect.cpp`)

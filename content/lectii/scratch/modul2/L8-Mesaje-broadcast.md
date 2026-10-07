@@ -1,6 +1,6 @@
 # Lecția 8 — Mesaje între personaje
 **Modulul 2 · Logică**  
-**Code Kids Play · Logic Explorer**
+**Code Maker Club · Logic Explorer**
 
 > Azi un personaj **anunță**, altul **reacționează** — fără să se atingă neapărat.  
 > Proiect: **„Alarma”** · fișier: `Prenume_Nume_L8` (ex. `Ana_Pop_L8`)

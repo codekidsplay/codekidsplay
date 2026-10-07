@@ -1,6 +1,6 @@
 # LECȚIA 1 — Recap M1 + misiunea Modulului 2
 **Modulul 2 · Robotică LEGO WeDo 2.0 · Cam 2 ore**  
-**Code Kids Play · Robot Inventor**
+**Code Maker Club · Robot Inventor**
 
 > La final ai ales direcția M2 și ai un **prototip** care deja mișcă ceva.
 

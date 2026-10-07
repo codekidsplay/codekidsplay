@@ -1,6 +1,6 @@
 # Lecția 1 — Cardul meu animat
 **Modulul 1 · Primii pași**  
-**Code Kids Play · Scratch Starter**
+**Code Maker Club · Scratch Starter**
 
 > Azi înveți ecranul Scratch (steag, salvare, 5 capitole) și faci **„Cardul meu animat”**:  
 > un clip scurt despre tine, cu 2 personaje.  

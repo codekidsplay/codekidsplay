@@ -1,6 +1,6 @@
 # LECȚIA 3 — Joc radio (2 jucători)
 **Modulul 2 · micro:bit (blocuri) · Cam 2 ore**  
-**Code Kids Play**
+**Code Maker Club**
 
 > La final: un mini-joc între 2 plăci (ex. ping, duel scor, semnale).
 

@@ -1,6 +1,6 @@
 # Lecția 3 — Lumina de veghe
 **Modulul 1 · Primele circuite**  
-**Code Kids Play · Circuit Starter**
+**Code Maker Club · Circuit Starter**
 
 > Azi citești un **buton** cu Arduino și iei **decizii** cu `if` / `else`.  
 > Proiect: **„Lumina mea de veghe”** · `Prenume_Nume_A1_L03`

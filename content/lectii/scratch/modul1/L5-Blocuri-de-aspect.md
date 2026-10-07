@@ -1,6 +1,6 @@
 # Lecția 5 — Interviul (blocuri de aspect)
 **Modulul 1 · Primii pași**  
-**Code Kids Play · Scratch Starter**
+**Code Maker Club · Scratch Starter**
 
 > Azi controlezi **cum arată** și **ce transmite** personajul: spune, gândește, mărime, culoare.  
 > Proiect: **„Interviul”** · fișier: `Prenume_Nume_L5` (ex. `Ana_Pop_L5`)

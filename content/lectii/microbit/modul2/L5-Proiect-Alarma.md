@@ -1,6 +1,6 @@
 # LECȚIA 5 — Proiect: Alarmă inteligentă
 **Modulul 2 · micro:bit (blocuri) · Cam 2 ore**  
-**Code Kids Play**
+**Code Maker Club**
 
 > La final: alarmă pe lumină / mișcare / buton + semnal pe LED (și pin dacă există).
 

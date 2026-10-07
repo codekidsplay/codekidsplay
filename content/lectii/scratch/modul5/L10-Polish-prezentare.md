@@ -1,6 +1,6 @@
 # Lecția 10 — Finisări, prezentare + insignă Maestru de jocuri
 **Modulul 5 · Reguli de joc · Block 3 · Fir L7→L10**  
-**Code Kids Play · Maestru de jocuri**
+**Code Maker Club · Maestru de jocuri**
 
 > Ultima oră pe `Prenume_Nume_M5_Proiect`: finisări **A–F**, **minutul 55 Stop cod**, prezentare **1–2 min**, insignă **Maestru de jocuri**.
 

@@ -1,4 +1,4 @@
-# Arduino — Curriculum Code Kids Play
+# Arduino — Curriculum Code Maker Club
 
 **4 module × 10 lecții = 40 lecții**  
 **Vârstă orientativă:** 10+ (cod C++ minim, citit și modificat; nu scris de la zero)  

@@ -1,6 +1,6 @@
 # Lecția 6 — Operatori
 **Modulul 2 · Logică**  
-**Code Kids Play · Logic Explorer**
+**Code Maker Club · Logic Explorer**
 
 > Azi **compari** și **calculezi** numere: mai mare, egal, plus, minus — în `dacă`.  
 > Proiect: **„Ținta de scor”** · fișier: `Prenume_Nume_L6` (ex. `Ana_Pop_L6`)

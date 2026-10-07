@@ -1,6 +1,6 @@
 # Scratch — Curriculum (Module 1–5)
 
-**Code Kids Play Focșani** · **8–10 ani** · lecții pe proiect (fără minute pe oră)
+**Code Maker Club Focșani** · **8–10 ani** · lecții pe proiect (fără minute pe oră)
 
 > Fiecare lecție: warm-up → concept → exerciții → proiect scurt → temă acasă.
 

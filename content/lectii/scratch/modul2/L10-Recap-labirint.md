@@ -1,6 +1,6 @@
 # Lecția 10 — Completare + recap (labirint)
 **Modulul 2 · Logică**  
-**Code Kids Play · Logic Explorer**
+**Code Maker Club · Logic Explorer**
 
 > Azi **termini** labirintul (completare pe L9), îl **arăți** clasei și primești insigna **Logic Explorer**.  
 > Fișier: `Prenume_Nume_L9` *(sau `Prenume_Nume_L10` = copie, ca să nu strici versiunea veche)*  

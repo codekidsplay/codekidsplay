@@ -1,6 +1,6 @@
 # Lecția 3 — Clădiri înalte
 **Modulul 4 · Orașul nostru**  
-**Code Kids Play · City Builder**  
+**Code Maker Club · City Builder**  
 **Vârstă:** ~8–10 ani
 
 > Azi exersezi **repetarea**: un bloc cu zeci de ferestre, făcute dintr-un singur rând copiat în sus.  

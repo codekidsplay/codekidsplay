@@ -54,7 +54,7 @@ export default function Sidebar() {
         <div className="flex items-center gap-3">
           <BrandLogo size="sm" href="/admin" />
           <div>
-            <h1 className="font-bold text-lg leading-tight">Code Kids Play</h1>
+            <h1 className="font-bold text-lg leading-tight">Code Maker Club</h1>
             <p className="text-slate-400 text-xs">
               {rol === 'profesor' ? 'Profesor' : adminName || rolLabel}
             </p>
@@ -97,7 +97,7 @@ export default function Sidebar() {
           <LogOut size={18} />
           <span className="font-medium">Ieșire</span>
         </button>
-        <p className="text-slate-500 text-xs text-center">© 2026 Code Kids Play</p>
+        <p className="text-slate-500 text-xs text-center">© 2026 Code Maker Club</p>
       </div>
     </aside>
   )

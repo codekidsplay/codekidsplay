@@ -1,6 +1,6 @@
 # Lecția 6 — Start (Spawn) + Finish
 **Modulul 1 · Place Builder**  
-**Code Kids Play · Roblox Studio**
+**Code Maker Club · Roblox Studio**
 
 > Azi marchezi clar **unde începe** Obby-ul și **unde se termină** — ca un jucător nou să înțeleagă fără explicație.  
 > Place: același `Prenume_Nume_M1`

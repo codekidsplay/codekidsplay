@@ -1,6 +1,6 @@
 # Lecția 7 — Ghiveciul care cere apă
 **Modulul 2 · Senzori**  
-**Code Kids Play · Sensor Scout**
+**Code Maker Club · Sensor Scout**
 
 > Azi faci o plantă „vorbitoare”: un senzor de **umiditate a solului** îți spune când are nevoie de apă.  
 > Proiect: **„Planta mea”** · `Prenume_Nume_A2_L07`

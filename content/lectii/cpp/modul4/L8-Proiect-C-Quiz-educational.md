@@ -1,6 +1,6 @@
 # LECȚIA 8 — Proiect C: quiz educațional
 **Modulul 4 · Proiecte și autonomie · 2 ore**  
-**Code Kids Play · CodeKids Graduate**
+**Code Maker Club · CodeKids Graduate**
 
 > Azi construim un **quiz**: întrebări cu patru variante, scor, explicații, rezultate salvate într-un fișier și chiar o opțiune prin care oricine poate adăuga întrebări noi, fără să atingă codul. La final vei avea un quiz despre C++, cu întrebări scrise de tine, pe care îl poți da prietenilor.  
 > Proiect: **„Quiz C++”** · fișier: `Prenume_Nume_M4L8.cpp` (ex. `Ana_Pop_M4L8.cpp`)

@@ -1,6 +1,6 @@
 # Lecția 10 — Completare + prezentare (Place Builder)
 **Modulul 1 · Place Builder**  
-**Code Kids Play · Roblox Studio**
+**Code Maker Club · Roblox Studio**
 
 > Azi **termini** „Lumea Obby” (completare pe L9), o **arăți** clasei și primești insigna **Place Builder**.  
 > Place: `Prenume_Nume_M1` *(opțional: copie `Prenume_Nume_M1_L10` ca să nu strici versiunea veche)*  

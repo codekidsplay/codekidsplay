@@ -1,6 +1,6 @@
 # Lecția 3 — Numărătoare inversă (7 segmente)
 **Modulul 3 · Afișaj și mișcare**  
-**Code Kids Play · Display Maker**
+**Code Maker Club · Display Maker**
 
 > Azi lucrezi cu **afișajul cu 7 segmente** și faci o numărătoare inversă de la 9 la 0, ca la lansarea unei rachete.  
 > Proiect: **„Lansarea rachetei”** · `Prenume_Nume_A3_L03`

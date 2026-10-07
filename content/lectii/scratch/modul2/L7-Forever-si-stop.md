@@ -1,6 +1,6 @@
 # Lecția 7 — Forever și stop
 **Modulul 2 · Logică**  
-**Code Kids Play · Logic Explorer**
+**Code Maker Club · Logic Explorer**
 
 > Azi ții jocul **aprins** cu `forever` și îl **oprești** când trebuie (victorie / buton).  
 > Proiect: **„Bucla de joc curată”** · fișier: `Prenume_Nume_L7` (ex. `Ana_Pop_L7`)

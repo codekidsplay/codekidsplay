@@ -1,6 +1,6 @@
 # LECȚIA 3 — Senzor de înclinare
 **Modulul 1 · Robotică LEGO WeDo 2.0 · Cam 2 ore**  
-**Code Kids Play**
+**Code Maker Club**
 
 > La final robotul **reacționează** când înclini senzorul (ex. motor pornește / se oprește).
 
