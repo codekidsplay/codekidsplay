@@ -24,12 +24,12 @@ export default function ContactForm() {
         '',
         mesaj.trim(),
         '',
-        'Trimis din codekidsplay/contact',
+        'Trimis din codemakerclub/contact',
       ]
         .filter(line => line !== null)
         .join('\n'),
     )
-    window.location.href = `mailto:codekidsplay@gmail.com?subject=${subject}&body=${body}`
+    window.location.href = `mailto:codemakerclub@gmail.com?subject=${subject}&body=${body}`
     setTrimis(true)
   }
 
@@ -99,8 +99,8 @@ export default function ContactForm() {
       {trimis ? (
         <p className="text-sm text-[var(--ckp-muted)]">
           Se deschide aplicația ta de email. Dacă nu pornește, scrie-ne la{' '}
-          <a href="mailto:codekidsplay@gmail.com" className="text-[var(--ckp-blue)] hover:underline">
-            codekidsplay@gmail.com
+          <a href="mailto:codemakerclub@gmail.com" className="text-[var(--ckp-blue)] hover:underline">
+            codemakerclub@gmail.com
           </a>
           .
         </p>

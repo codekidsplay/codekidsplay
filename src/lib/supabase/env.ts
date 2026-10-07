@@ -28,7 +28,7 @@ export function isSupabaseAdminConfigured(): boolean {
 /** Email intern pentru elev (Auth cere email; UI folosește username + PIN). */
 export function elevAuthEmail(username: string): string {
   const u = username.trim().toLowerCase()
-  return `${u}@elev.codekidsplay.ro`
+  return `${u}@elev.codemakerclub.ro`
 }
 
 /** Parolă Auth derivată din PIN (min. 6 caractere cerute de Supabase). */

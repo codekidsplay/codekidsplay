@@ -39,8 +39,8 @@ export function genereazaParola(len = 8): string {
   return s
 }
 
-const SITE_LOGIN_URL = 'https://codekidsplay.ro/login'
-const SITE_TERMENI_URL = 'https://codekidsplay.ro/termeni'
+const SITE_LOGIN_URL = 'https://codemakerclub.ro/login'
+const SITE_TERMENI_URL = 'https://codemakerclub.ro/termeni'
 
 export function mesajWhatsAppLogin(opts: {
   prenume: string

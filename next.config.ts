@@ -1,11 +1,16 @@
 import type { NextConfig } from "next";
 
-const DOMENIU = "https://codekidsplay.ro";
+const DOMENIU = "https://codemakerclub.ro";
 
 const nextConfig: NextConfig = {
-  // Un singur domeniu canonic: www și .vercel.app → codekidsplay.ro
+  // Un singur domeniu canonic: www și domeniile vechi → codemakerclub.ro
   async redirects() {
-    return ["www.codekidsplay.ro", "codekidsplay.vercel.app"].map((host) => ({
+    return [
+      "www.codemakerclub.ro",
+      "codekidsplay.ro",
+      "www.codekidsplay.ro",
+      "codekidsplay.vercel.app",
+    ].map((host) => ({
       source: "/:path*",
       has: [{ type: "host" as const, value: host }],
       destination: `${DOMENIU}/:path*`,

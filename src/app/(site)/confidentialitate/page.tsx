@@ -36,8 +36,8 @@ export default function ConfidentialitatePage() {
             <p className="mt-2">
               <strong>Sediul atelierului:</strong> Str. Republicii 16 bis, etaj 1, Clădirea RIX, Focșani, jud. Vrancea.<br />
               <strong>Email de contact:</strong>{' '}
-              <a href="mailto:codekidsplay@gmail.com" className="text-[var(--ckp-blue)] hover:underline">
-                codekidsplay@gmail.com
+              <a href="mailto:codemakerclub@gmail.com" className="text-[var(--ckp-blue)] hover:underline">
+                codemakerclub@gmail.com
               </a>
               <br />
               <strong>Telefon / WhatsApp:</strong>{' '}
@@ -204,8 +204,8 @@ export default function ConfidentialitatePage() {
             </ul>
             <p className="mt-3">
               Pentru exercitarea oricărui drept, ne puteți trimite o solicitare la adresa de email{' '}
-              <a href="mailto:codekidsplay@gmail.com" className="text-[var(--ckp-blue)] hover:underline">
-                codekidsplay@gmail.com
+              <a href="mailto:codemakerclub@gmail.com" className="text-[var(--ckp-blue)] hover:underline">
+                codemakerclub@gmail.com
               </a>. Răspundem prompt și fără taxe nejustificate în termenul legal de maximum 30 de zile.
             </p>
           </section>
@@ -233,8 +233,8 @@ export default function ConfidentialitatePage() {
               <strong>Code Maker Club Focșani</strong><br />
               Str. Republicii 16 bis, etaj 1, Clădirea RIX, Focșani<br />
               Email:{' '}
-              <a href="mailto:codekidsplay@gmail.com" className="text-[var(--ckp-blue)] hover:underline">
-                codekidsplay@gmail.com
+              <a href="mailto:codemakerclub@gmail.com" className="text-[var(--ckp-blue)] hover:underline">
+                codemakerclub@gmail.com
               </a><br />
               Telefon: <a href="tel:+40736830830" className="text-[var(--ckp-blue)] hover:underline">0736 830 830</a>
             </p>

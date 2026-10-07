@@ -35,8 +35,8 @@ export default function TermeniPage() {
             <p className="mt-2">
               <strong>Locație atelier:</strong> Str. Republicii 16 bis, etaj 1, Clădirea RIX, Focșani, județul Vrancea.<br />
               <strong>Email:</strong>{' '}
-              <a href="mailto:codekidsplay@gmail.com" className="text-[var(--ckp-blue)] hover:underline">
-                codekidsplay@gmail.com
+              <a href="mailto:codemakerclub@gmail.com" className="text-[var(--ckp-blue)] hover:underline">
+                codemakerclub@gmail.com
               </a>
               <br />
               <strong>Telefon / WhatsApp:</strong>{' '}
@@ -337,8 +337,8 @@ export default function TermeniPage() {
             <p>
               Echipa noastră depune toate eforturile pentru ca experiența fiecărui copil și a părinților să fie una excelentă.
               Dacă aveți orice nelămurire sau sesizare, vă rugăm să ne contactați direct pe email la{' '}
-              <a href="mailto:codekidsplay@gmail.com" className="text-[var(--ckp-blue)] hover:underline">
-                codekidsplay@gmail.com
+              <a href="mailto:codemakerclub@gmail.com" className="text-[var(--ckp-blue)] hover:underline">
+                codemakerclub@gmail.com
               </a>{' '}
               sau telefonic la{' '}
               <a href="tel:+40736830830" className="text-[var(--ckp-blue)] hover:underline">

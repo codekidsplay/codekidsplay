@@ -71,7 +71,7 @@ export async function resetPinElevAction(cursantId: string): Promise<ResetPinRes
     .maybeSingle()
   if (error || !cursant) return { ok: false, error: error?.message ?? 'Cursant inexistent.' }
 
-  const elevEmail = `${cursant.username}@elev.codekidsplay.ro`
+  const elevEmail = `${cursant.username}@elev.codemakerclub.ro`
   const { data: listed } = await admin.auth.admin.listUsers({ perPage: 1000 })
   const elevUser = listed?.users?.find(u => u.email?.toLowerCase() === elevEmail)
   if (!elevUser) return { ok: false, error: 'Contul elevului nu a fost găsit în Auth.' }

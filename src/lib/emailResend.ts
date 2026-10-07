@@ -7,8 +7,8 @@ import {
   subiectEmailSedinteEpuizate,
 } from '@/lib/notificari'
 
-const EXPEDITOR = 'Code Maker Club Focșani <notificari@codekidsplay.ro>'
-const RASPUNS_LA = 'contact@codekidsplay.ro'
+const EXPEDITOR = 'Code Maker Club Focșani <notificari@codemakerclub.ro>'
+const RASPUNS_LA = 'contact@codemakerclub.ro'
 
 function escapeHtml(s: string): string {
   return s

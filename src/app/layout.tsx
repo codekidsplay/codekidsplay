@@ -14,7 +14,7 @@ const body = Outfit({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://codekidsplay.ro'),
+  metadataBase: new URL('https://codemakerclub.ro'),
   applicationName: 'Code Maker Club',
   title: {
     default: 'Code Maker Club Focșani — cursuri de programare pentru copii',

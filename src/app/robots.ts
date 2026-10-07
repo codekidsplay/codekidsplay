@@ -9,6 +9,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ['/admin', '/profesori', '/cursanti', '/cursuri', '/abonamente', '/invata', '/parinte', '/api/'],
       },
     ],
-    sitemap: 'https://codekidsplay.ro/sitemap.xml',
+    sitemap: 'https://codemakerclub.ro/sitemap.xml',
   }
 }
