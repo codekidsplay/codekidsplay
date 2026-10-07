@@ -2,13 +2,7 @@
 
 import { createAdminClient } from '@/lib/supabase/admin'
 import { createClient } from '@/lib/supabase/server'
-import {
-  elevAuthEmail,
-  elevAuthEmails,
-  elevAuthPassword,
-  isSupabaseAdminConfigured,
-  isSupabaseConfigured,
-} from '@/lib/supabase/env'
+import { elevAuthEmail, elevAuthPassword, isSupabaseAdminConfigured, isSupabaseConfigured } from '@/lib/supabase/env'
 import { genereazaParola, genereazaPin, mesajWhatsAppLogin } from '@/lib/authHelpers'
 
 function isUuid(id: string): boolean {
@@ -77,22 +71,15 @@ export async function resetPinElevAction(cursantId: string): Promise<ResetPinRes
     .maybeSingle()
   if (error || !cursant) return { ok: false, error: error?.message ?? 'Cursant inexistent.' }
 
-  const emails = elevAuthEmails(cursant.username)
-  const targetEmail = elevAuthEmail(cursant.username)
+  const elevEmail = elevAuthEmail(cursant.username)
   const { data: listed } = await admin.auth.admin.listUsers({ perPage: 1000 })
-  const elevUser = listed?.users?.find(u => emails.includes(u.email?.toLowerCase() ?? ''))
+  const elevUser = listed?.users?.find(u => u.email?.toLowerCase() === elevEmail)
   if (!elevUser) return { ok: false, error: 'Contul elevului nu a fost găsit în Auth.' }
 
   const pin = genereazaPin(4)
-  const update: { password: string; email?: string; email_confirm?: boolean } = {
+  const { error: updErr } = await admin.auth.admin.updateUserById(elevUser.id, {
     password: elevAuthPassword(pin),
-  }
-  // Migrează elevii vechi pe noul domeniu Auth, ca login/reset să rămână pe același email.
-  if ((elevUser.email ?? '').toLowerCase() !== targetEmail) {
-    update.email = targetEmail
-    update.email_confirm = true
-  }
-  const { error: updErr } = await admin.auth.admin.updateUserById(elevUser.id, update)
+  })
   if (updErr) return { ok: false, error: updErr.message }
 
   const mesaj = mesajWhatsAppLogin({

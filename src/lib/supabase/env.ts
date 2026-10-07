@@ -25,21 +25,10 @@ export function isSupabaseAdminConfigured(): boolean {
   return isSupabaseConfigured() && Boolean(getSupabaseServiceRoleKey())
 }
 
-/** Domeniu Auth pentru elevi noi. Elevii vechi pot fi pe domeniul legacy. */
-export const ELEV_AUTH_DOMAIN = 'elev.codemakerclub.ro'
-export const ELEV_AUTH_DOMAIN_LEGACY = 'elev.codekidsplay.ro'
-
 /** Email intern pentru elev (Auth cere email; UI folosește username + PIN). */
 export function elevAuthEmail(username: string): string {
   const u = username.trim().toLowerCase()
-  return `${u}@${ELEV_AUTH_DOMAIN}`
-}
-
-/** Emailuri Auth posibile (domeniu nou + legacy după rebrand). */
-export function elevAuthEmails(username: string): string[] {
-  const u = username.trim().toLowerCase()
-  if (!u) return []
-  return [`${u}@${ELEV_AUTH_DOMAIN}`, `${u}@${ELEV_AUTH_DOMAIN_LEGACY}`]
+  return `${u}@elev.codemakerclub.ro`
 }
 
 /** Parolă Auth derivată din PIN (min. 6 caractere cerute de Supabase). */

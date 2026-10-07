@@ -3,7 +3,7 @@
 import { createClient } from '@/lib/supabase/server'
 import { createAdminClient } from '@/lib/supabase/admin'
 import {
-  elevAuthEmails,
+  elevAuthEmail,
   elevAuthPassword,
   isSupabaseAdminConfigured,
   isSupabaseConfigured,
@@ -173,26 +173,16 @@ export async function loginElevAction(
   }
 
   const supabase = await createClient()
-  const parola = elevAuthPassword(pin.trim())
-  let userId: string | null = null
+  const { data, error } = await supabase.auth.signInWithPassword({
+    email: elevAuthEmail(u),
+    password: elevAuthPassword(pin.trim()),
+  })
 
-  // Încearcă domeniul nou, apoi pe cel legacy (elevi creați înainte de rebrand).
-  for (const email of elevAuthEmails(u)) {
-    const { data, error } = await supabase.auth.signInWithPassword({
-      email,
-      password: parola,
-    })
-    if (!error && data.user) {
-      userId = data.user.id
-      break
-    }
-  }
-
-  if (!userId) {
+  if (error || !data.user) {
     return { ok: false, error: 'Username sau PIN greșit.' }
   }
 
-  return buildSession(userId)
+  return buildSession(data.user.id)
 }
 
 export async function logoutAction(): Promise<void> {
