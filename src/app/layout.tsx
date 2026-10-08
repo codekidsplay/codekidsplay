@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     siteName: 'Code Maker Club',
     title: 'Code Maker Club Focșani',
     description: 'Cursuri de programare pentru copii — Focșani',
-    images: [{ url: '/logo-icon.png', width: 618, height: 618, alt: 'Code Maker Club' }],
+    images: [{ url: '/logo-icon.png', width: 1024, height: 1024, alt: 'Code Maker Club' }],
   },
 }
 

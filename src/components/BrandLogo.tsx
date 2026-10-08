@@ -20,9 +20,11 @@ interface Props {
   shape?: 'rounded' | 'circle'
   /** Implicit mov din logo; `null` = fără inel */
   ring?: string | null
+  /** păstrat pentru compatibilitate (logo e imagine) */
+  tone?: 'ink' | 'light'
 }
 
-/** Logo full Code Maker Club — cerc + inel mov peste tot */
+/** Logo full Code Maker Club — cerc + inel mov */
 export default function BrandLogo({
   size = 'md',
   href = '/',
@@ -38,7 +40,7 @@ export default function BrandLogo({
 
   const img = (
     <Image
-      src="/logo-full.jpg"
+      src="/logo-full.png"
       alt="Code Maker Club"
       width={w}
       height={w}
@@ -48,7 +50,6 @@ export default function BrandLogo({
       style={{
         width: w,
         height: w,
-        // Ring în afara imaginii (nu reduce aria vizibilă a logo-ului)
         boxShadow: ring ? `0 0 0 ${ringW}px ${ring}` : undefined,
       }}
     />

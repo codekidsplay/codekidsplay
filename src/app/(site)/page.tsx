@@ -31,7 +31,7 @@ export default function LandingPage() {
 
         <div className="relative z-10 min-h-[92svh] sm:min-h-[100svh] flex flex-col">
           <nav className="flex items-center justify-between px-5 sm:px-8 lg:px-12 py-5">
-            <BrandLogo size="nav" href="/" priority />
+            <BrandLogo size="nav" href="/" tone="light" />
             <Link
               href="/login"
               className="flex items-center justify-center size-[112px] rounded-full border-[3px] border-[var(--ckp-blue)] bg-white/12 hover:bg-white/22 backdrop-blur-md text-white text-sm font-semibold text-center leading-snug px-3 transition-all shadow-sm active:scale-95"
@@ -255,7 +255,7 @@ export default function LandingPage() {
         style={{ background: 'var(--ckp-blue-deep)' }}
       >
         <div className="flex items-center gap-4 justify-center sm:justify-start">
-          <BrandLogo size="sm" href="/" />
+          <BrandLogo size="sm" href="/" tone="light" />
           <div className="flex items-center gap-3">
             <a
               href="https://www.facebook.com/codekidsplayfocsani/"

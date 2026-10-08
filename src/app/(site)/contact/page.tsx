@@ -173,7 +173,7 @@ export default function ContactPage() {
         style={{ background: 'var(--ckp-blue-deep)' }}
       >
         <div className="flex items-center gap-4 justify-center sm:justify-start">
-          <BrandLogo size="sm" href="/" />
+          <BrandLogo size="sm" href="/" tone="light" />
           <div className="flex items-center gap-3">
             <a
               href="https://www.facebook.com/codekidsplayfocsani/"

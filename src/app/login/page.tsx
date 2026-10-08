@@ -171,15 +171,14 @@ export default function LoginForm() {
 
       <div className="relative w-full max-w-md">
         <div className="ckp-fade-up text-center mb-8">
-          <Link href="/" className="inline-flex flex-col items-center gap-3">
-            <BrandLogo size="lg" href={null} priority />
+          <Link href="/" className="inline-flex flex-col items-center">
+            <BrandLogo size="lg" href={null} />
             <p
-              className="text-sm font-medium tracking-tight text-[var(--ckp-ink)]"
+              className="mt-5 text-xl sm:text-2xl font-semibold tracking-tight text-[var(--ckp-ink)]"
               style={{ fontFamily: 'var(--font-display)' }}
             >
-              Code Maker Club
+              Autentificare
             </p>
-            <p className="text-[var(--ckp-muted)] text-sm -mt-1">Autentificare</p>
           </Link>
         </div>
 
