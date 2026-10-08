@@ -1,0 +1,31 @@
+Lecția trei. Butoanele A și B.
+
+Până acum programul tău rula singur. Astăzi placa ascultă de tine: apeși un buton și se întâmplă ceva. Proiectul se numește Comutatorul de emoții. Numele fișierului este: Prenume, linie jos, Nume, linie jos, M B unu, linie jos, L zero trei.
+
+Obiectivul. La final știi ce este un eveniment și faci placa să reacționeze când apeși A, B sau A și B împreună. Minim: A arată o față veselă, B arată o față tristă. Complet: minim, plus A și B împreună arată o inimă, iar la pornire placa doarme.
+
+De ce contează. Telecomanda, tastatura și mouse-ul funcționează la fel: tu faci ceva, iar aparatul răspunde. În programare, ceva ce se întâmplă se numește eveniment. Blocurile de eveniment așteaptă liniștite și pornesc exact când ai nevoie de ele.
+
+Primul pas. Jocul Eu sunt placa, fără calculator. Profesorul spune A, B sau A și B. Tu faci cu mâinile semnul cerut: pentru A ridici mâna stângă, pentru B mâna dreaptă, pentru A și B pe amândouă.
+
+Al doilea pas. Proiect nou, cu numele din fișier.
+
+Al treilea pas. Blocul de eveniment. Din categoria Input tragi blocul On button A pressed în zona de lucru. Nu îl pui în On start sau în Forever, pentru că este un bloc de sine stătător, care pornește singur când apeși A. Înăuntru pui Show icon și alegi fața veselă.
+
+Al patrulea pas, pentru Minim. Tragi încă un bloc de buton și schimbi litera A în B. Înăuntru pui Show icon cu fața tristă. Acum placa are două reacții.
+
+Al cincilea pas, pentru Complet. Tragi încă un bloc de buton și alegi A plus B din listă. Înăuntru pui Show icon cu inima. Apoi, în On start, pui Show icon cu fața adormită, ca placa să doarmă la pornire.
+
+Al șaselea pas. Experimente. Apeși A de trei ori repede. Apeși A și B pe rând, apoi deodată. Notezi pe foaie ce vezi.
+
+Al șaptelea pas. Eveniment sau Forever? Forever repetă mereu același lucru, fără să ceară voie. Un bloc de eveniment așteaptă și pornește doar când apeși.
+
+Greșeli frecvente. Nu se întâmplă nimic când apeși: blocul Show icon nu este înăuntrul blocului de eveniment. A plus B nu merge: apeși butoanele la momente diferite, încearcă simultan. Ai două blocuri la fel pentru A: păstrează unul singur. Pe placă se vede somnul și nu se mai schimbă: nu ai descărcat versiunea nouă. Simulatorul merge, dar placa nu: apasă din nou Download.
+
+Proiectul de azi. Comutatorul de emoții.
+
+Minim înseamnă: A arată față veselă, B față tristă. Complet înseamnă: minim, plus A și B arată inima, plus somnul la pornire. Dacă rămâi în urmă, salvează la Minim. Ești la Minim când un coleg apasă A și B și înțelege fără explicații.
+
+Recapitulare. Eveniment înseamnă ceva ce se întâmplă. On button A pressed rulează doar când apeși A. A este în stânga, B în dreapta, iar A plus B înseamnă ambele deodată. Pentru fiecare buton ai nevoie de un singur bloc.
+
+Succes la comutatorul tău.

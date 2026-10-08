@@ -1,0 +1,29 @@
+Lecția opt. Traducător de blocuri.
+
+Astăzi ești traducător: iei programe făcute din blocuri și le scrii în Python. Descoperi că aceleași idei se spun în două limbi. Proiectul se numește Seiful secret în Python. Numele fișierului este: Prenume, linie jos, Nume, linie jos, M P unu, linie jos, L zero opt.
+
+Obiectivul. La final știi să traduci evenimente, variabile, decizii și bucle din blocuri în Python și folosești global și random. Minim: seiful cu codul A, B, A: deschide cu o bifă, iar orice greșeală îl închide din nou. Complet: minim, plus funcții, numărarea greșelilor și o alarmă după trei încercări greșite.
+
+De ce contează. Blocurile te ajută să înțelegi o idee. Python îți permite să o scrii mai scurt, mai clar, și să construiești lucruri mai mari. Un programator bun trece ușor din unul în celălalt.
+
+Primul pas. Dicționarul blocuri, Python. On start devine rândurile de la început. Forever devine while True. Un eveniment, On button A pressed, devine un if cu button A punct was pressed, într-o buclă. Set score devine score egal zero. Change score by unu devine score plus egal unu. Pick random devine random punct randint. Show icon devine display punct show. Pause devine sleep. Repeat devine for în range. Evenimentele din blocuri nu au un frate direct în Python: folosim o buclă care verifică la fiecare tură dacă s-a întâmplat ceva.
+
+Exemplul unu. Contorul: A adaugă unu, B scade unu, A și B pun zero. Exemplul doi. Cursa până la zece. Exemplul trei. Bila magică: la scuturare alege zero, unu sau doi, cu random punct randint. Modulul random se aduce cu import random. Zero, unu și doi sunt toate posibile. Exemplul patru. Felinarul.
+
+Al doilea pas. Planul seifului. Codul secret este A, B, A. Variabila pas ține minte în ce pas ești: zero nimic corect, unu primul A corect, doi și B corect. La pas doi, un A deschide seiful.
+
+Exemplul cinci. Seiful Minim, cu if, elif și else, pe care îl compari cu blocurile.
+
+Exemplul șase. Problema cu global. Dacă muți greșeala într-o funcție și scrii pas egal zero, funcția creează o altă variabilă pas, locală, iar cea de afară nu se schimbă. Ca să schimbi variabila de afară, scrii înainte global pas. Dacă doar citești o variabilă, nu ai nevoie de global.
+
+Exemplul șapte. Random choice alege un element la întâmplare dintr-o listă. Exemplele opt și nouă. Pregătim funcțiile seif închis, alarma și greseala. Funcția greseala adună una la greseli, pune pas pe zero, arată crucea și, la trei greșeli, pornește alarma. Exemplul zece. Seiful Complet. A și B apăsate deodată contează ca greșeală.
+
+Greșeli frecvente. Variabila nu se schimbă: ai schimbat-o într-o funcție fără global. Eroare de variabilă locală: ai folosit-o înainte de a-i da o valoare. Eroare cu random: ai uitat import random. Seiful se deschide cu orice: lipsesc verificările pentru pas. A și B face și A: verifică întâi cazul cu amândouă. Alarma nu pornește: greseli nu crește.
+
+Proiectul de azi. Seiful secret în Python.
+
+Minim înseamnă: codul A, B, A, cu bifă și cruce. Complet înseamnă: minim, plus funcții, global și alarma. Dacă rămâi în urmă, salvează la Minim.
+
+Recapitulare. Blocurile și Python spun aceleași idei. Evenimentele din blocuri devin verificări în while True. Random randint alege un număr între două valori, inclusiv. Global este necesar când schimbi o variabilă de afară într-o funcție. Funcțiile scurtează codul repetat. Citim A și B o singură dată pe tură.
+
+Succes, traducătorule!

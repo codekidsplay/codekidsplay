@@ -1,0 +1,27 @@
+Lecția opt. Lumină și temperatură.
+
+Astăzi placa devine detectiv: simte cât de multă lumină este în cameră și ce temperatură este. Din asta facem un felinar care se aprinde singur. Proiectul se numește Felinarul inteligent. Numele fișierului este: Prenume, linie jos, Nume, linie jos, M B unu, linie jos, L zero opt.
+
+Obiectivul. La final citești senzorul de lumină și senzorul de temperatură și iei decizii pe baza lor. Minim: când se face întuneric, placa aprinde toate LED-urile, ca un felinar, iar când este lumină, le stinge. Complet: minim, plus la apăsarea lui A placa îți spune temperatura, fără să se încurce cu felinarul.
+
+De ce contează. Felinarele din parc se aprind singure seara. Aerul condiționat pornește când este prea cald. Telefonul își face ecranul mai luminos la soare. Toate aceste aparate măsoară și decid ce să facă. Azi faci și tu un astfel de aparat.
+
+Primul pas. Cum vede lumina placa? Nu are un ochi special. Folosește chiar LED-urile de pe ecran și le face să măsoare lumina. Rezultatul este un număr între zero, întuneric total, și două sute cincizeci și cinci, lumină foarte puternică. Explorare: arăți numărul și acoperi placa cu mâna.
+
+Al doilea pas. Temperatura. Un senzor din interior dă blocul Temperature, în grade Celsius. De exemplu, în On button A pressed arăți numărul.
+
+Al treilea pas, pentru Minim. Proiect nou. În Forever: dacă Light level este mai mic decât cincizeci, Plot all, adică toate LED-urile aprinse, altfel Clear screen. La final o pauză de o sută de milisecunde.
+
+Al patrulea pas, pentru Complet. Când apeși A, placa vrea să deruleze temperatura, dar Forever desenează în același timp și strică numărul. Rezolvăm cu o variabilă-semnal numită ocupat. Zero înseamnă că felinarul poate lucra. În A: Set ocupat to unu, arăți temperatura, Set ocupat to zero. În Forever, felinarul lucrează doar dacă ocupat este zero.
+
+Al cincilea pas. Depanare în pereche. Citești un program cu o greșeală și spui ce nu este bine.
+
+Greșeli frecvente. Felinarul este invers: ai schimbat semnele mai mic și mai mare. Întuneric înseamnă lumină mică. Nu se aprinde niciodată: pragul este prea mic pentru sala ta, măsoară și alege altul. Temperatura arată foarte mult: este temperatura plăcii, puțin mai mare decât a camerei. Numărul de la A dispare: ai uitat variabila ocupat. Felinarul nu revine: ai uitat Set ocupat to zero. Ecranul clipește: lipsește pauza din Forever.
+
+Proiectul de azi. Felinarul inteligent.
+
+Minim înseamnă: se face întuneric și placa se aprinde, apare lumina și se stinge. Complet înseamnă: minim, plus temperatura la A. Dacă rămâi în urmă, salvează la Minim.
+
+Recapitulare. Light level dă un număr între zero și două sute cincizeci și cinci. Lumina este măsurată cu LED-urile. Temperature dă temperatura aproximativă. Pragul îl alegi tu. O variabilă-semnal previne încurcăturile de pe ecran.
+
+Succes la felinarul tău.

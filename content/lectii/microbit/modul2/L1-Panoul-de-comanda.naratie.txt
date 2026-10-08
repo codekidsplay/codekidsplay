@@ -1,0 +1,29 @@
+Lecția unu. Panoul de comandă.
+
+Bine ai venit în Modulul doi! Astăzi reiei ce știi din Modulul unu și faci un panou de comandă: placa are mai multe moduri, iar tu treci de la unul la altul cu butoanele. Proiectul se numește Panoul de comandă. Numele fișierului este: Prenume, linie jos, Nume, linie jos, M B doi, linie jos, L zero unu.
+
+Obiectivul. La final folosești o variabilă numită mod, ca să faci un program cu mai multe fețe, și știi să scrii fișa unui proiect. Minim: butonul A schimbă între două moduri, lumina, adică o bară de LED-uri, și temperatura, adică un număr. Complet: minim, plus al treilea mod, numele tău, butonul B te duce înapoi, iar A și B împreună revin la primul mod.
+
+De ce contează. Telefonul tău are mai multe ecrane: apeși și treci de la ceas la alarmă. Un aparat bun face mai multe lucruri, iar tu alegi pe care. Variabila care alege modul este baza oricărui proiect mai mare. Tot Modulul doi se sprijină pe ea.
+
+Primul pas. Mini-test de recapitulare, în perechi, cinci minute. Fără să te uiți în Modulul unu, răspundeți: ce face On start, ce este o variabilă, ce face un If.
+
+Al doilea pas. Jocul Moduri, fără calculator. Profesorul ridică un cartonaș. Verde înseamnă aplaudă, galben înseamnă bate din picior, roșu înseamnă stai pe loc. Când se schimbă cartonașul, se schimbă și ce faci. Cartonașul este modul.
+
+Al treilea pas. Proiect nou, cu variabila mod. În On start: Set mod to unu.
+
+Al patrulea pas, pentru Minim. Forever desenează pe ecran în funcție de mod. Dacă mod este unu, arăți o bară de lumină. Altfel, arăți temperatura. Butonul A schimbă modul: dacă mod este unu, devine doi, altfel devine unu. La final, în Forever, o pauză de o sută de milisecunde.
+
+Al cincilea pas, pentru Complet. Faci trei moduri. Al treilea arată numele tău. În A, dacă mod este mai mare decât trei, îl pui înapoi pe unu. În B scazi unu, iar dacă mod este mai mic decât unu, îl pui pe trei. Pentru A și B împreună, Set mod to unu. Înainte de fiecare desen folosești Clear screen.
+
+Al șaselea pas. Fișa proiectului. Un maker adevărat își planifică proiectul. Completezi nume, ce face, materiale, pași și test.
+
+Greșeli frecvente. Ecranul clipește urât: lipsește pauza din Forever. Modul trei nu apare niciodată: în A ai lăsat mod mai mare decât doi, pentru trei moduri trebuie mai mare decât trei. Numele rămâne mereu pe ecran: mai întâi Clear screen, apoi desenezi. B ajunge la zero sau minus unu: ai uitat condiția mod mai mic decât unu. Desenezi și în buton, și în Forever: ecranul se încurcă, lasă desenul în Forever. Nu se vede nimic la lumină: acoperă placa cu palma, apoi luminează-o cu lanterna.
+
+Proiectul de azi. Panoul de comandă.
+
+Minim înseamnă: două moduri, schimbate cu A. Complet înseamnă: minim, plus al treilea mod, B înapoi și A și B pentru primul mod. Dacă rămâi în urmă, salvează la Minim.
+
+Recapitulare. Mod este starea în care se află aparatul. O variabilă alege ce face Forever. Butoanele schimbă variabila, nu desenează. Clear screen înainte de desen evită LED-urile rămase. Fișa proiectului are nume, ce face, materiale, pași și test.
+
+Succes în Modulul doi.

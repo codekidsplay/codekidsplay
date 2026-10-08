@@ -1,0 +1,31 @@
+Lecția zece. Expoziția Maker și badge.
+
+Astăzi este ziua expoziției! Îți pregătești standul, îți prezinți proiectul, primești păreri de la colegi și primești insigna micro:bit Maker. Proiectul se numește Standul meu Maker. Numele fișierului este: Prenume, linie jos, Nume, linie jos, M B doi, linie jos, L zece.
+
+Obiectivul. La final îți prezinți proiectul clar și frumos, dai și primești păreri și completezi Verificarea Modulului doi. Minim: proiectul rulează pe plăci reale, iar fișa lui este completă. Complet: minim, plus o prezentare de două minute și o îmbunătățire făcută după părerile colegilor.
+
+De ce contează. Un proiect devine un lucru real abia când îl arăți altora. Cei mai buni makeri nu doar construiesc: explică ce au făcut, ascultă păreri și îmbunătățesc. Azi exersezi toate trei.
+
+Primul pas. Alegem proiectul de expus. Alegi unul dintre proiectele Modulului doi: de obicei Cheia și seiful radio, dar poți alege și Vânătoarea cald, rece, Stația meteo, Paznicul sau Semaforul. Verifici că rulează pe plăci reale.
+
+Al doilea pas. Testul final, zece minute. Programele sunt descărcate pe plăcile corecte. Bateriile sau cablurile funcționează. Plăcile sunt în același grup. Ai testat proiectul de trei ori la rând. Ai un plan B.
+
+Al treilea pas. Standul și afișul. Pe o foaie scrii titlul proiectului, ce face, cum se folosește, ce ai folosit și prenumele tău.
+
+Al patrulea pas. Prezentarea de două minute. Salut, apoi ce face proiectul, cum funcționează, ce a fost greu, ce ai adăuga, apoi întrebări. Exersezi în perechi: unul prezintă, celălalt cronometrează și spune un lucru bun și o sugestie.
+
+Al cincilea pas. Expoziția. Jumătate din clasă prezintă, jumătate vizitează, apoi schimbați rolurile. Vizitatorii încearcă proiectul și lasă un cartonaș cu un lucru bun, încă un lucru bun și o idee.
+
+Al șaselea pas. Îmbunătățirea. Citești cartonașele, alegi o idee și o faci în zece minute. Notezi pe fișă ce ai schimbat.
+
+Verificarea Modulului. Pe pagina lecției ai zece întrebări și un tabel de autoevaluare. Răspunzi fără să te uiți în lecții. Apoi primești insigna micro:bit Maker.
+
+Greșeli frecvente. Proiectul nu pornește la expoziție: verifică încărcarea plăcilor înainte. Radio nu merge în sală: prea multe perechi în același grup, fiecare pereche își verifică numărul. Prezinți prea repede: respiră și spune câte o idee pe rând. Nu știi ce să răspunzi: nu știu încă, dar aș încerca, este un răspuns bun. Ai uitat să salvezi îmbunătățirea. Ai ascuns greșelile: arată și ce a fost greu.
+
+Proiectul de azi. Standul meu Maker.
+
+Minim înseamnă: proiect funcțional și fișă completă. Complet înseamnă: minim, plus prezentarea, o îmbunătățire și verificarea.
+
+Recapitulare. Ai învățat radio, pini, liste, stări și depanare. Un proiect bun are plan, test și prezentare. Părerile colegilor ajută proiectul să crească. Ai muncit ca un adevărat maker.
+
+Felicitări, maker!

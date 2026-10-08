@@ -1,0 +1,25 @@
+Lecția opt. Recordul păstrat.
+
+Variabilele uită totul când oprești placa. Astăzi înveți să scrii într-un fișier pe placă, ca recordul tău să rămână și după ce o oprești și o pornești din nou. Faci un joc de scuturat: câte scuturări reușești în zece secunde? Proiectul se numește Recordul păstrat. Numele fișierului este: Prenume, linie jos, Nume, linie jos, M P doi, linie jos, L zero opt.
+
+Obiectivul. La final scrii și citești un fișier cu open, tratezi lipsa fișierului cu try și except și păstrezi un record. Minim: jocul de scuturat de zece secunde, care salvează recordul în fișier și îl arată la B. Complet: minim, plus numărătoare inversă trei, doi, unu și A și B șterg recordul.
+
+De ce contează. Aplicațiile adevărate își amintesc scorul cel mai bun, setările, ultimul nivel. Ele salvează în fișiere. Azi faci același lucru, în mic.
+
+Atenție. Fișierele sunt păstrate în memoria plăcii. Nu scrie în fișier la fiecare tură de buclă, pentru că memoria se uzează. Scriem doar când se schimbă recordul. Dacă încarci din nou programul pe placă, fișierele pot fi șterse. Recordul se păstrează cât timp oprești și pornești placa, fără să o reprogramezi.
+
+Primul pas. Un fișier este ca un caiet. Open cu w deschide pentru scris, open simplu deschide pentru citit, iar with închide fișierul singur la final.
+
+Exemplul unu. Scriem un fișier. Exemplul doi. Îl citim cu read. Exemplul trei. Dacă fișierul nu există, apare OSError, iar cu try și except programul nu se oprește. Exemplul patru. Salvăm un număr: str la scriere, int la citire. Exemplul cinci. Funcții pentru record: citește record și salvează record. Dacă fișierul lipsește sau are conținut ciudat, recordul este zero.
+
+Exemplul șase. Câte porniri: placa numără de câte ori a pornit, tot cu fișier. Apeși RESET, nu reîncarci programul. Exemplul șapte. O rundă de joc: numărăm scuturările în zece secunde, cu running time. Exemplul opt. Numărătoarea inversă. Exemplul nouă. Jocul Minim: A pornește runda, dacă scorul bate recordul îl salvăm, iar B arată recordul. Exemplul zece. Jocul Complet: A și B pun recordul pe zero și îl salvează.
+
+Greșeli frecvente. Recordul dispare: ai reîncărcat programul. OSError la citire: fișierul nu există încă, folosește try. Eroare la write: vrea text, folosește str. Eroare la int: fișierul este gol sau conține text. Scrii la fiecare tură: salvează doar când recordul se schimbă. Eroare la show: numărul trebuie transformat în text.
+
+Proiectul de azi. Recordul păstrat.
+
+Minim înseamnă: joc de zece secunde, record salvat și arătat la B. Complet înseamnă: minim, plus numărătoarea și resetarea. Dacă rămâi în urmă, salvează la Minim.
+
+Recapitulare. Fișierele păstrează date și după oprirea plăcii. Open cu w scrie, open citește. Fișierul păstrează text: str și int. Fișierul lipsă dă OSError, pe care îl prindem. Scriem doar când este nevoie.
+
+Succes la record.

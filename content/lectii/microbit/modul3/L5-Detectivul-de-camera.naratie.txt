@@ -1,0 +1,29 @@
+Lecția cinci. Detectivul de cameră.
+
+Placa ta are senzori: simte temperatura, lumina și mișcarea. Astăzi o transformi în detectiv de cameră, care măsoară, observă și întocmește un raport. Proiectul se numește Detectivul de cameră. Numele fișierului este: Prenume, linie jos, Nume, linie jos, M P unu, linie jos, L zero cinci.
+
+Obiectivul. La final citești senzorii plăcii în Python și iei decizii pe baza lor. Minim: A derulează temperatura, B derulează lumina, iar scuturarea derulează un raport cu amândouă. Complet: minim, plus când este prea cald sau prea întuneric, placa dă alertă singură, cu praguri puse în constante.
+
+De ce contează. Telefonul tău își face ecranul mai luminos la soare, lanterna pornește dintr-o mișcare, termostatul pornește căldura la frig. Toate citesc senzori și decid. Azi înveți chiar tu cum se face.
+
+Primul pas. Ce poate simți placa? Temperatura, cu temperature, un număr întreg în grade Celsius. Lumina, cu display punct read light level, de la zero la două sute cincizeci și cinci. Mișcarea, cu accelerometer.
+
+Exemplul unu. Temperatura: display scroll de str de temperature. Exemplul doi. Cald sau rece: citești temperatura într-o variabilă și o compari cu un prag, cu if și else.
+
+Exemplul trei. Lumina. Placa măsoară lumina cu LED-urile ecranului. Acoperă placa cu palma și vezi cum scade valoarea. Exemplul patru. Felinarul: dacă lumina este mică, aprinzi toate LED-urile.
+
+Exemplul cinci. Accelerometrul, bula de nivel. Accelerometer punct get x spune cât de înclinată este placa spre stânga, valori negative, sau spre dreapta, valori pozitive. Plată pe masă, aproape zero.
+
+Exemplul șase. Gesturi. Python recunoaște gesturi cu nume, între ghilimele: shake, adică scuturat, up, down, left, right, face up, face down, freefall. Exemplul șapte: was gesture ține minte o scuturare scurtă, ca la butoane. Exemplul opt: sunetul, doar pe placa V doi.
+
+Exemplul nouă. Raport cu text: lipești textele cu str. Exemplul zece. Detectivul. Praguri puse în constante, PRAG CALD douăzeci și șase și PRAG ÎNTUNERIC treizeci. La A temperatura, la B lumina, la scuturare raportul, iar dacă temperatura sau lumina trec pragurile, alertă.
+
+Greșeli frecvente. Apare funcția, nu valoarea: ai scris temperature fără paranteze. Eroare la read light level: l-ai scris fără display în față. Gestul nu este recunoscut: ai uitat ghilimelele. Eroare la scroll: ai lipit text cu număr fără str. Alerta merge mereu: pragul este prea aproape de valoarea din clasă, măsoară și alege altul.
+
+Proiectul de azi. Detectivul de cameră.
+
+Minim înseamnă: A temperatura, B lumina, scuturarea raportul. Complet înseamnă: minim, plus alerta cu praguri. Dacă rămâi în urmă, salvează la Minim.
+
+Recapitulare. Temperature dă grade Celsius, aproximativ. Read light level dă lumina de la zero la două sute cincizeci și cinci. Get x dă înclinarea stânga, dreapta. Was gesture shake recunoaște scuturarea. Pragurile se scriu ca constante.
+
+Succes, detectivule!

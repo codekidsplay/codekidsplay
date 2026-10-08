@@ -1,0 +1,29 @@
+Lecția șase. Mesagerul radio.
+
+Astăzi plăcile își scriu mesaje prin radio, în Python. Facem un mesager: apeși un buton la tine și la colegul apare un semn. Proiectul se numește Mesagerul. Numele fișierului este: Prenume, linie jos, Nume, linie jos, M P unu, linie jos, L zero șase. Lucrăm în perechi.
+
+Obiectivul. La final folosești modulul radio: pornești radioul, alegi un grup, trimiți și primești mesaje. Minim: A trimite textul unu, față veselă, B trimite textul doi, față tristă, iar placa colegului arată imaginea potrivită. Complet: minim, plus A și B trimit numele tău, iar orice alt mesaj text se derulează pe ecran.
+
+De ce contează. Radioul permite plăcilor să lucreze în echipă: o telecomandă și un robot, o stație meteo și un afișaj. Azi faci primul pas: plăcile își trimit mesaje scrise.
+
+Primul pas. Jocul cu bilețelele. Clasa se împarte în grupuri. Un copil scrie un bilet și îl dă mai departe, dar îl citesc doar colegii din grupul lui. La radio, fiecare pereche are un număr de grup, iar placa ascultă doar mesajele din grupul ei.
+
+Al doilea pas. Ce trebuie să știi. Import radio aduce unealta radio, ea nu vine odată cu microbit. Radio punct on pornește radioul, iar fără el apare o eroare. Radio punct config, cu group egal un număr, alege grupul. Radio punct send trimite un text. Radio punct receive dă mesajul sau None, adică nimic.
+
+Exemplul unu. Trimitem. Exemplul doi. Primim: dacă mesajul nu este None, îl arăți. Exemplul trei. Același program pe ambele plăci, ca fiecare să poată și trimite, și primi.
+
+Exemplul patru. Coduri în loc de cuvinte. Trimitem coduri scurte, unu și doi, apoi traducem codul în imagini. Exemplul cinci. Un mesaj necunoscut, cu else, dacă vine altceva decât unu sau doi. Exemplul șase. Alegem grupul cu o variabilă.
+
+Exemplul șapte. Doi colegi din grupuri diferite nu se aud. Încearcă: o placă pe grupul șapte și alta pe opt. Radio nu este secret: nu trimitem nume sau telefoane.
+
+Exemplul opt. Cât de aproape este prietenul? Radio punct receive full dă mesajul, puterea semnalului și momentul. Semnalul este un număr negativ: cu cât este mai aproape de zero, cu atât expeditorul este mai aproape. Exemplul nouă: puterea de transmisie, de la zero, foarte slab, la șapte, cel mai puternic. Exemplul zece: mesagerul complet.
+
+Greșeli frecvente. Eroare la send: ai uitat radio punct on. Eroare cu radio: ai uitat import radio. Nu primești nimic: grupuri diferite. Eroare la trimitere: radio trimite doar text, deci ghilimele în jurul lui unu. Eroare la config: grupul trebuie să fie între zero și două sute cincizeci și cinci.
+
+Proiectul de azi. Mesagerul.
+
+Minim înseamnă: A și B trimit coduri, iar cealaltă placă arată imaginea. Complet înseamnă: minim, plus numele tău și mesajele necunoscute. Dacă rămâi în urmă, salvează la Minim.
+
+Recapitulare. Import radio și radio punct on pornesc radioul. Config cu group, același grup pe ambele plăci. Send trimite doar text, cel mult treizeci și două de caractere. Receive dă mesajul sau None. Radio nu este secret, iar raza este mică.
+
+Succes, mesagerule!

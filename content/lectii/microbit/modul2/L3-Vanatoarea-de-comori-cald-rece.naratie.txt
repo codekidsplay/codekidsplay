@@ -1,0 +1,33 @@
+Lecția trei. Vânătoarea de comori, cald, rece.
+
+Astăzi faci un joc cu două plăci: una este comoara, ascunsă undeva în clasă, iar cealaltă este detectorul, care îți spune dacă ești aproape, adică cald, sau departe, adică rece. Proiectul se numește Cald, rece. Numele fișierului este: Prenume, linie jos, Nume, linie jos, M B doi, linie jos, L zero trei.
+
+Obiectivul. La final folosești puterea semnalului radio ca să afli cât de departe este o altă placă. Minim: comoara trimite semnale, iar detectorul arată o inimă, foarte cald, o față veselă, cald, sau o față tristă, rece. Complet: minim, plus detectorul arată somn când nu primește niciun semnal, iar pragurile sunt reglate după măsurători.
+
+De ce contează. Telefonul tău găsește căștile pierdute după semnal: cu cât ești mai aproape, cu atât semnalul este mai puternic. Radio nu transportă doar mesaje, ci ne spune și cât de departe este emițătorul.
+
+Primul pas. Jocul Cald, rece. Un coleg iese pe hol, iar ceilalți ascund un obiect. Când se întoarce, îl ajutați: rece dacă este departe, cald dacă se apropie, fierbinte dacă este foarte aproape. Detectorul va spune la fel, cu LED-uri.
+
+Al doilea pas. Puterea semnalului. Când placa primește un mesaj, știe cât de tare l-a auzit. Numărul este negativ. Aproape de zero înseamnă semnal puternic, adică aproape. Un număr foarte negativ, de exemplu minus optzeci, înseamnă departe.
+
+Al treilea pas. Rolurile. Același program rulează pe ambele plăci. La pornire apeși un buton: A înseamnă comoara, care trimite semnale, iar B înseamnă detectorul, care ascultă. Folosim variabila rol.
+
+Al patrulea pas, pentru Minim. Comoara, în Forever: dacă rol este unu, trimite un număr prin radio, apoi o pauză scurtă.
+
+Al cincilea pas, pentru Minim. Detectorul, în On radio received: dacă rol este doi, citești puterea semnalului. Dacă este mai mare decât minus șaizeci, arăți inima. Altfel, dacă este mai mare decât minus șaptezeci și cinci, arăți fața veselă. Altfel, arăți fața tristă.
+
+Al șaselea pas. Măsurăm și reglăm pragurile. Sălile sunt diferite, deci minus șaizeci și minus șaptezeci și cinci pot să nu fie potrivite. Temporar, afișezi numărul semnalului pe detector, te plimbi prin clasă și notezi valorile aproape, la mijloc și departe. Apoi schimbi pragurile.
+
+Al șaptelea pas, pentru Complet. Dacă detectorul este prea departe, nu mai primește nimic și rămâne ultima poză. Vrem somn atunci. Creezi variabila ultimul, momentul ultimului mesaj primit, cu blocul Running time. Dacă a trecut mai mult de o secundă, arăți somnul.
+
+Al optulea pas. Regulile jocului. Comoara se ascunde în clasă, pe o înălțime sigură, nu în buzunarul cuiva și nu lângă apă. Cel care caută nu se uită unde se ascunde comoara.
+
+Greșeli frecvente. Nu primești nimic: grupuri diferite sau nimeni nu a apăsat A pentru comoară. Totul este rece, chiar și aproape: pragurile sunt prea sus, măsoară din nou. Pe ambele plăci apare un romb: ai apăsat A pe amândouă. Poza nu se schimbă: comoara nu trimite sau detectorul nu are rolul doi. Valoarea sare mult: este normal, folosim intervale. Somnul apare mereu: ultimul nu este actualizat în On radio received.
+
+Proiectul de azi. Cald, rece.
+
+Minim înseamnă: comoara trimite, detectorul arată inimă, față veselă sau față tristă. Complet înseamnă: minim, plus somnul și pragurile reglate. Dacă rămâi în urmă, salvează la Minim.
+
+Recapitulare. Placa știe cât de tare a auzit un mesaj radio. Semnalul este un număr negativ: mai aproape de zero înseamnă mai puternic. Folosim praguri, pentru că semnalul oscilează. Running time ne ajută să știm când a fost ultimul mesaj. Un proiect cu mai multe plăci are roluri.
+
+Succes la vânătoare.

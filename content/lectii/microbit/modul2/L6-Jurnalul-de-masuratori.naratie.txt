@@ -1,0 +1,31 @@
+Lecția șase. Jurnalul de măsurători.
+
+Astăzi placa devine un mic om de știință: măsoară temperatura și lumina, ține minte recordurile și își notează măsurătorile într-un jurnal. Proiectul se numește Jurnalul de măsurători. Numele fișierului este: Prenume, linie jos, Nume, linie jos, M B doi, linie jos, L zero șase.
+
+Obiectivul. La final faci un aparat care ține minte cea mai mare și cea mai mică temperatură și, la Complet, o listă de măsurători cu media lor. Minim: A schimbă între trei moduri, temperatura, lumina și recordurile, maxim și minim. A și B șterg recordurile. Complet: minim, plus B salvează măsurători într-o listă, iar al patrulea mod arată media.
+
+De ce contează. Oamenii de știință notează ce măsoară: temperatura de afară, cât a crescut o plantă. Notițele se numesc date. Un program care păstrează date îți poate spune cel mai cald a fost la prânz, sau în medie, în clasă sunt douăzeci și două de grade.
+
+Primul pas. Tabelul de pe hârtie. Înainte de calculator, măsori în trei locuri: lângă fereastră, pe bancă și lângă ușă. Notezi temperatura și cât de luminos este: mic, mediu sau mare.
+
+Al doilea pas. Ideea recordului. Un record este cea mai mare sau cea mai mică valoare văzută până acum. Începi cu temperatura de acum. La fiecare măsurătoare, păstrezi cel mai mare dintre vechiul maxim și valoarea nouă.
+
+Al treilea pas, pentru Minim. Proiect nou, cu variabilele mod, maxim și minim. În On start: mod unu, iar maxim și minim primesc temperatura de acum.
+
+Al patrulea pas, pentru Minim. În A, Change mod by unu, iar dacă mod este mai mare decât trei, îl pui pe unu. În A și B, resetezi maximul și minimul la temperatura de acum.
+
+Al cincilea pas, pentru Minim. Regula din lecția unu rămâne valabilă: desenează doar Forever. În Forever actualizezi maximul cu blocul Max of și minimul cu Min of, apoi, după mod, arăți temperatura, lumina sau recordurile.
+
+Al șaselea pas, pentru Complet. O listă, în MakeCode Array, este o înșiruire de valori, ca un tabel cu o singură coloană. Creezi lista masuratori goală. Cu B adaugi temperatura de acum în listă. Modul patru calculează media: pui suma pe zero, parcurgi fiecare element cu For element in list, aduni, apoi împarți la câte elemente sunt.
+
+Al șaptelea pas. Experimentul Cel mai cald loc. În grup, mergeți cu plăcile în patru locuri din clasă. La fiecare loc apăsați B. După patru locuri mergeți la modul patru și comparați media cu cea a altui grup. Care este mai mare și de ce?
+
+Greșeli frecvente. Recordurile nu se schimbă: lipsesc Max of și Min of din Forever. Ecranul se amestecă: B desenează direct, în loc să ridice un steag. La modul patru apare mereu crucea: nu ai apăsat B niciodată, lista este goală. Media este greșită: ai uitat să pui suma pe zero înainte de buclă. Modul cinci nu există: în A ai lăsat mod mai mare decât trei. Temperatura sare: placa se încălzește și singură, o diferență de un grad sau două este normală.
+
+Proiectul de azi. Jurnalul de măsurători.
+
+Minim înseamnă: trei moduri și recorduri, cu ștergere la A și B. Complet înseamnă: minim, plus lista și media. Dacă rămâi în urmă, salvează la Minim.
+
+Recapitulare. Datele sunt valori măsurate și păstrate. Recordul este cea mai mare sau mică valoare, găsită cu Max of și Min of. O listă ține mai multe valori într-o variabilă. Media este suma împărțită la câte sunt. Un buton poate doar să ridice un steag, iar Forever face munca.
+
+Succes la jurnalul tău.

@@ -1,0 +1,25 @@
+Lecția șase. Labirintul înclinat.
+
+Placa devine un labirint: înclini placa, iar o bilă luminoasă se rostogolește printre pereți până la ieșire. Hărțile sunt scrise ca text, iar tu înveți cum citește un program o hartă. Proiectul se numește Labirintul înclinat. Numele fișierului este: Prenume, linie jos, Nume, linie jos, M P doi, linie jos, L zero șase.
+
+Obiectivul. La final ții o hartă ca listă de șiruri, citești înclinarea plăcii, verifici pereții și treci prin niveluri. Minim: un labirint cu un nivel: bila se mișcă prin înclinare, nu trece prin pereți, iar la ieșire apare o bifă. Complet: minim, plus trei niveluri, numărul de pași la final și A reia nivelul.
+
+De ce contează. Jocurile și aplicațiile păstrează hărțile ca date. Dacă harta este doar text, o poți schimba ușor, fără să rescrii programul.
+
+Primul pas. Harta ca text. Ecranul are cinci rânduri a câte cinci caractere. Diez este perete, punct este loc liber, S este start, E este ieșire. Citești un caracter cu harta între paranteze drepte, întâi rândul y, apoi coloana x.
+
+Exemplul doi. Desenăm harta cu două bucle: pereții mai slab, ieșirea mai puternic. Exemplul trei. Înclinarea: get x crește când înclini spre dreapta, get y când înclini spre tine. Exemplul patru. O funcție care dă două valori, dx și dy, din înclinare. Exemplul cinci. Bila se mișcă, ținută în ecran cu max și min.
+
+Exemplul șase. Pereții: înainte să muți bila, verifici locul nou. Dacă este perete, rămâi pe loc. Exemplul șapte. Găsim startul cu o funcție. Exemplul opt. Labirintul Minim. Bila clipește, ca să o deosebești de ieșire. Se mută doar dacă locul nou este în ecran și nu este perete.
+
+Exemplul nouă. Mai multe niveluri, într-o listă de hărți. Funcția încarcă harta și startul. Exemplul zece. Labirintul Complet: pașii se numără doar la mutările reale, A reia nivelul, iar după ultimul nivel apare o inimă și numărul de pași.
+
+Greșeli frecvente. Bila trece prin pereți: nu ai verificat perete înainte de mutare. IndexError: verifică întâi marginile, apoi harta. Harta este răsturnată: rândul vine primul, nu coloana. Bila fuge prea repede: mărește pauza. Nu se mișcă: înclin-o mai mult sau scade pragul. Nu poți ieși: harta nu are drum spre ieșire.
+
+Proiectul de azi. Labirintul înclinat.
+
+Minim înseamnă: un nivel, pereți și bifă. Complet înseamnă: minim, plus trei niveluri, pași și reluare. Dacă rămâi în urmă, salvează la Minim.
+
+Recapitulare. Harta este o listă de cinci șiruri. Get x și get y dau înclinarea. O funcție poate returna două sau trei valori. Mutăm doar dacă locul nou este în ecran și nu este perete. Datele sunt separate de cod.
+
+Succes în labirint.

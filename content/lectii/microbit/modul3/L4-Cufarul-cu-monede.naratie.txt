@@ -1,0 +1,33 @@
+Lecția patru. Cufărul cu monede.
+
+Astăzi placa ține minte lucruri: câte monede ai, câte ai cheltuit. Folosim variabile, calcule și condiții. Proiectul se numește Cufărul cu monede. Numele fișierului este: Prenume, linie jos, Nume, linie jos, M P unu, linie jos, L zero patru.
+
+Obiectivul. La final creezi variabile, le schimbi cu plus egal și minus egal, le compari și le afișezi pe LED-uri cu str. Minim: A adaugă o monedă, până la douăzeci, iar B cumpără ceva care costă trei monede, dacă ai destule. Complet: minim, plus A și B arată soldul și numărul de cumpărături, iar limitele sunt păzite.
+
+De ce contează. Orice joc ține minte scorul, viețile, banii. Orice aplicație ține minte numele tău și setările. Toate acestea stau în variabile. Azi folosești variabile și condiții împreună, ca într-un joc adevărat.
+
+Primul pas. Variabila este o cutie cu etichetă. Scrii monede egal cinci. Monede este numele, eticheta, cinci este valoarea, iar semnul egal înseamnă pune în cutie.
+
+Al doilea exemplu. Schimbăm valoarea: monede plus egal unu adaugă o monedă, monede minus egal trei scade trei.
+
+Al treilea exemplu. Comparații. Două semne egal înseamnă egal. Semnul exclamării și egal înseamnă diferit. Mai mic, mai mare, mai mic sau egal, mai mare sau egal.
+
+Al patrulea exemplu. And și or. And cere ca amândouă condițiile să fie adevărate, or cere cel puțin una. Cufărul are loc pentru cel mult douăzeci de monede, deci adaugi doar dacă monede este mai mic decât douăzeci.
+
+Al șaselea exemplu. Prescurtare cu min și max. Min dă cel mai mic dintre două numere, max pe cel mai mare. Cu ele ții o valoare între două limite.
+
+Al șaptelea exemplu. Text și număr. Textul și numărul se lipesc doar dacă numărul devine text, cu str. De exemplu, ghilimele, Monede, două puncte, ghilimele, plus str de monede.
+
+Al optulea exemplu. Citim butoanele o singură dată, la începutul fiecărei ture, într-o variabilă, și o folosim apoi de mai multe ori. Al nouălea: constante. Valorile care nu se schimbă, prețul și limita, le scriem cu litere mari, de exemplu PRET și MAXIM.
+
+Al zecelea exemplu. Cufărul. La A adaugi o monedă, dacă nu ai depășit limita. La B cumperi, dacă ai cel puțin trei monede: scazi prețul și numeri cumpărătura. La A și B arăți soldul și numărul de cumpărături.
+
+Greșeli frecvente. Eroare la scroll: ai lipit text cu număr fără str. Eroare la if: ai scris un singur semn egal sau ai uitat cele două puncte. Monedele trec de douăzeci: lipsește condiția cu limita. Cumperi și cu o monedă: ai scris greșit comparația cu prețul. Variabila nu se schimbă: ai scris egal în loc de plus egal.
+
+Proiectul de azi. Cufărul cu monede.
+
+Minim înseamnă: A adaugă, B cumpără doar dacă ai destule. Complet înseamnă: minim, plus soldul și cumpărăturile la A și B. Dacă rămâi în urmă, salvează la Minim.
+
+Recapitulare. Variabila este o cutie cu nume. Plus egal și minus egal schimbă valoarea. Două semne egal compară, un semn egal pune. And cere ambele condiții, or cere măcar una. Str transformă un număr în text. Limitele se păzesc cu if sau cu min și max.
+
+Succes cu monedele tale.

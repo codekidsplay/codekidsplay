@@ -1,0 +1,33 @@
+Lecția patru. Semaforul de pe masă.
+
+Până acum luminile erau pe placă. Astăzi legi LED-uri din afara plăcii, la pini, și faci un semafor adevărat. Proiectul se numește Semaforul de pe masă. Numele fișierului este: Prenume, linie jos, Nume, linie jos, M B doi, linie jos, L zero patru.
+
+Obiectivul. La final știi ce sunt pinii, legi un LED extern în siguranță și îl comanzi din program. Minim: un LED extern pe P zero, A îl aprinde, B îl stinge. Complet: minim, plus un semafor cu trei LED-uri, roșu, galben și verde, care se schimbă singur, folosind o funcție.
+
+De ce contează. Semafoarele, becurile inteligente și jucăriile cu lumini au ceva în comun: un calculator mic aprinde și stinge LED-uri prin fire. Pinii sunt mâinile plăcii. Prin ei, micro:bit poate comanda lucruri din lumea reală, nu doar ecranul lui.
+
+Primul pas. Pinii plăcii. Jos, pe placă, vezi inele mari de metal: zero, unu, doi, trei volți și GND. P zero, P unu și P doi sunt pini pe care programul îi poate comanda: îi face pornit, adică unu, sau oprit, adică zero.
+
+Al doilea pas. Reguli de siguranță. Schimbi firele numai cu placa scoasă din USB. Niciodată nu legi trei volți direct la GND. Dacă ceva se încălzește, scoți USB-ul și chemi profesorul.
+
+Al treilea pas. LED-ul și rezistența. Un LED are două picioare diferite. Piciorul lung, plus, se leagă spre pin, spre P zero. Piciorul scurt se leagă spre GND. Între ele pui o rezistență, care protejează LED-ul de prea mult curent. Folosim cleme crocodil.
+
+Al patrulea pas, pentru Minim. Proiect nou. Din Advanced, la Pins, folosești Digital write pin P zero to unu în A, și to zero în B.
+
+Al cincilea pas. Semaforul. Legăm trei LED-uri: roșu pe P zero, galben pe P unu, verde pe P doi, toate cu GND comun.
+
+Al șaselea pas, pentru Complet. Înainte de fiecare culoare nouă trebuie să stingem toate LED-urile. În loc să scriem aceleași trei blocuri de multe ori, facem o funcție. Din Advanced, Functions, Make a Function, cu numele stinge. Înăuntru pui cele trei Digital write pe zero.
+
+Al șaptelea pas. Programul semaforului, în Forever: Call stinge, roșu aprins, pauză. Call stinge, verde aprins, pauză. Call stinge, galben aprins, pauză scurtă. Și de la capăt.
+
+Al optulea pas. Varianta pe ecran, fără fire. Rândurile ecranului sunt semaforul: rândul de sus este roșu, mijlocul galben, jos verde.
+
+Greșeli frecvente. LED-ul nu se aprinde: este legat invers, piciorul lung spre pin. Nu se aprinde nimic: nu ai legat GND, circuitul trebuie să fie închis. Se aprinde slab: contact slab la cleștele crocodil. Două culori sunt aprinse deodată: ai uitat Call stinge. Funcția nu face nimic: nu ai pus Call stinge în program. Placa se încălzește: scoate USB-ul și cere ajutor.
+
+Proiectul de azi. Semaforul de pe masă.
+
+Minim înseamnă: un LED extern, A aprinde, B stinge. Complet înseamnă: minim, plus semaforul cu trei LED-uri și funcția stinge. Dacă rămâi în urmă, salvează la Minim.
+
+Recapitulare. Pinii sunt punctele prin care placa comandă lucruri din afară. Digital write unu înseamnă pornit, zero înseamnă oprit. LED-ul se leagă cu rezistență: lung spre pin, scurt spre GND. Funcția adună blocuri folosite de mai multe ori. Reguli de siguranță: fire schimbate fără USB, niciodată trei volți la GND.
+
+Succes la semafor.

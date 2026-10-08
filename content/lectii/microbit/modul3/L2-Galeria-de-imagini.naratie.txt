@@ -1,0 +1,35 @@
+Lecția doi. Galeria de imagini.
+
+Astăzi desenezi pe LED-uri cu text: folosești imaginile gata făcute, îți inventezi propriile imagini și faci animații cu for. Proiectul se numește Galeria de imagini. Numele fișierului este: Prenume, linie jos, Nume, linie jos, M P unu, linie jos, L zero doi.
+
+Obiectivul. La final creezi imagini cu Image, setezi pixeli cu set pixel și arăți mai multe imagini una după alta. Minim: o galerie cu trei imagini desenate de tine, care se schimbă la nesfârșit. Complet: minim, plus o a patra imagine și o animație cu luminozitate.
+
+De ce contează. Fiecare ecran din lume este făcut din pixeli. Azi desenezi cu cei douăzeci și cinci de pixeli ai plăcii și înveți un secret: un desen este doar un șir de cifre.
+
+Primul pas. Imagini gata făcute. Python știe multe: HEART, HAPPY, SAD, DUCK, HOUSE, GHOST. Le scrii mereu cu litere mari. Le pui și într-o listă, între paranteze drepte, cu virgulă între ele, și le parcurgi cu un for.
+
+Al doilea pas. Propriile imagini, șirul de cifre. O imagine are cinci rânduri, iar fiecare rând are cinci cifre. Rândurile se despart cu două puncte. Fiecare cifră este luminozitatea unui LED: zero înseamnă stins, nouă înseamnă cel mai luminos. De exemplu, un pom: zero zero nouă zero zero, apoi zero nouă nouă nouă zero, apoi cinci de nouă, apoi două rânduri cu nouă în mijloc.
+
+Al treilea pas. Galeria cu trei imagini. Pui imaginile într-o listă și le arăți pe rând, cu o pauză după fiecare, într-un while True.
+
+Al patrulea pas. Luminozitate diferită. Cu cifre de la zero la nouă faci un gradient, de la stins la foarte luminos.
+
+Al cincilea pas. Un pixel. Display punct set pixel primește trei numere: x, coloana, de la zero la patru; y, rândul, de la zero la patru; și luminozitatea. Set pixel doi, doi, nouă aprinde punctul din centru.
+
+Al șaselea pas. Bucla for. For i in range cinci repetă de cinci ori, iar i ia valorile zero, unu, doi, trei, patru. Cu ea aprinzi un rând întreg.
+
+Al șaptelea pas. Coborâșul soarelui. Cu un for muți un punct de sus în jos, iar display punct clear stinge toate LED-urile între pași.
+
+Al optulea pas. Înmulțim luminozitatea. Image HEART înmulțit cu zero virgulă trei dă o inimă mai slabă. Într-un for, din zece pași, inima se aprinde treptat.
+
+Al zecelea pas. Galerie cu o listă proprie. Faci lista cadre, cu imaginile tale, și o parcurgi.
+
+Greșeli frecvente. Eroare la Image: ai pus o literă în loc de cifră sau un rând are altă lungime. Imaginea arată strâmb: un rând nu are cinci cifre. Eroare la set pixel: x sau y este în afara intervalului zero până la patru. Nu vezi imaginea: ai uitat sleep. Luminozitatea nu se vede: valoarea este prea mică.
+
+Proiectul de azi. Galeria de imagini.
+
+Minim înseamnă: trei imagini ale tale, care se schimbă. Complet înseamnă: minim, plus a patra imagine și animația. Dacă rămâi în urmă, salvează la Minim.
+
+Recapitulare. Image punct NUME arată imagini gata făcute, cu litere mari. Image cu ghilimele face imagine proprie: cinci rânduri, cinci cifre, despărțite prin două puncte. Cifrele de la zero la nouă sunt luminozitatea. Set pixel x, y, luminozitate aprinde un LED. For repetă de un număr de ori.
+
+Succes la galeria ta.

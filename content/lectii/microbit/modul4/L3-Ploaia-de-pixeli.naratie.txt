@@ -1,0 +1,23 @@
+Lecția trei. Ploaia de pixeli.
+
+Astăzi stăpânești buclele: for, for în for, while și break. La final, pe placă plouă cu pixeli, iar tu controlezi viteza și furtuna. Proiectul se numește Ploaia de pixeli. Numele fișierului este: Prenume, linie jos, Nume, linie jos, M P doi, linie jos, L zero trei.
+
+Obiectivul. La final folosești range cu început, sfârșit și pas, buclele una într-alta, while cu condiție și break. Minim: ploaie care cade singură, cu picături la întâmplare în cele cinci coloane. Complet: minim, plus A mai repede, B mai lent, scuturarea face furtună și fiecare picătură are o coadă.
+
+De ce contează. Calculatoarele sunt bune la repetat. O singură buclă poate desena ecranul, număra, căuta sau juca o animație.
+
+Primul pas. Ce poate range. Range patru dă zero, unu, doi, trei. Range doi, cinci dă doi, trei, patru. Range zero, zece, trei dă zero, trei, șase, nouă. Range cinci, zero, minus unu dă cinci, patru, trei, doi, unu. Valoarea de sfârșit nu este inclusă.
+
+Exemplul unu. Numărătoare inversă. Exemplul doi. Din doi în doi. Exemplul trei. Buclă într-o buclă: pentru fiecare rând parcurgi toate coloanele, în total douăzeci și cinci de pași. Exemplul patru. Umplem ecranul, apoi îl golim de jos în sus. Exemplul cinci. Bucla while: repetă până când condiția devine falsă. Exemplul șase. Așteptăm lumina. Exemplul șapte. Break iese imediat din buclă.
+
+Exemplul opt. Picăturile ca listă: fiecare coloană are o picătură, iar lista ține înălțimea ei. Minus unu înseamnă că nu este picătură. Exemplul nouă. Ploaia Minim: întâi muți picăturile, apoi desenezi imaginea nouă. Exemplul zece. Ploaia Complet: A scade pauza, dar nu sub cincizeci, B o crește, dar nu peste cinci sute, scuturarea pune o picătură în fiecare coloană, iar coada este mai slabă.
+
+Greșeli frecvente. Ecranul pâlpâie: ordinea pe tură este mută, șterge, desenează, așteaptă. Picăturile nu cad: nu ai mărit înălțimea. IndexError: set pixel merge doar între zero și patru. Bucla nu se termină: condiția din while nu se schimbă niciodată. Range cinci ajunge la patru, nu la cinci.
+
+Proiectul de azi. Ploaia de pixeli.
+
+Minim înseamnă: ploaie care cade singură. Complet înseamnă: minim, plus viteza, furtuna și coada. Dacă rămâi în urmă, salvează la Minim.
+
+Recapitulare. Range cu început, sfârșit și pas, sfârșitul nu este inclus. O buclă în altă buclă repetă de înmulțit ori. While merge cât timp condiția este adevărată. Break iese din buclă. Animația: mută, șterge, desenează, așteaptă.
+
+Succes sub ploaia ta.

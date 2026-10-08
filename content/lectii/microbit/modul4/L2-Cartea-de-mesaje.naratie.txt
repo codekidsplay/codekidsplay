@@ -1,0 +1,25 @@
+Lecția doi. Cartea de mesaje.
+
+Astăzi înveți listele: un sertar cu multe locuri, în care ții mai multe lucruri deodată. Faci o carte de mesaje pe placă, în care dai pagina înainte și înapoi. Proiectul se numește Cartea de mesaje. Numele fișierului este: Prenume, linie jos, Nume, linie jos, M P doi, linie jos, L zero doi.
+
+Obiectivul. La final creezi o listă, citești elemente după index, afli lungimea cu len, adaugi cu append și parcurgi lista cu for. Minim: o carte cu cinci mesaje, A pagina următoare, B pagina anterioară. Complet: minim, plus scuturarea alege un mesaj la întâmplare, iar A și B adaugă temperatura în carte.
+
+De ce contează. Până acum ai ținut o valoare într-o variabilă. O listă ține mai multe: nume, scoruri, mesaje, măsurători. Aproape orice aplicație folosește liste.
+
+Primul pas. O listă se scrie între paranteze drepte, cu elementele separate prin virgulă. Fiecare element are un număr de loc, numit index. Numărătoarea începe de la zero.
+
+Exemplul unu. Prima listă: prieteni, cu Ana, Dan și Mia. Prieteni între paranteze drepte, zero, este Ana, iar doi este Mia. Exemplul doi. Len dă numărul de elemente, iar indexul minus unu este ultimul element. Dacă ceri un loc care nu există, apare IndexError.
+
+Exemplul trei. Parcurgem lista cu for: la fiecare tură variabila ia pe rând câte un element. Exemplul patru. Append adaugă la sfârșit, iar cu paranteze drepte schimbi un element. Exemplul cinci. Pop scoate un element: pop zero pe primul, pop fără număr pe ultimul. Exemplul șase. Cu in verifici dacă un element este în listă.
+
+Exemplul șapte. Meniul în cerc, cu len. Dacă adaugi un mesaj, nu mai schimbi nimic. Exemplul opt. Înapoi: în Python, minus unu procent cinci este patru, deci poți merge înapoi în cerc. Exemplul nouă. Cartea Minim. Mesajele fără diacritice. Exemplul zece. Cartea Complet: A și B adaugă temperatura la sfârșit, iar dacă lista are mai mult de zece elemente scoate cel mai vechi. Scuturarea alege un index la întâmplare. Placa are memorie mică, de aceea limităm lista.
+
+Greșeli frecvente. IndexError: ai cerut un loc care nu există. Prima poziție este zero, nu unu. Cartea sare la întâmplare: ai citit butoanele de două ori. Nu poți afișa o listă întreagă: afișezi un element sau folosești for. Temperatura nu apare: lipsește str. Eroare de memorie: lista a crescut prea mult.
+
+Proiectul de azi. Cartea de mesaje.
+
+Minim înseamnă: cinci mesaje, înainte și înapoi, în cerc. Complet înseamnă: minim, plus scuturarea și temperatura. Dacă rămâi în urmă, salvează la Minim.
+
+Recapitulare. O listă ține mai multe elemente. Indexul începe de la zero, iar ultimul este len minus unu. Append adaugă, pop scoate. For parcurge lista. Procent len ține indexul în cerc.
+
+Succes cu cartea ta.

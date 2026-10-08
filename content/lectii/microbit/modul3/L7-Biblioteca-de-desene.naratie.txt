@@ -1,0 +1,29 @@
+Lecția șapte. Biblioteca de desene.
+
+Astăzi înveți să-ți faci propriile comenzi: grupezi blocuri de cod sub un nume și le chemi de câte ori vrei. Se numesc funcții. Proiectul se numește Biblioteca de desene. Numele fișierului este: Prenume, linie jos, Nume, linie jos, M P unu, linie jos, L zero șapte.
+
+Obiectivul. La final creezi funcții cu def, le dai parametri și folosești return. Minim: un program cu două funcții cu parametri, de exemplu clipeste și bate inima, chemate de la butoane. Complet: minim, plus o numărătoare inversă, o bară de nivel și o funcție care întoarce o valoare, limiteaza.
+
+De ce contează. Dacă ai de scris de zece ori același lucru, nu îl copiezi de zece ori. Îl scrii o singură dată, îi pui un nume și îl chemi. Programele mari, de la jocuri la aplicații, sunt făcute din funcții mici, ca o casă din cărămizi.
+
+Primul pas. Jocul Comenzi noi. Spui unui coleg fă un salt. Nu îi explici mereu cum. Ați convenit odată ce înseamnă salt. Funcția face la fel: îi dai un nume o dată, o chemi mereu.
+
+Exemplul unu. Prima funcție. Scrii def, bate inima, paranteze, două puncte, iar dedesubt, cu indentare, ce face. O chemi scriind bate inima cu paranteze.
+
+Exemplul doi. Parametri. Un parametru este o valoare pe care o dai funcției la apel. Exemplul trei: parametrul care numără, câte bătăi. Exemplul patru: valori implicite. Dacă nu dai un parametru, are o valoare de rezervă.
+
+Exemplul cinci. Return. O funcție poate întoarce un rezultat, ca un răspuns. Exemplul șase. Funcția limiteaza primește o valoare, un minim și un maxim, și întoarce valoarea ținută între ele.
+
+Exemplul șapte. O funcție care cheamă alta. Exemplul opt. Variabilele create în interiorul funcției nu se văd în afară.
+
+Exemplul nouă. Bara de nivel: lumina împărțită la cincizeci și unu dă un număr de la zero la cinci, iar funcția aprinde atâtea coloane. Exemplul zece. Biblioteca: la A, bate inima de trei ori. La B, numărătoare inversă de la trei. La A și B, bara de nivel după lumină.
+
+Greșeli frecvente. Nu se întâmplă nimic: ai definit funcția, dar nu ai chemat-o. Eroare de nume: ai chemat funcția înainte s-o definești. Eroare de argumente: ai dat alt număr de parametri decât cerea funcția. Funcția nu întoarce nimic: ai scris print în loc de return. Variabila din funcție nu se vede în afară.
+
+Proiectul de azi. Biblioteca de desene.
+
+Minim înseamnă: două funcții cu parametri, chemate de la butoane. Complet înseamnă: minim, plus numărătoarea, bara și funcția limiteaza. Dacă rămâi în urmă, salvează la Minim.
+
+Recapitulare. Def nume creează o funcție, iar o chemi cu nume și paranteze. Parametrii sunt valorile pe care le dai funcției. Valorile implicite sunt de rezervă. Return întoarce un rezultat. Definești funcțiile înainte să le chemi. Variabilele din funcție nu se văd în afară.
+
+Succes la biblioteca ta.

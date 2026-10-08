@@ -1,0 +1,33 @@
+Lecția opt. Doctorul de cod.
+
+Orice programator greșește, dar un programator bun știe să caute greșeala și s-o repare. Astăzi ești doctor de cod: primești programe bolnave, găsești ce nu este în regulă și le vindeci. Proiectul se numește Cabinetul doctorului de cod. Numele fișierului este: Prenume, linie jos, Nume, linie jos, M B doi, linie jos, L zero opt.
+
+Obiectivul. La final folosești o metodă ca să găsești greșelile din program și știi să faci un cod mai curat și mai scurt. Minim: repari trei din cinci programe bolnave și scrii raportul pentru fiecare. Complet: repari toate cinci, cureți un program, cu Repeat sau cu o funcție, și faci un raport complet.
+
+De ce contează. Programatorii își petrec mai mult timp căutând greșeli decât scriind cod nou. Se numește depanare, în engleză debugging. Bug înseamnă gândac, pentru că primul bug a fost un gândac găsit într-un calculator. Cine știe să depaneze poate repara orice, inclusiv programele altora.
+
+Primul pas. Metoda doctorului, în cinci pași. Unu: ce trebuie să facă programul? Doi: ce face de fapt? Rulezi și notezi. Trei: unde se rupe? Cauți primul loc unde nu se potrivește cu fișa. Patru: o singură schimbare, apoi testezi din nou. Cinci: scrii raportul.
+
+Al doilea pas. Programul bolnav unu, contorul care nu crește. Fișa spune că A adaugă unu la scor și arată scorul. Cauți unde se strică: poate este Set în loc de Change.
+
+Al treilea pas. Programul bolnav doi, inima care stă pe loc. Inima trebuie să bată, mare, mică, mare, mică. Verifici pauzele și ordinea pozelor.
+
+Al patrulea pas. Programul bolnav trei, seiful care zice mereu Da. Fișa spune că B este corect doar dacă pas este unu, altfel arată crucea. Verifici condiția.
+
+Al cincilea pas. Programul bolnav patru, radioul mut. Placa unu trimite unu când apeși A, placa doi arată fața veselă. Verifici grupurile și codurile.
+
+Al șaselea pas. Programul bolnav cinci, alarma de neoprit. Alarma pâlpâie cât timp alarma este unu și se oprește cu A și B. Verifici dacă variabila se schimbă.
+
+Al șaptelea pas. Curățenia codului. Un cod bun este scurt, clar și are nume bune. Dacă ai aceleași blocuri copiate de mai multe ori, le pui într-un Repeat sau într-o funcție. Arăți cum arăta înainte și cum arată după.
+
+Al optulea pas. Raportul de bug. Pentru fiecare program completezi un tabel: programul, simptomul, cauza și cum ai reparat.
+
+Greșeli frecvente. Schimbi mai multe lucruri deodată și nu mai știi ce a ajutat. Nu rulezi programul ca să vezi ce face de fapt. Cauți vinovatul la colegi, nu în cod. Ai reparat, dar nu ai testat din nou. Uiți să scrii raportul.
+
+Proiectul de azi. Cabinetul doctorului de cod.
+
+Minim înseamnă: trei programe reparate, cu raport. Complet înseamnă: toate cinci, plus un cod curățat și raportul complet. Dacă rămâi în urmă, salvează la Minim.
+
+Recapitulare. Depanare înseamnă a găsi și a repara o greșeală. Metoda: ce trebuie, ce face, unde se rupe, o schimbare, raport. Show number variabila îți arată ce ține minte placa. Un cod bun este scurt, clar, cu nume bune. Greșelile sunt normale, important este să știi cum le cauți.
+
+Succes, doctore!

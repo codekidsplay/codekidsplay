@@ -1,0 +1,27 @@
+Lecția cinci. Busola digitală.
+
+Placa ta are în ea o busolă: un mic senzor care simte câmpul magnetic al Pământului. Astăzi o înveți să-ți spună încotro ești întors și faci o busolă cu ac, care arată mereu spre nord. Proiectul se numește Busola digitală. Numele fișierului este: Prenume, linie jos, Nume, linie jos, M P doi, linie jos, L zero cinci.
+
+Obiectivul. La final calibrezi busola, citești compass heading, transformi gradele în direcții și alegi imaginea potrivită dintr-o listă. Minim: busolă cu patru direcții, N, E, S și V. Complet: minim, plus calibrare la A, acul care arată spre nord și gradele la B.
+
+De ce contează. Busola ajută drumeții, pilotul și barca de pe mare. Azi vezi cum transformăm un număr, de la zero la trei sute cincizeci și nouă, într-o informație pe care o înțelege oricine.
+
+Atenție. Busola este sensibilă la magneți. Ține placa departe de telefoane, boxe și metale mari.
+
+Primul pas. Gradele. Zero este nord, nouăzeci este est, o sută optzeci este sud, două sute șaptezeci este vest. Numărul crește când te învârți în sensul acelor de ceasornic.
+
+Al doilea pas. Calibrarea. Compass calibrate pornește un mini-joc: înclini placa în toate direcțiile ca să umpli ecranul cu puncte. O faci după ce pornești placa și când te muți în alt loc.
+
+Exemplul trei. Împărțim cercul în patru: adunăm patruzeci și cinci, împărțim la nouăzeci și luăm restul la patru. Zece grade dă N, o sută dă E, o sută nouăzeci dă S, două sute optzeci dă V, trei sute cincizeci dă din nou N. Exemplul patru. Busola Minim. Exemplul cinci. Opt direcții: adunăm douăzeci și doi, împărțim la patruzeci și cinci. Exemplul șase. Image ALL ARROWS este o listă cu opt săgeți, același index ca la sectoare.
+
+Exemplul șapte. Acul care arată spre nord: dacă ești întors spre est, nordul este la stânga ta, deci acul arată spre vest. Formula este opt minus sectorul, procent opt. Exemplul opt. Busola cu ac. Exemplul nouă. B arată gradele. Exemplul zece. Busola Complet: A recalibrează, B arată gradele, altfel acul arată nordul.
+
+Greșeli frecvente. Busola arată prostii: nu ai calibrat sau ești lângă un magnet. Săgeata arată invers: ai folosit direct sectorul. IndexError: indexul nu este între zero și șapte, folosește procent opt. Eroare la scroll: lipsește str. Nordul nu este spre fereastră: este nord magnetic, verifică cu o busolă de turist.
+
+Proiectul de azi. Busola digitală.
+
+Minim înseamnă: calibrare și litere N, E, S, V. Complet înseamnă: minim, plus acul, recalibrarea și gradele. Dacă rămâi în urmă, salvează la Minim.
+
+Recapitulare. Compass heading dă grade de la zero la trei sute cincizeci și nouă. Înainte de utilizare, calibrezi. Cu adunare, împărțire întreagă și rest transformăm gradele într-un sector. Acul spre nord: opt minus sectorul, procent opt. Magneții strică busola.
+
+Succes cu busola ta.

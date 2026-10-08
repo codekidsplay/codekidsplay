@@ -1,0 +1,27 @@
+Lecția patru. Pianul de buzunar.
+
+Astăzi dai voce plăcii tale! Cânți note, melodii mici și faci un pian de buzunar care își amintește ce ai cântat. Proiectul se numește Pianul de buzunar. Numele fișierului este: Prenume, linie jos, Nume, linie jos, M P doi, linie jos, L zero patru.
+
+Obiectivul. La final folosești modulul music: note, pauze, music pitch, melodii din liste. Minim: pian cu opt note, A urcă o notă, B coboară o notă, iar placa cântă nota. Complet: minim, plus înregistrare a ultimelor șaisprezece note și redare la A și B.
+
+Sunetul. Placa V doi are difuzor. Pe V unu conectezi un buzzer pasiv, sau căști, între pinul zero și GND, cu cleme crocodil. Codul este același. Ține volumul rezonabil.
+
+De ce contează. Muzica este și matematică: fiecare notă are o frecvență. O melodie este o listă de note, exact ce ai învățat în lecția doi.
+
+Primul pas. Notele în Python. O notă se scrie ca text, de exemplu c patru, două puncte, patru. C este numele notei, patru este octava, iar după două puncte vine durata. R înseamnă pauză.
+
+Exemplul unu. Prima notă, un do. Exemplul doi. O gamă: do, re, mi, fa, sol, la, si, do, într-o listă. Exemplul trei. Durate diferite. Exemplul patru. Pauze și tempo. Exemplul cinci. Melodii gata făcute, de exemplu BA DING și POWER UP.
+
+Exemplul șase. Music pitch cântă o frecvență exactă, în hertzi, ca număr întreg. Exemplul șapte. Sirena: frecvențe care cresc și scad. Exemplul opt. Instrumentul cu lumina, ca un theremin.
+
+Exemplul nouă. Pianul Minim: indexul i alege nota din gamă, A îl crește, B îl scade, iar min și max îl opresc la capete. Exemplul zece. Pianul Complet: funcția canta afișează, cântă și adaugă nota în lista înregistrat, păstrând doar ultimele șaisprezece. A și B redau tot ce ai cântat. Funcția are global pentru i, dar nu pentru lista, pentru că doar o modificăm.
+
+Greșeli frecvente. Nu se aude nimic: pe V unu verifică buzzerul. Eroare de notă: o notă este scrisă greșit. Eroare la pitch: frecvența trebuie să fie număr întreg. Pianul nu înregistrează: lipsește append. Sunetul nu se oprește: folosește music stop.
+
+Proiectul de azi. Pianul de buzunar.
+
+Minim înseamnă: opt note, A urcă, B coboară. Complet înseamnă: minim, plus înregistrarea și redarea. Dacă rămâi în urmă, salvează la Minim.
+
+Recapitulare. Import music. O notă este text. O melodie este o listă de note. R este pauză. Music pitch cântă o frecvență. Min și max țin indexul între limite.
+
+Succes la pian.

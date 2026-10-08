@@ -1,0 +1,29 @@
+Lecția nouă. Cheia și seiful radio.
+
+Este proiectul final al Modulului doi! Facem un seif care se deschide doar dacă primește prin radio codul corect de la o cheie. Seiful îi și răspunde cheii: deschis, refuzat sau blocat. Numele fișierelor sunt: Prenume, linie jos, Nume, linie jos, M B doi, linie jos, L zero nouă, linie jos, cheie, și același nume, cu seif la sfârșit.
+
+Obiectivul. La final ai un sistem complet, cu două plăci care vorbesc în ambele sensuri și care se apără de ghicitul codului. Minim: cheia trimite un cod de două cifre, iar seiful arată bifa dacă este corect și crucea dacă nu. Complet: minim, plus seiful răspunde cheii, iar după trei încercări greșite se blochează pentru câteva secunde.
+
+De ce contează. Cheia mașinii tale nu doar deschide: ea trimite un cod, iar mașina verifică și răspunde. Dacă cineva ar încerca toate codurile la nesfârșit, sistemul s-ar bloca. Azi construiești aceeași idee, într-o formă simplă.
+
+Primul pas. Fișa proiectului. Înainte de blocuri, completezi pe foaie: ce face cheia, ce face seiful, ce mesaje trimit, ce stări are seiful.
+
+Al doilea pas. Codul de două cifre. Folosim două variabile, zeci și unitati. Codul trimis este zeci înmulțit cu zece, plus unitati. De exemplu, zeci patru și unitati șapte dau codul patruzeci și șapte.
+
+Al treilea pas, pentru Minim. Programul cheii. Cu A schimbi zecile, cu B schimbi unitățile, iar cu A și B trimiți codul prin Radio send number.
+
+Al patrulea pas, pentru Minim. Programul seifului. Variabila secret ține codul corect. În On radio received: dacă numărul primit este egal cu secret, arăți bifa, altfel arăți crucea, apoi revii la seiful închis.
+
+Al cincilea pas, pentru Complet. Seiful răspunde cheii și se blochează după trei greșeli. Mesajele de la seif la cheie sunt: unu înseamnă deschis, doi înseamnă refuzat, trei înseamnă blocat. Variabila greseli crește la fiecare cod greșit. La trei, seiful se blochează câteva secunde și trimite trei.
+
+Al șaselea pas. Spărgătorul de coduri. Doi colegi lucrează împreună: unul are seiful și știe codul, celălalt are doar cheia și încearcă să ghicească. Câte încercări are? Trei. Apoi seiful se blochează. Gândește-te: câte coduri posibile sunt, de la zero zero la nouăzeci și nouă? Cât ar dura să le încerci pe toate fără blocare? De ce este importantă blocarea?
+
+Greșeli frecvente. Seiful nu primește nimic: grupuri diferite. Cheia trimite alt cod: formula zeci înmulțit cu zece plus unitati este scrisă greșit, verifică parantezele. Seiful se deschide cu orice cod: comparația este cu numărul primit, nu cu secret. Nu se blochează: greseli nu crește sau nu este comparat cu trei. Ecranul seifului se încurcă: ai desenat în On radio received, desenul trebuie să rămână în Forever. Cheia nu primește răspuns: seiful nu trimite unu, doi sau trei.
+
+Proiectul de azi. Cheia și seiful radio.
+
+Minim înseamnă: cheia trimite codul, seiful verifică. Complet înseamnă: minim, plus răspunsul și blocarea. Dacă rămâi în urmă, salvează la Minim.
+
+Recapitulare. Un sistem are roluri: cheie și seif. Radio poate trimite în ambele sensuri. Seiful ține minte o stare: închis, deschis, blocat. Blocarea după greșeli apără de ghicit. Un proiect mare se planifică mai întâi pe foaie.
+
+Succes la proiectul final.

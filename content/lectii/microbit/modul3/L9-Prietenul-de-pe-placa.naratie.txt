@@ -1,0 +1,27 @@
+Lecția nouă. Prietenul de pe placă.
+
+Astăzi creezi Pixi, un animal de companie care trăiește pe placa ta. Îi este foame, se joacă, doarme când se face întuneric și își arată starea pe ecran. Este proiectul final al modulului. Numele fișierului este: Prenume, linie jos, Nume, linie jos, M P unu, linie jos, L zero nouă.
+
+Obiectivul. La final ai un program Python cu stări, senzori, butoane, timp și funcții. Minim: Pixi are foame și fericire, A îl hrănește, B se joacă cu el, iar fața lui arată cum se simte. Complet: minim, plus timpul, adică îi vine foame singur, doarme pe întuneric și are un ecran de stare la A și B.
+
+De ce contează. Aproape orice joc sau aplicație ține minte stări, cât de flămând, cât de vesel, și le schimbă după ce face omul. Azi pui împreună tot ce ai învățat în modul: variabile, decizii, senzori, funcții.
+
+Primul pas. Planul lui Pixi. Are două stări, fiecare între zero și cinci: foame, unde zero înseamnă sătul, iar cinci foarte flămând, și fericire, unde zero înseamnă trist, iar cinci foarte vesel. Reguli: A hrănește, foamea scade cu doi. B se joacă: fericirea crește cu unu, dar și foamea crește cu unu. Dacă Pixi este prea flămând, nu vrea să se joace. Din când în când îi vine foame singur. Pe întuneric doarme. Scuturat, se sperie. A și B arată starea.
+
+Exemplul unu. Funcția limiteaza ține o valoare între zero și cinci. Exemplul doi. Fața lui Pixi: o funcție care returnează o imagine, după foame și fericire. Exemplul trei. A hrănește. Exemplul patru. B se joacă, cu regula că Pixi refuză dacă este foarte flămând.
+
+Exemplul cinci. Timpul trece. Running time dă milisecundele de când a pornit placa. La fiecare patru secunde, foamea crește cu unu. De ce nu folosim sleep patru mii? Pentru că atunci placa nu ar mai vedea butoanele patru secunde.
+
+Exemplul șase. Pixi doarme: dacă lumina este sub un prag, arăți fața adormită. Exemplul șapte. Ecranul de stare: prima coloană arată foamea, ultima fericirea. Exemplul opt. Pixi Minim. Funcțiile doar citesc variabilele, deci nu au nevoie de global.
+
+Exemplul nouă. Pixi Complet. Funcția trece timpul schimbă foamea, fericirea și ultima măsurătoare, deci are global pentru toate trei. Pass înseamnă nu fac nimic. Ordinea contează: A și B se verifică înaintea lui A și B separat. Exemplul zece: idei pentru Pixi doi, de exemplu un nume la întâmplare.
+
+Greșeli frecvente. Pixi nu mai are foame: funcția pentru timp nu este chemată sau lipsește global. Foamea ajunge la minus unu sau la șapte: ai uitat limiteaza. Pixi nu răspunde la butoane: ai citit butonul de mai multe ori. Eroare la scroll: lipsește str. Doarme și în lumină: pragul este prea mare pentru sala ta. A și B hrănește: elif a and b trebuie să fie înaintea lui elif a.
+
+Proiectul de azi. Prietenul de pe placă.
+
+Minim înseamnă: foame, fericire, A hrănește, B se joacă. Complet înseamnă: minim, plus timp, somn, scuturare și ecran de stare. Dacă rămâi în urmă, salvează la Minim.
+
+Recapitulare. Un program cu stări ține lucrurile în variabile. Limiteaza ține valorile între limite. O funcție poate returna o imagine, iar una care schimbă variabile de afară are nevoie de global. Running time lasă programul atent. Pass înseamnă nu fac nimic. Cazul cel mai specific se verifică primul.
+
+Succes cu Pixi!

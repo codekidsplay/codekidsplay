@@ -1,0 +1,29 @@
+Lecția șapte. Mișcare, bila magică.
+
+Astăzi descoperi că placa simte cum o miști: o scuturi, o înclini, o ridici. Din ea facem o bilă magică, care răspunde la întrebări. Proiectul se numește Bila magică, Da sau Nu. Numele fișierului este: Prenume, linie jos, Nume, linie jos, M B unu, linie jos, L zero șapte.
+
+Obiectivul. La final folosești accelerometrul, senzorul de mișcare, și numere aleatorii, alese la întâmplare. Minim: scuturi placa și ea răspunde Da sau Nu, la întâmplare. Complet: minim, plus al treilea răspuns, Poate, și o înclinare spre stânga care pregătește o întrebare nouă.
+
+De ce contează. Telefonul tău își dă seama când îl răsucești și își întoarce ecranul. Jocurile simt când scuturi telecomanda. Toate folosesc un accelerometru. Iar când un joc alege ceva la întâmplare, un zar sau o carte, folosește numere aleatorii.
+
+Primul pas. Placa simte mișcarea. În micro:bit este un accelerometru, care măsoară mișcarea pe trei direcții: x, stânga și dreapta, y, față și spate, și z, sus și jos. Explorare de cinci minute: afișezi valorile și miști placa în toate felurile.
+
+Al doilea pas. Gesturile. Nu trebuie să citești cifre. MakeCode are blocul On shake, în categoria Input. Pe cuvântul shake apeși și vezi lista: scuturat, înclinat stânga, înclinat dreapta, logo sus, logo jos, ecran sus și altele.
+
+Al treilea pas. Numerele aleatorii. Un număr aleatoriu este ales la întâmplare, ca la zar. În Math găsești blocul Pick random. Cu Pick random zero to unu primești zero sau unu. Cu Pick random zero to doi primești zero, unu sau doi.
+
+Al patrulea pas, pentru Minim. Creezi variabila raspuns. În On shake: Set raspuns to Pick random zero to unu. Apoi If raspuns egal cu zero, arăți Da, bifa, altfel arăți Nu, crucea.
+
+Al cincilea pas, pentru Complet. Schimbi intervalul în zero to doi. Adaugi o a treia ramură, Else if raspuns egal cu unu, arăți un semn de întrebare, pentru Poate. Apoi, în blocul On tilt left, cureți ecranul, ca placa să fie gata de o întrebare nouă.
+
+Al șaselea pas. Cum verificăm că este cinstită? Experiment în grup: fiecare scutură de douăzeci de ori și notează câte Da și câte Nu au ieșit. Nu va fi exact zece și zece, dar nici douăzeci și zero.
+
+Greșeli frecvente. Nu răspunde când scuturi: în simulator apeși Shake, iar pe placă scuturarea trebuie să fie energică. Mereu același răspuns: ai pus Pick random zero to zero. Apare doar Da: compari cu un număr care nu apare. Poate nu apare niciodată: intervalul este încă zero to unu. Pe ecran rămâne răspunsul vechi: este normal, înclin-o spre stânga ca să cureți. Tilt left nu merge în simulator: folosește controlul de înclinare sau testează pe placă.
+
+Proiectul de azi. Bila magică, Da sau Nu.
+
+Minim înseamnă: scuturi și apare Da sau Nu. Complet înseamnă: minim, plus Poate și înclinarea care curăță ecranul. Dacă rămâi în urmă, salvează la Minim.
+
+Recapitulare. Accelerometrul simte mișcarea plăcii. On shake pornește când scuturi. Pick random zero to doi alege zero, unu sau doi. Else if adaugă o a treia variantă. Un program poate răspunde diferit la aceeași acțiune.
+
+Succes la bila ta magică.

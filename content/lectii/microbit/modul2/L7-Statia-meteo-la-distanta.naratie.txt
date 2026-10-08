@@ -1,0 +1,29 @@
+Lecția șapte. Stația meteo la distanță.
+
+Astăzi construiești un sistem din două plăci: stația stă afară, sau la fereastră, și măsoară, iar receptorul stă lângă tine și îți arată ce a aflat stația. Proiectul se numește Stația meteo la distanță. Numele fișierelor sunt: Prenume, linie jos, Nume, linie jos, M B doi, linie jos, L zero șapte, linie jos, statie, și același nume, cu receptor la sfârșit.
+
+Obiectivul. La final trimiți măsurători cu nume, de exemplu temp și lum, prin radio și le primești pe cealaltă placă. Minim: stația trimite temperatura și lumina, iar receptorul arată T la A și L la B. Complet: minim, plus o alertă când temperatura trece de un prag și mesajul fără semnal, dacă stația tace prea mult.
+
+De ce contează. Stațiile meteo adevărate stau pe un deal, iar prognoza ta o primești pe telefon. Între ele sunt trimiteri de date. Azi faci exact asta, în clasa ta: o placă măsoară, alta afișează. Se numește un sistem cu emițător și receptor.
+
+Primul pas. Scrisoarea cu etichetă. Dacă îți dau un singur număr, douăzeci și trei, nu știi dacă este temperatura, lumina sau câți pași am făcut. Dacă îți dau temp egal douăzeci și trei, înțelegi imediat. Radio poate trimite exact așa: un nume și o valoare.
+
+Al doilea pas. Lucrăm în perechi, cu două programe. Placa unu este stația, placa doi este receptorul. Cele două plăci au același grup radio.
+
+Al treilea pas, pentru Minim. Programul stației. La pornire alegi grupul. În Forever, la fiecare două secunde: Radio send value, cu numele temp și valoarea temperaturii, apoi Radio send value cu numele lum și valoarea luminii.
+
+Al patrulea pas, pentru Minim. Programul receptorului. Variabilele sunt temp, lum și ecran. În On radio received name value: dacă numele este temp, pui valoarea în temp, iar dacă este lum, o pui în lum. A și B schimbă doar variabila ecran. Forever arată T și temperatura sau L și lumina, după ecran.
+
+Al cincilea pas, pentru Complet. Adaugi variabilele prag, de exemplu douăzeci și opt, alerta, zero sau unu, și ultimul, momentul ultimului mesaj. Dacă temperatura trece de prag, alerta devine unu și placa pâlpâie. Dacă au trecut mai mult de șase secunde fără mesaj, receptorul arată somnul.
+
+Al șaselea pas. Cine este vinovat? Receptorul nu arată nimic. Verifici în ordine: stația este pornită și trimite? Grupurile sunt la fel? Numele din mesaj este scris la fel pe ambele plăci?
+
+Greșeli frecvente. Pe receptor rămâne zero: grupuri diferite sau numele nu se potrivesc. Alerta pâlpâie mereu: pragul este prea mic. Receptorul arată somnul chiar de la început: este normal, trec șase secunde fără mesaj. Nu poți compara textul: folosește comparația pentru text, din categoria Text. Ecranul se încurcă: butoanele desenează direct, lasă-le să schimbe doar variabila ecran. Temperatura nu se schimbă: stația trimite o dată la două secunde, așteaptă.
+
+Proiectul de azi. Stația meteo la distanță.
+
+Minim înseamnă: stația trimite, iar receptorul arată T sau L. Complet înseamnă: minim, plus alerta și fără semnal. Dacă rămâi în urmă, salvează la Minim.
+
+Recapitulare. Radio send value trimite un nume și o valoare. Receptorul verifică numele ca să știe ce a primit. Valorile primite se păstrează în variabile. Running time ajută să observăm când stația nu mai trimite. Un sistem are mai multe plăci cu roluri: emițător și receptor.
+
+Succes la stația ta meteo.

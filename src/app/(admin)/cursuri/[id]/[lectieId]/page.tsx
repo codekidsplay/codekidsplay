@@ -11,6 +11,8 @@ import AscultaScratchM4 from '@/components/AscultaScratchM4'
 import AscultaScratchM5 from '@/components/AscultaScratchM5'
 import AscultaScratchM6 from '@/components/AscultaScratchM6'
 import AscultaTinkercad from '@/components/AscultaTinkercad'
+import AscultaMicrobit from '@/components/AscultaMicrobit'
+import { microbitModulNumar, isMicrobitLesson } from '@/lib/microbit'
 import { TINKERCAD_CURS_ID, isTinkercadLesson, tinkercadModulNumar } from '@/lib/tinkercad'
 import { SCRATCH_M1_CURS_ID, SCRATCH_M1_MODUL_ID, isScratchM1Lesson } from '@/lib/scratchM1'
 import { SCRATCH_M2_CURS_ID, SCRATCH_M2_MODUL_ID, isScratchM2Lesson } from '@/lib/scratchM2'
@@ -105,6 +107,13 @@ export default async function ProfesorLectiePage({
           />
         ) : null}
 
+        {microbitModulNumar(modul.id) !== null && isMicrobitLesson(lectie.ordine) ? (
+          <AscultaMicrobit
+            modul={microbitModulNumar(modul.id) as number}
+            ordine={lectie.ordine}
+            accentColor={curs.culoare}
+          />
+        ) : null}
         {markdown ? (
           <LectieMarkdown markdown={markdown} accentColor={curs.culoare} />
         ) : (

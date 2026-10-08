@@ -1,0 +1,33 @@
+Lecția zece. Expoziția Coder și badge.
+
+Astăzi este ziua expoziției! Îți prezinți programul Python, explici cum funcționează, primești păreri de la colegi și primești insigna micro:bit Coder. Proiectul se numește Standul meu Coder. Numele fișierului este: Prenume, linie jos, Nume, linie jos, M P unu, linie jos, L zece.
+
+Obiectivul. La final îți prezinți programul clar, citești codul unui coleg și completezi Verificarea Modulului unu. Minim: proiectul rulează pe placă, iar fișa lui este completă. Complet: minim, plus prezentare de două minute și o îmbunătățire făcută după părerile colegilor.
+
+De ce contează. Programatorii nu doar scriu cod: îl explică, îl citesc pe al altora și îl îmbunătățesc. Azi faci toate trei.
+
+Primul pas. Alegem programul de expus: Pixi, Seiful, Mesagerul radio, Detectivul de cameră, Cufărul cu monede sau Biblioteca de desene. Verifici că rulează pe placă.
+
+Al doilea pas. Testul final, zece minute. Programul este pe placă. Ai testat fiecare buton și senzor. Ai testat cazurile ciudate, de exemplu ce se întâmplă dacă apeși de zece ori. Numele variabilelor sunt clare. Ai o copie de rezervă.
+
+Al treilea pas. Codul lizibil. Adaugi comentarii, care încep cu semnul diez, nume clare, rânduri goale între părți și constante scrise cu litere mari.
+
+Al patrulea pas. Fișa proiectului: titlul, ce face, cum se folosește, ce ai folosit și prenumele tău.
+
+Al cincilea pas. Prezentarea de două minute. Salut, ce face, cum funcționează, adică o idee-cheie, ce a fost greu, ce ai adăuga și întrebări. Exersezi în perechi.
+
+Al șaselea pas. Expoziția și Citește codul. Jumătate din clasă prezintă, jumătate vizitează, apoi schimbați rolurile. Vizitatorii încearcă proiectul, citesc codul și lasă un cartonaș cu un lucru bun, o parte din cod pe care au înțeles-o și o idee.
+
+Al șaptelea pas. Îmbunătățirea: alegi o idee din cartonașe și o faci în zece minute.
+
+Verificarea Modulului. Pe pagina lecției ai zece întrebări și un tabel de autoevaluare. Răspunzi fără să te uiți în lecții. Apoi primești insigna micro:bit Coder.
+
+Greșeli frecvente. Programul nu pornește la expoziție: reîncarcă-l înainte și ai o copie. Prezinți prea repede: respiră. Nu știi să explici codul: alege trei rânduri și explică-le. Nu știi un răspuns: nu știu încă, dar aș încerca, este un răspuns bun. Ai uitat să salvezi îmbunătățirea. Ai ascuns greșelile: arată și ce a fost greu.
+
+Proiectul de azi. Standul meu Coder.
+
+Minim înseamnă: program funcțional, fișă completă și cod cu comentarii. Complet înseamnă: minim, plus prezentarea, o îmbunătățire și verificarea.
+
+Recapitulare. Python pe micro:bit: imagini, butoane, variabile, senzori, radio, funcții. Codul bun este clar: comentarii, nume bune, rânduri goale. Prezentarea are ordine. Citim și îmbunătățim codul altora.
+
+Felicitări, ai terminat primul modul de Python!

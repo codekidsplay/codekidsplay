@@ -1,0 +1,25 @@
+Lecția șapte. Mesaje cu cod.
+
+Două plăci vorbesc prin radio, dar ca să se înțeleagă, trebuie să aibă o limbă comună. Astăzi inventezi un protocol: mesaje scurte, cu un cod în față, ca E două puncte doi, adică emoji numărul doi, sau OK două puncte doi, adică am primit. Proiectul se numește Mesaje cu cod. Numele fișierului este: Prenume, linie jos, Nume, linie jos, M P doi, linie jos, L zero șapte. Lucrăm în perechi.
+
+Obiectivul. La final construiești mesaje de forma tip, două puncte, valoare, le desfaci cu split, verifici că sunt corecte cu try și except și trimiți confirmări. Minim: două plăci trimit emoji-uri prin cod, de la zero la patru, și le afișează. Complet: minim, plus confirmare OK și temperatura trimisă la A și B.
+
+De ce contează. Radio trimite doar text. Ca două aparate să se înțeleagă, trebuie să fie de acord ce înseamnă fiecare mesaj. Un astfel de acord se numește protocol. Internetul și jocurile online folosesc protocoale. Fiecare pereche alege același număr de grup, diferit de al celorlalte perechi.
+
+Primul pas. Protocolul nostru. E două puncte doi înseamnă arată emoji-ul doi. OK două puncte doi înseamnă am primit. T două puncte douăzeci și trei înseamnă temperatura este douăzeci și trei.
+
+Exemplul unu. Construim un mesaj: tip, plus două puncte, plus str de valoare. Exemplul doi. Split taie textul la două puncte și dă o listă. Exemplul trei. Int face din text număr. Exemplul patru. Mesaje stricate: int de abc dă eroare. Cu try și except o prindem și programul continuă. None înseamnă nimic, nu este valoare.
+
+Exemplul cinci. Funcția parseaza desface un mesaj și returnează tip și valoare, sau None, None dacă mesajul este stricat. Exemplul șase. Emițătorul: A alege emoji-ul, B îl trimite. Exemplul șapte. Receptorul verifică tot: două părți, tipul este E, valoarea este număr între zero și patru. Orice mesaj în plus este ignorat. Radio receive dă None când nu a venit nimic.
+
+Exemplul opt. Același program pe ambele plăci. Exemplul nouă. Confirmarea OK: receptorul răspunde, dar răspunsul OK nu primește răspuns, altfel plăcile s-ar răspunde la nesfârșit. Exemplul zece. Mesaje cu cod Complet: A și B trimit temperatura, receptorul afișează emoji-ul și trimite OK, iar emițătorul arată bifa.
+
+Greșeli frecvente. Nu primești nimic: grupuri diferite sau lipsește radio on. Primești mesajele altora: prea multe perechi în același grup. Eroare la send: trimite doar text. Eroare la int: nu ai try. Plăcile își răspund la nesfârșit: și OK primește răspuns. None nu poate fi afișat direct.
+
+Proiectul de azi. Mesaje cu cod.
+
+Minim înseamnă: emoji trimis prin cod și afișat pe cealaltă placă. Complet înseamnă: minim, plus OK și temperatura. Dacă rămâi în urmă, salvează la Minim.
+
+Recapitulare. Un protocol este un acord despre ce înseamnă mesajele. Mesajul are forma tip, două puncte, valoare. Split desface textul, int face numărul. Try și except prind erorile. Receive poate da None. Confirmarea OK arată că mesajul a ajuns.
+
+Succes la protocolul tău.

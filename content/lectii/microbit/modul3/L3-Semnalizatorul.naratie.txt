@@ -1,0 +1,31 @@
+Lecția trei. Semnalizatorul.
+
+Astăzi placa ascultă de butoane, în Python. Facem un semnalizator de bicicletă: stânga, dreapta și avarii. Proiectul se numește Semnalizatorul. Numele fișierului este: Prenume, linie jos, Nume, linie jos, M P unu, linie jos, L zero trei.
+
+Obiectivul. La final citești butoanele cu is pressed și was pressed și iei decizii cu if, elif și else. Minim: cât ții apăsat A pâlpâie o săgeată spre stânga, cât ții B spre dreapta, iar cu A și B pâlpâie avariile. Complet: minim, plus semnalizatorul rămâne pornit după ce lași butonul.
+
+De ce contează. Bicicletele, mașinile și trotinetele au semnalizatoare. Ele citesc un comutator și decid ce să arate. Programul tău face la fel: citește o intrare, decide cu if și arată rezultatul. Aceste trei lucruri apar în aproape orice program.
+
+Primul pas. True și False. Un buton poate fi apăsat sau neapăsat. În Python spui True, adevărat, sau False, fals. Button A punct is pressed, cu paranteze, răspunde cu una dintre ele. Atenție la parantezele de la final: ele întreabă butonul.
+
+Al doilea pas. Condiția if. Scrii if, condiția, două puncte, iar sub ea, cu indentare, ce se întâmplă dacă este adevărată.
+
+Primul exemplu. If simplu: dacă butonul A este apăsat, arăți o săgeată. Al doilea. If și else: altfel, ecranul se golește. Al treilea. If, elif, else: elif înseamnă altfel dacă, deci poți verifica mai multe butoane.
+
+Al patrulea exemplu. Două butoane deodată. Cu and verifici că amândouă condițiile sunt adevărate. Cazul cu A și B se verifică primul.
+
+Al cincilea exemplu. Pâlpâirea. Un semnalizator pâlpâie: aprins, sleep, stins, sleep.
+
+Al șaselea exemplu. Is pressed întreabă este apăsat chiar acum. Was pressed întreabă a fost apăsat de la ultima întrebare. Al șaptelea: numărăm apăsările cu o variabilă. Al optulea: o variabilă poate ține și text, iar pentru comparare folosim două semne egal.
+
+Al nouălea exemplu, pentru Complet. Variabila directie ține minte ce semnalizator este pornit: stânga, dreapta sau nimic. La A o pui pe stânga, la B pe dreapta, iar la A și B pe nimic. Al zecelea: avariile, în varianta pâlpâitoare.
+
+Greșeli frecvente. Semnalizatorul este mereu pornit: ai scris is pressed fără paranteze. Eroare la if: lipsesc cele două puncte sau ai folosit un singur semn egal în loc de două. Pe A și B apare doar stânga: condiția cu and nu este prima. Nu se oprește: lipsește sleep sau ramura else.
+
+Proiectul de azi. Semnalizatorul.
+
+Minim înseamnă: stânga, dreapta și avarii cât ții apăsat. Complet înseamnă: minim, plus direcția păstrată în variabilă. Dacă rămâi în urmă, salvează la Minim.
+
+Recapitulare. Is pressed înseamnă apăsat acum, was pressed înseamnă apăsat de la ultima întrebare. If, elif, else aleg ce se întâmplă, iar Python se oprește la prima condiție adevărată. And cere ca ambele condiții să fie adevărate. Pentru comparare folosești două semne egal.
+
+Succes la semnalizator.

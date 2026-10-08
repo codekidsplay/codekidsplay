@@ -1,0 +1,29 @@
+Lecția zece. Insigna inteligentă și badge.
+
+Astăzi pui laolaltă tot ce ai învățat în Modulul unu, o prezinți colegilor și primești insigna micro:bit Starter. Proiectul se numește Insigna inteligentă. Numele fișierului este: Prenume, linie jos, Nume, linie jos, M B unu, linie jos, L zece.
+
+Obiectivul. La final ai o insignă micro:bit care îți spune numele, arată temperatura, alege răspunsuri la întâmplare și numără de câte ori ai apăsat un buton. Minim: numele la pornire, A arată o față veselă, B arată temperatura, iar scuturarea dă Da sau Nu. Complet: minim, plus A și B împreună arată lumina, plus un contor apasari care la a zecea apăsare arată o inimă.
+
+De ce contează. Un proiect adevărat nu are un singur truc. Folosește mai multe lucruri deodată: butoane, variabile, decizii și senzori. Azi vezi că le știi pe toate și că le poți combina.
+
+Primul pas. Planul pe foaie. Completezi un tabel: ce face insigna ta la fiecare gest. Pornire, A, B, A și B, scuturare.
+
+Al doilea pas, pentru Minim. Proiect nou, cu variabila raspuns. În On start: Show string cu numele tău. La A: față veselă. La B: derulezi temperatura. La scuturare: alegi zero sau unu, ca la bila magică, și arăți Da sau Nu.
+
+Al treilea pas, pentru Complet. Creezi variabila apasari. La pornire o pui pe zero. La A adaugi unu, arăți fața veselă și, dacă apasari este zece, arăți inima și pui apasari pe zero. La A și B împreună arăți lumina, ca număr.
+
+Al patrulea pas. Testul insignei. Dai insigna unui coleg și îl lași să testeze toate gesturile. El bifează: numele se vede clar, A merge, B merge, scuturarea merge, Complet merge.
+
+Al cincilea pas. Prezentarea, un minut. Spui, în ordine: cum se numește proiectul și ce face, cum funcționează, ce a fost greu și ce ai adăuga. La final primești o părere de la un coleg.
+
+Verificarea Modulului. Pe pagina lecției ai zece întrebări și un tabel de autoevaluare. Răspunzi fără să te uiți în lecții. Apoi primești insigna micro:bit Starter.
+
+Greșeli frecvente. Insigna nu mai pornește: ai blocuri neconectate pe masă, verifică ce este gri. A și B nu merge: apeși butoanele simultan. Numele se vede ciudat: ai pus diacritice. Inima nu apare la zece: Change apasari este după If, nu înainte. Programul nu este pe placă: ai uitat Download după ultima modificare.
+
+Proiectul de azi. Insigna inteligentă.
+
+Minim înseamnă: nume, A, B și scuturare funcționale. Complet înseamnă: minim, plus lumina la A și B și contorul. Dacă rămâi în urmă, salvează la Minim.
+
+Recapitulare. Ai învățat LED-uri, butoane, variabile, decizii, bucle și senzori. Un proiect bun combină mai multe lucruri. Prezentarea spune ce face, cum, ce a fost greu și ce urmează. Testezi mereu pe placa adevărată.
+
+Felicitări pentru primul modul micro:bit.

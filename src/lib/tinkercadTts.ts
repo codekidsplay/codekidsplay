@@ -32,7 +32,7 @@ function hashText(modul: number, lesson: number, text: string) {
     .slice(0, 16)
 }
 
-async function getCachedUrl(dir: string, hash: string): Promise<string | null> {
+export async function getCachedUrl(dir: string, hash: string): Promise<string | null> {
   if (!process.env.BLOB_READ_WRITE_TOKEN) return null
   for (const ext of ['mp3', 'wav'] as const) {
     const pathname = `${dir}/${hash}.${ext}`
@@ -46,7 +46,7 @@ async function getCachedUrl(dir: string, hash: string): Promise<string | null> {
   return null
 }
 
-async function saveAudio(
+export async function saveAudio(
   dir: string,
   hash: string,
   bytes: Uint8Array,
@@ -95,7 +95,7 @@ export function splitForTts(text: string, max = MAX_CHARS): string[] {
   return chunks
 }
 
-async function synthesize(text: string): Promise<{ bytes: Uint8Array; mediaType: string }> {
+export async function synthesize(text: string): Promise<{ bytes: Uint8Array; mediaType: string }> {
   const useGoogle = Boolean(process.env.GOOGLE_GENERATIVE_AI_API_KEY)
   if (useGoogle) {
     const r = await generateSpeech({

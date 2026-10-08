@@ -1,0 +1,37 @@
+Lecția unu. De la blocuri la Python.
+
+Până acum ai construit programe din blocuri. Astăzi le scrii cu litere, în limbajul Python, pe aceeași placă micro:bit. Proiectul se numește Salutul meu în cod. Numele fișierului este: Prenume, linie jos, Nume, linie jos, M P unu, linie jos, L zero unu.
+
+Obiectivul. La final scrii și rulezi primele programe Python pe placă și știi ce înseamnă import, display, sleep și while True. Minim: un program care derulează numele tău, apoi arată o inimă. Complet: minim, plus inima bate în buclă.
+
+De ce contează. Blocurile sunt ca piesele de Lego: ușor de pus laolaltă. Python este limba pe care o vorbesc programatorii adevărați: o scrii cu tastatura și poți face lucruri mult mai mari. Același limbaj se folosește pentru site-uri, jocuri, roboți și inteligență artificială.
+
+Primul pas. Blocuri și Python, aceleași idei. Fiecare bloc din MakeCode are un frate în Python. Show string devine display punct scroll, Show icon devine display punct show, Pause devine sleep, iar Forever devine while True.
+
+Al doilea pas. Editorul. Deschizi python punct microbit punct org, creezi un proiect nou și îl denumești cu numele din fișier.
+
+Al treilea pas. Primul program. Pe primul rând scrii: from microbit import steluță. Asta aduce în program toate uneltele plăcii. Pe al doilea rând: display punct scroll, paranteză, ghilimele, Salut, semnul exclamării, ghilimele, paranteză. Apeși Send to micro:bit și textul se derulează pe LED-uri.
+
+Al patrulea pas. O imagine. Display punct show, paranteză, Image punct HEART, cu litere mari. Apare inima.
+
+Al cincilea pas. Pauza. Sleep, paranteză, o mie, paranteză, înseamnă o secundă, ca la blocuri, în milisecunde.
+
+Al șaselea pas. Bucla while True, urmată de două puncte. Tot ce vrei să se repete se scrie sub ea, mai la dreapta, cu patru spații. Asta se numește indentare, iar în Python este foarte importantă.
+
+Al șaptelea pas. Comentariile. Un comentariu începe cu semnul diez. Python îl ignoră: este doar o notiță pentru oameni.
+
+Al optulea pas. Numere. Display punct scroll cu str de doi plus trei afișează cinci. Funcția str transformă numărul în text, pentru că scroll vrea text.
+
+Al nouălea pas. Mai multe imagini una după alta, cu sleep între ele, ca la animațiile din blocuri.
+
+Al zecelea pas. Erorile sunt normale. Dacă greșești o literă, placa nu se supără: afișează o față tristă și derulează un mesaj cu numărul liniei. Citești mesajul, repari, trimiți din nou.
+
+Greșeli frecvente. Nu găsește display: ai uitat primul rând sau ai scris cu literă mare. Textul nu derulează: ai uitat ghilimelele. Eroare la while True: ai uitat cele două puncte de la final. Eroare de indentare: rândurile din buclă nu sunt aliniate la fel. Python face diferența între litere mari și mici.
+
+Proiectul de azi. Salutul meu în cod.
+
+Minim înseamnă: numele derulat și o inimă. Complet înseamnă: minim, plus inima care bate în buclă. Dacă rămâi în urmă, salvează la Minim. Ești la Minim când un coleg citește numele tău pe LED-uri.
+
+Recapitulare. Python este text: o instrucțiune pe rând, de sus în jos. From microbit import steluță se scrie mereu primul. Display punct scroll derulează text, iar display punct show arată o imagine. Sleep o mie înseamnă o secundă. While True repetă mereu.
+
+Succes la primul tău program Python.

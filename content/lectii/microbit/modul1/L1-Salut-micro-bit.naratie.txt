@@ -1,0 +1,27 @@
+Lecția unu. Salut, micro:bit!
+
+Astăzi faci cunoștință cu placa micro:bit, deschizi editorul MakeCode și îți trimiți primul program pe placă. Proiectul se numește Inima mea. Numele fișierului este: Prenume, linie jos, Nume, linie jos, M B unu, linie jos, L zero unu.
+
+Obiectivul. La final știi ce are placa, ai făcut un program cu blocuri și îl vezi rulând pe placa adevărată. Minim: o inimă care se vede pe LED-uri, mai întâi în simulator, apoi pe placă. Complet: minim, plus numele tău, care se derulează pe LED-uri înainte de inimă.
+
+De ce contează. Micro:bit este un calculator mic cât o carte de joc. Programele tale nu rămân doar pe ecran: aprind lumini, simt mișcarea și răspund la butoane. Azi înveți drumul de bază. Faci un program, îl trimiți pe placă și îl vezi rulând. Îl vom folosi la fiecare lecție.
+
+Primul pas. Cunoaștem placa. O ții cu LED-urile spre tine. Ecranul are douăzeci și cinci de luminițe roșii, așezate cinci pe cinci. Mai sunt două butoane, A în stânga și B în dreapta, apoi pinii, de jos, și senzorii, care simt lumina, mișcarea și temperatura.
+
+Al doilea pas. Deschidem editorul. Intri pe makecode, punct, microbit, punct, org. Apeși New Project, adică Proiect nou. Scrii numele proiectului și apeși Create.
+
+Al treilea pas, pentru Minim. Apeși categoria Basic. Tragi blocul Show icon și îl pui înăuntrul blocului On start. Blocurile se potrivesc ca piesele de Lego. Dacă ai făcut bine, blocul se lipește. Din lista de iconițe alegi inima. Pe ecranul din simulator, inima apare imediat.
+
+Al patrulea pas. Trimitem programul pe placă. Conectezi placa la calculator cu cablul micro USB, un cablu care știe și să transmită date. Placa apare ca o unitate numită MICROBIT. Ai două metode. Prima, conectare directă, în Chrome sau Edge: apeși Download, alegi placa și programul pleacă singur. A doua: apeși Download, se salvează un fișier cu terminația punct hex, iar tu îl tragi peste unitatea MICROBIT. Așteaptă până se oprește luminița galbenă de pe placă. Apoi inima apare pe LED-uri. Dacă vrei s-o vezi din nou, apeși butonul Reset din spate.
+
+Al cincilea pas, pentru Complet. Din Basic tragi Show string și îl pui deasupra lui Show icon, tot în On start. În bloc ștergi cuvântul Hello și scrii prenumele tău. Fără diacritice, pentru că LED-urile nu știu literele cu semne. Scrii Ana, nu Ană. Pe placă, literele trec una după alta, apoi rămâne inima aprinsă.
+
+Greșeli frecvente. Nu se întâmplă nimic în simulator: blocul este lăsat singur, nu este lipit de On start. Textul are semne ciudate: ai scris diacritice. Nu vezi unitatea MICROBIT: cablul poate fi doar de încărcat, încearcă altul. Ai apăsat Download, dar placa nu s-a schimbat: ai uitat să tragi fișierul hex pe unitatea MICROBIT, sau lumina galbenă nu a terminat de clipit. Inima apare și dispare repede: ai pus blocul în Forever, fără pauză. Ai șters un bloc din greșeală: apeși Control și Z, iar pe Mac Command și Z.
+
+Proiectul de azi. Inima mea.
+
+Minim înseamnă: o inimă pe LED-uri, în simulator și pe placă. Complet înseamnă: minim, plus numele tău care se derulează înainte de inimă. Dacă rămâi în urmă, salvează la Minim. Ești la Minim când un coleg privește placa și spune: e o inimă, fără explicații.
+
+Recapitulare. Micro:bit are douăzeci și cinci de LED-uri, două butoane, A și B, pini și senzori. Programul se face din blocuri, în MakeCode. On start rulează o singură dată, la pornire. Download trimite programul pe placă. Reset pornește programul de la început.
+
+Succes la prima ta inimă pe micro:bit.

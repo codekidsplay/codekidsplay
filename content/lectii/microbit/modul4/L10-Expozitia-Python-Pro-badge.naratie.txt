@@ -1,0 +1,31 @@
+Lecția zece. Expoziția Python Pro și badge.
+
+Astăzi este ziua expoziției finale! Îți prezinți proiectul, explici o parte din cod, primești păreri și primești insigna micro:bit Python Pro. Proiectul se numește Standul meu Python Pro. Numele fișierului este: Prenume, linie jos, Nume, linie jos, M P doi, linie jos, L zece.
+
+Obiectivul. La final îți prezinți proiectul clar, explici trei rânduri de cod și completezi Verificarea Modulului doi. Minim: proiectul rulează pe placă, iar fișa lui este completă. Complet: minim, plus prezentare de două minute și o îmbunătățire făcută după părerile colegilor.
+
+De ce contează. Un proiect devine real abia când îl arăți altora. Cei mai buni programatori explică ce au făcut, ascultă păreri și îmbunătățesc.
+
+Primul pas. Alegi un proiect: Cutia Exploratorului, Labirintul înclinat, Pianul de buzunar, Mesaje cu cod, Recordul păstrat, Busola, Ploaia de pixeli sau Panoul de misiuni. Verifici că rulează pe placă, iar dacă folosește radio, pe două plăci.
+
+Al doilea pas. Testul final, zece minute. Programul este pe placă. Ai testat fiecare buton, senzor și meniu. Ai testat cazurile ciudate, de exemplu ce se întâmplă dacă fișierul lipsește. La radio, plăcile sunt în același grup, nefolosit de alte perechi. Ai o copie și un plan B.
+
+Al treilea pas. Codul curat: comentarii, nume clare, funcții mici cu un singur rol și constante cu litere mari.
+
+Al patrulea pas. Fișa proiectului: titlul, ce face, cum se folosește, ce ai folosit și prenumele tău.
+
+Al cincilea pas. Prezentarea de două minute: salut, ce face, trei rânduri de cod explicate, ce a fost greu, ce ai adăuga și întrebări. Exersezi în perechi.
+
+Al șaselea pas. Expoziția. Jumătate din clasă prezintă, jumătate vizitează, apoi schimbați rolurile. Vizitatorii încearcă proiectul, citesc o parte din cod și lasă un cartonaș. Al șaptelea pas. Îmbunătățirea, în zece minute.
+
+Verificarea Modulului. Pe pagina lecției ai zece întrebări și un tabel de autoevaluare: despre procent, range, liste, note, busolă, hărți, split, try și except, fișiere și break. Răspunzi fără să te uiți în lecții. Apoi primești insigna micro:bit Python Pro.
+
+Greșeli frecvente. Proiectul nu pornește la expoziție: reîncarcă-l înainte. Radio nu merge în sală: prea multe perechi în același grup. Recordul s-a șters: ai reîncărcat programul, folosește RESET. Prezinți prea repede: respiră. Nu știi să explici codul: alege trei rânduri. Nu știi un răspuns: nu știu încă, dar aș încerca.
+
+Proiectul de azi. Standul meu Python Pro.
+
+Minim înseamnă: proiect funcțional, fișă completă și cod cu comentarii. Complet înseamnă: minim, plus prezentarea, o îmbunătățire și verificarea.
+
+Recapitulare. Modulul doi: meniuri, liste, bucle, sunet, busolă, hărți, radio cu cod și fișiere. Un program mare înseamnă funcții mici, testate pe rând. Datele importante se salvează în fișier. Prezentarea spune ce face, cum merge, ce a fost greu și ce adaugi.
+
+Felicitări, ai terminat cursul micro:bit Python!

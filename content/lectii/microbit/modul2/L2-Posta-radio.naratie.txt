@@ -1,0 +1,31 @@
+Lecția doi. Poșta radio.
+
+Astăzi plăcile vorbesc între ele, fără cablu! Faci o poștă radio: apeși un buton pe placa ta și pe placa colegului apare un mesaj. Proiectul se numește Poșta radio. Numele fișierului este: Prenume, linie jos, Nume, linie jos, M B doi, linie jos, L zero doi. Lucrăm în perechi.
+
+Obiectivul. La final trimiți și primești mesaje între două plăci și știi ce este un grup radio. Minim: A trimite codul unu, față veselă, B trimite codul doi, față tristă, iar placa colegului arată poza potrivită. Complet: minim, plus A și B trimit un text, Salut, iar la pornire placa îți arată grupul ales.
+
+De ce contează. Walkie-talkie-urile, telecomenzile jucăriilor și cheia mașinii vorbesc prin radio. Fiecare placă micro:bit are în ea un mic emițător și un receptor radio. De acum, proiectele tale pot lucra în echipă, pe mai multe plăci.
+
+Primul pas. Jocul Mesageri. Clasa se împarte în grupuri. Un copil trimite un mesaj de hârtie, dar doar colegii din grupul lui îl primesc. La radio, la fel: placa primește doar mesajele din grupul ei. Cu numere putem spune lucruri: unu înseamnă bucurie, doi înseamnă tristețe. Acesta este dicționarul de coduri.
+
+Al doilea pas. Blocurile radio. În categoria Radio găsești Radio set group, care alege grupul, un număr de la zero la două sute cincizeci și cinci. Ambele plăci trebuie să aibă același grup. Mai găsești Radio send number, care trimite, și On radio received, care primește.
+
+Al treilea pas. Programul este același pe ambele plăci: fiecare poate trimite și primi. Alegeți împreună un număr de grup. În On start: Radio set group.
+
+Al patrulea pas, pentru Minim. La A: Radio send number unu. La B: Radio send number doi.
+
+Al cincilea pas, pentru Minim. În On radio received, cu numărul primit: dacă receivedNumber este unu, arăți fața veselă. Dacă este doi, arăți fața tristă.
+
+Al șaselea pas, pentru Complet. Creezi variabila grupa. La pornire o setezi și o arăți. Pentru A și B împreună trimiți Radio send string, Salut. Primești textul în On radio received string și îl arăți.
+
+Al șaptelea pas. Experiment: ce se aude în grupuri? Două perechi vecine aleg același grup. Apeși A pe o placă și vezi pe câte plăci apare mesajul. Apoi schimbați una dintre perechi pe alt grup. Regula de aur: radio nu este secret. Nu trimitem nume, adrese sau telefoane.
+
+Greșeli frecvente. Nu primești nimic: grupuri diferite. Primești mesajele altor perechi: doi colegi au același grup. Merge doar într-o direcție: programul este descărcat doar pe o placă. Placa este prea departe: raza este de câțiva metri, iar pereții o scad. Apare tristețe la unu și bucurie la doi: ai inversat codurile. Textul nu apare: textul se primește în receivedString, nu în receivedNumber.
+
+Proiectul de azi. Poșta radio.
+
+Minim înseamnă: A și B trimit coduri, iar cealaltă placă arată poza. Complet înseamnă: minim, plus textul Salut și grupul afișat. Dacă rămâi în urmă, salvează la Minim.
+
+Recapitulare. Fiecare micro:bit are radio încorporat. Plăcile vorbesc doar în același grup, de la zero la două sute cincizeci și cinci. Radio send number trimite, On radio received primește. Cu coduri putem spune multe lucruri. Radio nu este secret, iar raza este mică.
+
+Succes la poșta ta.

@@ -1,0 +1,29 @@
+Lecția unu. Panoul de misiuni.
+
+Începem Modulul doi cu o provocare: un program mai mare, cu un meniu și mai multe misiuni. Alegi cu A misiunea, o pornești cu B. Proiectul se numește Panoul de misiuni. Numele fișierului este: Prenume, linie jos, Nume, linie jos, M P doi, linie jos, L zero unu.
+
+Obiectivul. La final știi să organizezi un program în părți, constante, funcții și buclă principală, și să faci un meniu. Minim: panou cu trei misiuni, lumină, temperatură și inimă, A alege, B pornește. Complet: minim, plus a patra misiune, nivela, și un contor de misiuni făcute, afișat la A și B.
+
+De ce contează. Programele mici încap pe un ecran. Cele mari au nevoie de ordine. Dacă fiecare misiune este o funcție, poți adăuga una nouă fără să strici restul. Așa lucrează programatorii adevărați.
+
+Primul pas. Un program cu ordine, de sus în jos: importurile, constantele, variabilele, funcțiile, pornirea și bucla principală. Cine citește programul știe unde să caute fiecare lucru.
+
+Exemplul unu. Constantele. O constantă este o valoare care nu se schimbă și se scrie cu litere mari, de exemplu NR MISIUNI. Dacă vrei patru misiuni, schimbi un singur loc.
+
+Exemplul doi. Operatorul procent. A procent b dă restul împărțirii. Șapte procent trei dă unu, iar șase procent trei dă zero.
+
+Exemplul trei. Meniul care se învârte. Mod egal, mod plus unu, procent NR MISIUNI. După ultima misiune revii la prima. Pe ecran afișezi mod plus unu.
+
+Exemplul patru. Misiunea Lumină: un grafic cu rânduri aprinse, după lumină împărțită la cincizeci și unu. Durează trei secunde. Exemplul cinci. Misiunea Temperatură. Exemplul șase. Misiunea Inimă, de trei ori. Exemplul șapte. Panoul Minim: o funcție, porneste, alege misiunea după număr.
+
+Exemplul opt. Misiunea Nivela: placa este dreaptă dacă nu este înclinată nici pe x, nici pe y. Abs scoate semnul minus. Exemplul nouă. Contorul de misiuni: funcția schimbă o variabilă de afară, deci are global. Dăm funcția ca unealtă, fără paranteze, iar ruleaza o apelează. Exemplul zece. Panoul Complet: A urmează, B pornește, A și B arată câte misiuni ai făcut. Cazul cu A și B se verifică primul.
+
+Greșeli frecvente. Meniul trece de trei: ai uitat procent NR MISIUNI. Misiunea pornește de două ori: citești B de mai multe ori. Contorul rămâne zero: lipsește global. Nu afișează numărul: folosește str. Misiunea nu pornește: numerele din porneste încep de la zero. Lumina nu arată nimic: pune placa lângă o lampă.
+
+Proiectul de azi. Panoul de misiuni.
+
+Minim înseamnă: trei misiuni, A alege, B pornește. Complet înseamnă: minim, plus nivela și contorul. Dacă rămâi în urmă, salvează la Minim.
+
+Recapitulare. Un program mare are ordine. Constantele se scriu cu litere mari. Procentul ține meniul în cerc. Fiecare misiune este o funcție. O funcție care schimbă o variabilă de afară are global.
+
+Succes la panou.

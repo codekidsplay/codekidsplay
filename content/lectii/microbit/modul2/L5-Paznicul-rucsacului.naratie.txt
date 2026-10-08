@@ -1,0 +1,31 @@
+Lecția cinci. Paznicul rucsacului.
+
+Astăzi placa devine paznic: o pui în rucsac, o armezi, iar dacă cineva mișcă rucsacul, ea dă alarma până o oprești tu. Proiectul se numește Paznicul rucsacului. Numele fișierului este: Prenume, linie jos, Nume, linie jos, M B doi, linie jos, L zero cinci.
+
+Obiectivul. La final construiești un program cu stări, dezarmat, armat și alarmă, și folosești bucla While. Minim: A armează paznicul după o numărătoare trei, doi, unu. Dacă scuturi placa, alarma pâlpâie de zece ori. Complet: minim, plus alarma durează până o oprești cu A și B, iar A nu mai poate arma în timpul alarmei.
+
+De ce contează. Alarma de la mașină, de la bancă și de pe bicicletă funcționează la fel: un senzor observă, iar programul hotărăște când să sune. Paznicul tău are trei stări și trece de la una la alta. Așa gândesc inginerii orice aparat de siguranță.
+
+Primul pas. Jocul Statuile. Clasa mișcă. La stop, toți devin statui. Dacă se mișcă cineva, este prins. Au existat trei stări: mișcare liberă, statuie și prins. Paznicul are tot trei stări.
+
+Al doilea pas. Schema stărilor. Dezarmat: placa doarme, la pornire sau după A și B. Armat: arată un ochi, după numărătoare. Alarmă: pâlpâie, după scuturare cât timp este armat.
+
+Al treilea pas. Proiect nou, cu variabilele armat și alarma. În On start le pui pe zero și arăți somnul.
+
+Al patrulea pas, pentru Minim. Ai nevoie de timp să pui placa în rucsac, deci facem numărătoarea. În A: arăți trei, doi, unu, cu pauze, apoi Set armat to unu și arăți ochiul.
+
+Al cincilea pas, pentru Minim. În On shake: dacă armat este unu, atunci Set armat to zero și Repeat de zece ori: aprinzi toate LED-urile, pauză, cureți ecranul, pauză.
+
+Al șaselea pas, pentru Complet. Vrem ca alarma să sune până apeși A și B. Folosim While, o buclă care repetă atâta timp cât o condiție este adevărată. Repeat repetă de un număr fix de ori, While repetă cât timp alarma este unu. La scuturare: Set alarma to unu, Set armat to zero, apoi While alarma egal cu unu, pâlpâi. În A și B: Set alarma to zero, arăți somnul. În A, armezi doar dacă alarma este zero.
+
+Al șaptelea pas. Ce se poate strica? Încerci fiecare situație și bifezi ce se întâmplă. Scuturi placa înainte s-o armezi: nu se întâmplă nimic. Apeși A în timpul alarmei: nu se întâmplă nimic. Apeși A și B: alarma se oprește.
+
+Greșeli frecvente. Alarma nu se oprește niciodată: A și B nu pune alarma pe zero. Scuturarea nu face nimic: ai uitat să armezi. Pâlpâie o singură dată: blocurile nu sunt toate în interiorul lui While. Alarma pornește de două ori: lipsește Set armat to zero. Pe ecran rămâne ochiul: lipsește somnul. Ecranul rămâne aprins: după Show leds trebuie Clear screen.
+
+Proiectul de azi. Paznicul rucsacului.
+
+Minim înseamnă: numărătoare, armat, alarmă scurtă la scuturare. Complet înseamnă: minim, plus alarma până la A și B. Dacă rămâi în urmă, salvează la Minim.
+
+Recapitulare. Un aparat de siguranță are stări: dezarmat, armat, alarmă. Variabilele armat și alarma țin minte starea. Repeat zece ori repetă de zece ori, While alarma egal cu unu repetă cât timp este adevărat. Setăm starea imediat, ca să nu pornim alarma de două ori. Testăm și situațiile ciudate.
+
+Succes la paznicul tău.
