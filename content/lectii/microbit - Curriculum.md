@@ -45,30 +45,30 @@
 | # | Titlu | Focus |
 |---|--------|--------|
 | 1 | De la blocuri la Python | Primul script |
-| 2 | Display în Python | scroll / Image |
-| 3 | Butoane în Python | loop + if |
-| 4 | Variabile + if | Logică text |
-| 5 | Senzori în Python | API |
-| 6 | Radio în Python | 2 plăci |
-| 7 | Funcții (def) | Organizare |
-| 8 | Port M1/M2 → Python | Traducere |
-| 9 | Proiect final Coder | Show-ready |
-| 10 | Showcase + badge | Coder → Python/Arduino CKP |
+| 2 | Galeria de imagini | Image, set_pixel, for |
+| 3 | Semnalizatorul | Butoane, if/elif |
+| 4 | Cufărul cu monede | Variabile, comparații |
+| 5 | Detectivul de cameră | Senzori, gesturi |
+| 6 | Mesagerul radio | Radio în Python |
+| 7 | Biblioteca de desene | Funcții, parametri, return |
+| 8 | Traducător de blocuri | Portare, global, random |
+| 9 | Prietenul de pe placă | Proiect final Coder |
+| 10 | Expoziția Coder + badge | Prezentare + Verificare |
 
 ## Modul 4 — Proiecte Python (Modul 2 în cursul Python, 10+) · badge: micro:bit Python Pro
 
 | # | Titlu | Focus |
 |---|--------|--------|
-| 1 | Recap Python + misiune | Prototip |
-| 2 | Liste și șiruri de date | list, index, len |
-| 3 | Bucle for și while | Repetări pe placă |
-| 4 | Muzică și sunete (V2) | music, speaker |
-| 5 | Proiect: Busola digitală | compass, direcții |
-| 6 | Proiect: Labirint înclinat pe LED | accelerometru, liste |
-| 7 | Radio avansat | Mesaje cu cod |
-| 8 | Fișiere pe placă | open, write, read |
-| 9 | Proiect final Python Pro | Show-ready |
-| 10 | Showcase + badge | Python Pro |
+| 1 | Panoul de misiuni | Meniu, constante, % |
+| 2 | Cartea de mesaje | Liste |
+| 3 | Ploaia de pixeli | Bucle for/while |
+| 4 | Pianul de buzunar | music (V2/buzzer) |
+| 5 | Busola digitală | compass, direcții |
+| 6 | Labirintul înclinat | Accelerometru, hărți text |
+| 7 | Mesaje cu cod | Radio, split, try/except |
+| 8 | Recordul păstrat | Fișiere |
+| 9 | Cutia Exploratorului | Proiect final Python Pro |
+| 10 | Expoziția Python Pro + badge | Prezentare + Verificare |
 
 ---
 

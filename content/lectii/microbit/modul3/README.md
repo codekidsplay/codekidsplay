@@ -1,22 +1,27 @@
-# micro:bit Modul 3 — Python (text)
+# Modul 1 (micro:bit Python) — Python pe micro:bit
 
-**Code Maker Club** · ~2 ore / lecție · Badge: **micro:bit Coder**  
-**Prerequisit:** Modul 1–2 (blocuri)  
-**Editor:** MakeCode Python sau [python.microbit.org](https://python.microbit.org)
+**Badge:** micro:bit Coder  
+**Vârstă:** 10+ ani · **Editor:** [python.microbit.org](https://python.microbit.org) (MicroPython)  
+**Prerequisit:** recomandat cursul `micro:bit` cu blocuri (Modulele 1–2) sau cunoștințe de bază despre placă  
+**Focus:** primul script, imagini, butoane, variabile, senzori, radio, funcții, proiect final
 
-| # | Fișier | Focus |
-|---|--------|--------|
-| 1 | [L1-De-la-blocuri-la-Python.md](./L1-De-la-blocuri-la-Python.md) | Trecerea la text |
-| 2 | [L2-Display-Python.md](./L2-Display-Python.md) | Display |
-| 3 | [L3-Butoane-Python.md](./L3-Butoane-Python.md) | Butoane |
-| 4 | [L4-Variabile-if.md](./L4-Variabile-if.md) | if / variabile |
-| 5 | [L5-Senzori-Python.md](./L5-Senzori-Python.md) | Senzori |
-| 6 | [L6-Radio-Python.md](./L6-Radio-Python.md) | Radio |
-| 7 | [L7-Functii.md](./L7-Functii.md) | def |
-| 8 | [L8-Proiect-port.md](./L8-Proiect-port.md) | Port M1/M2 → Python |
-| 9 | [L9-Proiect-final-Python.md](./L9-Proiect-final-Python.md) | Proiect final |
-| 10 | [L10-Showcase-badge.md](./L10-Showcase-badge.md) | Badge Coder |
+> În site, acest modul apare ca **Modulul 1** din cursul **micro:bit Python** (în folderul `modul3`, pentru continuitate cu cursul cu blocuri).
 
-**Punte:** spre cursul Python CKP sau Arduino.
+| # | Lecție | Obiectiv | Pași principali (nucleu) |
+|---|--------|----------|---------------------------|
+| 1 | De la blocuri la Python | Primul script pe placă | `from microbit import *`; `display.scroll`; `display.show`; `sleep`; `while True` |
+| 2 | Galeria de imagini | Imagini și pixeli | `Image.…`; `Image("…")`; `display.set_pixel`; liste de imagini |
+| 3 | Semnalizatorul | Butoane | `button_a.is_pressed()`; `if / elif / else`; `was_pressed()` |
+| 4 | Cufărul cu monede | Variabile și condiții | variabile; `+=`; comparații; `and`; `str()` |
+| 5 | Detectivul de cameră | Senzori | `temperature()`; `display.read_light_level()`; accelerometru; gesturi |
+| 6 | Mesagerul radio | Radio în Python | `import radio`; `radio.config`; `radio.send`; `radio.receive` |
+| 7 | Biblioteca de desene | Funcții | `def`; parametri; `return` |
+| 8 | Traducător de blocuri | Portare | seiful din blocuri → Python; stare; `while True` |
+| 9 | Prietenul de pe placă | Proiect final Coder | animalul virtual cu stări, senzori și butoane |
+| 10 | Expoziția Coder + badge | Prezentare + verificare | demo; Verificarea Modulului 1; badge **micro:bit Coder** |
 
-→ [modul1](../modul1/) · [modul2](../modul2/)
+**Salvare sugerată:** `Prenume_Nume_MP1_L01` … `MP1_L10`
+
+**Material:** câte o placă micro:bit (V1 sau V2) pe copil, cablu USB de date, calculator cu Chrome sau Edge. Pentru L6 și L8: **perechi** de plăci. Unele lecții folosesc funcții doar pentru **V2** (sunet, logo tactil); sunt marcate.
+
+**Regulă de scriere:** fără diacritice în textele afișate pe LED-uri.
