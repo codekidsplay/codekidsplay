@@ -31,6 +31,7 @@ const MODUL_FOLDER: Record<string, string> = {
   m21: 'microbit/modul1',
   m22: 'microbit/modul2',
   m23: 'microbit/modul3',
+  m41: 'microbit/modul4',
   m24: 'roblox/modul1',
   m25: 'roblox/modul2',
   m26: 'roblox/modul3',
