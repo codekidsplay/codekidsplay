@@ -1,0 +1,25 @@
+Lecția nouă din Modulul patru. Proiect final: construcția.
+
+Astăzi îți construiești proiectul final, cel pe care l-ai planificat în prima lecție a modulului. Nu mai este o lecție cu pași: ești inventator, iar eu sunt doar ghidul. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A patru, linie jos, L zero nouă.
+
+Obiectivul. La final proiectul tău funcționează, cel puțin în varianta de bază, și are un program organizat. Minim: circuitul complet și programul care face funcția principală. Complet: minim, plus toate cerințele din listă bifate și un plan de teste completat.
+
+De ce contează. Proiectul final arată ce știi să faci singur. Nu trebuie să fie uriaș, ci funcțional, organizat și explicat.
+
+Primul pas. Cerințele proiectului. Cel puțin două intrări, adică senzori sau butoane. Cel puțin două ieșiri. Cel puțin o decizie cu if. Cel puțin o funcție scrisă de tine. Și un plan de teste. Le bifezi pe rând.
+
+Al doilea pas. Construim pe etape. Nu lipești tot dintr-o dată. Folosești metoda o piesă, un test. Conectezi o piesă, o testezi, apoi treci la următoarea.
+
+Al treilea pas. Structura unui program bun. Programul are secțiuni: pini, setări, stare, funcții, setup și loop. Pui pragurile în secțiunea de setări, nu în mijlocul codului, și dai nume clare variabilelor, de exemplu temperatura sau lampa aprinsă.
+
+Al patrulea pas. Planul de teste. Completezi un tabel: ce faci, ce ar trebui să se întâmple și dacă a mers. Testezi inclusiv cazurile ciudate.
+
+Al cincilea pas. Dacă te blochezi. Te întrebi: ce ar trebui să facă piesa și ce face de fapt? Verifici firele, pinii din cod și alimentarea. Testezi piesa într-un program mic, separat. Dacă tot nu merge, ceri ajutor profesorului.
+
+Greșeli frecvente. Tot proiectul într-un singur pas: greu de depanat. Nume vagi, ca a, b sau x: folosește nume care spun ceva. Praguri în mijlocul codului: pune-le la setări. Delay lung: blochează restul proiectului. Nicio copie de siguranță: salvează versiunea unu, versiunea doi.
+
+Proiectul de azi. Proiectul tău. Minim înseamnă că funcționează. Complet înseamnă cerințele bifate și testele făcute.
+
+Recapitulare. Planifică, apoi construiește. O piesă, un test. Program pe secțiuni: pini, setări, stare, funcții, setup și loop. Testează și cazurile ciudate.
+
+Succes cu proiectul final.

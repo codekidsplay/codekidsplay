@@ -1,0 +1,27 @@
+Lecția opt din Modulul patru. Robotul care ocolește.
+
+Astăzi construiești creierul unui robot cu două motoare și un senzor de distanță, care merge singur și ocolește obstacolele. Proiectul se numește Robotul meu. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A patru, linie jos, L zero opt.
+
+Obiectivul. La final robotul tău merge înainte și se întoarce când vede un obstacol. Minim: două motoare și un senzor de distanță, iar dacă obstacolul este aproape, robotul se întoarce într-o parte. Complet: minim, plus un servo care se uită în stânga și în dreapta, iar robotul alege partea cu mai mult loc, un buton de pornire și un LED de stare.
+
+De ce contează. Robotul autonom pune cap la cap tot ce știi: senzori, decizii, motoare și funcții. Aspiratoarele-robot și mașinile autonome fac exact asta: simt, decid, acționează.
+
+Primul pas. Cum merge un robot cu două roți. Fiecare roată are propriul motor. Fără mers înapoi, virezi oprind o singură roată. Dacă oprești roata stângă, robotul virează la stânga. Dacă oprești roata dreaptă, virează la dreapta.
+
+Al doilea pas. Conexiuni. Fiecare motor are un fir la cinci volți, iar celălalt la colectorul unui tranzistor. Emitorul merge la GND, baza la un pin, printr-un rezistor de un kiloohm, iar dioda stă în paralel cu motorul. Motorul din stânga este comandat de pinul cinci, cel din dreapta de pinul șase. Senzorul de distanță și servo-ul au pinii lor din tabel.
+
+Al treilea pas. Funcții de bază. Scrii funcțiile înainte, stânga, dreapta și oprește. Fiecare pornește sau oprește motoarele potrivite.
+
+Al patrulea pas. Minim, ocolește la douăzeci de centimetri. Măsori distanța. Dacă este mai mare de douăzeci, mergi înainte. Altfel, virezi o parte, un timp, și continui.
+
+Al cincilea pas, pentru Complet. Robotul se oprește, servo-ul se uită în stânga și măsoară, apoi în dreapta și măsoară. Compari cele două distanțe și alegi direcția cu mai mult loc.
+
+Al șaselea pas. Teste. Cale liberă: ambele motoare merg. Obstacol în față: robotul se oprește și alege o direcție. Perete în stânga: virează dreapta.
+
+Greșeli frecvente. Robotul se învârte mereu: pragul este prea mare sau senzorul vede mereu ceva. Un motor nu merge: tranzistorul sau dioda este greșit conectată. Nu virează: ambele motoare primesc același semnal. Servo-ul tremură: alimentare insuficientă, deci adaugă GND comun. Citiri zero tratate ca obstacol: la lipsa ecoului întoarce o valoare mare, de exemplu patru sute.
+
+Proiectul de azi. Robotul meu. Minim înseamnă ocolire simplă. Complet înseamnă servo care se uită, buton și LED.
+
+Recapitulare. Robot înseamnă simte, decide, acționează. Virezi oprind o singură roată. Funcții simple: înainte, stânga, dreapta, oprește. Compară distanțele ca să alegi direcția.
+
+Succes cu robotul.

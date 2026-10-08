@@ -1,0 +1,23 @@
+Lecția șapte din Modulul doi. Ghiveciul care cere apă.
+
+Astăzi un senzor de umiditate a solului îți spune când planta are nevoie de apă. Proiectul se numește Planta mea. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A doi, linie jos, L zero șapte.
+
+Obiectivul. La final ai un ghiveci care anunță când este uscat. Minim: senzor de umiditate și LED roșu care se aprinde când solul este uscat. Complet: minim, plus procentul de umiditate, de la zero la o sută, în Serial Monitor, trei LED-uri, uscat, în regulă și ud, și un buzzer care îți amintește.
+
+De ce contează. Sistemele de irigații inteligente economisesc apă și salvează plante. Ele pornesc de la ce faci azi: citesc, compară și anunță.
+
+Primul pas. Conexiuni. Senzorul de sol are semnal la A zero, alimentare la cinci volți și GND. LED-ul roșu, pentru uscat, este la pinul patru, cel verde, pentru în regulă, la pinul cinci, iar cel albastru, pentru prea ud, la pinul șase. Piezo este la pinul opt. În Tinkercad dai click pe senzor și muți glisorul de umiditate.
+
+Al doilea pas. Calibrare. Fiecare senzor dă alte valori, deci începem cu măsurarea: afișezi valoarea în Serial Monitor pentru sol uscat și pentru sol ud și o notezi.
+
+Al treilea pas. Minim, mi-e sete. Dacă valoarea trece sub pragul ales pentru uscat, aprinzi LED-ul roșu.
+
+Al patrulea pas, pentru Complet. Cu map transformi valorile senzorului într-o scală de la zero la o sută, iar cu constrain o ții în limite, chiar dacă senzorul dă o valoare mai mare. Apoi alegi LED-ul după procent. Buzzerul sună scurt, cu durată în tone, ca să nu sune continuu.
+
+Greșeli frecvente. Mereu zero la sută: senzorul nu este alimentat sau semnalul nu este la A zero. Procente negative: ai uitat constrain sau calibrarea este greșită. Prea sensibil: mărește zona în regulă. Buzzerul sună continuu: folosește tone cu durată, al treilea argument. Merge invers cu senzorul real: inversează valorile în map.
+
+Proiectul de azi. Planta mea. Minim înseamnă LED roșu când solul este uscat. Complet înseamnă procente, trei LED-uri și buzzer.
+
+Recapitulare. Senzorul de sol dă o valoare analogică. Calibrăm înainte să alegem praguri. Map și constrain dau procente sigure. Mai multe trepte dau mai multă informație.
+
+Succes cu planta ta.

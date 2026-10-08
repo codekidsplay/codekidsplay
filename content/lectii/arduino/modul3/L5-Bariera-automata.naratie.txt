@@ -1,0 +1,25 @@
+Lecția cinci din Modulul trei. Bariera automată.
+
+Astăzi combini senzorul de distanță cu servo-ul și construiești o barieră de parcare care se ridică singură. Proiectul se numește Bariera mea. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A trei, linie jos, L zero cinci.
+
+Obiectivul. La final ai o barieră care se deschide când se apropie o mașină și se închide după câteva secunde. Minim: servo ridicat la distanță mică, coborât altfel. Complet: minim, plus LED verde și roșu, o întârziere de trei secunde înainte de închidere, fără delay, și mesaj în Serial Monitor.
+
+De ce contează. Barierele, ușile automate și porțile de garaj au aceeași logică: detectez, deschid, aștept, închid. Aceasta se numește mașină de stări.
+
+Primul pas. Conexiuni. Servo-ul are roșu la cinci volți, negru la GND și semnal la pinul nouă. Senzorul cu ultrasunete are Trig la pinul șapte, iar la fel ca în Modulul doi, Echo, alimentarea și GND. LED-urile verde și roșu au rezistoare.
+
+Al doilea pas. Varianta simplă. Măsori distanța. Dacă este mai mică decât un prag, de exemplu cincisprezece centimetri, ridici servo-ul. Altfel îl cobori.
+
+Al treilea pas. Mașina de stări. Vrem ca bariera să rămână ridicată încă trei secunde după ce mașina a plecat. Folosim stări: închisă, deschisă, așteptare. Din închisă treci în deschisă când vine o mașină. Din deschisă treci în așteptare când mașina pleacă. Din așteptare revii în deschisă dacă vine alta, sau treci în închisă după trei secunde. Folosești enum pentru stări și o variabilă de stare.
+
+Al patrulea pas. Timpul fără delay. Cu millis ții minte momentul plecării mașinii și compari cât timp a trecut. Așa programul nu se blochează.
+
+Al cincilea pas. Testul. Obiect la zece centimetri: bariera sus, LED verde. Obiectul pleacă: după trei secunde bariera coboară, LED roșu.
+
+Greșeli frecvente. Bariera tremură: senzorul oscilează la limită, deci mărește pragul sau fă o medie. Nu se închide niciodată: distanța zero este tratată ca mașină, deci folosește condiția distanță mai mare decât zero și. Stare blocată: lipsește o tranziție. Timp greșit: compari millis cu variabila greșită. Servo nu ajunge la nouăzeci de grade: pe servo-ul real poate fi nevoie de calibrare.
+
+Proiectul de azi. Bariera mea. Minim înseamnă barieră cu prag. Complet înseamnă mașină de stări, LED-uri și mesaje.
+
+Recapitulare. Detectez, deschid, aștept, închid. Enum și o variabilă de stare dau mașina de stări. Millis măsoară timpul fără să blocheze. Testează toate tranzițiile.
+
+Succes cu bariera.

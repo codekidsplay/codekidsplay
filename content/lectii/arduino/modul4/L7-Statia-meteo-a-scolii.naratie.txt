@@ -1,0 +1,27 @@
+Lecția șapte din Modulul patru. Stația meteo a școlii.
+
+Astăzi construiești o stație meteo completă, care înregistrează valorile și le arată pe L C D ca pe un tablou de bord. Proiectul se numește Meteo de școală. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A patru, linie jos, L zero șapte.
+
+Obiectivul. La final stația ta măsoară, înregistrează și afișează date. Minim: temperatură, lumină și umiditate a solului pe L C D, pe pagini. Complet: minim, plus istoric cu ultimele zece măsurători, minim, maxim și medie, grafic cu bare pe L C D și LED de alertă.
+
+De ce contează. Datele valoroase sunt cele adunate în timp. Un datalogger înregistrează valorile ca să vezi tendințele: se încălzește? se întunecă? Îl folosesc meteorologii, fermierii și cercetătorii.
+
+Primul pas. Conexiuni. L C D-ul are R S la doisprezece, E la unsprezece și D patru până la D șapte la cinci, patru, trei și doi. Mai ai senzorul de temperatură, fotorezistorul, senzorul de umiditate, un buton pentru pagini, la pinul opt, și un LED de alertă.
+
+Al doilea pas. Minim, trei pagini. Butonul schimbă pagina, ca în Modulul trei: temperatură, lumină, umiditate.
+
+Al treilea pas. Istoric, tablou circular. Vrem să ținem ultimele zece temperaturi. Când tabloul s-a umplut, următoarea valoare o înlocuiește pe cea mai veche. Ții un index care crește cu unu și se păstrează în interval cu procentul. Asta se numește buffer circular.
+
+Al patrulea pas. Statistici. Scrii funcții pentru minim, maxim și medie, care parcurg tabloul cu for. Atenție: la început tabloul nu este plin, deci medie se împarte la câte valori ai, nu la zece.
+
+Al cincilea pas. Grafic cu bare pe L C D. Definești caractere speciale, de la o linie plină până la bară întreagă. Pentru simplitate folosim patru trepte. Fiecare valoare din istoric devine o bară mai înaltă sau mai joasă.
+
+Al șaselea pas, pentru Complet. Pui totul laolaltă, cu un LED de alertă dacă o valoare depășește un prag.
+
+Greșeli frecvente. Medie ciudată la început: împarți la zece, nu la numărul de valori. Grafic gol: nu ai apelat create Char în setup. Index în afara tabloului: indexul nu este limitat cu procentul. Ecranul clipește: clear doar la schimbarea paginii. Valori nerealiste: lipsește calibrarea senzorilor.
+
+Proiectul de azi. Meteo de școală. Minim înseamnă trei pagini. Complet înseamnă istoric, statistici, grafic și alertă.
+
+Recapitulare. Un datalogger înseamnă valori în timp. Buffer circular, cu procentul. Funcții de statistică: minim, maxim, medie. Caractere proprii pentru grafic.
+
+Succes cu stația meteo.

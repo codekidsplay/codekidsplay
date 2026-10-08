@@ -1,0 +1,25 @@
+Lecția trei din Modulul patru. Casă inteligentă, partea a doua: securitate și acces.
+
+Astăzi adaugi casei securitate: o alarmă cu P I R și o ușă cu servo. Continui circuitul din lecția anterioară. Proiectul se numește Casa mea doi. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A patru, linie jos, L zero trei.
+
+Obiectivul. La final casa ta are lumini, climat și securitate într-un singur program. Minim: alarmă P I R care se armează cu buton, cu sirenă. Complet: minim, plus o ușă cu servo care se deschide la buton, un LED de alarmă și mesaje pe L C D, Armat și Intrus.
+
+De ce contează. Aici înveți să extinzi un proiect existent fără să îl strici: copiezi circuitul, adaugi funcții noi și le chemi din loop.
+
+Primul pas. Circuit nou, din copia lecției anterioare. Deschizi circuitul din lecția doi, apeși Duplică și îl redenumești cu numele de azi. Astfel păstrezi partea întâi intactă.
+
+Al doilea pas. Piese noi. P I R-ul are semnalul la A doi, alimentarea la cinci volți și GND. Mai adaugi buzzerul pentru sirenă, butonul de armare, servo-ul pentru ușă și LED-ul de alarmă, conform tabelului de pini.
+
+Al treilea pas. Ce adăugăm la program. Funcția alarma citește butonul de armare și P I R-ul și pornește sirena. Funcția usa mișcă servo-ul. Funcția afișaj arată pe L C D starea alarmei.
+
+Al patrulea pas. Codul complet. Lipești funcțiile noi lângă cele din partea întâi. Loop cheamă, pe rând: lampa, climatul, alarma, ușa și afișajul.
+
+Al cincilea pas. Test integrat. Noapte și cald: lampa aprinsă și ventilatorul pornit. Alarmă armată și mișcare: sună sirena și pe ecran apare Intrus. Dezarmezi: sirena tace. Apeși butonul ușii: servo-ul o deschide.
+
+Greșeli frecvente. Merge partea întâi, dar nu partea a doua: ai redenumit circuitul fără să îl duplici. Conflict de pini: două piese pe același pin, deci verifică tabelul. Sirena se aude mereu: variabila intrus nu se resetează la dezarmare. Alarmă fără armare: lipsește armat și în condiție. Programul se blochează: un delay lung într-o funcție.
+
+Proiectul de azi. Casa mea doi. Minim înseamnă alarmă armabilă. Complet înseamnă ușă, LED și mesaje.
+
+Recapitulare. Extinde un proiect existent în pași mici. Funcții separate înseamnă cod ușor de schimbat. Starea sistemului stă în variabile globale. Testează fiecare scenariu.
+
+Succes cu securitatea casei.

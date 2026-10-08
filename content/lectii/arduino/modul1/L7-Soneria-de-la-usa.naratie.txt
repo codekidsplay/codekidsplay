@@ -1,0 +1,25 @@
+Lecția șapte. Soneria de la ușă.
+
+Astăzi faci Arduino să sune: conectezi un buzzer, numit și piezo, și programezi o sonerie cu butonul de la ușă. Proiectul se numește Soneria mea. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A unu, linie jos, L zero șapte.
+
+Obiectivul. La final ai o sonerie care scoate un sunet când apeși un buton. Minim: buzzer pe pinul opt, buton pe pinul doi, tone când apeși și no Tone când nu. Complet: minim, plus sunet în două note, ding-dong, și un LED care se aprinde cât sună.
+
+De ce contează. Sunetul este cel mai bun mod prin care un aparat atrage atenția: alarme, jocuri, aparate de bucătărie. Cu tone poți face note muzicale.
+
+Primul pas. Conexiuni. Piezo are un picior la pinul opt și celălalt la GND. Butonul merge la pinul doi și la GND. Pentru Complet, LED-ul merge printr-un rezistor la pinul șapte. În Tinkercad piesa se numește Piezo și funcționează ca un mic difuzor.
+
+Al doilea pas. Ce face tone. Funcția tone primește pinul, frecvența și, dacă vrei, durata. Frecvența se măsoară în herți. Cu cât este mai mare, cu atât sunetul este mai ascuțit.
+
+Al treilea pas. Minim. În loop verifici butonul. Dacă este apăsat, cânți o notă cu tone. Altfel oprești sunetul cu no Tone.
+
+Al patrulea pas. Ding-dong. O sonerie adevărată sună două note una după alta, de exemplu una mai înaltă și apoi una mai joasă, cu o pauză între ele. Pui asta într-o funcție și o apelezi la apăsare.
+
+Al cincilea pas. Alarmă cu sirenă. Frecvența crește și scade, ca la mașina de poliție, cu un for care urcă și apoi coboară.
+
+Greșeli frecvente. Nu sună nimic: buzzerul nu este la pinul opt și GND sau n-ai pornit simularea. Sună tot timpul: ai uitat no Tone pe ramura else. Sunet urât: frecvențe prea mari sau schimbări prea rapide. Se aude în buclă: fără delay de trei sute după ding-dong, soneria repornește dacă ții apăsat. Pinii trei și unsprezece: tone ocupă un timer, deci evită analog Write pe acești pini în același timp.
+
+Proiectul de azi. Soneria mea. Minim înseamnă sunet la apăsare. Complet înseamnă ding-dong și LED.
+
+Recapitulare. Tone pornește sunetul, no Tone îl oprește. Frecvență mai mare înseamnă sunet mai ascuțit. Mai multe tone una după alta fac o melodie.
+
+Succes cu soneria.

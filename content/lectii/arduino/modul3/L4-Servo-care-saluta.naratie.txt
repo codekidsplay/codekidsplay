@@ -1,0 +1,25 @@
+Lecția patru din Modulul trei. Servo-ul care salută.
+
+Astăzi dai mișcare proiectelor: un servomotor care poate merge exact la unghiul pe care îl alegi. Proiectul se numește Robotul care salută. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A trei, linie jos, L zero patru.
+
+Obiectivul. La final ai un braț de robot care face cu mâna. Minim: servo care merge la zero, nouăzeci și o sută optzeci de grade. Complet: minim, plus mișcare fluidă înainte și înapoi, control cu potențiometrul și salut la apăsarea unui buton.
+
+De ce contează. Brațele de roboți, flapsurile avioanelor și direcția mașinilor cu telecomandă folosesc servomotoare. Un servo știe unde este și se oprește exact la unghiul cerut.
+
+Primul pas. Conexiuni. Servo-ul are trei fire: roșu la cinci volți, negru la GND, iar firul de semnal la pinul nouă.
+
+Al doilea pas. Minim, unghiuri fixe. Incluzi biblioteca Servo, creezi un obiect, de exemplu braț, și în setup îl legi de pin cu attach de nouă. Apoi cu write îi dai unghiul, cu pauze între unghiuri.
+
+Al treilea pas. Mișcare fluidă. Dacă schimbi unghiul brusc, servo-ul sare. Dacă îl crești grad cu grad, cu un for și un delay mic, se mișcă lin.
+
+Al patrulea pas. Controlul cu potențiometrul. Citești potențiometrul, transformi valoarea din zero până la o mie douăzeci și trei în zero până la o sută optzeci cu map și o trimiți servo-ului.
+
+Al cincilea pas, pentru Complet. Salutul. La apăsarea butonului, brațul face cu mâna de trei ori, apoi revine.
+
+Greșeli frecvente. Servo-ul tremură: firul de semnal nu este la pinul nouă sau lipsește GND comun. Nu se mișcă: lipsește attach. Mișcare sacadată: unghiul sare prea mult, deci folosește for cu delay mic. Erori la compilare: Servo se scrie cu S mare. Unghi peste o sută optzeci: un servo standard merge doar între zero și o sută optzeci.
+
+Proiectul de azi. Robotul care salută. Minim înseamnă trei unghiuri. Complet înseamnă mișcare lină, potențiometru și salut.
+
+Recapitulare. Include Servo, creezi obiectul și faci attach. Write dă unghiul, între zero și o sută optzeci. For dă mișcare lină. Map leagă potențiometrul de unghi.
+
+Succes cu robotul.

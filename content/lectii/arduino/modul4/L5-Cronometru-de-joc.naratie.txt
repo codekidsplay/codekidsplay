@@ -1,0 +1,25 @@
+Lecția cinci din Modulul patru. Cronometru de joc.
+
+Astăzi construiești un cronometru cu L C D, pornire, oprire, tur și un mod de numărătoare inversă pentru jocuri de societate. Totul cu millis. Proiectul se numește Cronometrul meu. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A patru, linie jos, L zero cinci.
+
+Obiectivul. La final ai un cronometru precis, controlat cu două butoane. Minim: start și stop, cu afișare minute două puncte secunde pe L C D. Complet: minim, plus reset, tur, adică lap, și un mod de numărătoare inversă de treizeci de secunde, cu buzzer.
+
+De ce contează. Delay oprește programul. Cu millis, placa poate număra timpul, citi butoane și actualiza ecranul în același timp. Este cea mai importantă tehnică din proiectele mari.
+
+Primul pas. Conexiuni. L C D-ul este ca în lecția anterioară. Butonul A este la pinul șapte, butonul B la alt pin, iar buzzerul la pinul lui.
+
+Al doilea pas. Ideea. Un cronometru nu numără, ci își amintește momentul de start și calculează diferența. Timpul scurs este millis minus momentul de start.
+
+Al treilea pas. Funcția de afișare. Transformi milisecundele în minute, secunde și zecimi. Împarți la o mie pentru secunde, la șaizeci pentru minute și afișezi cu spații după, ca să nu rămână cifre vechi.
+
+Al patrulea pas. Minim, start și stop. Butonul A pornește cronometrul și îl oprește. Ții minte momentul de start și timpul acumulat. Când rulează, timpul este acumulat plus millis minus start. La stop, adaugi la acumulat.
+
+Al cincilea pas, pentru Complet. Butonul B: dacă cronometrul rulează, face tur și salvează timpul pe rândul de sus. Dacă este oprit, face reset. Ținut apăsat mai mult de o secundă și jumătate, schimbă modul, între cronometru și numărătoare inversă de treizeci de secunde, iar la zero sună buzzerul.
+
+Greșeli frecvente. Timpul sare: folosești int în loc de unsigned long pentru millis. Pornește de la zero de fiecare dată: nu adaugi la acumulat la stop. Ecranul clipește: clear se face doar la reset. Cifre rămase: lipsesc spațiile după timp. Butonul acționează de mai multe ori: lipsește detectarea momentului apăsării.
+
+Proiectul de azi. Cronometrul meu. Minim înseamnă start și stop. Complet înseamnă reset, tur și numărătoare inversă.
+
+Recapitulare. Millis este ceasul intern și nu blochează. Când rulează, timpul este acumulat plus millis minus start. Unsigned long este pentru timp. Fără delay lung, totul rămâne receptiv.
+
+Succes cu cronometrul.

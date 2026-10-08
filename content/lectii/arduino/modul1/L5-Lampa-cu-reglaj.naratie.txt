@@ -1,0 +1,25 @@
+Lecția cinci. Lampa cu reglaj.
+
+Astăzi citești un potențiometru, un buton rotativ, și reglezi luminozitatea unui LED cu P W M. Proiectul se numește Lampa mea. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A unu, linie jos, L zero cinci.
+
+Obiectivul. La final ai o lampă a cărei lumină crește sau scade când rotești potențiometrul. Minim: potențiometru pe A zero, LED pe pinul nouă, luminozitatea urmează potențiometrul, cu analog Read și analog Write. Complet: minim, plus valorile afișate în Serial Monitor și un LED care respiră singur, crescând și scăzând lin.
+
+De ce contează. Până acum totul era aprins sau stins. Lumea reală e plină de valori între: volum, lumină, viteză. Azi înveți cum citește Arduino o valoare între zero și o mie douăzeci și trei și cum o trimite înapoi.
+
+Primul pas. Conexiuni. LED-ul merge, prin rezistor, la pinul nouă, care are semnul tilde, și la GND. Potențiometrul are trei picioare: unul la cinci volți, unul la GND, iar cel din mijloc la A zero.
+
+Al doilea pas. Citim potențiometrul. În setup pornești Serial. În loop citești cu analog Read de A zero și afișezi valoarea. Rotește potențiometrul și vezi numărul schimbându-se.
+
+Al treilea pas. Din zero până la o mie douăzeci și trei în zero până la două sute cincizeci și cinci. Analog Write primește valori între zero, stins, și două sute cincizeci și cinci, cât se poate de aprins. Trebuie să convertim intervalul. Pentru asta există funcția map.
+
+Al patrulea pas. Ce este P W M. Arduino aprinde și stinge LED-ul foarte repede, de patru sute nouăzeci de ori pe secundă. Cu cât stă mai mult aprins, cu atât pare mai luminos. Nu este un curent mai mic, ci o păcăleală pentru ochi.
+
+Al cincilea pas, pentru Complet. Afișezi valorile în Serial Monitor și faci LED-ul să respire: cu un for crești luminozitatea, apoi cu alt for o scazi, cu pauze mici între pași.
+
+Greșeli frecvente. LED-ul este fie stins, fie aprins complet: ai folosit un pin fără tilde sau digital Write în loc de analog Write. Potențiometrul nu face nimic: piciorul din mijloc nu este la A zero. Lumina merge invers: ai inversat cinci volți cu GND. Eroare la A zero: scrie A zero, nu doar zero. Prea mult în Serial Monitor: pune delay de o sută.
+
+Proiectul de azi. Lampa mea. Minim înseamnă lumina urmând potențiometrul. Complet înseamnă minim, plus Serial Monitor și respirația.
+
+Recapitulare. Analog Read dă valori de la zero la o mie douăzeci și trei. Map convertește intervalul. Analog Write merge doar pe pinii cu tilde. Serial Monitor te ajută să vezi valorile.
+
+Succes cu lampa.

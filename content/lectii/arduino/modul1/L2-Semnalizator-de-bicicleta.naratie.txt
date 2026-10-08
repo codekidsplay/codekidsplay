@@ -1,0 +1,23 @@
+Lecția doi. Semnalizator de bicicletă.
+
+Astăzi folosești două LED-uri, variabile și bucla for, ca să faci un semnalizator care arată direcția. Proiectul se numește Bicicleta mea. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A unu, linie jos, L zero doi.
+
+Obiectivul. La final ai două LED-uri care clipesc pe rând, stânga și dreapta, și un program scris cu nume clare. Minim: două LED-uri pe pinii opt și nouă, fiecare cu rezistorul lui, clipind alternativ, cu valorile puse în const int. Complet: minim, plus semnalul de virare la dreapta cu trei clipiri făcute cu for, și apoi avariile, adică ambele LED-uri împreună.
+
+De ce contează. Până acum ai comandat un singur pin. Acum comanzi mai mulți, înveți să dai nume lucrurilor și să repeți fără să copiezi.
+
+Primul pas. Circuit nou, cu numele proiectului. Pui pe breadboard două LED-uri, la distanță între ele. LED-ul din stânga merge la pinul opt, cel din dreapta la pinul nouă, fiecare cu rezistor de două sute douăzeci de ohmi, iar catodurile merg la GND. Fiecare LED are propriul rezistor.
+
+Al doilea pas. Alternarea. Scrii const int STANGA egal opt și const int DREAPTA egal nouă. Const înseamnă o valoare cu nume care nu se schimbă. În loop aprinzi un LED și stingi celălalt, aștepți patru sute de milisecunde, apoi inversezi. Dacă muți un fir pe alt pin, schimbi un singur rând.
+
+Al treilea pas. Virarea la dreapta. Clipește doar LED-ul din dreapta, de trei ori. Folosim for. Se citește așa: începe cu i egal zero, cât timp i este mai mic decât trei, repetă, iar după fiecare rundă crește i cu unu. Rezultatul este trei repetări.
+
+Al patrulea pas, pentru Complet. Punem fiecare semnal într-o funcție. Funcția clipește primește două informații: ce pin și de câte ori. Așa folosești aceeași funcție pentru ambele LED-uri. Mai scriem o funcție, avarii, care aprinde și stinge ambele LED-uri deodată. În loop apelăm: clipește stânga de trei ori, pauză, clipește dreapta de trei ori, pauză, avarii de trei ori.
+
+Greșeli frecvente. Ambele LED-uri clipesc odată: ai folosit același pin sau ai uitat Low pentru celălalt. Un singur LED merge: celuilalt îi lipsește firul spre GND. For nu se oprește: ai scris i minus minus în loc de i plus plus. Eroare not declared: numele din cod nu este scris la fel peste tot, STANGA cu majuscule nu este același lucru cu stanga cu litere mici. O singură rezistență pentru două LED-uri: fiecare LED are rezistorul lui.
+
+Proiectul de azi. Bicicleta mea. Minim înseamnă două LED-uri alternând, cu const int. Complet înseamnă minim, plus funcția clipește, virare stânga, virare dreapta și avarii. Dacă ai timp: un al treilea LED, pe pinul zece, ca lumină de frână, sau o clipire mai rapidă, cu o sută cincizeci în loc de trei sute.
+
+Recapitulare. Const int dă un nume unui număr care nu se schimbă. For repetă de câte ori vrei. O funcție cu parametri se poate folosi de mai multe ori.
+
+Succes cu bicicleta ta.

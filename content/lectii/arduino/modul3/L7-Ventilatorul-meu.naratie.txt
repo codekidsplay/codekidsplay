@@ -1,0 +1,23 @@
+Lecția șapte din Modulul trei. Ventilatorul meu.
+
+Astăzi comanzi un motor de curent continuu cu ajutorul unui tranzistor și faci un ventilator cu viteză reglabilă și pornire automată la căldură. Proiectul se numește Ventilatorul meu. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A trei, linie jos, L zero șapte.
+
+Obiectivul. La final ai un ventilator controlat de Arduino. Minim: motor pornit și oprit cu un buton, prin tranzistor. Complet: minim, plus viteză reglată cu potențiometrul, prin P W M, și mod automat pe baza temperaturii, cu T M P treizeci și șase.
+
+De ce contează. Un pin Arduino poate da doar aproximativ douăzeci de miliamperi. Un motor cere mult mai mult. De aceea folosim un tranzistor, un întrerupător electronic comandat de un curent mic, care controlează un curent mare.
+
+Primul pas. Cum funcționează tranzistorul. Un tranzistor N P N are trei picioare: bază, colector și emitor. Un curent mic în bază lasă un curent mare să curgă de la colector la emitor. Baza primește semnalul de la pin, printr-un rezistor. Emitorul merge la GND. Motorul este între alimentare și colector, cu o diodă de protecție.
+
+Al doilea pas. Minim. Motorul este la pinul nouă, butonul la pinul doi. La apăsare pornești motorul cu digital Write, altfel îl oprești.
+
+Al treilea pas. Viteza cu P W M. Pinul nouă poate face P W M, deci motorul primește mai mult sau mai puțin curent în medie. Citești potențiometrul, convertești cu map și folosești analog Write.
+
+Al patrulea pas, pentru Complet. Manual și automat. Într-un mod ții viteza dată de potențiometru. În celălalt, citești temperatura și pornești ventilatorul cu atât mai tare cu cât este mai cald.
+
+Greșeli frecvente. Motorul nu pornește: emitorul nu este la GND sau baza nu primește semnal. Tranzistorul se arde, în simulator: motorul este conectat direct la pin, nu prin tranzistor, sau lipsește rezistorul de bază. Motorul merge mereu: colectorul și emitorul sunt inversate. Fără diodă: merge în simulator, dar în realitate poate strica placa. Viteză mică, nu pornește: are nevoie de un minim, deci folosește map de la șaizeci la două sute cincizeci și cinci.
+
+Proiectul de azi. Ventilatorul meu. Minim înseamnă pornit și oprit cu buton. Complet înseamnă viteză reglabilă și mod automat.
+
+Recapitulare. Pinul Arduino nu alimentează motorul direct. Tranzistorul este un întrerupător electronic. Dioda protejează la oprire. P W M schimbă viteza.
+
+Succes cu ventilatorul.

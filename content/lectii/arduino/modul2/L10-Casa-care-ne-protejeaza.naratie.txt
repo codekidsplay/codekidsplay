@@ -1,0 +1,23 @@
+Lecția zece din Modulul doi. Casa care ne protejează.
+
+Astăzi, la proiectul modulului, combini lumină, mișcare și temperatură într-o casă care se apără singură. Proiectul se numește Casa protejată. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A doi, linie jos, L zece.
+
+Obiectivul. La final ai o casă cu trei funcții care lucrează împreună. Minim: două funcții, lampa automată, cu senzor de lumină, și alarma P I R cu buton de armare. Complet: minim, plus alertă de căldură, cu LED roșu și bip, și un raport în Serial Monitor.
+
+De ce contează. Sistemele reale nu fac un singur lucru. Azi înveți să împarți un proiect în funcții și să le rulezi pe toate în același loop.
+
+Primul pas. Planul: trei sisteme într-o casă. Lampa folosește fotorezistorul de la A zero și aprinde un LED la întuneric. Alarma folosește P I R-ul de la pinul doi și butonul de la pinul trei și sună doar dacă este armată. Termostatul folosește T M P treizeci și șase de la A unu și dă LED roșu și bip la temperatură mare.
+
+Al doilea pas. Structura codului. Fiecare sistem are propria funcție: lampa, alarma și termostatul. Loop doar le apelează, una după alta. Așa codul rămâne ușor de citit și ușor de reparat.
+
+Al treilea pas. Codul complet. Pui constantele cu nume la început, scrii cele trei funcții, iar în loop le apelezi. La Complet adaugi o funcție de raport, care scrie în Serial Monitor starea fiecărui sistem.
+
+Al patrulea pas. Scenarii de test. Ziua, cu lumină multă, lampa este stinsă. Noaptea, lampa se aprinde. Alarma armată și mișcare: sună. Temperatura ridicată: LED roșu și bip. Testezi fiecare scenariu pe rând.
+
+Greșeli frecvente. Un sistem blochează pe celelalte: folosești un delay lung, iar soluția este millis. Alarma sună și când nu este armată: lipsește armat și. Bipurile se acoperă: alarma și căldura folosesc același buzzer, deci ai grijă la praguri. Lampa clipește: vezi histerezisul din lecția doi. Nu iese nimic în Serial Monitor: lipsește Serial begin.
+
+Proiectul de azi. Casa protejată. Minim înseamnă lampă și alarmă. Complet înseamnă minim, plus alertă de căldură și raport.
+
+Recapitulare. Împarte proiectul în funcții. Loop doar le apelează. Millis înlocuiește delay când ai mai multe sarcini. Testează fiecare scenariu.
+
+Felicitări, ai terminat Modulul doi.

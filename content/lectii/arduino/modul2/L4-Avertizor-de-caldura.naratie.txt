@@ -1,0 +1,23 @@
+Lecția patru din Modulul doi. Avertizor de căldură.
+
+Astăzi legi temperatura de lumini și sunet: verde înseamnă în regulă, galben înseamnă cald, roșu înseamnă pericol, și sună și buzzerul. Proiectul se numește Avertizor de căldură. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A doi, linie jos, L zero patru.
+
+Obiectivul. La final ai un avertizor cu trei trepte, comandat de T M P treizeci și șase. Minim: trei LED-uri, verde, galben și roșu, care se aprind după temperatură. Complet: minim, plus buzzer care sună intermitent la roșu și temperatura afișată în Serial Monitor.
+
+De ce contează. Alarmele din frigidere, sere și cuptoare funcționează la fel: trepte de temperatură și o reacție pentru fiecare.
+
+Primul pas. Conexiuni. Senzorul merge la cinci volți, GND și A zero. LED-ul verde este la pinul patru, galbenul la pinul cinci, roșul la pinul șase, fiecare cu rezistor de două sute douăzeci de ohmi. Piezo este la pinul opt și la GND.
+
+Al doilea pas. Trei trepte, pentru Minim. Citești temperatura ca în lecția trecută. La începutul buclei stingi toate LED-urile. Apoi, cu if, else if și else, alegi o singură ramură: sub treizeci de grade aprinzi verdele, între treizeci și treizeci și cinci galbenul, iar peste, roșul.
+
+Al treilea pas, pentru Complet. La roșu, buzzerul face bip, bip. Folosești tone cu durată și no Tone. Pui reacția într-o funcție, alarma, ca să rămână codul curat.
+
+Al patrulea pas. Testul. Muți glisorul de temperatură al senzorului în Tinkercad și verifici fiecare treaptă: sub treizeci verde, între treizeci și treizeci și cinci galben, peste roșu cu sunet.
+
+Greșeli frecvente. Două LED-uri aprinse: ai uitat să le stingi la începutul buclei. Mereu roșu: pragul este prea mic sau formula pentru grade este greșită. Fără sunet: piezo nu este la pinul opt sau lipsește tone. LED-ul nu se aprinde: lipsește rezistorul sau catodul nu este la GND. Treptele nu merg: condițiile sunt în ordine inversă.
+
+Proiectul de azi. Avertizor de căldură. Minim înseamnă trei LED-uri pe trepte. Complet înseamnă minim, plus buzzer și Serial Monitor.
+
+Recapitulare. If, else if și else aleg o singură ramură. Stingem toate, apoi aprindem unul. Funcția alarma face codul mai curat. Tone și no Tone dau sunetul.
+
+Succes cu avertizorul.

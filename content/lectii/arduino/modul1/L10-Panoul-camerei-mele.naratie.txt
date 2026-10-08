@@ -1,0 +1,25 @@
+Lecția zece. Panoul camerei mele.
+
+Astăzi îți faci un panou de control pentru camera ta: o lampă R G B cu moduri, reglaj cu potențiometru și sunet la schimbarea modului. Proiectul se numește Panoul meu. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A unu, linie jos, L zece.
+
+Obiectivul. La final de modul ai un proiect care combină tot ce ai învățat: LED R G B, buton, potențiometru și buzzer. Minim: un buton care schimbă între trei moduri: stins, alb reglabil și culoare reglabilă. Complet: minim, plus modul petrecere, cu culori aleatorii, un bip la fiecare schimbare de mod și o prezentare de două minute.
+
+De ce contează. Un proiect adevărat nu este o singură piesă, ci mai multe care lucrează împreună. Azi pui la un loc tot Modulul unu și îl prezinți.
+
+Primul pas. Conexiuni. LED-ul R G B merge pe pinii nouă, zece și unsprezece, cu rezistoare. Butonul, potențiometrul și buzzerul au pinii lor, așa cum ai făcut în lecțiile anterioare.
+
+Al doilea pas. Schema modurilor. Modul zero: lampa stinsă. Modul unu: alb, cu luminozitatea dată de potențiometru. Modul doi: culoare reglabilă. Modul trei, la Complet: petrecere.
+
+Al treilea pas. Minim. Ții minte modul într-o variabilă. La fiecare apăsare crești modul cu unu, iar cu operatorul procent îl păstrezi în interval, ca după ultimul mod să revii la zero. Cu switch alegi ce face lampa în fiecare mod. Nu uita break la fiecare caz.
+
+Al patrulea pas, pentru Complet. Petrecerea: culori aleatorii, cu random, și un bip scurt, într-o funcție, la fiecare schimbare. Funcțiile culoare și bip fac codul ușor de citit.
+
+Al cincilea pas. Prezentarea. Spune colegilor ce face panoul tău, câte moduri are, ce piese ai folosit și ce a fost cel mai greu. Două minute sunt de ajuns.
+
+Greșeli frecvente. Modul sare prea repede: lipsește delay după apăsarea butonului. Eroare în switch: un caz cu variabile noi are nevoie de acolade. Lampa este mereu aceeași: ai uitat break între cazuri. Culoarea la petrecere nu se schimbă: lipsește random Seed sau delay-ul este prea mic. Pinul unsprezece cu tone: am evitat trei și unsprezece tocmai din acest motiv, deci nu muta albastrul pe unsprezece.
+
+Proiectul de azi. Panoul meu. Minim înseamnă trei moduri. Complet înseamnă minim, plus petrecere, bip și prezentare.
+
+Recapitulare. Un proiect înseamnă mai multe piese care lucrează împreună. Switch alege între moduri. Procentul păstrează un număr într-un interval. Funcțiile fac codul ușor de citit.
+
+Felicitări, ai terminat Modulul unu. Succes la prezentare.

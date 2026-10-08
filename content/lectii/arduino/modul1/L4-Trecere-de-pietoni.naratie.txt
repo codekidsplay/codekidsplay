@@ -1,0 +1,23 @@
+Lecția patru. Trecere de pietoni.
+
+Astăzi construiești un semafor pentru mașini, cu buton de traversare pentru pietoni. Proiectul se numește Trecerea mea. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A unu, linie jos, L zero patru.
+
+Obiectivul. La final ai un semafor cu trei LED-uri pentru mașini, un LED verde pentru pietoni și un buton care cere traversarea. Minim: semaforul merge singur, verde, galben, roșu și iar verde. Complet: minim, plus butonul. Când este apăsat, mașinile se opresc, pietonul primește verde câteva secunde, apoi totul revine.
+
+De ce contează. Semafoarele sunt un exemplu perfect de stări. Ceva se află într-o stare, verde, galben sau roșu, și trece în alta când se întâmplă ceva. Aceeași idee apare în jocuri și în ascensoare.
+
+Primul pas. Conexiunile. LED-ul roșu merge la pinul unsprezece, galbenul la pinul zece, verdele la pinul nouă, LED-ul pentru pietoni la pinul șase. Fiecare are rezistor de două sute douăzeci de ohmi și catodul la GND. Butonul merge la pinul doi și la GND. În Tinkercad poți schimba culoarea fiecărui LED, ca să știi care este care.
+
+Al doilea pas. Semaforul automat. Aprinzi verdele, aștepți, treci pe galben, apoi pe roșu, apoi înapoi. La fiecare schimbare stingi culoarea anterioară.
+
+Al treilea pas. O funcție pentru fiecare stare. Scrii funcția lumini, care primește patru valori: roșu, galben, verde și pietoni. Ea setează toate luminile dintr-o dată. Atenție la ordinea parametrilor.
+
+Al patrulea pas, pentru Complet. Mașinile au verde. Dacă cineva apasă butonul, semaforul trece prin galben la roșu, pietonul primește verde, apoi totul revine. Butonul se verifică în loop, iar când este apăsat rulează funcția traversare.
+
+Greșeli frecvente. Două culori aprinse odată: ai uitat să stingi culoarea anterioară. Pietonul rămâne verde: nu ai oprit LED-ul la sfârșitul funcției traversare. Butonul nu reacționează: pinul doi nu are input pull up sau nu este legat la GND. Ordinea parametrilor: dacă o încurci, culorile se amestecă. LED-uri de aceeași culoare: pune culori diferite în Tinkercad.
+
+Proiectul de azi. Trecerea mea. Minim înseamnă semafor automat. Complet înseamnă minim, plus butonul pietonului.
+
+Recapitulare. Un semafor înseamnă stări care se succed. Funcția lumini pune ordine în cod. Butonul se verifică în loop și, când este apăsat, rulează o funcție.
+
+Succes la semafor.

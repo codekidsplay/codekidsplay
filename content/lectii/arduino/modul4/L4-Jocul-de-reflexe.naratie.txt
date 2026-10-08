@@ -1,0 +1,25 @@
+Lecția patru din Modulul patru. Jocul de reflexe.
+
+Astăzi construiești un joc: un LED se aprinde la un moment imprevizibil, iar tu trebuie să apeși cât mai repede. Arduino îți măsoară reflexele în milisecunde. Proiectul se numește Reflexe de campion. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A patru, linie jos, L zero patru.
+
+Obiectivul. La final ai un joc cu scor, record și cinci runde. Minim: LED care se aprinde după o pauză aleatorie, iar tu măsori timpul de reacție și îl afișezi pe L C D. Complet: minim, plus detectarea startului greșit, adică apeși prea devreme, cinci runde cu medie, record și sunete.
+
+De ce contează. Jocurile electronice sunt făcute din aceleași ingrediente: timp, aleatoriu, reguli și scor. Azi le folosești pe toate.
+
+Primul pas. Conexiuni. L C D-ul este conectat cu R S la doisprezece, E la unsprezece și D patru până la D șapte la pinii cinci, patru, trei și doi. LED-ul este la pinul șapte, cu rezistor. Mai ai butonul și buzzerul.
+
+Al doilea pas. Regulile. Pe ecran apare Pregătește-te. După o pauză aleatorie, între o secundă și patru, LED-ul se aprinde. Apeși cât poți de repede. Ecranul îți arată timpul în milisecunde.
+
+Al treilea pas. Minim, o singură rundă. Cu random Seed pornești aleatoriul. Alegi o pauză cu random, aștepți, aprinzi LED-ul și ții minte momentul cu millis. Când butonul este apăsat, scazi momentul de start din ora curentă și afișezi rezultatul.
+
+Al patrulea pas, pentru Complet. Folosim funcții și variabile globale. Dacă apeși înainte de semnal, este start greșit și runda nu se numără, iar un continue sare la următoarea. Faci cinci runde, calculezi media și ții minte recordul, adică cel mai mic timp. O funcție poate returna minus unu, ca semnal special pentru start greșit.
+
+Al cincilea pas. Cum arată reflexele tale. Sub două sute de milisecunde înseamnă super-rapid. Între două sute și trei sute este foarte bine. Peste, mai ai de exersat.
+
+Greșeli frecvente. Timpul este mereu zero: butonul era deja apăsat, iar o funcție care așteaptă eliberarea rezolvă. Pauza este mereu aceeași: lipsește random Seed. Scorul nu se actualizează: recordul este declarat în loop, nu global. Ecranul clipește: funcția mesaj este apelată prea des. Rundele nu se termină: startul greșit numără ca rundă, deci folosește continue.
+
+Proiectul de azi. Reflexe de campion. Minim înseamnă o rundă. Complet înseamnă cinci runde, medie, record și sunete.
+
+Recapitulare. Random și random Seed dau imprevizibilul. Millis măsoară timpul de reacție. O funcție poate returna minus unu ca semnal special. Reguli plus scor înseamnă un joc.
+
+Succes, campionule.

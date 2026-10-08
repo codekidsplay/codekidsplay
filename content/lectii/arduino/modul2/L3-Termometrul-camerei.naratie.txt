@@ -1,0 +1,25 @@
+Lecția trei din Modulul doi. Termometrul camerei.
+
+Astăzi citești temperatura cu senzorul T M P treizeci și șase și o transformi în grade Celsius. Proiectul se numește Termometrul meu. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A doi, linie jos, L zero trei.
+
+Obiectivul. La final ai un termometru care afișează temperatura în Serial Monitor. Minim: senzorul pe A zero, conversie în grade Celsius, valoare afișată la fiecare secundă. Complet: minim, plus media a zece citiri, mai stabilă, și temperatura și în grade Fahrenheit.
+
+De ce contează. Temperatura este cea mai folosită măsurătoare: termostate, frigidere, sere, vreme. Azi vezi cum o tensiune devine grade, pas cu pas.
+
+Primul pas. Conexiuni. T M P treizeci și șase are trei picioare. Ține senzorul cu partea plată spre tine: ordinea este cinci volți, semnal, GND. Semnalul din mijloc merge la A zero. Dacă pui senzorul invers, citirile ies aiurea, deci verifică numele picioarelor.
+
+Al doilea pas. Formula. Senzorul dă o tensiune care crește cu zece milivolți pe grad, cu o decalare de jumătate de volt, ca să poată arăta și grade negative. Deci pornești de la valoarea citită, o transformi în volți, scazi zero virgulă cinci și înmulți cu o sută. Rezultatul este în grade Celsius.
+
+Al treilea pas. Minim. În loop citești, calculezi și afișezi, apoi pui un delay de o mie.
+
+Al patrulea pas, pentru Complet. Citirile tremură puțin. Citești de zece ori, aduni valorile, le împarți la zece și obții media, care este mai stabilă. Pui conversia într-o funcție care returnează un float. Fahrenheit se obține înmulțind gradele Celsius cu unu virgulă opt și adunând treizeci și doi.
+
+Al cincilea pas. Verificarea. Compari rezultatul cu valori cunoscute, de exemplu o cameră obișnuită, în jur de douăzeci de grade, sau senzorul ținut în mână.
+
+Greșeli frecvente. Temperatură ciudată, de exemplu o sută cincizeci de grade: picioarele senzorului sunt inversate. Mereu zero sau mereu cinci volți: firul de semnal nu merge la A zero. Împărțire întreagă: ai scris cinci împărțit la o mie douăzeci și trei fără zecimale. Eroare la return: o funcție float trebuie să returneze un float. Valori care sar mult: folosește media citirilor.
+
+Proiectul de azi. Termometrul meu. Minim înseamnă grade Celsius în Serial Monitor. Complet înseamnă medie și Fahrenheit.
+
+Recapitulare. T M P treizeci și șase dă zece milivolți pe grad, cu decalare de jumătate de volt. Funcția poate returna o valoare. Media citirilor liniștește senzorul.
+
+Succes cu termometrul.

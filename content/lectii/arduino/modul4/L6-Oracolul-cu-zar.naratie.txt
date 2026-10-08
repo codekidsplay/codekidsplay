@@ -1,0 +1,25 @@
+Lecția șase din Modulul patru. Oracolul cu zar.
+
+Astăzi construiești un zar electronic cu șapte LED-uri și un oracol care îți dă răspunsuri pe L C D. Proiectul se numește Oracolul. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A patru, linie jos, L zero șase.
+
+Obiectivul. La final ai un zar care se rostogolește și un oracol care răspunde la întrebări. Minim: un buton aruncă zarul, iar șapte LED-uri arată fața, de la unu la șase. Complet: minim, plus animație de rostogolire, sunet și L C D cu numărul și un răspuns al oracolului după zar.
+
+De ce contează. Zarurile electronice sunt jocuri de probabilitate. Înveți și o tehnică foarte folosită: tablouri de modele, unde fiecare față a zarului este un rând dintr-un tabel.
+
+Primul pas. Dispunerea LED-urilor. Le pui ca pe un zar real: două în stânga sus și dreapta sus, două la mijloc, în stânga și dreapta, unul în centru, și două jos. Le numerotezi de la L zero la L șase.
+
+Al doilea pas. Tabelul fețelor. Fiecare față înseamnă care LED-uri se aprind: unu înseamnă aprins. De exemplu, fața unu aprinde doar LED-ul din centru, iar fața șase aprinde cele șase din margini.
+
+Al treilea pas. Minim, zar simplu. Păstrezi pinii LED-urilor într-un tablou, iar butonul la un pin separat. La apăsare alegi un număr cu random de unu până la șapte, adică șapte exclus, și aprinzi LED-urile din tabel pentru acea față.
+
+Al patrulea pas, pentru Complet. Animație: arăți câteva fețe la întâmplare, cu pauze tot mai mari, ca un zar care încetinește. Adaugi sunete. Pe L C D afișezi numărul, iar dintr-un tablou de texte alegi răspunsul oracolului, cu indexul zar minus unu.
+
+Al cincilea pas. Fețe corecte? Un test: în setup arăți pentru fiecare față de la unu la șase, câte o jumătate de secundă. Dacă nu seamănă cu un zar, ai o greșeală în tabel sau în fire.
+
+Greșeli frecvente. Aceleași numere la fiecare pornire: lipsește random Seed. Zar cu șapte: ai scris random de unu la opt în loc de unu la șapte. Fețe greșite: LED-urile nu sunt la pinii din tablou. Răspunsul nu se potrivește: indexul zar minus unu este greșit. Prea multe fire: pune rezistoarele pe rând, cu bifă.
+
+Proiectul de azi. Oracolul. Minim înseamnă zar cu șapte LED-uri. Complet înseamnă animație, sunet și oracol.
+
+Recapitulare. Folosim un tablou de modele pentru fețe. Random cu două numere are maximul exclus. Animația înseamnă pauze tot mai mari. Un tablou de texte dă răspunsurile.
+
+Succes cu oracolul.

@@ -1,0 +1,25 @@
+Lecția zece din Modulul trei. Telecomanda magică.
+
+Astăzi, la proiectul modulului, controlezi LED-uri de la distanță cu o telecomandă cu infraroșu, ca la televizor. Proiectul se numește Telecomanda mea. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A trei, linie jos, L zece.
+
+Obiectivul. La final comanzi lumini cu o telecomandă I R. Minim: trei butoane ale telecomenzii aprind și sting trei LED-uri. Complet: minim, plus un buton Power care stinge totul și butoane de volum, plus și minus, care schimbă luminozitatea unui al patrulea LED.
+
+De ce contează. Telecomenzile de televizor, aerul condiționat și boxele folosesc infraroșu: un LED trimite impulsuri de lumină invizibilă, iar un receptor le transformă în coduri. Azi citești și folosești aceste coduri.
+
+Primul pas. Conexiuni. Receptorul I R are semnalul la pinul unsprezece, alimentarea la cinci volți și GND. LED-urile au rezistoare.
+
+Al doilea pas. Cum merge. Fiecare buton trimite un cod numeric unic, în hexazecimal. Receptorul primește codul, iar biblioteca I R remote îl decodează.
+
+Al treilea pas. Aflăm codurile. Orice telecomandă are alte coduri, deci mai întâi le citim și le afișăm în Serial Monitor. După fiecare cod apelezi resume, ca receptorul să asculte din nou.
+
+Al patrulea pas. Minim. Pui codurile tale în locul celor din exemplu. Când primești codul primului buton, comuți primul LED, adică îl aprinzi dacă era stins și invers. O funcție, comută, face asta pentru oricare LED.
+
+Al cincilea pas, pentru Complet. Butonul Power stinge toate LED-urile. Volum plus și volum minus cresc sau scad luminozitatea celui de al patrulea LED, cu analog Write.
+
+Greșeli frecvente. Nu primești nimic: lipsește pornirea receptorului sau pinul nu este unsprezece. Primești un singur buton: ai uitat resume. Butoanele nu fac nimic: codurile din program nu sunt ale telecomenzii tale, deci citește-le cu primul pas. LED-ul clipește la ținut apăsat: vezi codul de repetare, F F F F F F F F, și îl ignori. Eroare la include: în Tinkercad biblioteca este inclusă, dar pe un Arduino real trebuie instalată, iar versiunile noi au alte comenzi.
+
+Proiectul de azi. Telecomanda mea. Minim înseamnă trei LED-uri comandate. Complet înseamnă Power și luminozitate.
+
+Recapitulare. Fiecare buton I R are un cod. Citește mai întâi codurile, apoi folosește-le. Resume după fiecare cod. Funcția comută inversează un LED.
+
+Felicitări, ai terminat Modulul trei.

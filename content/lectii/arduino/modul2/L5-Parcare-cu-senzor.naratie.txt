@@ -1,0 +1,25 @@
+Lecția cinci din Modulul doi. Parcare cu senzor.
+
+Astăzi măsori distanța cu senzorul cu ultrasunete H C minus S R zero patru, exact ca la mașinile moderne: cu cât te apropii, cu atât bipurile sunt mai dese. Proiectul se numește Parcare inteligentă. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A doi, linie jos, L zero cinci.
+
+Obiectivul. La final ai un senzor de parcare care bipăie tot mai repede pe măsură ce un obiect se apropie. Minim: distanța în centimetri afișată în Serial Monitor. Complet: minim, plus buzzer cu ritm după distanță și trei LED-uri, verde, galben și roșu.
+
+De ce contează. Senzorii cu ultrasunete trimit un sunet, așteaptă ecoul și calculează distanța. Așa văd liliecii, delfinii și mașinile.
+
+Primul pas. Cum funcționează. Trimiți un impuls scurt pe pinul Trig. Senzorul emite un sunet pe care nu îl auzi. Sunetul se întoarce, pe pinul Echo. Măsori cât timp a durat și calculezi distanța. Sunetul parcurge aproximativ zero virgulă zero trei patru centimetri pe microsecundă, iar drumul este dus-întors, deci distanța este timpul înmulțit cu zero virgulă zero trei patru și împărțit la doi.
+
+Al doilea pas. Conexiuni. VCC merge la cinci volți, GND la GND, Trig la pinul șapte, Echo la pinul șase. Piezo este la pinul opt. LED-urile: verde la pinul zece, galben la pinul nouă, roșu la pinul doisprezece, cu rezistoare.
+
+Al treilea pas. Minim. Trimiți impulsul pe Trig, măsori cu pulse In cât durează ecoul și calculezi distanța. O afișezi în Serial Monitor.
+
+Al patrulea pas. O funcție pentru distanță. Pui măsurarea într-o funcție care returnează distanța, ca să nu repeți codul. Pulse In primește și un timeout, ca placa să nu rămână blocată.
+
+Al cincilea pas, pentru Complet. Pe trepte: departe, verde și bip rar. Mai aproape, galben și bip mai des. Foarte aproape, roșu și bip continuu. Nu uita no Tone.
+
+Greșeli frecvente. Mereu zero centimetri: Trig și Echo sunt inversate sau lipsește alimentarea. Valori uriașe: ai uitat împărțirea la doi. Placa îngheață: lipsește timeoutul din pulse In. Buzzer continuu: ai uitat no Tone. LED-uri multiple aprinse: stinge-le la început.
+
+Proiectul de azi. Parcare inteligentă. Minim înseamnă distanța în Serial Monitor. Complet înseamnă buzzer și LED-uri.
+
+Recapitulare. Trig trimite, Echo primește. Distanța este timpul înmulțit cu zero virgulă zero trei patru, împărțit la doi. Pulse In se folosește cu timeout. Treptele de distanță aduc lumini și sunete.
+
+Succes la parcare.

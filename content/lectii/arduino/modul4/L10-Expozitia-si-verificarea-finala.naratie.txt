@@ -1,0 +1,23 @@
+Lecția zece din Modulul patru. Expoziția și verificarea finală.
+
+Aceasta este ultima oră din cursul de Arduino. Îți prezinți proiectul, vezi proiectele colegilor și faci verificarea finală a tot ce ai învățat. Proiectul se numește Expoziția Arduino. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A patru, linie jos, L zece.
+
+Obiectivul. La final ai prezentat proiectul, ai primit feedback și ai terminat verificarea finală. Minim: prezentare de două minute, cu demonstrație, și verificarea finală completată. Complet: minim, plus feedback dat altor doi colegi și un plan pentru ce faci mai departe.
+
+De ce contează. Să explici ce ai construit este la fel de important ca să construiești. Dacă poți explica, înțelegi cu adevărat. Iar feedback-ul te ajută să crești.
+
+Primul pas. Cum prezinți în două minute. În primele cincisprezece secunde spui cum se numește proiectul și ce problemă rezolvă. Apoi arăți piesele pe care le-ai folosit. Urmează demonstrația, partea cea mai importantă. Spui apoi ce a fost cel mai greu și cum ai rezolvat. La final spui ce ai îmbunătăți.
+
+Al doilea pas. Foaia de feedback. Pentru doi colegi răspunzi la câteva întrebări: ce ți-a plăcut, ce ai fi făcut diferit și ce ai vrea să afli. Fii concret, nu spune doar a fost bine.
+
+Al treilea pas. Verificarea finală. Răspunzi în caiet sau în aplicație. Fiecare întrebare are un singur răspuns corect. Întrebările sunt împărțite pe părți, de exemplu circuite, cod și proiecte. Citește cu atenție și gândește-te, nu ghici.
+
+Al patrulea pas. Autoevaluare. Bifezi pentru fiecare lucru dacă încă nu știi, dacă știi cu ajutor sau dacă poți singur: de exemplu aprinzi un LED și îl controlezi cu un buton.
+
+Al cincilea pas. Ce urmează? Dacă ți-a plăcut robotul, poți încerca un robot pe șasiu, cu driver de motoare. Dacă ți-au plăcut casele inteligente, poți face o casă cu mai multe camere. Poți trece și la placa reală, cu aceleași programe.
+
+Greșeli frecvente. Prezentare fără exersare: repet-o măcar o dată. Demonstrație nepregătită: verifică totul înainte. Feedback vag: fii concret. Răspunsuri la întâmplare la verificare: gândește-te, nu ghici. Frică de greșeli: greșelile sunt o parte din învățare.
+
+Proiectul de azi. Expoziția Arduino. Minim înseamnă prezentare și verificare. Complet înseamnă feedback și plan.
+
+Felicitări, ai terminat cursul de Arduino. Ai pornit de la un LED care clipește și ai ajuns la case inteligente și roboți. Să nu te oprești aici.

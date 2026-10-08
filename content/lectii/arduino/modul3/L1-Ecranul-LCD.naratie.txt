@@ -1,0 +1,25 @@
+Lecția unu din Modulul trei. Ecranul L C D.
+
+Astăzi Arduino începe să scrie pe un ecran L C D de șaisprezece pe două, nu doar în Serial Monitor. Proiectul se numește Cartea mea de vizită. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A trei, linie jos, L zero unu.
+
+Obiectivul. La final ai un ecran care afișează mesaje pe două rânduri. Minim: Salut pe primul rând și numele tău pe al doilea. Complet: minim, plus un contor care crește în timp real și un caracter propriu, o inimioară.
+
+De ce contează. Ecranele sunt peste tot: cuptoare, aparate de cafea, mașini. Un L C D îți permite să construiești proiecte care vorbesc fără calculator.
+
+Primul pas. Conexiuni. Ecranul are șaisprezece pini, dar conectezi doar pe cei din tabel. În Tinkercad, cursorul peste un pin îi arată numele. Pe scurt: R S la pinul doisprezece, E la pinul unsprezece, iar D patru, D cinci, D șase și D șapte la pinii cinci, patru, trei și doi. Contrastul, pinul V zero, merge la GND sau la un potențiometru.
+
+Al doilea pas. Primul text. La începutul programului incluzi biblioteca Liquid Crystal. Apoi creezi obiectul lcd, cu pinii în ordinea R S, E, D patru până la D șapte. În setup pornești ecranul cu lcd punct begin de șaisprezece și doi. Cu set Cursor alegi coloana și rândul, de la zero, iar cu print scrii textul.
+
+Al treilea pas. Contor în timp real. În loop afișezi un număr care crește. Atenție la cifrele vechi: dacă numărul scade de la trei cifre la două, rămâne o cifră veche pe ecran, deci scrii și spații la sfârșit.
+
+Al patrulea pas, pentru Complet. Caracter propriu. Fiecare caracter este o grilă de cinci pe opt puncte. Desenezi o inimioară într-un tablou de opt numere, o înregistrezi cu create Char și o afișezi cu write.
+
+Al cincilea pas. Comenzi utile. Clear șterge tot ecranul. Set Cursor mută cursorul. Print scrie.
+
+Greșeli frecvente. Ecran gol, dar pornit: contrastul, V zero trebuie la GND sau la potențiometru. Pătrate pline pe primul rând: ecranul nu a fost inițializat sau ordinea pinilor din cod este greșită. Caractere ciudate: un fir de date este la alt pin. Text tăiat: ai trecut de șaisprezece caractere. Rămân cifre vechi: lipsesc spațiile sau clear.
+
+Proiectul de azi. Cartea mea de vizită. Minim înseamnă salut și numele. Complet înseamnă contor și inimioară.
+
+Recapitulare. Liquid Crystal se creează cu pinii în ordine: R S, E, D patru până la D șapte. Set Cursor începe de la zero. Print scrie, clear șterge. Create Char și write dau desene proprii.
+
+Succes cu ecranul.

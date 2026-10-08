@@ -1,0 +1,29 @@
+Lecția unu din Modulul patru. De la idee la schemă.
+
+Astăzi începem ultimul modul. Nu mai copiezi proiecte, le gândești tu. Înveți cum arată un proiect bine pregătit, înainte să pui prima piesă. Proiectul se numește Planul meu de inventator. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A patru, linie jos, L zero unu.
+
+Obiectivul. La final ai planul unui proiect: idee, listă de piese, tabel de pini și un program de test. Minim: o idee clară în două propoziții, lista de componente și tabelul de pini. Complet: minim, plus schema pe hârtie și un program de test care verifică, pe rând, fiecare piesă.
+
+De ce contează. Inginerii petrec mai mult timp planificând decât lipind fire. Un proiect cu plan se termină. Unul fără plan se blochează la jumătate și nu mai știi ce fir merge unde.
+
+Primul pas. Ce piese știm deja. La intrări avem butonul, potențiometrul, fotorezistorul, T M P treizeci și șase, senzorul cu ultrasunete, P I R, senzorul de umiditate, senzorul de înclinare, tastatura și receptorul I R. La ieșiri avem LED-urile, buzzerul, servo-ul, motorul, L C D-ul și panglica de lumini.
+
+Al doilea pas. Alegi ideea. Răspunzi la trei întrebări: ce problemă rezolvă proiectul, cine îl folosește și ce piese ai nevoie. De exemplu, uit să ud floarea.
+
+Al treilea pas. Descrierea în două propoziții. Completezi: Proiectul meu se numește, și face asta, pentru că rezolvă o problemă.
+
+Al patrulea pas. Lista de componente. Scrii fiecare piesă, câte bucăți ai nevoie și ce rol are.
+
+Al cincilea pas. Tabelul de pini. Este cea mai importantă hârtie din proiect. Dai câte un pin fiecărei piese și scrii dacă este intrare sau ieșire. Așa eviți conflictele, adică două piese pe același pin.
+
+Al șaselea pas. Schema pe hârtie. Desenezi Arduino la mijloc, piesele în jur, cu liniile firelor și etichetele pinilor. Nu trebuie să fie perfectă, dar trebuie să se înțeleagă.
+
+Al șaptelea pas, pentru Complet. Programul de test. Înainte de programul mare verifici piesele pe rând: aprinzi LED-ul, citești butonul, măsori senzorul. Un program de test îți spune imediat dacă o piesă sau un fir sunt greșite.
+
+Greșeli frecvente. Idee prea mare, de exemplu o casă cu cincisprezece funcții: începe mic și adaugă. Conflicte de pini: două piese pe același pin. Fără plan: începi să lipești fire fără tabel. Test omis: lipești șase piese, nimic nu merge și nu știi de ce. Prea multe piese: Arduino Uno are doar paisprezece pini digitali și șase analogici.
+
+Proiectul de azi. Planul meu de inventator. Minim înseamnă idee, listă și tabel de pini. Complet înseamnă și schema, și programul de test.
+
+Recapitulare. Un proiect înseamnă intrări, decizie și ieșiri. Tabelul de pini previne conflictele. Testezi piesele pe rând. Începe simplu, apoi adaugă.
+
+Succes cu planul tău.

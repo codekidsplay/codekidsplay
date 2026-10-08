@@ -1,0 +1,25 @@
+Lecția doi din Modulul doi. Veioza automată.
+
+Astăzi folosești un fotorezistor, adică un senzor de lumină, ca să aprinzi singur un LED când se face întuneric. Proiectul se numește Veioza mea. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A doi, linie jos, L zero doi.
+
+Obiectivul. La final ai o lampă care se aprinde în întuneric și se stinge la lumină. Minim: fotorezistor pe A zero, LED pe pinul nouă, aprins sub un prag ales de tine. Complet: minim, plus luminozitate proporțională, adică cu cât este mai întuneric, cu atât lumina este mai puternică, și histerezis, ca LED-ul să nu clipească la limită.
+
+De ce contează. Lămpile de stradă, luminile din telefon și farurile automate folosesc același lucru: un senzor de lumină și un prag.
+
+Primul pas. Divizorul de tensiune. Fotorezistorul își schimbă rezistența după lumină, dar Arduino citește tensiune. De aceea îl punem în serie cu un rezistor fix de zece kiloohmi. Cinci volți merge la fotorezistor. Celălalt picior al lui merge la A zero și la rezistorul de zece kiloohmi, iar rezistorul merge la GND. LED-ul merge la pinul nouă printr-un rezistor de două sute douăzeci de ohmi. La lumină multă, A zero citește valori mari. La întuneric, valori mici.
+
+Al doilea pas. Calibrare. Afișezi valorile în Serial Monitor și vezi ce număr primești la lumină și ce număr la întuneric. Pe baza lor alegi pragul.
+
+Al treilea pas. Minim. Dacă lumina este mai mică decât pragul, aprinzi LED-ul. Altfel îl stingi.
+
+Al patrulea pas, pentru Complet. Lumină proporțională. Inversezi intervalul în map, deci la întuneric valoarea ajunge mare, iar cu constrain o ții în limite.
+
+Al cincilea pas. Histerezis. Dacă lumina este exact la prag, valoarea sare puțin în sus și în jos și LED-ul clipește. Soluția: două praguri, unul pentru aprindere și altul, puțin mai mare, pentru stingere.
+
+Greșeli frecvente. LED-ul nu reacționează: fotorezistorul nu este legat și la A zero, și la rezistorul de zece kiloohmi. Merge invers: compari cu mai mare în loc de mai mic, sau ai inversat cinci volți cu GND. Valori fixe, mereu zero sau o mie douăzeci și trei: lipsește rezistorul. LED-ul clipește la limită: folosește histerezisul. Prag prea mic sau prea mare: recitește valorile din Serial Monitor.
+
+Proiectul de azi. Veioza mea. Minim înseamnă aprindere sub prag. Complet înseamnă lumină proporțională și histerezis.
+
+Recapitulare. Fotorezistor plus rezistor fix înseamnă divizor de tensiune. Pragul se verifică cu if. Map și constrain dau reglaj fin. Histerezis înseamnă două praguri, fără clipiri.
+
+Succes cu veioza.

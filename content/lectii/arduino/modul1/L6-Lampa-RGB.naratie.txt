@@ -1,0 +1,25 @@
+Lecția șase. Lampa R G B a camerei.
+
+Astăzi amesteci lumină roșie, verde și albastră, ca să obții orice culoare cu un LED R G B. Proiectul se numește Lampa mea colorată. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A unu, linie jos, L zero șase.
+
+Obiectivul. La final ai un LED R G B care poate afișa culori diferite, comandate din cod. Minim: LED R G B conectat pe trei pini P W M, funcția culoare cu trei valori și șase culori afișate pe rând. Complet: minim, plus un mixer de culori cu trei potențiometre, câte unul pentru fiecare culoare de bază.
+
+De ce contează. Ecranul telefonului, televizorul și luminile de petrecere folosesc același truc: trei lumini mici, roșu, verde și albastru, care amestecate dau orice culoare. Azi îl faci tu.
+
+Primul pas. LED-ul R G B. Are patru picioare: unul pentru roșu, unul pentru verde, unul pentru albastru și unul comun. Folosim varianta cu catod comun, deci piciorul comun merge la GND. Fiecare culoare merge printr-un rezistor la un pin cu tilde: roșu la nouă, verde la zece, albastru la unsprezece. În Tinkercad treci cu cursorul peste picioare ca să vezi numele lor.
+
+Al doilea pas. Funcția culoare. Pui toată logica într-un singur loc. Funcția primește trei numere, de la zero la două sute cincizeci și cinci, și le trimite cu analog Write la cele trei culori.
+
+Al treilea pas. Amestecul culorilor, cu lumină. Roșu și verde dau galben. Roșu și albastru dau mov. Verde și albastru dau turcoaz. Toate trei la maxim dau alb. Atenție, cu lumina amestecul merge altfel decât cu vopselele.
+
+Al patrulea pas. Valori intermediare. Pot fi orice între zero și două sute cincizeci și cinci. De exemplu, două sute cincizeci și cinci, o sută douăzeci și opt și zero dau portocaliu. Încearcă singur.
+
+Al cincilea pas, pentru Complet. Mixerul. Fiecare potențiometru comandă o culoare. Citești cele trei valori cu analog Read, le convertești cu map și le trimiți funcției culoare.
+
+Greșeli frecvente. O culoare lipsește: un picior nu este conectat la pin sau nu are rezistor. Culorile par amestecate greșit: ai încurcat picioarele. Nu se aprinde nimic: piciorul comun nu este la GND. LED R G B cu anod comun: comunul merge la cinci volți și valorile se inversează. Rezistor lipsă: fiecare culoare are propriul rezistor.
+
+Proiectul de azi. Lampa mea colorată. Minim înseamnă șase culori pe rând. Complet înseamnă minim, plus mixerul cu trei potențiometre.
+
+Recapitulare. R G B înseamnă roșu, verde, albastru. Fiecare culoare se comandă cu analog Write. Funcția culoare păstrează codul curat. Valorile intermediare dau culori noi.
+
+Succes cu lampa colorată.

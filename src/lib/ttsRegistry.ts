@@ -4,6 +4,7 @@ import { SCRATCH_M3_MODUL_ID } from '@/lib/scratchM3'
 import { SCRATCH_M4_MODUL_ID } from '@/lib/scratchM4'
 import { SCRATCH_M5_MODUL_ID } from '@/lib/scratchM5'
 import { SCRATCH_M6_MODUL_ID } from '@/lib/scratchM6'
+import { arduinoModulNumar, arduinoTtsApiUrl, isArduinoLesson } from '@/lib/arduino'
 import { isMicrobitLesson, microbitModulNumar, microbitTtsApiUrl } from '@/lib/microbit'
 import { isTinkercadLesson, tinkercadModulNumar, tinkercadTtsApiUrl } from '@/lib/tinkercad'
 
@@ -49,6 +50,11 @@ export function getAscultaConfig(modulId: string, ordine: number): AscultaConfig
   const mb = microbitModulNumar(modulId)
   if (mb !== null && isMicrobitLesson(ordine)) {
     return { apiUrl: o => microbitTtsApiUrl(mb, o), logLabel: `AscultaMicrobitM${mb}` }
+  }
+
+  const ar = arduinoModulNumar(modulId)
+  if (ar !== null && isArduinoLesson(ordine)) {
+    return { apiUrl: o => arduinoTtsApiUrl(ar, o), logLabel: `AscultaArduinoM${ar}` }
   }
 
   return null

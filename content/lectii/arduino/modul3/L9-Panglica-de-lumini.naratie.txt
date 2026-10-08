@@ -1,0 +1,25 @@
+Lecția nouă din Modulul trei. Panglica de lumini.
+
+Astăzi lucrezi cu LED-uri Neo Pixel: LED-uri R G B pe care le comanzi individual, cu un singur fir. Proiectul se numește Panglica magică. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A trei, linie jos, L zero nouă.
+
+Obiectivul. La final ai o panglică de lumini cu efecte. Minim: aprinzi pixelii într-o culoare și faci o rază care aleargă. Complet: minim, plus curcubeu, un buton care schimbă efectul și un potențiometru pentru luminozitate.
+
+De ce contează. Luminile de Crăciun inteligente, pantofii care se aprind și ecranele L E D mari folosesc LED-uri adresabile. Poți face orice culoare, pe orice LED, cu un singur pin Arduino.
+
+Primul pas. Conexiuni. Alimentarea plus a panglicii merge la cinci volți, GND la GND, iar firul de date la pinul șase.
+
+Al doilea pas. Primele culori. Incluzi biblioteca Adafruit Neo Pixel și creezi obiectul cu numărul de pixeli, pinul și tipul. Cu set Pixel Color alegi culoarea fiecărui pixel, cu Color de roșu, verde, albastru. Fără show nu se vede nimic: show trimite culorile spre panglică.
+
+Al treilea pas. Raza care aleargă, pentru Minim. Cu un for aprinzi pe rând câte un pixel, îl stingi pe cel de dinainte și pui o pauză mică.
+
+Al patrulea pas. Curcubeul. Folosești o funcție, roata culorilor, care primește un număr de la zero la două sute cincizeci și cinci și returnează o culoare, parcurgând tot spectrul. Dai fiecărui pixel o culoare puțin diferită.
+
+Al cincilea pas, pentru Complet. Un buton alege efectul, cu operatorul procent, în ciclu. Potențiometrul reglează luminozitatea, cu set Brightness. Pe lângă aspect, asta consumă și mai puțin curent.
+
+Greșeli frecvente. Nu se aprinde nimic: lipsește show. Culori greșite: ordinea din cod este N E O G R B, iar unele benzi sunt N E O R G B. Doar primul pixel merge: numărul de pixeli este prea mic. Prea luminos: folosește set Brightness. Eroare la compilare: lipsește linia de include pentru Adafruit Neo Pixel.
+
+Proiectul de azi. Panglica magică. Minim înseamnă o culoare și raza. Complet înseamnă curcubeu, buton și luminozitate.
+
+Recapitulare. Creezi obiectul cu numărul de pixeli, pinul și tipul. Set Pixel Color și show aprind pixelii. Color de roșu, verde, albastru face culoarea. Un buton și procentul alege efectul.
+
+Succes cu panglica.

@@ -1,0 +1,23 @@
+Lecția doi din Modulul trei. Panou de informații.
+
+Astăzi transformi L C D-ul într-un panou care schimbă pagini la apăsarea unui buton: temperatura, lumina și un mesaj. Proiectul se numește Panoul meu. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A trei, linie jos, L zero doi.
+
+Obiectivul. La final ai un panou cu mai multe pagini pe L C D. Minim: T M P treizeci și șase, cu temperatura pe L C D, actualizată la fiecare secundă. Complet: minim, plus trei pagini, temperatură, lumină și mesaj, schimbate cu un buton, fără clipiri.
+
+De ce contează. Aproape orice aparat cu ecran are meniuri sau pagini. Azi înveți să ții evidența paginii curente și să desenezi doar ce trebuie.
+
+Primul pas. Conexiuni. L C D-ul rămâne conectat exact ca în lecția unu. Adaugi senzorul de temperatură, senzorul de lumină și un buton pentru schimbarea paginii.
+
+Al doilea pas. Minim. Citești temperatura ca în Modulul doi, o transformi în grade și o scrii pe al doilea rând al ecranului, cu un delay de o secundă.
+
+Al treilea pas. Pagini cu buton. Ții minte pagina curentă într-o variabilă. Butonul o crește: zero, unu, doi, apoi iar zero. Pentru asta folosești operatorul modulo, semnul procent. Cu if sau switch afișezi conținutul paginii alese.
+
+Al patrulea pas, pentru Complet. Valori vii, fără clipiri. Dacă temperatura se afișează o singură dată, rămâne neschimbată. Vrem s-o actualizăm, dar fără clear la fiecare rundă, pentru că face ecranul să clipească. Redesenezi doar rândul doi, iar clear apelezi doar când se schimbă pagina. Actualizarea periodică se face cu millis.
+
+Greșeli frecvente. Ecranul clipește: ai pus clear în loop la fiecare rundă. Pagina sare peste mai multe: numeri tot timpul cât este apăsat butonul, nu doar momentul apăsării. Rămân cifre vechi: lipsesc spațiile. Temperatura rămâne mereu la fel: funcția nu este apelată periodic. Eroare la compilare: ai omis punct și virgulă după print sau acolade.
+
+Proiectul de azi. Panoul meu. Minim înseamnă temperatura pe L C D. Complet înseamnă trei pagini cu buton.
+
+Recapitulare. Păstrăm pagina curentă într-o variabilă. Procentul face ciclul zero, unu, doi, zero. Clear doar la schimbarea paginii. Millis pentru actualizări periodice.
+
+Succes cu panoul.

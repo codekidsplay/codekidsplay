@@ -1,0 +1,27 @@
+Lecția unu. Hello, Arduino!
+
+Astăzi pornești simulatorul Tinkercad Circuits, cunoști placa Arduino Uno și faci primul LED să clipească. Proiectul se numește LED-ul care clipește. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A unu, linie jos, L zero unu.
+
+Obiectivul. La final ai un circuit cu un LED și un rezistor, legat la Arduino, și un program care îl face să clipească. Minim: LED-ul de pe placă, de la pinul treisprezece, clipește, iar circuitul rulează în simulator. Complet: minim, plus un LED extern pe pinul opt, cu rezistor de două sute douăzeci de ohmi, viteza schimbată și semnalul S O S.
+
+De ce contează. Arduino este un mic calculator care primește comenzi de la tine și le transformă în lumină, sunet și mișcare. Orice proiect din curs pornește de la ce înveți azi: un pin, un LED și două comenzi. Lucrăm în simulator, deci nu strici nimic dacă greșești.
+
+Primul pas. Intri pe Tinkercad, te conectezi și alegi Circuits, apoi Create new Circuit. Pe plan apare deja placa Arduino Uno. Privește-o: are pini, o mufă USB și un mic LED notat cu litera L.
+
+Al doilea pas. Primul program, fără fire. LED-ul L există deja pe placă, deci îl poți face să clipească fără nicio piesă. Apeși butonul Code și scrii programul. Un program Arduino are două părți. Funcția setup rulează o singură dată, la pornire. Funcția loop rulează la nesfârșit.
+
+În setup spui că pinul treisprezece este ieșire, cu pin Mode. În loop aprinzi LED-ul cu digital Write, pin și High, aștepți o secundă cu delay de o mie, îl stingi cu digital Write și Low, și aștepți din nou o secundă. Delay se măsoară în milisecunde, deci o mie înseamnă o secundă. Apeși Start Simulation și LED-ul clipește.
+
+Al treilea pas. LED extern. Tragi pe plan un LED și un rezistor. Pinul opt merge la rezistor, rezistorul merge la piciorul lung al LED-ului, adică plusul, iar piciorul scurt merge la GND. Apoi schimbi în cod treisprezece cu opt, în toate cele trei locuri. De ce rezistor? Fără el trece prea mult curent și LED-ul arde. În simulator se înnegrește, o greșeală bună de văzut o dată, fără pagube.
+
+Al patrulea pas. Cod cu nume. În loc să scrii opt peste tot, scrii const int LED egal opt. Acum, dacă muți firul pe alt pin, schimbi un singur rând.
+
+Al cincilea pas, pentru Complet. Semnalul S O S: trei clipiri scurte, trei lungi, trei scurte.
+
+Greșeli frecvente. LED-ul nu se aprinde: l-ai pus invers, piciorul lung este plusul. LED-ul arde: ai uitat rezistorul. Eroare la cod: lipsește punct și virgulă la sfârșitul unui rând sau o acoladă. Nu se întâmplă nimic: n-ai apăsat Start Simulation. Ai schimbat pinul în cod, dar nu și pe fir: cei doi trebuie să fie la fel. Atenție la majuscule: digital Write se scrie cu W mare.
+
+Proiectul de azi. LED-ul care clipește. Minim înseamnă LED-ul de pe placă clipind. Complet înseamnă minim, plus LED extern și S O S. Dacă rămâi în urmă, salvează la Minim.
+
+Recapitulare. Setup rulează o dată, loop la nesfârșit. Pin Mode spune ce face pinul, digital Write îl aprinde sau îl stinge. Delay de o mie înseamnă o secundă. LED-ul are mereu rezistor.
+
+Succes la primul tău circuit.

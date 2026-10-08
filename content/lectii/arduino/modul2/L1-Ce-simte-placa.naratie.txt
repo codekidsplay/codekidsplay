@@ -1,0 +1,25 @@
+Lecția unu din Modulul doi. Ce simte placa?
+
+Astăzi înveți să asculți ce simte Arduino: citești valori cu analog Read și digital Read și le afișezi în Serial Monitor. Proiectul se numește Jurnalul plăcii. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A doi, linie jos, L zero unu.
+
+Obiectivul. La final afișezi în Serial Monitor valorile unui potențiometru și ale unui buton, într-un format ușor de citit. Minim: valoarea potențiometrului, de la zero la o mie douăzeci și trei, și starea butonului, pe un rând, la fiecare două sute de milisecunde. Complet: minim, plus tensiunea în volți, cu zecimale, și un mesaj text: mic, mediu sau mare.
+
+De ce contează. Un senzor nu face nimic singur: trimite un număr. Dacă știi să citești numărul și să îl vezi, poți face orice cu el. Serial Monitor este fereastra ta în mintea plăcii și îl folosești în tot modulul.
+
+Primul pas. Conexiuni. Potențiometrul are laturile la cinci volți și la GND, iar mijlocul la A zero. Butonul are un picior la pinul doi și piciorul diagonal la GND.
+
+Al doilea pas. Primul mesaj. În setup pornești comunicarea cu Serial punct begin de nouă mii șase sute. În loop scrii mesaje cu Serial punct println.
+
+Al treilea pas. Minim. Citești potențiometrul cu analog Read, butonul cu digital Read, apoi afișezi amândouă valorile pe un rând, cu Serial punct print. La final pui un delay de două sute.
+
+Al patrulea pas, pentru Complet. Analog Read dă de la zero la o mie douăzeci și trei, dar tensiunea este între zero și cinci volți. Ca să obții volții, înmulțești cu cinci virgulă zero împărțit la o mie douăzeci și trei virgulă zero. Folosim float, un număr cu zecimale. Apoi cu if alegi mesajul: mic, mediu sau mare.
+
+Al cincilea pas. Tipuri de date. Int ține un număr întreg, float un număr cu zecimale, bool adevărat sau fals, iar String un text.
+
+Greșeli frecvente. Serial Monitor este gol: n-ai pus Serial punct begin sau n-ai pornit simularea. Caractere ciudate: viteza din cod trebuie să fie aceeași cu cea din monitor. Volți egal zero sau patru: ai scris cinci împărțit la o mie douăzeci și trei fără zecimale, iar împărțirea întreagă dă zero. Scrie cinci virgulă zero. Se derulează prea repede: lipsește delay. Butonul arată mereu zero: ai uitat input pull up.
+
+Proiectul de azi. Jurnalul plăcii. Minim înseamnă potențiometru și buton pe un rând. Complet înseamnă și volți, și mesaj.
+
+Recapitulare. Serial begin se pune o dată, în setup. Print și println afișează texte și numere. Float este pentru zecimale. Senzorul trimite un număr, iar tu decizi ce înseamnă.
+
+Succes cu jurnalul.

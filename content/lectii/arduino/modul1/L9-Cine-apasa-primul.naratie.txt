@@ -1,0 +1,23 @@
+Lecția nouă. Cine apasă primul?
+
+Astăzi faci un joc de reflexe pentru doi jucători: un semnal verde apare după o pauză aleatorie, iar cine apasă primul câștigă. Proiectul se numește Duelul de reflexe. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A unu, linie jos, L zero nouă.
+
+Obiectivul. La final ai un joc cu două butoane și trei LED-uri, care decide câștigătorul. Minim: semnal de start după o pauză aleatorie, iar cine apasă primul aprinde LED-ul lui. Complet: minim, plus start greșit, adică cine apasă înainte de semnal pierde, și scorul în Serial Monitor.
+
+De ce contează. Jocurile au reguli, iar regulile se scriu cu if, else if și bucle. Aici folosești și numere aleatorii, ca jocul să nu fie la fel de fiecare dată.
+
+Primul pas. Conexiuni. Butonul jucătorului unu merge la pinul doi, al jucătorului doi la pinul trei, fiecare cu un picior la GND. LED-ul primului jucător este la pinul opt, al doilea la pinul nouă, iar LED-ul verde de start la pinul zece, toate cu rezistor.
+
+Al doilea pas. Numere aleatorii. Random dă un număr întâmplător între minim, inclus, și maxim, exclus. Ca să nu fie mereu aceeași secvență, pornești generatorul cu random Seed, din zgomotul unui pin liber, A zero, în setup.
+
+Al treilea pas. Minim. Aștepți un timp aleatoriu, de exemplu între două și șase secunde, aprinzi LED-ul de start, apoi într-un while aștepți până apasă cineva. Cine apasă primul își aprinde LED-ul. După câștigător ieși din buclă, cu break.
+
+Al patrulea pas, pentru Complet. Start greșit. Cine apasă înainte de semnal pierde, deci câștigă celălalt. Scrii o funcție care așteaptă o perioadă și verifică tot timpul dacă cineva fură startul. Pentru asta măsori timpul cu millis, fără să blochezi programul. Scorul fiecărui jucător crește cu unu și se afișează în Serial Monitor.
+
+Greșeli frecvente. Același aleatoriu de fiecare dată: ai uitat random Seed. Jocul nu se termină: lipsește break sau return. Semnalul apare imediat: random trebuie pus în delay sau în comparație. Ambii jucători câștigă: după câștigător trebuie să ieși din buclă. Scorul rămâne zero: nu este apelat scor plus plus.
+
+Proiectul de azi. Duelul de reflexe. Minim înseamnă semnal aleatoriu și câștigător. Complet înseamnă minim, plus start greșit și scor.
+
+Recapitulare. Random cu două numere dă un număr aleatoriu. Random Seed pornește zarul. While repetă cât timp condiția este adevărată, iar break iese din buclă. Millis măsoară timpul fără să blocheze programul.
+
+Succes la duel.

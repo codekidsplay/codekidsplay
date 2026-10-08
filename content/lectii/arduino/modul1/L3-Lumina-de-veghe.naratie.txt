@@ -1,0 +1,25 @@
+Lecția trei. Lumina de veghe.
+
+Astăzi citești un buton cu Arduino și iei decizii cu if și else. Proiectul se numește Lumina mea de veghe. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A unu, linie jos, L zero trei.
+
+Obiectivul. La final ai un LED care răspunde la apăsarea unui buton. Minim: buton pe pinul doi, LED pe pinul opt, LED-ul aprins cât ții butonul apăsat. Complet: minim, plus un LED care rămâne aprins după o apăsare și se stinge la următoarea, ca un comutator, și mesaje în Serial Monitor.
+
+De ce contează. Până acum Arduino doar trimitea semnale. Acum ascultă și hotărăște. Orice aparat cu buton, o lanternă, o sonerie sau un joc, folosește ce înveți azi.
+
+Primul pas. Circuit nou. LED-ul merge ca până acum: rezistor, pinul opt, GND. Butonul are patru picioare, iar cele două diagonale merg unul la pinul doi și celălalt la GND.
+
+Al doilea pas. Ce înseamnă input pull up. Un pin de intrare lăsat liber poate citi valori întâmplătoare. Cu input pull up, Arduino îl ține pe High, în liniște, iar butonul îl trage la GND. Deci butonul neapăsat dă High, iar butonul apăsat dă Low. Pare invers, dar așa este.
+
+Al treilea pas. Minim. În setup pui pinul butonului pe input pull up și pinul LED-ului pe output. În loop citești butonul cu digital Read. Dacă este Low, adică apăsat, aprinzi LED-ul. Altfel îl stingi. Atenție: pentru comparare folosești două semne egal.
+
+Al patrulea pas. Serial Monitor. Cu Serial punct begin și Serial punct println afișezi ce gândește placa, ca să vezi starea butonului pe ecran. Pune un delay mic, ca să poți citi.
+
+Al cincilea pas, pentru Complet. Comutatorul. Ai nevoie să ții minte starea LED-ului într-o variabilă de tip bool, care poate fi adevărat sau fals. La fiecare apăsare inversezi variabila și scrii starea pe LED. Adaugi un delay de două sute cincizeci, ca o apăsare să nu fie numărată de mai multe ori.
+
+Greșeli frecvente. LED-ul este aprins fără apăsare: ai uitat input pull up. Merge invers: ai comparat cu High în loc de Low. Butonul nu face nimic: picioarele nu sunt în diagonală sau lipsește firul spre GND. Comutatorul tremură: ai uitat delay de două sute cincizeci. If cu un singur egal: pui o valoare, nu compari.
+
+Proiectul de azi. Lumina mea de veghe. Minim înseamnă LED aprins cât ții apăsat. Complet înseamnă comutator și mesaje în Serial Monitor.
+
+Recapitulare. Input pull up înseamnă că apăsat dă Low. Digital Read citește butonul. If și else aleg între două drumuri. Bool ține minte adevărat sau fals.
+
+Succes cu lumina de veghe.

@@ -1,0 +1,23 @@
+Lecția opt din Modulul doi. Nivela digitală.
+
+Astăzi folosești senzori de înclinare, numiți tilt, ca să construiești o nivelă: LED-urile îți arată încotro este înclinat obiectul. Proiectul se numește Nivela mea. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A doi, linie jos, L zero opt.
+
+Obiectivul. La final ai o nivelă care arată dacă un obiect este drept sau înclinat. Minim: un senzor de înclinare și un LED, iar LED-ul se aprinde când înclini. Complet: minim, plus doi senzori, stânga și dreapta, trei LED-uri, stânga, centru, care înseamnă drept, și dreapta, și un bip când este perfect drept.
+
+De ce contează. Telefoanele, camerele foto și dronele știu cum sunt orientate. Un senzor de înclinare este cea mai simplă versiune a acestei idei: un întrerupător care se închide când îl înclini.
+
+Primul pas. Cum merge. Senzorul are o bilă metalică mică. Când îl înclini, bila închide contactul dintre doi pini, ca un buton. Îl tratăm exact ca pe un buton, cu input pull up. Senzorul din stânga merge la pinul doi și la GND, cel din dreapta la pinul trei și la GND. LED-urile sunt la pinii cinci, șase și șapte, iar piezo la pinul opt. În Tinkercad poți roti senzorul din butonul de rotire.
+
+Al doilea pas. Minim. Dacă senzorul dă Low, adică este închis, aprinzi LED-ul. Altfel îl stingi.
+
+Al treilea pas, pentru Complet. Citești ambii senzori. Dacă doar cel din stânga este închis, se aprinde LED-ul din stânga. Dacă doar cel din dreapta, cel din dreapta. Dacă niciunul nu este închis sau obiectul este drept, se aprinde LED-ul din centru și buzzerul face un bip.
+
+Al patrulea pas. Bonus. Numără de câte ori ai scuturat senzorul, ca un pedometru simplu. Contează momentul în care starea se schimbă, nu tot timpul cât este închis.
+
+Greșeli frecvente. Merge invers: contactul închis înseamnă Low, nu High. Mereu aprins: senzorul nu are un pin la GND. Nu reacționează: ai uitat input pull up. Pasul se numără de zeci de ori: numeri tot timpul cât este închis, nu doar schimbarea. Ambele LED-uri laterale aprinse: senzorii nu sunt montați în oglindă.
+
+Proiectul de azi. Nivela mea. Minim înseamnă un senzor și un LED. Complet înseamnă doi senzori, trei LED-uri și bip.
+
+Recapitulare. Senzorul de înclinare este un întrerupător cu bilă. Input pull up înseamnă că închis dă Low. Bool ajută la citirea codului. Contează momentul în care starea se schimbă.
+
+Succes cu nivela.

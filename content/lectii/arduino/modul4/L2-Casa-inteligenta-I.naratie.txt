@@ -1,0 +1,27 @@
+Lecția doi din Modulul patru. Casă inteligentă, partea întâi: lumini și climat.
+
+Astăzi construiești prima parte a unei case inteligente: lumina se aprinde singură, ventilatorul pornește la căldură, iar L C D-ul arată starea casei. Proiectul se numește Casa mea unu. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A patru, linie jos, L zero doi.
+
+Obiectivul. La final casa ta reglează lumina și temperatura. Minim: lampa automată, cu fotorezistor, și ventilator la temperatură mare. Complet: minim, plus L C D cu două pagini, stare și valori, un buton pentru pagini și un mod manual pentru ventilator.
+
+De ce contează. Un proiect mare se construiește în etape. Azi faci baza, lumini și climat, iar în lecția următoare adaugi securitatea, în același circuit. De aceea alegem pinii cu grijă.
+
+Primul pas. Circuitul nou. Îl vei duplica, adică îl vei copia, în lecția următoare.
+
+Al doilea pas. Tabelul de pini al casei, valabil pentru lecțiile doi și trei. L C D-ul folosește pinii doisprezece, unsprezece, cinci, patru, trei și doi, ca în Modulul trei. Ceilalți pini sunt trecuți în tabel, pentru lampă, ventilator, buton și senzori, iar pentru securitate rămân pini liberi.
+
+Al treilea pas. Conexiuni, partea întâi. L C D-ul se conectează ca în Modulul trei, lecția unu. Fotorezistorul, senzorul de temperatură, tranzistorul cu motorul și dioda de protecție au pinii lor din tabel.
+
+Al patrulea pas. Cum împărțim programul. Fiecare parte este o funcție: una pentru lampă, una pentru climat, una pentru afișaj. Loop doar le cheamă. Așa, în lecția a doua, adaugi funcții noi, fără să strici ce merge.
+
+Al cincilea pas. Codul. Lampa se aprinde sub un prag de lumină, cu histerezis, adică două praguri. Ventilatorul pornește peste o temperatură aleasă. Butonul schimbă pagina de pe L C D, iar un mod manual îți lasă ție controlul ventilatorului.
+
+Al șaselea pas. Teste. Lumină mare: lampa stinsă. Lumină mică: lampa aprinsă. Temperatură mare: ventilatorul pornește. Butonul schimbă pagina.
+
+Greșeli frecvente. Lampa clipește: lipsește histerezisul. Ventilatorul nu pornește: verifică tranzistorul și dioda. L C D cu cifre rămase: pune spații la finalul textelor. Ecranul clipește: clear prea des. Mereu aceeași pagină: butonul fără input pull up.
+
+Proiectul de azi. Casa mea unu. Minim înseamnă lampă și ventilator. Complet înseamnă L C D, pagini și mod manual.
+
+Recapitulare. Un proiect mare înseamnă funcții mici. Tabelul de pini este comun pentru toate etapele. Variabilele globale rețin starea sistemului. Return oprește o funcție.
+
+Succes cu casa ta.

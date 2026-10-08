@@ -1,0 +1,25 @@
+Lecția trei din Modulul trei. Numărătoare inversă.
+
+Astăzi lucrezi cu afișajul cu șapte segmente și faci o numărătoare inversă de la nouă la zero, ca la lansarea unei rachete. Proiectul se numește Lansarea rachetei. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A trei, linie jos, L zero trei.
+
+Obiectivul. La final ai o numărătoare inversă care se termină cu un bip lung. Minim: afișezi pe rând cifrele nouă, opt, șapte, până la zero. Complet: minim, plus un buton de start, buzzer la final și un LED care se aprinde la Decolare.
+
+De ce contează. Cifrele de pe ceasuri, cuptoare și aparate digitale sunt făcute din segmente. Un afișaj cu șapte segmente înseamnă șapte LED-uri puse în forma lui opt, iar tu decizi care se aprind.
+
+Primul pas. Segmentele. Ele se numesc a, b, c, d, e, f și g.
+
+Al doilea pas. Conexiuni. Afișajul cu catod comun are un pin comun, la GND, iar fiecare segment are propriul pin. Pui un rezistor de două sute douăzeci de ohmi pe fiecare segment. Segmentele merg la pinii de la doi la opt, iar butonul la pinul zece.
+
+Al treilea pas. Tabelul cifrelor. Fiecare cifră înseamnă o combinație de segmente: unu înseamnă aprins, zero stins, în ordinea a, b, c, d, e, f, g. De exemplu, pentru cifra opt sunt aprinse toate, iar pentru cifra unu doar b și c.
+
+Al patrulea pas. Minim. Păstrezi pinii într-un tablou și cifrele într-un tablou cu două dimensiuni, zece rânduri a câte șapte valori. Un for în jos, cu c minus minus, trece de la nouă la zero, iar o funcție, afișează, aprinde segmentele potrivite.
+
+Al cincilea pas, pentru Complet. Numărătoarea pornește la apăsarea butonului. La zero sună buzzerul, iar LED-ul se aprinde la Decolare.
+
+Greșeli frecvente. Cifre ciudate: un segment este conectat la alt pin față de tablou. Toate segmentele aprinse: comunul este la cinci volți, anod comun, în loc de GND. Segmente slabe: lipsesc rezistoarele sau valorile sunt prea mari. Eroare la compilare: lipsește punct și virgulă după acolada tabloului. Pornește singură: butonul n-are input pull up.
+
+Proiectul de azi. Lansarea rachetei. Minim înseamnă cifrele de la nouă la zero. Complet înseamnă buton, buzzer și LED.
+
+Recapitulare. Șapte segmente înseamnă șapte LED-uri, câte un pin. Tabelul cifrelor stă într-un tablou cu două dimensiuni. For în jos se face cu c minus minus. O funcție, afișează, ține codul curat.
+
+Succes la lansare.

@@ -1,0 +1,23 @@
+Lecția șase din Modulul doi. Alarma anti-intruși.
+
+Astăzi construiești o alarmă cu senzor de mișcare P I R, un buton de armare și o sirenă. Proiectul se numește Santinela. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A doi, linie jos, L zero șase.
+
+Obiectivul. La final ai o alarmă care sună când detectează mișcare, dar doar dacă este armată. Minim: P I R și LED, iar LED-ul se aprinde când se mișcă ceva. Complet: minim, plus buton de armare și dezarmare, sirenă și LED de stare, armat sau dezarmat.
+
+De ce contează. Alarmele din case, magazine și lifturi folosesc senzori P I R. Aici înveți și un concept important: starea unui sistem, armat sau nu.
+
+Primul pas. Cum merge P I R. P I R înseamnă senzor pasiv cu infraroșu: simte căldura corpurilor care se mișcă. Are trei pini: semnalul merge la pinul doi, alimentarea la cinci volți, iar GND la GND. Butonul merge la pinul trei și la GND. LED-ul verde, pentru dezarmat, este la pinul cinci, iar cel roșu, pentru armat, la pinul șase.
+
+Al doilea pas. Minim. Dacă senzorul dă High, adică vede mișcare, aprinzi LED-ul. Altfel îl stingi.
+
+Al treilea pas, pentru Complet. Folosim o variabilă de stare, armat, de tip bool. Butonul o schimbă, iar semnul exclamării o inversează. Alarma sună doar dacă armat este adevărat și senzorul vede mișcare, adică armat și mișcare, cu operatorul și. LED-ul verde arată dezarmat, cel roșu arată armat.
+
+Al patrulea pas. Testul. Pornești simularea: LED verde, fără sunet. Armezi: se aprinde roșul. Mișți senzorul: sună sirena. Dezarmezi: tace.
+
+Greșeli frecvente. P I R sună imediat la pornire: la un senzor real, la început, se calibrează cam treizeci de secunde, deci așteaptă. Butonul schimbă starea de mai multe ori: lipsește delay după apăsare. Sună și dezarmat: condiția nu conține armat. Sirena nu se oprește: lipsește no Tone. LED-urile sunt inverse: ai pus armat unde trebuia semnul exclamării.
+
+Proiectul de azi. Santinela. Minim înseamnă mișcare și LED. Complet înseamnă armare, sirenă și LED de stare.
+
+Recapitulare. P I R dă High când vede mișcare. Variabila bool armat ține starea sistemului. Semnul exclamării inversează o valoare. Și înseamnă că ambele condiții trebuie să fie adevărate.
+
+Succes cu santinela.

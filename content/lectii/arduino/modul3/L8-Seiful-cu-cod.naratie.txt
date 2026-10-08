@@ -1,0 +1,23 @@
+Lecția opt din Modulul trei. Seiful cu cod.
+
+Astăzi construiești un seif: tastezi codul pe o tastatură patru pe patru, iar L C D-ul, servo-ul și LED-urile îți spun dacă s-a deschis. Proiectul se numește Seiful meu. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A trei, linie jos, L zero opt.
+
+Obiectivul. La final ai un seif care se deschide doar cu codul corect. Minim: introduci patru cifre, iar dacă sunt corecte se aprinde LED-ul verde, altfel cel roșu. Complet: minim, plus L C D cu stelute în loc de cifre, servo care deschide ușa, trei încercări și apoi blocare, iar tasta steluță șterge, iar tasta diez confirmă.
+
+De ce contează. Parolele, P I N-urile și lacătele electronice funcționează așa: compari ce a tastat cineva cu ce știi tu și decizi. Azi pui laolaltă tot ce ai învățat: L C D, servo, LED-uri, funcții și stări.
+
+Primul pas. Conexiuni. Sunt multe, deci mergi pe rând. L C D-ul este ca în lecția unu. Servo-ul are semnalul pe pinul lui, LED-urile au rezistoare, iar tastatura se conectează la opt pini, patru pentru rânduri și patru pentru coloane. Atenție să nu suprapui pinii L C D-ului cu cei ai tastaturii.
+
+Al doilea pas. Tastatura. Este o grilă. Biblioteca Keypad află ce tastă este apăsată verificând rândurile și coloanele. Îi dai un tablou cu tastele și pinii pentru rânduri și coloane, iar cu get Key citești tasta apăsată.
+
+Al treilea pas. Minim, cod de patru cifre. Ții ce a tastat utilizatorul într-un String. După patru cifre compari cu codul secret, scris între ghilimele, fiindcă este text. Dacă sunt la fel, LED verde. Altfel, LED roșu.
+
+Al patrulea pas, pentru Complet. Afișezi o steluță pe L C D pentru fiecare cifră. Funcția deschide mișcă servo-ul și scrie Deschis. Funcția greșit scrie mesajul de eroare și crește contorul de încercări. După trei încercări greșite seiful se blochează. Steluța șterge ce ai scris, iar diezul confirmă.
+
+Greșeli frecvente. Taste greșite: rândurile și coloanele sunt inversate la pini. Nu citește nimic: firele tastaturii nu sunt la pinii din liste. Comparația eșuează: codul are alt format, iar unu doi trei patru este text, cu ghilimele. L C D blocat: pinii L C D-ului se suprapun cu ai tastaturii. Servo tremură: lipsește GND comun.
+
+Proiectul de azi. Seiful meu. Minim înseamnă cod de patru cifre și LED-uri. Complet înseamnă L C D, servo, trei încercări și taste speciale.
+
+Recapitulare. Keypad și get Key citesc tastatura. String păstrează ce a tastat utilizatorul. Funcțiile deschide și greșit fac codul clar. Un contor de încercări limitează ghicitul.
+
+Succes cu seiful.
