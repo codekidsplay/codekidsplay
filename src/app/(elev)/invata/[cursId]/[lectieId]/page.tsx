@@ -8,22 +8,7 @@ import { ArrowLeft, ArrowRight, CheckCircle2, Lock } from 'lucide-react'
 import { useElevCursantId } from '@/hooks/useElevCursantId'
 import { useProgresCursant } from '@/hooks/useProgresCursant'
 import LectieMarkdown from '@/components/LectieMarkdown'
-import AscultaScratchM1 from '@/components/AscultaScratchM1'
-import AscultaScratchM2 from '@/components/AscultaScratchM2'
-import AscultaScratchM3 from '@/components/AscultaScratchM3'
-import AscultaScratchM4 from '@/components/AscultaScratchM4'
-import AscultaScratchM5 from '@/components/AscultaScratchM5'
-import AscultaScratchM6 from '@/components/AscultaScratchM6'
-import AscultaTinkercad from '@/components/AscultaTinkercad'
-import AscultaMicrobit from '@/components/AscultaMicrobit'
-import { microbitModulNumar, isMicrobitLesson } from '@/lib/microbit'
-import { TINKERCAD_CURS_ID, isTinkercadLesson, tinkercadModulNumar } from '@/lib/tinkercad'
-import { SCRATCH_M1_MODUL_ID, isScratchM1Lesson } from '@/lib/scratchM1'
-import { SCRATCH_M2_MODUL_ID, isScratchM2Lesson } from '@/lib/scratchM2'
-import { SCRATCH_M3_MODUL_ID, isScratchM3Lesson } from '@/lib/scratchM3'
-import { SCRATCH_M4_MODUL_ID, isScratchM4Lesson } from '@/lib/scratchM4'
-import { SCRATCH_M5_MODUL_ID, isScratchM5Lesson } from '@/lib/scratchM5'
-import { SCRATCH_M6_MODUL_ID, isScratchM6Lesson } from '@/lib/scratchM6'
+import AscultaLectie from '@/components/AscultaLectie'
 
 export default function InvataLectiePage() {
   const params = useParams<{ cursId: string; lectieId: string }>()
@@ -102,41 +87,7 @@ export default function InvataLectiePage() {
           <CheckCircle2 size={18} /> Deblocată de profesor — poți citi acasă
         </div>
 
-        {modul.id === SCRATCH_M1_MODUL_ID && isScratchM1Lesson(lectie.ordine) ? (
-          <AscultaScratchM1 ordine={lectie.ordine} accentColor={curs.culoare} />
-        ) : null}
-        {modul.id === SCRATCH_M2_MODUL_ID && isScratchM2Lesson(lectie.ordine) ? (
-          <AscultaScratchM2 ordine={lectie.ordine} accentColor={curs.culoare} />
-        ) : null}
-        {modul.id === SCRATCH_M3_MODUL_ID && isScratchM3Lesson(lectie.ordine) ? (
-          <AscultaScratchM3 ordine={lectie.ordine} accentColor={curs.culoare} />
-        ) : null}
-        {modul.id === SCRATCH_M4_MODUL_ID && isScratchM4Lesson(lectie.ordine) ? (
-          <AscultaScratchM4 ordine={lectie.ordine} accentColor={curs.culoare} />
-        ) : null}
-        {modul.id === SCRATCH_M5_MODUL_ID && isScratchM5Lesson(lectie.ordine) ? (
-          <AscultaScratchM5 ordine={lectie.ordine} accentColor={curs.culoare} />
-        ) : null}
-        {modul.id === SCRATCH_M6_MODUL_ID && isScratchM6Lesson(lectie.ordine) ? (
-          <AscultaScratchM6 ordine={lectie.ordine} accentColor={curs.culoare} />
-        ) : null}
-        {cursId === TINKERCAD_CURS_ID &&
-        tinkercadModulNumar(modul.id) !== null &&
-        isTinkercadLesson(lectie.ordine) ? (
-          <AscultaTinkercad
-            modul={tinkercadModulNumar(modul.id) as number}
-            ordine={lectie.ordine}
-            accentColor={curs.culoare}
-          />
-        ) : null}
-
-        {microbitModulNumar(modul.id) !== null && isMicrobitLesson(lectie.ordine) ? (
-          <AscultaMicrobit
-            modul={microbitModulNumar(modul.id) as number}
-            ordine={lectie.ordine}
-            accentColor={curs.culoare}
-          />
-        ) : null}
+        <AscultaLectie modulId={modul.id} ordine={lectie.ordine} accentColor={curs.culoare} />
         {markdown ? (
           <LectieMarkdown markdown={markdown} accentColor={curs.culoare} />
         ) : (
