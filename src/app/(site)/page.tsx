@@ -224,7 +224,7 @@ export default function LandingPage() {
         <div className="max-w-5xl mx-auto flex flex-col sm:flex-row sm:items-end sm:justify-between gap-8">
           <div>
             <h2
-              className="text-3xl sm:text-4xl font-semibold tracking-tight mb-3"
+              className="text-2xl sm:text-3xl font-semibold tracking-tight mb-3 max-w-xl"
               style={{ fontFamily: 'var(--font-display)' }}
             >
               Vrei să devii un Code Maker? Hai în atelier.
