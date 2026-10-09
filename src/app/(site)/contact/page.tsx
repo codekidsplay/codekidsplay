@@ -161,7 +161,7 @@ export default function ContactPage() {
               className="text-lg font-semibold mb-3 text-[var(--ckp-ink)]"
               style={{ fontFamily: 'var(--font-display)' }}
             >
-              Trimite un mesaj
+              Trimite mesaj / Solicită o ședință gratuită
             </h2>
             <ContactForm />
           </div>

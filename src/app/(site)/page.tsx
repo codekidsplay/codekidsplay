@@ -67,10 +67,10 @@ export default function LandingPage() {
                 Vezi cursurile
               </a>
               <Link
-                href="/login"
+                href="/contact"
                 className="inline-flex items-center justify-center bg-white text-[var(--ckp-blue)] hover:bg-[var(--ckp-muted-on-dark)] font-semibold px-6 py-3.5 rounded-xl transition-colors text-center w-full sm:w-auto shadow-sm"
               >
-                Login elev / părinte
+                Înscrie-ți copilul
               </Link>
             </div>
           </div>
