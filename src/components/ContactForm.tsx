@@ -118,7 +118,7 @@ export default function ContactForm() {
         disabled={!acord}
         className="inline-flex items-center justify-center bg-[var(--ckp-red)] hover:bg-[var(--ckp-red-deep)] text-white font-semibold px-6 py-3 rounded-xl transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
       >
-        Solicită o ședință gratuită
+        Trimite mesaj
       </button>
       {trimis ? (
         <p className="text-sm text-[var(--ckp-muted)]">
