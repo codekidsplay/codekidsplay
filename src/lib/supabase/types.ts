@@ -75,6 +75,30 @@ export type Database = {
         Update: Partial<Omit<Database['public']['Tables']['profile']['Insert'], 'id'>>
         Relationships: []
       }
+      cereri_contact: {
+        Row: {
+          id: string
+          nume: string
+          email: string
+          telefon: string
+          mesaj: string
+          termeni_acceptati: boolean
+          termeni_versiune: string
+          created_at: string
+        }
+        Insert: {
+          id?: string
+          nume: string
+          email: string
+          telefon: string
+          mesaj: string
+          termeni_acceptati: boolean
+          termeni_versiune: string
+          created_at?: string
+        }
+        Update: Partial<Database['public']['Tables']['cereri_contact']['Insert']>
+        Relationships: []
+      }
       parinte_cursanti: {
         Row: {
           parinte_id: string

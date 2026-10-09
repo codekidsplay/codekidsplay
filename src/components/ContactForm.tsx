@@ -2,6 +2,7 @@
 
 import { useState, FormEvent } from 'react'
 import Link from 'next/link'
+import { trimiteCerereContactAction } from '@/app/actions/contact'
 
 export default function ContactForm() {
   const [nume, setNume] = useState('')
@@ -9,35 +10,47 @@ export default function ContactForm() {
   const [telefon, setTelefon] = useState('')
   const [mesaj, setMesaj] = useState('')
   const [trimis, setTrimis] = useState(false)
+  const [trimitere, setTrimitere] = useState(false)
+  const [eroare, setEroare] = useState<string | null>(null)
+  const [website, setWebsite] = useState('')
   const [acord, setAcord] = useState(false)
 
-  function onSubmit(e: FormEvent) {
+  async function onSubmit(e: FormEvent) {
     e.preventDefault()
-    if (!acord) return
-    const subject = encodeURIComponent(`Mesaj de pe site — ${nume.trim() || 'Contact'}`)
-    const body = encodeURIComponent(
-      [
-        'Salut, Code Maker Club!',
-        '',
-        'Am un mesaj pentru tine:',
-        '',
-        `• Nume: ${nume.trim()}`,
-        `• Email: ${email.trim()}`,
-        telefon.trim() ? `• Telefon: ${telefon.trim()}` : null,
-        '',
-        mesaj.trim(),
-        '',
-        'Trimis din codemakerclub/contact',
-      ]
-        .filter(line => line !== null)
-        .join('\n'),
-    )
-    window.location.href = `mailto:codemakerclub@gmail.com?subject=${subject}&body=${body}`
-    setTrimis(true)
+    if (!acord || trimitere) return
+    setTrimitere(true)
+    setEroare(null)
+    try {
+      const r = await trimiteCerereContactAction({ nume, email, telefon, mesaj, acord, website })
+      if (r.ok) {
+        setTrimis(true)
+        setNume('')
+        setEmail('')
+        setTelefon('')
+        setMesaj('')
+        setAcord(false)
+      } else {
+        setEroare(r.error)
+      }
+    } catch {
+      setEroare('Nu am putut trimite mesajul. Scrie-ne direct la codemakerclub@gmail.com.')
+    } finally {
+      setTrimitere(false)
+    }
   }
 
   return (
     <form onSubmit={onSubmit} className="space-y-4">
+      <input
+        type="text"
+        name="website"
+        tabIndex={-1}
+        autoComplete="off"
+        aria-hidden="true"
+        value={website}
+        onChange={e => setWebsite(e.target.value)}
+        className="hidden"
+      />
       <div>
         <label htmlFor="nume" className="block text-sm font-medium text-[var(--ckp-ink)] mb-1.5">
           Nume
@@ -73,6 +86,7 @@ export default function ContactForm() {
           id="telefon"
           name="telefon"
           type="tel"
+          required
           value={telefon}
           onChange={e => setTelefon(e.target.value)}
           className="w-full rounded-xl border border-[var(--ckp-ink)]/15 bg-white px-4 py-3 text-[var(--ckp-ink)] outline-none focus:border-[var(--ckp-blue)]"
@@ -115,18 +129,19 @@ export default function ContactForm() {
       </label>
       <button
         type="submit"
-        disabled={!acord}
+        disabled={!acord || trimitere}
         className="inline-flex items-center justify-center bg-[var(--ckp-red)] hover:bg-[var(--ckp-red-deep)] text-white font-semibold px-6 py-3 rounded-xl transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
       >
-        Trimite mesaj
+        {trimitere ? 'Se trimite…' : 'Trimite mesaj'}
       </button>
+      {eroare ? (
+        <p role="alert" className="text-sm text-[var(--ckp-red)]">
+          {eroare}
+        </p>
+      ) : null}
       {trimis ? (
-        <p className="text-sm text-[var(--ckp-muted)]">
-          Se deschide aplicația ta de email. Dacă nu pornește, scrie-ne la{' '}
-          <a href="mailto:codemakerclub@gmail.com" className="text-[var(--ckp-blue)] hover:underline">
-            codemakerclub@gmail.com
-          </a>
-          .
+        <p role="status" className="text-sm text-[var(--ckp-ink)] bg-[var(--ckp-blue)]/10 rounded-xl px-4 py-3">
+          Mulțumim! Am primit mesajul tău și te contactăm în curând.
         </p>
       ) : null}
     </form>
