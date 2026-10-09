@@ -1,0 +1,23 @@
+Lecția unu. Subdivision: fructe rotunde.
+
+Începem modulul trei cu cel mai magic modificator: Subdivision Surface. Cu el, un cub cu colțuri devine o formă rotundă și netedă, ideală pentru fructe, personaje și jucării. Proiectul se numește Coșul cu fructe. Fișierul se numește: Prenume, linie jos, Nume, linie jos, B trei, linie jos, L unu, punct blend.
+
+Obiectivul. La final ai trei fructe rotunde, modelate dintr-o cușcă simplă de fețe. Minim: un măr dintr-un cub cu Subdivision. Complet: minim, plus o pară și o prună, cu codițe și frunze, și materiale colorate.
+
+De ce contează. Personajele din filmele de animație sunt modelate grosier, iar Subdivision le rotunjește. Modelezi cu puține puncte și obții forme moi.
+
+Primul pas. Ce face Subdivision. Subdivision Surface împarte fiecare față în mai multe, apoi le topește într-o suprafață fină. Cubul devine aproape o sferă. Îl adaugi cu Control plus unu, doi sau trei, în Object Mode, pentru nivelul unu, doi sau trei. Sau din Modifiers, Add Modifier, Generate, Subdivision Surface, unde ai mai multe opțiuni. Setările importante: Levels Viewport este nivelul de pe ecran, și doi este bun. Render este nivelul de la randare, care poate fi mai mare, de exemplu trei.
+
+Al doilea pas. Din cub, o sferă. Apeși Control plus doi pe cubul de start. Apoi Tab și muți un colț: forma se schimbă fin, ca plastilina. Regula de aur: cu cât ai mai puține vârfuri, cu atât forma este mai moale. Adaugă vârfuri doar unde ai nevoie de mai mult detaliu.
+
+Al treilea pas. Mărul. Un cub, cu Control plus doi, pentru Subdivision. Apeși Tab, treci în modul Face, cu trei, și apeși Alt plus Z. Selectezi fața de sus și apeși G, Z, minus zero virgulă trei, Enter: se formează adâncitura unde stă codița. Selectezi fața de jos și apeși S, zero virgulă șase, Enter: mărul se strânge puțin jos. Selectezi tot, cu A, și apeși S, Z, zero virgulă nouă, ca să fie puțin turtit. Apeși Tab și Shade Smooth. Codița este un cilindru subțire, cu Radius zero virgulă zero patru și Depth zero virgulă cinci, puțin curbat: în Edit Mode muți vârful de sus lateral. Este maro. Frunza este un plan, rotit și îngustat, cu Subdivision. Este verde.
+
+Al patrulea pas. Para și pruna. Para: un cub cu Control plus doi. În Edit Mode, selectezi fețele de sus și apeși S, zero virgulă cinci, ca partea de sus să fie mai îngustă. Cu Proportional Editing, tasta O, apeși G, Z, zero virgulă șase: gâtul se lungește. Culoarea este galben-verzuie. Pruna: un cub cu Control plus doi, apoi S, Y, zero virgulă nouă. Faci o adâncitură pe lung: Alt plus click pe un inel lateral, apoi S, zero virgulă nouă. Culoarea este mov închis, cu Roughness zero virgulă trei.
+
+Al cincilea pas, opțional. Margini ascuțite pe loc. Uneori vrei ca o margine să rămână ascuțită, ca la o cutie cu colțuri. Selectezi muchia în Edit Mode, apeși Shift plus E și tragi mouse-ul spre unu. Ai marcat o muchie ascuțită, în engleză crease, iar Subdivision nu o mai rotunjește.
+
+Al șaselea pas, pentru varianta completă. Coșul. Pui cele trei fructe într-un coș simplu, un cilindru fără capac, pe care îl faci în lecția următoare, sau pe un plan. Dai materiale diferite. Randezi cu o singură lumină Area, deasupra.
+
+Greșeli frecvente. Fructul este prea mic sau dispare: Subdivision micșorează forma, scalează înapoi. Forma are cute urâte: ai prea multe vârfuri apropiate, șterge-le. Nu vezi diferența: modificatorul este oprit, verifică ochiul din listă. Randarea este lentă: nivelul Render este prea mare, de patru sau cinci. Colțuri nedorite: adaugă un Loop Cut aproape de margine, ca să o ții întărită.
+
+Succes cu fructele.

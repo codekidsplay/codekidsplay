@@ -1,0 +1,27 @@
+Lecția opt. Texturi simple: pământ și iarbă.
+
+O culoare uniformă arată plat. O textură adaugă pete, linii, granulație și relief. Astăzi folosești noduri, în engleză nodes, ca să faci pământ și iarbă din formule matematice, fără nicio poză. Proiectul se numește Pământ și iarbă. Fișierul se numește: Prenume, linie jos, Nume, linie jos, B trei, linie jos, L opt, punct blend.
+
+Obiectivul. La final peisajul tău din modulul doi are iarbă și pământ cu aspect natural. Minim: un material de iarbă cu Noise Texture și Color Ramp. Complet: minim, plus un material de pământ, relief cu Bump și o podea cu pătrățele, cu Checker.
+
+De ce contează. Texturile fac lumea trei D credibilă. Blender poate genera pete, vene sau zgomot singur, cu noduri pe care le legi ca pe niște piese de LEGO.
+
+Ce ai nevoie. Peisajul din lecția doi sau din lecția șase a modulului doi, sau un plan mare.
+
+Primul pas. Editorul de noduri. Sus, la filele spațiilor de lucru, alegi Shading. Jos apare Shader Editor, un ecran cu cutii legate prin fire. Navigarea este ca în viewport: rotița face zoom, iar Shift plus rotița deplasează. Selectezi obiectul și vezi nodurile Principled BSDF și Material Output. Adaugi un nod cu Shift plus A. Legi noduri trăgând un fir între două puncte. Ștergi un fir ținând apăsat Control și trăgând cu click dreapta peste el.
+
+Al doilea pas. Iarba, cu Noise și Color Ramp. Adaugi Shift plus A, Texture, Noise Texture. Apoi Shift plus A, Converter, Color Ramp. Legi ieșirea Fac din Noise de intrarea Fac din Color Ramp. Legi ieșirea Color din Color Ramp de intrarea Base Color din Principled BSDF. În Color Ramp alegi două culori: un verde închis și un verde deschis, gălbui, cu click pe pătrățelele de culoare. În Noise Texture pui Scale cincisprezece, Detail opt și Roughness zero virgulă șase. Iarba are acum pete naturale.
+
+Al treilea pas. Pământul. Un alt material, pe alt obiect sau pe o bandă din peisaj. La fel: Noise Texture, Color Ramp, Base Color. Culorile sunt maro închis și maro deschis. Scale treizeci și Detail doisprezece. Roughness al materialului este zero virgulă nouăzeci și cinci.
+
+Al patrulea pas. Relieful, cu Bump. Culorile par plate, dar putem simula denivelări fără să adăugăm geometrie. Adaugi Shift plus A, Vector, Bump. Legi ieșirea Fac din același nod Noise de intrarea Height din Bump. Legi ieșirea Normal din Bump de intrarea Normal din Principled BSDF. Pui Strength zero virgulă trei. Lumina creează umbre mici pe denivelări.
+
+Al cincilea pas. Podeaua cu pătrățele. Adaugi Shift plus A, Texture, Checker Texture. Color unu și Color doi sunt alb și gri-albastru. Scale zece. Legi Color de Base Color.
+
+Al șaselea pas, pentru varianta completă. Scena finală. Peisajul din lecția șase a modulului doi primește iarbă pe dealuri și pământ pe o potecă, pentru care alegi fețele cu Assign, ca la rachetă. O podea cu pătrățele, ca plan de testare. Randezi cu un Sun și cer albastru.
+
+Al șaptelea pas. Dacă nu vezi texturile, treci pe Material Preview sau pe Rendered. În Solid nu se văd.
+
+Greșeli frecvente. Totul este o singură culoare: Color Ramp are culori prea apropiate. Textura este prea mare sau prea mică: schimbă Scale la Noise. Nu se vede relieful: Strength este prea mic sau lumina este de sus. Nodul nu se leagă: culorile punctelor trebuie să se potrivească, galben cu galben. Ai pierdut nodurile: apasă Home în Shader Editor.
+
+Succes cu texturile.

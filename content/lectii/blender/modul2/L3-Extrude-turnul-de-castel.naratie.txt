@@ -1,0 +1,23 @@
+Lecția trei. Extrude: turnul de castel.
+
+Extrude, la tasta E, este cea mai folosită unealtă din modelare: trage o piesă din model, ca pe plastilină. Cu ea construiești turnuri, brațe și copaci. Proiectul se numește Turnul de castel. Fișierul se numește: Prenume, linie jos, Nume, linie jos, B doi, linie jos, L trei, punct blend.
+
+Obiectivul. La final ai un turn de castel cu bază, trunchi, balcon și creneluri. Minim: extrudezi o față de trei ori, ca să faci un turn. Complet: minim, plus un balcon mai lat și creneluri făcute din fețe alternate.
+
+De ce contează. Fără Extrude ai nevoie de zeci de obiecte. Cu Extrude, dintr-o singură formă faci turnuri, copaci, mâini și tuburi.
+
+Primul pas. Ce face E. În Edit Mode, tasta E dublează piesa selectată și o mută, lăsând pereți între vechea și noua poziție. Dacă ai selectat o față, trage un bloc din ea. Dacă ai selectat o muchie, trage un perete subțire. Dacă ai selectat un vârf, trage o linie, adică o muchie. După E, miști mouse-ul sau scrii o distanță, de exemplu E, Z, doi, Enter. Atenție: dacă apeși Escape sau click dreapta, piesa nouă rămâne în același loc, adică nu se mută, dar rămâne extrudată.
+
+Al doilea pas. Turnul în trei pași. Adaugi un cilindru cu Vertices opt, Radius unu virgulă cinci și Depth doi. Îl pui pe podea cu G, Z, unu. Apeși Tab, treci în modul Face, cu trei, și dai click pe fața de sus a cilindrului. Apeși E, Z, trei, Enter, iar turnul crește. Mai faci un nivel mai sus. Dacă nu scrii numărul, trebuie să confirmi cu click.
+
+Al treilea pas. Balconul. Un turn de castel are un balcon mai lat sub creneluri. Cu fața de sus selectată, apeși E, Z, zero virgulă trei, Enter, un strat subțire. Apoi S, unu virgulă trei, Enter, ca să mărești fața. Apoi E, Z, zero virgulă trei, Enter, pentru zidul balconului.
+
+Al patrulea pas. Rama dinăuntru, cu Inset, pe care îl vei învăța mai bine în lecția următoare. Ca să faci balconul gol pe dinăuntru, cu fața de sus selectată, apeși I, de la Inset, și tragi puțin spre interior. Apoi E, Z, minus zero virgulă patru, Enter, ca să extrudezi în jos. Apare o gaură.
+
+Al cincilea pas. Crenelurile. Crenelurile sunt zidurile joase de sus, din loc în loc. După ce ai făcut Inset, selectezi fețele de pe margine, adică inelul exterior de opt fețe. Cu Shift plus click alegi una da, una nu. Apeși E, Z, zero virgulă cinci, Enter, și obții crenelurile alternante.
+
+Al șaselea pas, pentru varianta completă. Turnul final. De jos în sus ai: baza, adică cilindrul de pornire; trunchiul, extrudat de trei ori; balconul, extrudat și făcut mai lat cu scalare; golul, făcut cu Inset și Extrude în jos; crenelurile, din fețe alternate, extrudate; și, opțional, un acoperiș dintr-un con deasupra.
+
+Greșeli frecvente. Extrude, dar nu se mișcă: ai apăsat Escape după E, piesa este dublată, apasă Control plus Z și reia. Turnul are coaste duble: ai dat E de două ori fără să muți. Fața de sus lipsește: ai șters-o cu X în loc să o extrudezi. Crenelurile sunt prea mici: mărește distanța, de exemplu E, Z, zero virgulă șapte. Piesele nu sunt egale: verifică din față, cu unu, și de sus, cu șapte.
+
+Succes la turn.

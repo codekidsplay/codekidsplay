@@ -1,0 +1,27 @@
+Lecția unu. De la idee la schiță.
+
+Ultimul modul: nu mai urmezi pași, ci îți gândești singur proiectele. Astăzi înveți cum arată un proiect trei D bine pregătit: idee, schiță, imagini de referință și un blocaj, adică prima versiune grosolană. Proiectul se numește Planul meu trei D. Fișierul se numește: Prenume, linie jos, Nume, linie jos, B patru, linie jos, L unu, punct blend.
+
+Obiectivul. La final ai ales proiectul tău și l-ai pregătit pe hârtie și în Blender. Minim: o idee clară și o schiță desenată din două vederi, față și lateral. Complet: minim, plus imagini de referință în Blender și un blocaj din forme simple, la proporțiile corecte.
+
+De ce contează. Cei mai buni artiști trei D petrec mult timp planificând. Un model fără schiță iese strâmb și se schimbă la jumătate. Cu un plan, lucrezi mai repede și mai liniștit.
+
+Ce ai nevoie. Hârtie și creion, plus un telefon sau o tabletă, pentru poze.
+
+Primul pas. Proiectele din acest modul. În lecțiile următoare faci două proiecte, apoi unul al tău. Lecțiile doi până la patru: un personaj, monstrulețul tău. Lecțiile cinci și șase: o insulă plutitoare. Lecțiile șapte și opt: lumini, atmosferă, ordine și export. Lecțiile nouă și zece: proiectul tău final și expoziția. Azi pregătim monstrulețul și te gândești la proiectul final.
+
+Al doilea pas. Ideea personajului. Răspunde pe hârtie la patru întrebări. Ce fel de creatură este: prietenoasă, hazlie sau fioroasă? Ce trăsături are: câți ochi, coarne, brațe, picioare? Cum se simte: fericit, supărat sau timid? Ce culori are: două sau trei culori principale? Exemplu: Blobi, un monstruleț rotund, verde, cu doi ochi mari, două coarne mici și picioare scurte, mereu zâmbitor.
+
+Al treilea pas. Schița din două vederi. Desenezi personajul din față și din lateral, la aceeași înălțime și cu aceleași proporții. Marchezi cu linii orizontale unde sunt ochii, brațele și genunchii. Fotografiază desenele cu telefonul, drept și fără umbre.
+
+Al patrulea pas. Imagini de referință în Blender. Pe calculator, pui pozele cu schițele într-un folder. În Blender, apeși Shift plus A, apoi Image, apoi Reference, și alegi poza din față. Vezi imaginea în scenă. În vederea din față, cu unu, o muți și o scalezi cu G și S, ca să aibă înălțimea de trei unități. Repeți pentru poza de lateral, în vederea din dreapta, cu trei, rotind cu R, Z, nouăzeci. Faci imaginile semitransparente: în Properties, la Object Data, pentru imagine, pui Opacity zero virgulă cinci.
+
+Al cincilea pas. Blocajul, în engleză blockout. Înseamnă să construiești personajul din forme simple și grosiere, ca să fixezi proporțiile înainte de detalii. Corpul este o UV Sphere sau un cub cu Subdivision. Capul este o sferă mai mică. Brațele sunt cilindri. Picioarele sunt cilindri sau conuri. Ochii sunt sfere. Coarnele sunt conuri. Folosești Alt plus Z, pentru X-ray, ca să vezi imaginile de referință prin modele. Compari cu desenul din față și din lateral.
+
+Al șaselea pas. Verificarea proporțiilor. Întreabă-te: capul are mărimea din desen? Brațele ajung unde trebuie? Picioarele au lungimea corectă? Se vede personalitatea?
+
+Al șaptelea pas. Gândește-te la proiectul final. Alege acum ideea pentru proiectul final, din lecția nouă: un personaj, un vehicul, o clădire sau o scenă. O scrii într-o propoziție și desenezi o schiță rapidă.
+
+Greșeli frecvente. Pornești fără schiță: vei schimba totul la jumătate. Proporții diferite în cele două vederi: marchează înălțimile. Detalii prea devreme: întâi blocajul, apoi detaliile. Imaginile blochează selectarea: le selectezi doar când ai nevoie, iar selecția o poți bloca în Outliner. Idee prea mare: alege ceva ce poți termina în patru-cinci ore.
+
+Succes cu planul.

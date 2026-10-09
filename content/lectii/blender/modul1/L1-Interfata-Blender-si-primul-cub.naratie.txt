@@ -1,0 +1,29 @@
+Lecția unu. Interfața Blender și primul cub.
+
+Astăzi deschizi Blender, programul gratuit cu care se fac filme de animație, jocuri și modele trei D. Înveți unde se află fiecare lucru pe ecran și îți faci primul obiect trei D. Proiectul se numește Primul meu fișier trei D. Fișierul se numește: Prenume, linie jos, Nume, linie jos, B unu, linie jos, L unu, punct blend.
+
+Obiectivul. La final recunoști părțile ecranului Blender și ai salvat primul tău fișier. Minim: deschizi Blender, muți cubul și îl salvezi. Complet: minim, plus ștergi cubul, adaugi o maimuță numită Suzanne, o redenumești și salvezi fișierul cu numele corect.
+
+De ce contează. Blender are multe butoane, dar tu folosești doar câteva. Dacă știi unde te afli pe ecran, nu te mai pierzi. Aceeași aplicație este folosită de studiouri adevărate, iar tu o ai gratis.
+
+Ce ai nevoie. Un calculator cu Blender patru punct doi, versiunea LTS, de pe blender punct org, la secțiunea Download. De preferat, un mouse cu rotiță.
+
+Primul pas. Pornim Blender. Cu ajutorul unui adult, instalezi Blender de pe site-ul oficial. La pornire apare o fereastră de bun venit: alegi General. Vezi o scenă cu un cub, o lumină și o cameră. Aceasta este scena de start.
+
+Al doilea pas. Pregătirea mouse-ului, doar dacă n-ai rotiță. Blender folosește des butonul din mijloc al mouse-ului. Pe un laptop fără mouse, mergi la Edit, apoi Preferences, apoi Input. Bifezi Emulate Three Button Mouse, adică de acum Alt plus click stânga înseamnă butonul din mijloc. Bifezi și Emulate Numpad, ca tastele cu cifre de sus să facă ce fac cele de pe tastatura numerică.
+
+Al treilea pas. Cele patru zone ale ecranului. În mijloc, mare, este Viewport: aici vezi și construiești modelul. Sus în dreapta este Outliner, lista obiectelor din scenă. Jos în dreapta este Properties, setările obiectului selectat. Jos este Timeline, folosit pentru animații, pe care nu îl folosim încă. În partea de sus ai meniurile File, Edit, Render, Window și Help, iar sub ele spațiile de lucru: Layout, Modeling, Sculpting și altele.
+
+Regula de aur: scurtăturile de la tastatură merg doar când mouse-ul se află deasupra zonei în care vrei să lucrezi.
+
+Al patrulea pas. Primele acțiuni, cu mouse-ul peste Viewport. Selectezi un obiect cu click stânga pe el, și apare un contur portocaliu. Îl muți apăsând tasta G, miști mouse-ul și dai click ca să confirmi. Anulezi mutarea cu Escape sau cu click dreapta. Anulezi ce ai făcut cu Control plus Z, iar refaci cu Control plus Shift plus Z. Tasta T ascunde sau arată bara de unelte, iar tasta N ascunde sau arată panoul din dreapta. Încearcă: selectează cubul, apasă G, mută-l, confirmă, apoi Control plus Z și vezi cum se întoarce.
+
+Al cincilea pas, pentru varianta completă. Maimuța Suzanne. Selectezi cubul și apeși X, apoi Delete, ca să-l ștergi. Apeși Shift plus A, ceea ce deschide meniul Add, alegi Mesh, apoi Monkey. Apare Suzanne, mascota Blender. Cu mouse-ul peste viewport apeși F doi și scrii numele: Maimutica. Apeși Enter. Verifici în Outliner că numele a apărut acolo.
+
+Al șaselea pas. Salvarea. Mergi la File, apoi Save As, sau apeși Control plus Shift plus S. Numești fișierul cu numele din proiect. De acum, Control plus S salvează rapid. Fă asta des.
+
+Greșeli frecvente. Scurtătura nu merge: mouse-ul nu este deasupra viewport-ului. Nu găsești obiectul: l-ai mutat departe, apasă tasta Home, care arată toată scena. Ai apăsat altă tastă și s-a schimbat ceva: apasă Control plus Z. Ai pierdut fișierul: nu l-ai salvat, folosește des Control plus S. Click dreapta nu face ce crezi: în Blender patru, click stânga selectează, iar click dreapta deschide un meniu.
+
+Recapitulare. Scena de start are cub, lumină și cameră. Zonele sunt Viewport, Outliner, Properties și Timeline. G mută, Escape anulează, Control plus Z dă înapoi. Shift plus A adaugă obiecte, iar F doi redenumește.
+
+Succes la primul fișier trei D.

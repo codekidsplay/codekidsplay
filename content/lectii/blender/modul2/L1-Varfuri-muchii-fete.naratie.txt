@@ -1,0 +1,23 @@
+Lecția unu. Vârfuri, muchii, fețe.
+
+Până acum ai mutat obiecte întregi. Astăzi intri înăuntrul lor și miști chiar oasele unui model: vârfurile, muchiile și fețele. Proiectul se numește Cubul care se transformă. Fișierul se numește: Prenume, linie jos, Nume, linie jos, B doi, linie jos, L unu, punct blend.
+
+Obiectivul. La final transformi un cub în piramidă, rampă și diamant, doar mișcând părți din el. Minim: treci în Edit Mode, selectezi vârfuri, muchii și fețe și le muți. Complet: minim, plus faci piramida, cu Merge, rampa și diamantul, fiecare pe un cub separat.
+
+De ce contează. Orice model trei D este o plasă, în engleză mesh, făcută din puncte, linii și suprafețe. Dacă înțelegi cele trei piese, poți modela orice formă.
+
+Primul pas. Două moduri de lucru. În Object Mode muți obiectul întreg, și este modul implicit. În Edit Mode muți piese din interiorul obiectului, și intri în el cu tasta Tab. Selectezi cubul și apeși Tab: apare o rețea portocalie. Apeși Tab din nou ca să ieși. În partea de sus, în stânga viewport-ului, vezi numele modului în care ești.
+
+Al doilea pas. Cele trei piese ale unei plase. Vertex, adică vârf, este un punct, și îl alegi cu tasta unu. Edge, adică muchie, este o linie între două vârfuri, și o alegi cu tasta doi. Face, adică față, este suprafața dintre mai multe muchii, și o alegi cu tasta trei. Folosești cifrele de sus ale tastaturii, în Edit Mode, nu cele de pe tastatura numerică. Cubul are opt vârfuri, douăsprezece muchii și șase fețe. Numără-le.
+
+Al treilea pas. Selectăm și mutăm. Click pe o piesă o selectează. Shift plus click adaugă la selecție. G mută, cu X, Y sau Z pentru axă. A selectează tot, iar Alt plus A deselectează tot. Verificare: apasă Alt plus Z, pentru X-ray, ca să vezi și piesele din spate.
+
+Al patrulea pas. Piramida. Pe un cub nou, apeși Tab și treci în modul Face, cu trei. Dai click pe fața de sus. Apeși S, zero, Enter, iar cele patru vârfuri ajung în același loc. Pare piramidă, dar sunt patru vârfuri suprapuse. Le unești cu M, apoi At Center, adică Merge. Ieși din Edit Mode cu Tab.
+
+Al cincilea pas. Rampa. Pe un cub nou, apeși Tab și treci în modul Edge, cu doi. Selectezi muchia de sus din partea din față, cu Alt plus Z, ca s-o vezi mai ușor. Apeși G, Z, minus doi, Enter. Muchia coboară, iar cubul devine o pană, adică o rampă.
+
+Al șaselea pas. Diamantul. Pe un cub nou, Tab, modul Face. Selectezi fața de sus și apeși S, zero virgulă patru, Enter. Selectezi fața de jos și faci la fel. Selectezi vârfurile sau fețele laterale și le tragi în afară cu G și o axă. Încearcă și Shade Smooth, din lecția cinci a modulului unu.
+
+Greșeli frecvente. Muți obiectul, nu piesa: ești în Object Mode, apasă Tab. Selectezi doar partea din față: pornește X-ray cu Alt plus Z. Cifrele schimbă vederea: folosești cifrele tastaturii numerice, iar în Edit Mode trebuie cifrele de sus. Merge nu a mers: ai uitat să selectezi toate vârfurile suprapuse. Ai pierdut forma: Control plus Z.
+
+Succes la transformări.

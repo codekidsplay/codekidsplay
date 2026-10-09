@@ -1,0 +1,23 @@
+Lecția doi. Selectare isteață.
+
+Cine selectează repede, modelează repede. Astăzi înveți cinci metode de selectare care îți economisesc zeci de click-uri. Proiectul se numește Peisajul din grilă. Fișierul se numește: Prenume, linie jos, Nume, linie jos, B doi, linie jos, L doi, punct blend.
+
+Obiectivul. La final selectezi rapid grupuri de piese și faci un peisaj dintr-o grilă. Minim: folosești selecția cu Box, Shift plus click și Alt plus A. Complet: minim, plus Alt plus click pentru o buclă de muchii, tasta L pentru piese legate, Control plus I pentru inversare și un peisaj cu dealuri și o vale.
+
+De ce contează. Un model are sute de piese. Dacă le selectezi pe rând, pierzi mult timp. Metodele isteațe fac același lucru într-o singură mișcare.
+
+Primul pas. Grila de lucru. Ștergi cubul. Apeși Shift plus A, Mesh, Grid. În panoul din stânga jos pui X Subdivisions zece, Y Subdivisions zece și Size zece. Apeși Tab, pentru Edit Mode, apoi șapte, pentru vederea de sus.
+
+Al doilea pas. Metodele de selectare. Box select: tragi un dreptunghi cu mouse-ul, sau apeși B, pentru grupuri de piese. Shift plus click adaugă sau scoate o piesă, pentru ajustări. A selectează tot, iar Alt plus A deselectează tot, la început și la final. Alt plus click pe o muchie selectează o buclă întreagă, adică un rând sau un inel. Tasta L, cu cursorul peste o piesă, selectează tot ce este legat de ea, util pentru piese separate. Control plus I inversează selecția, adică tot, în afară de ce ai ales.
+
+Al treilea pas. Atenție la X-ray. Box select selectează doar ce se vede. Ca să prinzi și piesele din spate, apasă Alt plus Z.
+
+Al patrulea pas. Dacă nu merge selecția. Bara de unelte din stânga, pe care o arăți cu T, are instrumentul Select Box. Asigură-te că este activ. Poți trece la Tweak sau la Lasso, selectare liberă, desenată, din același loc.
+
+Al cincilea pas. Peisajul din grilă. Treci în modul Vertex, cu unu, și apeși Alt plus A, ca să nu ai nimic selectat. Selectezi cu Box un grup de vârfuri din mijloc și apeși G, Z, doi, Enter: un deal. Selectezi altă zonă, mai mică, și apeși G, Z, patru, Enter: un munte. Selectezi o zonă din colț și apeși G, Z, minus unu, Enter: o vale. Alegi o muchie interioară și dai Alt plus click: selectezi tot rândul. Apeși G, Z, unu, Enter: un zid prin peisaj. Control plus I inversează selecția, iar G, Z, minus zero virgulă trei, Enter, coboară tot restul puțin. Ieși cu Tab și aplici Shade Smooth, din click dreapta. Dealurile au colțuri ascuțite pentru că mutăm puține vârfuri. În lecția șase vei învăța o metodă care le face rotunde.
+
+Al șaselea pas, pentru varianta completă. Mai mult peisaj. Faci trei dealuri de înălțimi diferite. Faci o vale care trece de-a lungul grilei, selectând un rând cu Alt plus click și coborându-l. Adaugi un lac: un plan albastru, la înălțimea zero virgulă doi, în vale.
+
+Greșeli frecvente. Nu merge Box select: instrumentul nu este activ, apasă T sau B. Selecția a prins doar piese din față: pornește Alt plus Z. Alt plus click nu face bucla: dai click pe muchie, nu pe vârf, în modul Edge sau Vertex. Selectezi prea mult: Alt plus A și iei de la capăt. Peisajul este plat: mutarea este mică, scrie numere mai mari.
+
+Succes la peisaj.

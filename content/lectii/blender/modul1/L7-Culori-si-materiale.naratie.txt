@@ -1,0 +1,25 @@
+Lecția șapte. Culori și materiale.
+
+Astăzi dai culoare modelelor tale. Înveți ce este un material, cum alegi o culoare și cum faci ca un obiect să arate lucios, mat sau metalic. Proiectul se numește Casa colorată. Fișierul se numește: Prenume, linie jos, Nume, linie jos, B unu, linie jos, L șapte, punct blend.
+
+Obiectivul. La final casa ta este colorată și ai încercat trei aspecte diferite: mat, lucios și metalic. Minim: colorezi patru piese cu materiale diferite. Complet: minim, plus reglezi Roughness și Metallic și copiezi un material pe alte obiecte.
+
+De ce contează. O scenă fără culoare arată ca un model de plastilină gri. Materialele spun cum arată suprafața: culoarea, lucirea, transparența.
+
+Ce ai nevoie. Fișierul din lecția șase, sau cel cu omulețul din lecția cinci.
+
+Primul pas. Vezi culorile în viewport. În colțul din dreapta sus al viewport-ului sunt patru butoane, în formă de sfere, pentru modul de afișare. Wireframe arată doar liniile. Solid este gri și rapid, fiind modul de lucru. Material Preview arată culorile și luminile. Rendered este aproape ca randarea finală. Treci pe Material Preview, ca să vezi culorile.
+
+Al doilea pas. Primul material. Selectezi corpul casei. În Properties, jos în dreapta, alegi fila cu sfera roșie, Material. Apeși New. Vezi lista Surface. Dai click pe Base Color și alegi o culoare, de exemplu galben. Dai un nume materialului, prin dublu click pe nume: Perete.
+
+Al treilea pas. Cele trei setări magice. Base Color este culoarea. Roughness spune cât de lucios este obiectul: zero înseamnă oglindă, unu înseamnă mat. Metallic spune cât de metalic este: zero înseamnă plastic sau lemn, unu înseamnă metal. Experimentează pe o sferă. Plastic mat: Roughness zero virgulă opt și Metallic zero. Plastic lucios: Roughness zero virgulă doi și Metallic zero. Metal lucios: Roughness zero virgulă doi și Metallic unu. Metal mat: Roughness zero virgulă șase și Metallic unu.
+
+Al patrulea pas. Culori pentru casă. Dai materiale diferite, câte unul pe piesă. Corpul se numește Perete, galben deschis, cu Roughness zero virgulă opt. Acoperișul, roșu cărămiziu, cu Roughness zero virgulă șase. Ușa, maro, cu Roughness zero virgulă șapte. Ferestrele, albastru deschis, cu Roughness zero virgulă unu. Hornul, roșu închis. Pământul, verde, cu Roughness unu.
+
+Al cincilea pas. Copiem materiale. Dacă ai trei ferestre și vrei același material pe toate, selectezi celelalte ferestre. La final selectezi fereastra care are deja materialul, adică obiectul activ. Apeși Control plus L, apoi Link Materials. Toate primesc materialul. Dacă modifici culoarea unui material, se schimbă pe toate obiectele care îl folosesc.
+
+Al șaselea pas, pentru varianta completă. Omulețul colorat. Deschizi fișierul cu omulețul din lecția cinci și îi dai culori. Sferele, alb, cu Roughness zero virgulă șase. Nasul, portocaliu. Ochii și nasturii, negru. Pălăria, negru sau albastru închis.
+
+Greșeli frecvente. Nu vezi culoarea: ești în modul Solid, treci pe Material Preview. Toate obiectele au aceeași culoare: folosesc același material. Culoarea se schimbă pe alt obiect: din același motiv, apasă butonul cu cifra de lângă numele materialului, ca să-l faci unic. Metalul arată negru: metalul reflectă mediul, iar într-o scenă goală pare închis, ceea ce este normal, iar în lecțiile opt și nouă vezi cum se rezolvă. Materialul nu apare: ai selectat altă piesă.
+
+Succes cu culorile.

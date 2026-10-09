@@ -1,0 +1,23 @@
+Lecția șapte. Materiale: galeria de materiale.
+
+Același obiect poate părea din plastic, sticlă, aur, cauciuc sau lumină. Astăzi înveți câteva rețete de materiale și faci o galerie cu șase sfere. Proiectul se numește Galeria de materiale. Fișierul se numește: Prenume, linie jos, Nume, linie jos, B trei, linie jos, L șapte, punct blend.
+
+Obiectivul. La final ai șase sfere cu materiale diferite, pe care le poți reutiliza. Minim: patru materiale, adică plastic, cauciuc, aur și sticlă. Complet: minim, plus un material luminos, un material ceramic, toate denumite și randate într-o galerie.
+
+De ce contează. Materialul decide dacă un model pare real. O sferă simplă poate fi o minge, o perlă, un bec sau o planetă, doar schimbând câteva valori.
+
+Primul pas. Principled BSDF. Materialul standard din Blender se numește Principled BSDF. Setările lui principale: Base Color este culoarea. Metallic: zero înseamnă nemetal, unu înseamnă metal. Roughness: zero înseamnă lucios, unu înseamnă mat. Transmission, la Weight, spune cât de transparent este, și se folosește pentru sticlă. IOR spune cât îndoaie lumina, iar pentru sticlă este în jur de unu virgulă patruzeci și cinci. Emission face materialul să strălucească.
+
+Al doilea pas. Scena galeriei. Un plan mare, ca podea, cu S, doisprezece, gri deschis. Șase UV Sphere, cu Radius unu, în șir, la pozițiile X minus șapte virgulă cinci, minus patru virgulă cinci, minus unu virgulă cinci, plus unu virgulă cinci, plus patru virgulă cinci și plus șapte virgulă cinci, cu Shade Smooth. Un Sun și un Area, camera în față, și vederea Rendered.
+
+Al treilea pas. Rețetele. Unu, plastic roșu: culoare roșie, Metallic zero, Roughness zero virgulă douăzeci și cinci. Doi, cauciuc negru: culoare neagră, Metallic zero, Roughness zero virgulă nouă. Trei, aur: un galben cald, Metallic unu, Roughness zero virgulă doi. Patru, sticlă: Transmission unu, Roughness zero, IOR unu virgulă patruzeci și cinci. Cinci, bec sau neon: culoare albă și Emission Strength cinci. Șase, ceramică albastră: culoare albastră, Metallic zero, Roughness zero virgulă unu. Sticla: dacă arată opacă, în Properties, la Render, activezi Raytracing, în EEVEE, sau folosești Cycles.
+
+Al patrulea pas. Cum creezi fiecare material. Selectezi sfera. În Properties, la Material, apeși New. Dai numele materialului, prin dublu click: Plastic, Cauciuc, Aur, Sticla, Neon și Ceramica. Reglezi valorile din listă. Verifici în Rendered. Sfat: denumirile bune te ajută să-ți găsești materialele mai târziu. Butonul Browse Material, de lângă nume, îți arată lista lor.
+
+Al cincilea pas, pentru varianta completă. Galeria. Fiecare sferă are un mic suport, adică un cilindru, sub ea. Camera privește de la nivelul podelei, ușor în sus. Randezi la o mie nouă sute douăzeci pe o mie optzeci și salvezi imaginea cu numele din proiect, cu extensia P N G.
+
+Al șaselea pas. Reutilizarea materialelor. Materialele sunt salvate în fișier. În alt proiect mergi la File, Append, alegi fișierul, apoi Material, și alegi materialul. Așa îți construiești o bibliotecă proprie.
+
+Greșeli frecvente. Sticla arată ca plastic: lipsește Raytracing sau Transmission. Metalul este negru: lipsește ceva de reflectat, adaugă podea și lumini. Neonul nu luminează: Strength este prea mic sau randezi în Solid. Materialele se schimbă pe alte obiecte: folosesc același material, fă-l unic cu butonul cu cifra. Culori șterse: Roughness este prea mare.
+
+Succes la galerie.

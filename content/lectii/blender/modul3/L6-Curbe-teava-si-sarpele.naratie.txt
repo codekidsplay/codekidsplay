@@ -1,0 +1,23 @@
+Lecția șase. Curbe: țeava și șarpele.
+
+Unele lucruri nu se fac din cuburi: cabluri, țevi, șerpi, tobogane. Pentru ele folosim curbe, linii flexibile pe care le îngroșăm. Astăzi faci o țeavă și un șarpe. Proiectul se numește Țeava și șarpele. Fișierul se numește: Prenume, linie jos, Nume, linie jos, B trei, linie jos, L șase, punct blend.
+
+Obiectivul. La final ai o țeavă cu coturi și un șarpe cu cap și limbă. Minim: o curbă îngroșată într-o țeavă. Complet: minim, plus un șarpe cu corpul subțiat spre coadă, în engleză taper, cu cap și ochi, plus materiale.
+
+De ce contează. Cablurile, toboganele, roller coaster-ele și părul se modelează cu curbe. Sunt ușor de îndoit și de modificat chiar și după ce au fost făcute.
+
+Primul pas. Curba Bezier. Apeși Shift plus A, apoi Curve, apoi Bezier. Apare o linie cu două puncte și mânere. Punctul de control este un punct pe curbă, iar mânerul spune cum se curbează. În Edit Mode, cu Tab, muți un punct cu G. Curbezi mutând mânerul, adică punctul de la capătul liniei. Adaugi un punct la capăt selectând capătul, apăsând E, mutând mouse-ul și dând click. Închizi curba cu Alt plus C. Pentru o curbă în spațiu, nu doar plată, muți punctele și pe axa Z.
+
+Al doilea pas. Îngroșăm curba. În Properties, la fila curbei verzi, Data, apoi Geometry, apoi Bevel. Depth este grosimea, adică raza țevii. Resolution spune cât de rotundă este secțiunea. Fill Caps închide capetele. Pui Depth zero virgulă cincisprezece, Resolution șase și bifezi Fill Caps. Țeava este gata.
+
+Al treilea pas. Țeava cu coturi. Ții curba în Edit Mode și adaugi patru sau cinci puncte cu E. Pentru coturi bruște, selectezi un punct și apeși V, apoi Vector: mânerele devin drepte, iar curba face un colț. Pui un material metalic, cu Metallic unu și Roughness zero virgulă patru. La capete adaugi inele, adică Torusuri aplatizate, ca flanșe.
+
+Al patrulea pas. Șarpele. O nouă curbă Bezier, cu șase până la opt puncte care formează un S, poate chiar pe podea. La Geometry, Bevel, pui Depth zero virgulă douăzeci și cinci, Resolution opt și Fill Caps. Taper, adică subțierea: adaugi o a doua curbă, în formă de triunghi, adică un Bezier plat, cu un capăt la zero și celălalt la unu. La Geometry, Taper Object, o alegi pe ea. Corpul șarpelui se subțiază spre coadă. Dacă ți se pare greu, sari peste Taper și schimbi mai târziu grosimea locală, selectând puncte din curbă și apăsând Alt plus S. Capul este o UV Sphere, scalată cu S, X, unu virgulă doi, S, Y, unu virgulă șase și S, Z, zero virgulă nouă, la un capăt. Ochii sunt două sfere mici, albe, cu pupile negre. Limba este un plan subțire, roșu, despicat cu un Loop Cut și mutat într-un V.
+
+Al cincilea pas, opțional. Transformăm curba în obiect. Când vrei să o editezi ca pe orice mesh, mergi la Object, Convert, Mesh. După asta nu o mai poți modifica ca pe o curbă.
+
+Al șaselea pas, pentru varianta completă. Materialele. Șarpele este verde, cu Noise, pe care îl înveți în lecția opt, sau verde cu galben pe spate. Țeava este gri metalic. Adaugi o podea simplă, cu o lumină care scoate în evidență forma.
+
+Greșeli frecvente. Curba este plată: toate punctele sunt pe același plan, mută pe Z. Țeava nu are grosime: Depth este zero. Capetele sunt goale: bifează Fill Caps. Curba este colțuroasă: mânerele sunt de tip Vector, apeși V, apoi Aligned. Taper nu merge: obiectul pentru taper nu este o curbă.
+
+Succes cu șarpele.

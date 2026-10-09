@@ -1,0 +1,23 @@
+Lecția doi. Navigare în trei D.
+
+Astăzi înveți să te plimbi prin lumea trei D: să te rotești în jurul unui obiect, să te apropii și să te îndepărtezi, să vezi scena din față, de sus și din lateral. Proiectul se numește Turul obiectului. Fișierul se numește: Prenume, linie jos, Nume, linie jos, B unu, linie jos, L doi, punct blend.
+
+Obiectivul. La final te miști în trei D fără să te pierzi și găsești oricând obiectul. Minim: rotești, apropii și deplasezi vederea cu mouse-ul. Complet: minim, plus vezi scena din față, din dreapta și de sus, treci între perspectivă și ortografic și găsești orice obiect cu tasta Home și cu tasta punct de pe tastatura numerică.
+
+De ce contează. Un obiect trei D are lățime, înălțime și adâncime. Ca să-l modelezi bine, îl privești din mai multe părți, ca atunci când te uiți la o jucărie.
+
+Primul pas. Deschizi o scenă nouă: File, New, General. Ai din nou cubul, lumina și camera.
+
+Al doilea pas. Cele trei mișcări de bază, cu mouse-ul peste viewport. Rotești vederea ținând apăsată rotița și mișcând mouse-ul. Fără rotiță, folosești Alt plus click stânga și miști mouse-ul. Deplasezi vederea cu Shift plus rotița, sau, fără rotiță, cu Shift plus Alt plus click stânga. Pentru zoom, învârți rotița, sau folosești Control plus Alt plus click stânga, ori rotița de pe touchpad. Încearcă fiecare mișcare câte un minut. La început pare ciudat, dar în zece minute devine firesc.
+
+Al treilea pas. Giroscopul din colțul din dreapta sus. Este o sferă cu axe colorate. Roșu este axa X, de la stânga la dreapta. Verde este axa Y, din față în spate. Albastru este axa Z, de jos în sus. Un click pe o axă te face să privești de-a lungul ei. Dacă tragi cu mouse-ul pe sferă, rotești vederea. Lângă ea sunt două butoane mici: mâna, pentru deplasare, și lupa, pentru zoom, pe care le tragi cu mouse-ul.
+
+Al patrulea pas. Vederile standard, cu tastele de pe tastatura numerică, sau cu tastele cu cifre de sus, dacă ai activat emularea. Cifra unu arată scena din față. Cifra trei, din dreapta. Cifra șapte, de sus. Cu Control apăsat, aceleași cifre dau vederile opuse: unu din spate, trei din stânga, șapte de jos. Cifra zero arată ce vede camera. Cifra cinci schimbă între perspectivă și ortografic. În perspectivă, lucrurile se văd ca cu ochiul tău, iar cele îndepărtate par mici. În ortografic, liniile paralele rămân paralele, ceea ce este perfect pentru modelare precisă.
+
+Al cincilea pas. Nu te pierde. Tasta Home arată toată scena. Tasta punct de pe tastatura numerică apropie obiectul selectat. Shift plus C resetează vederea și cursorul trei D.
+
+Al șaselea pas, pentru varianta completă. Jocul Găsește obiectul. Adaugi trei obiecte cu Shift plus A, apoi Mesh: un con, un tor și o maimuță, și le muți departe de centru cu tasta G. Apeși Home și le vezi pe toate. Dai click pe fiecare în Outliner, apoi apeși tasta punct de pe tastatura numerică, iar vederea sare la el. Faci un scurt tur: din față cu unu, din dreapta cu trei, de sus cu șapte și prin cameră cu zero.
+
+Greșeli frecvente. Totul pare strâmb: ești în perspectivă, apasă cinci pentru ortografic. Nu vezi nimic: ești prea aproape sau prea departe, apasă Home. Tastatura numerică nu merge: activează Emulate Numpad în Preferences. Vederea se învârte în loc: ai ținut Alt apăsat. Confuzie între vedere și obiect: la navigare nu muți obiectul, ci doar camera ta.
+
+Succes la tur.

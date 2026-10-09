@@ -1,0 +1,25 @@
+Lecția patru. Personajul, partea a treia: culori și poziție.
+
+Blobi are formă, dar este încă gri. Astăzi îi dai culori și materiale, îl legi ca să-l poți muta ca pe un întreg și îl pui într-o poziție simpatică, numită pose, pentru poză. Proiectul se numește Blobi, finalul. Obții două fișiere: Prenume, linie jos, Nume, linie jos, B patru, linie jos, L patru, punct blend, și imaginea cu același nume, punct P N G.
+
+Obiectivul. La final Blobi este colorat, în poziție de salut și randat în studio. Minim: corp colorat, ochi, gură și coarne. Complet: minim, plus textură de piele, cu Noise și Bump, legare cu părinte, poziție de salut și o randare cu trei lumini.
+
+De ce contează. Un personaj ajunge la public prin poza finală. Culoarea, poziția și lumina fac diferența dintre un model și un personaj.
+
+Ce ai nevoie. Fișierul din lecția trei.
+
+Primul pas. Paleta de culori. Alegi trei culori care se potrivesc. Culoarea principală, pentru corp, de exemplu verde mentă. Culoarea secundară, pentru burtă și mâini, mai deschisă, verde-gălbuie. Culoarea de accent, pentru coarne și limbă, galben sau roșu. Culorile calde, roșu și portocaliu, dau energie. Culorile reci, albastru și verde, dau calm.
+
+Al doilea pas. Materialele. Corpul: verde mentă, cu Roughness zero virgulă cinci. Burta: verde deschis, cu fețe separate, prin Assign. Ochii: alb lucios, cu pupile negre. Gura: roșu închis. Coarnele: crem, cu Roughness zero virgulă trei. Dinții: alb. Pentru burtă pe același obiect, adaugi un al doilea slot de material și dai Assign pe fețe, ca la rachetă.
+
+Al treilea pas. Piele cu textură. Pe materialul corpului, în Shader Editor, din lecția opt a modulului trei: un Noise Texture, cu Scale optzeci și Detail șase. Legi ieșirea Fac într-un nod Bump, cu Strength zero virgulă cincisprezece, apoi ieșirea Normal în Principled BSDF. Pielea are acum micro-denivelări, ca o piele fină.
+
+Al patrulea pas. Legarea pieselor, cu părinte. Blobi are corp, ochi, coarne și gură. Ca să-l muți odată, selectezi toate piesele, în afară de corp. La final selectezi corpul, care devine activ. Apeși Control plus P, apoi Object. Muți corpul, iar toate piesele merg după el. Verifici în Outliner că piesele sunt în ierarhie sub corp.
+
+Al cincilea pas. Poziția, pose. Fără schelet, care se folosește pentru animație, poți pune personajul într-o poziție mutând și rotind părțile. Brațul: intri în Edit Mode pe corp, cu Alt plus Z pornit. Selectezi inelul de la umăr, unde începe brațul, și apeși Shift plus S, apoi Cursor to Selected. Selectezi cu Box, adică B, toate vârfurile brațului, fără cele ale corpului. În antetul viewport-ului schimbi Pivot pe trei D Cursor. Acum R, Y, minus șaizeci rotește brațul în jurul umărului. Pentru Blobi, mâna este sus, ca la salut. La final pui Pivot înapoi pe Median Point. Capul se înclină ușor, cu R, Y, opt. Un picior este ușor ridicat, cu G, Z, zero virgulă cincisprezece și R, X, minus zece. Încearcă două sau trei poziții diferite și păstrează-o pe cea mai simpatică.
+
+Al șaselea pas. Studioul și randarea. Folosești studioul din lecția nouă a modulului trei: fundal curbat, lumini Key, Fill și Rim. Camera are între șaizeci și optzeci și cinci de milimetri, iar personajul stă în treimea din stânga. Randezi cu EEVEE, o mie nouă sute douăzeci pe o mie optzeci, cu F doisprezece, și salvezi imaginea cu numele din proiect.
+
+Greșeli frecvente. Culori prea multe: menține trei principale. Burta nu se colorează separat: lipsește slotul sau Assign. Piesele nu se mută împreună: nu ai făcut Control plus P. Poziția arată rigid: rotește ușor capul și corpul. Pielea este prea zgrunțuroasă: Strength este prea mare la Bump.
+
+Succes cu Blobi.

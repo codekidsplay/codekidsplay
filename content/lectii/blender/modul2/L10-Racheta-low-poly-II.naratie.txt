@@ -1,0 +1,31 @@
+Lecția zece. Racheta low-poly, partea a doua.
+
+Terminăm racheta: o colorăm cu mai multe materiale pe același obiect, îi adăugăm flacăra, o înclinăm ca să pară că zboară și o randăm pe un cer cu stele. Acesta este finalul modulului doi. Proiectul se numește Racheta mea. Obții două fișiere: Prenume, linie jos, Nume, linie jos, B doi, linie jos, L zece, punct blend, și imaginea cu același nume, punct P N G.
+
+Obiectivul. La final ai o rachetă colorată, cu flacără, în zbor. Minim: corp și aripioare în două culori diferite. Complet: minim, plus cinci materiale, adică corp, vârf, aripioare, hublou și duză, o flacără luminoasă, fum, un cer cu stele și o randare frumoasă.
+
+De ce contează. Un model devine viu când are părți din materiale diferite. Înveți să dai mai multe materiale pe același obiect, ceea ce se folosește la orice model profesionist.
+
+Ce ai nevoie. Fișierul din lecția nouă.
+
+Primul pas. Paleta rachetei. Alege trei sau patru culori care se potrivesc. Corpul, alb. Vârful și aripioarele, roșu. Hubloul, albastru deschis. Duza, gri închis. Dunga de pe corp, albastru închis.
+
+Al doilea pas. Materiale multiple pe un obiect. Selectezi racheta. În Properties, la Material, apeși New. Îl numești Corp, de culoare albă. Apeși plusul, ca să adaugi un slot nou. Apeși New și îl numești Rosu. Repeți pentru Geam, albastru deschis, cu Roughness zero virgulă zero cinci, pentru Duza, gri închis, cu Metallic unu și Roughness zero virgulă patru, și pentru Dunga, albastru închis. Apeși Tab, pentru Edit Mode, în modul Face, cu trei. Selectezi fețele vârfului, cu Shift plus click, alegi slotul Rosu și apeși Assign. La fel pentru aripioare, care primesc Rosu. Hubloul primește Geam. Fețele din interiorul duzei și din jurul ei primesc Duza. Pentru dungă, selectezi o bandă de fețe în jurul corpului, cu Alt plus click pe o muchie orizontală, și atribui Dunga. Dacă ai atribuit greșit, selectezi fețele din nou și dai Assign pe slotul corect.
+
+Al treilea pas. Flacăra. Ieși din Edit Mode, cu Tab. Adaugi un con, cu Vertices opt, Radius zero virgulă patru și Depth unu virgulă cinci. Apeși R, X, o sută optzeci, ca vârful să arate în jos. Îl pui sub duză, cam la înălțimea minus zero virgulă doi. Materialul Flacara are Emission portocaliu, cu Strength cinci. Un al doilea con, mai mic, galben, cu Radius zero virgulă doi și Depth unu, în interiorul primului: flacăra are un miez mai fierbinte. Apeși Control plus J pe cele două conuri, ca să fie un singur obiect, apoi F doi și îl numești Flacara.
+
+Al patrulea pas. Fumul. Adaugi o Ico Sphere, cu Subdivisions unu și Radius zero virgulă trei, aplici Shade Smooth și un material alb sau gri deschis. Pui cinci sau șase sfere sub flacără, în linie, cu mărimi diferite, folosind S. Cele mai apropiate de rachetă sunt mici, iar cele mai îndepărtate sunt mari. Le muți puțin la stânga și la dreapta, ca să nu fie în linie dreaptă.
+
+Al cincilea pas. Poziția de zbor. Selectezi racheta, flacăra și fumul. Le faci un grup: la final selectezi racheta, care devine activă, și apeși Control plus P, apoi Object. Selectezi doar racheta și apeși R, Y, douăzeci: se înclină ca în zbor. O ridici puțin de la sol, cu G, Z, doi.
+
+Al șaselea pas. Cerul cu stele. În Properties, la World, Color, alegi albastru foarte închis, aproape negru. Pentru stele, faci douăzeci sau treizeci de sfere foarte mici, cu Radius zero virgulă zero trei, cu un material alb cu Emission Strength trei. Le duplici cu Shift plus D și le împrăștii în spatele rachetei. Mai multe mici și câteva mai mari.
+
+Al șaptelea pas. Lumini și cameră. Un Sun cu Strength trei, venind din lateral și de sus, și un Area albastru, mic, ca lumină de umplere. Camera este puțin de jos în sus, cu Focal Length între treizeci și cinci și cincizeci de milimetri, cu racheta în treimea din stânga și drumul ei spre colțul din dreapta sus. Randezi cu EEVEE, o mie nouă sute douăzeci pe o mie optzeci, cu F doisprezece, apoi Save As, în format P N G.
+
+Al optulea pas. Verificarea finală a modulului doi. Poți să intri în Edit Mode și să selectezi vârfuri, muchii și fețe? Folosești E, I, Control plus B și Control plus R? Folosești Proportional Editing? Folosești modificatorul Mirror? Dai mai multe materiale pe un obiect? Bifează pentru fiecare dacă încă nu poți, dacă poți cu ajutor sau dacă poți singur.
+
+Dacă ai terminat devreme. Racheta se poate mișca. Mutarea rachetei se poate înregistra cu keyframe-uri. Pui racheta jos, la cadrul unu, și apeși I, apoi Location. Muți linia de timp la cadrul o sută douăzeci, în Timeline, jos, muți racheta sus, cu G, Z, cincisprezece, și apeși din nou I. Apeși Space, iar racheta zboară singură. Flacăra și fumul o urmează, fiindcă le-ai legat cu Control plus P.
+
+Greșeli frecvente. Toată racheta este roșie: ai dat Assign fără să selectezi fețele. Flacăra este mată: lipsește Emission sau Strength este prea mic. Flacăra arată în sus: conul nu este rotit cu R, X, o sută optzeci. Stelele nu se văd: sunt prea mici sau fără Emission. Racheta nu se mută odată cu flacăra: nu ai făcut Control plus P.
+
+Felicitări pentru finalul modulului doi.

@@ -1,0 +1,25 @@
+Lecția cinci. Loop Cut: cana de ceai.
+
+Loop Cut adaugă un inel nou de muchii în jurul unui obiect. Cu el controlezi forma cu mult mai multă libertate. Astăzi faci o cană de ceai cu toartă. Proiectul se numește Cana mea. Fișierul se numește: Prenume, linie jos, Nume, linie jos, B doi, linie jos, L cinci, punct blend.
+
+Obiectivul. La final ai o cană cu interior gol, buza rotunjită și toartă. Minim: un cilindru golit cu Inset și Extrude în jos. Complet: minim, plus Loop Cut pentru a-i da forma, Bevel la buză și o toartă dintr-un Torus.
+
+De ce contează. Un cilindru simplu are doar fețe sus și jos. Cu Loop Cut adaugi inele la mijloc și poți face cana mai lată la mijloc, vaza mai îngustă la gât, sau o sticlă.
+
+Primul pas. Loop Cut, cu Control plus R. În Edit Mode, cu mouse-ul peste obiect, apeși Control plus R și apare o linie magenta, o previzualizare. Miști mouse-ul ca să alegi direcția, pentru că ea urmează muchiile. Cu rotița alegi câte tăieturi vrei: trei tăieturi înseamnă trei inele. Dai click stânga ca să confirmi, apoi click dreapta, ca inelul să rămână exact la mijloc. Altfel îl poți glisa.
+
+Al doilea pas. Pregătim cana. Ștergi cubul și adaugi un cilindru, cu Vertices treizeci și doi, Radius unu și Depth doi, la înălțimea unu, ca să stea pe podea. Apeși Tab. Apoi Control plus R, cu două tăieturi orizontale. Ai acum trei benzi de fețe.
+
+Al treilea pas. Forma. Cana este puțin mai lată la mijloc. Treci în modul Edge, cu doi. Dai Alt plus click pe inelul din mijloc, ca să selectezi tot inelul. Apeși S, unu virgulă cincisprezece, Enter, ca să-l mărești.
+
+Al patrulea pas. Golul. Treci în modul Face, cu trei. Dai click pe fața de sus, cercul. Apeși I, zero virgulă doisprezece, Enter, pentru grosimea peretelui. Apoi E, Z, minus unu virgulă șapte, Enter: extrudezi în jos, adânc, aproape de fund, lăsând zero virgulă trei grosime. Ar trebui să vezi un interior gol, ca la o cană adevărată.
+
+Al cincilea pas. Buza rotunjită. Selectezi muchiile de la marginea de sus, și cea din interior și cea din exterior, cu Alt plus click. Apeși Control plus B, cu o valoare în jur de zero virgulă zero patru și trei segmente din rotiță.
+
+Al șaselea pas. Toarta din Torus. Adaugi un Torus, cu Shift plus A, Mesh, Torus. În panoul din stânga jos setezi Major Radius zero virgulă cinci și Minor Radius zero virgulă zero nouă. Apeși R, X, nouăzeci, ca să stea în picioare, apoi S, X, zero virgulă șapte. Îl muți lângă cană, la X unu virgulă cincisprezece și Z unu virgulă doi. Verifici din față, cu unu: jumătate din Torus intră în cană, iar cealaltă jumătate iese.
+
+Al șaptelea pas, pentru varianta completă. Finisare. Aplici Shade Smooth pe cană și pe toartă. Pui un material alb, ceramic, cu Roughness zero virgulă doi. Poți adăuga o culoare diferită pentru interior, cu un material nou pentru fețele interioare, folosind Assign, despre care vei afla în lecția zece. Muți cana într-un colț și adaugi un plan drept masă.
+
+Greșeli frecvente. Loop Cut nu apare: ești în Object Mode, apasă Tab. Tăietura este pe direcția greșită: mută mouse-ul spre altă muchie înainte să dai click. Fundul cănii este tăiat: extrudează mai puțin, de exemplu minus unu virgulă cinci. Toarta nu se prinde: mut-o puțin mai aproape, la X egal unu. Cana este colțuroasă: lipsește Shade Smooth sau Bevel.
+
+Succes la cană.

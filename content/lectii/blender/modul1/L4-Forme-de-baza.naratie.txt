@@ -1,0 +1,25 @@
+Lecția patru. Forme de bază.
+
+Astăzi descoperi cărămizile modelării trei D: cubul, sfera, cilindrul, conul, planul și torul. Din ele poți face aproape orice. Proiectul se numește Racheta mea. Fișierul se numește: Prenume, linie jos, Nume, linie jos, B unu, linie jos, L patru, punct blend.
+
+Obiectivul. La final adaugi și reglezi forme de bază și construiești o rachetă din ele. Minim: adaugi patru forme diferite și le schimbi dimensiunea. Complet: minim, plus reglezi forma din panoul de setări, adică numărul de laturi și raza, iar racheta are corp, vârf, aripi și geam.
+
+De ce contează. Modelatorii profesioniști încep adesea cu forme simple, pe care le combină și le modifică. Un copac este un cilindru și o sferă, iar o casă este un cub și un con.
+
+Primul pas. Meniul Add. Cu mouse-ul peste viewport, apeși Shift plus A, apoi Mesh. Plane este bun pentru podea, perete sau foaie. Cube, pentru căsuțe, cutii și trepte. Circle, pentru contur sau bază. UV Sphere, pentru mingi, capete și planete. Ico Sphere este o sferă făcută din triunghiuri, bună pentru stânci. Cylinder, pentru trunchiuri, turnuri și roți. Cone, pentru vârfuri, pomi de brad și pălării. Torus, pentru inele, covrigi și roți groase. Monkey este Suzanne.
+
+Al doilea pas. Locul unde apar formele. Obiectele noi apar la cursorul trei D, cercul alb și roșu din mijloc, la început. Muți cursorul cu Shift plus click dreapta, unde vrei. Îl readuci în centru cu Shift plus C.
+
+Al treilea pas. Panoul Adjust Last Operation. Imediat după ce adaugi o formă, în colțul din stânga jos al viewport-ului apare un panou mic, pe care îl deschizi cu un click. Vertices, la cilindru, con și cerc, spune câte laturi are forma: trei înseamnă triunghi, șase înseamnă hexagon, treizeci și două înseamnă aproape rotund. Radius spune cât este de lat. Depth spune cât este de înalt. Location și Rotation spun unde și cum apare. Atenție: panoul dispare când faci altă acțiune, deci reglează imediat după ce adaugi forma.
+
+Al patrulea pas. Origine și nume. Orice obiect are un punct de origine, punctul portocaliu mic. Rotația și scalarea se fac în jurul lui. Redenumește fiecare obiect cu F doi, ca să nu te încurci.
+
+Al cincilea pas, pentru varianta completă. Racheta mea. Ștergi mai întâi cubul de start cu X. Apoi construiești pe rând. Corpul este un cilindru cu raza zero virgulă cinci, adâncimea trei și treizeci și două de laturi. Vârful este un con cu raza zero virgulă cinci și adâncimea unu, așezat deasupra corpului. Aripile, trei la număr, sunt cuburi subțiate cu S, Y, zero virgulă unu, și S, X, zero virgulă șase, apoi puse jos, în jurul corpului. Geamul este o sferă mică, lipită pe corp, la mijloc. Flacăra este un con cu vârful în jos, obținut cu R, X, o sută optzeci, așezat sub corp.
+
+Pașii recomandați. Adaugi corpul și îl muți în sus cu G, Z, unu virgulă cinci, Enter, ca baza să stea pe podea. Adaugi conul, care apare la centru, și îl muți la înălțimea trei virgulă cinci. Adaugi o aripă, o ridici la înălțimea zero virgulă patru și o muți la X egal zero virgulă șapte. Pentru celelalte aripi, folosești Shift plus D și rotești copiile în jurul corpului. Cel mai simplu este să muți mai întâi cursorul trei D în centru, cu Shift plus C, să alegi Pivot: cursorul trei D, din bara de sus a viewport-ului, și apoi să apeși R, Z, o sută douăzeci, apoi R, Z, două sute patruzeci. Geamul este o sferă mică la Y egal minus zero virgulă patruzeci și cinci și Z egal doi virgulă trei. Fiecare piesă primește un nume cu F doi: Corp, Varf, Aripa unu și așa mai departe.
+
+Al șaselea pas. Verifici din toate părțile cu vederile din lecția doi: unu pentru față, trei pentru dreapta, șapte pentru sus. Sunt aripile la distanțe egale?
+
+Greșeli frecvente. Forma apare în altă parte: cursorul trei D nu este în centru, apasă Shift plus C. Nu ai putut regla forma: panoul din stânga jos a dispărut, șterge forma și adaug-o din nou. Forma este colțuroasă: numărul de laturi este prea mic. Obiectele se confundă: nu le-ai redenumit. Piesele intră unele în altele: verifică vederea din față, cu unu.
+
+Succes la rachetă.

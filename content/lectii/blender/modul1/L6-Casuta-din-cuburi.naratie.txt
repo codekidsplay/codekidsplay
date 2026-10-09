@@ -1,0 +1,23 @@
+Lecția șase. Căsuța din cuburi.
+
+Astăzi construiești o căsuță cu pereți, acoperiș, ușă și ferestre, folosind forme simple, duplicare și lipire pe grilă, numită snap. Proiectul se numește Căsuța mea. Fișierul se numește: Prenume, linie jos, Nume, linie jos, B unu, linie jos, L șase, punct blend.
+
+Obiectivul. La final ai o căsuță cu proporții bune, cu piesele așezate exact. Minim: corp din cub, acoperiș din con cu patru laturi, ușă și o fereastră. Complet: minim, plus două până la patru ferestre identice, obținute prin duplicare, un horn, pământ și folosirea snap-ului.
+
+De ce contează. Clădirile din jocuri și din filme se fac exact așa: din forme simple, așezate precis. Snap-ul te ajută să nu pierzi timp cu mutări făcute din ochi.
+
+Primul pas. Corpul casei. Cubul de start are doi pe doi pe doi. Îl transformi într-o căsuță mai lată. Selectezi cubul. Apeși S, X, unu virgulă cinci, Enter, ca să fie mai lat, apoi S, Y, unu virgulă doi, Enter, ca să fie mai adânc. Apoi G, Z, unu, Enter, ca să stea pe podea, pentru că înălțimea centrului este jumătate din înălțimea cubului. În panoul N, la Item și Dimensions, vezi dimensiunile: trei, doi virgulă patru și doi.
+
+Al doilea pas. Acoperișul, un con cu patru laturi. Adaugi un con cu Shift plus A, Mesh, Cone. În panoul din stânga jos setezi Vertices egal patru, Radius doi virgulă doi și Depth unu virgulă șase. Un con cu patru laturi este o piramidă, dar apare rotită cu patruzeci și cinci de grade. O rotești cu R, Z, patruzeci și cinci, Enter, apoi o îngustezi în adâncime cu S, Y, zero virgulă opt, Enter. O pui deasupra casei, la înălțimea doi virgulă opt, adică doi plus zero virgulă opt. Dacă acoperișul e prea mic sau prea mare, îl scalezi cu S. Truc: verifică dimensiunile acoperișului în panoul N și fă-l puțin mai mare decât corpul, ca streașina să iasă în afară.
+
+Al treilea pas. Ușa. Adaugi un cub și, în panoul N, la Dimensions, scrii X zero virgulă opt, Y zero virgulă unu și Z unu virgulă șase. O pui pe fața din față a casei, la X zero, Y minus unu virgulă douăzeci și cinci și Z zero virgulă opt. Peretele din față este la Y egal minus unu virgulă doi. Privești din față, cu unu, și verifici dacă ușa este centrată pe casă.
+
+Al patrulea pas. Ferestrele. Un cub mic, cu dimensiunile zero virgulă șase, zero virgulă unu și zero virgulă șase, la X zero virgulă nouă, Y minus unu virgulă douăzeci și cinci și Z unu virgulă trei. Apeși Shift plus D, click dreapta, apoi G, X, minus unu virgulă opt, Enter. Aceasta este a doua fereastră, simetrică. Ferestrele trebuie să iasă puțin din perete, ca să se vadă.
+
+Al cincilea pas. Snap, adică lipire exactă. Snap este un magnet care te ajută să muți exact pe grilă sau pe alte obiecte. Pornești sau oprești snap-ul cu Shift plus Tab, sau cu butonul cu magnet din bara de sus. Pentru snap pe grilă alegi Increment, în meniul magnetului. Pentru snap pe muchii sau vârfuri alegi Vertex și muți obiectul spre un vârf. Încearcă: pornește snap-ul, apasă G pe fereastră și apropie-o de colțul unui perete.
+
+Al șaselea pas, pentru varianta completă. Hornul și pământul. Hornul este un cub cu dimensiunile zero virgulă patru, zero virgulă patru și unu, pus pe acoperiș, la X zero virgulă opt și Z trei. Pământul este un plan, adăugat cu Shift plus A, Mesh, Plane, mărit cu S, opt, Enter, și așezat la înălțimea zero. Verifici casa din toate vederile: unu, trei și șapte.
+
+Greșeli frecvente. Casa plutește: corpul nu este la o înălțime egală cu jumătate din înălțimea lui. Acoperișul este în romb: lipsește rotația de patruzeci și cinci de grade. Ușa intră în perete: ea trebuie să iasă puțin în afara peretelui. Ferestrele nu sunt simetrice: verifică valorile X, plus zero virgulă nouă și minus zero virgulă nouă. Snap-ul sare unde nu vrei: oprește-l cu Shift plus Tab.
+
+Succes la căsuță.

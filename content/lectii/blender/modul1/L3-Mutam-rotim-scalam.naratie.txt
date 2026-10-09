@@ -1,0 +1,23 @@
+Lecția trei. Mutăm, rotim, scalăm.
+
+Astăzi înveți cele trei mișcări pe care le faci cel mai des în Blender: G pentru mutare, R pentru rotire și S pentru scalare, plus cum le blochezi pe o axă. Proiectul se numește Scara spre cer. Fișierul se numește: Prenume, linie jos, Nume, linie jos, B unu, linie jos, L trei, punct blend.
+
+Obiectivul. La final transformi obiecte precis, cu mouse-ul și cu numere. Minim: muți, rotești și scalezi un cub. Complet: minim, plus blochezi mișcarea pe axele X, Y și Z și construiești o scară din șase cuburi, folosind numere exacte.
+
+De ce contează. Tot ce faci în trei D începe cu aceste trei mișcări. Dacă le știi bine, poți construi aproape orice din forme simple.
+
+Primul pas. Cele trei transformări. Selectezi cubul, cu mouse-ul peste viewport. Tasta G mută, R rotește, S scalează. Mișcă mouse-ul după ce ai apăsat tasta, iar obiectul te urmează. Confirmi cu click stânga și anulezi cu Escape.
+
+Al doilea pas. Blocarea pe o axă. După ce apeși G, R sau S, apeși X, Y sau Z, iar obiectul se mișcă doar pe acea axă. De exemplu, G și apoi Z mută doar în sus sau în jos. R și apoi Z rotește ca un titirez. S și apoi Z întinde doar pe înălțime. G și apoi Shift plus Z mută fără axa Z, adică doar pe podea.
+
+Al treilea pas. Numere exacte. După tasta de mutare și axă, scrii un număr și apeși Enter. De exemplu, G, Z, trei, Enter, mută cu trei unități în sus. R, Z, nouăzeci, Enter, rotește cu nouăzeci de grade. S, doi, Enter, mărește de două ori. S, Z, zero virgulă cinci, Enter, înjumătățește înălțimea. Poți scrie și numere negative: G, X, minus doi, Enter, mută spre stânga.
+
+Al patrulea pas. Panoul de transformare. Apeși N și, în fila Item, vezi Location, Rotation și Scale. Location arată unde este obiectul, Rotation cât este rotit, în grade, iar Scale cât este de mare, unde unu înseamnă mărimea normală. Poți scrie acolo direct valorile.
+
+Al cincilea pas. Resetări utile. Alt plus G pune obiectul înapoi în centru. Alt plus R scoate rotația. Alt plus S readuce mărimea la unu.
+
+Al șaselea pas, pentru varianta completă. Scara spre cer. Selectezi cubul, apeși S, zero virgulă cinci, Enter. Acum are latura de o unitate. Îl pui pe podea cu G, Z, zero virgulă cinci, Enter. Îl duplici cu Shift plus D, apoi click dreapta, ca să rămână copia pe loc. Muți copia o treaptă mai departe cu G, X, unu, Enter, apoi mai sus cu G, Z, zero virgulă cinci, Enter. Repeți duplicarea și mutarea până ai șase trepte, fiecare cu o unitate mai la dreapta și cu jumătate de unitate mai sus decât cea dinainte. La final adaugi un plan, cu Shift plus A, Mesh, Plane, mărit cu S, opt, Enter, ca podea. Sfat: în loc să faci șase cuburi de la zero, duplică-l pe ultimul. Este mai repede și mai exact.
+
+Greșeli frecvente. Obiectul sare departe: ai mișcat mouse-ul mult înainte de a confirma, apasă Escape și reia. Rotația merge pe axa greșită: apasă R, apoi Z, sau X, sau Y. Scalezi un obiect strâmb: ai blocat o singură axă, iar fără axă scalează uniform. Numerele nu se aplică: ai uitat Enter. Duplicatul rămâne peste original: după Shift plus D, mută-l imediat.
+
+Succes la scară.

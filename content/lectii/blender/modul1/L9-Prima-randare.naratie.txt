@@ -1,0 +1,25 @@
+Lecția nouă. Prima randare.
+
+Astăzi transformi scena trei D într-o imagine reală, pe care o poți trimite prietenilor. Procesul se numește randare, în engleză render. Proiectul se numește Poza finală. Obții două fișiere: Prenume, linie jos, Nume, linie jos, B unu, linie jos, L nouă, punct blend, și același nume cu punct P N G.
+
+Obiectivul. La final ai o imagine salvată, în format P N G, cu scena ta. Minim: randezi cu tasta F doisprezece și salvezi imaginea. Complet: minim, plus reglezi rezoluția, compari motoarele EEVEE și Cycles și obții o imagine cu fundal transparent.
+
+De ce contează. Până acum ai lucrat în viewport. Randarea face imaginea finală: calculează lumina, umbrele și reflexiile cu mare atenție. Este fotografia scenei tale.
+
+Ce ai nevoie. Scena din lecția opt, cu cameră și lumină.
+
+Primul pas. Prima randare. Verifici prin cameră, cu cifra zero. Apeși F doisprezece, sau mergi la Render, Render Image. Se deschide o fereastră cu imaginea. Aștepți să se termine. În fereastra de randare mergi la Image, Save As, sau apeși Shift plus Alt plus S, alegi formatul P N G și numești fișierul cu numele din proiect. Închizi fereastra cu Escape sau cu butonul ferestrei. Dacă ai pierdut fereastra, F unsprezece o aduce înapoi.
+
+Al doilea pas. Setările de randare, în Properties, la fila Render, cea cu aparatul foto. Render Engine este motorul care calculează imaginea. Samples spune câte încercări face pentru fiecare pixel: mai multe înseamnă imagine mai curată, dar mai lentă.
+
+Al treilea pas. Cele două motoare. EEVEE este rapid, durează secunde, arată frumos, dar aproximat. Îl folosim în proiectele de zi cu zi. Cycles este lent, durează minute, dar arată foarte realist. Îl folosim pentru imagini finale speciale. Dacă ai un calculator mai slab, rămâi pe EEVEE.
+
+Al patrulea pas. Rezoluția, în Properties, la fila Output, cea cu imprimanta. Resolution X și Y recomandate: o mie nouă sute douăzeci pe o mie optzeci. Resolution procent: cincizeci la sută pentru teste și o sută la sută pentru imaginea finală. Frame Range nu ne interesează, pentru că facem o singură imagine. Truc: testează cu cincizeci la sută, ca să mergi rapid, iar pentru poza finală treci la o sută la sută.
+
+Al cincilea pas. Experiment cu Cycles. Alegi Cycles ca motor. Pui Max Samples la șaizeci și patru. Activezi Denoise, mai jos, în același panou, ca imaginea să arate curat și cu puține puncte. Apeși F doisprezece. Compari cu EEVEE: sunt umbrele și reflexiile mai fine? Notezi cât a durat. Dacă este prea lent, scazi Resolution procent.
+
+Al șaselea pas, pentru varianta completă. Fundal transparent. Vrei omulețul fără cer, ca să-l lipești pe altă imagine. În Properties, la Render, Film, bifezi Transparent. La Output, în File Format alegi P N G, iar la Color alegi R G B A. Apeși F doisprezece și salvezi. În editorul de imagini vezi pătrățele gri și albe în loc de fundal.
+
+Greșeli frecvente. Imaginea este neagră: camera nu vede nimic sau lumina lipsește. Randarea durează o veșnicie: ai Cycles cu multe Samples, treci pe EEVEE sau scade Samples. Fișierul nu a fost salvat: randarea nu se salvează automat, folosește Image, Save As. Imaginea este mică: rezoluția este prea mică sau procentul este cincizeci. Fundalul nu este transparent: lipsește Film, Transparent sau formatul P N G cu R G B A.
+
+Succes la prima poză.

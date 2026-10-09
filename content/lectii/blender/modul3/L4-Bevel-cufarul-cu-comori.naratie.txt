@@ -1,0 +1,25 @@
+Lecția patru. Bevel: cufărul cu comori.
+
+În realitate, nicio muchie nu este perfect ascuțită: lumina o prinde și o face să strălucească. Cu modificatorul Bevel rotunjești automat toate muchiile. Astăzi faci un cufăr cu comori. Proiectul se numește Cufărul meu. Fișierul se numește: Prenume, linie jos, Nume, linie jos, B trei, linie jos, L patru, punct blend.
+
+Obiectivul. La final ai un cufăr cu capac rotunjit, benzi metalice, lacăt și monede de aur. Minim: un cufăr din două piese, corp și capac, cu Bevel. Complet: minim, plus benzi, lacăt, monede, făcute cu Array, și materiale pentru lemn și aur.
+
+De ce contează. Muchiile rotunjite fac obiectele să pară reale și prind lumina frumos. Bevel face acest lucru pe tot obiectul dintr-o singură setare.
+
+Primul pas. Modificatorul Bevel. Add Modifier, Generate, Bevel. Width spune cât de mare este rotunjirea. Segments spune cât de neted este: unu înseamnă teșit, trei înseamnă rotund. Limit Method, pe Angle, rotunjește doar muchiile ascuțite, adică cele peste treizeci de grade. Pentru majoritatea obiectelor: Width zero virgulă zero trei, Segments trei, Limit Method Angle. Apoi aplici Shade Smooth.
+
+Al doilea pas. Corpul cufărului. Cubul are dimensiunile X doi, Y unu virgulă doi și Z unu, la înălțimea zero virgulă cinci. Adaugi Bevel cu setările de mai sus și apoi Shade Smooth.
+
+Al treilea pas. Capacul rotunjit. Un cilindru, cu Vertices treizeci și doi, Radius zero virgulă șase și Depth doi. Apeși R, Y, nouăzeci, ca axa să fie pe lungime. Apeși Tab și Alt plus Z, selectezi jumătatea de jos, adică vârfurile de sub centru, apoi X și Vertices. Rămâne o jumătate de cilindru. O pui deasupra corpului, la înălțimea unu, și verifici din lateral. Adaugi Solidify, din lecția doi, cu Thickness zero virgulă zero patru, ca să aibă grosime. Apoi Bevel. Capetele rămân deschise, dar Solidify le dă grosime.
+
+Al patrulea pas. Benzile metalice. Un cub subțire, cu dimensiunile X zero virgulă doisprezece, Y unu virgulă trei și Z unu virgulă zero doi, la X egal minus zero virgulă șase. Îl duplici la X egal plus zero virgulă șase. Pe capac pui două benzi curbe, făcute din jumătăți de Torus, cu raza capacului, sau din cilindri subțiri turtiți. Aplici Bevel pe benzi.
+
+Al cincilea pas. Lacătul. Un cub mic, de zero virgulă douăzeci și cinci pe zero virgulă unu pe zero virgulă trei, pe față, la mijloc, cu Bevel. Gaura cheii este un cilindru subțire și un cub, ambele întunecate.
+
+Al șaselea pas. Monedele de aur. Un cilindru cu Vertices douăzeci și patru, Radius zero virgulă cincisprezece și Depth zero virgulă zero trei. Adaugi Bevel și un material de aur: galben, cu Metallic unu și Roughness zero virgulă douăzeci și cinci. Adaugi Array, cu Count opt și Constant Offset Z zero virgulă zero treizeci și cinci, pentru o stivă de monede. Faci trei stive cu Shift plus D, în locuri diferite, cu rotații diferite. Câteva monede sunt aruncate pe lângă cufăr, rotite la unghiuri diferite.
+
+Al șaptelea pas, pentru varianta completă. Materialele. Corpul și capacul primesc lemn: maro închis, cu Roughness zero virgulă șapte. Benzile și lacătul primesc metal: gri închis, cu Metallic unu și Roughness zero virgulă patru. Monedele primesc aur.
+
+Greșeli frecvente. Bevel-ul face felii ciudate: scala nu este aplicată, folosește Control plus A, apoi Scale. Rotunjiri inegale: obiectele au scări diferite. Nu se văd muchiile: Width este prea mic. Capacul nu se potrivește: verifică din lateral, cu trei. Randarea este lentă: ai prea multe monede cu segmente multe, folosește șaisprezece laturi.
+
+Succes la cufăr.

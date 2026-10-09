@@ -1,0 +1,29 @@
+Lecția zece. Proiect: camera mea trei D.
+
+Acesta este proiectul modulului. Construiești camera ta de vis în trei D, cu pat, birou, raft, fereastră și lumini. Folosești modificatori, materiale și lumini, tot ce ai învățat în acest modul. Proiectul se numește Camera mea trei D. Obții două fișiere: Prenume, linie jos, Nume, linie jos, B trei, linie jos, L zece, punct blend, și imaginea cu același nume, punct P N G.
+
+Obiectivul. La final ai o cameră mobilată, colorată și luminată, randată într-o imagine. Minim: podea, doi pereți, pat, birou, o lumină și camera. Complet: minim, plus o fereastră tăiată cu Boolean, un raft făcut cu Array, o pernă făcută cu Subdivision, materiale cu texturi și trei lumini.
+
+De ce contează. Modelele de interior se folosesc în arhitectură, în jocuri și în filme. Aici îți aplici toate modificatoarele într-o scenă coerentă.
+
+Primul pas. Planul. Desenezi pe hârtie camera văzută de sus: unde sunt patul, biroul, fereastra, ușa și raftul. Dimensiuni sugerate. Camera: cinci pe patru pe doi virgulă șapte. Patul: unu pe doi pe zero virgulă cinci. Biroul: unu virgulă doi pe zero virgulă șase pe zero virgulă șaptezeci și cinci. Raftul: unu pe zero virgulă douăzeci și cinci pe unu virgulă cinci.
+
+Al doilea pas. Pereții și podeaua. Un plan pentru podea, cu dimensiunile X cinci și Y patru. Doi sau trei cuburi subțiri, cu grosimea Y zero virgulă unu, pentru pereți, la înălțimea unu virgulă treizeci și cinci. Fereastra: un cub tăietor și Boolean, Difference, ca în lecția cinci.
+
+Al treilea pas. Patul, cu modificatori. Cadrul este un cub cu Bevel. Salteaua este un cub mai mic, cu Bevel și Subdivision, nivelul doi. Perna este un cub cu Control plus doi, pentru Subdivision, puțin turtit, cu Shade Smooth. Pătura este un plan cu Subdivision, ușor ondulat cu Proportional Editing.
+
+Al patrulea pas. Biroul și scaunul. Blatul este un cub cu Bevel. Picioarele sunt patru cilindri subțiri: un picior, plus Array sau Mirror. Scaunul este un cub, pentru șezut, plus patru picioare și un spătar, cu Bevel.
+
+Al cincilea pas. Raftul, cu Array. Un plan vertical, cu Solidify, grosime zero virgulă zero trei. O placă orizontală, cu Array, Count patru și Constant Offset Z zero virgulă patru, pentru patru rafturi. Pe raft pui câteva cărți, adică cuburi colorate făcute cu Array, și o plantă, adică o sferă și un cilindru.
+
+Al șaselea pas. Materialele. Pereții: alb-cald, cu Roughness zero virgulă nouă. Podeaua: lemn, făcut cu Wave Texture și Color Ramp, sau Checker. Patul: textil albastru, cu Roughness unu. Biroul și raftul: lemn deschis. Fereastra: geam, cu Transmission. Lampa: Emission.
+
+Al șaptelea pas. Luminile. Un Sun prin fereastră, pentru lumina de zi, de culoare caldă, cu Strength trei. Un Area albastru, mic, deasupra, ca lumină de umplere. Un Point, adică lampa de birou, galben, cu Power două sute de wați.
+
+Al optulea pas. Camera și randarea. Camera într-un colț, cu o lentilă între douăzeci și patru și douăzeci și opt de milimetri, pentru că în camerele interioare cadrul este larg. Verifici regula treimilor. Randezi cu EEVEE, o mie nouă sute douăzeci pe o mie optzeci, cu F doisprezece, și salvezi imaginea cu numele din proiect.
+
+Al nouălea pas. Verificarea finală a modulului trei. Folosești Subdivision, Solidify, Array și Bevel? Tai cu Boolean? Faci țevi și cabluri din curbe? Creezi materiale cu Principled BSDF? Faci o textură simplă cu noduri? Luminezi o scenă cu trei lumini? Bifează pentru fiecare dacă încă nu poți, dacă poți cu ajutor sau dacă poți singur.
+
+Greșeli frecvente. Mobila plutește: verifică din lateral, cu trei, și coboar-o la înălțimea zero. Dimensiuni nerealiste: compară cu planul de sus, patul are doi metri, nu cinci. Camera este prea întunecată: adaugă lumină prin fereastră. Prea multe detalii și prea puțin timp: termină întâi piesele mari. Modificatoare uitate: verifică ochiul din listă, la Render.
+
+Felicitări pentru finalul modulului trei.

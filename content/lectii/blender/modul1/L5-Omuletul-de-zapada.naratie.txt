@@ -1,0 +1,27 @@
+Lecția cinci. Omulețul de zăpadă.
+
+Astăzi îți faci primul personaj: un omuleț de zăpadă, din sfere, cilindri și conuri, cu suprafață netedă și piese care se mișcă împreună. Proiectul se numește Omulețul meu. Fișierul se numește: Prenume, linie jos, Nume, linie jos, B unu, linie jos, L cinci, punct blend.
+
+Obiectivul. La final ai un omuleț complet, cu corp, cap, nas, ochi, pălărie și nasturi. Minim: trei sfere suprapuse, plus nas și doi ochi. Complet: minim, plus suprafață netedă cu Shade Smooth, pălărie, nasturi și piesele legate într-un grup, adică părinte și copii, ca să muți omulețul ca pe un întreg.
+
+De ce contează. Personajele se construiesc din piese simple, așezate cu grijă. Aici înveți și două trucuri importante: netezirea suprafeței și legarea pieselor.
+
+Primul pas. Pornim curat. File, New, General, apoi X și Delete pe cub.
+
+Al doilea pas. Corpul din trei sfere. Adaugi de trei ori o UV Sphere, cu Shift plus A, Mesh, și le așezi una peste alta. Sfera de jos are scala unu virgulă doi și înălțimea unu virgulă doi. Cea de mijloc are scala zero virgulă nouă și înălțimea trei. Capul are scala zero virgulă șase și înălțimea patru virgulă patru. Valorile sunt sugestii. Scalezi cu S, numărul și Enter, iar locul îl scrii în panoul N, la Location Z. Sferele trebuie să se atingă ușor și să se suprapună puțin. Verifică din față, cu unu.
+
+Al treilea pas. Nasul, morcovul. Adaugi un con. În panoul din stânga jos setezi raza zero virgulă cincisprezece, adâncimea zero virgulă opt și rotația pe X de nouăzeci de grade. Vârful conului arată acum spre față. Îl muți la X zero, Y minus zero virgulă nouă și Z patru virgulă patru. Baza intră puțin în cap, iar vârful iese în față. Verifici din dreapta, cu trei, dacă nasul iese din față.
+
+Al patrulea pas. Ochii și nasturii. Pentru ochi, o UV Sphere mică, scalată cu S, zero virgulă zero opt. Ochii stau la X egal plus sau minus zero virgulă doi, Y minus zero virgulă cincizeci și doi și Z patru virgulă șase. Faci unul, îl duplici cu Shift plus D și schimbi semnul lui X. Pentru nasturi, trei sfere mici, scalate cu zero virgulă unu, pe mijloc, la X zero, Y minus zero virgulă optzeci și opt și înălțimile trei virgulă trei, trei și doi virgulă șapte.
+
+Al cincilea pas. Shade Smooth, pentru suprafață netedă. Sferele arată cu fațete. Selectezi o sferă, sau toate, cu A. Apoi click dreapta și Shade Smooth, sau din meniul Object, Shade Smooth. Compari: rotunjimile sunt acum fine.
+
+Al șaselea pas. Pălăria. Un cilindru cu raza zero virgulă cinci și adâncimea zero virgulă șapte, la înălțimea cinci virgulă treizeci și cinci, pentru corpul pălăriei. Un al doilea cilindru, plat, cu raza zero virgulă opt și adâncimea zero virgulă zero opt, ca boruri, la înălțimea cinci.
+
+Al șaptelea pas. Brațele, ca niște crengi. Un cilindru subțire, cu raza zero virgulă zero cinci și adâncimea unu virgulă cinci, rotit cu R, Y, șaizeci, și pus pe lateral. Îl duplici pentru celălalt braț.
+
+Al optulea pas, pentru varianta completă. Legăm totul, cu părinte și copii. Vrei să muți omulețul întreg dintr-o mișcare. Selectezi toate piesele mici, adică ochi, nas, pălărie și celelalte, cu Shift plus click. La final, Shift plus click pe sfera de jos, care devine obiectul activ, deci părintele. Apeși Control plus P, apoi Object. Acum, când muți sfera de jos cu G, toate piesele merg după ea. În Outliner vezi piesele sub părinte, ca într-o ierarhie.
+
+Greșeli frecvente. Omulețul se desface când îl muți: nu ai apăsat Control plus P. Părintele nu este ultimul selectat: selectează părintele la sfârșit. Sferele sunt colțuroase: lipsește Shade Smooth. Nasul arată în sus sau înăuntru: verifică rotația pe X, de nouăzeci de grade, și privește din dreapta, cu trei. Ochii nu sunt simetrici: folosește valori X egale, cu semn opus.
+
+Succes cu omulețul.

@@ -1,0 +1,27 @@
+Lecția nouă. Studio foto: lumini și fundal.
+
+Fotografii de produs nu pun doar o lumină. Folosesc trei lumini și un fundal curbat, care face obiectul să iasă în evidență. Astăzi îți construiești propriul studio foto virtual. Proiectul se numește Studioul meu foto. Obții două fișiere: Prenume, linie jos, Nume, linie jos, B trei, linie jos, L nouă, punct blend, și imaginea cu același nume, punct P N G.
+
+Obiectivul. La final ai un studio cu trei lumini și un fundal curbat, în care fotografiezi un obiect de-al tău. Minim: fundal curbat, o lumină principală și o cameră. Complet: minim, plus trei lumini, adică principală, de umplere și de contur, o culoare de fundal și o randare cu umbre moi.
+
+De ce contează. Aceeași cană poate arăta banală sau spectaculoasă, în funcție de lumini. Studioul îți dă control complet.
+
+Ce ai nevoie. Un obiect din lecțiile anterioare: cană, cufăr sau rachetă.
+
+Primul pas. Fundalul curbat, numit ciclorama. Este un fundal fără colțuri, ca să nu vezi unde se termină podeaua și începe peretele. Un plan, cu S, zece. Apeși Tab, treci în vederea din dreapta, cu trei, în modul Edge, cu doi. Selectezi muchia din spate. Apeși E, Z, opt, Enter, ca să extrudezi peretele. Selectezi muchia colțului, dintre podea și perete, și apeși Control plus B. Cu rotița pui opt segmente, iar din mouse alegi o rază mare, în jur de trei. Colțul devine o curbă lină. Apeși Tab și Shade Smooth.
+
+Al doilea pas. Obiectul de fotografiat. Pui cana, cufărul sau racheta în centrul curbei, deasupra podelei.
+
+Al treilea pas. Cele trei lumini. Lumina Key, principală, luminează obiectul și dă umbrele. Este un Area mare, în față-stânga, puțin sus, cu Power între șase sute și o mie de wați. Lumina Fill, de umplere, luminează umbrele și este mai slabă. Este un Area în față-dreapta, cu Power între două sute și trei sute de wați. Lumina Rim, de contur, conturează marginile. Este un Area sau un Spot, în spate și sus, cu Power cinci sute de wați. Cum le orientezi: cel mai ușor, cu o constrângere. Selectezi lumina, apoi Properties, fila Object Constraints, apoi Add Object Constraint, Track To, iar la Target alegi obiectul tău. Lumina se uită singură la obiect, oriunde o muți. Dacă ținta pare greșită, pui To pe minus Z și Up pe Y.
+
+Al patrulea pas. Moliciunea umbrelor. O lumină Area mare dă umbre moi, iar una mică dă umbre dure. Schimbi Size în Properties, la Light, și compari, de exemplu un metru și patru metri.
+
+Al cincilea pas. Fundalul colorat. Pentru o culoare simplă pe fundal, folosești un material cu Base Color: albastru pal, gri sau roz. Pentru culoarea cerului din jur, în Properties, la World, Color, alegi negru pentru o atmosferă dramatică.
+
+Al șaselea pas. Camera. O lentilă între șaptezeci și optzeci și cinci de milimetri, pentru că portretele și produsele arată bine cu o lentilă mai lungă. Dacă vrei un fundal ușor încețoșat, numit bokeh, la Camera, Depth of Field, Focus on Object, alegi obiectul, cu F-Stop doi.
+
+Al șaptelea pas, pentru varianta completă. Randare și variante. Randezi trei variante: fundal alb, fundal colorat și fundal negru. Salvezi fiecare imagine cu un sufix diferit, adică alb, color și negru, urmat de punct P N G.
+
+Greșeli frecvente. Imaginea este prea întunecată: Power-ul luminilor este mic. Umbre foarte dure: lumina este prea mică, mărește Size. Reflexii ciudate: lumina este prea aproape de obiect. Fundalul se vede ca o linie: colțul nu este rotunjit cu Bevel. Obiectul pare că plutește: umbra lipsește sau obiectul nu atinge podeaua.
+
+Succes la studio.

@@ -1,0 +1,27 @@
+Lecția nouă. Racheta low-poly, partea întâi.
+
+Începem proiectul modulului: o rachetă low-poly. Astăzi modelezi forma ei: corpul, vârful ascuțit, aripioarele și duza motorului. Proiectul se numește Racheta mea, partea întâi. Fișierul se numește: Prenume, linie jos, Nume, linie jos, B doi, linie jos, L nouă, punct blend.
+
+Obiectivul. La final ai o rachetă cu proporții bune, gata de colorat. Minim: corp cilindric cu vârf conic. Complet: minim, plus patru aripioare, o duză de motor și un hublou adâncit în corp.
+
+De ce contează. Racheta pare complicată, dar este făcută din forme simple: un cilindru, un con și câteva fețe trase în afară. Aici folosești împreună Loop Cut, Extrude, Inset și Scale.
+
+Primul pas. Proporțiile. Racheta are corp lung și vârf ascuțit. Înălțimea corpului este trei, iar raza corpului zero virgulă șase. Vârful are cam unu virgulă cinci înălțime. Aripioarele ies în afară cam zero virgulă opt.
+
+Al doilea pas. Corpul. Ștergi cubul cu X. Adaugi un cilindru, cu Shift plus A, Mesh, Cylinder. În panoul din stânga jos, Adjust Last Operation, pui Vertices doisprezece, Radius zero virgulă șase și Depth trei. În panoul N, la Item, pui Location Z egal unu virgulă cinci, ca baza rachetei să fie la înălțimea zero. Aplici Shade Flat, pentru aspectul low-poly.
+
+Al treilea pas. Tăieturile pentru detalii. Apeși Tab și Alt plus Z. Apeși Control plus R, cu mouse-ul pe o față laterală, și pui două inele orizontale, cu rotița. Apoi Enter și click dreapta, ca să rămână la locul lor. Le pui aproximativ la înălțimile zero virgulă opt și doi virgulă doi. Ai acum trei benzi: jos, pentru aripioare, la mijloc, pentru hublou, și sus, pentru vârf.
+
+Al patrulea pas. Vârful. Treci pe modul Face, cu trei, și selectezi fața de sus. Apeși E, Z, zero virgulă opt, Enter, apoi S, zero virgulă șase, Enter. Apoi E, Z, zero virgulă opt, Enter, apoi S, zero virgulă cincisprezece, Enter. Vârful este acum un con, dar mai are o fețișoară sus. Ca să se închidă, apeși M, apoi At Center.
+
+Al cincilea pas. Cele patru aripioare. Cilindrul are douăsprezece fețe laterale. Alegem patru dintre ele, la distanțe egale. Treci în vederea de sus, cu șapte, cu Alt plus Z pornit. În banda de jos, selectezi o față laterală, apoi a treia față de la ea, apoi încă una, încă una, cu Shift plus click. Ai ales patru fețe, la nouăzeci de grade una de alta. Apeși Alt plus E, apoi Extrude Individual Faces, apoi zero virgulă opt, Enter. Fiecare iese separat, în afară. Pentru o formă înclinată, cu cele patru fețe de capăt selectate, apeși G, Z, minus zero virgulă cinci, și S, Z, zero virgulă cinci. Aripioarele se înclină și se micșorează spre exterior. Dacă ai greșit fețele, apasă Control plus Z și alege din nou, numărând: o față aleasă, două sărite, o față aleasă.
+
+Al șaselea pas. Duza motorului. Selectezi fața de jos. Apeși I, zero virgulă trei, Enter, apoi E, Z, minus zero virgulă patru, Enter. Apoi S, unu virgulă trei, Enter: duza se lărgește. Apoi I, zero virgulă douăzeci și cinci, Enter, și E, Z, zero virgulă trei, Enter: gaura din duză intră în interior.
+
+Al șaptelea pas, pentru varianta completă. Hubloul. În banda de la mijloc, selectezi o față laterală, în partea din față. Apeși I, zero virgulă doisprezece, Enter, apoi E, minus zero virgulă zero cinci, Enter: hublou adâncit. Dacă vrei, mai faci un Inset mai mic, de zero virgulă unu, pentru un cerc în cerc.
+
+Al optulea pas. Verificarea formei. Ieși din Edit Mode, cu Tab. Privești racheta din față, cu unu, din dreapta, cu trei, și de sus, cu șapte. Verifici: vârful este ascuțit și centrat? Aripioarele sunt la nouăzeci de grade una de alta? Duza se vede dedesubt? Ai hublou pe corp?
+
+Greșeli frecvente. Aripioarele sunt strâmbe: ai ales fețe care nu sunt la distanță egală. Aripioarele ies foarte groase: au fost extrudate ca grup, nu individual, folosește Alt plus E. Vârful rămâne turtit: nu ai făcut M, At Center. Racheta intră în pământ: originea este la centru, ridic-o pe axa Z. Hubloul este prea mare: scade valoarea de Inset.
+
+Succes la rachetă.

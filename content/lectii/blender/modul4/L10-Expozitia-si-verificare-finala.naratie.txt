@@ -1,0 +1,25 @@
+Lecția zece. Expoziția și verificarea finală.
+
+Ultima oră din cursul de Blender. Finalizezi proiectul, cu lumini și randare, îl prezinți și faci o verificare finală a ce ai învățat. Proiectul se numește Expoziția mea trei D. Obții două fișiere: Prenume, linie jos, Nume, linie jos, B patru, linie jos, L zece, punct blend, și imaginea cu același nume, punct P N G.
+
+Obiectivul. La final ai randarea finală, ai prezentat proiectul și ai primit insigna. Minim: randarea finală și o prezentare de un minut. Complet: minim, plus toate cerințele bifate, quiz-ul rezolvat și un plan pentru ce înveți mai departe.
+
+De ce contează. Un proiect devine real când îl arăți. Să povestești ce ai făcut te ajută să înțelegi mai bine și să primești păreri.
+
+Ce ai nevoie. Fișierul din lecția nouă.
+
+Primul pas. Randarea finală, în treizeci de minute. Verifici lista de cerințe din lecția nouă. Luminile: trei lumini, sau Sky plus Sun, ca în lecția șapte. Camera: o compoziție atentă, iar cu zero verifici cadrul. Render: EEVEE pentru viteză sau Cycles pentru calitate, la o mie nouă sute douăzeci pe o mie optzeci. Apeși F doisprezece, apoi Image, Save As, și salvezi imaginea cu numele din proiect.
+
+Al doilea pas. Prezentarea de un minut sau două. Folosești o structură simplă. Ce ai făcut, într-o propoziție. De unde ai pornit, adică schița. Ce a fost greu și cum ai rezolvat. De ce ești cel mai mândru. Ce ai schimba.
+
+Al treilea pas. Expoziția. Fiecare prezintă proiectul pe ecran. Colegii dau feedback pozitiv, de forma: Îmi place un anumit lucru, pentru că un anumit motiv. Opțional, pot da și un sfat, de forma: Ai putea încerca altceva.
+
+Al patrulea pas. Verificarea cerințelor. Ai opt sau mai multe obiecte? Trei sau mai mulți modificatori? Patru sau mai multe materiale, unul cu noduri? O curbă sau un Array? Lumini? Obiecte denumite și colecții? O randare în format P N G?
+
+Al cincilea pas. Quiz-ul final. Zece întrebări despre ce ai învățat, de la tastele de bază, ca Shift plus A, Tab, E și Control plus R, până la Mirror, Subdivision Surface, randare, materiale, Apply Scale și formatul G L B. Răspunde singur, apoi verifică în lecție. Cu nouă sau zece răspunsuri corecte ești Maestru Blender. Cu șapte sau opt, ești foarte bine și mai repeți câteva lucruri. Sub șapte, recitești lecțiile marcate din modulele unu, doi și trei.
+
+Al șaselea pas. Autoevaluarea. Dai o notă de la unu la cinci, unde unu înseamnă greu și cinci înseamnă ușor, pentru fiecare lucru: să te miști în trei D, să modelezi în Edit Mode, să folosești modificatori, să faci materiale, să pui lumini și să randezi, să-ți organizezi scena.
+
+Al șaptelea pas. Ce urmează. Ai acum o bază solidă. Direcții posibile: sculptarea, adică modelare ca din lut, în Sculpt Mode. Animația, adică mișcarea obiectelor și a personajelor. Geometry Nodes, unde generezi forme cu noduri. Imprimarea trei D, cu modele pentru imprimantă. Jocurile, cu modele pentru Unity sau Godot.
+
+Felicitări pentru finalul cursului de Blender.

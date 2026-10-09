@@ -1,0 +1,21 @@
+Lecția doi. Solidify: coșul și fereastra.
+
+O suprafață în trei D este infinit de subțire, ca o foaie. Cu modificatorul Solidify îi dai grosime, ca să fie un obiect real. Astăzi faci un coș și o fereastră. Proiectul se numește Coș și fereastră. Fișierul se numește: Prenume, linie jos, Nume, linie jos, B trei, linie jos, L doi, punct blend.
+
+Obiectivul. La final ai un coș cu pereți groși și o fereastră cu ramă. Minim: un coș dintr-un cilindru fără capac, cu Solidify. Complet: minim, plus împletitură cu Wireframe și o fereastră cu ramă și geam.
+
+De ce contează. Multe obiecte sunt cochilii: cănile, cutiile, ferestrele, hainele. Solidify le dă grosime fără să muți manual fiecare punct.
+
+Primul pas. Solidify pe un plan. Ștergi cubul. Adaugi un plan, cu Shift plus A, Mesh, Plane. Apoi Modifiers, Add Modifier, Generate, Solidify. Pui Thickness zero virgulă doi, iar planul devine o placă. Schimbi Offset, între minus unu, zero și unu: grosimea crește într-un sens, în ambele sensuri sau în celălalt sens.
+
+Al doilea pas. Coșul. Un cilindru cu Vertices douăzeci și patru, Radius unu și Depth unu virgulă cinci, la înălțimea zero virgulă șaptezeci și cinci. Apeși Tab, treci în modul Face, dai click pe fața de sus, apoi X și Faces, ca s-o ștergi. Coșul este deschis deasupra. Apeși Control plus R și, cu rotița, faci trei tăieturi orizontale. Selectezi inelul de sus, cu Alt plus click pe muchie, și apeși S, unu virgulă doi, ca coșul să se lărgească sus. La inelul de jos apeși S, zero virgulă opt. Apeși Tab. Adaugi Solidify, cu Thickness zero virgulă zero opt și Offset minus unu, ca grosimea să crească spre interior. Aplici Shade Smooth și un maro deschis. Dacă pereții par inversați, în Edit Mode apeși Alt plus N, apoi Recalculate Outside.
+
+Al treilea pas. Împletitura, cu Wireframe. Pe o copie a coșului, făcută cu Shift plus D și click dreapta, ștergi Solidify. Adaugi Add Modifier, Generate, Wireframe. Pui Thickness zero virgulă zero trei, iar apare o plasă din bare. Pui copia în același loc cu originalul și o faci puțin mai mare, cu S, unu virgulă zero unu. Ascunzi coșul vechi, pentru comparație. Poți combina: un coș cu Solidify pentru corp și unul cu Wireframe pentru decor.
+
+Al patrulea pas. Fereastra. Un plan, rotit cu R, X, nouăzeci, ca să stea în picioare, cu dimensiunile X doi și Z trei. Apeși Tab. Apeși I, zero virgulă doi, Enter, pentru ramă. Apoi X și Faces pe fața din mijloc, iar rămâne doar rama. Apeși Tab. Adaugi Solidify, cu Thickness zero virgulă cincisprezece. Geamul este un alt plan, în același loc, cu dimensiunile unu virgulă șase pe doi virgulă șase, cu un material transparent, pe care îl înveți în lecția șapte a acestui modul. Bara de mijloc este un cub subțire, cu X zero virgulă zero șase, Y zero virgulă unu și Z doi virgulă șase. Îl duplici și pe orizontală.
+
+Al cincilea pas, pentru varianta completă. Fereastra cu patru geamuri. Bara verticală și cea orizontală formează o cruce. Selectezi rama și bara, cu Shift plus click, apoi Control plus J, ca să se unească într-un singur obiect. Rama are material alb, iar geamul albastru foarte deschis.
+
+Greșeli frecvente. Coșul nu are grosime: lipsește Solidify sau Thickness este zero. Grosimea iese în afară: Offset este greșit, încearcă minus unu sau unu. Fețe întunecate: normalele sunt inversate, apasă Alt plus N, apoi Recalculate Outside. Wireframe este prea subțire: mărește Thickness. Rama nu este simetrică: verifică Inset-ul, adică I, zero virgulă doi.
+
+Succes la coș și fereastră.

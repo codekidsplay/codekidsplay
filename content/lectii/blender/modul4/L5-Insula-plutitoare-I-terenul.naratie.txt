@@ -1,0 +1,23 @@
+Lecția cinci. Insula plutitoare, partea întâi: terenul.
+
+Începem al doilea proiect: o insulă plutitoare, ca în jocurile de aventură. Astăzi modelezi terenul: partea verde de sus și stânca de jos. Proiectul se numește Insula mea, partea întâi. Fișierul se numește: Prenume, linie jos, Nume, linie jos, B patru, linie jos, L cinci, punct blend.
+
+Obiectivul. La final ai o insulă cu dealuri deasupra și stâncă ascuțită dedesubt. Minim: un disc de pământ cu partea de jos în vârf de stâncă. Complet: minim, plus dealuri, margine neregulată, materiale, adică iarbă sus și piatră jos, și o stâncă cu fațete, în stil low-poly.
+
+De ce contează. Insulele plutitoare apar în jocuri și în filme fantastice. Se modelează simplu: un disc de teren și un con întors dedesubt, apoi se deformează ca să pară natural.
+
+Primul pas. Forma de bază. Un cilindru cu Vertices douăzeci și patru, Radius cinci și Depth unu virgulă doi, la înălțimea zero virgulă șase. Apeși Tab. Selectezi fața de sus și apeși Control plus R cu două inele, pentru dealuri mai târziu. Selectezi fața de jos și apeși S, zero virgulă doi, Enter: se strânge. Apeși E, Z, minus trei, Enter: stânca coboară. Apoi S, zero virgulă doi, din nou: vârful devine ascuțit.
+
+Al doilea pas. Stânca de jos. Adaugi încă două inele cu Control plus R pe porțiunea de jos. Selectezi inelele și apeși S, zero virgulă opt, apoi S, unu virgulă doi, alternativ, ca să apară denivelări. Cu O, Proportional Editing, cu raza mare, apeși G pe vârfuri aleatorii: stânca devine neregulată. Pentru stil low-poly, aplici Shade Flat.
+
+Al treilea pas. Marginea neregulată. Un disc perfect rotund arată artificial. Selectezi inelul de la margine, cu Alt plus click. Cu O pornit, selectezi câte un vârf din inel și apeși G, în afară sau în interior, cu raza mică. Faci marginea să aibă patru-cinci golfuri și peninsule.
+
+Al patrulea pas. Dealurile. Selectezi vârfurile din partea de sus, în două sau trei zone. Cu O, apeși G, Z, zero virgulă șase, cu raza mare: un deal. Un deal mai mic, în altă parte, cu G, Z, zero virgulă trei. O vale, cu G, Z, minus zero virgulă doi. Marginea trebuie să fie mai joasă decât mijlocul, ca o insulă ușor bombată.
+
+Al cincilea pas. Straturile terenului. Un teren adevărat are două straturi: iarbă deasupra și pământ dedesubt. În Properties, la Material, faci două sloturi: Iarba, verde, și Piatra, gri. În Edit Mode, fețele de sus, selectate cu Box și Alt plus Z, primesc Iarba, iar cele de jos primesc Piatra, prin Assign. Faci ca iarba să acopere puțin marginea, printr-un strat subțire verde.
+
+Al șaselea pas, pentru varianta completă. Finisări. Un modificator Bevel mic, cu Width zero virgulă zero cinci, pentru lumina pe margini. Subdivision de nivelul unu, doar dacă vrei o insulă mai rotundă, iar pentru low-poly îl omiți. Pui insula la înălțimea trei, ca să plutească. Mai târziu adaugi nori.
+
+Greșeli frecvente. Insula este prea simetrică: adaugă variații la margine și pe stâncă. Stânca este un con perfect: mută vârfuri aleatoriu. Fețele nu se colorează corect: ai dat Assign pe fețele greșite. Dealurile sunt ascuțite: lipsește Proportional Editing. Insula este prea mare sau prea mică: compară cu imaginea de referință.
+
+Succes cu insula.

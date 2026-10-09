@@ -1,0 +1,29 @@
+Lecția nouă. Proiect final: construcția.
+
+Astăzi lucrezi la proiectul tău, cel ales în prima lecție. Nu mai sunt pași dați: tu decizi. Primești doar un plan și o listă de verificat. Proiectul se numește Proiectul meu final. Fișierul se numește: Prenume, linie jos, Nume, linie jos, B patru, linie jos, L nouă, punct blend.
+
+Obiectivul. La final proiectul tău este construit, adică modelat și colorat, gata de lumini și randare. Minim: modelul principal terminat și trei materiale. Complet: toate cerințele din listă bifate.
+
+De ce contează. Aici folosești tot ce ai învățat în patru module. Un proiect terminat este cea mai bună dovadă că știi Blender.
+
+Ce ai nevoie. Schițele din lecția unu.
+
+Lista de cerințe. Proiectul final trebuie să aibă: cel puțin opt obiecte diferite; cel puțin trei modificatori diferiți, dintre Mirror, Subdivision, Bevel, Array, Solidify și Boolean; cel puțin patru materiale, unul făcut cu Shader Editor, cu Noise, Bump sau Checker; o curbă sau un Array folosit cu rost; iluminare cu trei lumini sau un cer realist; camera compusă cu grijă; obiecte denumite și puse în colecții; și o randare finală în format P N G.
+
+Primul pas. Planul tău, în zece minute. Scrii pe hârtie, în ordinea în care construiești. Obiectul principal, de exemplu un castel: ce forme simple are? Trei obiecte secundare, de exemplu turnuri, copaci sau o poartă. Detaliile, de exemplu steaguri, ferestre și pietre. Atmosfera: zi, apus sau noapte.
+
+Al doilea pas. Blockout rapid, în douăzeci de minute. Construiești toate formele din primitive, grosier. Nu treci la detalii înainte ca întreaga scenă să existe.
+
+Al treilea pas. Modelarea, în patruzeci de minute. Treci prin obiecte pe rând, de la mare la mic. Folosești modificatori, adică Mirror, Array și Bevel. Intri în Edit Mode doar când trebuie. Salvezi des, cu Control plus S.
+
+Al patrulea pas. Materialele, în douăzeci de minute. Definești o paletă de trei-patru culori. Faci un material cu textură, cu Noise și Bump. Verifici în Material Preview.
+
+Al cincilea pas. Autocritica. Faci un pas înapoi și privești scena de departe, cu zoom out. Întreabă-te: silueta principală se recunoaște? Culorile se potrivesc? Este ceva neterminat? Există un punct de interes clar?
+
+Al șaselea pas. Salvează versiuni. Folosești File, Save As, cu nume ca Proiect, linie jos, v unu, apoi v doi și așa mai departe. Dacă strici ceva, revii la versiunea bună.
+
+Cum depanezi singur. Nu merge un modificator: verifică ordinea și Apply Scale. Nu găsești ceva în scenă: apasă Home, adică View All, sau caută în Outliner. Ceva arată ciudat: apasă Alt plus Z, apoi Control plus Z, și încearcă din nou. Nu știi cum se face ceva: recitește lecția relevantă sau cere ajutor.
+
+Greșeli frecvente. Proiect prea mare: dacă nu poți termina, simplifică. Detalii prea devreme: întâi forma, apoi detaliile. Nu salvezi: Control plus S, des. Pierderea fișierului: folosește versiuni diferite. Ignori cerințele: bifează-le pe rând.
+
+Succes la construcție.

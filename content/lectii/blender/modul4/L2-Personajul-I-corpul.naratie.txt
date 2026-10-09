@@ -1,0 +1,25 @@
+Lecția doi. Personajul, partea întâi: corpul.
+
+Astăzi modelezi corpul monstrulețului: o formă rotundă, simetrică, cu picioare. Folosim tot ce știi: Subdivision, Mirror, Extrude și Proportional Editing. Proiectul se numește Blobi, partea întâi. Fișierul se numește: Prenume, linie jos, Nume, linie jos, B patru, linie jos, L doi, punct blend.
+
+Obiectivul. La final ai un corp rotund cu picioare și burtă, simetric. Minim: corp dintr-un cub cu Subdivision și picioare extrudate. Complet: minim, plus Mirror, o burtă modelată cu Proportional Editing și un cap integrat în corp.
+
+De ce contează. Un personaj bun are o siluetă clară. Dacă îl recunoști doar după umbra lui neagră, modelul este bun. Azi lucrezi la silueta lui Blobi.
+
+Ce ai nevoie. Fișierul din lecția unu, cu imaginile de referință.
+
+Primul pas. Pornim de la un cub. Ștergi blocajul vechi sau îl ascunzi cu H. Adaugi un cub, cu dimensiunile X unu virgulă șase, Y unu virgulă doi și Z unu virgulă opt, la înălțimea unu virgulă cinci, ca să aibă loc picioarele sub el. Apeși Alt plus Z și treci în vederea din față, cu unu, cu imaginea de referință vizibilă.
+
+Al doilea pas. Jumătate de corp, plus Mirror. Apeși Tab, apoi Control plus R vertical, la mijloc, cu click dreapta, ca să rămână centrat. Selectezi vârfurile din stânga și apeși X, apoi Vertices. Apeși Tab. Adaugi Add Modifier, Generate, Mirror, cu Clipping bifat. Apoi adaugi Subdivision Surface, cu Control plus doi. Ordinea este importantă: Mirror primul, Subdivision al doilea. Acum modelezi doar partea dreaptă, iar forma este rotundă.
+
+Al treilea pas. Picioarele. Apeși Tab, treci în modul Face, cu trei, și selectezi fața de jos. Apeși I, zero virgulă treizeci și cinci, pentru Inset, apoi E, Z, minus zero virgulă opt, pentru primul segment, apoi S, zero virgulă șapte, apoi E, Z, minus zero virgulă trei, pentru laba. Cu Subdivision, picioarele se rotunjesc singure. Labele ies puțin înainte: selectezi fața de jos a piciorului și apeși G, Y, minus zero virgulă trei. Dacă picioarele se unesc la mijloc, înseamnă că nu ai lăsat loc: mărește Inset-ul, de exemplu zero virgulă patruzeci și cinci.
+
+Al patrulea pas. Silueta: burta și capul. Apeși O, pentru Proportional Editing, și Alt plus Z. Selectezi vârfurile din față, de la mijloc, și apeși G, Y, minus zero virgulă trei, cu raza mare, din rotiță: ai o burtă bombată. Sus, selectezi vârfurile din partea de sus și apeși G, Z, zero virgulă doi: o creștere pentru cap. Apoi S, zero virgulă nouă pe zona gâtului, ca să se vadă capul față de corp. Verifici din lateral, cu trei, cu imaginea de referință.
+
+Al cincilea pas. Verificarea siluetei. Pui un material negru corpului, sau treci în Solid, apoi Flat, apoi Single Color. Dacă forma se recunoaște ca silueta lui Blobi, este bine. Compari cu schița din față și din lateral, cu Opacity zero virgulă cinci.
+
+Al șaselea pas, pentru varianta completă. Finisări de bază. Aplici Shade Smooth. Apeși Control plus R ca să adaugi detalii unde ai nevoie, de exemplu la brațe, în lecția următoare. Salvezi o copie, cu sufixul v unu.
+
+Greșeli frecvente. Mirror nu funcționează: lipsește Clipping sau vârfurile din centru au fost șterse. Modificatorii sunt în ordine greșită: Subdivision înainte de Mirror dă o fisură la mijloc. Corpul este lipicios: are prea puține vârfuri, adaugă un Loop Cut. Picioarele sunt prea subțiri: Inset-ul este prea mare. Silueta nu seamănă cu schița: compară din două vederi.
+
+Succes la corp.

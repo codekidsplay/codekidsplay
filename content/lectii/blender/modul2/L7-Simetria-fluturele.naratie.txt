@@ -1,0 +1,27 @@
+Lecția șapte. Simetria: fluturele.
+
+Multe lucruri sunt simetrice: fața, avionul, fluturele. Cu modificatorul Mirror modelezi doar jumătate, iar Blender face cealaltă jumătate singur. Proiectul se numește Fluturele. Fișierul se numește: Prenume, linie jos, Nume, linie jos, B doi, linie jos, L șapte, punct blend.
+
+Obiectivul. La final ai un fluture simetric, cu o aripă modelată o singură dată. Minim: corp și o pereche de aripi făcute cu Mirror. Complet: minim, plus aripă de sus și aripă de jos, cu formă și model pe aripi, antene și culori pe tot fluturele.
+
+De ce contează. Modelezi de două ori mai repede și ambele jumătăți sunt perfect identice. Modelatorii folosesc mereu această tehnică pentru personaje, avioane și animale.
+
+Primul pas. Ce este un modificator. Un modificator este o regulă pusă pe un obiect, care îi schimbă forma fără să-l strice, pentru că poți opri sau șterge regula oricând. Îl găsești în Properties, la fila cu cheia franceză, Modifiers.
+
+Al doilea pas. Pregătim jumătatea de aripă. Ștergi cubul cu X. Adaugi un plan, cu Shift plus A, Mesh, Plane. Apeși cifra șapte de pe tastatura numerică, pentru vederea de sus. Apeși Tab, pentru Edit Mode, și A, ca să selectezi tot. Apeși G, X, unu, Enter: planul se mută spre dreapta, iar marginea lui din stânga ajunge exact pe X egal zero. Centrul obiectului, punctul portocaliu, rămâne la mijloc. Cu planul selectat, dai click dreapta, apoi Subdivide, iar în panoul Adjust Last Operation pui Number of Cuts egal trei. Ai o grilă de patru pe patru pătrate.
+
+Al treilea pas. Adăugăm Mirror. Apeși Tab, pentru Object Mode. În Properties, la Modifiers, alegi Add Modifier, apoi Generate, apoi Mirror. Bifezi Clipping, ca părțile să rămână lipite la mijloc. Dacă oglinda apare pe altă axă, setezi Axis doar pe X. Acum modelezi doar în dreapta, iar în stânga apare oglindirea.
+
+Al patrulea pas. Forma aripii. Revii în Edit Mode, cu Tab, în modul Vertex, cu unu, în vederea de sus, cu șapte, și cu Alt plus Z pornit. Aripa de sus, cea mare: selectezi vârful din colțul de sus din dreapta și apeși G, X, zero virgulă opt, Y, zero virgulă șase. Aripa de jos, cea mică: colțul de jos din dreapta, cu G, X, minus zero virgulă doi, Y, minus zero virgulă trei, spre interior. Crestătura dintre aripi: vârful din mijlocul marginii din dreapta, cu G, X, minus zero virgulă șase. Rotunjești colțurile cu O, adică Proportional Editing, folosind rotița pentru rază, și cu G pe vârfurile de margine, ca aripa să arate ca o aripă, nu ca un pătrat. Aripile pot fi puțin ridicate, ca în zbor: selectezi vârfurile cele mai din exterior și apeși G, Z, zero virgulă trei. Privești și din față, cu unu: aripile fac un V ușor.
+
+Al cincilea pas. Grosime. O aripă fără grosime dispare când o privești din lateral. Apeși A, pentru a selecta tot, apoi E, Z, zero virgulă zero trei, Enter. Apoi aplici Shade Smooth, în Object Mode.
+
+Al șaselea pas. Corpul. Corpul nu are nevoie de Mirror, pentru că este deja simetric. Adaugi o UV Sphere. În panoul N, la Item și Dimensions, pui X zero virgulă trei, Y doi și Z zero virgulă trei. Aplici Shade Smooth. Corpul este acum ca un ou lung, de-a lungul axei Y. Capul este altă UV Sphere, cu dimensiunile zero virgulă patru pe zero virgulă patru pe zero virgulă patru, la Y egal unu virgulă unu.
+
+Al șaptelea pas. Antenele. Adaugi un cilindru, cu Vertices opt, Radius zero virgulă zero cincisprezece și Depth zero virgulă opt. Apeși R, X, nouăzeci, ca să fie pe lungimea axei Y. Apoi R, Z, minus douăzeci, cu Location X zero virgulă unu și Y unu virgulă cinci. Apeși Shift plus D, Enter, apoi în panoul N, la Item, schimbi Location X în minus zero virgulă unu și Rotation Z în plus douăzeci de grade.
+
+Al optulea pas, pentru varianta completă. Model și culori. Modelul pe aripă, în Edit Mode, pe aripă: treci în modul Face, cu trei, și selectezi trei sau patru fețe, la întâmplare. Apeși I, zero virgulă zero șase, Enter, ca să apară pete pe aripă. Apoi încă o dată I, zero virgulă zero patru, pe alte fețe. Materiale: aripa, portocaliu, în primul slot. Petele, negru sau galben, într-un slot nou, cu Assign pe fețele cu inset. Vei folosi același truc la rachetă, în lecția zece. Corpul și capul, maro închis, iar antenele, negre. La randare, fundal deschis sau verde și lumină de sus.
+
+Greșeli frecvente. Nu apare oglinda: modificatorul nu este pe aripă sau Axis este greșit. Rămâne o linie la mijloc: nu ai bifat Clipping. Aripa este într-o parte, iar oglinda în alta: marginea din stânga nu este la X egal zero, refă pasul doi. Aripile arată ca un pătrat: mută mai multe vârfuri și folosește Proportional Editing. Modificatorul dispare: este doar ascuns, apasă pe ochiul din listă.
+
+Succes la fluture.

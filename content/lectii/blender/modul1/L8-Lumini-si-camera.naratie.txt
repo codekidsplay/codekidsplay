@@ -1,0 +1,25 @@
+Lecția opt. Lumini și cameră.
+
+Astăzi înveți cum să luminezi scena și cum să pui camera exact unde vrei, ca un regizor de film. Proiectul se numește Fotografia casei. Fișierul se numește: Prenume, linie jos, Nume, linie jos, B unu, linie jos, L opt, punct blend.
+
+Obiectivul. La final scena ta este bine luminată, iar camera privește frumos către casă. Minim: adaugi o lumină și pui camera să vadă casa. Complet: minim, plus încerci patru tipuri de lumină, alegi culoarea și puterea și obții umbre frumoase.
+
+De ce contează. Aceeași casă arată foarte diferit la prânz și la apus. Lumina face jumătate din frumusețea unui model, iar camera hotărăște ce vede privitorul.
+
+Primul pas. Tipurile de lumină. Apeși Shift plus A, apoi Light. Point este un bec care luminează în toate direcțiile, bun pentru lampă sau lumânare. Sun este lumină de soare, cu raze paralele, bună pentru scene în aer liber. Spot este un con de lumină, bun pentru far sau lanternă. Area este un panou luminos, bun pentru studio foto sau ferestre.
+
+Al doilea pas. Setările luminii, în Properties, la fila Light, cea cu becul verde. Color este culoarea luminii, de exemplu galben cald sau albastru rece. Power sau Strength spune cât de puternică este. Pentru Sun, Strength între doi și patru. Pentru Point, Power între cinci sute și o mie de wați. Lumina Sun se rotește cu R, ca să se schimbe unghiul umbrei. Poziția ei nu contează, ci doar direcția.
+
+Al treilea pas. Experimentul zilei. La prânz: Sun cu Strength trei, aproape vertical, cu umbre scurte și culori vii. La apus: Sun aproape orizontal, de culoare portocalie, cu umbre lungi și atmosferă caldă. Seara: Point lângă geam, de culoare galbenă, iar casa pare luminată din interior. Treci în modul Rendered, sfera din dreapta sus, ca să vezi umbrele.
+
+Al patrulea pas. Camera. Camera din scena de start este sus, în dreapta. O poți muta cu G și roti cu R, dar există un mod mult mai ușor. Te plasezi în viewport în unghiul în care vrei fotografia. Apeși Control plus Alt plus cifra zero de pe tastatura numerică, sau mergi la View, Align View, Align Active Camera to View, iar camera sare la vederea ta. Verifici prin cameră cu cifra zero. Dacă vrei să ajustezi fără să te încurci, în panoul N, la View, bifezi Camera to View, și poți naviga, iar camera te urmează. Atenție: debifează după aceea.
+
+Al cincilea pas. Regula treimilor. Imaginează-ți ecranul împărțit în trei pe trei pătrate. Pune subiectul pe linii sau la intersecții, nu mereu în mijloc. În Properties, la Camera, Viewport Display, bifezi Composition Guides, Thirds, iar liniile apar în vederea camerei.
+
+Al șaselea pas. Lentila camerei. În Properties, fila Camera, setarea Focal Length. Douăzeci și patru de milimetri cuprinde mult și deformează puțin. Cincizeci de milimetri este ca ochiul omului. Optzeci și cinci de milimetri apropie și se folosește pentru portrete. Pentru scena noastră merg bine valorile între treizeci și cinci și cincizeci de milimetri.
+
+Al șaptelea pas, pentru varianta completă. Compoziția finală. Un Sun cald, portocaliu deschis, cu Strength trei. Un Area mic, albastru, cu Power două sute, ca lumină de umplere din partea opusă. Camera la treizeci și cinci de milimetri, așezată dintr-un colț, ca să vezi două fețe ale casei.
+
+Greșeli frecvente. Totul este întunecat: Power este prea mic sau lumina este în spatele obiectelor. Lumina Sun nu schimbă nimic când o muți: pentru Sun contează doar rotația. Camera nu vede casa: apasă Control plus Alt plus zero, apoi verifică cu zero. Nu ai umbre: treci în Rendered sau în Material Preview. Camera se mișcă singură: ai uitat Camera to View bifat, debifează-l.
+
+Succes la fotografie.

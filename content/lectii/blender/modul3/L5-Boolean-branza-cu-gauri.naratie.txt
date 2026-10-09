@@ -1,0 +1,25 @@
+Lecția cinci. Boolean: brânza cu găuri.
+
+Cu modificatorul Boolean poți tăia un obiect cu altul, ca și cum ai folosi un tăietor de biscuiți. Astăzi faci o bucată de brânză cu găuri și o casă cu ușă și fereastră tăiate. Proiectul se numește Brânza și casa. Fișierul se numește: Prenume, linie jos, Nume, linie jos, B trei, linie jos, L cinci, punct blend.
+
+Obiectivul. La final tai forme din obiecte folosind Boolean. Minim: brânză cu trei găuri făcute cu sfere. Complet: minim, plus mai multe găuri dintr-o colecție și o casă cu ușă și fereastră tăiate din pereți.
+
+De ce contează. Când vrei o gaură perfectă, de exemplu pentru o fereastră, un șurub sau o țeavă, Boolean este cea mai rapidă metodă. Este și foarte amuzant.
+
+Primul pas. Cum merge Boolean. Ai un obiect de tăiat, brânza, și un obiect tăietor, sfera. Modificatorul se pune pe obiectul de tăiat și i se spune cine este tăietorul. Operația Difference scade tăietorul din obiect și face gaura. Union unește cele două obiecte. Intersect păstrează doar ce se suprapune.
+
+Al doilea pas. Brânza. Un cilindru, ca o roată de brânză, cu Vertices treizeci și doi, Radius unu și Depth zero virgulă opt, la înălțimea zero virgulă patru. Adaugi o UV Sphere, cu Radius zero virgulă douăzeci și cinci, și o pui pe marginea de sus a brânzei, cu jumătate din sferă înăuntru. Selectezi brânza și apoi Add Modifier, Generate, Boolean. Operation este Difference, iar Object este sfera. Apare o gaură. Muți sfera cu G și vezi cum gaura se mută.
+
+Al treilea pas. Ascundem tăietorul. Sfera tăietor stă acolo și te încurcă. Îi schimbi felul de afișare. Selectezi sfera, apoi Properties, Object, Viewport Display, Display As, Wire, sau Bounds. Se văd doar contururile. Sau o ascunzi cu H și o readuci cu Alt plus H.
+
+Al patrulea pas. Mai multe găuri dintr-o dată. Ar fi obositor să pui zece modificatoare. Folosești o colecție. Faci opt sfere de mărimi diferite pe brânză. Le selectezi pe toate, cu Shift plus click, apeși M, apoi New Collection, și numești colecția Gauri. Pe brânză, la Boolean, alegi Operand Type, Collection, apoi colecția Gauri. Toate găurile apar deodată. Dacă muți o sferă, gaura se mișcă.
+
+Al cincilea pas, pentru varianta completă. Materialul brânzei. Brânza este galben pal, cu Roughness zero virgulă cinci. Poți face un șoricel din sfere și conuri, lângă ea.
+
+Al șaselea pas. Casa cu ușă și fereastră. Un cub mare pentru perete, cu dimensiunile X patru, Y zero virgulă trei și Z trei. Un cub pentru ușă, cu dimensiunile zero virgulă nouă, zero virgulă șase și doi, așezat în perete, la înălțimea unu. Un cub pentru fereastră, cu dimensiunile unu, zero virgulă șase și unu, la X egal unu virgulă doi și înălțimea unu virgulă șase. Le pui într-o colecție numită Taieturi, cu M și New Collection. Pe perete, Boolean, Difference, colecția Taieturi. Ascunzi tăietorii, cu Display As Wire sau cu H. Peretele are acum ușă și fereastră.
+
+Al șaptelea pas. Aplicăm modificatorul. Când ești mulțumit, apeși Apply, adică Control plus A pe modificator, ca peretele să devină un obiect normal. Atenție: nu mai poți muta găurile după aceea.
+
+Greșeli frecvente. Nu apare gaura: tăietorul nu este în obiect sau operația este Union. Rezultate ciudate: fețele se suprapun exact, mută puțin tăietorul. Tăietorul nu dispare: este încă vizibil, folosește Display As Wire sau H. Găurile nu se văd în randare: modificatorul este oprit la Render, la iconița cu cameră. Obiectul devine greu: ai prea multe găuri, aplică modificatorul și curăță.
+
+Succes cu brânza.

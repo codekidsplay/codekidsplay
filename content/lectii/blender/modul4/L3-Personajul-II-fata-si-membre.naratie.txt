@@ -1,0 +1,23 @@
+Lecția trei. Personajul, partea a doua: față și membre.
+
+Astăzi dai viață lui Blobi: ochi, gură, brațe și coarne. Fața face personajul simpatic. Proiectul se numește Blobi, partea a doua. Fișierul se numește: Prenume, linie jos, Nume, linie jos, B patru, linie jos, L trei, punct blend.
+
+Obiectivul. La final Blobi are față, brațe și coarne. Minim: doi ochi, o gură și două brațe. Complet: minim, plus pupile, dinți, coarne și degete pe mâini, toate simetrice.
+
+De ce contează. Ochii și gura sunt primul lucru la care se uită oamenii. Mici schimbări, cum ar fi ochi mai mari sau un zâmbet, schimbă complet personalitatea.
+
+Ce ai nevoie. Fișierul din lecția doi.
+
+Primul pas. Ochii. Faci ochi mari, ca la personajele din desene animate. O UV Sphere cu Radius zero virgulă douăzeci și opt, la X zero virgulă trei, Y minus zero virgulă șaizeci și doi și Z doi virgulă trei, pe față, sus. Aplici Shade Smooth și un material alb, cu Roughness zero virgulă unu. Pupila este altă sferă, cu Radius zero virgulă doisprezece, la Y minus zero virgulă optzeci și cinci, cu material negru lucios. Pui o mică lumină în ochi, un highlight: o sferă de zero virgulă zero patru, albă, în colțul pupilei. Pentru simetrie, adaugi pe ochi modificatorul Mirror, cu Mirror Object egal cu corpul, ca să fie simetric în jurul corpului. Sau duplici manual, la X egal minus zero virgulă trei. Ochii mai apropiați fac personajul mai prostuț, iar ochii mai depărtați îl fac mai fricos. Experimentează.
+
+Al doilea pas. Gura. Metoda simplă este o fâșie curbată. Adaugi un cerc, cu Shift plus A, Mesh, Circle, cu Vertices treizeci și doi și Fill Type pe Nothing. Apeși R, X, nouăzeci și S, zero virgulă treizeci și cinci, la Y minus zero virgulă șapte și Z unu virgulă nouă. Apeși Tab și ștergi vârfurile de sus, iar rămâne un U, adică un zâmbet. Adaugi Solidify, cu Thickness zero virgulă zero cinci, și un Bevel mic. Materialul este roșu închis. A doua metodă folosește Boolean: o sferă mare, scoasă din corp cu un modificator Boolean, cu Operation Difference, pentru o gură deschisă. Dinții sunt conuri mici, albe.
+
+Al treilea pas. Brațele. Apeși Tab pe corp, în modul Face, și selectezi o față laterală, în dreapta. Apeși I, zero virgulă doi, apoi E, X, zero virgulă cinci, apoi S, zero virgulă șapte, apoi E, X, zero virgulă cinci, apoi S, zero virgulă opt. Brațul este gros la umăr și subțire la mână. Îl încurbezi cu G, Z, minus zero virgulă doi, pe fața de capăt. Mâna este o sferă mică, lipită la capăt, cu trei degete, adică trei cilindri mici, scurți, înclinați. Mirror pe corp copiază brațul automat și pe stânga.
+
+Al patrulea pas. Coarnele. Un con cu Radius zero virgulă doi și Depth zero virgulă șapte, la X zero virgulă patru și înălțimea trei virgulă unu, ușor înclinat, cu R, Y, cincisprezece. Adaugi Subdivision și Shade Smooth. Materialul este galben pal, ca osul. Dublezi coarnele pe stânga, cu Mirror sau cu Shift plus D.
+
+Al cincilea pas, pentru varianta completă. Detalii drăguțe. Sprâncene: două cuburi subțiri, cu Bevel, deasupra ochilor, înclinate cu R, Y, plus sau minus cincisprezece grade. Pistrui: sfere mici, făcute cu Array pe trei. Limbă: un plan subțire, roșu, în gură. Nas: două puncte mici.
+
+Greșeli frecvente. Ochii intră în corp: Y este prea aproape, mută-i spre minus Y. Brațele se încrucișează cu corpul: fața de pornire este prea jos. Simetrie greșită: verifică semnul lui X, plus zero virgulă trei și minus zero virgulă trei. Gura arată ca o linie: Solidify este prea mic. Coarnele plutesc: mută-le puțin în interior.
+
+Succes la față.

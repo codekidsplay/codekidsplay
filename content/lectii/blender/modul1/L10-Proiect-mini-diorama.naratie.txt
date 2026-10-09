@@ -1,0 +1,29 @@
+Lecția zece. Proiect: mini-diorama.
+
+Acesta este proiectul modulului. Construiești o mini-diorama, adică o scenă mică, de sine stătătoare, cu casă, pomi, personaj și lumină. Folosești tot ce ai învățat. Proiectul se numește Mini-diorama. Obții două fișiere: Prenume, linie jos, Nume, linie jos, B unu, linie jos, L zece, punct blend, și imaginea cu același nume, punct P N G.
+
+Obiectivul. La final ai o scenă completă, colorată, luminată și randată. Minim: o bază, trei obiecte colorate, o lumină, o cameră și o randare. Complet: minim, plus cel puțin șase obiecte, cinci materiale diferite, două lumini, o compoziție bună și piese denumite și ordonate.
+
+De ce contează. Un proiect complet leagă toți pașii: modelare, culoare, lumină, cameră și randare. Dioramele sunt folosite în jocuri, filme și arhitectură ca să arate o idee.
+
+Ce ai nevoie. Piesele din lecțiile patru până la șapte: casa, omulețul și racheta.
+
+Primul pas. Alege o temă. Iarna: casă, omuleț, brazi, zăpadă. Parcul: bancă, copaci, felinar, fântână. Spațiul: rachetă, planete, stele, antenă. Ferma: hambar, gard, copac și o vacă simplificată. Desenează un plan scurt: ce obiecte ai și unde stau.
+
+Al doilea pas. Baza. O diorama arată bine pe o bază care ține scena. Adaugi un cilindru, cu Shift plus A, Mesh, Cylinder, cu Vertices șaizeci și patru, Radius șase și Depth zero virgulă cinci, sau un cub aplatizat. O pui la înălțimea zero, ca partea de sus să fie deasupra. Pe această bază pui totul.
+
+Al treilea pas. Obiecte din lecțiile trecute. Poți copia obiecte din alte fișiere. Mergi la File, Append. Alegi fișierul cu extensia blend, apoi folderul Object, apoi obiectul dorit. Dai click pe Append. Sau le refaci simplu, direct în scenă.
+
+Un pom se face din forme simple. Trunchiul este un cilindru cu raza zero virgulă cincisprezece și adâncimea unu, de culoare maro. Coroana este un con sau o Ico Sphere, de culoare verde. Bradul este format din trei conuri suprapuse, de culoare verde închis.
+
+Al patrulea pas. Organizarea. Redenumești fiecare obiect cu F doi: Casa, Pom unu, Omulet și așa mai departe. Grupezi, cu Control plus P, piesele care merg împreună. Lași puțin spațiu între obiecte, ca scena să nu fie aglomerată.
+
+Al cincilea pas. Culori, lumini și cameră. Materiale: minim cinci culori diferite, ca în lecția șapte. Lumini: un Sun cald și un Area rece, mic, ca lumină de umplere, ca în lecția opt. Camera: dintr-un colț, între treizeci și cinci și cincizeci de milimetri, cu regula treimilor. Randarea: EEVEE, o mie nouă sute douăzeci pe o mie optzeci, o sută la sută, format P N G, ca în lecția nouă.
+
+Al șaselea pas. Lista de verificare. Fiecare obiect este pe bază și nimic nu plutește. Obiectele au nume. Ai cel puțin cinci culori. Se văd umbre. Subiectul principal este vizibil din cameră. Imaginea P N G este salvată.
+
+Al șaptelea pas. Verificarea finală a modulului unu. Poți să te deplasezi în trei D? Folosești G, R și S și axele? Adaugi și reglezi forme de bază? Dai culori și materiale? Așezi lumini și cameră? Randezi și salvezi o imagine? Bifează pentru fiecare dacă încă nu poți, dacă poți cu ajutor sau dacă poți singur.
+
+Greșeli frecvente. Prea multe obiecte și prea puțin timp: fă mai puține, dar bine finisate. Obiecte care se ating și se intersectează: verifică din față și de sus. Toate obiectele au aceeași culoare: creează materiale separate. Lumina este prea slabă: mărește Strength sau Power. Ai uitat să salvezi: Control plus S, des.
+
+Felicitări pentru finalul modulului unu.

@@ -1,0 +1,27 @@
+Lecția șapte. Lumini și atmosferă.
+
+Aceeași insulă poate părea veselă, misterioasă sau liniștită, doar schimbând lumina și cerul. Astăzi creezi atmosfera: un cer de apus, un soare, adâncimea imaginii și o randare finală frumoasă. Proiectul se numește Insula la apus. Obții două fișiere: Prenume, linie jos, Nume, linie jos, B patru, linie jos, L șapte, punct blend, și imaginea cu același nume, punct P N G.
+
+Obiectivul. La final insula ta este randată la apus, cu cer, soare și adâncime. Minim: un cer colorat și un soare. Complet: minim, plus Sky Texture, Depth of Field, randare în Cycles cu denoise și o comparație cu ziua.
+
+De ce contează. Filmele aleg ora zilei pentru fiecare scenă. Lumina de apus, galbenă și joasă, dă căldură. Lumina de noapte, albastră, dă mister.
+
+Ce ai nevoie. Fișierul din lecția șase.
+
+Primul pas. Cerul realist. În Properties, la World, la Surface și Color, dai click pe cerc și alegi Sky Texture. Setezi Sky Type pe Nishita. Sun Elevation, adică înălțimea soarelui, pe trei grade: soarele este jos, ca la apus. Sun Rotation îl rotești până când lumina vine din partea dorită. Treci viewport-ul în Material Preview, sau în Rendered, ca să vezi cerul. Cu elevație de șaizeci de grade este amiază. Între trei și zece grade este răsărit sau apus. O valoare negativă înseamnă noapte.
+
+Al doilea pas. Soarele din scenă. Cerul dă lumină ambientală, dar pentru umbre clare adaugi un Sun. Shift plus A, Light, Sun, cu Strength trei. Culoarea este portocaliu pal. Îl rotești cu R până când umbrele cad frumos pe insulă. Cât de lungi sunt umbrele? Pui soarele în aceeași direcție cu cel din cer.
+
+Al treilea pas. Culorile atmosferei. Ziua: lumină alb-gălbuie și cer albastru. Apusul: lumină portocalie și cer portocaliu-roz. Noaptea: lumină albastră, cer albastru închis, cu stele. Varianta fantastică: lumină mov sau turcoaz și cer verde-albastru. Experimentează trei variante, schimbând Sun Elevation și culoarea lui Sun.
+
+Al patrulea pas. Adâncimea imaginii, cu Depth of Field. Ce este aproape sau departe de țintă devine estompat, ca într-o fotografie. Selectezi camera, apoi în Properties, la Object Data, iconița camerei, bifezi Depth of Field. La Focus on Object alegi casa sau personajul. F-Stop doi virgulă opt: cu cât este mai mic, cu atât imaginea este mai estompată. Vezi fundalul estompat în Rendered.
+
+Al cincilea pas. Camera artistică. Pui camera puțin de jos în sus, pentru un aer epic. Focal Length între treizeci și cinci și cincizeci de milimetri, pentru peisaj. Insula stă în treimea de jos, iar cerul ocupă restul.
+
+Al șaselea pas. Cycles pentru calitatea finală. În Properties, la Render, Render Engine, alegi Cycles. Max Samples o sută douăzeci și opt, iar pentru previzualizare un număr mai mic. Bifezi Denoise. Device: GPU Compute, dacă ai placă video, altfel CPU. Apeși F doisprezece. Este mai lent, durează câteva minute, dar lumina este mai realistă. Compari cu EEVEE. Dacă durează prea mult, scazi Resolution procent la cincizeci.
+
+Al șaptelea pas. Salvezi o variantă de zi. Faci o copie a fișierului, cu Sun Elevation cincizeci de grade și culoare albă. Randezi o imagine de zi și una de apus. Care ți se pare mai frumoasă?
+
+Greșeli frecvente. Randarea este zgomotoasă: Denoise este oprit sau Samples este prea mic. Cerul nu se vede în randare: Film, Transparent este bifat. Umbrele sunt în altă direcție decât soarele din cer: aliniază-le. Randare foarte lentă: scade Samples sau rezoluția. Imaginea este întunecată: mărește Strength-ul soarelui.
+
+Succes la apus.

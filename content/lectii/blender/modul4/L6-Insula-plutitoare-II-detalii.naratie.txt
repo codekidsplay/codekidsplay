@@ -1,0 +1,27 @@
+Lecția șase. Insula plutitoare, partea a doua: detalii.
+
+Insula ta este încă goală. Astăzi o aduci la viață: copaci, stânci, o căsuță, un lac și nori. Refolosești lucruri învățate și înveți să duplici inteligent. Proiectul se numește Insula mea, partea a doua. Fișierul se numește: Prenume, linie jos, Nume, linie jos, B patru, linie jos, L șase, punct blend.
+
+Obiectivul. La final insula are viață: vegetație, o casă, un lac și nori. Minim: cinci copaci și o casă. Complet: minim, plus lac, stânci, nori și copaci diferiți, nu toți la fel.
+
+De ce contează. Detaliile fac o scenă credibilă. Trucul: câteva forme simple, repetate cu variații de mărime și de rotație, arată bogat fără mult efort.
+
+Ce ai nevoie. Fișierul din lecția cinci.
+
+Primul pas. Copacul low-poly. Un cilindru pentru trunchi, cu Vertices șase, Radius zero virgulă cincisprezece și Depth unu, cu material maro. Îl pui la înălțimea zero virgulă cinci, deasupra terenului, adică peste înălțimea reliefului. Un con pentru coroană, cu Vertices șase, Radius zero virgulă șapte și Depth unu virgulă doi, la înălțimea unu virgulă șase, cu material verde. Un al doilea con, mai mic, cu Radius zero virgulă cinci, la înălțimea doi virgulă unu. Obții un brad din două sau trei etaje. Selectezi toate piesele copacului, apeși Control plus J, adică Join, apoi F doi și îl numești Copac. Originea o pui la baza copacului: în Edit Mode, cu Shift plus S, Cursor to Selected, pe vârfurile din bază, apoi Object, Set Origin, Origin to trei D Cursor.
+
+Al doilea pas. Duplicare cu variații. Apeși Shift plus D, apoi Enter, muți copacul pe insulă și faci cinci până la opt copaci. Pentru fiecare, alegi o scară diferită, între zero virgulă șapte și unu virgulă trei, cu S, și o rotire diferită, cu R, Z. Pentru variație de culoare, pui un al doilea material verde, mai închis, la doi copaci. Alt plus D face o copie legată, adică copiile împart aceeași formă: dacă schimbi unul, se schimbă toate. Este bun pentru economie, dar îl eviți când vrei modificări diferite. Nu pune copacii în linie. Grupează-i în două-trei păduri mici și lasă spații libere.
+
+Al treilea pas. Casa. Refolosești casa din modulul unu, lecția șase, sau construiești una mică. Un cub pentru pereți, cu dimensiunile unu virgulă șase pe unu virgulă patru pe unu. Un con cu patru laturi pentru acoperiș, rotit cu R, Z, patruzeci și cinci. Ușa și fereastra, din cuburi mici, de culori diferite. Apeși Control plus J, apoi F doi și o numești Casa, și o așezi pe un deal sau lângă lac. Poți importa casa din alt fișier: File, Append, alegi fișierul, apoi Object, apoi Casa.
+
+Al patrulea pas. Lacul. Selectezi fețele dintr-o vale a terenului. Apeși I, zero virgulă opt, pentru Inset, apoi E, Z, minus zero virgulă cincisprezece, ca să faci o adâncitură. Adaugi un plan albastru deschis, semitransparent, la nivelul apei: în Principled BSDF, Alpha zero virgulă șapte și Roughness zero virgulă zero cinci. Pentru EEVEE, în Material, la Settings, pui Blend Mode pe Alpha Blend, iar în Blender patru punct doi, Render Method pe Blended.
+
+Al cincilea pas. Stâncile. O Ico Sphere, cu Subdivisions unu, scalată cu S, zero virgulă patru. Apeși Tab, muți câteva vârfuri aleatoriu, cu G, aplici Shade Flat și un material gri. Duplici de patru sau cinci ori, cu mărimi și rotiri diferite, lângă lac și copaci.
+
+Al șaselea pas. Norii. O Ico Sphere, cu Subdivisions doi, sau o UV Sphere, cu Shade Smooth și material alb. Faci un nor din trei sau patru sfere de mărimi diferite, lipite, cu Control plus J. Materialul este alb, cu Roughness unu și o Emission mică, de zero virgulă trei, ca să arate luminos. Trei nori, la înălțimi și mărimi diferite, în jurul insulei, nu deasupra ei.
+
+Al șaptelea pas. Privirea de ansamblu. Privești prin cameră, cu zero. Ai o poveste? Este un drum între casă și lac? Este un copac special?
+
+Greșeli frecvente. Copacii plutesc sau intră în teren: verifică înălțimea reliefului. Toți sunt la fel: variază mărimea și rotirea. Lacul acoperă casa: verifică poziția. Prea multe detalii: scena devine încărcată. Alt plus D confundat cu Shift plus D: nu modifica o copie legată dacă vrei diferențe.
+
+Succes cu detaliile.

@@ -1,0 +1,29 @@
+Lecția opt. Scenă ordonată și export.
+
+Un fișier Blender ordonat se deschide ușor și se poate partaja. Astăzi înveți să-ți organizezi scena, cu nume și colecții, să-ți cureți fișierul și să-ți exporți modelele. Proiectul se numește Scena curată. Obții trei fișiere: Prenume, linie jos, Nume, linie jos, B patru, linie jos, L opt, cu extensiile blend, G L B și P N G.
+
+Obiectivul. La final scena ta este ordonată și exportată în două formate. Minim: toate obiectele au nume clare și sunt în colecții. Complet: minim, plus Apply Scale, Purge, export în format G L B și randare în format P N G.
+
+De ce contează. După câteva ore de lucru, scena are obiecte numite Cube punct zero trei patru și Sphere punct zero unu doi. Cine deschide fișierul, sau tu peste o lună, nu se mai descurcă. Ordinea este ca o cameră aranjată.
+
+Ce ai nevoie. Insula din lecția șapte sau personajul din lecția patru.
+
+Primul pas. Nume clare. Deschizi Outliner, dai dublu click, sau apeși F doi în viewport, și redenumești. În loc de Cube punct zero trei patru, scrii Casa, linie jos, Pereti. În loc de Cone punct zero unu doi, scrii Copac, linie jos, zero unu. În loc de Sphere punct zero zero trei, scrii Nor, linie jos, zero doi. Folosește nume fără spații și fără diacritice, de exemplu Casa, linie jos, Pereti, nu Casa pereți. Așa eviți probleme la export.
+
+Al doilea pas. Colecții. Colecțiile sunt dosare în Outliner. Selectezi copacii în viewport. Apeși M, apoi New Collection, și o numești Copaci. La fel faci pentru Casa, Teren, Nori, Lumini și Camera. În Outliner, ochiul ascunde sau arată o colecție, iar iconița cu cameră, Disable in Renders, o scoate din randare.
+
+Al treilea pas. Legare și grupare. Piesele unui obiect complex, de exemplu casa, sunt fie unite cu Control plus J, fie legate cu Control plus P. Fiecare obiect principal are originea la baza lui.
+
+Al patrulea pas. Apply Scale. Dacă ai scalat obiecte cu S, ele rețin scala, iar scala trei D nu mai este unu. Asta poate strica modificatorii și exportul. Selectezi toate obiectele, cu A. Apeși Control plus A, apoi Scale, ca să aplici scala. Verifici în panoul N, la Item, că Scale este unu virgulă zero zero zero.
+
+Al cincilea pas. Curățenia fișierului. Mergi la File, Clean Up, Purge Unused Data, cu opțiunea Recursive. Ștergi materialele neutilizate din Material Properties. Verifici în Outliner, la Blender File, dacă mai ai obiecte inutile.
+
+Al șaselea pas. Export pentru alte programe. Formatul glTF, cu extensia G L B, este ca un J P E G pentru trei D și poate fi citit de browsere, jocuri și aplicații. Selectezi obiectele de exportat. Mergi la File, Export, glTF doi punct zero. Alegi Format glTF Binary, cu extensia G L B, și bifezi la Include opțiunea Selected Objects. Alegi un nume și apeși Export. Îl vizualizezi online, cu un glTF viewer din browser, sau cu aplicația trei D Viewer din Windows.
+
+Al șaptelea pas. Imagine pentru portofoliu. Apeși F doisprezece, apoi Image, Save As, în format P N G. Rezoluția este o mie nouă sute douăzeci pe o mie optzeci, apoi o variantă pătrată, de o mie optzeci pe o mie optzeci, pentru rețelele sociale.
+
+Al optulea pas. Fișierul final. Mergi la File, Save As, cu un nume clar, care are și versiunea, de exemplu Insula, linie jos, v trei. La File, External Data, apeși Pack Resources, dacă ai texturi externe. Pui toate fișierele, adică blend, G L B și P N G, într-un singur folder, numit Prenume, linie jos, Nume, linie jos, Proiect.
+
+Greșeli frecvente. Export gol: nu ai selectat nimic și ai bifat Selected Objects. Export cu obiecte deformate: nu ai făcut Apply Scale. Fișier uriaș: Subdivision este prea mare, scade nivelul înainte de export. Texturi lipsă: fișierele externe nu sunt împachetate. Nume cu diacritice: pot face probleme.
+
+Succes cu ordinea.

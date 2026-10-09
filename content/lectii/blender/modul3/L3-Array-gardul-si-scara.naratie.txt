@@ -1,0 +1,21 @@
+Lecția trei. Array: gardul și scara.
+
+Un gard are patruzeci de scânduri la fel. Nu le faci pe toate: faci una, iar Array le repetă. Astăzi construiești un gard, o scară și o roată cu spițe. Proiectul se numește Gard, scară și roată. Fișierul se numește: Prenume, linie jos, Nume, linie jos, B trei, linie jos, L trei, punct blend.
+
+Obiectivul. La final folosești Array pentru trei construcții. Minim: un gard din zece scânduri. Complet: minim, plus o scară cu opt trepte și o roată cu douăsprezece spițe, făcută cu un obiect numit Empty.
+
+De ce contează. Repetiția este peste tot: ferestre, trepte, dinți de fierăstrău, spițe. Array economisește timp și te lasă să schimbi totul ulterior, de exemplu de la zece la douăzeci de scânduri, dintr-un singur număr.
+
+Primul pas. Gardul. Cubul are dimensiunile X zero virgulă doi, Y zero virgulă zero cinci și Z unu virgulă cinci, la înălțimea zero virgulă șaptezeci și cinci. Adaugi Add Modifier, Generate, Array. Count este zece. Relative Offset X este unu virgulă cinci, adică distanța dintre scânduri, măsurată în lățimi de scândură: unu înseamnă lipite, unu virgulă cinci înseamnă cu spațiu. Adaugi două șipci orizontale: un cub lung, cu X patru, Y zero virgulă zero cinci și Z zero virgulă unu, la înălțimile zero virgulă patru și unu virgulă unu.
+
+Al doilea pas. Offset relativ față de offset constant. Relative Offset se măsoară în mărimi ale obiectului și este bun pentru garduri și rafturi. Constant Offset se măsoară în unități fixe și este bun pentru trepte și distanțe exacte. Object Offset depinde de alt obiect și este bun pentru cercuri și spirale. Poți combina mai multe, bifându-le.
+
+Al treilea pas. Scara. Un cub nou, cu dimensiunile X doi, Y zero virgulă șase și Z zero virgulă doi. Array, cu Count opt. Dezactivezi Relative Offset și bifezi Constant Offset, cu X zero, Y zero virgulă șase și Z zero virgulă doi. Cuburile urcă și înaintează treptat: o scară. Poți pune balustrade din cilindri subțiri, cu Array și pe ei.
+
+Al patrulea pas. Roata cu douăsprezece spițe. Folosim un Empty, un obiect invizibil, care servește drept centru de rotație. Un cilindru cu Radius zero virgulă zero cinci și Depth unu este o spiță. O pui începând din centru: Tab, A, G, Z, zero virgulă cinci, Enter, Tab. Punctul ei de origine rămâne în zero, zero, zero. Adaugi un Empty, cu Shift plus A, Empty, Plain Axes, și îl pui în zero, zero, zero. Rotești Empty-ul cu R, Z, treizeci, Enter, pentru că trei sute șaizeci împărțit la douăsprezece este treizeci de grade. Pe spiță, Array cu Count douăsprezece. Debifezi Relative Offset, bifezi Object Offset și alegi Empty-ul din listă. Spițele se rotesc în cerc, ca la o roată. Roata este culcată, ca un ceas văzut de sus, deci o privești din vederea de sus, cu șapte. Adaugi un Torus mare pentru janta roții, cu Major Radius unu și Minor Radius zero virgulă zero opt.
+
+Al cincilea pas. Aplicăm modificatorul. Când ești mulțumit și vrei să editezi fiecare piesă separat, în lista de modificatori apeși săgeata în jos, apoi Apply, sau Control plus A, cu mouse-ul peste modificator. Modificatorul dispare, iar piesele rămân.
+
+Greșeli frecvente. Scândurile se suprapun: Relative Offset este prea mic, sub unu. Scara este o rampă: Constant Offset este greșit, verifică Y și Z. Spițele nu formează cerc: Empty-ul nu este în centrul spiței. Originea obiectului este greșită: folosește Object, Set Origin, Origin to trei D Cursor. Modificatorul nu se mai poate edita: l-ai aplicat, apasă Control plus Z.
+
+Succes la gard, scară și roată.
