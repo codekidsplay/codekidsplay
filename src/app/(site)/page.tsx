@@ -227,7 +227,7 @@ export default function LandingPage() {
               className="text-3xl sm:text-4xl font-semibold tracking-tight mb-3"
               style={{ fontFamily: 'var(--font-display)' }}
             >
-              Hai în atelier.
+              Vrei să devii un Code Maker? Hai în atelier.
             </h2>
             <p className="text-white/95 text-lg max-w-md">
               Locuri limitate în grupe. Rezervă un loc sau contactează-ne pentru detalii.
