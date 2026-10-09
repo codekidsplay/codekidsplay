@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, FormEvent } from 'react'
+import Link from 'next/link'
 
 export default function ContactForm() {
   const [nume, setNume] = useState('')
@@ -8,9 +9,11 @@ export default function ContactForm() {
   const [telefon, setTelefon] = useState('')
   const [mesaj, setMesaj] = useState('')
   const [trimis, setTrimis] = useState(false)
+  const [acord, setAcord] = useState(false)
 
   function onSubmit(e: FormEvent) {
     e.preventDefault()
+    if (!acord) return
     const subject = encodeURIComponent(`Mesaj de pe site — ${nume.trim() || 'Contact'}`)
     const body = encodeURIComponent(
       [
@@ -90,9 +93,30 @@ export default function ContactForm() {
           className="w-full rounded-xl border border-[var(--ckp-ink)]/15 bg-white px-4 py-3 text-[var(--ckp-ink)] outline-none focus:border-[var(--ckp-blue)] resize-y min-h-[160px]"
         />
       </div>
+      <label className="flex items-start gap-2.5 text-sm text-[var(--ckp-ink)] cursor-pointer">
+        <input
+          type="checkbox"
+          required
+          checked={acord}
+          onChange={e => setAcord(e.target.checked)}
+          className="mt-0.5 h-4 w-4 shrink-0 accent-[var(--ckp-red)]"
+        />
+        <span>
+          Am citit și sunt de acord cu{' '}
+          <Link href="/termeni" target="_blank" className="text-[var(--ckp-blue)] hover:underline">
+            Termenii și condițiile
+          </Link>{' '}
+          și{' '}
+          <Link href="/confidentialitate" target="_blank" className="text-[var(--ckp-blue)] hover:underline">
+            Politica de confidențialitate
+          </Link>
+          .
+        </span>
+      </label>
       <button
         type="submit"
-        className="inline-flex items-center justify-center bg-[var(--ckp-red)] hover:bg-[var(--ckp-red-deep)] text-white font-semibold px-6 py-3 rounded-xl transition-colors"
+        disabled={!acord}
+        className="inline-flex items-center justify-center bg-[var(--ckp-red)] hover:bg-[var(--ckp-red-deep)] text-white font-semibold px-6 py-3 rounded-xl transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
       >
         Trimite mesajul
       </button>
