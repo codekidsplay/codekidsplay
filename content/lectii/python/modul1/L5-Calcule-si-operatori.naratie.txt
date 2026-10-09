@@ -1,0 +1,23 @@
+Lecția cinci. Calcule și operatori.
+
+Python este un calculator uriaș. Azi înveți toți operatorii: cei de la matematică și doi secreți, câtul și restul împărțirii, plus ordinea în care se fac calculele. Proiectul se numește Calculatorul de buzunar. Fișierul se numește: Prenume, linie jos, Nume, linie jos, P unu, linie jos, L cinci, punct P Y.
+
+Obiectivul. La final folosești plus, minus, steluță și bară pentru împărțire, ridicarea la putere cu două steluțe, câtul cu două bare, restul cu procent, respecți ordinea operațiilor și folosești parantezele și prescurtările plus egal, minus egal, steluță egal. Minim: un program care citește două numere și afișează rezultatele a patru operații. Complet: minim, plus câtul, restul și puterea, și o aplicație practică, de exemplu secundele transformate în minute și secunde.
+
+De ce contează. Jocurile calculează tot timpul: viteze, distanțe, scoruri, câte vieți au mai rămas. Restul împărțirii se folosește peste tot: ca să afli dacă un număr este par, ca să rotești un personaj sau ca să faci un ceas.
+
+Primul pas. Operatorii. Doi la puterea trei, scris cu două steluțe, înseamnă doi ori doi ori doi, adică opt. Nu confunda cele două steluțe cu semnul acoperiș: în Python, acela face altceva.
+
+Al doilea pas. Câtul și restul. Îți amintești împărțirea cu rest de la școală? Șaptesprezece împărțit la cinci dă trei, rest doi. Cu două bare afli câtul, trei. Cu procent afli restul, doi. Un număr este par dacă restul împărțirii la doi este zero, impar dacă este unu. Trucul acesta îl vei folosi des cu if.
+
+Al treilea pas. Ordinea operațiilor. Python respectă ordinea de la matematică: mai întâi parantezele, apoi puterea, apoi înmulțirea și împărțirea, la final adunarea și scăderea. Pentru media a trei note ai nevoie de paranteze, altfel se împarte doar ultima notă.
+
+Al patrulea pas. Aplicații. Bomboane pentru prieteni: câtul spune câte primește fiecare, restul câte rămân. Un mic secret: zero virgulă unu plus zero virgulă doi nu dă exact zero virgulă trei, dar cu round obții rezultatul curat. Prescurtările: plus egal adaugă la o variabilă. Media a trei note și secundele în minute și secunde sunt aplicații practice.
+
+Greșeli frecvente. Șapte împărțit la doi dă trei virgulă cinci, nu trei: pentru întreg folosești două bare. Doi acoperiș trei nu dă opt: folosește două steluțe. Zero Division Error: nu poți împărți la zero. Fără paranteze, media nu iese corect.
+
+Proiectul de azi. Calculatorul de buzunar. Citești două numere întregi și afișezi rezultatele operațiilor. Minim înseamnă patru operații. Complet înseamnă și cât, rest și putere.
+
+Recapitulare. Operatorii sunt plus, minus, steluță, bară, două bare pentru cât, procent pentru rest, două steluțe pentru putere. Bara dă mereu număr cu virgulă. Un număr este par dacă n procent doi este zero. Round rotunjește.
+
+Succes cu calculatorul.

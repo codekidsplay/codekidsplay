@@ -1,0 +1,23 @@
+Lecția cinci din Modulul patru. Coliziuni: strângem monede.
+
+Astăzi înveți cum afli dacă două lucruri se ating. Proiectul se numește Strânge monedele. Fișierul se numește: Prenume, linie jos, Nume, linie jos, P patru, linie jos, L cinci, punct P Y.
+
+Obiectivul. La final verifici dacă două dreptunghiuri se ating, cu colliderect, dacă un punct este într-un dreptunghi, cu collidepoint, cauți într-o listă, cu collidelist, blochezi personajul la pereți, verifici coliziunea dintre două cercuri, strângi obiecte dintr-o listă și construiești un joc cu monede. Minim: un personaj care strânge o monedă. Complet: minim, plus mai multe monede, pereți, imunitate și jocul Strânge monedele.
+
+Primul pas. Coliziuni cu Rect. Colliderect spune dacă două dreptunghiuri se suprapun. Doar marginile atinse nu contează. Collidepoint spune dacă un punct este înăuntru, de exemplu mouse-ul pe un buton.
+
+Al doilea pas. Monede. Personajul atinge un obstacol, iar apoi o monedă: moneda dispare, iar scorul crește. Cu mai multe monede, le ții într-o listă și le verifici pe rând.
+
+Al treilea pas. Pereți. Ca să nu treci prin ziduri, muți personajul pe x, verifici coliziunea și, dacă te lovești, anulezi mișcarea. Apoi la fel pe y.
+
+Al patrulea pas. Cercuri, liste, imunitate. Pentru cercuri, calculezi distanța dintre centre și o compari cu suma razelor. Collidelist caută într-o listă de dreptunghiuri. După o lovitură, jucătorul primește imunitate pentru puțin timp, ca să nu piardă toate viețile deodată.
+
+Al cincilea pas. Mini-proiect. Strânge monedele: monede care apar la întâmplare, pereți, scor.
+
+Greșeli frecvente. Moneda nu dispare: nu o scoți din listă. Eroare când ștergi din listă în timp ce o parcurgi: parcurgi o copie. Personajul trece prin pereți: nu verifici coliziunea după mișcare. Pierzi toate viețile imediat: lipsește imunitatea.
+
+Proiectul de azi. Strânge monedele. Minim înseamnă o monedă. Complet înseamnă mai multe monede, pereți și imunitate.
+
+Recapitulare. Colliderect arată dacă două dreptunghiuri se suprapun. Collidepoint verifică un punct. Collidelist caută într-o listă. Pentru pereți muți pe x, verifici, anulezi dacă e nevoie, apoi la fel pe y. Imunitatea oprește loviturile repetate.
+
+Succes cu monedele.

@@ -1,0 +1,21 @@
+Lecția zece din Modulul patru. Expoziția și verificarea finală.
+
+Aceasta este ultima oră din cursul de Python. Îți prezinți jocul, vezi jocurile colegilor și faci verificarea finală. Fișierul se numește: Prenume, linie jos, Nume, linie jos, P patru, linie jos, L zece, punct P Y.
+
+Obiectivul. La final ai un joc finisat, cu ecran de reguli, credite și tranziții, l-ai prezentat colegilor, ai primit și ai dat păreri și ai rezolvat testul final al modulului și al cursului. Minim: jocul tău funcționează și îl prezinți în două minute. Complet: minim, plus ecran de reguli, credite, feedback dat altor colegi și testul final.
+
+Primul pas. Retușurile care fac diferența. Un ecran de reguli. O tranziție cu fade, adică ecranul se întunecă încet. O captură de ecran, la o tastă. Un contor de cadre pe secundă, util la depanare. Creditele care urcă. Un mesaj Record nou care clipește. Setări salvate. O fișă a jocului, cu titlu și autor. Și cod curat, cu constante cu nume.
+
+Al doilea pas. Cadrul expoziției. Este un cadru în care pui jocul tău: meniu cu butoane, Joacă, Reguli, Credite și Ieșire, tranziții, captură de ecran cu F douăsprezece și contor de cadre cu F trei.
+
+Al treilea pas. Expoziția de jocuri. Pregătești jocul pentru prezentare: îl testezi, îl exersezi și îl prezinți în două minute. Spui cum se numește, ce face, ce a fost greu și ce ai îmbunătăți. Apoi te uiți la jocurile colegilor și dai feedback concret.
+
+Al patrulea pas. Verificarea finală. Rezolvi testul, fără să ghicești, gândindu-te la fiecare răspuns.
+
+Greșeli frecvente. Jocul nu a fost testat înainte: verifică totul. Prezentare fără exersare: repet-o măcar o dată. Feedback vag: fii concret. Răspunsuri la întâmplare la test: gândește-te, nu ghici.
+
+Proiectul de azi. Jocul meu, finisat. Minim înseamnă joc funcțional și prezentare. Complet înseamnă și reguli, credite și feedback.
+
+Recapitulare. Un joc finisat are meniu, reguli, credite, tranziții și record salvat. Constantele cu nume fac codul mai clar. Capturile de ecran și fișa jocului ajută la prezentare. Când arăți jocul altora, afli ce merge bine și ce poate fi îmbunătățit.
+
+Felicitări, ai terminat cursul de Python. Ai pornit de la un print și ai ajuns la jocuri adevărate. Continuă să construiești.

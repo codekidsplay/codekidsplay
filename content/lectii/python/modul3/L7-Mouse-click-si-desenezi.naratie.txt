@@ -1,0 +1,25 @@
+Lecția șapte din Modulul trei. Mouse: click și desenezi.
+
+Astăzi comanzi țestoasa cu mouse-ul. Proiectul se numește Paint-ul meu. Fișierul se numește: Prenume, linie jos, Nume, linie jos, P trei, linie jos, L șapte, punct P Y.
+
+Obiectivul. La final legi un click de o funcție cu onscreenclick, folosești coordonatele x și y ale click-ului, desenezi puncte colorate, tragi țestoasa cu mouse-ul, verifici dacă ai dat click într-o zonă și construiești o paletă de culori. Minim: la click, țestoasa merge la punctul unde ai dat click. Complet: minim, plus puncte colorate, paletă și contor de click-uri.
+
+Primul pas. Primul click. Funcția legată de un click primește două numere: x și y, adică poziția exactă a mouse-ului în fereastră. Cel mai simplu: țestoasa merge la click cu goto. Sau pui un punct colorat la fiecare click.
+
+Al doilea pas. Alegem la întâmplare, citim coordonatele. Confetti: puncte cu culori alese la întâmplare. Poți afișa coordonatele click-ului.
+
+Al treilea pas. Tragem și atingem. Cu ondrag poți trage țestoasa și desena liber. Cu onclick pe țestoasă, culoarea se schimbă doar dacă ai dat click pe ea.
+
+Al patrulea pas. Zone de click. Cum aflăm dacă ai dat click într-un anumit loc? Comparăm x și y cu limitele zonei. Așa faci o paletă de culori: patru pătrate colorate, iar click-ul pe unul alege culoarea. Un contor de click-uri afișează numărul pe ecran.
+
+Al cincilea pas. Unim punctele. Fiecare click adaugă un punct într-o listă, iar țestoasa le unește într-un poligon.
+
+Al șaselea pas. Mini-proiect. Paint-ul meu: paletă, desen liber și ștergere.
+
+Greșeli frecvente. Funcția de click nu are doi parametri: trebuie x și y, chiar dacă nu îi folosești. Click-ul nu face nimic: ai uitat screen punct listen. Zona de click nu merge: comparațiile sunt greșite.
+
+Proiectul de azi. Paint-ul meu. Minim înseamnă țestoasa care merge la click. Complet înseamnă puncte, paletă și contor.
+
+Recapitulare. Onscreenclick apelează funcția la fiecare click, cu x și y. Funcția trebuie să aibă doi parametri. Ondrag te lasă să tragi țestoasa. O zonă de click se verifică cu comparații. O listă ține punctele.
+
+Succes cu paint-ul.

@@ -1,0 +1,21 @@
+Lecția opt din Modulul patru. Fișiere și try except: salvăm recordul.
+
+Astăzi jocul tău își amintește scorurile, chiar și după ce îl închizi. Proiectul se numește Click rapid. Fișierul se numește: Prenume, linie jos, Nume, linie jos, P patru, linie jos, L opt, punct P Y.
+
+Obiectivul. La final scrii și citești fișiere text cu with open, adaugi linii la un fișier existent, tratezi erorile cu try și except, salvezi date cu json, păstrezi un record și un top și construiești un joc care își amintește scorurile. Minim: salvezi și citești un record dintr-un fișier. Complet: minim, plus topul scorurilor și jocul Click rapid.
+
+Primul pas. Fișiere. Variabilele dispar când programul se închide, dar fișierele rămân. Scrii with open, numele fișierului și litera w, pentru scriere. Litera a adaugă la sfârșit, iar litera r citește. With închide fișierul singur. În fișiere scrii text, iar la citire transformi cu int.
+
+Al doilea pas. Try și except. Dacă fișierul nu există, programul ar da eroare. Cu try pui codul riscant, iar cu except prinzi eroarea și programul merge mai departe. Aceeași metodă salvează programul când utilizatorul scrie text în loc de număr. Scrii o funcție care citește recordul în siguranță: dacă fișierul lipsește, recordul este zero.
+
+Al treilea pas. Record, top, json. Păstrezi recordul: la final compari scorul cu recordul și, dacă este mai mare, îl salvezi. Topul scorurilor se păstrează într-o listă sortată. Else se execută dacă nu a fost eroare, iar finally se execută oricum. Cu json salvezi un dicționar întreg într-un fișier și îl citești înapoi.
+
+Al patrulea pas. Mini-proiect. Click rapid: jocul numără click-urile, iar la final salvează recordul.
+
+Greșeli frecvente. File Not Found Error: fișierul nu există, deci folosești try. Value Error: textul din fișier nu este număr. Recordul nu se salvează: ai uitat să scrii în fișier. Fișierul se șterge: ai deschis cu w în loc de a.
+
+Proiectul de azi. Click rapid. Minim înseamnă un record salvat și citit. Complet înseamnă top și jocul complet.
+
+Recapitulare. Fișierele rămân după ce programul se închide. With open scrie, adaugă sau citește și se închide singur. Try și except prind erorile. Json salvează dicționare. Recordul se compară cu scorul și se salvează.
+
+Succes cu recordul.

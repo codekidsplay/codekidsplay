@@ -1,0 +1,23 @@
+Lecția șase din Modulul patru. Scor, vieți și text.
+
+Astăzi jocul tău primește scor, vieți, niveluri și ecrane. Proiectul se numește Ploaia de stele. Fișierul se numește: Prenume, linie jos, Nume, linie jos, P patru, linie jos, L șase, punct P Y.
+
+Obiectivul. La final scrii text pe ecran cu o funcție proprie, afișezi scor, nivel și vieți, cu inimioare, folosești stări de joc, adică meniu, joc, pauză și final, calculezi nivelurile, afișezi mesaje temporare, desenezi o bară de progres și ții minte cel mai bun scor. Minim: scor și vieți afișate. Complet: minim, plus stări, niveluri, pauză, mesaje, bară și record.
+
+Primul pas. Text și scor. Scrii o funcție, scrie, care primește textul, poziția, culoarea și mărimea, cu valori implicite și posibilitate de centrare. Scorul crește când prinzi ceva.
+
+Al doilea pas. Vieți. Le arăți ca inimioare desenate din forme: roșu înseamnă viață, gri înseamnă viață pierdută.
+
+Al treilea pas. Stări și niveluri. Starea jocului, meniu, joc, pauză sau final, decide ce se actualizează și ce se desenează. Nivelul se calculează din scor, cu o funcție.
+
+Al patrulea pas. Pauză, mesaje, bare, record. La o tastă, jocul face pauză. Mesajele apar câteva secunde și dispar. O bară arată progresul spre nivelul următor, iar recordul ține minte cel mai bun scor.
+
+Al cincilea pas. Mini-proiect. Ploaia de stele: stele care cad, iar tu le prinzi, cu scor, vieți, niveluri și ecran final.
+
+Greșeli frecvente. Textul nu apare: ai uitat să îl lipești pe ecran sau nu ai creat fontul. Viețile nu scad: nu verifici coliziunea. Pauza nu merge: starea nu se schimbă la tastă.
+
+Proiectul de azi. Ploaia de stele. Minim înseamnă scor și vieți. Complet înseamnă stări, niveluri, pauză și record.
+
+Recapitulare. O funcție, scrie, face textul ușor de folosit. Viețile sunt inimioare. Starea jocului decide ce se actualizează și ce se desenează. Nivelul se calculează din scor.
+
+Succes cu ploaia de stele.

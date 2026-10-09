@@ -1,0 +1,25 @@
+Lecția patru din Modulul trei. Funcții de desen: casa și floarea.
+
+Astăzi scrii funcții de desen, ca să construiești forme mari din forme mici. Proiectul se numește Satul meu. Fișierul se numește: Prenume, linie jos, Nume, linie jos, P trei, linie jos, L patru, punct P Y.
+
+Obiectivul. La final scrii funcții de desen cu parametri, adică poziție, mărime și culoare, construiești forme mari din forme mici, de exemplu casa din pătrat și triunghi, desenezi o floare din petale și compui un peisaj cu mai multe funcții. Minim: o funcție pătrat cu latura și o funcție casă. Complet: minim, plus floarea, peisajul și un sat.
+
+Primul pas. Prima funcție de desen. O funcție se definește cu def și se apelează cu numele ei. Funcția pătrat primește latura și desenează pătratul. O poți chema de mai multe ori, cu laturi diferite.
+
+Al doilea pas. Forme cu poziție și culoare. Funcția dreptunghi primește poziția, lățimea, înălțimea și culoarea. Fiecare funcție începe cu penup, goto, setheading zero și pendown, ca să pornească mereu din locul potrivit.
+
+Al treilea pas. Forme mari din forme mici. Casa este un dreptunghi, un triunghi pentru acoperiș, o ușă și o fereastră. Dimensiunile se calculează dintr-o singură mărime, m, deci casa poate fi mică sau mare.
+
+Al patrulea pas. Floarea. Petalele sunt aceeași formă repetată în cerc, iar mijlocul este un cerc galben.
+
+Al cincilea pas. Peisajul. Compui cer, iarbă, soare, o casă și o floare, fiecare cu funcția ei. Apoi un rând de case cu o buclă.
+
+Al șaselea pas. Mini-proiect. Satul meu: mai multe case, flori și un soare, toate făcute cu funcții.
+
+Greșeli frecvente. Desenul apare în alt loc: funcția nu începe cu penup și goto. Forma nu are culoarea dorită: ai uitat parametrul de culoare. Casa este deformată: dimensiunile nu depind de mărime.
+
+Proiectul de azi. Satul meu. Minim înseamnă pătratul și casa. Complet înseamnă floare, peisaj și sat.
+
+Recapitulare. O funcție de desen primește poziție, mărime și culoare. Fiecare funcție începe cu penup, goto, setheading și pendown. Formele complexe se compun din cele simple. Dimensiunile se calculează dintr-o singură mărime.
+
+Succes cu satul.

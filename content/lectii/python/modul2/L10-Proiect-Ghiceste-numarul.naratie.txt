@@ -1,0 +1,27 @@
+Lecția zece din Modulul doi. Proiect: Ghicește numărul.
+
+Aceasta este lecția de final a modulului. Construiești un joc complet. Fișierul se numește: Prenume, linie jos, Nume, linie jos, P doi, linie jos, L zece, punct P Y.
+
+Obiectivul. La final ai un joc organizat în funcții: număr secret, încercări limitate, indicii prea mic sau prea mare, validarea răspunsurilor, mai multe runde și statistici. Minim: jocul funcționează o rundă, cu indicii. Complet: minim, plus încercări limitate, validare, runde repetate și scor final.
+
+Primul pas. Construim jocul pas cu pas. Jocul folosește random, deci numărul secret diferă de fiecare dată. Pornim de la cea mai simplă versiune: citești o încercare și o compari cu secretul.
+
+Al doilea pas. Cu număr aleator. Secretul se alege cu random punct randint, o singură dată pe rundă.
+
+Al treilea pas. Încercări limitate. Cu for și range dai un număr de încercări, iar când ghicești ieși cu break sau return.
+
+Al patrulea pas. Citire sigură. Scrii o funcție care cere un număr între un minim și un maxim și întreabă din nou dacă răspunsul nu este bun. Verifici cu isdigit, ca să nu apară erori.
+
+Al cincilea pas. Funcții și runde. Funcția care joacă o rundă primește secretul și numărul de încercări. Apoi întrebi dacă vrea să mai joace, da sau nu, într-un while. Poți adăuga dificultate: ușor, mediu, greu, cu intervale și încercări diferite.
+
+Al șaselea pas. Statistici și strategie. Păstrezi scorurile într-o listă și afișezi câte runde ai câștigat. Strategia câștigătoare: tai intervalul în două, adică încerci mereu numărul din mijloc.
+
+Al șaptelea pas. Jocul final. Pui totul laolaltă, cu cuvintele și ideile tale.
+
+Greșeli frecvente. Type Error: ai comparat textul din input cu un număr, deci folosești int. Value Error: ai scris litere unde se așteaptă un număr, deci validezi cu isdigit. Secretul se schimbă la fiecare încercare: l-ai ales în buclă, nu înainte de ea.
+
+Proiectul de azi. Ghicește numărul. Minim înseamnă o rundă cu indicii. Complet înseamnă încercări limitate, validare, runde și scor.
+
+Recapitulare. Jocul are secret, încercări, indicii și scor. Randint alege secretul, o singură dată pe rundă. For și range dau încercări limitate. Citirea se validează cu isdigit într-o funcție reutilizabilă. Statisticile se calculează cu o listă.
+
+Felicitări, ai terminat Modulul doi de Python.

@@ -1,0 +1,25 @@
+Lecția trei din Modulul doi. While.
+
+Astăzi înveți o buclă care se repetă cât timp o condiție este adevărată. Proiectul se numește Pușculița. Fișierul se numește: Prenume, linie jos, Nume, linie jos, P doi, linie jos, L trei, punct P Y.
+
+Obiectivul. La final folosești while cu o condiție, ai grijă ca bucla să se oprească, citești date până când utilizatorul scrie ce trebuie și alegi între for și while. Minim: o buclă while care numără de la unu la cinci. Complet: minim, plus un program care cere parola până o știi, o simulare cu while și un meniu care se repetă.
+
+Primul pas. Bucla while. While înseamnă cât timp. Python verifică o condiție. Dacă este adevărată, execută blocul, apoi verifică din nou. Se oprește când condiția devine falsă. Pentru numărat de la unu la cinci pornești un contor de la unu, afișezi contorul și îl crești cu unu. Dacă uiți să crești contorul, bucla nu se mai oprește.
+
+Al doilea pas. Condiții care se schimbă. Poți aduna numere până depășești cincizeci. Nu știi dinainte câte numere vor fi, de aceea folosești while, nu for.
+
+Al treilea pas. Cerem date până sunt corecte. Cerem parola, iar cât timp nu este cea corectă, întrebăm din nou. Un alt exemplu: câte zile trec până ajungi la o mie de lei.
+
+Al patrulea pas. Bucla infinită și while True. O buclă care nu se oprește niciodată se numește infinită. O oprești cu butonul Stop din Thonny sau cu Control și C. Uneori scriem intenționat while True și o oprim cu break, despre care vei învăța în lecția următoare.
+
+Al cincilea pas. For sau while? Aceeași treabă se poate face în două feluri. For se folosește când știi de câte ori repeți. While se folosește când repeți până se întâmplă ceva. Un meniu care se repetă folosește while.
+
+Al șaselea pas. Mini-proiect. Pușculița: întrebi ce sumă vrei să strângi și, cât timp nu ai ajuns la țintă, adaugi sume.
+
+Greșeli frecvente. Programul stă și nu se mai oprește: bucla infinită, deci schimbă variabila în buclă și oprește cu Stop. Syntax Error: ai uitat cele două puncte după while. Name Error la condiție: variabila nu a fost creată înainte.
+
+Proiectul de azi. Pușculița. Minim înseamnă un while care numără. Complet înseamnă parolă, simulare și meniu.
+
+Recapitulare. While repetă cât timp condiția este adevărată. În buclă trebuie să schimbi ceva ca bucla să se termine. O buclă infinită se oprește cu Stop sau cu Control C. While True cu break se oprește la comandă. For înseamnă că știi de câte ori, while înseamnă repeți până se schimbă ceva.
+
+Succes cu pușculița.

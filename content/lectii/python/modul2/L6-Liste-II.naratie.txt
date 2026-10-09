@@ -1,0 +1,27 @@
+Lecția șase din Modulul doi. Liste, partea a doua.
+
+Astăzi sortezi liste, tai texte în cuvinte și lipești cuvinte în text. Proiectul se numește Clasamentul. Fișierul se numește: Prenume, linie jos, Nume, linie jos, P doi, linie jos, L șase, punct P Y.
+
+Obiectivul. La final sortezi liste cu sort și sorted, folosești split și join, construiești liste cu for, lucrezi cu liste de liste și copiezi corect o listă. Minim: un program care citește scoruri într-o listă și le afișează sortate. Complet: minim, plus podiumul cu primii trei, media scorurilor și o tabelă făcută din liste.
+
+Primul pas. Sortarea. Sort schimbă lista pe loc. Sorted lasă lista neschimbată și dă o listă nouă. Cu reverse egal True sortezi descrescător. Poți sorta și texte, în ordine alfabetică.
+
+Al doilea pas. Construim și lipim liste. Plus lipește două liste, iar steluța o repetă. Zero într-o listă înmulțit cu cinci creează o listă cu cinci zerouri. Poți construi o listă cu for sau cu list de range.
+
+Al treilea pas. Text în listă și listă în text. Split face din text o listă de cuvinte. Join face invers: lipește cuvintele dintr-o listă într-un text, cu un separator.
+
+Al patrulea pas. Liste în liste. O listă poate conține alte liste. Cu tabla, paranteză, unu, paranteză, doi, iei rândul de la indexul unu, apoi elementul de la indexul doi din el. Așa faci o tabelă, cu rânduri și coloane.
+
+Al cincilea pas. Capcana copierii. B egal a nu face o copie: a și b sunt două nume pentru aceeași listă. Dacă schimbi una, se schimbă amândouă. Pentru o copie adevărată folosești copy.
+
+Al șaselea pas. Alte funcții utile. Index, count și del.
+
+Al șaptelea pas. Mini-proiect. Clasamentul: citești într-o buclă nume și scoruri, de exemplu Ana cincizeci, până scrii gata, apoi afișezi podiumul.
+
+Greșeli frecvente. Sortate egal lista punct sort dă None, pentru că sort nu returnează nimic. Schimbi o listă și se schimbă și alta: b egal a nu copiază. Type Error la join: elementele trebuie să fie texte, nu numere.
+
+Proiectul de azi. Clasamentul. Minim înseamnă scoruri sortate. Complet înseamnă podium, medie și tabelă.
+
+Recapitulare. Sort sortează lista pe loc, sorted face o listă nouă. Plus lipește liste. Split face din text o listă, join face invers. O listă poate conține alte liste. Pentru o copie folosești copy.
+
+Succes cu clasamentul.

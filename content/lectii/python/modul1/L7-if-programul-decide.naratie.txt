@@ -1,0 +1,25 @@
+Lecția șapte. If, programul decide.
+
+Până acum programele tale făceau mereu același lucru. Azi înveți instrucțiunea if: programul se uită la o situație și alege ce să facă. Proiectul se numește Chestionarul. Fișierul se numește: Prenume, linie jos, Nume, linie jos, P unu, linie jos, L șapte, punct P Y.
+
+Obiectivul. La final scrii condiții cu egal egal, diferit, mai mic, mai mare, mai mic sau egal, mai mare sau egal, folosești if, else și elif, înțelegi rolul indentării și compari texte. Minim: un program cu if și else care răspunde diferit după vârstă sau după un număr. Complet: minim, plus un lanț cu elif și un chestionar cu scor.
+
+De ce contează. Fiecare joc ia decizii: dacă jucătorul atinge monstrul, pierde o viață. Fiecare aplicație la fel: dacă parola este corectă, intri. Fără if, un program nu poate alege.
+
+Primul pas. Comparații. Rezultatul unei comparații este True sau False.
+
+Al doilea pas. Instrucțiunea if. Scrii if, condiția și două puncte. Liniile de sub if, indentate cu patru spații, se execută doar dacă prima condiție este adevărată. Dacă ai mai multe linii în bloc, le indentezi pe toate la fel.
+
+Al treilea pas. Else, altfel. Se execută când condiția este falsă. Este una sau alta.
+
+Al patrulea pas. Elif, mai multe variante. Pentru mai multe situații adaugi elif. Python alege prima condiție adevărată și nu se mai uită la celelalte. De aceea, la un calificativ, începi cu cele mai mari note. Dacă schimbi ordinea, rezultatul poate fi greșit.
+
+Al cincilea pas. Texte în condiții. Poți compara parole, temperaturi sau răspunsuri. Poți pune un if în alt if. Pentru răspunsuri precum da, folosești lower, ca să accepți și litere mari.
+
+Greșeli frecvente. Syntax Error la if x egal cinci: ai folosit un singur egal în loc de două. Ai uitat cele două puncte după condiție. Indentation Error: nu ai indentat linia de sub if sau ai amestecat numărul de spații. Else fără două puncte.
+
+Proiectul de azi. Chestionarul, cu cel puțin patru întrebări, una cu număr și una cu text, și un scor. Minim înseamnă if și else. Complet înseamnă elif și scor.
+
+Recapitulare. Comparațiile dau True sau False. If execută blocul indentat doar dacă este adevărată condiția. Else se execută când este falsă. Elif adaugă variante. Indentarea, cu patru spații, arată ce aparține blocului. Egal egal compară, un singur egal pune în cutie.
+
+Succes cu chestionarul.

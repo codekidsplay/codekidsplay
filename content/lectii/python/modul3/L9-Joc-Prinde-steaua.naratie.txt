@@ -1,0 +1,23 @@
+Lecția nouă din Modulul trei. Joc: Prinde steaua.
+
+Astăzi construiești un joc complet cu Turtle. Proiectul se numește Prinde steaua. Fișierul se numește: Prenume, linie jos, Nume, linie jos, P trei, linie jos, L nouă, punct P Y.
+
+Obiectivul. La final construiești un joc cu jucător controlat de tastatură, obiecte care apar la întâmplare, coliziuni, adică atingeri, scor, cronometru, vieți, un inamic care ricoșează, niveluri și restart. Minim: jucătorul prinde steaua și scorul crește. Complet: minim, plus bombă, timp, vieți, niveluri și record.
+
+Primul pas. Jucătorul și steaua. Jucătorul este o țestoasă pe care o miști cu săgețile, pe un fundal albastru închis. Steaua apare în alt loc, la întâmplare.
+
+Al doilea pas. Coliziune și scor. Când se ating două lucruri? Calculezi distanța dintre ele. Dacă distanța este mică, ele se ating. Atunci scorul crește, iar steaua apare în alt loc. Scorul se scrie pe ecran.
+
+Al treilea pas. Pericole, timp, vieți. Bomba se mișcă și ricoșează la margini, adică își schimbă direcția când lovește peretele. Cronometrul numără timpul pe ecran. Viețile scad când atingi bomba, iar la zero jocul se termină.
+
+Al patrulea pas. Niveluri, record, restart. Cu cât scorul crește, cu atât jocul devine mai rapid. Păstrezi recordul și poți porni din nou.
+
+Al cincilea pas. Jocul complet. Starea jocului se păstrează într-un dicționar, numit stare. Bucla jocului este o funcție care se programează singură, cu ontimer, și actualizează ecranul cu update.
+
+Greșeli frecvente. Jucătorul nu se mișcă: ai uitat screen punct listen. Coliziunea nu merge: distanța este prea mică sau prea mare. Jocul merge prea repede sau încet: schimbi intervalul din ontimer. Scorul nu se actualizează: stare nu este modificat corect.
+
+Proiectul de azi. Prinde steaua. Minim înseamnă jucător, stea și scor. Complet înseamnă bombă, timp, vieți, niveluri și record.
+
+Recapitulare. Un joc are jucător, țintă, pericol, scor, timp sau vieți și sfârșit. Starea se păstrează într-un dicționar. Bucla jocului se face cu ontimer și update. Coliziunea se verifică prin distanța dintre două obiecte.
+
+Succes la joc.

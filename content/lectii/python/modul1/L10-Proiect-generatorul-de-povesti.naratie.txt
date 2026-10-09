@@ -1,0 +1,25 @@
+Lecția zece. Proiect: generatorul de povești.
+
+Aceasta este lecția de final a modulului. Folosești tot ce ai învățat: print, variabile, input, operatori, f-string, if și random, ca să construiești un generator de povești care scrie o poveste diferită de fiecare dată. Proiectul se numește Povestea mea. Fișierul se numește: Prenume, linie jos, Nume, linie jos, P unu, linie jos, L zece, punct P Y.
+
+Obiectivul. La final ai un program complet, de patruzeci până la șaizeci de linii, care citește date de la utilizator, alege la întâmplare părți din poveste, ia decizii cu if și afișează totul frumos. Apoi îți verifici cunoștințele din tot modulul. Minim: un program care citește trei lucruri, nume, animal și loc, și afișează o poveste cu f-string. Complet: minim, plus începuturi și sfârșituri alese cu random punct choice, un zar care schimbă finalul și un chenar frumos.
+
+De ce contează. Proiectele sunt locul în care se vede dacă ai înțeles. Aici îmbini nouă lecții într-un singur program. Programatorii adevărați învață la fel: construind lucruri mici, dar complete.
+
+Primul pas. Planul poveștii. O poveste are trei părți: început, întâmplare, sfârșit. Programul citește datele: numele eroului, un animal și un loc.
+
+Al doilea pas. Părți alese la întâmplare. Pui mai multe începuturi într-o listă, de exemplu, Într-o dimineață însorită, și alegi unul cu random punct choice. La fel faci cu întâmplările, scrise ca f-string, cu numele eroului. Atenție: lista cu f-string se scrie după ce citești datele.
+
+Al treilea pas. Zarul decide finalul. Arunci un zar. Dacă iese un număr mare, final fericit, altfel final mai puțin fericit.
+
+Al patrulea pas. Povestea completă. Pui totul într-un generator: titlul într-un chenar, apoi începutul, întâmplarea și finalul, cu print.
+
+Al cincilea pas. Verificarea modulului. Rezolvi pe foaie, fără să te uiți în lecții. Răspunsurile sunt la final.
+
+Greșeli frecvente. Name Error: ai folosit variabila înainte să o citești. Povestea arată mereu la fel: ai scris textul direct, fără choice. F-string-ul din listă nu se completează corect: lista este scrisă înainte de input. Type Error la vârstă plus unu: input dă text, deci folosești int. Lipsește o virgulă între elementele listei.
+
+Proiectul de azi. Povestea mea. Minim înseamnă o poveste cu f-string. Complet înseamnă alegeri random, zar și chenar.
+
+Recapitulare. Print, input, variabile și tipuri. Operatori și ordinea lor. F-string și metode de text. If, elif, else. And, or, not. Import random, randint, choice și liste simple.
+
+Felicitări, ai terminat Modulul unu de Python.

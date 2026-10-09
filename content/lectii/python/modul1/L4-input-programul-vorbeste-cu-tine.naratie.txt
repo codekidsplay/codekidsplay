@@ -1,0 +1,25 @@
+Lecția patru. Input, programul vorbește cu tine.
+
+Până acum programele tale doar vorbeau. Azi le înveți să și asculte: programul te întreabă ceva, tu răspunzi, iar el folosește răspunsul tău. Proiectul se numește Interviul. Fișierul se numește: Prenume, linie jos, Nume, linie jos, P unu, linie jos, L patru, punct P Y.
+
+Obiectivul. La final folosești input ca să citești text de la tastatură, transformi răspunsul în număr cu int și float și construiești programe care vorbesc cu utilizatorul. Minim: un program care întreabă numele și vârsta și le folosește într-un mesaj. Complet: minim, plus un calcul cu numerele introduse și un mesaj final personalizat.
+
+De ce contează. Aproape toate aplicațiile cer ceva de la utilizator: o parolă, un nume, o alegere. Cu input, programele tale devin interactive, adică se comportă diferit de fiecare dată, după ce scrie omul.
+
+Primul pas. Cum funcționează input. Input face trei lucruri: afișează întrebarea, așteaptă răspunsul și îl dă înapoi ca text. De obicei îl pui într-o variabilă. În Thonny, răspunsul se scrie în Shell și apoi apeși Enter. Dacă programul stă și nu face nimic, probabil așteaptă răspunsul: dă click în Shell.
+
+Al doilea pas. Input dă mereu text. Chiar dacă scrii un număr, Python îl vede ca text.
+
+Al treilea pas. Numere de la tastatură. Folosești int de input pentru numere întregi sau float de input pentru numere cu zecimale. De exemplu, citești prețul unei înghețate și vârsta, și poți calcula cu ele. Suma a două numere: dacă nu transformi răspunsurile, douăzeci plus cinci dă două sute cinci, pentru că textele se lipesc.
+
+Al patrulea pas. Mai multe întrebări. Un mic dialog pune mai multe întrebări una după alta și răspunde. Aria unui cerc cere raza, ca float.
+
+Al cincilea pas. Erori și calcule utile. Dacă scrii litere unde se cere număr, apare Value Error. Un calcul util: transformi orele în minute, înmulțind cu șaizeci.
+
+Greșeli frecvente. Programul stă: nu ai dat click în Shell. Type Error: ai lipit un text cu un număr. Douăzeci plus cinci dă două sute cinci: nu ai transformat în număr. Value Error: ai scris litere sau zecimale la int de input.
+
+Proiectul de azi. Interviul. Programul întreabă numele, vârsta și un lucru preferat. Minim înseamnă un mesaj cu numele și vârsta. Complet înseamnă și un calcul, și un mesaj final.
+
+Recapitulare. Input afișează întrebarea și dă răspunsul ca text. Pentru numere folosim int de input sau float de input. Răspunsul se scrie în Shell, urmat de Enter. Litere unde se cere număr dau Value Error.
+
+Succes la interviu.

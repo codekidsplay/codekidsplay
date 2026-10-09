@@ -1,0 +1,29 @@
+Lecția unu din Modulul patru. Fereastra Pygame.
+
+Astăzi începem să facem jocuri adevărate cu Pygame. Proiectul se numește Ecranul meu de start. Fișierul se numește: Prenume, linie jos, Nume, linie jos, P patru, linie jos, L unu, punct P Y.
+
+Obiectivul. La final ai Pygame instalat, deschizi o fereastră, o ții deschisă cu bucla jocului, o închizi corect, cu butonul X sau cu tasta Escape, schimbi culoarea fundalului, citești mărimea ferestrei și scrii text pe ecran. Minim: o fereastră care se deschide, are o culoare și se închide corect. Complet: minim, plus schimbare de culoare la tastă și la click, text și un ecran de start.
+
+Primul pas. Instalăm Pygame. Pygame nu vine odată cu Python, deci îl instalăm o singură dată, din Thonny, din meniul pentru pachete. Apoi verifici că funcționează, cu un mic program.
+
+Al doilea pas. Prima fereastră. Faci import pygame, pornești cu init și creezi fereastra cu set mode, dându-i lățimea și înălțimea. Fereastra rămâne deschisă cu bucla jocului, un while care repetă: citește evenimentele, actualizează, desenează, apoi flip, ca să se vadă desenul. La final pui quit.
+
+Al treilea pas. Culori. Culoarea este un grup de trei numere, roșu, verde, albastru, fiecare de la zero la două sute cincizeci și cinci. Alb este două sute cincizeci și cinci de trei ori, negru este zero de trei ori.
+
+Al patrulea pas. Evenimente. Când închizi fereastra apare evenimentul QUIT. Când apeși o tastă apare KEYDOWN, iar la click apare MOUSEBUTTONDOWN. Poți închide jocul și cu tasta Escape.
+
+Al cincilea pas. Mărime și viteză. Poți afla cât este de mare fereastra. Cu un ceas limitezi jocul la un număr de cadre pe secundă, de exemplu șaizeci.
+
+Al șaselea pas. Interacțiuni simple. Culoarea se schimbă la o tastă sau la click.
+
+Al șaptelea pas. Text pe ecran. Alegi un font, creezi textul și îl lipești pe ecran.
+
+Al optulea pas. Mini-proiect. Ecranul meu de start, cu titlul jocului.
+
+Greșeli frecvente. Fereastra nu se închide: nu tratezi evenimentul QUIT. Ecranul rămâne negru: ai uitat flip. Pygame nu se găsește: nu este instalat. Jocul merge prea repede: lipsește limitarea cadrelor pe secundă.
+
+Proiectul de azi. Ecranul meu de start. Minim înseamnă o fereastră cu culoare. Complet înseamnă interacțiuni și text.
+
+Recapitulare. Structura unui joc este init, apoi bucla cu evenimente, actualizare, desenare și flip, apoi quit. Set mode creează fereastra. Culoarea este un grup de trei numere. QUIT apare când închizi fereastra.
+
+Succes cu prima fereastră.

@@ -1,0 +1,21 @@
+Lecția nouă din Modulul patru. Proiect final: jocul meu.
+
+Astăzi construiești un joc mare din piese mici, apoi începi propriul tău joc. Proiectul se numește Apărătorii galaxiei, iar apoi Jocul meu. Fișierul se numește: Prenume, linie jos, Nume, linie jos, P patru, linie jos, L nouă, punct P Y.
+
+Obiectivul. La final ai înțeles cum se construiește un joc din piese, clase și funcții, ai scris un joc cu gloanțe, obstacole, explozii, meniu, niveluri și record, și ai început propriul tău joc. Minim: un joc cu meniu, scor, vieți și ecran de final. Complet: minim, plus clase, niveluri, explozii și record.
+
+Primul pas. Piesele jocului. Scheletul unui joc: meniu, joc, pauză și final. Cerul cu stele care se mișcă. Gloanțele, cu ritm de tragere. Meteoriții, care cad din cer.
+
+Al doilea pas. Lovituri, explozii, butoane. Un glonț care lovește un meteorit îl distruge. Exploziile se fac cu particule, bucățele mici care zboară în toate părțile. Butoanele se fac cu collidepoint. Dificultatea crește cu nivelul: pauza dintre meteoriți se micșorează. Scutul ține doar un timp limitat.
+
+Al treilea pas. Jocul întreg. Pui totul laolaltă. Starea jocului este într-un dicționar. Clasele descriu jucătorul, gloanțele, meteoriții și exploziile.
+
+Al patrulea pas. Jocul meu. Faci un joc al tău, cu meniu, scor, vieți, ecran final, cel puțin o clasă și un record salvat.
+
+Greșeli frecvente. Eroare când ștergi din listă în timp ce o parcurgi: parcurgi o copie, cu lista între paranteze pătrate cu două puncte. Scutul nu se termină: nu verifici timpul. Jocul se blochează la meniu: butoanele nu verifică click-ul.
+
+Proiectul de azi. Jocul meu. Minim înseamnă meniu, scor, vieți și final. Complet înseamnă clase, niveluri, explozii și record.
+
+Recapitulare. Un joc mare se construiește din piese mici: clase, funcții, un dicționar de stare. Stările organizează ecranele. Scoatem elemente din liste parcurgând o copie. Ritmul de tragere și scutul folosesc timpul, cu get ticks.
+
+Succes cu jocul tău.

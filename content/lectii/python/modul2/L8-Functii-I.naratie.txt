@@ -1,0 +1,25 @@
+Lecția opt din Modulul doi. Funcții, prima parte.
+
+Astăzi înveți să-ți faci propriile comenzi. Proiectul se numește Cutia cu unelte. Fișierul se numește: Prenume, linie jos, Nume, linie jos, P doi, linie jos, L opt, punct P Y.
+
+Obiectivul. La final definești funcții cu def, le apelezi, le dai parametri, folosești return pentru a primi un rezultat, înțelegi diferența dintre print și return și lucrezi cu valori implicite. Minim: două funcții, una fără parametri și una cu un parametru. Complet: minim, plus o funcție care returnează un rezultat și un program cu cel puțin cinci funcții.
+
+Primul pas. Prima funcție. O funcție este un grup de instrucțiuni cu un nume. O definești o singură dată, cu def, apoi o apelezi, adică o chemi, de câte ori vrei. Scrii def, numele, paranteze, două puncte, iar sub ea, indentat, ce face.
+
+Al doilea pas. Parametri. Un parametru este o informație pe care funcția o primește. De exemplu, o funcție de salut primește un nume. Poți avea mai mulți parametri, de exemplu nume, vârstă și oraș, și îi dai valorile în ordine.
+
+Al treilea pas. Return. Return trimite o valoare înapoi celui care a chemat funcția și oprește funcția. Rezultatul îl poți pune într-o variabilă, aduna sau folosi ca intrare pentru altă funcție. Print doar arată ceva pe ecran, iar funcția nu dă nimic înapoi. O funcție poate returna adevărat sau fals, text, numere sau liste.
+
+Al patrulea pas. Valori implicite și variabile locale. Un parametru poate avea o valoare implicită, folosită dacă nu îi dai altă valoare. O variabilă creată în funcție este locală: există doar în funcție.
+
+Al cincilea pas. O funcție utilă. Un chenar pentru orice text, cu simbol la alegere.
+
+Al șaselea pas. Mini-proiect. Cutia cu unelte: cel puțin cinci funcții, de exemplu aria unui dreptunghi.
+
+Greșeli frecvente. Name Error: ai apelat funcția înainte să o definești. Nu se întâmplă nimic: ai definit funcția, dar nu ai apelat-o. Type Error missing argument: ai uitat un parametru la apel. Print în loc de return: rezultatul nu se poate folosi mai departe.
+
+Proiectul de azi. Cutia cu unelte. Minim înseamnă două funcții. Complet înseamnă cinci funcții, cu return.
+
+Recapitulare. Def definește o funcție, numele cu paranteze o apelează. Funcția trebuie definită înainte de apel. Parametrii primesc valori la apel. Return trimite o valoare înapoi și oprește funcția. Print arată, return dă înapoi. Un parametru poate avea valoare implicită.
+
+Succes cu funcțiile.

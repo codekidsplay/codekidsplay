@@ -1,0 +1,27 @@
+Lecția doi. Variabile, cutii cu nume.
+
+Astăzi înveți cum face un program să țină minte lucruri: numere, nume, scoruri. Folosim variabile, adică cutii cu etichetă. Proiectul se numește Fișa de jucător. Fișierul se numește: Prenume, linie jos, Nume, linie jos, P unu, linie jos, L doi, punct P Y.
+
+Obiectivul. La final știi să creezi o variabilă cu semnul egal, să o afișezi, să îi schimbi valoarea, să calculezi cu ea și să alegi nume bune. Minim: un program cu trei variabile, nume, vârstă și scor, afișate cu print. Complet: minim, plus scorul modificat în program, un calcul cu variabile și nume alese după regulile corecte.
+
+De ce contează. Într-un joc, scorul se schimbă tot timpul. Programul trebuie să îl țină undeva. Locul acela este o variabilă. Fără variabile nu ai jocuri, aplicații sau calculatoare.
+
+Primul pas. Ce este o variabilă. Imaginează-ți o cutie cu o etichetă. Pe etichetă scrie un nume, de exemplu scor, iar în cutie pui o valoare, de exemplu zero. Oricând întrebi programul cât e în scor, el îți răspunde.
+
+Al doilea pas. Prima variabilă. Scrii numele variabilei, semnul egal și valoarea. Semnul egal înseamnă pune în cutie, iar variabila este mereu în stânga. Apoi o afișezi cu print, fără ghilimele. O variabilă poate ține text sau număr.
+
+Al treilea pas. Schimbăm valoarea. Când pui o valoare nouă în cutie, cea veche dispare. De aceea se numesc variabile: valoarea lor poate varia.
+
+Al patrulea pas. Calcule cu variabile. De exemplu aria unui dreptunghi se calculează înmulțind lungimea cu lățimea. Linia scor egal scor plus cinci se citește așa: ia ce este în scor, adaugă cinci și pune rezultatul înapoi în scor. Este linia cea mai folosită în jocuri. Linia b egal a pune în b o copie a valorii din a, iar cutiile rămân independente.
+
+Al cincilea pas. Schimbăm conținutul a două cutii. Ca să schimbi conținutul a două pahare, apă și suc, ai nevoie de un al treilea pahar. La fel, folosești o cutie ajutor.
+
+Al șaselea pas. Nume bune. Literele mari și mici contează: scor și Scor sunt variabile diferite. Folosești litere mici, linie jos între cuvinte, fără spații și fără cifră la început. Poți pune aceeași valoare în mai multe cutii deodată.
+
+Greșeli frecvente. Name Error: ai folosit variabila înainte să o creezi sau ai scris-o altfel. Syntax Error: ai pus spațiu în numele variabilei, sau numele începe cu cifră. Se afișează numele în loc de valoare: ai pus ghilimele în jurul variabilei.
+
+Proiectul de azi. Fișa de jucător, cu nume, nivel, puncte și vieți. Minim înseamnă trei variabile afișate. Complet înseamnă și modificarea scorului și un calcul.
+
+Recapitulare. O variabilă este o cutie cu nume în care păstrezi o valoare. Semnul egal înseamnă pune în cutie. Valoarea se poate schimba, iar cea veche dispare. Plus egal și minus egal sunt prescurtări. Scor și scor mic sunt variabile diferite.
+
+Succes cu fișa de jucător.

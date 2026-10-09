@@ -1,0 +1,25 @@
+Lecția șapte din Modulul doi. Dicționare, agenda mea.
+
+Astăzi înveți să păstrezi date cu etichete, ca într-o agendă. Proiectul se numește Agenda mea. Fișierul se numește: Prenume, linie jos, Nume, linie jos, P doi, linie jos, L șapte, punct P Y.
+
+Obiectivul. La final creezi dicționare, citești, adaugi, modifici și ștergi valori, verifici dacă o cheie există, parcurgi un dicționar cu for și folosești get, items, keys și values. Minim: un dicționar cu datele tale, nume, vârstă, clasă și hobby, afișat. Complet: minim, plus o agendă cu meniu: adaugă, caută, arată tot, ieșire.
+
+Primul pas. Ce este un dicționar. Un dicționar ține perechi cheie și valoare. Cheia este eticheta, iar valoarea este ce se află în spatele ei. Se scrie între acolade. De exemplu, cheia nume are valoarea Ana, iar cheia vârstă are valoarea zece. Citești cu cheia între paranteze pătrate.
+
+Al doilea pas. Adăugăm și schimbăm. Dacă scrii o cheie nouă și îi dai o valoare, o adaugi. Dacă scrii o cheie existentă, îi schimbi valoarea.
+
+Al treilea pas. Căutăm în dicționar. Cu in verifici dacă o cheie există. Get citește o valoare fără eroare dacă lipsește cheia și îți lasă să alegi o valoare implicită. Pentru ștergere folosești del sau pop.
+
+Al patrulea pas. Parcurgem un dicționar. Keys dă cheile, values dă valorile, items dă perechile. Cu for parcurgi perechile, de exemplu produs și preț.
+
+Al cincilea pas. Folosiri practice. Un dicționar poate înlocui mai multe if-uri, de exemplu numărul zilei devine numele zilei. Poți construi un dicționar din input. Poți număra literele dintr-un text: cheia este litera, valoarea este de câte ori apare.
+
+Al șaselea pas. Mini-proiect. Agenda mea, cu meniu care se repetă: adaugă un contact, caută, arată tot, ieșire.
+
+Greșeli frecvente. Key Error: cheia nu există, deci verifică cu in sau folosește get. Syntax Error: dicționarul se scrie cu acolade, nu cu paranteze rotunde. Attribute Error: add nu există la dicționare, scrii dicționar, cheie, egal valoare.
+
+Proiectul de azi. Agenda mea. Minim înseamnă un dicționar cu datele tale. Complet înseamnă agendă cu meniu.
+
+Recapitulare. Un dicționar ține perechi cheie și valoare, între acolade. Citești cu cheia în paranteze pătrate. Get nu dă eroare dacă lipsește cheia. In verifică existența cheii. Del și pop șterg. Keys, values și items se parcurg cu for.
+
+Succes cu agenda.

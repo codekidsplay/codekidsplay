@@ -1,0 +1,25 @@
+Lecția opt din Modulul trei. Cursa țestoaselor.
+
+Astăzi organizezi o cursă între mai multe țestoase. Proiectul se numește Cursa țestoaselor. Fișierul se numește: Prenume, linie jos, Nume, linie jos, P trei, linie jos, L opt, punct P Y.
+
+Obiectivul. La final creezi mai multe țestoase, le ții într-o listă, le muți cu pași aleatori, oprești cursa când una trece de linia de sosire, afli câștigătoarea, faci un clasament și construiești o cursă cu pariu. Minim: două țestoase care aleargă până la linia de sosire și un câștigător afișat. Complet: minim, plus cinci țestoase, clasament și pariu.
+
+Primul pas. Țestoase la start. Fiecare țestoasă este un obiect separat, cu numele ei, culoarea ei și poziția ei. Pui două țestoase, una roșie și una albastră, una deasupra celeilalte, în partea stângă. Linia de sosire este o linie trasă în partea dreaptă. O țestoasă aleargă cu pași aleatori, de la unu la cincisprezece.
+
+Al doilea pas. Cursa cu două țestoase. Cu while, cursa continuă cât timp nici una nu a trecut de linia de final. La fiecare pas, fiecare țestoasă merge o distanță aleatorie. Câștigă prima care ajunge.
+
+Al treilea pas. Mai multe țestoase: lista. Cinci țestoase într-o listă, cu culori diferite. Le muți pe toate cu o buclă for, la fiecare pas.
+
+Al patrulea pas. Funcții: câștigătorul și clasamentul. O funcție află cine este cel mai departe, cu max și index. Altă funcție sortează pozițiile și afișează clasamentul.
+
+Al cincilea pas. Pariul. Alegi pe care țestoasă pariezi, iar la final programul îți spune dacă ai câștigat.
+
+Al șaselea pas. Mini-proiect. Cursa țestoaselor, completă, cu start, cursă, câștigător, clasament și pariu.
+
+Greșeli frecvente. Țestoasele merg la fel: lipsește random. Cursa nu se oprește: condiția while este greșită. Clasamentul este greșit: pozițiile și numele nu sunt în aceeași ordine.
+
+Proiectul de azi. Cursa țestoaselor. Minim înseamnă două țestoase și un câștigător. Complet înseamnă cinci țestoase, clasament și pariu.
+
+Recapitulare. Fiecare țestoasă este un obiect separat. Mai multe țestoase se păstrează într-o listă. Cursa merge până când condiția de oprire devine adevărată. Constantele se scriu cu litere mari. Max și index ajută la câștigător.
+
+Succes la cursă.

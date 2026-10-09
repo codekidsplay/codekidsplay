@@ -1,0 +1,23 @@
+Lecția doi din Modulul trei. Forme și culori.
+
+Astăzi desenezi cu culori: triunghiuri, poligoane, cercuri și forme umplute. Proiectul se numește Omul de zăpadă. Fișierul se numește: Prenume, linie jos, Nume, linie jos, P trei, linie jos, L doi, punct P Y.
+
+Obiectivul. La final schimbi culoarea și grosimea liniei, schimbi fundalul, desenezi triunghiuri, poligoane și cercuri, umpli forme cu culoare și folosești culori scrise ca nume sau ca cod. Minim: un triunghi și un cerc colorate. Complet: minim, plus o formă umplută, un poligon cu număr de laturi la alegere și un om de zăpadă.
+
+Primul pas. Culoare și fundal. Cu color alegi culoarea, iar cu pensize grosimea liniei. Poți avea o linie roșie și groasă și apoi una albastră și subțire. Cu screen punct bgcolor schimbi fundalul, iar cu title schimbi titlul ferestrei.
+
+Al doilea pas. Triunghi și umplere. Triunghiul are trei laturi egale și rotiri de o sută douăzeci de grade. Ca să umpli o formă, scrii begin fill înainte de desen și end fill după. Color primește două culori: prima pentru contur, a doua pentru umplere.
+
+Al treilea pas. Cercuri și poligoane. Circle de rază desenează un cerc. Cercul apare deasupra punctului de plecare. Orice poligon cu n laturi se desenează cu rotiri de trei sute șaizeci împărțit la n grade. Dot desenează un punct.
+
+Al patrulea pas. Culori mai multe. Pui culorile într-o listă și le alegi pe rând. Culorile pot fi nume, de exemplu red sau blue, sau coduri, de exemplu un diez urmat de șase caractere.
+
+Al cincilea pas. Semafor și om de zăpadă. Semaforul are trei cercuri umplute pe un fundal gri. Omul de zăpadă are trei cercuri albe, unul peste altul, plus ochi și nas.
+
+Greșeli frecvente. Forma nu se umple: lipsește end fill sau culoarea de umplere. Cercul apare în alt loc: țestoasa pornește din centru, iar cercul apare deasupra ei. Culoarea nu este recunoscută: numele este scris greșit sau fără ghilimele.
+
+Proiectul de azi. Omul de zăpadă. Minim înseamnă un triunghi și un cerc. Complet înseamnă formă umplută, poligon și omul de zăpadă.
+
+Recapitulare. Color setează culorile, pensize grosimea. Begin fill și end fill umplu forma. Un poligon cu n laturi are rotiri de trei sute șaizeci împărțit la n. Circle desenează cerc, dot desenează un punct. Culorile pot fi nume sau coduri.
+
+Succes cu omul de zăpadă.

@@ -1,0 +1,23 @@
+Lecția nouă. Random, zaruri și noroc.
+
+Jocurile nu ar fi distractive dacă ar fi mereu la fel. Azi aduci norocul în programe: arunci zaruri, alegi la întâmplare și faci jocuri în care nimeni nu știe ce urmează. Proiectul se numește Oracolul. Fișierul se numește: Prenume, linie jos, Nume, linie jos, P unu, linie jos, L nouă, punct P Y.
+
+Obiectivul. La final folosești import, random punct randint, random punct choice și random punct random, pui valori într-o listă simplă și combini norocul cu if. Minim: un program care aruncă un zar și afișează rezultatul cu un mesaj. Complet: minim, plus două zaruri, o monedă, alegerea unui element dintr-o listă și un joc de ghicit.
+
+De ce contează. Aproape orice joc folosește numere aleatoare: zarurile din jocurile de societate, locul în care apare o monedă, ce inamic vine acum. Aceeași tehnică stă în spatele mesajelor surpriză din aplicații.
+
+Primul pas. Modulul random. Python vine cu multe module: colecții de comenzi gata făcute pe un subiect. Ca să le folosești, scrii la începutul programului import random. Apoi apelezi comenzile cu numele modulului. Randint de unu și șase aruncă un zar, iar capetele sunt incluse. Cu două zaruri aduni rezultatele. Random punct uniform dă numere cu zecimale.
+
+Al doilea pas. Liste simple și choice. O listă ține mai multe lucruri în aceeași cutie. Le pui între paranteze pătrate, separate prin virgulă. Primul element are indexul zero, ca la text. Random punct choice alege la întâmplare un element: o culoare dintr-o listă sau cap sau pajură, pentru monedă.
+
+Al treilea pas. Norocul și deciziile. Combini randint cu if: zarul norocos, ghicește numărul, cât de norocos ești azi. La ghicit, programul alege un număr secret, iar tu încerci o dată.
+
+Al patrulea pas. Mini-proiecte. Piatră, foarfecă, hârtie, în jumătate de variantă, în care calculatorul alege la întâmplare. Și Oracolul: pui o întrebare cu răspuns da sau nu, iar programul alege un răspuns.
+
+Greșeli frecvente. Name Error random: ai uitat import random. Attribute Error: choice se scrie cu litere mici. Programul dă mereu același rezultat: ai pus un număr fix, nu random. Randint de șase dă eroare: îi trebuie două capete, unu și șase. Index Error: ai cerut un element care nu există în listă.
+
+Proiectul de azi. Oracolul. Minim înseamnă un zar cu mesaj. Complet înseamnă două zaruri, monedă, listă și un joc de ghicit.
+
+Recapitulare. Un modul este o colecție de comenzi, adus cu import. Randint dă un întreg, cu capetele incluse. O listă se scrie între paranteze pătrate. Choice alege un element. Norocul se combină cu if pentru jocuri.
+
+Succes cu oracolul.

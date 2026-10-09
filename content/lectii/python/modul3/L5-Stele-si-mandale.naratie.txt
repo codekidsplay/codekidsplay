@@ -1,0 +1,23 @@
+Lecția cinci din Modulul trei. Stele și mandale.
+
+Astăzi desenezi stele și mandale, desene rotunde și simetrice. Proiectul se numește Mandala mea. Fișierul se numește: Prenume, linie jos, Nume, linie jos, P trei, linie jos, L cinci, punct P Y.
+
+Obiectivul. La final desenezi o stea cu cinci colțuri, o generalizezi pentru orice număr impar de colțuri, pui desenul într-o funcție, aranjezi forme în cerc în jurul unui centru și construiești o mandală cu mai multe inele. Minim: steaua cu cinci colțuri și o funcție stea. Complet: minim, plus stele cu alt număr de colțuri, un cer înstelat și mandala.
+
+Primul pas. Steaua cu cinci colțuri. Se desenează dintr-o singură linie continuă: mergi înainte și te rotești cu o sută patruzeci și patru de grade, de cinci ori. De ce o sută patruzeci și patru? Pentru că rotirea totală, cinci ori o sută patruzeci și patru, este șapte sute douăzeci, adică exact două ture complete. Un desen se închide când rotirea totală este un număr întreg de ture. Steaua poate fi și umplută cu culoare.
+
+Al doilea pas. Orice număr de colțuri. Pentru un număr impar de colțuri n, unghiul este o sută optzeci minus o sută optzeci împărțit la n. Așa poți desena stele cu cinci, șapte sau nouă colțuri.
+
+Al treilea pas. Cerul înstelat. Stele la întâmplare, cu poziție, mărime și culoare alese cu random.
+
+Al patrulea pas. Mandale. O mandală este un desen rotund, simetric. Rețeta este mereu aceeași: desenezi o formă, o rotești cu trei sute șaizeci împărțit la n grade și o repeți de n ori. Pentru stele în cerc, mergi o distanță, desenezi, te întorci, apoi rotești. Poți face un inel de stele cu o funcție sau o spirală de stele.
+
+Al cincilea pas. Mandala completă. Inele diferite, cu stele de mărimi și culori diferite, pe fundal albastru închis.
+
+Greșeli frecvente. Steaua nu se închide: unghiul nu este cel potrivit. Stelele nu sunt în cerc: ai uitat să te întorci în centru înainte de rotire. Desenul este lent: scazi numărul de forme sau crești viteza.
+
+Proiectul de azi. Mandala mea. Minim înseamnă steaua și funcția. Complet înseamnă cer, inele și mandala.
+
+Recapitulare. Steaua cu cinci colțuri: forward și right o sută patruzeci și patru, de cinci ori. Pentru n colțuri impare, unghiul este o sută optzeci minus o sută optzeci împărțit la n. Formele în cerc se rotesc cu trei sute șaizeci împărțit la număr. Mandala are mai multe inele.
+
+Succes cu mandala.

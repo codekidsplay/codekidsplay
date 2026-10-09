@@ -1,0 +1,23 @@
+Lecția patru din Modulul patru. Tastatura: controlăm personajul.
+
+Astăzi comanzi un personaj de la tastatură. Proiectul se numește Nava mea. Fișierul se numește: Prenume, linie jos, Nume, linie jos, P patru, linie jos, L patru, punct P Y.
+
+Obiectivul. La final citești tastatura cu evenimente și cu get pressed, miști un personaj în patru direcții, îl ții în fereastră, îl faci să sară și să tragă, folosești o pauză între focuri și construiești o navă spațială controlată de tine. Minim: un personaj care se mișcă cu săgețile. Complet: minim, plus sărituri, gloanțe, pauză între focuri și nava.
+
+Primul pas. Cele două moduri de a citi tastatura. KEYDOWN apare o singură dată, la apăsare: personajul face un pas la fiecare apăsare. Get pressed spune ce taste sunt apăsate acum: personajul merge continuu cât ții tasta. Poți folosi săgețile sau literele W, A, S, D.
+
+Al doilea pas. Margini, viteză, direcție. Metoda clamp ip ține personajul în ecran. Cu Shift apeși turbo și mergi mai repede. Personajul se întoarce în direcția în care merge.
+
+Al treilea pas. Săritura. La apăsare, personajul primește o viteză în sus, iar gravitația îl trage înapoi la fiecare cadru.
+
+Al patrulea pas. Tragerea. Fiecare tragere creează un glonț, păstrat într-o listă, care se mișcă la fiecare cadru. Pentru ca nava să nu tragă mult prea repede, folosim o pauză, numită cooldown: tragi doar dacă a trecut destul timp de la ultimul foc.
+
+Al cincilea pas. Mini-proiect. Nava mea: se mișcă în patru direcții, trage și rămâne în fereastră.
+
+Greșeli frecvente. Personajul se mișcă o singură dată: ai folosit KEYDOWN în loc de get pressed. Iese din ecran: lipsește clamp ip. Gloanțele se adună în listă și încetinesc jocul: nu le ștergi când ies din ecran. Trage prea repede: lipsește pauza.
+
+Proiectul de azi. Nava mea. Minim înseamnă mișcare. Complet înseamnă sărituri, gloanțe și pauză.
+
+Recapitulare. KEYDOWN dă o singură dată, get pressed dă cât timp ții tasta. Clamp ip ține personajul în ecran. Săritura înseamnă o viteză în sus și gravitație. Pauza între focuri se face cu timpul.
+
+Succes cu nava.

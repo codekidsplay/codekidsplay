@@ -1,0 +1,23 @@
+Lecția trei. Numere și text.
+
+Astăzi înveți tipurile de date: cum lipești texte, cum le repeți și cum transformi un tip în altul. Proiectul se numește Fișa mea de tipuri. Fișierul se numește: Prenume, linie jos, Nume, linie jos, P unu, linie jos, L trei, punct P Y.
+
+Obiectivul. La final cunoști tipurile int, float, str și bool, folosești type și len, lipești texte cu plus, le repeți cu steluță și transformi valorile cu int, float și str. Minim: un program care afișează tipul a patru valori diferite și lipește două texte. Complet: minim, plus conversii între tipuri, len pe numele tău și un text pe mai multe rânduri.
+
+De ce contează. Un calculator nu se încurcă între cinci mere și cinci plus cinci. Dar un program trebuie să știe dacă un lucru este număr sau text: cu numere calculezi, cu texte scrii mesaje. Cele mai multe greșeli ale începătorilor vin din amestecarea lor.
+
+Primul pas. Tipuri de date. Fiecare valoare are un tip. Int este un număr întreg, float este un număr cu virgulă, str este text, iar bool este adevărat sau fals. Cu funcția type afli ce tip are o valoare. La numerele cu virgulă, Python folosește punctul, de exemplu doi virgulă cinci se scrie doi punct cinci. Un întreg plus un float dă un float.
+
+Al doilea pas. Lucrăm cu text. Plus lipește texte, deci prenume plus un spațiu plus nume dă numele întreg. Steluța repetă un text de câte ori vrei. Len numără caracterele unui text.
+
+Al treilea pas. Transformăm tipurile. Cu int, float și str schimbi un tip în altul. Eroarea clasică: nu poți lipi un text cu un număr. Dacă scrii Am, plus vârsta, plus ani, Python dă Type Error. Soluția este str de vârstă.
+
+Al patrulea pas. Adevărat sau fals. Rezultatul unei comparații este True sau False. Le vei folosi mult la lecția despre if. Un text pe mai multe rânduri se scrie cu trei ghilimele la început și trei la sfârșit.
+
+Greșeli frecvente. Type Error: ai lipit un text cu un număr. Zece împărțit la doi dă cinci virgulă zero, nu cinci, pentru că împărțirea dă mereu float. Doi plus trei, scrise ca texte, dau douăzeci și trei, pentru că textele se lipesc. Value Error: int de abc nu poate transforma litere în număr.
+
+Proiectul de azi. Fișa mea de tipuri. Minim înseamnă tipurile a patru valori. Complet înseamnă conversii, len și un text pe mai multe rânduri.
+
+Recapitulare. Tipurile de bază sunt int, float, str și bool. Type arată tipul. Plus lipește texte, steluța le repetă, len le numără. Int, float și str transformă valorile. Nu poți lipi un text cu un număr fără conversie.
+
+Succes cu tipurile.

@@ -1,0 +1,25 @@
+Lecția trei din Modulul trei. Spirale și modele cu bucle.
+
+Astăzi folosești variabila i din bucla for ca să faci desene frumoase: spirale, rozete și galaxii. Proiectul se numește Galaxia mea. Fișierul se numește: Prenume, linie jos, Nume, linie jos, P trei, linie jos, L trei, punct P Y.
+
+Obiectivul. La final folosești i ca să schimbi lungimea, culoarea și grosimea liniei, desenezi spirale și rozete, folosești o buclă în altă buclă și construiești un desen cu mai multe brațe colorate. Minim: o spirală pătrată și o rozetă din cercuri. Complet: minim, plus o spirală colorată, o grilă și o galaxie.
+
+Primul pas. Spirale. Ideea este simplă: la fiecare pas, țestoasa merge mai mult decât înainte și se rotește. Variabila i crește, deci și drumul crește. Cu rotire de nouăzeci de grade obții o spirală pătrată. Schimbi unghiul și obții altă formă: o sută douăzeci de grade dă o spirală triunghiulară.
+
+Al doilea pas. Spirala colorată. Pui culorile într-o listă și alegi culoarea cu restul împărțirii lui i la numărul de culori. Așa parcurgi lista în cerc.
+
+Al treilea pas. Cercuri și rozete. Cercuri cu raze diferite, unul în interiorul celuilalt. Rozeta: aceeași formă repetată și rotită cu trei sute șaizeci împărțit la numărul de repetări. De exemplu, treizeci și șase de cercuri, rotite cu câte zece grade, dau o rozetă. La fel pătratele rotite dau o floare geometrică.
+
+Al patrulea pas. Buclă în buclă. Faci o grilă de puncte: bucla de afară alege rândul, cea din interior alege coloana. Cu un if și restul împărțirii colorezi alternativ.
+
+Al cincilea pas. Soarele și spirala groasă. Soarele are treizeci și șase de raze portocalii și un disc auriu. La spirala groasă, linia crește odată cu i.
+
+Al șaselea pas. Mini-proiect. Galaxia: o spirală cu mai multe brațe, fiecare cu altă culoare.
+
+Greșeli frecvente. Spirala nu se desface: nu mărești lungimea cu i. Culorile nu se schimbă: nu folosești restul împărțirii. Desenul durează mult: crești viteza sau scazi numărul de repetări.
+
+Proiectul de azi. Galaxia mea. Minim înseamnă spirală și rozetă. Complet înseamnă și culori, grilă și galaxie.
+
+Recapitulare. Variabila i controlează lungimea, culoarea și grosimea. Spirala înseamnă pași tot mai lungi și o rotire constantă. I procent n parcurge o listă în cerc. Rozeta este aceeași formă rotită cu trei sute șaizeci împărțit la repetări.
+
+Succes cu galaxia.

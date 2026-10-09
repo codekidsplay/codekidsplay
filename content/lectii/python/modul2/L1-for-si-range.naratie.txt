@@ -1,0 +1,23 @@
+Lecția unu din Modulul doi. For și range.
+
+Astăzi înveți să repeți lucruri fără să le scrii de mai multe ori. Proiectul se numește Numărătoarea rachetei. Fișierul se numește: Prenume, linie jos, Nume, linie jos, P doi, linie jos, L unu, punct P Y.
+
+Obiectivul. La final folosești for cu range, cu unul, două sau trei numere, parcurgi un text și o listă, calculezi sume cu o buclă și afișezi pe același rând cu end. Minim: o buclă for care afișează numerele de la unu la zece. Complet: minim, plus o numărătoare inversă, o sumă calculată cu buclă și un mic desen cu steluțe.
+
+Primul pas. Bucla for. Dacă vrei să afișezi Salut de cinci ori, ai putea scrie cinci linii print. Dar dacă ți-ar trebui cinci sute? Folosim o buclă. Scrii for i in range de cinci, două puncte, iar sub el, indentat cu patru spații, ce se repetă. Atenție: range de cinci dă numerele zero, unu, doi, trei, patru. Începe de la zero și se oprește înainte de cinci. Sunt tot cinci numere, deci bucla se repetă de cinci ori.
+
+Al doilea pas. Range cu mai multe numere. Range poate primi unu, două sau trei numere. Cu două numere, de exemplu unu și șase, obții de la unu la cinci. Cu trei numere, al treilea este pasul: de la zece la zero cu pasul minus trei numără invers din trei în trei.
+
+Al treilea pas. Bucla în acțiune. Suma numerelor de la unu la zece: pornești cu total egal zero și adaugi fiecare număr. După buclă, total conține suma. Este una dintre cele mai folosite scheme din programare. For merge și pe un text, litera cu litera, și pe o listă, element cu element.
+
+Al patrulea pas. Buclă și input. Poți repeta de câte ori vrea utilizatorul. Numărătoarea inversă folosește un pas negativ. Cu end egal spațiu, afișezi mai multe valori pe același rând.
+
+Al cincilea pas. Mini-proiect. Numărătoarea rachetei: citești de la ce număr să numere, de exemplu zece, și numeri invers până la decolare.
+
+Greșeli frecvente. Syntax Error: ai uitat cele două puncte după for. Indentation Error: corpul buclei nu este indentat. Bucla face cu unul mai puțin decât voiai: range de cinci se oprește la patru. Dacă vrei de la unu la cinci, scrii range de unu la șase.
+
+Proiectul de azi. Numărătoarea rachetei. Minim înseamnă numerele de la unu la zece. Complet înseamnă și numărătoare inversă, sumă și desen.
+
+Recapitulare. For repetă blocul indentat. Range de n dă de la zero la n minus unu. Pasul negativ numără invers. For merge și pe texte, și pe liste. Schema sumei: total egal zero, apoi total plus egal n în buclă. End schimbă ce vine după print.
+
+Succes cu bucla.

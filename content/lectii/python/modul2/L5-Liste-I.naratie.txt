@@ -1,0 +1,25 @@
+Lecția cinci din Modulul doi. Liste, prima parte.
+
+Astăzi înveți să ții mai multe lucruri într-o singură cutie. Proiectul se numește Lista de cumpărături. Fișierul se numește: Prenume, linie jos, Nume, linie jos, P doi, linie jos, L cinci, punct P Y.
+
+Obiectivul. La final creezi liste, citești și schimbi elemente cu indexul, adaugi cu append și insert, ștergi cu remove și pop, verifici cu in, parcurgi o listă cu for și calculezi suma, minimul și maximul. Minim: o listă cu cinci elemente, afișată și parcursă cu for. Complet: minim, plus o listă de cumpărături cu meniu care se repetă.
+
+Primul pas. Ce este o listă. O listă este o cutie cu mai multe lucruri, în ordine, fiecare cu un număr de ordine, numit index, care începe de la zero. Se scrie între paranteze pătrate, cu elementele separate prin virgulă. Primul element este la indexul zero, iar ultimul la minus unu. Poți citi un element și poți să îl schimbi.
+
+Al doilea pas. Adăugăm și ștergem. Append adaugă la sfârșit. Insert adaugă pe o poziție aleasă. Remove șterge după valoare. Pop șterge după poziție și îți dă elementul.
+
+Al treilea pas. Căutăm și parcurgem. Cu in verifici dacă un element este în listă, cu not in dacă nu este. Cu for parcurgi lista element cu element.
+
+Al patrulea pas. Liste de numere și felii. Cu sum, min și max calculezi suma, cel mai mic și cel mai mare număr. Cu felii, scrise cu două puncte între paranteze pătrate, tai o bucată din listă, de exemplu primele trei zile ale săptămânii.
+
+Al cincilea pas. Lista din input. Colectezi cuvinte într-o buclă, până scrii gata.
+
+Al șaselea pas. Mini-proiect. Lista de cumpărături, cu un meniu care se repetă: adaugă, arată lista, ieșire.
+
+Greșeli frecvente. Index Error: index prea mare sau listă goală, iar ultimul index este lungimea minus unu. Attribute Error: add nu există la liste, folosești append. Value Error la remove: elementul nu este în listă.
+
+Proiectul de azi. Lista de cumpărături. Minim înseamnă o listă parcursă cu for. Complet înseamnă meniu cu adăugare, afișare și ștergere.
+
+Recapitulare. O listă ține mai multe valori, în ordine, între paranteze pătrate. Indexul începe de la zero, iar minus unu este ultimul. Append adaugă la sfârșit, insert pe o poziție. Remove șterge după valoare, pop după poziție. In verifică dacă un element există.
+
+Succes cu lista.

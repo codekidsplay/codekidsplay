@@ -1,0 +1,23 @@
+Lecția zece din Modulul trei. Proiect: galeria mea de artă.
+
+Aceasta este lecția de final a modulului. Faci o galerie interactivă cu opere create de tine. Proiectul se numește Galeria mea de artă. Fișierul se numește: Prenume, linie jos, Nume, linie jos, P trei, linie jos, L zece, punct P Y.
+
+Obiectivul. La final ai o galerie interactivă cu cel puțin cinci opere, un meniu pe ecran, taste pentru fiecare operă, ștergerea ecranului și semnătura ta pe fiecare desen. Minim: trei opere care se schimbă cu tastele unu, doi și trei. Complet: minim, plus cinci opere, meniu, semnătură și o operă proprie.
+
+Primul pas. O operă este o funcție. Fiecare operă este o funcție, de exemplu peisajul sau mandala, care începe cu o curățare a ecranului. Legi fiecare operă de o tastă.
+
+Al doilea pas. Opere cu parametri. O spirală cu poziție, culori, număr de pași și unghi. O mandală cu număr de cercuri, rază și culori. Un cer înstelat cu lună. Cu parametri, dintr-un singur cod obții multe variante.
+
+Al treilea pas. Meniu și semnătură. Meniul apare pe ecran și spune ce taste există: unu peisaj, doi mandală, trei spirală, patru cer, cinci floare, C șterge. Semnătura este numele artistului, scris pe fiecare desen.
+
+Al patrulea pas. Funcții în dicționar. Un dicționar poate lega taste de funcții, fără paranteze. Așa codul rămâne scurt. Un alt dicționar ține catalogul galeriei, cu numele operelor.
+
+Al cincilea pas. Galeria completă. Pui totul laolaltă, iar la final faci galeria a ta, cu o operă proprie.
+
+Greșeli frecvente. Tasta nu face nimic: ai uitat screen punct listen sau ai pus paranteze la funcție. Opera se desenează peste alta: lipsește curățarea ecranului. Meniul dispare: nu îl scrii din nou după ștergere.
+
+Proiectul de azi. Galeria mea de artă. Minim înseamnă trei opere cu taste. Complet înseamnă cinci opere, meniu, semnătură și o operă proprie.
+
+Recapitulare. O operă este o funcție, iar fiecare începe cu curăță. Funcțiile mici de ajutor fac codul scurt. Funcțiile cu parametri dau multe variante dintr-un cod. Un dicționar poate lega taste de funcții.
+
+Felicitări, ai terminat Modulul trei de Python.

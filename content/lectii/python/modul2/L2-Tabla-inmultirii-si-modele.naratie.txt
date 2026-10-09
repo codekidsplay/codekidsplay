@@ -1,0 +1,23 @@
+Lecția doi din Modulul doi. Tabla înmulțirii și modele.
+
+Astăzi pui o buclă în interiorul altei bucle și desenezi modele din caractere. Proiectul se numește Atelierul de modele. Fișierul se numește: Prenume, linie jos, Nume, linie jos, P doi, linie jos, L doi, punct P Y.
+
+Obiectivul. La final folosești bucle for una în alta, numite bucle imbricate, formatezi numerele în coloane și construiești modele din steluțe și cifre. Minim: tabla înmulțirii cu un număr ales și un triunghi de steluțe. Complet: minim, plus tabla completă de la unu la cinci, o piramidă și un model cu cifre.
+
+Primul pas. Tabla înmulțirii. Cu un for de la unu la zece afișezi, de exemplu, șapte ori i egal rezultatul, cu f-string. Apoi o faci pentru orice număr ales de utilizator.
+
+Al doilea pas. Bucle imbricate. Gândește-te la un ceas: acul orelor, bucla de afară, merge încet, iar acul minutelor, bucla din interior, face un tur complet pentru fiecare oră. Pentru tabla de înmulțire completă, bucla de afară alege rândul, iar bucla din interior alege coloana. Cu două puncte și un număr în acolade, de exemplu i ori j două puncte trei, aliniezi numerele în coloane de câte trei caractere. După bucla interioară pui un print gol, ca să treci la rândul următor.
+
+Al treilea pas. Modele din caractere. Un text se poate înmulți: o steluță înmulțită cu trei dă trei steluțe. De aceea triunghiul se face cu un singur for. Dreptunghiul de diez folosește două bucle sau un text înmulțit. Piramida are nevoie de spații înaintea steluțelor, ca să fie centrată.
+
+Al patrulea pas. Mai multe modele. Numerele pare, cifrele repetate: str de i transformă numărul în text, iar înmulțirea îl repetă de i ori. Suma și media a trei numere citite într-o buclă.
+
+Al cincilea pas. Mini-proiect. Atelierul de modele: citești un număr între doi și nouă și construiești, pe rând, tabla, triunghiul, piramida și modelul cu cifre.
+
+Greșeli frecvente. Toate numerele apar pe un singur rând lung: ai uitat print gol după bucla interioară. Modelul apare strâmb: print-ul este în interiorul buclei interioare, mută-l un nivel la stânga. Prea multe sau prea puține rânduri: range se oprește înainte de ultimul număr.
+
+Proiectul de azi. Atelierul de modele. Minim înseamnă tabla și triunghiul. Complet înseamnă tabla completă, piramida și cifrele.
+
+Recapitulare. Buclele imbricate sunt o buclă în alta. Cea din interior se repetă complet pentru fiecare pas al celei de afară. Rânduri înseamnă bucla de afară, coloane înseamnă bucla din interior. Print gol după bucla interioară trece la rândul următor. Steluța înmulțită cu un număr repetă textul.
+
+Succes în atelier.

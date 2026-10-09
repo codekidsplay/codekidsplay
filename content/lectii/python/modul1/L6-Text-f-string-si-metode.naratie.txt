@@ -1,0 +1,23 @@
+Lecția șase. Text: f-string și metode.
+
+Textul este peste tot: nume, mesaje, parole, scoruri. Azi înveți să construiești propoziții cu f-string, să schimbi literele mari și mici, să tai și să înlocuiești bucăți de text. Proiectul se numește Laboratorul de cuvinte. Fișierul se numește: Prenume, linie jos, Nume, linie jos, P unu, linie jos, L șase, punct P Y.
+
+Obiectivul. La final folosești f-string pentru mesaje cu variabile, formatezi numere cu zecimale, folosești metodele upper, lower, title, replace, strip, count și find, alegi litere cu paranteze pătrate și tai bucăți de text. Minim: un program care citește un nume și îl afișează cu litere mari, cu prima literă și cu lungimea. Complet: minim, plus textul inversat, un cuvânt înlocuit și un mesaj construit cu f-string.
+
+De ce contează. Jocurile afișează mesaje, de exemplu Ai trei vieți. Aplicațiile curăță textul scris de utilizatori, iar parolele se verifică litera cu litera.
+
+Primul pas. F-string. Până acum lipeam texte cu plus sau cu virgule. Există o metodă mai comodă: scrii litera f înaintea ghilimelelor, iar variabilele le pui între acolade în interiorul textului. Poți face și calcule în acolade. Pentru numere cu două zecimale scrii două puncte, punct, doi, f, după numărul din acolade.
+
+Al doilea pas. Metode. O metodă este o comandă care aparține unui text. O scrii cu punct: text, punct, metoda, paranteze. Upper face litere mari, lower litere mici, title prima literă mare la fiecare cuvânt. Replace înlocuiește un cuvânt cu altul. Strip șterge spațiile de la început și de la sfârșit. Metodele nu schimbă textul original, ci dau un text nou.
+
+Al treilea pas. Literele dintr-un text. Fiecare literă are un număr de ordine, numit index, iar indexul începe de la zero. Prima literă este la index zero, ultima la minus unu. Cu două puncte între paranteze pătrate tai o bucată de text, de la un index până la altul, fără ultima literă. Asta se numește slicing.
+
+Al patrulea pas. Căutăm în text. Cu in verifici dacă un text conține altul, cu count numeri câte ori apare, cu find afli unde apare.
+
+Greșeli frecvente. Se afișează acoladele în loc de nume: ai uitat f înaintea ghilimelelor. Attribute Error: ai scris metoda cu literă mare. Index Error: ai cerut un index care nu există, iar indexul maxim este lungimea minus unu. Textul nu se schimbă: ai uitat parantezele sau nu ai salvat rezultatul într-o variabilă.
+
+Proiectul de azi. Laboratorul de cuvinte. Minim înseamnă numele cu litere mari, prima literă și lungimea. Complet înseamnă text inversat, înlocuire și f-string.
+
+Recapitulare. F-string construiește un text cu valori din variabile. Metodele de text nu schimbă originalul. Primul index este zero, ultimul este minus unu. Paranteze pătrate cu două puncte taie bucăți de text.
+
+Succes în laborator.

@@ -1,0 +1,27 @@
+Lecția unu. Thonny și primul program.
+
+Astăzi pornești Thonny, programul în care vei scrie Python, și îți scrii primul program: unul care vorbește pe ecran. Proiectul se numește Cartea mea de vizită. Fișierul se numește: Prenume, linie jos, Nume, linie jos, P unu, linie jos, L unu, punct P Y.
+
+Obiectivul. La final știi ce este Python, cum pornești Thonny, cum scrii și rulezi un program, cum afișezi text și numere cu print și cum lași în cod mici notițe, numite comentarii. Minim: un program cu cel puțin trei linii print, care afișează date despre tine. Complet: minim, plus un desen din caractere, un calcul afișat și cel puțin două comentarii.
+
+De ce contează. Python este unul dintre cele mai folosite limbaje din lume. Îl folosesc programatorii de jocuri, savanții care studiază spațiul, firmele care fac aplicații și roboți. Este ușor de citit, aproape ca engleza, de aceea se potrivește pentru primii pași.
+
+Primul pas. Ce este un program. Un program este o listă de instrucțiuni pe care calculatorul le face una după alta, de sus în jos, exact cum le-ai scris. Calculatorul nu ghicește ce ai vrut să spui.
+
+Al doilea pas. Primul program. Scrii print, o paranteză, textul între ghilimele și închizi paranteza. Scrii codul în editorul Thonny, apeși butonul verde de rulare și rezultatul apare în Shell, jos. Ai scris o singură linie, dar ea conține lucruri importante: cuvântul print, parantezele și ghilimelele.
+
+Al treilea pas. Mai multe linii. Fiecare print începe un rând nou. Python poate și să calculeze: print de doi plus trei afișează cinci. Atenție la ghilimele: cu ghilimele Python afișează textul așa cum este, iar fără ghilimele face calculul. Aceasta este una dintre cele mai importante idei din Python. Într-un print poți pune și mai multe lucruri, separate prin virgulă.
+
+Al patrulea pas. Ghilimele, rând nou și comentarii. Poți folosi ghilimele simple sau duble. Semnul backslash urmat de n trece pe rândul următor. Un comentariu începe cu semnul diez și este ignorat de Python. Îl folosești ca să lași notițe pentru tine și pentru cei care citesc codul.
+
+Al cincilea pas. Desen din caractere. Poți desena un brad din steluțe, cu mai multe print. Spațiile din ghilimele contează, ele aliniază desenul.
+
+Al șaselea pas. Erorile nu sunt un pericol. Când scrii ceva greșit, Python nu se supără: îți spune ce și unde nu merge, în Shell. De exemplu, dacă uiți o ghilimea, citești mesajul și o repari.
+
+Greșeli frecvente. Ai scris print cu literă mare: trebuie litere mici. Ai uitat o ghilimea sau o paranteză. Ai uitat ghilimelele din jurul textului. Ai pus spații la începutul unei linii, fără rost.
+
+Proiectul de azi. Cartea mea de vizită. Minim înseamnă trei linii cu date despre tine. Complet înseamnă și desen, calcul și comentarii.
+
+Recapitulare. Un program este o listă de instrucțiuni executate de sus în jos. Scrii codul în editor și vezi rezultatul în Shell. Print afișează pe ecran. Fără ghilimele, print calculează. Backslash n trece pe rândul următor, iar diezul începe un comentariu. Erorile te ajută să repari.
+
+Succes la primul program.

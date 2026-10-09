@@ -1,0 +1,23 @@
+Lecția trei din Modulul patru. Mișcare și bucla jocului.
+
+Astăzi pui lucrurile în mișcare. Proiectul se numește Mingile care ricoșează. Fișierul se numește: Prenume, linie jos, Nume, linie jos, P patru, linie jos, L trei, punct P Y.
+
+Obiectivul. La final miști obiecte schimbând x și y la fiecare cadru, le faci să ricoșeze, să apară din partea opusă, să cadă, să lase o urmă, ții mai multe obiecte într-o listă și calculezi mișcarea independent de viteza calculatorului. Minim: o minge care se mișcă și ricoșează. Complet: minim, plus mai multe mingi, urmă, gravitație și un screensaver.
+
+Primul pas. Prima mișcare. Poziția obiectului este în variabile, x și y. La fiecare cadru le schimbăm puțin și apoi desenăm obiectul în noul loc. Un pătrat poate alerga pe ecran. Dacă iese pe o parte, poate apărea pe partea opusă.
+
+Al doilea pas. Ricoșeul. Când obiectul atinge marginea, schimbăm semnul vitezei: din plus în minus. Așa ricoșează pe orizontală. Cu două viteze, pe x și pe y, ricoșează pe diagonală.
+
+Al treilea pas. Imagini și mai multe obiecte. Mingea poate fi o imagine. Mai multe mingi se păstrează într-o listă, iar o buclă for le mișcă pe toate.
+
+Al patrulea pas. Urme, gravitație, timp. Dacă nu ștergi ecranul, mingea lasă o urmă. Gravitația înseamnă că la fiecare cadru viteza crește, apoi mișcăm obiectul. Ca viteza să nu depindă de calculator, calculăm pixelii pe cadru din viteza pe secundă împărțită la numărul de cadre pe secundă.
+
+Al cincilea pas. Mini-proiect. Un screensaver, cu mingi care ricoșează.
+
+Greșeli frecvente. Obiectul iese din ecran: nu aduci obiectul înapoi după ricoșeu. Mingea nu se mișcă: nu actualizezi x și y în buclă. Se vede o urmă nedorită: nu ștergi ecranul la fiecare cadru.
+
+Proiectul de azi. Mingile care ricoșează. Minim înseamnă o minge. Complet înseamnă mai multe mingi, urmă și gravitație.
+
+Recapitulare. Bucla jocului: evenimente, actualizare, desenare. Mișcare înseamnă x plus egal viteza la fiecare cadru. Ricoșeul înseamnă că schimbăm semnul vitezei. Gravitația înseamnă că viteza crește la fiecare cadru. Mai multe obiecte înseamnă o listă.
+
+Succes cu mingile.

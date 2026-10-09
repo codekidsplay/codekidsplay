@@ -1,0 +1,25 @@
+Lecția doi din Modulul patru. Forme, culori și imagini.
+
+Astăzi desenezi în Pygame forme și imagini. Proiectul se numește Orășelul meu. Fișierul se numește: Prenume, linie jos, Nume, linie jos, P patru, linie jos, L doi, punct P Y.
+
+Obiectivul. La final desenezi cu pygame punct draw dreptunghi, cerc, linie, poligon și elipsă, folosești obiecte Rect, creezi imagini proprii, le salvezi și le încarci din fișier, le lipești de mai multe ori pe ecran, le mărești, le rotești și le oglindești. Minim: un desen din cel puțin trei forme. Complet: minim, plus un peisaj, imagini proprii și un orășel.
+
+Primul pas. Forme. Pygame punct draw desenează dreptunghiuri, cercuri, elipse, linii și poligoane. Îi dai ecranul, culoarea și poziția. Fără grosime, forma este plină, iar cu grosime este doar contur.
+
+Al doilea pas. Un peisaj. Cer, soare, iarbă și nori, din forme simple. Ce desenezi mai târziu se vede peste ce ai desenat mai devreme.
+
+Al treilea pas. Obiectul Rect. Un Rect păstrează un dreptunghi și își calculează singur marginile și centrul. Îl poți muta ușor.
+
+Al patrulea pas. Imagini proprii. Creezi o imagine nouă, numită Surface, o desenezi, o salvezi într-un fișier și o încarci la loc. Poți face părți transparente.
+
+Al cincilea pas. Mărire, rotire, oglindire. Transformi imaginea: o mărești, o rotești sau o oglindești.
+
+Al șaselea pas. Mini-proiect. Orășelul meu: case, drumuri, soare și copaci, desenate cu forme și imagini.
+
+Greșeli frecvente. Nu se vede nimic: ai uitat flip. Forma este acoperită: ai desenat-o înaintea fundalului. Imaginea nu se încarcă: numele fișierului este greșit sau fișierul nu este în același folder.
+
+Proiectul de azi. Orășelul meu. Minim înseamnă trei forme. Complet înseamnă peisaj, imagini și orășel.
+
+Recapitulare. Draw desenează forme. Fără grosime forma este plină, cu grosime este contur. Ce se desenează mai târziu se vede peste. Rect păstrează un dreptunghi și îi calculează marginile. Imaginile se creează, se salvează, se încarcă și se transformă.
+
+Succes cu orășelul.

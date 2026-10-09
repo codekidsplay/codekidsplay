@@ -1,0 +1,23 @@
+Lecția șase din Modulul trei. Tastatura: țestoasa pilot.
+
+Astăzi comanzi țestoasa de la tastatură. Proiectul se numește Tabla de desen. Fișierul se numește: Prenume, linie jos, Nume, linie jos, P trei, linie jos, L șase, punct P Y.
+
+Obiectivul. La final legi o tastă de o funcție cu onkey sau onkeypress, miști țestoasa cu săgețile, schimbi culoarea și grosimea cu litere, cobori și ridici creionul din tastatură, faci țestoasa să meargă singură, cu un cronometru, și construiești o tablă de desen. Minim: țestoasa se mișcă cu săgețile. Complet: minim, plus culori, grosime, ștergere și o tablă de desen.
+
+Primul pas. Prima tastă. Ca să reacționăm la o tastă, facem trei lucruri: scriem funcția, fără parametri, apelăm screen punct listen, ca ecranul să asculte, apoi legăm funcția de tastă cu onkeypress. Numele funcției se scrie fără paranteze. Poți lega toate cele patru săgeți.
+
+Al doilea pas. Culori, creion, grosime. Cu litere schimbi culoarea. Cu o tastă ridici sau cobori creionul. Cu alte taste crești sau scazi grosimea. Setările se păstrează într-un dicționar.
+
+Al treilea pas. Ștergere și viteză. O tastă șterge desenul și întoarce țestoasa acasă. Alte taste măresc sau micșorează pasul.
+
+Al patrulea pas. Mișcare automată și pereți. Cu ontimer, țestoasa merge singură, iar săgețile îi schimbă direcția. Când ajunge la marginea ecranului, se întoarce, ca să nu iasă.
+
+Al cincilea pas. Mini-proiect. Tabla de desen, cu săgeți, culori, grosime, creion și ștergere.
+
+Greșeli frecvente. Tasta nu face nimic: ai uitat screen punct listen. Eroare la funcție: ai pus paranteze la numele funcției, sau funcția are parametri, iar tasta nu îi poate trimite. Țestoasa merge prea repede sau prea încet: schimbi pasul.
+
+Proiectul de azi. Tabla de desen. Minim înseamnă mișcare cu săgeți. Complet înseamnă culori, grosime, ștergere și mișcare automată.
+
+Recapitulare. Programarea cu evenimente înseamnă când se întâmplă X, execută funcția Y. Pașii sunt: funcția, listen, apoi onkeypress. Numele funcției se dă fără paranteze. Onkeypress reacționează la apăsare, onkey la lăsarea tastei.
+
+Succes la tabla de desen.

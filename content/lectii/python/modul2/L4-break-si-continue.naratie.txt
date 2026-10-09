@@ -1,0 +1,25 @@
+Lecția patru din Modulul doi. Break și continue.
+
+Astăzi înveți să ieși dintr-o buclă sau să sari peste un pas. Proiectul se numește Păzitorul tezaurului. Fișierul se numește: Prenume, linie jos, Nume, linie jos, P doi, linie jos, L patru, punct P Y.
+
+Obiectivul. La final folosești break ca să ieși dintr-o buclă, continue ca să sari peste un pas, cauți un lucru într-un șir de numere și verifici dacă un număr este prim. Minim: un for cu break și unul cu continue. Complet: minim, plus verificarea unui număr prim, o cerere de date cu validare și un program cu număr limitat de încercări.
+
+Primul pas. Break, ieșim din buclă. Când Python ajunge la break, iese complet din cea mai apropiată buclă. De exemplu, numeri și te oprești la cinci. Sau cauți primul multiplu de șapte după cincizeci și te oprești când l-ai găsit.
+
+Al doilea pas. Continue, sărim peste un pas. Continue spune: oprește pasul acesta și treci la următorul. Dacă numărul este par, print-ul este sărit, deci se afișează doar numerele impare.
+
+Al treilea pas. While True cu break. Adunăm numere până scrii zero. Bucla este infinită, dar se oprește cu break când utilizatorul scrie zero.
+
+Al patrulea pas. Numere prime și încercări limitate. Un număr este prim dacă se împarte exact doar la unu și la el însuși: doi, trei, cinci, șapte, unsprezece. Folosești un steag, o variabilă adevărat sau fals, care ține minte dacă ai găsit un divizor. Un else după un for se execută doar dacă bucla s-a terminat fără break. Poți face și un joc: ghicești în trei încercări.
+
+Al cincilea pas. Validare și bucle în bucle. Nu accepți un nume gol: întrebi din nou. Break iese doar din bucla în care se află, adică cea interioară. Media notelor, cu validare, până scrii zero.
+
+Al șaselea pas. Mini-proiect. Păzitorul tezaurului: un paznic îți blochează drumul. Parola secretă este în cod, iar tu ai un număr limitat de încercări.
+
+Greșeli frecvente. Syntax Error break outside loop: ai pus break în afara unei bucle. Bucla nu se oprește: break este într-un if care nu este niciodată adevărat. Continue creează o buclă infinită dacă sare peste creșterea contorului.
+
+Proiectul de azi. Păzitorul tezaurului. Minim înseamnă break și continue. Complet înseamnă număr prim, validare și încercări limitate.
+
+Recapitulare. Break iese complet din cea mai apropiată buclă. Continue sare la pasul următor. While True cu break este o buclă care se oprește la comandă. Else după for se execută doar dacă nu a fost break. Un steag ține minte dacă ai găsit ceva.
+
+Succes la tezaur.

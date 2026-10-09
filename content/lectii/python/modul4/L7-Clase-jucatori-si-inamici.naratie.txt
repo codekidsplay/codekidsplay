@@ -1,0 +1,21 @@
+Lecția șapte din Modulul patru. Clase: jucători și inamici.
+
+Astăzi înveți să faci obiecte după o rețetă. Proiectul se numește Arena monedelor. Fișierul se numește: Prenume, linie jos, Nume, linie jos, P patru, linie jos, L șapte, punct P Y.
+
+Obiectivul. La final scrii clase cu init, atribute și metode, creezi mai multe obiecte din aceeași clasă, ții obiecte în liste, folosești str și o clasă copil, adică moștenire, și construiești un joc cu clase. Minim: o clasă și două obiecte create din ea. Complet: minim, plus clase pentru jucător, monede și inamici, și Arena monedelor.
+
+Primul pas. Prima clasă. Clasa este rețeta, obiectul este lucrul făcut după rețetă. De exemplu, clasa Câine, cu nume și vârstă. Funcția init rulează la crearea obiectului, iar self înseamnă obiectul acesta. Metodele sunt funcții în clasă, iar atributele sunt datele obiectului.
+
+Al doilea pas. Clase în Pygame. Jucătorul este un obiect, cu poziție, viteză și scor. Monedele sunt obiecte într-o listă, iar inamicii sar de pereți. Picăturile de ploaie sunt tot obiecte, făcute după aceeași clasă.
+
+Al treilea pas. Mai multe despre clase. Metoda str spune cum se afișează obiectul. Moștenirea înseamnă o clasă copil: ea primește tot ce are clasa părinte și adaugă lucruri noi, de exemplu un inamic rapid care moștenește clasa Inamic.
+
+Al patrulea pas. Mini-proiect. Arena monedelor: un jucător, monede și inamici, toate făcute cu clase.
+
+Greșeli frecvente. Type Error la crearea obiectului: lipsește self sau un parametru. Toate obiectele se mișcă la fel: au aceeași poziție la creare. Atributul nu este găsit: nu l-ai creat în init. Ai uitat self în fața unui atribut.
+
+Proiectul de azi. Arena monedelor. Minim înseamnă o clasă și două obiecte. Complet înseamnă clase pentru jucător, monede și inamici.
+
+Recapitulare. Clasa este rețeta, obiectul este lucrul făcut după ea. Init rulează la crearea obiectului, iar self este obiectul acesta. Metodele sunt funcții în clasă, atributele sunt datele. Obiectele se păstrează în liste. Str spune cum se afișează obiectul. Moștenirea adaugă lucruri unei clase existente.
+
+Succes în arenă.
