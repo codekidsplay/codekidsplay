@@ -10,6 +10,7 @@ import {
   ChevronRight,
   LogOut,
   GraduationCap,
+  Inbox,
 } from 'lucide-react'
 import { getSession, logoutClient } from '@/lib/auth'
 import { useEffect, useState } from 'react'
@@ -25,6 +26,7 @@ const navItems: {
   { href: '/cursanti', label: 'Cursanți', icon: Users },
   { href: '/cursuri', label: 'Lecții', icon: BookOpen },
   { href: '/abonamente', label: 'Abonamente & Plăți', icon: CreditCard },
+  { href: '/cereri', label: 'Cereri', icon: Inbox, roles: ['admin'] },
   { href: '/profesori', label: 'Profesori', icon: GraduationCap, roles: ['admin'] },
 ]
 
