@@ -4,7 +4,7 @@
 
 > Azi deschizi **Roblox Studio**, înveți **5 comenzi esențiale** pe ecran, și lași ceva pe lume pe care îl poți **testa cu Play**.  
 > Place (fișierul tău): `Prenume_Nume_M1` (ex. `Ana_Pop_M1`)  
-> *Același Place te însoțește prin tot cursul Roblox (M1→M2→M3→M4) — Obby-ul tău crește în el. Nu faci `…_M2` / `…_M3` separat.*  
+> *Obby-ul tău crește prin tot cursul Roblox (M1→M2→M3→M4). Tot Modulul 1 lucrezi în `…_M1`; când începe un modul nou, salvezi o **copie** (`…_M2`, apoi `…_M3`, `…_M4`), ca versiunea veche să rămână întreagă.*  
 > *Dacă îl pierzi sau îl strici vreodată, profesorul are un **Place de rezervă** pregătit din care poți continua.*
 
 ---
@@ -13,7 +13,7 @@
 La finalul orei ai un **Place salvat** cu numele corect, știi unde e **lumea 3D**, cum pui un **Part**, cum îl **ancorezi**, și cum pornești / oprești testul cu **Play** / **Stop**.  
 **Minimum:** Place salvat + **≥2 Parts** ancorate pe Baseplate + un tur scurt în Play.  
 **Ținta orei (Complet):** Minim + o **cale scurtă** (Parts în șir) pe care o poți „trece” pe jos în Play + o culoare diferită pe cel puțin un Part.  
-**Place pe tot cursul:** lucrezi mereu în `Prenume_Nume_M1`; dacă îl pierzi, continui din Place-ul de rezervă al profesorului.
+**Place în acest modul:** lucrezi mereu în `Prenume_Nume_M1`. La începutul Modulului 2 faci o copie `_M2`; dacă îți pierzi Place-ul, continui din cel de rezervă al profesorului.
 
 ## De ce contează
 Roblox Studio e „șantierul” jocului: aici **construiești** lumea.  
@@ -64,7 +64,7 @@ Pe ecran (ca în Studio deschis pe un Place nou / Baseplate):
 4. Nume Place: **`Prenume_Nume_M1`**  
    - Ex. `Ana_Pop_M1`, `Ana_Ionescu_M1`  
    - **Nu** doar `Ana_M1` sau `Place3` — în clasă se calcă  
-   - **Nu** `…_M2` / `…_M3` — rămâne **`_M1`** tot cursul; Obby-ul crește în același fișier
+   - **Nu** `…_M2` / `…_M3` încă — în Modulul 1 rămâne **`_M1`**; copiile `_M2`, `_M3`, `_M4` le faci mai târziu, la începutul fiecărui modul
 
 *(Dacă tipul de salvare diferă pe Mac/Windows, profesorul arată o dată pe proiector.)*  
 *Plasă de siguranță:* dacă îți pierzi Place-ul, profesorul are un **Place de rezervă** din care poți continua (pregătit mai ales pentru M3+).
@@ -158,7 +158,7 @@ Cei rapizi: Complet, apoi Bonus.
 1. **Viewport** = lumea · **Play / Stop** = testezi / editezi  
 2. **Part** = pui obiecte · **Anchor** = nu cad  
 3. **Move / Scale / Rotate** = le așezi  
-4. Nume Place: **`Prenume_Nume_M1`** (același tot cursul; rezervă la profesor dacă îl pierzi)  
+4. Nume Place: **`Prenume_Nume_M1`** (același tot Modulul 1; la M2 faci o copie `_M2`; rezervă la profesor dacă îl pierzi)  
 5. Azi **fără** Script / Terrain / Toolbox  
 
 **Quiz scurt (cu profesorul):**  

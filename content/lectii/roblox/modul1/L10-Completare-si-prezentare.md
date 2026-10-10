@@ -154,7 +154,7 @@ Dacă rămâi în urmă: **prezinți cu o îmbunătățire — e suficient pentr
 ## Recapitulare rapidă
 1. L10 = **completezi** L9, apoi **prezinți**  
 2. **Minim** = 1 upgrade + prezentare → **insignă**  
-3. M1 = Studio + lume Obby · M2 = Luau pe același Place  
+3. M1 = Studio + lume Obby · M2 = Luau pe o copie `_M2` a aceluiași Obby  
 4. Nume: **`Prenume_Nume_M1`**  
 
 **Quiz scurt (cu profesorul):**  
