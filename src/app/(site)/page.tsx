@@ -258,7 +258,7 @@ export default function LandingPage() {
           <BrandLogo size="sm" href="/" tone="light" />
           <div className="flex items-center gap-3">
             <a
-              href="https://www.facebook.com/codekidsplayfocsani/"
+              href="https://www.facebook.com/codemakerclub/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Facebook"
@@ -269,7 +269,7 @@ export default function LandingPage() {
               </svg>
             </a>
             <a
-              href="https://www.instagram.com/codekidsplayfocsani/"
+              href="https://www.instagram.com/codemakerclubfocsani/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram"
@@ -280,7 +280,7 @@ export default function LandingPage() {
               </svg>
             </a>
             <a
-              href="https://www.tiktok.com/@code.kids.play.fo"
+              href="https://www.tiktok.com/@codemakerclub"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="TikTok"
